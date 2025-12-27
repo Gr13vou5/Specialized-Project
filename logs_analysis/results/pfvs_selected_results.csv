@@ -1,0 +1,14 @@
+instance,solver,status,time_sec,num_fp
+Cell_cycle_control_network,PFVS,timeout,3.22,NA
+EMT_Mechanosensing,PFVS,timeout,0.17,NA
+EMT_Mechanosensing_TGFbeta,PFVS,timeout,0.16,NA
+Executable_file_for_Alzheimer_model_BCC,PFVS,timeout,0.37,NA
+Executable_file_for_CaSQ_derived_MAPK_model_BCC,PFVS,timeout,0.22,NA
+Executable_file_for_CaSQ_derived_mast_cell_activation_model_BCC,PFVS,solved,10.52,524288
+Executable_file_for_cholocystokinin_model_BCC,PFVS,timeout,0.27,NA
+HOG_example,PFVS,solved,236.93,25632
+Insulin_example,PFVS,timeout,0.27,NA
+Leishmania,PFVS,timeout,0.22,NA
+T-cell_co-receptor_molecules_calcium_channel,PFVS,timeout,0.17,NA
+YeastPheromoneModel,PFVS,timeout,0.37,NA
+signaling-dependent-pluripotency,PFVS,solved,1.77,412

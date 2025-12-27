@@ -1,0 +1,14 @@
+Instance,fASP_conj,fASP_src,Hybrid_BMSA,PFVS
+Cell_cycle_control_network,TIMEOUT,TIMEOUT,OUT_OF_MEMORY,TIMEOUT
+EMT_Mechanosensing,0.16,0.22,1.32,TIMEOUT
+EMT_Mechanosensing_TGFbeta,0.16,0.26,1.45,TIMEOUT
+Executable_file_for_Alzheimer_model_BCC,OUT_OF_MEMORY,TIMEOUT,OUT_OF_MEMORY,TIMEOUT
+Executable_file_for_CaSQ_derived_MAPK_model_BCC,OUT_OF_MEMORY,TIMEOUT,OUT_OF_MEMORY,TIMEOUT
+Executable_file_for_CaSQ_derived_mast_cell_activation_model_BCC,15.91,4.73,0.87,10.52
+Executable_file_for_cholocystokinin_model_BCC,OUT_OF_MEMORY,TIMEOUT,OUT_OF_MEMORY,TIMEOUT
+HOG_example,0.97,1.44,1.17,236.93
+Insulin_example,43.41,84.49,13.60,TIMEOUT
+Leishmania,OUT_OF_MEMORY,TIMEOUT,TIMEOUT,TIMEOUT
+T-cell_co-receptor_molecules_calcium_channel,OUT_OF_MEMORY,278.61,78.96,TIMEOUT
+YeastPheromoneModel,TIMEOUT,TIMEOUT,OUT_OF_MEMORY,TIMEOUT
+signaling-dependent-pluripotency,0.16,0.10,0.97,1.77

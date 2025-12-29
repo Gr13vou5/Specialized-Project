@@ -1,17 +1,40 @@
 import csv
 import sys
+import re
 from pathlib import Path
 
 csv.field_size_limit(sys.maxsize)
 
-def convert_bnet_to_bn_fast(bnet_file, bn_file):
+VAR_RE = re.compile(r"\b[a-zA-Z][a-zA-Z0-9_]*\b")
+
+def convert_bnet_to_bn_pfvs(bnet_file: Path, bn_file: Path):
     with open(bnet_file, newline="") as f:
         reader = csv.reader(f)
-        header = next(reader)
+        header = next(reader) 
+        rows = list(reader)
 
-        with open(bn_file, "w") as out:
-            for target, formula in reader:
-                out.write(f"{target} = {formula}\n")
+    variables = []
+    var_set = set()
+
+    for target, formula in rows:
+        if target not in var_set:
+            variables.append(target)
+            var_set.add(target)
+
+        for v in VAR_RE.findall(formula):
+            if v not in {"AND", "OR", "NOT"} and v not in var_set:
+                variables.append(v)
+                var_set.add(v)
+
+    mapping = {v: f"x{i+1}" for i, v in enumerate(variables)}
+
+    with open(bn_file, "w") as out:
+        for target, formula in rows:
+            lhs = mapping[target]
+            rhs = formula
+            for orig, new in mapping.items():
+                rhs = re.sub(rf"\b{re.escape(orig)}\b", new, rhs)
+            out.write(f"{lhs} = {rhs}\n")
 
 def convert_path(path):
     path = Path(path)
@@ -21,7 +44,7 @@ def convert_path(path):
             raise ValueError("Input file must have .bnet extension")
 
         out_file = path.with_suffix(".bn")
-        convert_bnet_to_bn_fast(path, out_file)
+        convert_bnet_to_bn_pfvs(path, out_file)
         print(f"[OK] Converted {path.name} → {out_file.name}")
 
     elif path.is_dir():
@@ -32,7 +55,7 @@ def convert_path(path):
 
         for bnet in bnet_files:
             bn = bnet.with_suffix(".bn")
-            convert_bnet_to_bn_fast(bnet, bn)
+            convert_bnet_to_bn_pfvs(bnet, bn)
             print(f"[OK] Converted {bnet} → {bn}")
 
     else:

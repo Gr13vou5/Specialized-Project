@@ -5,7 +5,7 @@ from pathlib import Path
 
 # CONFIG
 PFVS_JAR = "../../FPCollector.jar"
-TIME_LIMIT = 900  # 30 minutes
+TIME_LIMIT = 1800  # 30 minutes
 MODE = "-m"        # deterministic PFVS
 
 RANDOM_DIR = Path("examples/Random")

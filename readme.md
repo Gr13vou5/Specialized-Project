@@ -3,10 +3,12 @@
 This repository extends the supplementary material of **SAC4BN**:
 
 > **SAT-based Method for Counting All Singleton Attractors in Boolean Networks**  
-> Rei Higuchi, Takehide Soh, Daniel Le Berre, Morgan Magnin, Mutsunori Banbara, Naoyuki Tamura  
+> Rei Higuchi, Takehide Soh, Daniel Le Berre, Morgan Magnin,  
+> Mutsunori Banbara, Naoyuki Tamura  
 > *IJCAI 2025 (in print)*
 
-by integrating an additional **PFVS-based method** and providing a **fully reproducible experimental pipeline** for:
+by integrating an additional **PFVS-based method** and providing a
+**fully reproducible experimental pipeline** for:
 
 - **fASP-c** (conjunctive encoding)
 - **fASP-s** (source encoding)
@@ -18,6 +20,7 @@ by integrating an additional **PFVS-based method** and providing a **fully repro
 
 ## Directory Structure
 
+```text
 .
 ├── benchmarks
 │   ├── biodivine-boolean-models
@@ -30,7 +33,7 @@ by integrating an additional **PFVS-based method** and providing a **fully repro
 ├── build
 │   ├── docker
 │   │   ├── fasp
-│   │   ├── proposed
+│   │   └── proposed
 │   └── proposed_src
 │       ├── lib
 │       ├── project
@@ -40,13 +43,13 @@ by integrating an additional **PFVS-based method** and providing a **fully repro
 ├── logs
 │   ├── fasp_conj
 │   ├── fasp_src
-│   ├── hybrid_bmsa
+│   └── hybrid_bmsa
 ├── logs_analysis
 │   ├── results
 │   ├── fps_and_cpu.py
 │   ├── num_solved.py
 │   ├── merge_pfvs_into_results.py
-│   ├── regen_dat.py
+│   ├── gen_dat.py
 │   ├── regen_solved_csv.py
 │   ├── cactus_log.plt
 │   ├── cactus_random_log.plt
@@ -56,22 +59,18 @@ by integrating an additional **PFVS-based method** and providing a **fully repro
 │   ├── Examples
 │   │   ├── BBM
 │   │   ├── Random
-│   │   ├── Selected
-│   │   └──converter_pfvs.py
+│   │   └── Selected
+│   ├── converter_pfvs.py
 │   ├── run_pfvs_bbm.py
 │   ├── run_pfvs_random.py
 │   ├── run_pfvs_selected.py
-│   ├── FPCollector.jar
+│   ├── fpcollector.jar
 │   ├── pfvs_bbm_results.csv
 │   ├── pfvs_random_results.csv
 │   └── pfvs_selected_results.csv
 ├── LICENSE
 └── README.md
-
----
-
-Build Docker images:
-
+Build Docker Images
 sh
 Copy code
 cd build/docker/fasp
@@ -111,17 +110,13 @@ Copy code
 docker run -t --rm \
   -v $(pwd)/benchmarks/fASP/dataset/BBM:/benchmark \
   bsaf /app/solve-bmsa.sh 8g 1g h3 model_001.bnet
-Solver logs are generated under the logs/ directory.
+Solver logs are generated under logs/.
 
 Running the PFVS Tool
 Step 1: Convert .bnet to .bn
-PFVS requires .bn input files.
-
 sh
 Copy code
 cd PFVS
-Convert all benchmark models:
-
 sh
 Copy code
 python3 converter_pfvs.py Examples/BBM
@@ -133,48 +128,20 @@ Copy code
 python3 run_pfvs_bbm.py
 python3 run_pfvs_random.py
 python3 run_pfvs_selected.py
-This generates:
-
-pfvs_bbm_results.csv
-
-pfvs_random_results.csv
-
-pfvs_selected_results.csv
-
-Move them into the analysis folder:
+Move results to the analysis folder:
 
 sh
 Copy code
 mv pfvs_*_results.csv ../logs_analysis/results/
 Log Analysis and Result Generation
-All following commands are executed from logs_analysis/.
-
 sh
 Copy code
-cd ../logs_analysis
+cd logs_analysis
 Step 1: Generate Base Result CSVs
 sh
 Copy code
 python3 fps_and_cpu.py
 python3 num_solved.py
-This generates:
-
-cpu.csv
-
-cpu_fasp.csv
-
-cpu_selected.csv
-
-fixed_points.csv
-
-fixed_points_fasp.csv
-
-solved_per_set.csv
-
-solved_per_fps_range.csv
-
-solved_per_vars_range.csv
-
 Step 2: Merge PFVS Results
 sh
 Copy code
@@ -182,7 +149,7 @@ python3 merge_pfvs_into_results.py
 Step 3: Regenerate .dat Files
 sh
 Copy code
-python3 regen_dat.py
+python3 gen_dat.py
 Step 4: Regenerate Solved-Instance Tables
 sh
 Copy code
@@ -199,8 +166,8 @@ gnuplot cactus_log.plt
 gnuplot cactus_random_log.plt
 gnuplot cactus_selected_log.plt
 gnuplot cactus_all_log.plt
-The generated plots (.pdf / .eps) are stored in:
+Plots are generated in:
 
-bash
+text
 Copy code
 logs_analysis/results/

@@ -36,13 +36,6 @@ def read_csv(path: Path):
 # Fixed points: ground truth from CSVs
 # ------------------------------------------------------------
 def load_num_fixed_points():
-    """
-    Ground-truth FP counts from fixed_points CSVs.
-
-    For instances without known FP counts (e.g., Random),
-    assign a large sentinel value (10^30), matching the paper's
-    handling via d4-anytime.
-    """
     fps = {}
 
     def read_fp_csv(path: Path):

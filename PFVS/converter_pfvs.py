@@ -41,8 +41,8 @@ def convert_path(path):
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage:")
-        print("  python converter_pfvs.py model.bnet")
-        print("  python converter_pfvs.py /path/to/bnet_directory")
+        print("  python3 converter_pfvs.py model.bnet")
+        print("  python3 converter_pfvs.py /path/to/bnet_directory")
         sys.exit(1)
 
     convert_path(sys.argv[1])

@@ -4,6 +4,8 @@ from pathlib import Path
 RESULTS_DIR = Path("results")
 PFVS_COL = "PFVS"
 
+STATUS_LABEL = {"timeout": "TIMEOUT", "out_of_memory": "OUT_OF_MEMORY", "refused": "REFUSED", "error": "ERROR"}
+
 MERGE_MAP = {
     "cpu.csv": [
         "pfvs_bbm_results.csv",
@@ -94,7 +96,7 @@ def update_csv(csv_path, pfvs_data, is_cpu):
                 status, time_sec, num_fp = pfvs_data[inst]
 
                 if is_cpu:
-                    row[PFVS_COL] = time_sec if status == "solved" else "TIMEOUT"
+                    row[PFVS_COL] = time_sec if status == "solved" else STATUS_LABEL.get(status, "ERROR")
                 else:
                     row[PFVS_COL] = f"{num_fp}*" if status == "solved" else ""
             else:

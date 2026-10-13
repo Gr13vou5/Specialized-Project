@@ -1,0 +1,725 @@
+# Host: MSI
+# Start date: Tue Oct 13 13:12:36 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Command: docker run --rm --name bench-2466-5 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/fASP/dataset/Selected:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 Executable_file_for_CaSQ_derived_mast_cell_activation_model_BCC.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/Executable_file_for_CaSQ_derived_mast_cell_activation_model_BCC.bnet --cnf /tmp/tmp.U747YfuynX.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/Executable_file_for_CaSQ_derived_mast_cell_activation_model_BCC.bnet, cnfFileName = /tmp/tmp.U747YfuynX.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector(Set(csa12, sa72), Set(csa12, !sa72, sa164, !sa354)))
+Some(Vector(Set(!sa72, sa354), Set(!sa72, !sa164), Set(!csa12)))
+(Set(csa12, sa72),Set(-18, -27))
+(Set(csa12, !sa72, sa164, !sa354),Set(-18, 27, -62, 53))
+(Set(!sa72, sa354),Set(27, -53))
+(Set(!sa72, !sa164),Set(27, 62))
+(Set(!csa12),Set(18))
+
+Some(Vector(Set(sa69, sa88)))
+Some(Vector(Set(!sa88), Set(!sa69)))
+(Set(sa69, sa88),Set(-60, -69))
+(Set(!sa88),Set(69))
+(Set(!sa69),Set(60))
+
+Some(Vector(Set(sa90, sa105)))
+Some(Vector(Set(!sa105), Set(!sa90)))
+(Set(sa90, sa105),Set(-33, -10))
+(Set(!sa105),Set(10))
+(Set(!sa90),Set(33))
+
+Some(Vector(Set(csa5, !csa41, sa124)))
+Some(Vector(Set(!sa124), Set(csa41), Set(!csa5)))
+(Set(csa5, !csa41, sa124),Set(-26, 46, -9))
+(Set(!sa124),Set(9))
+(Set(csa41),Set(-46))
+(Set(!csa5),Set(26))
+
+Some(Vector(Set(csa16, sa125)))
+Some(Vector(Set(!sa125), Set(!csa16)))
+(Set(csa16, sa125),Set(-23, -20))
+(Set(!sa125),Set(20))
+(Set(!csa16),Set(23))
+
+Some(Vector(Set(sa110)))
+Some(Vector(Set(!sa110)))
+(Set(sa110),Set(-11))
+(Set(!sa110),Set(11))
+
+Some(Vector(Set(sa155, sa102)))
+Some(Vector(Set(!sa102), Set(!sa155)))
+(Set(sa155, sa102),Set(-37, -30))
+(Set(!sa102),Set(30))
+(Set(!sa155),Set(37))
+
+Some(Vector(Set(csa5, sa178)))
+Some(Vector(Set(!sa178), Set(!csa5)))
+(Set(csa5, sa178),Set(-26, -44))
+(Set(!sa178),Set(44))
+(Set(!csa5),Set(26))
+
+Some(Vector(Set(!csa47, sa125), Set(!csa47, sa124, !sa125), Set(csa47)))
+Some(Vector(Set(!csa47, !sa124, !sa125)))
+(Set(!csa47, sa125),Set(70, -20))
+(Set(!csa47, sa124, !sa125),Set(70, -9, 20))
+(Set(csa47),Set(-70))
+(Set(!csa47, !sa124, !sa125),Set(70, 9, 20))
+
+Some(Vector(Set(sa72, sa235)))
+Some(Vector(Set(!sa235), Set(!sa72)))
+(Set(sa72, sa235),Set(-27, -68))
+(Set(!sa235),Set(68))
+(Set(!sa72),Set(27))
+
+Some(Vector(Set(!csa45, sa355), Set(csa45, sa355, csa41), Set(csa45, !csa41, sa89), Set(csa45, sa355, !csa41, !sa89)))
+Some(Vector(Set(!sa355, !sa89), Set(!sa355, csa41), Set(!csa45, !sa355)))
+(Set(!csa45, sa355),Set(28, -57))
+(Set(csa45, sa355, csa41),Set(-28, -57, -46))
+(Set(csa45, !csa41, sa89),Set(-28, 46, -38))
+(Set(csa45, sa355, !csa41, !sa89),Set(-28, -57, 46, 38))
+(Set(!sa355, !sa89),Set(57, 38))
+(Set(!sa355, csa41),Set(57, -46))
+(Set(!csa45, !sa355),Set(28, 57))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa164, csa39, sa27, csa11, !sa355), Set(csa11, csa39, sa355, !sa164), Set(!sa164, sa355, csa39, !csa11, !sa72), Set(!sa164, csa39, !csa11, sa27, !sa355, sa72), Set(!csa39), Set(!sa164, sa355, csa39, !csa11, sa72), Set(csa11, sa27, csa39, sa164), Set(csa39, !csa11, sa27, sa164, sa72)))
+Some(Vector(Set(!sa27, csa39, !sa355), Set(!csa11, !sa72, csa39, !sa355), Set(!csa11, !sa72, csa39, sa164), Set(!sa27, csa39, sa164)))
+(Set(!sa164, csa39, sa27, csa11, !sa355),Set(57, -21, -6, -34, 62))
+(Set(csa11, csa39, sa355, !sa164),Set(-6, -34, -57, 62))
+(Set(!sa164, sa355, csa39, !csa11, !sa72),Set(6, 27, -57, -34, 62))
+(Set(!sa164, csa39, !csa11, sa27, !sa355, sa72),Set(-27, 57, 6, -21, -34, 62))
+(Set(!csa39),Set(34))
+(Set(!sa164, sa355, csa39, !csa11, sa72),Set(-27, 6, -57, -34, 62))
+(Set(csa11, sa27, csa39, sa164),Set(-6, -21, -34, -62))
+(Set(csa39, !csa11, sa27, sa164, sa72),Set(-27, 6, -62, -21, -34))
+(Set(!sa27, csa39, !sa355),Set(21, -34, 57))
+(Set(!csa11, !sa72, csa39, !sa355),Set(6, 27, -34, 57))
+(Set(!csa11, !sa72, csa39, sa164),Set(6, 27, -34, -62))
+(Set(!sa27, csa39, sa164),Set(21, -34, -62))
+
+Some(Vector(Set(csa39, csa42)))
+Some(Vector(Set(!csa42), Set(!csa39)))
+(Set(csa39, csa42),Set(-34, -29))
+(Set(!csa42),Set(29))
+(Set(!csa39),Set(34))
+
+Some(Vector(Set(sa298, sa274)))
+Some(Vector(Set(!sa274), Set(!sa298)))
+(Set(sa298, sa274),Set(-43, -49))
+(Set(!sa274),Set(49))
+(Set(!sa298),Set(43))
+
+Some(Vector(Set(sa242, sa238)))
+Some(Vector(Set(!sa238), Set(!sa242)))
+(Set(sa242, sa238),Set(-40, -56))
+(Set(!sa238),Set(56))
+(Set(!sa242),Set(40))
+
+Some(Vector(Set(sa90, sa321)))
+Some(Vector(Set(!sa321), Set(!sa90)))
+(Set(sa90, sa321),Set(-33, -3))
+(Set(!sa321),Set(3))
+(Set(!sa90),Set(33))
+
+Some(Vector(Set(sa102, csa46)))
+Some(Vector(Set(!csa46), Set(!sa102)))
+(Set(sa102, csa46),Set(-30, -47))
+(Set(!csa46),Set(47))
+(Set(!sa102),Set(30))
+
+Some(Vector(Set(csa4, sa301)))
+Some(Vector(Set(!sa301), Set(!csa4)))
+(Set(csa4, sa301),Set(-55, -35))
+(Set(!sa301),Set(35))
+(Set(!csa4),Set(55))
+
+Some(Vector(Set(!csa41, sa124, csa48)))
+Some(Vector(Set(!csa48), Set(!sa124), Set(csa41)))
+(Set(!csa41, sa124, csa48),Set(46, -9, -2))
+(Set(!csa48),Set(2))
+(Set(!sa124),Set(9))
+(Set(csa41),Set(-46))
+
+Some(Vector(Set(!csa11, sa67, csa4), Set(sa40, !csa11, sa67, !csa4), Set(csa11, sa31, csa4), Set(csa11, sa31, !csa4), Set(!csa4, sa67, sa40, !sa94, csa11, !sa31), Set(csa11, !sa31, csa4, sa94), Set(sa67, csa4, !sa94, csa11, !sa31), Set(csa11, !sa31, !csa4, sa94)))
+Some(Vector(Set(!sa40, !sa31, !csa4, !sa94), Set(!sa40, !csa11, !csa4), Set(!csa11, !sa67), Set(!sa67, !sa31, !sa94)))
+(Set(!csa11, sa67, csa4),Set(6, -32, -55))
+(Set(sa40, !csa11, sa67, !csa4),Set(-5, 6, -32, 55))
+(Set(csa11, sa31, csa4),Set(-6, -39, -55))
+(Set(csa11, sa31, !csa4),Set(-6, -39, 55))
+(Set(!csa4, sa67, sa40, !sa94, csa11, !sa31),Set(-32, -5, 39, 72, 55, -6))
+(Set(csa11, !sa31, csa4, sa94),Set(-6, 39, -55, -72))
+(Set(sa67, csa4, !sa94, csa11, !sa31),Set(-32, -55, 39, 72, -6))
+(Set(csa11, !sa31, !csa4, sa94),Set(-6, 39, 55, -72))
+(Set(!sa40, !sa31, !csa4, !sa94),Set(5, 39, 55, 72))
+(Set(!sa40, !csa11, !csa4),Set(5, 6, 55))
+(Set(!csa11, !sa67),Set(6, 32))
+(Set(!sa67, !sa31, !sa94),Set(32, 39, 72))
+
+Some(Vector(Set(sa125, csa49)))
+Some(Vector(Set(!csa49), Set(!sa125)))
+(Set(sa125, csa49),Set(-20, -13))
+(Set(!csa49),Set(13))
+(Set(!sa125),Set(20))
+
+Some(Vector(Set(sa200, sa347)))
+Some(Vector(Set(!sa347), Set(!sa200)))
+(Set(sa200, sa347),Set(-48, -12))
+(Set(!sa347),Set(12))
+(Set(!sa200),Set(48))
+
+Some(Vector(Set(sa147)))
+Some(Vector(Set(!sa147)))
+(Set(sa147),Set(-19))
+(Set(!sa147),Set(19))
+
+Some(Vector(Set(sa100)))
+Some(Vector(Set(!sa100)))
+(Set(sa100),Set(-58))
+(Set(!sa100),Set(58))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(csa15)))
+Some(Vector(Set(!csa15)))
+(Set(csa15),Set(-8))
+(Set(!csa15),Set(8))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(csa19)))
+Some(Vector(Set(!csa19)))
+(Set(csa19),Set(-54))
+(Set(!csa19),Set(54))
+
+Some(Vector(Set(csa19)))
+Some(Vector(Set(!csa19)))
+(Set(csa19),Set(-54))
+(Set(!csa19),Set(54))
+
+Some(Vector(Set(sa140)))
+Some(Vector(Set(!sa140)))
+(Set(sa140),Set(-41))
+(Set(!sa140),Set(41))
+
+Some(Vector(Set(csa20)))
+Some(Vector(Set(!csa20)))
+(Set(csa20),Set(-36))
+(Set(!csa20),Set(36))
+
+Some(Vector(Set(sa143)))
+Some(Vector(Set(!sa143)))
+(Set(sa143),Set(-4))
+(Set(!sa143),Set(4))
+
+Some(Vector(Set(sa91)))
+Some(Vector(Set(!sa91)))
+(Set(sa91),Set(-14))
+(Set(!sa91),Set(14))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa153)))
+Some(Vector(Set(!sa153)))
+(Set(sa153),Set(-61))
+(Set(!sa153),Set(61))
+
+Some(Vector(Set(csa17)))
+Some(Vector(Set(!csa17)))
+(Set(csa17),Set(-51))
+(Set(!csa17),Set(51))
+
+Some(Vector(Set(csa17)))
+Some(Vector(Set(!csa17)))
+(Set(csa17),Set(-51))
+(Set(!csa17),Set(51))
+
+Some(Vector(Set(sa162, sa160)))
+Some(Vector(Set(!sa160), Set(!sa162)))
+(Set(sa162, sa160),Set(-15, -67))
+(Set(!sa160),Set(67))
+(Set(!sa162),Set(15))
+
+Some(Vector(Set(!sa164, sa200), Set(!sa164, !sa200, sa198), Set(sa164)))
+Some(Vector(Set(!sa164, !sa200, !sa198)))
+(Set(!sa164, sa200),Set(62, -48))
+(Set(!sa164, !sa200, sa198),Set(62, 48, -65))
+(Set(sa164),Set(-62))
+(Set(!sa164, !sa200, !sa198),Set(62, 48, 65))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(csa22)))
+Some(Vector(Set(!csa22)))
+(Set(csa22),Set(-7))
+(Set(!csa22),Set(7))
+
+Some(Vector(Set(sa192)))
+Some(Vector(Set(!sa192)))
+(Set(sa192),Set(-17))
+(Set(!sa192),Set(17))
+
+Some(Vector(Set(sa192)))
+Some(Vector(Set(!sa192)))
+(Set(sa192),Set(-17))
+(Set(!sa192),Set(17))
+
+Some(Vector(Set(sa196, sa194)))
+Some(Vector(Set(!sa194), Set(!sa196)))
+(Set(sa196, sa194),Set(-24, -71))
+(Set(!sa194),Set(71))
+(Set(!sa196),Set(24))
+
+Some(Vector(Set(sa198)))
+Some(Vector(Set(!sa198)))
+(Set(sa198),Set(-65))
+(Set(!sa198),Set(65))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa242)))
+Some(Vector(Set(!sa242)))
+(Set(sa242),Set(-40))
+(Set(!sa242),Set(40))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa72)))
+Some(Vector(Set(!sa72)))
+(Set(sa72),Set(-27))
+(Set(!sa72),Set(27))
+
+Some(Vector(Set(sa72)))
+Some(Vector(Set(!sa72)))
+(Set(sa72),Set(-27))
+(Set(!sa72),Set(27))
+
+Some(Vector(Set(!csa11, sa72), Set(csa11)))
+Some(Vector(Set(!csa11, !sa72)))
+(Set(!csa11, sa72),Set(6, -27))
+(Set(csa11),Set(-6))
+(Set(!csa11, !sa72),Set(6, 27))
+
+Some(Vector(Set(sa242, csa30)))
+Some(Vector(Set(!csa30), Set(!sa242)))
+(Set(sa242, csa30),Set(-40, -50))
+(Set(!csa30),Set(50))
+(Set(!sa242),Set(40))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa200)))
+Some(Vector(Set(!sa200)))
+(Set(sa200),Set(-48))
+(Set(!sa200),Set(48))
+
+Some(Vector(Set(sa164)))
+Some(Vector(Set(!sa164)))
+(Set(sa164),Set(-62))
+(Set(!sa164),Set(62))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(csa11)))
+Some(Vector(Set(!csa11)))
+(Set(csa11),Set(-6))
+(Set(!csa11),Set(6))
+
+Some(Vector(Set(sa72)))
+Some(Vector(Set(!sa72)))
+(Set(sa72),Set(-27))
+(Set(!sa72),Set(27))
+
+Some(Vector(Set(!sa354)))
+Some(Vector(Set(sa354)))
+(Set(!sa354),Set(53))
+(Set(sa354),Set(-53))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!csa5, sa89, sa97), Set(csa5, sa89)))
+Some(Vector(Set(!csa5, !sa97), Set(!sa89)))
+(Set(!csa5, sa89, sa97),Set(26, -38, -42))
+(Set(csa5, sa89),Set(-26, -38))
+(Set(!csa5, !sa97),Set(26, 42))
+(Set(!sa89),Set(38))
+
+Some(Vector(Set(!csa5, sa89, sa97), Set(csa5, sa89)))
+Some(Vector(Set(!csa5, !sa97), Set(!sa89)))
+(Set(!csa5, sa89, sa97),Set(26, -38, -42))
+(Set(csa5, sa89),Set(-26, -38))
+(Set(!csa5, !sa97),Set(26, 42))
+(Set(!sa89),Set(38))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa103)))
+Some(Vector(Set(!sa103)))
+(Set(sa103),Set(-45))
+(Set(!sa103),Set(45))
+Map(csa50 -> 1, csa48 -> 2, sa321 -> 3, sa143 -> 4, sa40 -> 5, csa11 -> 6, csa22 -> 7, csa15 -> 8, sa124 -> 9, sa105 -> 10, sa110 -> 11, sa347 -> 12, csa49 -> 13, sa91 -> 14, sa162 -> 15, csa33 -> 16, sa192 -> 17, csa12 -> 18, sa147 -> 19, sa125 -> 20, sa27 -> 21, csa23 -> 22, csa16 -> 23, sa196 -> 24, sa141 -> 25, csa5 -> 26, sa72 -> 27, csa45 -> 28, csa42 -> 29, sa102 -> 30, sa166 -> 31, sa67 -> 32, sa90 -> 33, csa39 -> 34, sa301 -> 35, csa20 -> 36, sa155 -> 37, sa89 -> 38, sa31 -> 39, sa242 -> 40, sa140 -> 41, sa97 -> 42, sa298 -> 43, sa178 -> 44, sa103 -> 45, csa41 -> 46, csa46 -> 47, sa200 -> 48, sa274 -> 49, csa30 -> 50, csa17 -> 51, csa52 -> 52, sa354 -> 53, csa19 -> 54, csa4 -> 55, sa238 -> 56, sa355 -> 57, sa100 -> 58, sa138 -> 59, sa69 -> 60, sa153 -> 61, sa164 -> 62, sa343 -> 63, sa145 -> 64, sa198 -> 65, sa303 -> 66, sa160 -> 67, sa235 -> 68, sa88 -> 69, csa47 -> 70, sa194 -> 71, sa94 -> 72, sa243 -> 73)
+p cnf 73 166
+-18 -27 6 0
+-18 6 53 -62 27 0
+27 -53 -6 0
+27 62 -6 0
+18 -6 0
+-60 -69 18 0
+69 -18 0
+60 -18 0
+-33 -10 8 0
+10 -8 0
+33 -8 0
+-26 46 -9 23 0
+9 -23 0
+-46 -23 0
+26 -23 0
+-23 -20 51 0
+20 -51 0
+23 -51 0
+-11 54 0
+11 -54 0
+-37 -30 36 0
+30 -36 0
+37 -36 0
+-26 -44 7 0
+44 -7 0
+26 -7 0
+70 -20 22 0
+70 -9 20 22 0
+-70 22 0
+70 9 20 -22 0
+-27 -68 50 0
+68 -50 0
+27 -50 0
+28 -57 16 0
+-28 -57 -46 16 0
+-28 46 -38 16 0
+46 38 -57 16 -28 0
+57 38 -16 0
+57 -46 -16 0
+28 57 -16 0
+57 -21 55 -6 -34 62 0
+-57 55 -6 -34 62 0
+6 27 -57 55 -34 62 0
+-27 57 6 -21 55 -34 62 0
+34 55 0
+-27 6 -57 55 -34 62 0
+-62 -21 55 -6 -34 0
+-27 6 -62 -21 55 -34 0
+21 -34 57 -55 0
+57 6 -55 27 -34 0
+6 -55 -62 27 -34 0
+21 -34 -62 -55 0
+-34 -29 46 0
+29 -46 0
+34 -46 0
+-43 -49 29 0
+49 -29 0
+43 -29 0
+-40 -56 28 0
+56 -28 0
+40 -28 0
+-33 -3 47 0
+3 -47 0
+33 -47 0
+-30 -47 70 0
+47 -70 0
+30 -70 0
+-55 -35 2 0
+35 -2 0
+55 -2 0
+46 -9 -2 13 0
+2 -13 0
+9 -13 0
+-46 -13 0
+6 -32 -55 26 0
+-32 6 -5 26 55 0
+-6 -39 -55 26 0
+-6 -39 55 26 0
+-32 -5 39 72 26 55 -6 0
+-72 -55 39 26 -6 0
+-32 -55 39 72 26 -6 0
+-72 39 26 55 -6 0
+5 -26 39 72 55 0
+5 6 55 -26 0
+6 32 -26 0
+32 39 72 -26 0
+-20 -13 1 0
+13 -1 0
+20 -1 0
+-48 -12 52 0
+12 -52 0
+48 -52 0
+-19 58 0
+19 -58 0
+-58 30 0
+58 -30 0
+-8 11 0
+8 -11 0
+-54 59 0
+54 -59 0
+-54 41 0
+54 -41 0
+-41 25 0
+41 -25 0
+-36 4 0
+36 -4 0
+-4 64 0
+4 -64 0
+-14 19 0
+14 -19 0
+-61 37 0
+61 -37 0
+-51 67 0
+51 -67 0
+-51 15 0
+51 -15 0
+-15 -67 62 0
+67 -62 0
+15 -62 0
+62 -48 31 0
+62 48 -65 31 0
+-62 31 0
+62 48 65 -31 0
+-7 17 0
+7 -17 0
+-17 71 0
+17 -71 0
+-17 24 0
+17 -24 0
+-24 -71 65 0
+71 -65 0
+24 -65 0
+-65 48 0
+65 -48 0
+-40 73 0
+40 -73 0
+-27 49 0
+27 -49 0
+-27 43 0
+27 -43 0
+6 -27 35 0
+-6 35 0
+6 27 -35 0
+-40 -50 66 0
+50 -66 0
+40 -66 0
+-48 63 0
+48 -63 0
+-62 12 0
+62 -12 0
+-6 32 0
+6 -32 0
+-27 60 0
+27 -60 0
+53 27 0
+-53 -27 0
+26 -38 -42 33 0
+-26 -38 33 0
+26 42 -33 0
+38 -33 0
+26 -38 -42 14 0
+-26 -38 14 0
+26 42 -14 0
+38 -14 0
+-45 42 0
+45 -42 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.U747YfuynX.cnf'
+c opening file to read '/tmp/tmp.U747YfuynX.cnf'
+c found 'p cnf 73 166' header
+c parsed 166 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  166  73 100%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  166  73 100%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  166  73 100%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 -36 -37 -38 -39 -40
+v -41 -42 -43 -44 -45 -46 -47 -48 -49 -50 -51 -52 53 -54 55 -56 -57 -58 -59
+v -60 -61 -62 -63 -64 -65 -66 -67 -68 -69 -70 -71 -72 -73 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   66.55% parse
+c         0.00   51.06% search
+c         0.00   50.70% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   41.28% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.00    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=139
++ wait 139
++ bdd_minisat_all_release /tmp/tmp.U747YfuynX.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.U747YfuynX.cnf
+variables         :           73
+cutwidth          :          118
+restarts          :            1
+conflicts         :           30           (      644 / sec      )
+decisions         :        42193           (   905235 / sec      )
+propagations      :        87566           (  1878696 / sec      )
+inspects          :       170840           (  3665308 / sec      )
+conflict literals :           93           (     5.10 % deleted  )
+cpu time (solve)  :         0.05 sec	
+refreshes         :            0
+|obdd|            :       301770
+cache hits        :        20470
+cache lookup      :        41584
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :       524288
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 Executable_file_for_CaSQ_derived_mast_cell_activation_model_BCC.bnet"
+	User time (seconds): 1.08
+	System time (seconds): 0.35
+	Percent of CPU this job got: 145%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.99
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 162188
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 458
+	Minor (reclaiming a frame) page faults: 43878
+	Voluntary context switches: 3891
+	Involuntary context switches: 55
+	Swaps: 0
+	File system inputs: 77968
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.3s

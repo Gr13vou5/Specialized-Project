@@ -3,7 +3,7 @@ from __future__ import annotations
 import os
 from enum import Enum, unique
 
-LOGS_DIR = "../logs"
+LOGS_DIR = os.environ.get("LOGS_DIR", "../logs")
 RESULTS_DIRNAME = "results"
 
 

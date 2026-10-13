@@ -15,7 +15,7 @@ RESULTS_DIR = Path(RESULTS_DIRNAME)
 NUM_FIXED_POINTS_THRESHOLD = (10**10, 1000, 0)
 NUM_VARS_THRESHOLD = (2000, 1000, 100, 0)
 
-INVALID = {"", "TIMEOUT", "OUT_OF_MEMORY", "ERROR", "-"}
+INVALID = {"", "TIMEOUT", "OUT_OF_MEMORY", "ERROR", "NOT_RUN", "REFUSED", "-"}
 
 # ------------------------------------------------------------
 # Helpers

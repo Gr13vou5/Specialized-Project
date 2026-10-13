@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import glob
 import re
+import sys
 from dataclasses import dataclass
 from enum import Enum, unique
 from typing import Optional
@@ -28,6 +29,7 @@ class AbortType(Enum):
     TIMEOUT = "TIMEOUT"
     OUT_OF_MEMORY = "OUT_OF_MEMORY"
     UNKNOWN_ERROR = "ERROR"
+    NOT_RUN = "NOT_RUN"
 
 
 @dataclass
@@ -51,26 +53,40 @@ def parse_time_command_output(output: str) -> tuple[float, int]:
     return cpu, mem
 
 
+def memory_threshold(content: str) -> float:
+    m = re.search(r"^# Limits: .*memory_kb=(\d+)", content, flags=re.MULTILINE)
+    return 0.75 * int(m.group(1)) if m else MEMORY_THRESHOLD
+
+
 def parse_log_default(log_file: str, p: re.Pattern[str]) -> Result:
     with open(log_file, "r") as f:
         content_raw = f.read()
 
     res = Result()
 
+    if "# Runner: wall-clock limit" in content_raw:
+        return Result(abort_type=AbortType.TIMEOUT)
+    if not re.search(r"^\s+User time \(seconds\):", content_raw, flags=re.MULTILINE):
+        return Result(abort_type=AbortType.UNKNOWN_ERROR)  # no time -v report
+
     fixed_points_m = p.search(content_raw)
     cpu, mem = parse_time_command_output(content_raw)
-    if fixed_points_m:
+    if fixed_points_m and cpu <= TIMEOUT_SEC:
         res.num_fixed_points = int(fixed_points_m.group(1))
-        assert cpu <= TIMEOUT_SEC
         res.cpu = cpu
     elif cpu > TIMEOUT_SEC - TIMEOUT_SEC_MARGIN:
         res.abort_type = AbortType.TIMEOUT
-    elif mem > MEMORY_THRESHOLD:
+    elif mem > memory_threshold(content_raw) or "OutOfMemoryError" in content_raw:
         res.abort_type = AbortType.OUT_OF_MEMORY
     else:
         res.abort_type = AbortType.UNKNOWN_ERROR
 
     return res
+
+
+def find_log(pattern: str) -> Optional[str]:
+    hits = sorted(glob.glob(pattern, recursive=True))
+    return hits[0] if hits else None
 
 
 def parse_pyboolnet_log(log_file: str) -> Result:
@@ -156,13 +172,22 @@ def parse_proposed_bmsa_log(log_file: str) -> Result:
     with open(log_file, "r") as f:
         content_raw = f.read()
 
-    cpu, _ = parse_time_command_output(content_raw)
-
-    if re.search(r"^s UNSATISFIABLE", content_raw, flags=re.MULTILINE):
-        assert cpu <= TIMEOUT_SEC
-        return Result(0, cpu)
+    if re.search(r"^\s+User time \(seconds\):", content_raw, flags=re.MULTILINE):
+        cpu, _ = parse_time_command_output(content_raw)
+        if re.search(r"^s UNSATISFIABLE", content_raw, flags=re.MULTILINE) and cpu <= TIMEOUT_SEC:
+            return Result(0, cpu)
 
     return parse_log_default(log_file, fixed_points_patterns["bmsa"])
+
+
+if not glob.glob(f"{LOGS_DIR}/**/*.log", recursive=True):
+    print(f"warning: no .log files under {LOGS_DIR}; every run will count as NOT_RUN "
+          "(the original logs are .log.7z archives and must be extracted first)", file=sys.stderr)
+
+
+def parse_or_not_run(pattern: str, parse, *args) -> Result:
+    log_file = find_log(pattern)
+    return parse(log_file, *args) if log_file else Result(abort_type=AbortType.NOT_RUN)
 
 
 def parse_bbm_instances() -> dict[str, dict[Solver, Result]]:
@@ -172,15 +197,15 @@ def parse_bbm_instances() -> dict[str, dict[Solver, Result]]:
         d: dict[Solver, Result] = dict()
 
         # fASP
-        d[Solver.FASP_CONJ] = parse_log_default(
-            glob.glob(f"{LOGS_DIR}/fasp_conj/bbm/*{id_}*.log")[0], fixed_points_patterns["fasp"]
+        d[Solver.FASP_CONJ] = parse_or_not_run(
+            f"{LOGS_DIR}/fasp_conj/bbm/*{id_}*.log", parse_log_default, fixed_points_patterns["fasp"]
         )
-        d[Solver.FASP_SRC] = parse_log_default(
-            glob.glob(f"{LOGS_DIR}/fasp_src/bbm/*{id_}*.log")[0], fixed_points_patterns["fasp"]
+        d[Solver.FASP_SRC] = parse_or_not_run(
+            f"{LOGS_DIR}/fasp_src/bbm/*{id_}*.log", parse_log_default, fixed_points_patterns["fasp"]
         )
 
         # Proposed BMSA
-        d[Solver.HYBRID_BMSA] = parse_proposed_bmsa_log(glob.glob(f"{LOGS_DIR}/hybrid_bmsa/bbm/*id-{id_}*/*.log")[0])
+        d[Solver.HYBRID_BMSA] = parse_or_not_run(f"{LOGS_DIR}/hybrid_bmsa/bbm/*id-{id_}*/*.log", parse_proposed_bmsa_log)
 
         res_all[id_] = d
 
@@ -194,16 +219,16 @@ def parse_fasp_instances() -> dict[str, dict[Solver, Result]]:
         d: dict[Solver, Result] = dict()
 
         # fASP
-        d[Solver.FASP_CONJ] = parse_log_default(
-            glob.glob(f"{LOGS_DIR}/fasp_conj/fasp/**/{id_}.bnet.log", recursive=True)[0], fixed_points_patterns["fasp"]
+        d[Solver.FASP_CONJ] = parse_or_not_run(
+            f"{LOGS_DIR}/fasp_conj/fasp/**/{id_}.bnet.log", parse_log_default, fixed_points_patterns["fasp"]
         )
-        d[Solver.FASP_SRC] = parse_log_default(
-            glob.glob(f"{LOGS_DIR}/fasp_src/fasp/**/{id_}.bnet.log", recursive=True)[0], fixed_points_patterns["fasp"]
+        d[Solver.FASP_SRC] = parse_or_not_run(
+            f"{LOGS_DIR}/fasp_src/fasp/**/{id_}.bnet.log", parse_log_default, fixed_points_patterns["fasp"]
         )
 
         # Proposed BMSA
-        d[Solver.HYBRID_BMSA] = parse_proposed_bmsa_log(
-            glob.glob(f"{LOGS_DIR}/hybrid_bmsa/fasp/**/{id_}.bnet.log", recursive=True)[0]
+        d[Solver.HYBRID_BMSA] = parse_or_not_run(
+            f"{LOGS_DIR}/hybrid_bmsa/fasp/**/{id_}.bnet.log", parse_proposed_bmsa_log
         )
 
 

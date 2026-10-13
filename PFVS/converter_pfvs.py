@@ -6,6 +6,7 @@ from pathlib import Path
 csv.field_size_limit(sys.maxsize)
 
 VAR_RE = re.compile(r"\b[a-zA-Z][a-zA-Z0-9_]*\b")
+NAME_RE = re.compile(r"\b[A-Za-z0-9_]+\b")
 
 def convert_bnet_to_bn_pfvs(bnet_file: Path, bn_file: Path):
     with open(bnet_file, newline="") as f:
@@ -27,13 +28,12 @@ def convert_bnet_to_bn_pfvs(bnet_file: Path, bn_file: Path):
                 var_set.add(v)
 
     mapping = {v: f"x{i+1}" for i, v in enumerate(variables)}
+    rename = lambda m: mapping.get(m.group(0), m.group(0))
 
     with open(bn_file, "w") as out:
         for target, formula in rows:
             lhs = mapping[target]
-            rhs = formula
-            for orig, new in mapping.items():
-                rhs = re.sub(rf"\b{re.escape(orig)}\b", new, rhs)
+            rhs = NAME_RE.sub(rename, formula)
             out.write(f"{lhs} = {rhs}\n")
 
 def convert_path(path):

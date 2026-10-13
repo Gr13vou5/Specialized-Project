@@ -63,7 +63,6 @@ NAME_RE = re.compile(r"[A-Za-z0-9_]+")
 
 DEFAULT_MAX_EXPANDED_NODES = 15 * 10**6
 
-# default input/output: the ICCMA 2019 ADF instances used by BAss (arXiv:2604.27576)
 REPO_ROOT = Path(__file__).resolve().parent.parent
 ICCMA19_ADF_DIR = REPO_ROOT / "benchmarks" / "ADF" / "ICCMA2019" / "adf"
 ICCMA19_BNET_DIR = REPO_ROOT / "benchmarks" / "ADF" / "ICCMA2019" / "bnet"

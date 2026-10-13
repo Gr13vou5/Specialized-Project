@@ -1,0 +1,102 @@
+targets, factors
+v_a6, ((!v_a36 & !v_a1) | v_a65)
+v_a100, !v_a14
+v_a8, (!v_a28 & !v_a1)
+v_a98, !v_a52
+v_a49, v_a1
+v_a17, v_a0
+v_a65, v_a6
+v_a82, v_a35
+v_a80, v_a35
+v_a33, (v_a16 & v_a44 & (v_a85 | v_a77))
+v_a64, !v_a14
+v_a96, v_a29
+v_a26, (v_a52 | !v_a15)
+v_a88, v_a86
+v_a30, (v_a15 | v_a38 | v_a94 | v_a71)
+v_a89, (!v_a93 | v_a81)
+v_a18, !v_a14
+v_a42, v_a2
+v_a10, v_a1
+v_a48, ((v_a61 | !v_a97) & !v_a11 & !v_a78)
+v_a11, (!v_a48 & !v_a1)
+v_a32, v_a0
+v_a69, v_a56
+v_a0, (((v_a1 | v_a83) & (!v_a31 | !v_a17 | !v_a32) & !v_a12 & !v_a7) | ((((!v_a29 & !v_a43) | (v_a29 & v_a43)) & v_a20) | (!((!v_a29 & !v_a43) | (v_a29 & v_a43)) & !v_a20)))
+v_a28, (!v_a86 & (!v_a55 | !v_a8) & v_a39)
+v_a35, (!v_a82 | v_a14 | v_a76 | (!v_a80 & !v_a74))
+v_a31, !v_a0
+v_a24, (!v_a14 | !v_a84)
+v_a1, (!v_a49 & !v_a72 & !v_a95 & !v_a47 & !v_a27 & !v_a45 & !v_a68 & !v_a37 & v_a41 & v_a81 & v_a8 & v_a13 & (!v_a2 | !v_a4 | !v_a56 | !v_a11 | !v_a5 | !v_a0 | !v_a87) & ((((v_a6 & v_a10) | (!v_a6 & !v_a10)) & !v_a15) | (!((v_a6 & v_a10) | (!v_a6 & !v_a10)) & v_a15)) & (v_a3 | v_a73 | v_a40))
+v_a36, (v_a6 & !v_a60)
+v_a7, ((v_a53 | v_a0) & !v_a62)
+v_a72, v_a1
+v_a71, !v_a30
+v_a95, v_a1
+v_a5, ((v_a54 & !v_a9) | !v_a1 | !v_a66)
+v_a94, v_a30
+v_a81, (!v_a89 & v_a1)
+v_a78, !v_a48
+v_a45, v_a1
+v_a73, (v_a1 | v_a91)
+v_a53, v_a7
+v_a14, (((v_a35 | !v_a24 | !v_a12 | !v_a18 | !v_a90 | !v_a50) & ((!v_a57 & !v_a100) | (v_a57 & v_a100)) & v_a21 & v_a22 & v_a46 & v_a59) | !v_a64)
+v_a70, !v_a9
+v_a43, !v_a0
+v_a90, v_a14
+v_a92, !v_a29
+v_a67, !v_a9
+v_a2, (v_a42 | v_a1)
+v_a97, !v_a48
+v_a59, !v_a14
+v_a13, !v_a1
+v_a40, v_a1
+v_a15, ((v_a30 & v_a19 & v_a26) | !v_a58 | !v_a1)
+v_a66, v_a5
+v_a9, ((v_a70 | v_a23) & !v_a25 & !v_a5 & !v_a67)
+v_a38, v_a30
+v_a91, !v_a73
+v_a63, v_a29
+v_a44, !v_a33
+v_a62, !v_a7
+v_a60, v_a36
+v_a79, !v_a57
+v_a23, v_a9
+v_a87, v_a1
+v_a52, (v_a26 & !v_a98)
+v_a20, !v_a0
+v_a37, v_a1
+v_a74, !v_a35
+v_a68, !v_a1
+v_a22, (!v_a75 & v_a14)
+v_a86, (!v_a28 & v_a88)
+v_a47, v_a1
+v_a61, v_a48
+v_a77, !v_a33
+v_a25, !v_a9
+v_a19, !v_a15
+v_a57, (v_a14 & !v_a79)
+v_a76, v_a35
+v_a39, !v_a28
+v_a84, !v_a24
+v_a34, !v_a16
+v_a55, v_a28
+v_a58, v_a15
+v_a50, !v_a14
+v_a41, !v_a1
+v_a93, v_a89
+v_a99, !v_a29
+v_a51, v_a21
+v_a3, !v_a1
+v_a54, !v_a5
+v_a12, ((v_a16 | !v_a14) & v_a0)
+v_a46, !v_a14
+v_a83, !v_a0
+v_a4, v_a1
+v_a56, (!v_a69 | !v_a1)
+v_a29, ((((v_a99 & v_a96) | (!v_a99 & !v_a96)) | v_a92) & (v_a63 | v_a0))
+v_a85, v_a33
+v_a27, v_a1
+v_a21, (v_a14 & v_a51)
+v_a75, !v_a22
+v_a16, (!v_a33 | (v_a34 & v_a12))

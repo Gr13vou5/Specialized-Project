@@ -1,0 +1,14 @@
+s(a2_0).
+s(a1_0).
+s(a3_2).
+s(a5_2).
+s(a0_0).
+s(a4_0).
+s(a6_2).
+ac(a2_0,and(and(or(a6_2,a1_0),a5_2),neg(a4_0))).
+ac(a1_0,and(and(or(neg(a5_2),neg(a3_2)),a0_0),neg(a2_0))).
+ac(a3_2,and(xor(neg(a6_2),neg(a5_2)),and(a4_0,a1_0))).
+ac(a5_2,or(or(and(a2_0,a1_0),neg(a6_2)),neg(a3_2))).
+ac(a0_0,and(a1_0,neg(a6_2))).
+ac(a4_0,or(a2_0,a3_2)).
+ac(a6_2,and(and(and(neg(a0_0),neg(a5_2)),neg(a2_0)),neg(a3_2))).

@@ -1,0 +1,332 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:09:34 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_187.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-163 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_187.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_187.bnet --cnf /tmp/tmp.7qfQK8wRGb.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_187.bnet, cnfFileName = /tmp/tmp.7qfQK8wRGb.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_Foxl2, v_Gata4), Set(!v_Foxl2, v_Sox9_b1, !v_Gata4, v_Sf1_b1, v_Sox9_b2)))
+Some(Vector(Set(!v_Sox9_b1, !v_Gata4), Set(!v_Sox9_b2, !v_Gata4), Set(!v_Sf1_b1, !v_Gata4), Set(v_Foxl2)))
+(Set(!v_Foxl2, v_Gata4),Set(4, -17))
+(Set(!v_Foxl2, v_Sox9_b1, !v_Gata4, v_Sf1_b1, v_Sox9_b2),Set(-8, -11, 17, -1, 4))
+(Set(!v_Sox9_b1, !v_Gata4),Set(1, 17))
+(Set(!v_Sox9_b2, !v_Gata4),Set(8, 17))
+(Set(!v_Sf1_b1, !v_Gata4),Set(11, 17))
+(Set(v_Foxl2),Set(-4))
+
+Some(Vector(Set(v_Sox9_b1, v_Sox9_b2)))
+Some(Vector())
+(Set(v_Sox9_b1, v_Sox9_b2),Set(-1, -8))
+
+Some(Vector(Set(v_AF, !v_Dmrt1)))
+Some(Vector(Set(v_Dmrt1), Set(!v_AF)))
+(Set(v_AF, !v_Dmrt1),Set(-16, 5))
+(Set(v_Dmrt1),Set(-5))
+(Set(!v_AF),Set(16))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Wt1)))
+Some(Vector(Set(!v_Wt1, !v_Sf1_b2)))
+(Set(v_Wt1),Set(-9))
+(Set(!v_Wt1, !v_Sf1_b2),Set(9, 7))
+
+Some(Vector(Set(v_Wt1, v_Sf1_b1, v_Sox9_b1, v_Sox9_b2)))
+Some(Vector(Set(!v_Sox9_b2), Set(!v_Sox9_b1), Set(!v_Sf1_b1), Set(!v_Wt1)))
+(Set(v_Wt1, v_Sf1_b1, v_Sox9_b1, v_Sox9_b2),Set(-9, -11, -1, -8))
+(Set(!v_Sox9_b2),Set(8))
+(Set(!v_Sox9_b1),Set(1))
+(Set(!v_Sf1_b1),Set(11))
+(Set(!v_Wt1),Set(9))
+
+Some(Vector(Set(!v_Foxl2, !v_b_cat_b1, v_Sf1_b1), Set(!v_Foxl2, v_b_cat_b1, v_Sf1_b1, !v_b_cat_b2)))
+Some(Vector(Set(!v_Sox9_b2, v_b_cat_b1, v_b_cat_b2), Set(v_Foxl2, !v_Sox9_b2), Set(!v_Sox9_b2, !v_Sf1_b1)))
+(Set(!v_Foxl2, !v_b_cat_b1, v_Sf1_b1),Set(4, 10, -11))
+(Set(!v_Foxl2, v_b_cat_b1, v_Sf1_b1, !v_b_cat_b2),Set(-11, -10, 4, 15))
+(Set(!v_Sox9_b2, v_b_cat_b1, v_b_cat_b2),Set(8, -10, -15))
+(Set(v_Foxl2, !v_Sox9_b2),Set(-4, 8))
+(Set(!v_Sox9_b2, !v_Sf1_b1),Set(8, 11))
+
+Some(Vector(Set(!v_Sry, !v_Foxl2, v_Sox9_b1, v_Sf1_b1, !v_b_cat_b1), Set(v_Sry, !v_Foxl2, v_b_cat_b1, v_Sox9_b1, v_Sf1_b1, !v_b_cat_b2), Set(v_Sry, !v_Foxl2, v_Sox9_b1, v_Sf1_b1, !v_b_cat_b1)))
+Some(Vector(Set(v_b_cat_b1, v_b_cat_b2), Set(v_Foxl2), Set(v_b_cat_b1, !v_Sry), Set(!v_Sox9_b1), Set(!v_Sf1_b1)))
+(Set(!v_Sry, !v_Foxl2, v_Sox9_b1, v_Sf1_b1, !v_b_cat_b1),Set(10, 14, -11, -1, 4))
+(Set(v_Sry, !v_Foxl2, v_b_cat_b1, v_Sox9_b1, v_Sf1_b1, !v_b_cat_b2),Set(-11, -10, -1, -14, 4, 15))
+(Set(v_Sry, !v_Foxl2, v_Sox9_b1, v_Sf1_b1, !v_b_cat_b1),Set(10, -11, -1, -14, 4))
+(Set(v_b_cat_b1, v_b_cat_b2),Set(-10, -15))
+(Set(v_Foxl2),Set(-4))
+(Set(v_b_cat_b1, !v_Sry),Set(-10, 14))
+(Set(!v_Sox9_b1),Set(1))
+(Set(!v_Sf1_b1),Set(11))
+
+Some(Vector(Set(v_Y, v_AS, !v_Sox9_b1, v_Sf1_b1, v_Wt1, v_Gata4), Set(v_Y, v_AS, v_Sox9_b1, !v_Sox9_b2, v_Sf1_b1, v_Wt1, v_Gata4)))
+Some(Vector(Set(v_Sox9_b1, v_Sox9_b2), Set(!v_Y), Set(!v_Wt1), Set(!v_Gata4), Set(!v_AS), Set(!v_Sf1_b1)))
+(Set(v_Y, v_AS, !v_Sox9_b1, v_Sf1_b1, v_Wt1, v_Gata4),Set(-18, -12, 1, -11, -9, -17))
+(Set(v_Y, v_AS, v_Sox9_b1, !v_Sox9_b2, v_Sf1_b1, v_Wt1, v_Gata4),Set(-18, -12, -11, -1, -9, 8, -17))
+(Set(v_Sox9_b1, v_Sox9_b2),Set(-1, -8))
+(Set(!v_Y),Set(18))
+(Set(!v_Wt1),Set(9))
+(Set(!v_Gata4),Set(17))
+(Set(!v_AS),Set(12))
+(Set(!v_Sf1_b1),Set(11))
+
+Some(Vector())
+Some(Vector(Set(v_IW, !v_Wnt4_b2)))
+(Set(v_IW, !v_Wnt4_b2),Set(-13, 6))
+
+Some(Vector(Set(!v_IW, !v_Fgf9_b1, v_Wnt4_b1)))
+Some(Vector(Set(!v_Wnt4_b1), Set(v_Fgf9_b1), Set(v_IW)))
+(Set(!v_IW, !v_Fgf9_b1, v_Wnt4_b1),Set(13, 3, -2))
+(Set(!v_Wnt4_b1),Set(2))
+(Set(v_Fgf9_b1),Set(-3))
+(Set(v_IW),Set(-13))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_Sox9_b1, v_Wnt4_b1), Set(v_Sox9_b1, v_Wnt4_b1, !v_Sox9_b2)))
+Some(Vector(Set(!v_Wnt4_b1, !v_b_cat_b2), Set(v_Sox9_b1, v_Sox9_b2, !v_b_cat_b2)))
+(Set(!v_Sox9_b1, v_Wnt4_b1),Set(1, -2))
+(Set(v_Sox9_b1, v_Wnt4_b1, !v_Sox9_b2),Set(-1, -2, 8))
+(Set(!v_Wnt4_b1, !v_b_cat_b2),Set(2, 15))
+(Set(v_Sox9_b1, v_Sox9_b2, !v_b_cat_b2),Set(-1, -8, 15))
+
+Some(Vector(Set(!v_Sox9_b1, v_Wnt4_b1, v_Wnt4_b2, v_b_cat_b1), Set(v_Wnt4_b2, v_b_cat_b1, v_Wnt4_b1, v_Sox9_b1, !v_Sox9_b2)))
+Some(Vector(Set(!v_Wnt4_b2), Set(!v_b_cat_b1), Set(!v_Wnt4_b1), Set(v_Sox9_b1, v_Sox9_b2)))
+(Set(!v_Sox9_b1, v_Wnt4_b1, v_Wnt4_b2, v_b_cat_b1),Set(1, -2, -6, -10))
+(Set(v_Wnt4_b2, v_b_cat_b1, v_Wnt4_b1, v_Sox9_b1, !v_Sox9_b2),Set(-10, -1, 8, -6, -2))
+(Set(!v_Wnt4_b2),Set(6))
+(Set(!v_b_cat_b1),Set(10))
+(Set(!v_Wnt4_b1),Set(2))
+(Set(v_Sox9_b1, v_Sox9_b2),Set(-1, -8))
+Map(v_Sox9_b1 -> 1, v_Wnt4_b1 -> 2, v_Fgf9_b1 -> 3, v_Foxl2 -> 4, v_Dmrt1 -> 5, v_Wnt4_b2 -> 6, v_Sf1_b2 -> 7, v_Sox9_b2 -> 8, v_Wt1 -> 9, v_b_cat_b1 -> 10, v_Sf1_b1 -> 11, v_AS -> 12, v_IW -> 13, v_Sry -> 14, v_b_cat_b2 -> 15, v_AF -> 16, v_Gata4 -> 17, v_Y -> 18)
+p cnf 18 53
+4 -17 5 0
+5 -8 -11 17 -1 4 0
+1 17 -5 0
+8 17 -5 0
+11 17 -5 0
+-4 -5 0
+-1 -8 3 0
+-16 5 4 0
+-5 -4 0
+16 -4 0
+-9 11 0
+9 7 -11 0
+-8 -11 7 -1 -9 0
+8 -7 0
+1 -7 0
+11 -7 0
+9 -7 0
+4 10 -11 1 0
+1 -11 -10 4 15 0
+8 -10 -15 -1 0
+-4 8 -1 0
+8 11 -1 0
+10 14 -11 -1 8 4 0
+-11 -10 -1 -14 8 4 15 0
+10 -11 -1 -14 8 4 0
+-10 -15 -8 0
+-4 -8 0
+-10 14 -8 0
+1 -8 0
+11 -8 0
+14 -18 -12 1 -11 -9 -17 0
+14 -18 -12 -11 -1 -9 8 -17 0
+-1 -8 -14 0
+18 -14 0
+9 -14 0
+17 -14 0
+12 -14 0
+11 -14 0
+-13 6 -2 0
+13 3 -2 6 0
+2 -6 0
+-3 -6 0
+-13 -6 0
+1 -2 10 0
+-1 -2 8 10 0
+2 15 -10 0
+-1 -8 15 -10 0
+1 -10 -6 -2 15 0
+-10 -1 8 -6 -2 15 0
+6 -15 0
+10 -15 0
+2 -15 0
+-1 -8 -15 0
++ exit_status=0
++ set +x
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.7qfQK8wRGb.cnf'
+c opening file to read '/tmp/tmp.7qfQK8wRGb.cnf'
+c found 'p cnf 18 53' header
+c parsed 53 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   53  18 100%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   53  18 100%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   53  18 100%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   76.85% parse
+c         0.00   29.63% search
+c         0.00   27.78% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   30.86% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            3.88    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=53
++ wait 53
++ bdd_minisat_all_release /tmp/tmp.7qfQK8wRGb.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.7qfQK8wRGb.cnf
+variables         :           18
+cutwidth          :           38
+restarts          :            1
+conflicts         :            6           (      inf / sec      )
+decisions         :          133           (      inf / sec      )
+propagations      :          250           (      inf / sec      )
+inspects          :          459           (      inf / sec      )
+conflict literals :           10           (    23.08 % deleted  )
+cpu time (solve)  :         0.00 sec	
+refreshes         :            0
+|obdd|            :          349
+cache hits        :           51
+cache lookup      :          119
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :          238
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_187.bnet"
+	User time (seconds): 0.98
+	System time (seconds): 0.16
+	Percent of CPU this job got: 166%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.68
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 155092
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 35975
+	Voluntary context switches: 2319
+	Involuntary context switches: 37
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.2s

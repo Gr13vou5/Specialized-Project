@@ -1,0 +1,429 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:08:52 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_228.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-123 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_228.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_228.bnet --cnf /tmp/tmp.7ehseEDcGk.cnf -h3
++ wait 11
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_228.bnet, cnfFileName = /tmp/tmp.7ehseEDcGk.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector(Set(v_pdk1, !v_x5p, !v_trb3)))
+Some(Vector(Set(v_trb3), Set(v_x5p), Set(!v_pdk1)))
+(Set(v_pdk1, !v_x5p, !v_trb3),Set(-23, 27, 8))
+(Set(v_trb3),Set(-8))
+(Set(v_x5p),Set(-27))
+(Set(!v_pdk1),Set(23))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_ins, v_pdk1)))
+Some(Vector(Set(!v_pdk1), Set(!v_ins)))
+(Set(v_ins, v_pdk1),Set(-4, -23))
+(Set(!v_pdk1),Set(23))
+(Set(!v_ins),Set(4))
+
+Some(Vector(Set(v_pka), Set(v_ins)))
+Some(Vector(Set(!v_ins, !v_pka)))
+(Set(v_pka),Set(-6))
+(Set(v_ins),Set(-4))
+(Set(!v_ins, !v_pka),Set(4, 6))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_akt, !v_pka, v_basal_act)))
+Some(Vector(Set(!v_basal_act), Set(v_pka), Set(v_akt)))
+(Set(!v_akt, !v_pka, v_basal_act),Set(25, 6, -24))
+(Set(!v_basal_act),Set(24))
+(Set(v_pka),Set(-6))
+(Set(v_akt),Set(-25))
+
+Some(Vector(Set(!v_pka, v_basal_act)))
+Some(Vector(Set(!v_basal_act), Set(v_pka)))
+(Set(!v_pka, v_basal_act),Set(6, -24))
+(Set(!v_basal_act),Set(24))
+(Set(v_pka),Set(-6))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_ins, v_basal_exp), Set(!v_ins, v_lxra)))
+Some(Vector(Set(!v_lxra, !v_basal_exp), Set(v_ins)))
+(Set(!v_ins, v_basal_exp),Set(4, -1))
+(Set(!v_ins, v_lxra),Set(4, -19))
+(Set(!v_lxra, !v_basal_exp),Set(19, 1))
+(Set(v_ins),Set(-4))
+
+Some(Vector(Set(v_npkcd), Set(v_irs1_py), Set(v_cpkca)))
+Some(Vector(Set(!v_cpkca, !v_irs1_py, !v_npkcd)))
+(Set(v_npkcd),Set(-7))
+(Set(v_irs1_py),Set(-28))
+(Set(v_cpkca),Set(-12))
+(Set(!v_cpkca, !v_irs1_py, !v_npkcd),Set(12, 28, 7))
+
+Some(Vector(Set(v_ins, !v_irs1_pst)))
+Some(Vector(Set(v_irs1_pst), Set(!v_ins)))
+(Set(v_ins, !v_irs1_pst),Set(-4, 9))
+(Set(v_irs1_pst),Set(-9))
+(Set(!v_ins),Set(4))
+
+Some(Vector(Set(v_pgc1a), Set(v_nsrebp1c)))
+Some(Vector(Set(!v_nsrebp1c, !v_pgc1a)))
+(Set(v_pgc1a),Set(-15))
+(Set(v_nsrebp1c),Set(-31))
+(Set(!v_nsrebp1c, !v_pgc1a),Set(31, 15))
+
+Some(Vector(Set(v_lxra_g, v_g6p), Set(v_lxra_g, v_gluc_in)))
+Some(Vector(Set(!v_gluc_in, !v_g6p), Set(!v_lxra_g)))
+(Set(v_lxra_g, v_g6p),Set(-18, -21))
+(Set(v_lxra_g, v_gluc_in),Set(-18, -32))
+(Set(!v_gluc_in, !v_g6p),Set(32, 21))
+(Set(!v_lxra_g),Set(18))
+
+Some(Vector(Set(v_ppara), Set(v_basal_exp)))
+Some(Vector(Set(!v_basal_exp, !v_ppara)))
+(Set(v_ppara),Set(-2))
+(Set(v_basal_exp),Set(-1))
+(Set(!v_basal_exp, !v_ppara),Set(1, 2))
+
+Some(Vector(Set(v_ins, v_cpkca)))
+Some(Vector(Set(!v_cpkca), Set(!v_ins)))
+(Set(v_ins, v_cpkca),Set(-4, -12))
+(Set(!v_cpkca),Set(12))
+(Set(!v_ins),Set(4))
+
+Some(Vector(Set(!v_gsk3, !v_insig2a, v_psrebp1c)))
+Some(Vector(Set(!v_psrebp1c), Set(v_insig2a), Set(v_gsk3)))
+(Set(!v_gsk3, !v_insig2a, v_psrebp1c),Set(13, 5, -10))
+(Set(!v_psrebp1c),Set(10))
+(Set(v_insig2a),Set(-5))
+(Set(v_gsk3),Set(-13))
+
+Some(Vector(Set(v_ins, v_irs1_py)))
+Some(Vector(Set(!v_irs1_py), Set(!v_ins)))
+(Set(v_ins, v_irs1_py),Set(-4, -28))
+(Set(!v_irs1_py),Set(28))
+(Set(!v_ins),Set(4))
+
+Some(Vector(Set(!v_akt, v_pgc1a_g)))
+Some(Vector(Set(!v_pgc1a_g), Set(v_akt)))
+(Set(!v_akt, v_pgc1a_g),Set(25, -30))
+(Set(!v_pgc1a_g),Set(30))
+(Set(v_akt),Set(-25))
+
+Some(Vector(Set(v_creb, v_torc2), Set(v_creb, !v_pdk1)))
+Some(Vector(Set(v_pdk1, !v_torc2), Set(!v_creb)))
+(Set(v_creb, v_torc2),Set(-29, -26))
+(Set(v_creb, !v_pdk1),Set(-29, 23))
+(Set(v_pdk1, !v_torc2),Set(-23, 26))
+(Set(!v_creb),Set(29))
+
+Some(Vector(Set(v_gcg, !v_akt)))
+Some(Vector(Set(v_akt), Set(!v_gcg)))
+(Set(v_gcg, !v_akt),Set(-17, 25))
+(Set(v_akt),Set(-25))
+(Set(!v_gcg),Set(17))
+
+Some(Vector(Set(v_irs1_py, v_ppara_g)))
+Some(Vector(Set(!v_ppara_g), Set(!v_irs1_py)))
+(Set(v_irs1_py, v_ppara_g),Set(-28, -20))
+(Set(!v_ppara_g),Set(20))
+(Set(!v_irs1_py),Set(28))
+
+Some(Vector(Set(v_ppara, v_pgc1a, v_lpin1), Set(v_hnf4a, v_pgc1a, v_lpin1)))
+Some(Vector(Set(!v_lpin1), Set(!v_pgc1a), Set(!v_hnf4a, !v_ppara)))
+(Set(v_ppara, v_pgc1a, v_lpin1),Set(-2, -15, -3))
+(Set(v_hnf4a, v_pgc1a, v_lpin1),Set(-14, -15, -3))
+(Set(!v_lpin1),Set(3))
+(Set(!v_pgc1a),Set(15))
+(Set(!v_hnf4a, !v_ppara),Set(14, 2))
+
+Some(Vector(Set(v_nsrebp1c), Set(v_lxra, v_cpkca, !v_ppara)))
+Some(Vector(Set(v_ppara, !v_nsrebp1c), Set(!v_cpkca, !v_nsrebp1c), Set(!v_lxra, !v_nsrebp1c)))
+(Set(v_nsrebp1c),Set(-31))
+(Set(v_lxra, v_cpkca, !v_ppara),Set(-19, -12, 2))
+(Set(v_ppara, !v_nsrebp1c),Set(-2, 31))
+(Set(!v_cpkca, !v_nsrebp1c),Set(12, 31))
+(Set(!v_lxra, !v_nsrebp1c),Set(19, 31))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_creb, v_torc2)))
+Some(Vector(Set(!v_torc2), Set(!v_creb)))
+(Set(v_creb, v_torc2),Set(-29, -26))
+(Set(!v_torc2),Set(26))
+(Set(!v_creb),Set(29))
+
+Some(Vector(Set(v_gcg, !v_sik1)))
+Some(Vector(Set(v_sik1), Set(!v_gcg)))
+(Set(v_gcg, !v_sik1),Set(-17, 22))
+(Set(v_sik1),Set(-22))
+(Set(!v_gcg),Set(17))
+
+Some(Vector(Set(v_ppara, v_pgc1a)))
+Some(Vector(Set(!v_pgc1a), Set(!v_ppara)))
+(Set(v_ppara, v_pgc1a),Set(-2, -15))
+(Set(!v_pgc1a),Set(15))
+(Set(!v_ppara),Set(2))
+
+Some(Vector())
+Some(Vector())
+Map(v_basal_exp -> 1, v_ppara -> 2, v_lpin1 -> 3, v_ins -> 4, v_insig2a -> 5, v_pka -> 6, v_npkcd -> 7, v_trb3 -> 8, v_irs1_pst -> 9, v_psrebp1c -> 10, v_f26p2 -> 11, v_cpkca -> 12, v_gsk3 -> 13, v_hnf4a -> 14, v_pgc1a -> 15, v_pyruvate -> 16, v_gcg -> 17, v_lxra_g -> 18, v_lxra -> 19, v_ppara_g -> 20, v_g6p -> 21, v_sik1 -> 22, v_pdk1 -> 23, v_basal_act -> 24, v_akt -> 25, v_torc2 -> 26, v_x5p -> 27, v_irs1_py -> 28, v_creb -> 29, v_pgc1a_g -> 30, v_nsrebp1c -> 31, v_gluc_in -> 32)
+p cnf 32 80
+-23 27 8 25 0
+-8 -25 0
+-27 -25 0
+23 -25 0
+-4 -23 12 0
+23 -12 0
+4 -12 0
+-6 29 0
+-4 29 0
+4 6 -29 0
+25 6 -24 13 0
+24 -13 0
+-6 -13 0
+-25 -13 0
+6 -24 14 0
+24 -14 0
+-6 -14 0
+4 -1 5 0
+4 -19 5 0
+19 1 -5 0
+-4 -5 0
+-7 9 0
+-28 9 0
+-12 9 0
+12 28 7 -9 0
+-4 9 28 0
+-9 -28 0
+4 -28 0
+-15 3 0
+-31 3 0
+31 15 -3 0
+-18 -21 19 0
+-18 -32 19 0
+32 21 -19 0
+18 -19 0
+-2 18 0
+-1 18 0
+1 2 -18 0
+-4 -12 7 0
+12 -7 0
+4 -7 0
+13 5 -10 31 0
+10 -31 0
+-5 -31 0
+-13 -31 0
+-4 -28 23 0
+28 -23 0
+4 -23 0
+25 -30 15 0
+30 -15 0
+-25 -15 0
+-29 -26 30 0
+-29 23 30 0
+-23 26 -30 0
+29 -30 0
+-17 25 6 0
+-25 -6 0
+17 -6 0
+-28 -20 2 0
+20 -2 0
+28 -2 0
+-2 -15 -3 20 0
+-14 -15 -3 20 0
+3 -20 0
+15 -20 0
+14 2 -20 0
+-31 10 0
+-19 -12 2 10 0
+-2 31 -10 0
+12 31 -10 0
+19 31 -10 0
+-29 -26 22 0
+26 -22 0
+29 -22 0
+-17 22 26 0
+-22 -26 0
+17 -26 0
+-2 -15 8 0
+15 -8 0
+2 -8 0
++ exit_status=0
++ set +x
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.7ehseEDcGk.cnf'
+c opening file to read '/tmp/tmp.7ehseEDcGk.cnf'
+c found 'p cnf 32 80' header
+c parsed 80 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   80  30 94%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   80  30 94%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   80  30 94%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   74.03% parse
+c         0.00   29.87% search
+c         0.00   29.22% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   37.84% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            3.88    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=77
++ wait 77
++ bdd_minisat_all_release /tmp/tmp.7ehseEDcGk.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.7ehseEDcGk.cnf
+variables         :           32
+cutwidth          :           50
+restarts          :            1
+conflicts         :            6           (      inf / sec      )
+decisions         :           70           (      inf / sec      )
+propagations      :          175           (      inf / sec      )
+inspects          :          282           (      inf / sec      )
+conflict literals :            9           (     0.00 % deleted  )
+cpu time (solve)  :         0.00 sec	
+refreshes         :            0
+|obdd|            :          251
+cache hits        :           20
+cache lookup      :           59
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :          160
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_228.bnet"
+	User time (seconds): 0.94
+	System time (seconds): 0.19
+	Percent of CPU this job got: 163%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 153244
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 36042
+	Voluntary context switches: 2556
+	Involuntary context switches: 28
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.0s

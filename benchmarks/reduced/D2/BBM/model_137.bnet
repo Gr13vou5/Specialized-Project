@@ -1,0 +1,25 @@
+targets, factors
+v_AKT, (v_pip3 | !v_pp2a)
+v_IFNg, v_IFNg
+v_IGF1, v_IGF1
+v_IL1a, v_IL1a
+v_IL6, v_IL6
+v_IRS1s, (v_MEK12 | v_AKT)
+v_LPS, v_LPS
+v_MEK12, (v_raf1 | v_traf6)
+v_PI3K, (v_irs1t | v_TGFa | v_ras | v_TNFa)
+v_TGFa, v_TGFa
+v_TNFa, v_TNFa
+v_a20, v_a20
+v_ck2, v_ck2
+v_grb2, (v_shc | v_TGFa)
+v_irs1t, (v_IGF1 | !v_IRS1s)
+v_pak, (v_PI3K | !v_AKT)
+v_pip2, v_pip2
+v_pip3, (v_pip2 | v_PI3K)
+v_pp2a, v_pp2a
+v_raf1, (v_pak | v_ras)
+v_ras, (v_sos | !v_TGFa | !v_AKT)
+v_shc, (v_IGF1 | v_TGFa)
+v_sos, (!v_MEK12 | v_grb2)
+v_traf6, (!v_a20 | v_IL1a | v_LPS)

@@ -1,0 +1,18 @@
+targets, factors
+v_Bnl, v_Bnl
+v_Cnk, v_Cnk
+v_Csw, v_Csw
+v_Drk, (v_Stumps & v_Csw)
+v_Gap, v_Drk
+v_Htl, (v_Pyr | v_Ths)
+v_Ksr, v_Ksr
+v_Msk, v_Msk
+v_Pnt, v_Rl
+v_Pyr, v_Pyr
+v_Raf, (v_Drk & v_Cnk & v_Src42 & v_Ksr)
+v_Rl, (v_Raf & v_Msk)
+v_Src42, v_Src42
+v_Stumps, (v_Htl | v_Bnl)
+v_Sty, v_Sty
+v_Targets, (v_Pnt & v_Rl)
+v_Ths, v_Ths

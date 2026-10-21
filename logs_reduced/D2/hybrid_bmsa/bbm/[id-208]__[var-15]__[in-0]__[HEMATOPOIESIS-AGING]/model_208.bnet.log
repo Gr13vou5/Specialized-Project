@@ -1,0 +1,247 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:08:05 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_208.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-74 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_208.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_208.bnet --cnf /tmp/tmp.aaulHvKoLC.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_208.bnet, cnfFileName = /tmp/tmp.aaulHvKoLC.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector(Set(v_Spi1, !v_Gata2)))
+Some(Vector(Set(v_Gata2), Set(!v_Spi1)))
+(Set(v_Spi1, !v_Gata2),Set(-3, 4))
+(Set(v_Gata2),Set(-4))
+(Set(!v_Spi1),Set(3))
+
+Some(Vector(Set(v_Gata2, v_Junb)))
+Some(Vector(Set(!v_Junb), Set(!v_Gata2)))
+(Set(v_Gata2, v_Junb),Set(-4, -7))
+(Set(!v_Junb),Set(7))
+(Set(!v_Gata2),Set(4))
+
+Some(Vector(Set(v_Gata1, !v_Klf1), Set(v_Junb)))
+Some(Vector(Set(!v_Junb, v_Klf1), Set(!v_Junb, !v_Gata1)))
+(Set(v_Gata1, !v_Klf1),Set(-6, 1))
+(Set(v_Junb),Set(-7))
+(Set(!v_Junb, v_Klf1),Set(7, -1))
+(Set(!v_Junb, !v_Gata1),Set(7, 6))
+
+Some(Vector(Set(v_Fli1), Set(v_Gata2, !v_Spi1)))
+Some(Vector(Set(!v_Fli1, v_Spi1)))
+(Set(v_Fli1),Set(-9))
+(Set(v_Gata2, !v_Spi1),Set(-4, 3))
+(Set(!v_Fli1, v_Spi1),Set(9, -3))
+
+Some(Vector(Set(!v_Gata1, v_Egr1, !v_Spi1)))
+Some(Vector(Set(v_Gata1)))
+(Set(!v_Gata1, v_Egr1, !v_Spi1),Set(6, -8, 3))
+(Set(v_Gata1),Set(-6))
+
+Some(Vector(Set(v_Myc), Set(v_Egr1)))
+Some(Vector(Set(!v_Egr1, !v_Myc)))
+(Set(v_Myc),Set(-2))
+(Set(v_Egr1),Set(-8))
+(Set(!v_Egr1, !v_Myc),Set(8, 2))
+
+Some(Vector(Set(v_Gata1, !v_Fli1)))
+Some(Vector(Set(v_Fli1), Set(!v_Gata1)))
+(Set(v_Gata1, !v_Fli1),Set(-6, 9))
+(Set(v_Fli1),Set(-9))
+(Set(!v_Gata1),Set(6))
+
+Some(Vector())
+Some(Vector(Set(!v_Cebpa)))
+(Set(!v_Cebpa),Set(5))
+
+Some(Vector(Set(!v_Gata1, v_Cebpa, !v_Gata2)))
+Some(Vector(Set(v_Gata1)))
+(Set(!v_Gata1, v_Cebpa, !v_Gata2),Set(6, -5, 4))
+(Set(v_Gata1),Set(-6))
+Map(v_Klf1 -> 1, v_Myc -> 2, v_Spi1 -> 3, v_Gata2 -> 4, v_Cebpa -> 5, v_Gata1 -> 6, v_Junb -> 7, v_Egr1 -> 8, v_Fli1 -> 9)
+p cnf 9 24
+-3 4 5 0
+-4 -5 0
+3 -5 0
+-4 -7 8 0
+7 -8 0
+4 -8 0
+-6 1 9 0
+-7 9 0
+7 -1 -9 0
+7 6 -9 0
+-9 6 0
+-4 3 6 0
+9 -3 -6 0
+6 -8 3 4 0
+-6 -4 0
+-2 7 0
+-8 7 0
+8 2 -7 0
+-6 9 1 0
+-9 -1 0
+6 -1 0
+5 -2 0
+6 -5 4 3 0
+-6 -3 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.aaulHvKoLC.cnf'
+c opening file to read '/tmp/tmp.aaulHvKoLC.cnf'
+c found 'p cnf 9 24' header
+c parsed 24 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   24   9 100%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   24   9 100%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   24   9 100%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   34.48% parse
+c         0.00   21.38% search
+c         0.00   20.00% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   42.65% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.00    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=48
++ wait 48
++ bdd_minisat_all_release /tmp/tmp.aaulHvKoLC.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.aaulHvKoLC.cnf
+variables         :            9
+cutwidth          :           19
+restarts          :            1
+conflicts         :            2           (      inf / sec      )
+decisions         :           11           (      inf / sec      )
+propagations      :           36           (      inf / sec      )
+inspects          :           89           (      inf / sec      )
+conflict literals :            3           (     0.00 % deleted  )
+cpu time (solve)  :         0.00 sec	
+refreshes         :            0
+|obdd|            :           31
+cache hits        :            0
+cache lookup      :            5
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :            5
+# SAT SOLVE END
+
++ set +x
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_208.bnet"
+	User time (seconds): 0.83
+	System time (seconds): 0.09
+	Percent of CPU this job got: 157%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 150020
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 34802
+	Voluntary context switches: 1830
+	Involuntary context switches: 17
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 0.9s

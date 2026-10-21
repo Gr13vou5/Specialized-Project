@@ -1,0 +1,939 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:17:51 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_113.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-244 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_113.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_113.bnet --cnf /tmp/tmp.1FAvL8yEQz.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_113.bnet, cnfFileName = /tmp/tmp.1FAvL8yEQz.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_ATF4_gene, v_EIF2_P_GDP_complex)))
+Some(Vector(Set(!v_EIF2_P_GDP_complex), Set(!v_ATF4_gene)))
+(Set(v_ATF4_gene, v_EIF2_P_GDP_complex),Set(-13, -62))
+(Set(!v_EIF2_P_GDP_complex),Set(62))
+(Set(!v_ATF4_gene),Set(13))
+
+Some(Vector(Set(!v_retrograde_space_transport_space_from_space_ER_space_to_space_cytosol_phenotype, v_ATF6_endoplasmic_reticulum, v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype)))
+Some(Vector(Set(v_retrograde_space_transport_space_from_space_ER_space_to_space_cytosol_phenotype, !v_MBTPS1, !v_MBTPS2), Set(!v_MBTPS1, !v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype, !v_MBTPS2), Set(!v_MBTPS1, !v_ATF6_endoplasmic_reticulum, !v_MBTPS2)))
+(Set(!v_retrograde_space_transport_space_from_space_ER_space_to_space_cytosol_phenotype, v_ATF6_endoplasmic_reticulum, v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype),Set(22, -68, -109))
+(Set(v_retrograde_space_transport_space_from_space_ER_space_to_space_cytosol_phenotype, !v_MBTPS1, !v_MBTPS2),Set(-22, 43, 118))
+(Set(!v_MBTPS1, !v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype, !v_MBTPS2),Set(43, 109, 118))
+(Set(!v_MBTPS1, !v_ATF6_endoplasmic_reticulum, !v_MBTPS2),Set(43, 68, 118))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_ATF6_HSPA5_complex, v_Unfolded_space_protein)))
+Some(Vector(Set(!v_Unfolded_space_protein), Set(!v_ATF6_HSPA5_complex)))
+(Set(v_ATF6_HSPA5_complex, v_Unfolded_space_protein),Set(-87, -83))
+(Set(!v_Unfolded_space_protein),Set(83))
+(Set(!v_ATF6_HSPA5_complex),Set(87))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_BID_phosphorylated), Set(v_BAX_phosphorylated), Set(v_cleaved_CASP3), Set(v_BCL2L11_phosphorylated), Set(v_MAPK14_phosphorylated), Set(v_cleaved_CASP9), Set(v_TRIB3_rna), Set(v_DDIT3_phosphorylated), Set(v_CASP8_FADD_MAP1LC3A_SQSTM1_ATG5_complex)))
+Some(Vector())
+(Set(v_BID_phosphorylated),Set(-108))
+(Set(v_BAX_phosphorylated),Set(-96))
+(Set(v_cleaved_CASP3),Set(-54))
+(Set(v_BCL2L11_phosphorylated),Set(-100))
+(Set(v_MAPK14_phosphorylated),Set(-18))
+(Set(v_cleaved_CASP9),Set(-122))
+(Set(v_TRIB3_rna),Set(-12))
+(Set(v_DDIT3_phosphorylated),Set(-70))
+(Set(v_CASP8_FADD_MAP1LC3A_SQSTM1_ATG5_complex),Set(-80))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_MAPK14_phosphorylated, v_BAX_cell), Set(v_MAPK8_phosphorylated, v_BAX_cell)))
+Some(Vector(Set(!v_BAX_cell), Set(!v_MAPK8_phosphorylated, !v_MAPK14_phosphorylated)))
+(Set(v_MAPK14_phosphorylated, v_BAX_cell),Set(-18, -48))
+(Set(v_MAPK8_phosphorylated, v_BAX_cell),Set(-11, -48))
+(Set(!v_BAX_cell),Set(48))
+(Set(!v_MAPK8_phosphorylated, !v_MAPK14_phosphorylated),Set(11, 18))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_BCL2L11_phosphorylated, v_PPP2CA)))
+Some(Vector(Set(!v_PPP2CA), Set(!v_BCL2L11_phosphorylated)))
+(Set(v_BCL2L11_phosphorylated, v_PPP2CA),Set(-100, -116))
+(Set(!v_PPP2CA),Set(116))
+(Set(!v_BCL2L11_phosphorylated),Set(100))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_BCL2L11_cell, v_MAPK8_phosphorylated)))
+Some(Vector(Set(!v_MAPK8_phosphorylated), Set(!v_BCL2L11_cell)))
+(Set(v_BCL2L11_cell, v_MAPK8_phosphorylated),Set(-85, -11))
+(Set(!v_MAPK8_phosphorylated),Set(11))
+(Set(!v_BCL2L11_cell),Set(85))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_BID, v_MAPK8_phosphorylated)))
+Some(Vector(Set(!v_MAPK8_phosphorylated), Set(!v_BID)))
+(Set(v_BID, v_MAPK8_phosphorylated),Set(-49, -11))
+(Set(!v_MAPK8_phosphorylated),Set(11))
+(Set(!v_BID),Set(49))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_CAPN1, v_Ca2__ion_cell, v_high_space_Ca2_space_cytosolic_space_concentration_phenotype)))
+Some(Vector(Set(!v_high_space_Ca2_space_cytosolic_space_concentration_phenotype), Set(!v_Ca2__ion_cell), Set(!v_CAPN1)))
+(Set(v_CAPN1, v_Ca2__ion_cell, v_high_space_Ca2_space_cytosolic_space_concentration_phenotype),Set(-15, -58, -82))
+(Set(!v_high_space_Ca2_space_cytosolic_space_concentration_phenotype),Set(82))
+(Set(!v_Ca2__ion_cell),Set(58))
+(Set(!v_CAPN1),Set(15))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_SQSTM1_space_, v_CASP8_CASP8_ubq_FADD_complex, v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype, v_ATG5, v_MAP1LC3A), Set(v_SQSTM1_space_, v_TRIM13, v_CASP8_CASP8_ubq_FADD_complex, v_ATG5, v_MAP1LC3A)))
+Some(Vector(Set(!v_SQSTM1_space_), Set(!v_ATG5), Set(!v_CASP8_CASP8_ubq_FADD_complex), Set(!v_MAP1LC3A), Set(!v_TRIM13, !v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype)))
+(Set(v_SQSTM1_space_, v_CASP8_CASP8_ubq_FADD_complex, v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype, v_ATG5, v_MAP1LC3A),Set(-3, -51, -93, -112, -109))
+(Set(v_SQSTM1_space_, v_TRIM13, v_CASP8_CASP8_ubq_FADD_complex, v_ATG5, v_MAP1LC3A),Set(-3, -51, -93, -112, -24))
+(Set(!v_SQSTM1_space_),Set(51))
+(Set(!v_ATG5),Set(112))
+(Set(!v_CASP8_CASP8_ubq_FADD_complex),Set(3))
+(Set(!v_MAP1LC3A),Set(93))
+(Set(!v_TRIM13, !v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype),Set(24, 109))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector(Set(!v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype)))
+(Set(!v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype),Set(109))
+
+Some(Vector(Set(v_ITPR, v_Ca2__ion_endoplasmic_reticulum), Set(v_RYR1, v_Ca2__ion_endoplasmic_reticulum), Set(v_TMBIM6, v_Ca2__ion_endoplasmic_reticulum)))
+Some(Vector(Set(!v_Ca2__ion_endoplasmic_reticulum), Set(!v_TMBIM6, !v_RYR1, !v_ITPR)))
+(Set(v_ITPR, v_Ca2__ion_endoplasmic_reticulum),Set(-69, -106))
+(Set(v_RYR1, v_Ca2__ion_endoplasmic_reticulum),Set(-123, -106))
+(Set(v_TMBIM6, v_Ca2__ion_endoplasmic_reticulum),Set(-104, -106))
+(Set(!v_Ca2__ion_endoplasmic_reticulum),Set(106))
+(Set(!v_TMBIM6, !v_RYR1, !v_ITPR),Set(104, 123, 69))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_DDIT3_rna, v_MAPK14_phosphorylated)))
+Some(Vector(Set(!v_MAPK14_phosphorylated), Set(!v_DDIT3_rna)))
+(Set(v_DDIT3_rna, v_MAPK14_phosphorylated),Set(-67, -18))
+(Set(!v_MAPK14_phosphorylated),Set(18))
+(Set(!v_DDIT3_rna),Set(67))
+
+Some(Vector(Set(v_DDIT3_gene, v_ATF4_rna, v_XBP1_rna, v_Persistant_space_ER_space_Stress_phenotype_cell), Set(v_DDIT3_gene, v_ATF6_Golgi_apparatus, v_ATF4_rna, v_Persistant_space_ER_space_Stress_phenotype_cell)))
+Some(Vector(Set(!v_Persistant_space_ER_space_Stress_phenotype_cell), Set(!v_ATF4_rna), Set(!v_DDIT3_gene), Set(!v_ATF6_Golgi_apparatus, !v_XBP1_rna)))
+(Set(v_DDIT3_gene, v_ATF4_rna, v_XBP1_rna, v_Persistant_space_ER_space_Stress_phenotype_cell),Set(-14, -52, -60, -120))
+(Set(v_DDIT3_gene, v_ATF6_Golgi_apparatus, v_ATF4_rna, v_Persistant_space_ER_space_Stress_phenotype_cell),Set(-14, -47, -52, -120))
+(Set(!v_Persistant_space_ER_space_Stress_phenotype_cell),Set(120))
+(Set(!v_ATF4_rna),Set(52))
+(Set(!v_DDIT3_gene),Set(14))
+(Set(!v_ATF6_Golgi_apparatus, !v_XBP1_rna),Set(47, 60))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_DNAJC3_gene, v_ATF6_Golgi_apparatus)))
+Some(Vector(Set(!v_ATF6_Golgi_apparatus), Set(!v_DNAJC3_gene)))
+(Set(v_DNAJC3_gene, v_ATF6_Golgi_apparatus),Set(-125, -47))
+(Set(!v_ATF6_Golgi_apparatus),Set(47))
+(Set(!v_DNAJC3_gene),Set(125))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector(Set(v_DNAJC3_rna), Set(!v_presence_space_of_space_dsRNA_phenotype)))
+(Set(v_DNAJC3_rna),Set(-46))
+(Set(!v_presence_space_of_space_dsRNA_phenotype),Set(95))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Unfolded_space_protein, v_EIF2AK3), Set(v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype, v_EIF2AK3)))
+Some(Vector(Set(!v_EIF2AK3), Set(!v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype, !v_Unfolded_space_protein)))
+(Set(v_Unfolded_space_protein, v_EIF2AK3),Set(-83, -17))
+(Set(v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype, v_EIF2AK3),Set(-109, -17))
+(Set(!v_EIF2AK3),Set(17))
+(Set(!v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype, !v_Unfolded_space_protein),Set(109, 83))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_EIF2AK1, v_EIF2S1_phosphorylated), Set(v_PPP1R15A_rna, v_EIF2S1_phosphorylated)))
+Some(Vector(Set(!v_EIF2S1_phosphorylated), Set(!v_PPP1R15A_rna, !v_EIF2AK1)))
+(Set(v_EIF2AK1, v_EIF2S1_phosphorylated),Set(-53, -105))
+(Set(v_PPP1R15A_rna, v_EIF2S1_phosphorylated),Set(-111, -105))
+(Set(!v_EIF2S1_phosphorylated),Set(105))
+(Set(!v_PPP1R15A_rna, !v_EIF2AK1),Set(111, 53))
+
+Some(Vector(Set(v_EIF2AK2, !v_DNAJC3_rna, v_EIF2S1), Set(v_GCN2_ATP_complex, !v_DNAJC3_rna, v_EIF2S1), Set(v_EIF2AK3_EIF2AK3_complex, !v_DNAJC3_rna, v_EIF2S1)))
+Some(Vector(Set(v_DNAJC3_rna), Set(!v_EIF2S1), Set(!v_EIF2AK3_EIF2AK3_complex, !v_GCN2_ATP_complex, !v_EIF2AK2)))
+(Set(v_EIF2AK2, !v_DNAJC3_rna, v_EIF2S1),Set(-45, 46, -76))
+(Set(v_GCN2_ATP_complex, !v_DNAJC3_rna, v_EIF2S1),Set(-29, 46, -76))
+(Set(v_EIF2AK3_EIF2AK3_complex, !v_DNAJC3_rna, v_EIF2S1),Set(-1, 46, -76))
+(Set(v_DNAJC3_rna),Set(-46))
+(Set(!v_EIF2S1),Set(76))
+(Set(!v_EIF2AK3_EIF2AK3_complex, !v_GCN2_ATP_complex, !v_EIF2AK2),Set(1, 29, 45))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Ternary_space_Complex_complex, v_GDP_simple_molecule), Set(v_Met_tRNA_rna, v_EIF2_GDP_complex)))
+Some(Vector(Set(!v_EIF2_GDP_complex, !v_GDP_simple_molecule), Set(!v_Met_tRNA_rna, !v_GDP_simple_molecule), Set(!v_EIF2_GDP_complex, !v_Ternary_space_Complex_complex), Set(!v_Met_tRNA_rna, !v_Ternary_space_Complex_complex)))
+(Set(v_Ternary_space_Complex_complex, v_GDP_simple_molecule),Set(-35, -39))
+(Set(v_Met_tRNA_rna, v_EIF2_GDP_complex),Set(-71, -4))
+(Set(!v_EIF2_GDP_complex, !v_GDP_simple_molecule),Set(4, 39))
+(Set(!v_Met_tRNA_rna, !v_GDP_simple_molecule),Set(71, 39))
+(Set(!v_EIF2_GDP_complex, !v_Ternary_space_Complex_complex),Set(4, 35))
+(Set(!v_Met_tRNA_rna, !v_Ternary_space_Complex_complex),Set(71, 35))
+
+Some(Vector(Set(v_EIF2S2, v_EIF2S3_GDP_complex, v_EIF2S1)))
+Some(Vector(Set(!v_EIF2S1), Set(!v_EIF2S3_GDP_complex), Set(!v_EIF2S2)))
+(Set(v_EIF2S2, v_EIF2S3_GDP_complex, v_EIF2S1),Set(-101, -30, -76))
+(Set(!v_EIF2S1),Set(76))
+(Set(!v_EIF2S3_GDP_complex),Set(30))
+(Set(!v_EIF2S2),Set(101))
+
+Some(Vector(Set(v_EIF2S1_phosphorylated, v_EIF2S2, v_EIF2S3_GDP_complex)))
+Some(Vector(Set(!v_EIF2S3_GDP_complex), Set(!v_EIF2S2), Set(!v_EIF2S1_phosphorylated)))
+(Set(v_EIF2S1_phosphorylated, v_EIF2S2, v_EIF2S3_GDP_complex),Set(-105, -101, -30))
+(Set(!v_EIF2S3_GDP_complex),Set(30))
+(Set(!v_EIF2S2),Set(101))
+(Set(!v_EIF2S1_phosphorylated),Set(105))
+
+Some(Vector(Set(v_path_0_sa617_ERN1_endoplasmic_reticulum, v_BBC3, !v_Persistant_space_ER_space_Stress_phenotype_cell)))
+Some(Vector(Set(v_Persistant_space_ER_space_Stress_phenotype_cell), Set(!v_BBC3), Set(!v_path_0_sa617_ERN1_endoplasmic_reticulum)))
+(Set(v_path_0_sa617_ERN1_endoplasmic_reticulum, v_BBC3, !v_Persistant_space_ER_space_Stress_phenotype_cell),Set(-90, -124, 120))
+(Set(v_Persistant_space_ER_space_Stress_phenotype_cell),Set(-120))
+(Set(!v_BBC3),Set(124))
+(Set(!v_path_0_sa617_ERN1_endoplasmic_reticulum),Set(90))
+
+Some(Vector(Set(v_path_0_sa617_ERN1_endoplasmic_reticulum, v_BCL2L11_endoplasmic_reticulum, !v_Persistant_space_ER_space_Stress_phenotype_cell)))
+Some(Vector(Set(v_Persistant_space_ER_space_Stress_phenotype_cell), Set(!v_BCL2L11_endoplasmic_reticulum), Set(!v_path_0_sa617_ERN1_endoplasmic_reticulum)))
+(Set(v_path_0_sa617_ERN1_endoplasmic_reticulum, v_BCL2L11_endoplasmic_reticulum, !v_Persistant_space_ER_space_Stress_phenotype_cell),Set(-90, -64, 120))
+(Set(v_Persistant_space_ER_space_Stress_phenotype_cell),Set(-120))
+(Set(!v_BCL2L11_endoplasmic_reticulum),Set(64))
+(Set(!v_path_0_sa617_ERN1_endoplasmic_reticulum),Set(90))
+
+Some(Vector(Set(v_path_0_sa1_ERN1_endoplasmic_reticulum, v_Unfolded_space_protein)))
+Some(Vector(Set(!v_Unfolded_space_protein), Set(!v_path_0_sa1_ERN1_endoplasmic_reticulum)))
+(Set(v_path_0_sa1_ERN1_endoplasmic_reticulum, v_Unfolded_space_protein),Set(-66, -83))
+(Set(!v_Unfolded_space_protein),Set(83))
+(Set(!v_path_0_sa1_ERN1_endoplasmic_reticulum),Set(66))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_DDIT3_rna, v_ERO1A_gene), Set(v_ATF6_Golgi_apparatus, v_ERO1A_gene)))
+Some(Vector(Set(!v_ERO1A_gene), Set(!v_ATF6_Golgi_apparatus, !v_DDIT3_rna)))
+(Set(v_DDIT3_rna, v_ERO1A_gene),Set(-67, -99))
+(Set(v_ATF6_Golgi_apparatus, v_ERO1A_gene),Set(-47, -99))
+(Set(!v_ERO1A_gene),Set(99))
+(Set(!v_ATF6_Golgi_apparatus, !v_DDIT3_rna),Set(47, 67))
+
+Some(Vector(Set(!v_SIGMAR1_mitochondria_associated_endoplasmic_reticulum_membrane), Set(!v_ACE2), Set(v_MFN2_endoplasmic_reticulum)))
+Some(Vector(Set(!v_MFN2_endoplasmic_reticulum, v_ACE2, v_SIGMAR1_mitochondria_associated_endoplasmic_reticulum_membrane)))
+(Set(!v_SIGMAR1_mitochondria_associated_endoplasmic_reticulum_membrane),Set(38))
+(Set(!v_ACE2),Set(74))
+(Set(v_MFN2_endoplasmic_reticulum),Set(-89))
+(Set(!v_MFN2_endoplasmic_reticulum, v_ACE2, v_SIGMAR1_mitochondria_associated_endoplasmic_reticulum_membrane),Set(89, -74, -38))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_EIF2_GDP_Met_tRNA_complex, v_GTP_simple_molecule, v_EIF2B_complex)))
+Some(Vector(Set(!v_EIF2B_complex), Set(!v_GTP_simple_molecule), Set(!v_EIF2_GDP_Met_tRNA_complex)))
+(Set(v_EIF2_GDP_Met_tRNA_complex, v_GTP_simple_molecule, v_EIF2B_complex),Set(-9, -32, -126))
+(Set(!v_EIF2B_complex),Set(126))
+(Set(!v_GTP_simple_molecule),Set(32))
+(Set(!v_EIF2_GDP_Met_tRNA_complex),Set(9))
+
+Some(Vector(Set(v_Ternary_space_Complex_complex, v_GDP_simple_molecule)))
+Some(Vector(Set(!v_GDP_simple_molecule), Set(!v_Ternary_space_Complex_complex)))
+(Set(v_Ternary_space_Complex_complex, v_GDP_simple_molecule),Set(-35, -39))
+(Set(!v_GDP_simple_molecule),Set(39))
+(Set(!v_Ternary_space_Complex_complex),Set(35))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_ER_space_stress_phenotype, v_HSPA5_rna, !v_ACE2), Set(v_Ca2_space_ER_space_depletion_phenotype, v_SIGMAR1_HSPA5_complex), Set(v_SIGMAR1_HSPA5_complex, v_ER_space_stress_phenotype), Set(v_Unfolded_space_protein, v_ATF6_HSPA5_complex)))
+Some(Vector(Set(!v_SIGMAR1_HSPA5_complex, v_ACE2, !v_Unfolded_space_protein), Set(!v_SIGMAR1_HSPA5_complex, v_ACE2, !v_ATF6_HSPA5_complex), Set(!v_SIGMAR1_HSPA5_complex, !v_HSPA5_rna, !v_Unfolded_space_protein), Set(!v_SIGMAR1_HSPA5_complex, !v_HSPA5_rna, !v_ATF6_HSPA5_complex), Set(!v_SIGMAR1_HSPA5_complex, !v_ER_space_stress_phenotype, !v_Unfolded_space_protein), Set(!v_SIGMAR1_HSPA5_complex, !v_ER_space_stress_phenotype, !v_ATF6_HSPA5_complex), Set(!v_Ca2_space_ER_space_depletion_phenotype, !v_ER_space_stress_phenotype, !v_Unfolded_space_protein), Set(!v_Ca2_space_ER_space_depletion_phenotype, !v_ER_space_stress_phenotype, !v_ATF6_HSPA5_complex)))
+(Set(v_ER_space_stress_phenotype, v_HSPA5_rna, !v_ACE2),Set(-61, -72, 74))
+(Set(v_Ca2_space_ER_space_depletion_phenotype, v_SIGMAR1_HSPA5_complex),Set(-20, -55))
+(Set(v_SIGMAR1_HSPA5_complex, v_ER_space_stress_phenotype),Set(-55, -61))
+(Set(v_Unfolded_space_protein, v_ATF6_HSPA5_complex),Set(-83, -87))
+(Set(!v_SIGMAR1_HSPA5_complex, v_ACE2, !v_Unfolded_space_protein),Set(55, -74, 83))
+(Set(!v_SIGMAR1_HSPA5_complex, v_ACE2, !v_ATF6_HSPA5_complex),Set(55, -74, 87))
+(Set(!v_SIGMAR1_HSPA5_complex, !v_HSPA5_rna, !v_Unfolded_space_protein),Set(55, 72, 83))
+(Set(!v_SIGMAR1_HSPA5_complex, !v_HSPA5_rna, !v_ATF6_HSPA5_complex),Set(55, 72, 87))
+(Set(!v_SIGMAR1_HSPA5_complex, !v_ER_space_stress_phenotype, !v_Unfolded_space_protein),Set(55, 61, 83))
+(Set(!v_SIGMAR1_HSPA5_complex, !v_ER_space_stress_phenotype, !v_ATF6_HSPA5_complex),Set(55, 61, 87))
+(Set(!v_Ca2_space_ER_space_depletion_phenotype, !v_ER_space_stress_phenotype, !v_Unfolded_space_protein),Set(20, 61, 83))
+(Set(!v_Ca2_space_ER_space_depletion_phenotype, !v_ER_space_stress_phenotype, !v_ATF6_HSPA5_complex),Set(20, 61, 87))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_HSPA5_gene, v_S, !v_ACE2)))
+Some(Vector(Set(v_ACE2), Set(!v_S), Set(!v_HSPA5_gene)))
+(Set(v_HSPA5_gene, v_S, !v_ACE2),Set(-97, -81, 74))
+(Set(v_ACE2),Set(-74))
+(Set(!v_S),Set(81))
+(Set(!v_HSPA5_gene),Set(97))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector(Set(!v_TMBIM6, !v_ERO1A_rna)))
+(Set(!v_TMBIM6, !v_ERO1A_rna),Set(104, 86))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_MAP3K4, v_CDK5)))
+Some(Vector(Set(!v_CDK5), Set(!v_MAP3K4)))
+(Set(v_MAP3K4, v_CDK5),Set(-21, -110))
+(Set(!v_CDK5),Set(110))
+(Set(!v_MAP3K4),Set(21))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_TRAF2, v_MAP3K5), Set(v_TRAF2_ERN1_complex, v_MAP3K5)))
+Some(Vector(Set(!v_MAP3K5), Set(!v_TRAF2_ERN1_complex, !v_TRAF2)))
+(Set(v_TRAF2, v_MAP3K5),Set(-121, -119))
+(Set(v_TRAF2_ERN1_complex, v_MAP3K5),Set(-92, -119))
+(Set(!v_MAP3K5),Set(119))
+(Set(!v_TRAF2_ERN1_complex, !v_TRAF2),Set(92, 121))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_MAPK14, v_MAP3K5_phosphorylated)))
+Some(Vector(Set(!v_MAP3K5_phosphorylated), Set(!v_MAPK14)))
+(Set(v_MAPK14, v_MAP3K5_phosphorylated),Set(-59, -25))
+(Set(!v_MAP3K5_phosphorylated),Set(25))
+(Set(!v_MAPK14),Set(59))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_MAP3K5_phosphorylated, v_MAPK8), Set(v_MAP3K4_phosphorylated, v_MAPK8)))
+Some(Vector(Set(!v_MAPK8), Set(!v_MAP3K4_phosphorylated, !v_MAP3K5_phosphorylated)))
+(Set(v_MAP3K5_phosphorylated, v_MAPK8),Set(-25, -113))
+(Set(v_MAP3K4_phosphorylated, v_MAPK8),Set(-75, -113))
+(Set(!v_MAPK8),Set(113))
+(Set(!v_MAP3K4_phosphorylated, !v_MAP3K5_phosphorylated),Set(75, 25))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_MFN2_gene, v_ER_space_stress_phenotype)))
+Some(Vector(Set(!v_ER_space_stress_phenotype), Set(!v_MFN2_gene)))
+(Set(v_MFN2_gene, v_ER_space_stress_phenotype),Set(-107, -61))
+(Set(!v_ER_space_stress_phenotype),Set(61))
+(Set(!v_MFN2_gene),Set(107))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_DDIT3_rna, v_PPP1R15A_gene), Set(v_ATF4_rna, v_PPP1R15A_gene)))
+Some(Vector(Set(!v_PPP1R15A_gene), Set(!v_ATF4_rna, !v_DDIT3_rna)))
+(Set(v_DDIT3_rna, v_PPP1R15A_gene),Set(-67, -73))
+(Set(v_ATF4_rna, v_PPP1R15A_gene),Set(-52, -73))
+(Set(!v_PPP1R15A_gene),Set(73))
+(Set(!v_ATF4_rna, !v_DDIT3_rna),Set(52, 67))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_SIGMAR1_endoplasmic_reticulum, v_HSPA5_endoplasmic_reticulum)))
+Some(Vector(Set(!v_HSPA5_endoplasmic_reticulum), Set(!v_SIGMAR1_endoplasmic_reticulum)))
+(Set(v_SIGMAR1_endoplasmic_reticulum, v_HSPA5_endoplasmic_reticulum),Set(-5, -34))
+(Set(!v_HSPA5_endoplasmic_reticulum),Set(34))
+(Set(!v_SIGMAR1_endoplasmic_reticulum),Set(5))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Ca2_space_ER_space_depletion_phenotype, v_SIGMAR1_HSPA5_complex), Set(v_ER_space_stress_phenotype, v_SIGMAR1_HSPA5_complex)))
+Some(Vector(Set(!v_SIGMAR1_HSPA5_complex), Set(!v_ER_space_stress_phenotype, !v_Ca2_space_ER_space_depletion_phenotype)))
+(Set(v_Ca2_space_ER_space_depletion_phenotype, v_SIGMAR1_HSPA5_complex),Set(-20, -55))
+(Set(v_ER_space_stress_phenotype, v_SIGMAR1_HSPA5_complex),Set(-61, -55))
+(Set(!v_SIGMAR1_HSPA5_complex),Set(55))
+(Set(!v_ER_space_stress_phenotype, !v_Ca2_space_ER_space_depletion_phenotype),Set(61, 20))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector(Set(!v_TRAF2_ERN1_complex)))
+(Set(!v_TRAF2_ERN1_complex),Set(92))
+
+Some(Vector(Set(!v_BCL2L1, v_ERN1_Unfolded_space_protein_complex, v_TRAF2, !v_BCL2, !v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype, v_BAK1), Set(v_BAX_endoplasmic_reticulum, !v_BCL2L1, v_ERN1_Unfolded_space_protein_complex, v_TRAF2, !v_BCL2, !v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype), Set(v_BAX_ERN1_complex, !v_BCL2L1, v_ERN1_Unfolded_space_protein_complex, v_TRAF2, !v_BCL2, !v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype), Set(!v_BCL2L1, v_ERN1_Unfolded_space_protein_complex, v_TRAF2, v_BAK1_ERN1_complex, !v_BCL2, !v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype)))
+Some(Vector(Set(!v_BAX_endoplasmic_reticulum, !v_BAK1, !v_BAX_ERN1_complex, !v_BAK1_ERN1_complex), Set(v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype), Set(!v_ERN1_Unfolded_space_protein_complex), Set(!v_TRAF2), Set(v_BCL2), Set(v_BCL2L1)))
+(Set(!v_BCL2L1, v_ERN1_Unfolded_space_protein_complex, v_TRAF2, !v_BCL2, !v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype, v_BAK1),Set(109, 50, -121, 79, -56, -77))
+(Set(v_BAX_endoplasmic_reticulum, !v_BCL2L1, v_ERN1_Unfolded_space_protein_complex, v_TRAF2, !v_BCL2, !v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype),Set(109, 50, -121, -33, 79, -77))
+(Set(v_BAX_ERN1_complex, !v_BCL2L1, v_ERN1_Unfolded_space_protein_complex, v_TRAF2, !v_BCL2, !v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype),Set(109, 50, -121, -65, 79, -77))
+(Set(!v_BCL2L1, v_ERN1_Unfolded_space_protein_complex, v_TRAF2, v_BAK1_ERN1_complex, !v_BCL2, !v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype),Set(109, 50, -121, -102, 79, -77))
+(Set(!v_BAX_endoplasmic_reticulum, !v_BAK1, !v_BAX_ERN1_complex, !v_BAK1_ERN1_complex),Set(33, 56, 65, 102))
+(Set(v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype),Set(-109))
+(Set(!v_ERN1_Unfolded_space_protein_complex),Set(77))
+(Set(!v_TRAF2),Set(121))
+(Set(v_BCL2),Set(-79))
+(Set(v_BCL2L1),Set(-50))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_TRIB3_gene, v_DDIT3_rna)))
+Some(Vector(Set(!v_DDIT3_rna), Set(!v_TRIB3_gene)))
+(Set(v_TRIB3_gene, v_DDIT3_rna),Set(-23, -67))
+(Set(!v_DDIT3_rna),Set(67))
+(Set(!v_TRIB3_gene),Set(23))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_EIF2_GDP_Met_tRNA_complex, v_GTP_simple_molecule, v_EIF2B_complex)))
+Some(Vector(Set(!v_EIF2B_complex), Set(!v_GTP_simple_molecule), Set(!v_EIF2_GDP_Met_tRNA_complex)))
+(Set(v_EIF2_GDP_Met_tRNA_complex, v_GTP_simple_molecule, v_EIF2B_complex),Set(-9, -32, -126))
+(Set(!v_EIF2B_complex),Set(126))
+(Set(!v_GTP_simple_molecule),Set(32))
+(Set(!v_EIF2_GDP_Met_tRNA_complex),Set(9))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_ERN1_BCL2L11_complex, v_XBP1_gene), Set(v_XBP1_gene, v_ERN1_BBC3_complex), Set(v_XBP1_gene, v_TRAF2_ERN1_complex), Set(v_XBP1_gene, v_ATF6_Golgi_apparatus)))
+Some(Vector(Set(!v_XBP1_gene), Set(!v_ERN1_BCL2L11_complex, !v_ATF6_Golgi_apparatus, !v_ERN1_BBC3_complex, !v_TRAF2_ERN1_complex)))
+(Set(v_ERN1_BCL2L11_complex, v_XBP1_gene),Set(-36, -42))
+(Set(v_XBP1_gene, v_ERN1_BBC3_complex),Set(-42, -57))
+(Set(v_XBP1_gene, v_TRAF2_ERN1_complex),Set(-42, -92))
+(Set(v_XBP1_gene, v_ATF6_Golgi_apparatus),Set(-42, -47))
+(Set(!v_XBP1_gene),Set(42))
+(Set(!v_ERN1_BCL2L11_complex, !v_ATF6_Golgi_apparatus, !v_ERN1_BBC3_complex, !v_TRAF2_ERN1_complex),Set(36, 47, 57, 92))
+
+Some(Vector(Set(v_XBP1_rna), Set(v_Unfolded_space_protein)))
+Some(Vector(Set(!v_Unfolded_space_protein, !v_XBP1_rna)))
+(Set(v_XBP1_rna),Set(-60))
+(Set(v_Unfolded_space_protein),Set(-83))
+(Set(!v_Unfolded_space_protein, !v_XBP1_rna),Set(83, 60))
+
+Some(Vector(Set(v_CASP3, v_cleaved_CASP4)))
+Some(Vector(Set(!v_cleaved_CASP4), Set(!v_CASP3)))
+(Set(v_CASP3, v_cleaved_CASP4),Set(-7, -115))
+(Set(!v_cleaved_CASP4),Set(115))
+(Set(!v_CASP3),Set(7))
+
+Some(Vector(Set(v_CASP4, v_CAPN1_Ca2__complex)))
+Some(Vector(Set(!v_CAPN1_Ca2__complex), Set(!v_CASP4)))
+(Set(v_CASP4, v_CAPN1_Ca2__complex),Set(-26, -8))
+(Set(!v_CAPN1_Ca2__complex),Set(8))
+(Set(!v_CASP4),Set(26))
+
+Some(Vector(Set(v_CASP9, v_cleaved_CASP4)))
+Some(Vector(Set(!v_cleaved_CASP4), Set(!v_CASP9)))
+(Set(v_CASP9, v_cleaved_CASP4),Set(-37, -115))
+(Set(!v_cleaved_CASP4),Set(115))
+(Set(!v_CASP9),Set(37))
+
+Some(Vector(Set(v_Ca2__ion_cell), Set(v_BAX_phosphorylated)))
+Some(Vector(Set(!v_BAX_phosphorylated, !v_Ca2__ion_cell)))
+(Set(v_Ca2__ion_cell),Set(-58))
+(Set(v_BAX_phosphorylated),Set(-96))
+(Set(!v_BAX_phosphorylated, !v_Ca2__ion_cell),Set(96, 58))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_EIF2AK3_EIF2AK3_complex), Set(v_ATF6_endoplasmic_reticulum)))
+Some(Vector(Set(!v_ATF6_endoplasmic_reticulum, !v_EIF2AK3_EIF2AK3_complex)))
+(Set(v_EIF2AK3_EIF2AK3_complex),Set(-1))
+(Set(v_ATF6_endoplasmic_reticulum),Set(-68))
+(Set(!v_ATF6_endoplasmic_reticulum, !v_EIF2AK3_EIF2AK3_complex),Set(68, 1))
+Map(v_EIF2AK3_EIF2AK3_complex -> 1, v_PACS2_endoplasmic_reticulum -> 2, v_CASP8_CASP8_ubq_FADD_complex -> 3, v_EIF2_GDP_complex -> 4, v_SIGMAR1_endoplasmic_reticulum -> 5, v_ITPR3 -> 6, v_CASP3 -> 7, v_CAPN1_Ca2__complex -> 8, v_EIF2_GDP_Met_tRNA_complex -> 9, v_MCU -> 10, v_MAPK8_phosphorylated -> 11, v_TRIB3_rna -> 12, v_ATF4_gene -> 13, v_DDIT3_gene -> 14, v_CAPN1 -> 15, v_MCU2 -> 16, v_EIF2AK3 -> 17, v_MAPK14_phosphorylated -> 18, v_RMDN3 -> 19, v_Ca2_space_ER_space_depletion_phenotype -> 20, v_MAP3K4 -> 21, v_retrograde_space_transport_space_from_space_ER_space_to_space_cytosol_phenotype -> 22, v_TRIB3_gene -> 23, v_TRIM13 -> 24, v_MAP3K5_phosphorylated -> 25, v_CASP4 -> 26, v_ADAM17_early_space_endosome -> 27, v_MFN2_mitochondrion -> 28, v_GCN2_ATP_complex -> 29, v_EIF2S3_GDP_complex -> 30, v_MFN1 -> 31, v_GTP_simple_molecule -> 32, v_BAX_endoplasmic_reticulum -> 33, v_HSPA5_endoplasmic_reticulum -> 34, v_Ternary_space_Complex_complex -> 35, v_ERN1_BCL2L11_complex -> 36, v_CASP9 -> 37, v_SIGMAR1_mitochondria_associated_endoplasmic_reticulum_membrane -> 38, v_GDP_simple_molecule -> 39, v_HSPA5_default_compartment -> 40, v_HYOU1_gene -> 41, v_XBP1_gene -> 42, v_MBTPS1 -> 43, v_PACS2_early_space_endosome -> 44, v_EIF2AK2 -> 45, v_DNAJC3_rna -> 46, v_ATF6_Golgi_apparatus -> 47, v_BAX_cell -> 48, v_BID -> 49, v_BCL2L1 -> 50, v_SQSTM1_space_ -> 51, v_ATF4_rna -> 52, v_EIF2AK1 -> 53, v_cleaved_CASP3 -> 54, v_SIGMAR1_HSPA5_complex -> 55, v_BAK1 -> 56, v_ERN1_BBC3_complex -> 57, v_Ca2__ion_cell -> 58, v_MAPK14 -> 59, v_XBP1_rna -> 60, v_ER_space_stress_phenotype -> 61, v_EIF2_P_GDP_complex -> 62, v_BCAP31 -> 63, v_BCL2L11_endoplasmic_reticulum -> 64, v_BAX_ERN1_complex -> 65, v_path_0_sa1_ERN1_endoplasmic_reticulum -> 66, v_DDIT3_rna -> 67, v_ATF6_endoplasmic_reticulum -> 68, v_ITPR -> 69, v_DDIT3_phosphorylated -> 70, v_Met_tRNA_rna -> 71, v_HSPA5_rna -> 72, v_PPP1R15A_gene -> 73, v_ACE2 -> 74, v_MAP3K4_phosphorylated -> 75, v_EIF2S1 -> 76, v_ERN1_Unfolded_space_protein_complex -> 77, v_VAPB -> 78, v_BCL2 -> 79, v_CASP8_FADD_MAP1LC3A_SQSTM1_ATG5_complex -> 80, v_S -> 81, v_high_space_Ca2_space_cytosolic_space_concentration_phenotype -> 82, v_Unfolded_space_protein -> 83, v_AP_1 -> 84, v_BCL2L11_cell -> 85, v_ERO1A_rna -> 86, v_ATF6_HSPA5_complex -> 87, v_BCL2_gene -> 88, v_MFN2_endoplasmic_reticulum -> 89, v_path_0_sa617_ERN1_endoplasmic_reticulum -> 90, v_SARS_CoV_infection_phenotype -> 91, v_TRAF2_ERN1_complex -> 92, v_MAP1LC3A -> 93, v_SMDT1 -> 94, v_presence_space_of_space_dsRNA_phenotype -> 95, v_BAX_phosphorylated -> 96, v_HSPA5_gene -> 97, v_Apoptosis_phenotype_cell -> 98, v_ERO1A_gene -> 99, v_BCL2L11_phosphorylated -> 100, v_EIF2S2 -> 101, v_BAK1_ERN1_complex -> 102, v_ITPR3_HSPA9_VDAC1_complex -> 103, v_TMBIM6 -> 104, v_EIF2S1_phosphorylated -> 105, v_Ca2__ion_endoplasmic_reticulum -> 106, v_MFN2_gene -> 107, v_BID_phosphorylated -> 108, v_accumulation_space_of_space_misfolded_space_protein_space_in_space_ER_phenotype -> 109, v_CDK5 -> 110, v_PPP1R15A_rna -> 111, v_ATG5 -> 112, v_MAPK8 -> 113, v_FIS1 -> 114, v_cleaved_CASP4 -> 115, v_PPP2CA -> 116, v_MCU1 -> 117, v_MBTPS2 -> 118, v_MAP3K5 -> 119, v_Persistant_space_ER_space_Stress_phenotype_cell -> 120, v_TRAF2 -> 121, v_cleaved_CASP9 -> 122, v_RYR1 -> 123, v_BBC3 -> 124, v_DNAJC3_gene -> 125, v_EIF2B_complex -> 126)
+p cnf 126 204
+-13 -62 52 0
+62 -52 0
+13 -52 0
+22 -68 -109 47 0
+-22 43 118 -47 0
+43 109 118 -47 0
+43 68 118 -47 0
+-87 -83 68 0
+83 -68 0
+87 -68 0
+-108 98 0
+-96 98 0
+-54 98 0
+-100 98 0
+-18 98 0
+-122 98 0
+-12 98 0
+-70 98 0
+-80 98 0
+-18 -48 96 0
+-11 -48 96 0
+48 -96 0
+11 18 -96 0
+-100 -116 85 0
+116 -85 0
+100 -85 0
+-85 -11 100 0
+11 -100 0
+85 -100 0
+-49 -11 108 0
+11 -108 0
+49 -108 0
+-15 -58 -82 8 0
+82 -8 0
+58 -8 0
+15 -8 0
+-3 -51 -93 80 -112 -109 0
+-3 -51 -93 80 -112 -24 0
+51 -80 0
+112 -80 0
+3 -80 0
+93 -80 0
+24 109 -80 0
+109 -110 0
+-69 -106 58 0
+-123 -106 58 0
+-104 -106 58 0
+106 -58 0
+104 123 69 -58 0
+-67 -18 70 0
+18 -70 0
+67 -70 0
+-52 67 -14 -120 -60 0
+-47 -52 67 -14 -120 0
+120 -67 0
+52 -67 0
+14 -67 0
+47 60 -67 0
+-125 -47 46 0
+47 -46 0
+125 -46 0
+-46 -45 0
+95 -45 0
+-83 -17 1 0
+-109 -17 1 0
+17 -1 0
+109 83 -1 0
+-53 -105 76 0
+-111 -105 76 0
+105 -76 0
+111 53 -76 0
+-45 46 -76 105 0
+-29 46 -76 105 0
+-1 46 -76 105 0
+-46 -105 0
+76 -105 0
+1 29 45 -105 0
+-35 -39 9 0
+-71 -4 9 0
+4 39 -9 0
+71 39 -9 0
+4 35 -9 0
+71 35 -9 0
+-101 -30 -76 4 0
+76 -4 0
+30 -4 0
+101 -4 0
+-105 -101 -30 62 0
+30 -62 0
+101 -62 0
+105 -62 0
+-90 -124 120 57 0
+-120 -57 0
+124 -57 0
+90 -57 0
+-90 -64 120 36 0
+-120 -36 0
+64 -36 0
+90 -36 0
+-66 -83 77 0
+83 -77 0
+66 -77 0
+-67 -99 86 0
+-47 -99 86 0
+99 -86 0
+47 67 -86 0
+38 61 0
+74 61 0
+-89 61 0
+89 -74 -38 -61 0
+-9 -32 -126 39 0
+126 -39 0
+32 -39 0
+9 -39 0
+-35 -39 32 0
+39 -32 0
+35 -32 0
+-61 -72 74 34 0
+-20 -55 34 0
+-55 -61 34 0
+-83 -87 34 0
+55 -74 83 -34 0
+55 -74 87 -34 0
+55 72 83 -34 0
+55 72 87 -34 0
+55 61 83 -34 0
+55 61 87 -34 0
+20 61 83 -34 0
+20 61 87 -34 0
+-97 -81 74 72 0
+-74 -72 0
+81 -72 0
+97 -72 0
+104 86 -69 0
+-21 -110 75 0
+110 -75 0
+21 -75 0
+-121 -119 25 0
+-92 -119 25 0
+119 -25 0
+92 121 -25 0
+-59 -25 18 0
+25 -18 0
+59 -18 0
+-25 -113 11 0
+-75 -113 11 0
+113 -11 0
+75 25 -11 0
+-107 -61 89 0
+61 -89 0
+107 -89 0
+-67 -73 111 0
+-52 -73 111 0
+73 -111 0
+52 67 -111 0
+-5 -34 55 0
+34 -55 0
+5 -55 0
+-20 -55 38 0
+-61 -55 38 0
+55 -38 0
+61 20 -38 0
+92 -121 0
+92 109 50 -121 79 -56 -77 0
+92 109 50 -121 -33 79 -77 0
+92 109 50 -121 -65 79 -77 0
+92 109 50 -121 -102 79 -77 0
+56 102 33 65 -92 0
+-109 -92 0
+77 -92 0
+121 -92 0
+-79 -92 0
+-50 -92 0
+-23 -67 12 0
+67 -12 0
+23 -12 0
+-9 -32 -126 35 0
+126 -35 0
+32 -35 0
+9 -35 0
+-36 -42 60 0
+-42 -57 60 0
+-42 -92 60 0
+-42 -47 60 0
+42 -60 0
+57 92 36 -60 47 0
+-60 109 0
+-83 109 0
+83 60 -109 0
+-7 -115 54 0
+115 -54 0
+7 -54 0
+-26 -8 115 0
+8 -115 0
+26 -115 0
+-37 -115 122 0
+115 -122 0
+37 -122 0
+-58 82 0
+-96 82 0
+96 58 -82 0
+-1 22 0
+-68 22 0
+68 1 -22 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.1FAvL8yEQz.cnf'
+c opening file to read '/tmp/tmp.1FAvL8yEQz.cnf'
+c found 'p cnf 126 204' header
+c parsed 204 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  204 106 84%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  204 106 84%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  204 106 84%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 -36 -37 -38 -39 -40
+v -41 -42 -43 -44 -45 -46 -47 -48 -49 -50 -51 -52 -53 -54 -55 -56 -57 -58 -59
+v -60 61 -62 -63 -64 -65 -66 -67 -68 -69 -70 -71 -72 -73 -74 -75 -76 -77 -78
+v -79 -80 -81 -82 -83 -84 -85 -86 -87 -88 -89 -90 -91 -92 -93 -94 -95 -96 -97
+v -98 -99 -100 -101 -102 -103 -104 -105 -106 -107 -108 -109 -110 -111 -112
+v -113 -114 -115 -116 -117 -118 -119 -120 -121 -122 -123 -124 -125 -126 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00  227.12% parse
+c         0.00   29.86% search
+c         0.00   29.59% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   18.11% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.00    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=129
++ wait 129
++ bdd_minisat_all_release /tmp/tmp.1FAvL8yEQz.cnf
+/app/solve.sh: line 76:   129 Killed                  $4 "$cnf_tmp"
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_113.bnet"
+	User time (seconds): 66.79
+	System time (seconds): 13.13
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:19.83
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9418368
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2394411
+	Voluntary context switches: 3030
+	Involuntary context switches: 446
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 76.7s

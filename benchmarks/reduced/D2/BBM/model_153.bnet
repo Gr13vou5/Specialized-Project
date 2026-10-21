@@ -1,0 +1,6 @@
+targets, factors
+v_GFs, v_GFs
+v_Proliferation_b1, ((!v_cycE & !v_RTK & v_Proliferation_b1 & v_Proliferation_b2) | (!v_cycE & v_RTK) | v_cycE)
+v_Proliferation_b2, (v_cycE & v_RTK & v_Proliferation_b1)
+v_RTK, (!v_RTK & v_GFs)
+v_cycE, (v_RTK | (!v_RTK & v_cycE))

@@ -1,0 +1,12 @@
+targets, factors
+v_AP1, (v_JUNB | v_Fosl1 | v_JUND | v_FOS)
+v_FAK, (v_AP1 | v_NGF)
+v_FOS, (v_SHC | v_NGF | v_MEK)
+v_Fosl1, (v_NGF | v_SHC | v_MEK)
+v_JUNB, (v_NGF | v_MEK | v_SHC)
+v_JUND, (v_SHC | v_MEK)
+v_MEK, (v_RAF | v_SHC)
+v_NGF, v_NGF
+v_PLC, (v_NGF | v_AP1)
+v_RAF, (v_SHC | v_PLC)
+v_SHC, (v_NGF | v_FAK)

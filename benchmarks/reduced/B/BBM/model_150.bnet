@@ -1,0 +1,24 @@
+targets, factors
+v_ATP, !v_MPT
+v_BAX, (v_CASP8 & !v_BCL2)
+v_BCL2, v_NFKB1
+v_CASP3, (!v_XIAP & v_apoptosome)
+v_CASP8, ((!v_DISC_TNF & !v_DISC_FAS & v_CASP3 & !v_NFKB1) | (!v_DISC_TNF & v_DISC_FAS & !v_NFKB1) | (v_DISC_TNF & !v_NFKB1))
+v_DEATH, ((v_ATP & v_CASP3) | !v_ATP)
+v_DISC_FAS, (v_FASL & v_FADD)
+v_DISC_TNF, (v_TNFR & v_FADD)
+v_DIVISION, v_NFKB1
+v_FADD, v_FADD
+v_FASL, v_FASL
+v_MOMP, ((!v_BAX & v_MPT) | v_BAX)
+v_MPT, (!v_BCL2 & v_ROS)
+v_NFKB1, (v_RIP1ub & !v_CASP3)
+v_RIP1, ((!v_TNFR & v_DISC_FAS & !v_CASP8) | (v_TNFR & !v_CASP8))
+v_RIP1ub, (v_RIP1 & v_cIAP)
+v_ROS, ((!v_RIP1 & v_MPT & !v_NFKB1) | (v_RIP1 & !v_NFKB1))
+v_SMAC, v_MOMP
+v_TNF, ((!v_TNF & v_NFKB1) | v_TNF)
+v_TNFR, v_TNF
+v_XIAP, (!v_SMAC & v_NFKB1)
+v_apoptosome, (v_ATP & v_MOMP & !v_XIAP)
+v_cIAP, (!v_SMAC & v_NFKB1)

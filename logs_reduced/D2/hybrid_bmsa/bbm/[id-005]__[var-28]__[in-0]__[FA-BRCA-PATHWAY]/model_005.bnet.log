@@ -1,0 +1,512 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:09:58 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_005.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-177 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_005.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_005.bnet --cnf /tmp/tmp.oEFGOJQ12z.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_005.bnet, cnfFileName = /tmp/tmp.oEFGOJQ12z.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector(Set(v_XPF, !v_PCNATLS, v_ICL), Set(v_FAN1, !v_PCNATLS, v_ICL)))
+Some(Vector(Set(v_PCNATLS)))
+(Set(v_XPF, !v_PCNATLS, v_ICL),Set(-12, 18, -24))
+(Set(v_FAN1, !v_PCNATLS, v_ICL),Set(-1, 18, -24))
+(Set(v_PCNATLS),Set(-18))
+
+Some(Vector(Set(!v_CHKREC, v_ATR), Set(v_DSB, !v_CHKREC)))
+Some(Vector(Set(!v_DSB, !v_ATR), Set(v_CHKREC)))
+(Set(!v_CHKREC, v_ATR),Set(20, -22))
+(Set(v_DSB, !v_CHKREC),Set(-26, 20))
+(Set(!v_DSB, !v_ATR),Set(26, 22))
+(Set(v_CHKREC),Set(-20))
+
+Some(Vector(Set(!v_CHKREC, v_ssDNARPA), Set(!v_CHKREC, v_ATM), Set(v_FANCM, !v_CHKREC)))
+Some(Vector(Set(!v_FANCM, !v_ATM, !v_ssDNARPA), Set(v_CHKREC)))
+(Set(!v_CHKREC, v_ssDNARPA),Set(20, -9))
+(Set(!v_CHKREC, v_ATM),Set(20, -5))
+(Set(v_FANCM, !v_CHKREC),Set(-2, 20))
+(Set(!v_FANCM, !v_ATM, !v_ssDNARPA),Set(2, 5, 9))
+(Set(v_CHKREC),Set(-20))
+
+Some(Vector(Set(!v_CHKREC, v_ATR, v_DSB), Set(v_CHK2, !v_CHKREC, v_DSB), Set(v_ATM, !v_CHKREC, v_DSB)))
+Some(Vector(Set(v_CHKREC), Set(!v_ATM, !v_CHK2, !v_ATR), Set(!v_DSB)))
+(Set(!v_CHKREC, v_ATR, v_DSB),Set(20, -22, -26))
+(Set(v_CHK2, !v_CHKREC, v_DSB),Set(-16, 20, -26))
+(Set(v_ATM, !v_CHKREC, v_DSB),Set(-5, 20, -26))
+(Set(v_CHKREC),Set(-20))
+(Set(!v_ATM, !v_CHK2, !v_ATR),Set(5, 16, 22))
+(Set(!v_DSB),Set(26))
+
+Some(Vector(Set(!v_CHKREC, v_ATR), Set(!v_CHKREC, v_DNAPK), Set(v_ATM, !v_CHKREC)))
+Some(Vector(Set(!v_ATM, !v_DNAPK, !v_ATR), Set(v_CHKREC)))
+(Set(!v_CHKREC, v_ATR),Set(20, -22))
+(Set(!v_CHKREC, v_DNAPK),Set(20, -23))
+(Set(v_ATM, !v_CHKREC),Set(-5, 20))
+(Set(!v_ATM, !v_DNAPK, !v_ATR),Set(5, 23, 22))
+(Set(v_CHKREC),Set(-20))
+
+Some(Vector(Set(!v_CHKREC, v_ATR), Set(!v_CHKREC, v_DNAPK), Set(v_ATM, !v_CHKREC)))
+Some(Vector(Set(!v_ATM, !v_DNAPK, !v_ATR), Set(v_CHKREC)))
+(Set(!v_CHKREC, v_ATR),Set(20, -22))
+(Set(!v_CHKREC, v_DNAPK),Set(20, -23))
+(Set(v_ATM, !v_CHKREC),Set(-5, 20))
+(Set(!v_ATM, !v_DNAPK, !v_ATR),Set(5, 23, 22))
+(Set(v_CHKREC),Set(-20))
+
+Some(Vector(Set(!v_NHEJ, !v_ICL, !v_PCNATLS, !v_ADD, !v_HRR, !v_DSB), Set(v_HRR, !v_DSB), Set(v_NHEJ, !v_DSB), Set(v_PCNATLS, !v_DSB)))
+Some(Vector(Set(!v_HRR, !v_NHEJ, !v_PCNATLS), Set(v_DSB)))
+(Set(!v_NHEJ, !v_ICL, !v_PCNATLS, !v_ADD, !v_HRR, !v_DSB),Set(24, 14, 6, 18, 26, 15))
+(Set(v_HRR, !v_DSB),Set(-14, 26))
+(Set(v_NHEJ, !v_DSB),Set(-15, 26))
+(Set(v_PCNATLS, !v_DSB),Set(-18, 26))
+(Set(!v_HRR, !v_NHEJ, !v_PCNATLS),Set(14, 15, 18))
+(Set(v_DSB),Set(-26))
+
+Some(Vector(Set(v_DSB, v_KU, !v_CHKREC)))
+Some(Vector(Set(v_CHKREC), Set(!v_KU), Set(!v_DSB)))
+(Set(v_DSB, v_KU, !v_CHKREC),Set(-26, -19, 20))
+(Set(v_CHKREC),Set(-20))
+(Set(!v_KU),Set(19))
+(Set(!v_DSB),Set(26))
+
+Some(Vector(Set(v_FAN1, !v_HRR, !v_NHEJ), Set(v_XPF, !v_HRR, !v_NHEJ)))
+Some(Vector(Set(v_HRR), Set(v_NHEJ)))
+(Set(v_FAN1, !v_HRR, !v_NHEJ),Set(-1, 14, 15))
+(Set(v_XPF, !v_HRR, !v_NHEJ),Set(-12, 14, 15))
+(Set(v_HRR),Set(-14))
+(Set(v_NHEJ),Set(-15))
+
+Some(Vector(Set(v_ICL, v_FANCD2I)))
+Some(Vector(Set(!v_FANCD2I), Set(!v_ICL)))
+(Set(v_ICL, v_FANCD2I),Set(-24, -7))
+(Set(!v_FANCD2I),Set(7))
+(Set(!v_ICL),Set(24))
+
+Some(Vector(Set(v_ssDNARPA, v_FANCD2I, !v_CHKREC), Set(v_ssDNARPA, v_BRCA1)))
+Some(Vector(Set(!v_BRCA1, v_CHKREC), Set(!v_BRCA1, !v_FANCD2I), Set(!v_ssDNARPA)))
+(Set(v_ssDNARPA, v_FANCD2I, !v_CHKREC),Set(-9, -7, 20))
+(Set(v_ssDNARPA, v_BRCA1),Set(-9, -27))
+(Set(!v_BRCA1, v_CHKREC),Set(27, -20))
+(Set(!v_BRCA1, !v_FANCD2I),Set(27, 7))
+(Set(!v_ssDNARPA),Set(9))
+
+Some(Vector(Set(v_H2AX, !v_USP1, v_FAcore, v_DSB), Set(!v_USP1, v_FAcore, v_ATR), Set(v_ATM, !v_USP1, v_FAcore)))
+Some(Vector(Set(v_USP1), Set(!v_ATM, !v_H2AX, !v_ATR), Set(!v_ATM, !v_ATR, !v_DSB), Set(!v_FAcore)))
+(Set(v_H2AX, !v_USP1, v_FAcore, v_DSB),Set(-10, 13, -21, -26))
+(Set(!v_USP1, v_FAcore, v_ATR),Set(13, -21, -22))
+(Set(v_ATM, !v_USP1, v_FAcore),Set(-5, 13, -21))
+(Set(v_USP1),Set(-13))
+(Set(!v_ATM, !v_H2AX, !v_ATR),Set(5, 10, 22))
+(Set(!v_ATM, !v_ATR, !v_DSB),Set(5, 22, 26))
+(Set(!v_FAcore),Set(21))
+
+Some(Vector(Set(v_ATR, v_ICL), Set(v_ATM, v_ICL), Set(v_ssDNARPA, v_ATR), Set(v_ssDNARPA, v_ATM)))
+Some(Vector(Set(!v_ATM, !v_ATR), Set(!v_ssDNARPA, !v_ICL)))
+(Set(v_ATR, v_ICL),Set(-22, -24))
+(Set(v_ATM, v_ICL),Set(-5, -24))
+(Set(v_ssDNARPA, v_ATR),Set(-9, -22))
+(Set(v_ssDNARPA, v_ATM),Set(-9, -5))
+(Set(!v_ATM, !v_ATR),Set(5, 22))
+(Set(!v_ssDNARPA, !v_ICL),Set(9, 24))
+
+Some(Vector(Set(v_ICL, !v_CHKREC)))
+Some(Vector(Set(v_CHKREC), Set(!v_ICL)))
+(Set(v_ICL, !v_CHKREC),Set(-24, 20))
+(Set(v_CHKREC),Set(-20))
+(Set(!v_ICL),Set(24))
+
+Some(Vector(Set(v_FANCM, v_ATR, !v_CHKREC), Set(v_FANCM, v_ATM, !v_CHKREC)))
+Some(Vector(Set(v_CHKREC), Set(!v_ATM, !v_ATR), Set(!v_FANCM)))
+(Set(v_FANCM, v_ATR, !v_CHKREC),Set(-2, -22, 20))
+(Set(v_FANCM, v_ATM, !v_CHKREC),Set(-2, -5, 20))
+(Set(v_CHKREC),Set(-20))
+(Set(!v_ATM, !v_ATR),Set(5, 22))
+(Set(!v_FANCM),Set(2))
+
+Some(Vector(Set(!v_CHKREC, v_ATR, v_DSB), Set(!v_CHKREC, v_DNAPK, v_DSB), Set(v_ATM, !v_CHKREC, v_DSB)))
+Some(Vector(Set(v_CHKREC), Set(!v_ATM, !v_ATR, !v_DNAPK), Set(!v_DSB)))
+(Set(!v_CHKREC, v_ATR, v_DSB),Set(20, -22, -26))
+(Set(!v_CHKREC, v_DNAPK, v_DSB),Set(20, -23, -26))
+(Set(v_ATM, !v_CHKREC, v_DSB),Set(-5, 20, -26))
+(Set(v_CHKREC),Set(-20))
+(Set(!v_ATM, !v_ATR, !v_DNAPK),Set(5, 22, 23))
+(Set(!v_DSB),Set(26))
+
+Some(Vector(Set(v_DSB, v_BRCA1, !v_CHKREC, v_RAD51, v_FANCD1N)))
+Some(Vector(Set(v_CHKREC), Set(!v_DSB), Set(!v_RAD51), Set(!v_FANCD1N), Set(!v_BRCA1)))
+(Set(v_DSB, v_BRCA1, !v_CHKREC, v_RAD51, v_FANCD1N),Set(-27, 20, -3, -26, -4))
+(Set(v_CHKREC),Set(-20))
+(Set(!v_DSB),Set(26))
+(Set(!v_RAD51),Set(3))
+(Set(!v_FANCD1N),Set(4))
+(Set(!v_BRCA1),Set(27))
+
+Some(Vector())
+Some(Vector(Set(v_DSB)))
+(Set(v_DSB),Set(-26))
+
+Some(Vector(Set(v_DSB, !v_CHKREC, !v_MRN, !v_FANCD2I)))
+Some(Vector(Set(v_FANCD2I), Set(v_MRN), Set(v_CHKREC), Set(!v_DSB)))
+(Set(v_DSB, !v_CHKREC, !v_MRN, !v_FANCD2I),Set(-26, 20, 17, 7))
+(Set(v_FANCD2I),Set(-7))
+(Set(v_MRN),Set(-17))
+(Set(v_CHKREC),Set(-20))
+(Set(!v_DSB),Set(26))
+
+Some(Vector(Set(v_DSB, v_ATM, !v_RAD51, !v_CHKREC, !v_FANCD2I), Set(v_DSB, !v_KU, v_ATM, !v_RAD51, !v_CHKREC)))
+Some(Vector(Set(v_CHKREC), Set(!v_DSB), Set(v_FANCD2I, v_KU), Set(v_RAD51), Set(!v_ATM)))
+(Set(v_DSB, v_ATM, !v_RAD51, !v_CHKREC, !v_FANCD2I),Set(20, -26, -5, 7, 3))
+(Set(v_DSB, !v_KU, v_ATM, !v_RAD51, !v_CHKREC),Set(20, -26, -5, 3, 19))
+(Set(v_CHKREC),Set(-20))
+(Set(!v_DSB),Set(26))
+(Set(v_FANCD2I, v_KU),Set(-7, -19))
+(Set(v_RAD51),Set(-3))
+(Set(!v_ATM),Set(5))
+
+Some(Vector(Set(v_DSB, v_XPF, v_DNAPK, !v_CHKREC, !v_ssDNARPA), Set(v_DSB, v_XPF, !v_FANCJBRCA1, v_DNAPK, !v_CHKREC), Set(v_KU, !v_ATR, v_DNAPK, v_DSB), Set(!v_ATM, v_KU, v_DNAPK, v_DSB)))
+Some(Vector(Set(v_ATM, v_CHKREC, v_ATR), Set(!v_KU, v_CHKREC), Set(v_ATM, v_FANCJBRCA1, v_ssDNARPA, v_ATR), Set(v_FANCJBRCA1, v_ssDNARPA, !v_KU), Set(v_ATM, !v_XPF, v_ATR), Set(!v_XPF, !v_KU), Set(!v_DSB), Set(!v_DNAPK)))
+(Set(v_DSB, v_XPF, v_DNAPK, !v_CHKREC, !v_ssDNARPA),Set(20, -12, -26, -23, 9))
+(Set(v_DSB, v_XPF, !v_FANCJBRCA1, v_DNAPK, !v_CHKREC),Set(20, -12, -26, -23, 8))
+(Set(v_KU, !v_ATR, v_DNAPK, v_DSB),Set(-19, 22, -23, -26))
+(Set(!v_ATM, v_KU, v_DNAPK, v_DSB),Set(5, -19, -23, -26))
+(Set(v_ATM, v_CHKREC, v_ATR),Set(-5, -20, -22))
+(Set(!v_KU, v_CHKREC),Set(19, -20))
+(Set(v_ATM, v_FANCJBRCA1, v_ssDNARPA, v_ATR),Set(-5, -8, -9, -22))
+(Set(v_FANCJBRCA1, v_ssDNARPA, !v_KU),Set(-8, -9, 19))
+(Set(v_ATM, !v_XPF, v_ATR),Set(-5, 12, -22))
+(Set(!v_XPF, !v_KU),Set(12, 19))
+(Set(!v_DSB),Set(26))
+(Set(!v_DNAPK),Set(23))
+
+Some(Vector(Set(v_ADD, !v_FAN1, !v_USP1)))
+Some(Vector(Set(v_USP1), Set(v_FAN1), Set(!v_ADD)))
+(Set(v_ADD, !v_FAN1, !v_USP1),Set(-6, 1, 13))
+(Set(v_USP1),Set(-13))
+(Set(v_FAN1),Set(-1))
+(Set(!v_ADD),Set(6))
+
+Some(Vector(Set(v_ssDNARPA, v_FANCD1N, !v_CHKREC)))
+Some(Vector(Set(v_CHKREC), Set(!v_FANCD1N), Set(!v_ssDNARPA)))
+(Set(v_ssDNARPA, v_FANCD1N, !v_CHKREC),Set(-9, -4, 20))
+(Set(v_CHKREC),Set(-20))
+(Set(!v_FANCD1N),Set(4))
+(Set(!v_ssDNARPA),Set(9))
+
+Some(Vector(Set(!v_FANCM, v_PCNATLS), Set(v_FANCD1N, v_FANCD2I, !v_FANCM)))
+Some(Vector(Set(!v_FANCD2I, !v_PCNATLS), Set(!v_FANCD1N, !v_PCNATLS), Set(v_FANCM)))
+(Set(!v_FANCM, v_PCNATLS),Set(2, -18))
+(Set(v_FANCD1N, v_FANCD2I, !v_FANCM),Set(-4, -7, 2))
+(Set(!v_FANCD2I, !v_PCNATLS),Set(7, 18))
+(Set(!v_FANCD1N, !v_PCNATLS),Set(4, 18))
+(Set(v_FANCM),Set(-2))
+
+Some(Vector(Set(!v_FANCM, v_ICL), Set(!v_FANCD2I, v_ICL, v_p53), Set(!v_FAN1, v_ICL, v_p53), Set(!v_FAcore, v_ICL, v_p53)))
+Some(Vector(Set(v_FAN1, v_FANCM, v_FANCD2I, v_FAcore), Set(v_FANCM, !v_p53), Set(!v_ICL)))
+(Set(!v_FANCM, v_ICL),Set(2, -24))
+(Set(!v_FANCD2I, v_ICL, v_p53),Set(7, -24, -25))
+(Set(!v_FAN1, v_ICL, v_p53),Set(1, -24, -25))
+(Set(!v_FAcore, v_ICL, v_p53),Set(21, -24, -25))
+(Set(v_FAN1, v_FANCM, v_FANCD2I, v_FAcore),Set(-1, -2, -7, -21))
+(Set(v_FANCM, !v_p53),Set(-2, 25))
+(Set(!v_ICL),Set(24))
+
+Some(Vector(Set(!v_CHKREC, v_DNAPK), Set(v_CHK1, !v_CHKREC, v_ATR), Set(v_ATM, v_CHK2, !v_CHKREC)))
+Some(Vector(Set(!v_CHK1, !v_CHK2, !v_DNAPK), Set(!v_ATM, !v_CHK1, !v_DNAPK), Set(!v_CHK2, !v_ATR, !v_DNAPK), Set(!v_ATM, !v_ATR, !v_DNAPK), Set(v_CHKREC)))
+(Set(!v_CHKREC, v_DNAPK),Set(20, -23))
+(Set(v_CHK1, !v_CHKREC, v_ATR),Set(-11, 20, -22))
+(Set(v_ATM, v_CHK2, !v_CHKREC),Set(-5, -16, 20))
+(Set(!v_CHK1, !v_CHK2, !v_DNAPK),Set(11, 16, 23))
+(Set(!v_ATM, !v_CHK1, !v_DNAPK),Set(5, 11, 23))
+(Set(!v_CHK2, !v_ATR, !v_DNAPK),Set(16, 22, 23))
+(Set(!v_ATM, !v_ATR, !v_DNAPK),Set(5, 22, 23))
+(Set(v_CHKREC),Set(-20))
+
+Some(Vector(Set(!v_RAD51, v_MRN, !v_KU, v_DSB), Set(v_DSB, !v_KU, !v_RAD51, v_FANCJBRCA1, v_FANCD2I)))
+Some(Vector(Set(v_RAD51), Set(v_KU), Set(!v_FANCD2I, !v_MRN), Set(!v_FANCJBRCA1, !v_MRN), Set(!v_DSB)))
+(Set(!v_RAD51, v_MRN, !v_KU, v_DSB),Set(3, -17, 19, -26))
+(Set(v_DSB, !v_KU, !v_RAD51, v_FANCJBRCA1, v_FANCD2I),Set(-7, -8, -26, 3, 19))
+(Set(v_RAD51),Set(-3))
+(Set(v_KU),Set(-19))
+(Set(!v_FANCD2I, !v_MRN),Set(7, 17))
+(Set(!v_FANCJBRCA1, !v_MRN),Set(8, 17))
+(Set(!v_DSB),Set(26))
+Map(v_FAN1 -> 1, v_FANCM -> 2, v_RAD51 -> 3, v_FANCD1N -> 4, v_ATM -> 5, v_ADD -> 6, v_FANCD2I -> 7, v_FANCJBRCA1 -> 8, v_ssDNARPA -> 9, v_H2AX -> 10, v_CHK1 -> 11, v_XPF -> 12, v_USP1 -> 13, v_HRR -> 14, v_NHEJ -> 15, v_CHK2 -> 16, v_MRN -> 17, v_PCNATLS -> 18, v_KU -> 19, v_CHKREC -> 20, v_FAcore -> 21, v_ATR -> 22, v_DNAPK -> 23, v_ICL -> 24, v_p53 -> 25, v_DSB -> 26, v_BRCA1 -> 27)
+p cnf 27 143
+-12 18 -24 6 0
+-1 18 -24 6 0
+-18 -6 0
+20 -22 5 0
+-26 20 5 0
+26 22 -5 0
+-20 -5 0
+20 -9 22 0
+20 -5 22 0
+-2 20 22 0
+2 5 9 -22 0
+-20 -22 0
+20 -22 -26 27 0
+-16 20 -26 27 0
+-5 20 -26 27 0
+-20 -27 0
+5 16 22 -27 0
+26 -27 0
+20 -22 11 0
+20 -23 11 0
+-5 20 11 0
+5 23 22 -11 0
+-20 -11 0
+20 -22 16 0
+20 -23 16 0
+-5 20 16 0
+5 23 22 -16 0
+-20 -16 0
+24 14 20 6 18 26 15 0
+-14 26 20 0
+-15 26 20 0
+-18 26 20 0
+14 15 18 -20 0
+-26 -20 0
+-26 -19 20 23 0
+-20 -23 0
+19 -23 0
+26 -23 0
+-1 14 15 26 0
+-12 14 15 26 0
+-14 -26 0
+-15 -26 0
+-24 -7 1 0
+7 -1 0
+24 -1 0
+-9 -7 20 4 0
+-9 -27 4 0
+27 -20 -4 0
+27 7 -4 0
+9 -4 0
+-26 13 -10 7 -21 0
+13 -21 -22 7 0
+-5 13 -21 7 0
+-13 -7 0
+5 10 22 -7 0
+5 22 26 -7 0
+21 -7 0
+-22 -24 8 0
+-5 -24 8 0
+-9 -22 8 0
+-9 -5 8 0
+5 22 -8 0
+9 24 -8 0
+-24 20 2 0
+-20 -2 0
+24 -2 0
+-2 -22 20 21 0
+-2 -5 20 21 0
+-20 -21 0
+5 22 -21 0
+2 -21 0
+20 -22 -26 10 0
+20 -23 -26 10 0
+-5 20 -26 10 0
+-20 -10 0
+5 22 23 -10 0
+26 -10 0
+-27 14 20 -3 -26 -4 0
+-20 -14 0
+26 -14 0
+3 -14 0
+4 -14 0
+27 -14 0
+-26 -24 0
+20 -26 17 7 19 0
+-7 -19 0
+-17 -19 0
+-20 -19 0
+26 -19 0
+20 -26 17 -5 7 3 0
+20 -26 17 -5 3 19 0
+-20 -17 0
+26 -17 0
+-7 -19 -17 0
+-3 -17 0
+5 -17 0
+20 -12 -26 -23 9 15 0
+20 -12 -26 -23 8 15 0
+-26 -23 -19 22 15 0
+5 -26 -23 -19 15 0
+-5 -20 -22 -15 0
+19 -20 -15 0
+-22 -8 -15 -5 -9 0
+-8 -9 19 -15 0
+-5 12 -22 -15 0
+12 19 -15 0
+26 -15 0
+23 -15 0
+-6 1 13 18 0
+-13 -18 0
+-1 -18 0
+6 -18 0
+-9 -4 20 3 0
+-20 -3 0
+4 -3 0
+9 -3 0
+2 -18 13 0
+-4 -7 2 13 0
+7 18 -13 0
+4 18 -13 0
+-2 -13 0
+2 -24 12 0
+7 -24 -25 12 0
+1 -24 -25 12 0
+21 -24 -25 12 0
+-7 -12 -1 -21 -2 0
+-2 25 -12 0
+24 -12 0
+20 -23 25 0
+-11 20 -22 25 0
+-5 -16 20 25 0
+11 16 23 -25 0
+5 11 23 -25 0
+16 22 23 -25 0
+5 22 23 -25 0
+-20 -25 0
+-26 9 3 19 -17 0
+-7 -8 -26 9 3 19 0
+-3 -9 0
+-19 -9 0
+7 17 -9 0
+8 17 -9 0
+26 -9 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.oEFGOJQ12z.cnf'
+c opening file to read '/tmp/tmp.oEFGOJQ12z.cnf'
+c found 'p cnf 27 143' header
+c parsed 143 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  143  27 100%
+c l  0.00  4  0 0   0  0    2    0 0.0 1 0 2 6 66%  142   0  0%
+c 0  0.00  4  0 0   0  0    2    0 0.0 1 0 2 6 66%  142   0  0%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s UNSATISFIABLE
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   64.42% parse
+c         0.00   46.01% search
+c         0.00   44.79% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   41.58% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c conflicts:                     2     12269.94    per second
+c fixed:                        27       100.00 %  of all variables
+c learned:                       7       350.00 %  per conflict
+c learned_lits:                  7       100.00 %  learned literals
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c otfs:                          3       150.00 %  of conflict
+c propagations:                  0         0.00 M  per second
+c subsumed:                      2         1.40 %  of all clauses
+c strengthened:                  2         1.40 %  of all clauses
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.12    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 20
+
+# UNSAT detected
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_005.bnet"
+	User time (seconds): 1.07
+	System time (seconds): 0.19
+	Percent of CPU this job got: 172%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.73
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 159008
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 36634
+	Voluntary context switches: 2904
+	Involuntary context switches: 47
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.0s

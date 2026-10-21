@@ -1,0 +1,1467 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:53:03 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_078.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-250 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_078.bnet
+------------------------------------------------------------
+# ENCODE START
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_078.bnet --cnf /tmp/tmp.VZOkkEyrG5.cnf -h3
++ cmd_pid=11
++ wait 11
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_078.bnet, cnfFileName = /tmp/tmp.VZOkkEyrG5.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector(Set(!v_IFNg, v_Cell_Dendritic_Leishmania), Set(v_Cell_Macrophage_Leishmania, !v_IFNg)))
+Some(Vector(Set(!v_Cell_Macrophage_Leishmania, !v_Cell_Dendritic_Leishmania), Set(v_IFNg)))
+(Set(!v_IFNg, v_Cell_Dendritic_Leishmania),Set(69, -19))
+(Set(v_Cell_Macrophage_Leishmania, !v_IFNg),Set(-111, 69))
+(Set(!v_Cell_Macrophage_Leishmania, !v_Cell_Dendritic_Leishmania),Set(111, 19))
+(Set(v_IFNg),Set(-69))
+
+Some(Vector(Set(v_TNFa, v_Cell_Macrophage_Mtb)))
+Some(Vector(Set(!v_Cell_Macrophage_Mtb), Set(!v_TNFa)))
+(Set(v_TNFa, v_Cell_Macrophage_Mtb),Set(-83, -48))
+(Set(!v_Cell_Macrophage_Mtb),Set(48))
+(Set(!v_TNFa),Set(83))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Cell_B_Healthy, v_Cell_Dendritic_EBOV, !v_TNFa, !v_IL10)))
+Some(Vector(Set(v_IL10), Set(v_TNFa), Set(!v_Cell_Dendritic_EBOV), Set(!v_Cell_B_Healthy)))
+(Set(v_Cell_B_Healthy, v_Cell_Dendritic_EBOV, !v_TNFa, !v_IL10),Set(-91, -77, 83, 28))
+(Set(v_IL10),Set(-28))
+(Set(v_TNFa),Set(-83))
+(Set(!v_Cell_Dendritic_EBOV),Set(77))
+(Set(!v_Cell_B_Healthy),Set(91))
+
+Some(Vector(Set(v_Cell_B_Healthy, v_Cell_CD4_HIV, !v_Cell_CD4_HIV_infected)))
+Some(Vector(Set(v_Cell_CD4_HIV_infected), Set(!v_Cell_CD4_HIV), Set(!v_Cell_B_Healthy)))
+(Set(v_Cell_B_Healthy, v_Cell_CD4_HIV, !v_Cell_CD4_HIV_infected),Set(-91, -4, 61))
+(Set(v_Cell_CD4_HIV_infected),Set(-61))
+(Set(!v_Cell_CD4_HIV),Set(4))
+(Set(!v_Cell_B_Healthy),Set(91))
+
+Some(Vector(Set(v_HealthyState)))
+Some(Vector(Set(!v_HealthyState, !v_Merozoites_PF)))
+(Set(v_HealthyState),Set(-63))
+(Set(!v_HealthyState, !v_Merozoites_PF),Set(63, 12))
+
+Some(Vector(Set(v_Cell_B_Healthy, v_IL13, v_IL4)))
+Some(Vector(Set(!v_IL4), Set(!v_IL13), Set(!v_Cell_B_Healthy)))
+(Set(v_Cell_B_Healthy, v_IL13, v_IL4),Set(-91, -36, -22))
+(Set(!v_IL4),Set(22))
+(Set(!v_IL13),Set(36))
+(Set(!v_Cell_B_Healthy),Set(91))
+
+Some(Vector(Set(v_Cell_Th2_IAV), Set(v_Cell_B_Healthy, v_Cell_Dendritic_IAV)))
+Some(Vector(Set(!v_Cell_Dendritic_IAV, !v_Cell_Th2_IAV), Set(!v_Cell_B_Healthy, !v_Cell_Th2_IAV)))
+(Set(v_Cell_Th2_IAV),Set(-50))
+(Set(v_Cell_B_Healthy, v_Cell_Dendritic_IAV),Set(-91, -82))
+(Set(!v_Cell_Dendritic_IAV, !v_Cell_Th2_IAV),Set(82, 50))
+(Set(!v_Cell_B_Healthy, !v_Cell_Th2_IAV),Set(91, 50))
+
+Some(Vector(Set(v_Cell_B_Healthy, v_Cell_Th1_PF), Set(v_Cell_B_Healthy, v_Merozoites_PF)))
+Some(Vector(Set(!v_Cell_B_Healthy)))
+(Set(v_Cell_B_Healthy, v_Cell_Th1_PF),Set(-91, -74))
+(Set(v_Cell_B_Healthy, v_Merozoites_PF),Set(-91, -12))
+(Set(!v_Cell_B_Healthy),Set(91))
+
+Some(Vector(Set(!v_HealthyState, v_Cell_Epithelial_helminth), Set(!v_HealthyState, v_Cell_Endothelial_Helminth)))
+Some(Vector(Set(!v_Cell_Endothelial_Helminth, !v_Cell_Epithelial_helminth), Set(v_HealthyState)))
+(Set(!v_HealthyState, v_Cell_Epithelial_helminth),Set(63, -40))
+(Set(!v_HealthyState, v_Cell_Endothelial_Helminth),Set(63, -71))
+(Set(!v_Cell_Endothelial_Helminth, !v_Cell_Epithelial_helminth),Set(71, 40))
+(Set(v_HealthyState),Set(-63))
+
+Some(Vector(Set(v_Cell_CD4_Naive, v_Cell_Dendritic_HIV)))
+Some(Vector(Set(!v_Cell_Dendritic_HIV), Set(!v_Cell_CD4_Naive)))
+(Set(v_Cell_CD4_Naive, v_Cell_Dendritic_HIV),Set(-52, -81))
+(Set(!v_Cell_Dendritic_HIV),Set(81))
+(Set(!v_Cell_CD4_Naive),Set(52))
+
+Some(Vector(Set(v_Cell_CD4_Naive, !v_IFNg, v_Virus_HIV), Set(v_Cell_LC_HIV, v_Cell_CD4_Naive, !v_IFNg), Set(v_Cell_CD4_Naive, !v_IFNg, v_PV_HIV)))
+Some(Vector(Set(v_IFNg), Set(!v_Cell_LC_HIV, !v_PV_HIV, !v_Virus_HIV), Set(!v_Cell_CD4_Naive)))
+(Set(v_Cell_CD4_Naive, !v_IFNg, v_Virus_HIV),Set(-52, 69, -113))
+(Set(v_Cell_LC_HIV, v_Cell_CD4_Naive, !v_IFNg),Set(-39, -52, 69))
+(Set(v_Cell_CD4_Naive, !v_IFNg, v_PV_HIV),Set(-52, 69, -104))
+(Set(v_IFNg),Set(-69))
+(Set(!v_Cell_LC_HIV, !v_PV_HIV, !v_Virus_HIV),Set(39, 104, 113))
+(Set(!v_Cell_CD4_Naive),Set(52))
+
+Some(Vector(Set(v_HealthyState, !v_Cell_CD4_HIV_infected)))
+Some(Vector(Set(v_Cell_CD4_HIV_infected)))
+(Set(v_HealthyState, !v_Cell_CD4_HIV_infected),Set(-63, 61))
+(Set(v_Cell_CD4_HIV_infected),Set(-61))
+
+Some(Vector(Set(v_Cell_CD8_Naive, v_Cell_Dendritic_EBOV, !v_IL10)))
+Some(Vector(Set(v_IL10), Set(!v_Cell_Dendritic_EBOV), Set(!v_Cell_CD8_Naive)))
+(Set(v_Cell_CD8_Naive, v_Cell_Dendritic_EBOV, !v_IL10),Set(-20, -77, 28))
+(Set(v_IL10),Set(-28))
+(Set(!v_Cell_Dendritic_EBOV),Set(77))
+(Set(!v_Cell_CD8_Naive),Set(20))
+
+Some(Vector(Set(v_Cell_CD4_Naive, v_Cell_Dendritic_HIV, !v_Cell_Treg_HIV)))
+Some(Vector(Set(v_Cell_Treg_HIV), Set(!v_Cell_Dendritic_HIV), Set(!v_Cell_CD4_Naive)))
+(Set(v_Cell_CD4_Naive, v_Cell_Dendritic_HIV, !v_Cell_Treg_HIV),Set(-52, -81, 109))
+(Set(v_Cell_Treg_HIV),Set(-109))
+(Set(!v_Cell_Dendritic_HIV),Set(81))
+(Set(!v_Cell_CD4_Naive),Set(52))
+
+Some(Vector(Set(v_Cell_CD8_Naive, v_Cell_LC_HPV)))
+Some(Vector(Set(!v_Cell_LC_HPV), Set(!v_Cell_CD8_Naive)))
+(Set(v_Cell_CD8_Naive, v_Cell_LC_HPV),Set(-20, -23))
+(Set(!v_Cell_LC_HPV),Set(23))
+(Set(!v_Cell_CD8_Naive),Set(20))
+
+Some(Vector(Set(v_Cell_CD8_Naive, v_Cell_Dendritic_IAV), Set(v_Cell_Th1_IAV, v_IL2), Set(v_Cell_Th1_IAV, v_IFNg)))
+Some(Vector(Set(!v_IFNg, !v_IL2, !v_Cell_Dendritic_IAV), Set(!v_Cell_Th1_IAV, !v_Cell_Dendritic_IAV), Set(!v_Cell_CD8_Naive, !v_IFNg, !v_IL2), Set(!v_Cell_Th1_IAV, !v_Cell_CD8_Naive)))
+(Set(v_Cell_CD8_Naive, v_Cell_Dendritic_IAV),Set(-20, -82))
+(Set(v_Cell_Th1_IAV, v_IL2),Set(-13, -75))
+(Set(v_Cell_Th1_IAV, v_IFNg),Set(-13, -69))
+(Set(!v_IFNg, !v_IL2, !v_Cell_Dendritic_IAV),Set(69, 75, 82))
+(Set(!v_Cell_Th1_IAV, !v_Cell_Dendritic_IAV),Set(13, 82))
+(Set(!v_Cell_CD8_Naive, !v_IFNg, !v_IL2),Set(20, 69, 75))
+(Set(!v_Cell_Th1_IAV, !v_Cell_CD8_Naive),Set(13, 20))
+
+Some(Vector(Set(v_Cell_Macrophage_Mtb), Set(v_Cell_Dendritic_Mtb), Set(v_Cell_Neutrophil_Mtb)))
+Some(Vector(Set(!v_Cell_Neutrophil_Mtb, !v_Cell_Dendritic_Mtb, !v_Cell_Macrophage_Mtb)))
+(Set(v_Cell_Macrophage_Mtb),Set(-48))
+(Set(v_Cell_Dendritic_Mtb),Set(-38))
+(Set(v_Cell_Neutrophil_Mtb),Set(-97))
+(Set(!v_Cell_Neutrophil_Mtb, !v_Cell_Dendritic_Mtb, !v_Cell_Macrophage_Mtb),Set(97, 38, 48))
+
+Some(Vector(Set(v_HealthyState, !v_PV_HIV)))
+Some(Vector(Set(v_PV_HIV), Set(!v_HealthyState)))
+(Set(v_HealthyState, !v_PV_HIV),Set(-63, 104))
+(Set(v_PV_HIV),Set(-104))
+(Set(!v_HealthyState),Set(63))
+
+Some(Vector(Set(v_Cell_CD8_Naive, v_Cell_Dendritic_PF)))
+Some(Vector(Set(!v_Cell_Dendritic_PF), Set(!v_Cell_CD8_Naive)))
+(Set(v_Cell_CD8_Naive, v_Cell_Dendritic_PF),Set(-20, -64))
+(Set(!v_Cell_Dendritic_PF),Set(64))
+(Set(!v_Cell_CD8_Naive),Set(20))
+
+Some(Vector(Set(v_Cell_Dendritic_Healthy, v_Cell_Epithelial_CandidaAlbicans)))
+Some(Vector(Set(!v_Cell_Epithelial_CandidaAlbicans), Set(!v_Cell_Dendritic_Healthy)))
+(Set(v_Cell_Dendritic_Healthy, v_Cell_Epithelial_CandidaAlbicans),Set(-49, -53))
+(Set(!v_Cell_Epithelial_CandidaAlbicans),Set(53))
+(Set(!v_Cell_Dendritic_Healthy),Set(49))
+
+Some(Vector(Set(v_Cell_Dendritic_Healthy, v_Virus_EBOV, !v_IgG), Set(v_Cell_Dendritic_Healthy, v_PV_EBOV, !v_IgG)))
+Some(Vector(Set(v_IgG), Set(!v_PV_EBOV, !v_Virus_EBOV), Set(!v_Cell_Dendritic_Healthy)))
+(Set(v_Cell_Dendritic_Healthy, v_Virus_EBOV, !v_IgG),Set(-49, -94, 95))
+(Set(v_Cell_Dendritic_Healthy, v_PV_EBOV, !v_IgG),Set(-49, -47, 95))
+(Set(v_IgG),Set(-95))
+(Set(!v_PV_EBOV, !v_Virus_EBOV),Set(47, 94))
+(Set(!v_Cell_Dendritic_Healthy),Set(49))
+
+Some(Vector(Set(v_Cell_Dendritic_Healthy, v_Virus_HIV), Set(v_Cell_Dendritic_Healthy, v_Cell_LC_HIV)))
+Some(Vector(Set(!v_Cell_LC_HIV, !v_Virus_HIV), Set(!v_Cell_Dendritic_Healthy)))
+(Set(v_Cell_Dendritic_Healthy, v_Virus_HIV),Set(-49, -113))
+(Set(v_Cell_Dendritic_Healthy, v_Cell_LC_HIV),Set(-49, -39))
+(Set(!v_Cell_LC_HIV, !v_Virus_HIV),Set(39, 113))
+(Set(!v_Cell_Dendritic_Healthy),Set(49))
+
+Some(Vector(Set(v_Cell_Dendritic_Leishmania), Set(v_HealthyState), Set(v_Cell_Dendritic_PF)))
+Some(Vector(Set(!v_DaughterCells_CandidaAlbicans, !v_Cell_Dendritic_Leishmania, !v_Cell_Dendritic_PF, !v_HealthyState)))
+(Set(v_Cell_Dendritic_Leishmania),Set(-19))
+(Set(v_HealthyState),Set(-63))
+(Set(v_Cell_Dendritic_PF),Set(-64))
+(Set(!v_DaughterCells_CandidaAlbicans, !v_Cell_Dendritic_Leishmania, !v_Cell_Dendritic_PF, !v_HealthyState),Set(64, 63, 72, 19))
+
+Some(Vector(Set(v_Cell_Endothelial_Helminth), Set(v_Cell_Epithelial_helminth)))
+Some(Vector(Set(!v_Cell_Epithelial_helminth, !v_Cell_Endothelial_Helminth)))
+(Set(v_Cell_Endothelial_Helminth),Set(-71))
+(Set(v_Cell_Epithelial_helminth),Set(-40))
+(Set(!v_Cell_Epithelial_helminth, !v_Cell_Endothelial_Helminth),Set(40, 71))
+
+Some(Vector(Set(v_Cell_Dendritic_Healthy, v_Virus_IAV), Set(v_Cell_Dendritic_Healthy, v_Cell_Epithelial_IAV), Set(v_Cell_Dendritic_Healthy, v_PV_IAV)))
+Some(Vector(Set(!v_PV_IAV, !v_Cell_Epithelial_IAV, !v_Virus_IAV), Set(!v_Cell_Dendritic_Healthy)))
+(Set(v_Cell_Dendritic_Healthy, v_Virus_IAV),Set(-49, -6))
+(Set(v_Cell_Dendritic_Healthy, v_Cell_Epithelial_IAV),Set(-49, -9))
+(Set(v_Cell_Dendritic_Healthy, v_PV_IAV),Set(-49, -7))
+(Set(!v_PV_IAV, !v_Cell_Epithelial_IAV, !v_Virus_IAV),Set(7, 9, 6))
+(Set(!v_Cell_Dendritic_Healthy),Set(49))
+
+Some(Vector(Set(v_Promastigotes_Leishmania, v_Cell_monocytes_leishmania), Set(v_Cell_Dendritic_Healthy, v_Promastigotes_Leishmania)))
+Some(Vector(Set(!v_Cell_Dendritic_Healthy, !v_Cell_monocytes_leishmania), Set(!v_Promastigotes_Leishmania)))
+(Set(v_Promastigotes_Leishmania, v_Cell_monocytes_leishmania),Set(-30, -92))
+(Set(v_Cell_Dendritic_Healthy, v_Promastigotes_Leishmania),Set(-49, -30))
+(Set(!v_Cell_Dendritic_Healthy, !v_Cell_monocytes_leishmania),Set(49, 92))
+(Set(!v_Promastigotes_Leishmania),Set(30))
+
+Some(Vector(Set(v_Cell_Dendritic_Healthy, v_Apoptosis_Macrophage_Mtb), Set(v_Rep_Mtb, v_Cell_Dendritic_Healthy)))
+Some(Vector(Set(!v_Rep_Mtb, !v_Apoptosis_Macrophage_Mtb), Set(!v_Cell_Dendritic_Healthy)))
+(Set(v_Cell_Dendritic_Healthy, v_Apoptosis_Macrophage_Mtb),Set(-49, -17))
+(Set(v_Rep_Mtb, v_Cell_Dendritic_Healthy),Set(-14, -49))
+(Set(!v_Rep_Mtb, !v_Apoptosis_Macrophage_Mtb),Set(14, 17))
+(Set(!v_Cell_Dendritic_Healthy),Set(49))
+
+Some(Vector(Set(v_Cell_Dendritic_Healthy, v_Cell_Erythrocyte_PF), Set(v_Cell_Dendritic_Healthy, v_IFNg, v_Cell_NK_PF), Set(v_Cell_Dendritic_Healthy, v_IFNg, v_Cell_Th1_PF)))
+Some(Vector(Set(!v_Cell_Th1_PF, !v_Cell_NK_PF, !v_Cell_Erythrocyte_PF), Set(!v_IFNg, !v_Cell_Erythrocyte_PF), Set(!v_Cell_Dendritic_Healthy)))
+(Set(v_Cell_Dendritic_Healthy, v_Cell_Erythrocyte_PF),Set(-49, -98))
+(Set(v_Cell_Dendritic_Healthy, v_IFNg, v_Cell_NK_PF),Set(-49, -69, -84))
+(Set(v_Cell_Dendritic_Healthy, v_IFNg, v_Cell_Th1_PF),Set(-49, -69, -74))
+(Set(!v_Cell_Th1_PF, !v_Cell_NK_PF, !v_Cell_Erythrocyte_PF),Set(74, 84, 98))
+(Set(!v_IFNg, !v_Cell_Erythrocyte_PF),Set(69, 98))
+(Set(!v_Cell_Dendritic_Healthy),Set(49))
+
+Some(Vector(Set(!v_IgG, !v_Cell_Th2_Helminth, !v_Cell_B_Helminth, !v_HealthyState, v_Larvae_Helminth)))
+Some(Vector(Set(!v_Larvae_Helminth), Set(v_Cell_Th2_Helminth), Set(v_Cell_B_Helminth), Set(v_IgG), Set(v_HealthyState)))
+(Set(!v_IgG, !v_Cell_Th2_Helminth, !v_Cell_B_Helminth, !v_HealthyState, v_Larvae_Helminth),Set(-55, 86, 63, 95, 58))
+(Set(!v_Larvae_Helminth),Set(55))
+(Set(v_Cell_Th2_Helminth),Set(-86))
+(Set(v_Cell_B_Helminth),Set(-58))
+(Set(v_IgG),Set(-95))
+(Set(v_HealthyState),Set(-63))
+
+Some(Vector(Set(v_HealthyState, v_IL5)))
+Some(Vector(Set(!v_IL5), Set(!v_HealthyState)))
+(Set(v_HealthyState, v_IL5),Set(-63, -68))
+(Set(!v_IL5),Set(68))
+(Set(!v_HealthyState),Set(63))
+
+Some(Vector(Set(!v_Cell_Th17_CandidaAlbicans, v_Cell_Epithelial_Healthy, v_DaughterCells_CandidaAlbicans, !v_IL22, !v_Cell_Neutrophil_CandidaAlbicans)))
+Some(Vector(Set(v_Cell_Neutrophil_CandidaAlbicans), Set(v_Cell_Th17_CandidaAlbicans), Set(!v_Cell_Epithelial_Healthy), Set(!v_DaughterCells_CandidaAlbicans), Set(v_IL22)))
+(Set(!v_Cell_Th17_CandidaAlbicans, v_Cell_Epithelial_Healthy, v_DaughterCells_CandidaAlbicans, !v_IL22, !v_Cell_Neutrophil_CandidaAlbicans),Set(101, -59, 25, -72, 67))
+(Set(v_Cell_Neutrophil_CandidaAlbicans),Set(-25))
+(Set(v_Cell_Th17_CandidaAlbicans),Set(-67))
+(Set(!v_Cell_Epithelial_Healthy),Set(59))
+(Set(!v_DaughterCells_CandidaAlbicans),Set(72))
+(Set(v_IL22),Set(-101))
+
+Some(Vector(Set(v_epithelial_set, !v_Cell_Epithelial_helminth)))
+Some(Vector(Set(v_Cell_Epithelial_helminth), Set(!v_epithelial_set)))
+(Set(v_epithelial_set, !v_Cell_Epithelial_helminth),Set(-41, 40))
+(Set(v_Cell_Epithelial_helminth),Set(-40))
+(Set(!v_epithelial_set),Set(41))
+
+Some(Vector(Set(v_Cell_Epithelial_Healthy, v_Virus_IAV, !v_Cell_CD8_IAV, !v_Cell_NK_IAV, !v_Cell_Macrophage_IAV), Set(v_PV_IAV, v_Cell_Epithelial_Healthy, !v_Cell_CD8_IAV, !v_Cell_NK_IAV, !v_Cell_Macrophage_IAV)))
+Some(Vector(Set(!v_Virus_IAV, !v_PV_IAV), Set(v_Cell_Macrophage_IAV), Set(v_Cell_NK_IAV), Set(!v_Cell_Epithelial_Healthy), Set(v_Cell_CD8_IAV)))
+(Set(v_Cell_Epithelial_Healthy, v_Virus_IAV, !v_Cell_CD8_IAV, !v_Cell_NK_IAV, !v_Cell_Macrophage_IAV),Set(-59, 24, 102, 16, -6))
+(Set(v_PV_IAV, v_Cell_Epithelial_Healthy, !v_Cell_CD8_IAV, !v_Cell_NK_IAV, !v_Cell_Macrophage_IAV),Set(-59, -7, 24, 102, 16))
+(Set(!v_Virus_IAV, !v_PV_IAV),Set(6, 7))
+(Set(v_Cell_Macrophage_IAV),Set(-102))
+(Set(v_Cell_NK_IAV),Set(-24))
+(Set(!v_Cell_Epithelial_Healthy),Set(59))
+(Set(v_Cell_CD8_IAV),Set(-16))
+
+Some(Vector(Set(!v_IgG, !v_Cell_Th2_Helminth, v_Cell_Epithelial_Healthy, !v_Cell_B_Helminth, v_Larvae_Helminth)))
+Some(Vector(Set(!v_Larvae_Helminth), Set(v_Cell_Th2_Helminth), Set(v_Cell_B_Helminth), Set(v_IgG), Set(!v_Cell_Epithelial_Healthy)))
+(Set(!v_IgG, !v_Cell_Th2_Helminth, v_Cell_Epithelial_Healthy, !v_Cell_B_Helminth, v_Larvae_Helminth),Set(-59, -55, 86, 95, 58))
+(Set(!v_Larvae_Helminth),Set(55))
+(Set(v_Cell_Th2_Helminth),Set(-86))
+(Set(v_Cell_B_Helminth),Set(-58))
+(Set(v_IgG),Set(-95))
+(Set(!v_Cell_Epithelial_Healthy),Set(59))
+
+Some(Vector(Set(v_erythrocyte_set, !v_Merozoites_PF)))
+Some(Vector(Set(v_Merozoites_PF), Set(!v_erythrocyte_set)))
+(Set(v_erythrocyte_set, !v_Merozoites_PF),Set(-76, 12))
+(Set(v_Merozoites_PF),Set(-12))
+(Set(!v_erythrocyte_set),Set(76))
+
+Some(Vector(Set(v_Cell_Erythrocyte_Healthy, !v_Merozoites_PF, v_Sporozoites_PF), Set(v_Cell_Erythrocyte_Healthy, v_Merozoites_PF)))
+Some(Vector(Set(!v_Merozoites_PF, !v_Sporozoites_PF), Set(!v_Cell_Erythrocyte_Healthy)))
+(Set(v_Cell_Erythrocyte_Healthy, !v_Merozoites_PF, v_Sporozoites_PF),Set(-93, 12, -96))
+(Set(v_Cell_Erythrocyte_Healthy, v_Merozoites_PF),Set(-93, -12))
+(Set(!v_Merozoites_PF, !v_Sporozoites_PF),Set(12, 96))
+(Set(!v_Cell_Erythrocyte_Healthy),Set(93))
+
+Some(Vector(Set(v_HealthyState, v_PV_EBOV)))
+Some(Vector(Set(!v_PV_EBOV), Set(!v_HealthyState)))
+(Set(v_HealthyState, v_PV_EBOV),Set(-63, -47))
+(Set(!v_PV_EBOV),Set(47))
+(Set(!v_HealthyState),Set(63))
+
+Some(Vector(Set(v_HealthyState, v_IL33, v_IL25)))
+Some(Vector(Set(!v_IL25), Set(!v_IL33), Set(!v_HealthyState)))
+(Set(v_HealthyState, v_IL33, v_IL25),Set(-63, -90, -1))
+(Set(!v_IL25),Set(1))
+(Set(!v_IL33),Set(90))
+(Set(!v_HealthyState),Set(63))
+
+Some(Vector(Set(v_epithelial_set, v_Cell_pKeratinocytes)))
+Some(Vector(Set(!v_Cell_pKeratinocytes, !v_IL10), Set(!v_epithelial_set, !v_IL10)))
+(Set(v_epithelial_set, v_Cell_pKeratinocytes),Set(-41, -42))
+(Set(!v_Cell_pKeratinocytes, !v_IL10),Set(42, 28))
+(Set(!v_epithelial_set, !v_IL10),Set(41, 28))
+
+Some(Vector(Set(!v_HealthyState, v_Virus_HIV)))
+Some(Vector(Set(!v_Virus_HIV), Set(v_HealthyState)))
+(Set(!v_HealthyState, v_Virus_HIV),Set(63, -113))
+(Set(!v_Virus_HIV),Set(113))
+(Set(v_HealthyState),Set(-63))
+
+Some(Vector(Set(!v_HealthyState, v_Cell_Keratinocytes_HPV)))
+Some(Vector(Set(!v_Cell_Keratinocytes_HPV), Set(v_HealthyState)))
+(Set(!v_HealthyState, v_Cell_Keratinocytes_HPV),Set(63, -87))
+(Set(!v_Cell_Keratinocytes_HPV),Set(87))
+(Set(v_HealthyState),Set(-63))
+
+Some(Vector(Set(v_Virus_EBOV, !v_IgG, v_Cell_Macrophage_Healthy, !v_Cell_CD8_EBOV), Set(v_PV_EBOV, !v_IgG, v_Cell_Macrophage_Healthy, !v_Cell_CD8_EBOV)))
+Some(Vector(Set(v_IgG), Set(v_Cell_CD8_EBOV), Set(!v_PV_EBOV, !v_Virus_EBOV), Set(!v_Cell_Macrophage_Healthy)))
+(Set(v_Virus_EBOV, !v_IgG, v_Cell_Macrophage_Healthy, !v_Cell_CD8_EBOV),Set(-94, 95, -103, 106))
+(Set(v_PV_EBOV, !v_IgG, v_Cell_Macrophage_Healthy, !v_Cell_CD8_EBOV),Set(-47, 95, -103, 106))
+(Set(v_IgG),Set(-95))
+(Set(v_Cell_CD8_EBOV),Set(-106))
+(Set(!v_PV_EBOV, !v_Virus_EBOV),Set(47, 94))
+(Set(!v_Cell_Macrophage_Healthy),Set(103))
+
+Some(Vector(Set(v_Cell_Macrophage_Healthy, v_Virus_HIV), Set(v_Cell_Macrophage_Healthy, v_PV_HIV)))
+Some(Vector(Set(!v_PV_HIV, !v_Virus_HIV), Set(!v_Cell_Macrophage_Healthy)))
+(Set(v_Cell_Macrophage_Healthy, v_Virus_HIV),Set(-103, -113))
+(Set(v_Cell_Macrophage_Healthy, v_PV_HIV),Set(-103, -104))
+(Set(!v_PV_HIV, !v_Virus_HIV),Set(104, 113))
+(Set(!v_Cell_Macrophage_Healthy),Set(103))
+
+Some(Vector(Set(v_HealthyState), Set(v_Cell_Macrophage_PF)))
+Some(Vector(Set(!v_Cell_Macrophage_PF, !v_HealthyState, v_PV_HIV), Set(!v_Cell_Macrophage_PF, v_Promastigotes_Leishmania, !v_HealthyState), Set(!v_Cell_Macrophage_PF, v_Rep_Mtb, !v_HealthyState)))
+(Set(v_HealthyState),Set(-63))
+(Set(v_Cell_Macrophage_PF),Set(-2))
+(Set(!v_Cell_Macrophage_PF, !v_HealthyState, v_PV_HIV),Set(2, 63, -104))
+(Set(!v_Cell_Macrophage_PF, v_Promastigotes_Leishmania, !v_HealthyState),Set(2, -30, 63))
+(Set(!v_Cell_Macrophage_PF, v_Rep_Mtb, !v_HealthyState),Set(2, -14, 63))
+
+Some(Vector(Set(v_Cell_Macrophage_Healthy, v_Cell_Epithelial_IAV, !v_Cell_CD8_IAV)))
+Some(Vector(Set(v_Cell_CD8_IAV), Set(!v_Cell_Epithelial_IAV), Set(!v_Cell_Macrophage_Healthy)))
+(Set(v_Cell_Macrophage_Healthy, v_Cell_Epithelial_IAV, !v_Cell_CD8_IAV),Set(-103, -9, 16))
+(Set(v_Cell_CD8_IAV),Set(-16))
+(Set(!v_Cell_Epithelial_IAV),Set(9))
+(Set(!v_Cell_Macrophage_Healthy),Set(103))
+
+Some(Vector(Set(!v_ROS, v_Cell_Macrophage_Healthy, v_Amastgotes_Leishmania, !v_IL10, !v_iNOS), Set(!v_ROS, v_Cell_Macrophage_Healthy, !v_IL10, v_Promastigotes_Leishmania, !v_iNOS)))
+Some(Vector(Set(v_IL10), Set(!v_Promastigotes_Leishmania, !v_Amastgotes_Leishmania), Set(v_ROS), Set(v_iNOS), Set(!v_Cell_Macrophage_Healthy)))
+(Set(!v_ROS, v_Cell_Macrophage_Healthy, v_Amastgotes_Leishmania, !v_IL10, !v_iNOS),Set(-103, 28, 45, -46, 11))
+(Set(!v_ROS, v_Cell_Macrophage_Healthy, !v_IL10, v_Promastigotes_Leishmania, !v_iNOS),Set(-103, 28, -30, 45, 11))
+(Set(v_IL10),Set(-28))
+(Set(!v_Promastigotes_Leishmania, !v_Amastgotes_Leishmania),Set(30, 46))
+(Set(v_ROS),Set(-45))
+(Set(v_iNOS),Set(-11))
+(Set(!v_Cell_Macrophage_Healthy),Set(103))
+
+Some(Vector(Set(v_Cell_Macrophage_Healthy, v_Bacterium_Mtb), Set(v_Cell_Macrophage_Healthy, v_Rep_Mtb)))
+Some(Vector(Set(!v_Rep_Mtb, !v_Bacterium_Mtb), Set(!v_Cell_Macrophage_Healthy)))
+(Set(v_Cell_Macrophage_Healthy, v_Bacterium_Mtb),Set(-103, -79))
+(Set(v_Cell_Macrophage_Healthy, v_Rep_Mtb),Set(-103, -14))
+(Set(!v_Rep_Mtb, !v_Bacterium_Mtb),Set(14, 79))
+(Set(!v_Cell_Macrophage_Healthy),Set(103))
+
+Some(Vector(Set(v_Cell_Macrophage_Healthy, v_Cell_Erythrocyte_PF)))
+Some(Vector(Set(!v_Cell_Erythrocyte_PF), Set(!v_Cell_Macrophage_Healthy)))
+(Set(v_Cell_Macrophage_Healthy, v_Cell_Erythrocyte_PF),Set(-103, -98))
+(Set(!v_Cell_Erythrocyte_PF),Set(98))
+(Set(!v_Cell_Macrophage_Healthy),Set(103))
+
+Some(Vector(Set(v_HealthyState, v_Virus_EBOV), Set(v_HealthyState, v_PV_EBOV)))
+Some(Vector(Set(!v_PV_EBOV, !v_Virus_EBOV), Set(!v_HealthyState)))
+(Set(v_HealthyState, v_Virus_EBOV),Set(-63, -94))
+(Set(v_HealthyState, v_PV_EBOV),Set(-63, -47))
+(Set(!v_PV_EBOV, !v_Virus_EBOV),Set(47, 94))
+(Set(!v_HealthyState),Set(63))
+
+Some(Vector(Set(v_HealthyState, v_Larvae_Helminth)))
+Some(Vector(Set(!v_Larvae_Helminth), Set(!v_HealthyState)))
+(Set(v_HealthyState, v_Larvae_Helminth),Set(-63, -55))
+(Set(!v_Larvae_Helminth),Set(55))
+(Set(!v_HealthyState),Set(63))
+
+Some(Vector(Set(v_HealthyState, v_Cell_Keratinocytes_HPV)))
+Some(Vector(Set(!v_Cell_Keratinocytes_HPV), Set(!v_HealthyState)))
+(Set(v_HealthyState, v_Cell_Keratinocytes_HPV),Set(-63, -87))
+(Set(!v_Cell_Keratinocytes_HPV),Set(87))
+(Set(!v_HealthyState),Set(63))
+
+Some(Vector(Set(v_HealthyState, v_Cell_Epithelial_IAV)))
+Some(Vector(Set(!v_Cell_Epithelial_IAV), Set(!v_HealthyState)))
+(Set(v_HealthyState, v_Cell_Epithelial_IAV),Set(-63, -9))
+(Set(!v_Cell_Epithelial_IAV),Set(9))
+(Set(!v_HealthyState),Set(63))
+
+Some(Vector(Set(v_HealthyState, v_Cell_Neutrophil_Leishmania, v_Promastigotes_Leishmania)))
+Some(Vector(Set(!v_Promastigotes_Leishmania), Set(!v_Cell_Neutrophil_Leishmania), Set(!v_HealthyState)))
+(Set(v_HealthyState, v_Cell_Neutrophil_Leishmania, v_Promastigotes_Leishmania),Set(-63, -56, -30))
+(Set(!v_Promastigotes_Leishmania),Set(30))
+(Set(!v_Cell_Neutrophil_Leishmania),Set(56))
+(Set(!v_HealthyState),Set(63))
+
+Some(Vector(Set(!v_Cell_Treg_PF, v_IL12, v_HealthyState, v_Cell_Dendritic_PF), Set(!v_IL10, v_IL12, v_HealthyState, v_Cell_Dendritic_PF), Set(!v_Cell_Treg_PF, v_Cell_Th1_PF, v_IL2), Set(!v_IL10, v_Cell_Th1_PF, v_IL2)))
+Some(Vector(Set(v_IL10, v_Cell_Treg_PF), Set(!v_Cell_Dendritic_PF, !v_Cell_Th1_PF), Set(!v_Cell_Dendritic_PF, !v_IL2), Set(!v_IL12, !v_Cell_Th1_PF), Set(!v_IL12, !v_IL2), Set(!v_HealthyState, !v_Cell_Th1_PF), Set(!v_HealthyState, !v_IL2)))
+(Set(!v_Cell_Treg_PF, v_IL12, v_HealthyState, v_Cell_Dendritic_PF),Set(44, -57, -63, -64))
+(Set(!v_IL10, v_IL12, v_HealthyState, v_Cell_Dendritic_PF),Set(28, -57, -63, -64))
+(Set(!v_Cell_Treg_PF, v_Cell_Th1_PF, v_IL2),Set(44, -74, -75))
+(Set(!v_IL10, v_Cell_Th1_PF, v_IL2),Set(28, -74, -75))
+(Set(v_IL10, v_Cell_Treg_PF),Set(-28, -44))
+(Set(!v_Cell_Dendritic_PF, !v_Cell_Th1_PF),Set(64, 74))
+(Set(!v_Cell_Dendritic_PF, !v_IL2),Set(64, 75))
+(Set(!v_IL12, !v_Cell_Th1_PF),Set(57, 74))
+(Set(!v_IL12, !v_IL2),Set(57, 75))
+(Set(!v_HealthyState, !v_Cell_Th1_PF),Set(63, 74))
+(Set(!v_HealthyState, !v_IL2),Set(63, 75))
+
+Some(Vector(Set(v_HealthyState, v_Cell_Th17_CandidaAlbicans), Set(v_IL8, v_Cell_Epithelial_CandidaAlbicans, v_HealthyState, v_IL1)))
+Some(Vector(Set(!v_Cell_Th17_CandidaAlbicans, !v_IL1), Set(!v_IL8, !v_Cell_Th17_CandidaAlbicans), Set(!v_Cell_Epithelial_CandidaAlbicans, !v_Cell_Th17_CandidaAlbicans), Set(!v_HealthyState)))
+(Set(v_HealthyState, v_Cell_Th17_CandidaAlbicans),Set(-63, -67))
+(Set(v_IL8, v_Cell_Epithelial_CandidaAlbicans, v_HealthyState, v_IL1),Set(-34, -53, -63, -99))
+(Set(!v_Cell_Th17_CandidaAlbicans, !v_IL1),Set(67, 99))
+(Set(!v_IL8, !v_Cell_Th17_CandidaAlbicans),Set(34, 67))
+(Set(!v_Cell_Epithelial_CandidaAlbicans, !v_Cell_Th17_CandidaAlbicans),Set(53, 67))
+(Set(!v_HealthyState),Set(63))
+
+Some(Vector(Set(v_HealthyState, v_Promastigotes_Leishmania)))
+Some(Vector(Set(!v_Promastigotes_Leishmania), Set(!v_HealthyState)))
+(Set(v_HealthyState, v_Promastigotes_Leishmania),Set(-63, -30))
+(Set(!v_Promastigotes_Leishmania),Set(30))
+(Set(!v_HealthyState),Set(63))
+
+Some(Vector(Set(v_HealthyState, v_Rep_Mtb), Set(v_Bacterium_Mtb, v_HealthyState)))
+Some(Vector(Set(!v_Bacterium_Mtb, !v_Rep_Mtb), Set(!v_HealthyState)))
+(Set(v_HealthyState, v_Rep_Mtb),Set(-63, -14))
+(Set(v_Bacterium_Mtb, v_HealthyState),Set(-79, -63))
+(Set(!v_Bacterium_Mtb, !v_Rep_Mtb),Set(79, 14))
+(Set(!v_HealthyState),Set(63))
+
+Some(Vector(Set(v_Cell_CD4_Naive, v_Cell_Dendritic_CandidaAlbicans)))
+Some(Vector(Set(!v_Cell_Dendritic_CandidaAlbicans), Set(!v_Cell_CD4_Naive)))
+(Set(v_Cell_CD4_Naive, v_Cell_Dendritic_CandidaAlbicans),Set(-52, -89))
+(Set(!v_Cell_Dendritic_CandidaAlbicans),Set(89))
+(Set(!v_Cell_CD4_Naive),Set(52))
+
+Some(Vector(Set(v_Cell_CD4_Naive, v_IL12, v_Cell_Dendritic_EBOV)))
+Some(Vector(Set(!v_Cell_Dendritic_EBOV), Set(!v_IL12), Set(!v_Cell_CD4_Naive)))
+(Set(v_Cell_CD4_Naive, v_IL12, v_Cell_Dendritic_EBOV),Set(-52, -57, -77))
+(Set(!v_Cell_Dendritic_EBOV),Set(77))
+(Set(!v_IL12),Set(57))
+(Set(!v_Cell_CD4_Naive),Set(52))
+
+Some(Vector(Set(v_Cell_CD4_Naive, v_Cell_LC_HPV)))
+Some(Vector(Set(!v_Cell_LC_HPV), Set(!v_Cell_CD4_Naive)))
+(Set(v_Cell_CD4_Naive, v_Cell_LC_HPV),Set(-52, -23))
+(Set(!v_Cell_LC_HPV),Set(23))
+(Set(!v_Cell_CD4_Naive),Set(52))
+
+Some(Vector(Set(v_Cell_CD4_Naive, v_IL12, v_Cell_Dendritic_IAV)))
+Some(Vector(Set(!v_Cell_Dendritic_IAV), Set(!v_IL12), Set(!v_Cell_CD4_Naive)))
+(Set(v_Cell_CD4_Naive, v_IL12, v_Cell_Dendritic_IAV),Set(-52, -57, -82))
+(Set(!v_Cell_Dendritic_IAV),Set(82))
+(Set(!v_IL12),Set(57))
+(Set(!v_Cell_CD4_Naive),Set(52))
+
+Some(Vector(Set(v_Cell_CD4_Naive, v_IL12, v_Cell_Dendritic_Leishmania)))
+Some(Vector(Set(!v_Cell_Dendritic_Leishmania), Set(!v_IL12), Set(!v_Cell_CD4_Naive)))
+(Set(v_Cell_CD4_Naive, v_IL12, v_Cell_Dendritic_Leishmania),Set(-52, -57, -19))
+(Set(!v_Cell_Dendritic_Leishmania),Set(19))
+(Set(!v_IL12),Set(57))
+(Set(!v_Cell_CD4_Naive),Set(52))
+
+Some(Vector(Set(v_IL18, v_IL27, v_Cell_CD4_Naive, !v_IL10, v_Cell_Dendritic_Mtb, v_IL12)))
+Some(Vector(Set(v_IL10), Set(!v_IL12), Set(!v_IL18), Set(!v_Cell_CD4_Naive), Set(!v_Cell_Dendritic_Mtb), Set(!v_IL27)))
+(Set(v_IL18, v_IL27, v_Cell_CD4_Naive, !v_IL10, v_Cell_Dendritic_Mtb, v_IL12),Set(-32, -54, 28, -52, -57, -38))
+(Set(v_IL10),Set(-28))
+(Set(!v_IL12),Set(57))
+(Set(!v_IL18),Set(32))
+(Set(!v_Cell_CD4_Naive),Set(52))
+(Set(!v_Cell_Dendritic_Mtb),Set(38))
+(Set(!v_IL27),Set(54))
+
+Some(Vector(Set(v_IFNg, v_Cell_NK_PF), Set(v_Cell_Macrophage_PF, v_Cell_CD4_Naive, v_IL12), Set(v_Cell_CD4_Naive, v_IL12, v_Cell_Dendritic_PF)))
+Some(Vector(Set(v_TGFB), Set(v_IL10), Set(!v_Cell_Macrophage_PF, !v_Cell_Dendritic_PF, !v_IFNg), Set(!v_Cell_CD4_Naive, !v_IFNg), Set(!v_IL12, !v_IFNg)))
+(Set(v_IFNg, v_Cell_NK_PF),Set(-69, -84))
+(Set(v_Cell_Macrophage_PF, v_Cell_CD4_Naive, v_IL12),Set(-2, -52, -57))
+(Set(v_Cell_CD4_Naive, v_IL12, v_Cell_Dendritic_PF),Set(-52, -57, -64))
+(Set(v_TGFB),Set(-31))
+(Set(v_IL10),Set(-28))
+(Set(!v_Cell_Macrophage_PF, !v_Cell_Dendritic_PF, !v_IFNg),Set(2, 64, 69))
+(Set(!v_Cell_CD4_Naive, !v_IFNg),Set(52, 69))
+(Set(!v_IL12, !v_IFNg),Set(57, 69))
+
+Some(Vector(Set(!v_IL27, v_IL4, !v_IFNg, v_Cell_Dendritic_Helminth, v_Cell_CD4_Naive, !v_IL10, !v_TGFB)))
+Some(Vector(Set(v_IL10), Set(v_TGFB), Set(!v_Cell_Dendritic_Helminth), Set(!v_IL4), Set(!v_Cell_CD4_Naive), Set(v_IFNg), Set(v_IL27)))
+(Set(!v_IL27, v_IL4, !v_IFNg, v_Cell_Dendritic_Helminth, v_Cell_CD4_Naive, !v_IL10, !v_TGFB),Set(69, -22, 28, -26, 54, -52, 31))
+(Set(v_IL10),Set(-28))
+(Set(v_TGFB),Set(-31))
+(Set(!v_Cell_Dendritic_Helminth),Set(26))
+(Set(!v_IL4),Set(22))
+(Set(!v_Cell_CD4_Naive),Set(52))
+(Set(v_IFNg),Set(-69))
+(Set(v_IL27),Set(-54))
+
+Some(Vector(Set(v_Cell_CD4_Naive, v_Cell_Dendritic_IAV, !v_IL10)))
+Some(Vector(Set(v_IL10), Set(!v_Cell_Dendritic_IAV), Set(!v_Cell_CD4_Naive)))
+(Set(v_Cell_CD4_Naive, v_Cell_Dendritic_IAV, !v_IL10),Set(-52, -82, 28))
+(Set(v_IL10),Set(-28))
+(Set(!v_Cell_Dendritic_IAV),Set(82))
+(Set(!v_Cell_CD4_Naive),Set(52))
+
+Some(Vector(Set(v_Cell_CD4_Naive, v_Cell_pDendritic_HIV)))
+Some(Vector(Set(!v_Cell_pDendritic_HIV), Set(!v_Cell_CD4_Naive)))
+(Set(v_Cell_CD4_Naive, v_Cell_pDendritic_HIV),Set(-52, -65))
+(Set(!v_Cell_pDendritic_HIV),Set(65))
+(Set(!v_Cell_CD4_Naive),Set(52))
+
+Some(Vector(Set(v_Cell_CD4_Naive, v_Cell_Th1_IAV), Set(v_Cell_CD4_Naive, v_Cell_Th2_IAV)))
+Some(Vector(Set(!v_Cell_Th2_IAV, !v_Cell_Th1_IAV), Set(!v_Cell_CD4_Naive)))
+(Set(v_Cell_CD4_Naive, v_Cell_Th1_IAV),Set(-52, -13))
+(Set(v_Cell_CD4_Naive, v_Cell_Th2_IAV),Set(-52, -50))
+(Set(!v_Cell_Th2_IAV, !v_Cell_Th1_IAV),Set(50, 13))
+(Set(!v_Cell_CD4_Naive),Set(52))
+
+Some(Vector(Set(v_Cell_CD4_Naive, v_Cell_Th1_PF)))
+Some(Vector(Set(!v_Cell_Th1_PF), Set(!v_Cell_CD4_Naive)))
+(Set(v_Cell_CD4_Naive, v_Cell_Th1_PF),Set(-52, -74))
+(Set(!v_Cell_Th1_PF),Set(74))
+(Set(!v_Cell_CD4_Naive),Set(52))
+
+Some(Vector(Set(v_HealthyState, v_Promastigotes_Leishmania)))
+Some(Vector(Set(!v_Promastigotes_Leishmania), Set(!v_HealthyState)))
+(Set(v_HealthyState, v_Promastigotes_Leishmania),Set(-63, -30))
+(Set(!v_Promastigotes_Leishmania),Set(30))
+(Set(!v_HealthyState),Set(63))
+
+Some(Vector(Set(v_HealthyState, v_PV_HIV)))
+Some(Vector(Set(!v_PV_HIV), Set(!v_HealthyState)))
+(Set(v_HealthyState, v_PV_HIV),Set(-63, -104))
+(Set(!v_PV_HIV),Set(104))
+(Set(!v_HealthyState),Set(63))
+
+Some(Vector(Set(v_epithelial_set, v_Virus_HPV)))
+Some(Vector(Set(!v_Virus_HPV), Set(!v_epithelial_set)))
+(Set(v_epithelial_set, v_Virus_HPV),Set(-41, -8))
+(Set(!v_Virus_HPV),Set(8))
+(Set(!v_epithelial_set),Set(41))
+
+Some(Vector(Set(v_Fungi_CandidaAlbicans, !v_Cell_Th17_CandidaAlbicans, !v_IL22)))
+Some(Vector(Set(v_IL22), Set(v_Cell_Th17_CandidaAlbicans), Set(!v_Fungi_CandidaAlbicans)))
+(Set(v_Fungi_CandidaAlbicans, !v_Cell_Th17_CandidaAlbicans, !v_IL22),Set(-5, 67, 101))
+(Set(v_IL22),Set(-101))
+(Set(v_Cell_Th17_CandidaAlbicans),Set(-67))
+(Set(!v_Fungi_CandidaAlbicans),Set(5))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_HealthyState, v_Cell_CD8_HIV), Set(v_Cell_pDendritic_HIV)))
+Some(Vector(Set(!v_Cell_pDendritic_HIV, !v_Cell_CD8_HIV), Set(!v_Cell_pDendritic_HIV, !v_HealthyState)))
+(Set(v_HealthyState, v_Cell_CD8_HIV),Set(-63, -70))
+(Set(v_Cell_pDendritic_HIV),Set(-65))
+(Set(!v_Cell_pDendritic_HIV, !v_Cell_CD8_HIV),Set(65, 70))
+(Set(!v_Cell_pDendritic_HIV, !v_HealthyState),Set(65, 63))
+
+Some(Vector(Set(v_HealthyState, v_Cell_CD8_HIV), Set(v_Cell_pDendritic_HIV)))
+Some(Vector(Set(!v_Cell_pDendritic_HIV, !v_Cell_CD8_HIV), Set(!v_Cell_pDendritic_HIV, !v_HealthyState)))
+(Set(v_HealthyState, v_Cell_CD8_HIV),Set(-63, -70))
+(Set(v_Cell_pDendritic_HIV),Set(-65))
+(Set(!v_Cell_pDendritic_HIV, !v_Cell_CD8_HIV),Set(65, 70))
+(Set(!v_Cell_pDendritic_HIV, !v_HealthyState),Set(65, 63))
+
+Some(Vector(Set(!v_IL10, v_Cell_Th1_Mtb), Set(!v_IL10, v_Cell_CD8_EBOV), Set(v_Cell_CD8_Mtb, !v_IL10), Set(!v_IL10, v_Cell_Macrophage_EBOV), Set(v_Cell_Th1_PF), Set(v_Fungi_CandidaAlbicans, v_Cell_Th17_CandidaAlbicans), Set(v_Cell_CD8_HIV), Set(v_Cell_NK_PF), Set(v_Cell_CD8_PF), Set(!v_IL10, v_Cell_Th1_HPV), Set(v_Cell_CD4_HIV), Set(v_Cell_Th1_Leishmania), Set(!v_IL10, v_Cell_Monocytes_EBOV), Set(!v_IL10, v_Cell_CD8_HPV), Set(v_Cell_Th1_IAV), Set(!v_IL10, v_Cell_NK_HPV), Set(v_Cell_NK_Leishmania), Set(!v_IL10, v_Cell_Th1_EBOV)))
+Some(Vector(Set(!v_Cell_NK_Leishmania, !v_Cell_Th1_Leishmania, !v_Cell_CD8_HIV, !v_Fungi_CandidaAlbicans, !v_Cell_Macrophage_EBOV, !v_Cell_CD8_EBOV, !v_Cell_CD4_HIV, !v_Cell_CD8_PF, !v_Cell_Th1_Mtb, !v_Cell_Th1_HPV, !v_Cell_Th1_EBOV, !v_Cell_CD8_Mtb, !v_Cell_Monocytes_EBOV, !v_Cell_Th1_PF, !v_Cell_Th1_IAV, !v_Cell_NK_HPV, !v_Cell_NK_PF, !v_Cell_CD8_HPV), Set(!v_Cell_NK_Leishmania, !v_Cell_Th17_CandidaAlbicans, !v_Cell_Th1_Leishmania, !v_Cell_CD8_HIV, !v_Cell_Macrophage_EBOV, !v_Cell_CD8_EBOV, !v_Cell_CD4_HIV, !v_Cell_CD8_PF, !v_Cell_Th1_Mtb, !v_Cell_Th1_HPV, !v_Cell_Th1_EBOV, !v_Cell_CD8_Mtb, !v_Cell_Monocytes_EBOV, !v_Cell_Th1_PF, !v_Cell_Th1_IAV, !v_Cell_NK_HPV, !v_Cell_NK_PF, !v_Cell_CD8_HPV), Set(!v_Cell_NK_Leishmania, !v_Cell_Th1_Leishmania, !v_Cell_CD8_HIV, !v_Fungi_CandidaAlbicans, !v_Cell_CD4_HIV, !v_Cell_CD8_PF, !v_Cell_Th1_PF, !v_Cell_Th1_IAV, !v_Cell_NK_PF, v_IL10), Set(!v_Cell_NK_Leishmania, !v_Cell_Th17_CandidaAlbicans, !v_Cell_Th1_Leishmania, !v_Cell_CD8_HIV, !v_Cell_CD4_HIV, !v_Cell_CD8_PF, !v_Cell_Th1_PF, !v_Cell_Th1_IAV, !v_Cell_NK_PF, v_IL10)))
+(Set(!v_IL10, v_Cell_Th1_Mtb),Set(28, -78))
+(Set(!v_IL10, v_Cell_CD8_EBOV),Set(28, -106))
+(Set(v_Cell_CD8_Mtb, !v_IL10),Set(-15, 28))
+(Set(!v_IL10, v_Cell_Macrophage_EBOV),Set(28, -110))
+(Set(v_Cell_Th1_PF),Set(-74))
+(Set(v_Fungi_CandidaAlbicans, v_Cell_Th17_CandidaAlbicans),Set(-5, -67))
+(Set(v_Cell_CD8_HIV),Set(-70))
+(Set(v_Cell_NK_PF),Set(-84))
+(Set(v_Cell_CD8_PF),Set(-112))
+(Set(!v_IL10, v_Cell_Th1_HPV),Set(28, -29))
+(Set(v_Cell_CD4_HIV),Set(-4))
+(Set(v_Cell_Th1_Leishmania),Set(-3))
+(Set(!v_IL10, v_Cell_Monocytes_EBOV),Set(28, -85))
+(Set(!v_IL10, v_Cell_CD8_HPV),Set(28, -37))
+(Set(v_Cell_Th1_IAV),Set(-13))
+(Set(!v_IL10, v_Cell_NK_HPV),Set(28, -60))
+(Set(v_Cell_NK_Leishmania),Set(-66))
+(Set(!v_IL10, v_Cell_Th1_EBOV),Set(28, -100))
+(Set(!v_Cell_NK_Leishmania, !v_Cell_Th1_Leishmania, !v_Cell_CD8_HIV, !v_Fungi_CandidaAlbicans, !v_Cell_Macrophage_EBOV, !v_Cell_CD8_EBOV, !v_Cell_CD4_HIV, !v_Cell_CD8_PF, !v_Cell_Th1_Mtb, !v_Cell_Th1_HPV, !v_Cell_Th1_EBOV, !v_Cell_CD8_Mtb, !v_Cell_Monocytes_EBOV, !v_Cell_Th1_PF, !v_Cell_Th1_IAV, !v_Cell_NK_HPV, !v_Cell_NK_PF, !v_Cell_CD8_HPV),Set(5, 37, 110, 78, 29, 106, 84, 74, 60, 85, 70, 13, 66, 3, 112, 4, 15, 100))
+(Set(!v_Cell_NK_Leishmania, !v_Cell_Th17_CandidaAlbicans, !v_Cell_Th1_Leishmania, !v_Cell_CD8_HIV, !v_Cell_Macrophage_EBOV, !v_Cell_CD8_EBOV, !v_Cell_CD4_HIV, !v_Cell_CD8_PF, !v_Cell_Th1_Mtb, !v_Cell_Th1_HPV, !v_Cell_Th1_EBOV, !v_Cell_CD8_Mtb, !v_Cell_Monocytes_EBOV, !v_Cell_Th1_PF, !v_Cell_Th1_IAV, !v_Cell_NK_HPV, !v_Cell_NK_PF, !v_Cell_CD8_HPV),Set(37, 110, 78, 29, 106, 84, 74, 60, 85, 70, 13, 66, 3, 112, 67, 4, 15, 100))
+(Set(!v_Cell_NK_Leishmania, !v_Cell_Th1_Leishmania, !v_Cell_CD8_HIV, !v_Fungi_CandidaAlbicans, !v_Cell_CD4_HIV, !v_Cell_CD8_PF, !v_Cell_Th1_PF, !v_Cell_Th1_IAV, !v_Cell_NK_PF, v_IL10),Set(5, 84, 74, 70, 13, 66, 3, 112, 4, -28))
+(Set(!v_Cell_NK_Leishmania, !v_Cell_Th17_CandidaAlbicans, !v_Cell_Th1_Leishmania, !v_Cell_CD8_HIV, !v_Cell_CD4_HIV, !v_Cell_CD8_PF, !v_Cell_Th1_PF, !v_Cell_Th1_IAV, !v_Cell_NK_PF, v_IL10),Set(84, 74, 70, 13, 66, 3, 112, 67, 4, -28))
+
+Some(Vector(Set(v_Cell_Epithelial_CandidaAlbicans), Set(v_Cell_Macrophage_Mtb), Set(v_Cell_Dendritic_Mtb), Set(v_Cell_Macrophage_EBOV)))
+Some(Vector(Set(!v_Cell_Macrophage_EBOV, !v_Cell_Dendritic_Mtb, !v_Cell_Macrophage_Mtb, !v_Cell_Epithelial_CandidaAlbicans)))
+(Set(v_Cell_Epithelial_CandidaAlbicans),Set(-53))
+(Set(v_Cell_Macrophage_Mtb),Set(-48))
+(Set(v_Cell_Dendritic_Mtb),Set(-38))
+(Set(v_Cell_Macrophage_EBOV),Set(-110))
+(Set(!v_Cell_Macrophage_EBOV, !v_Cell_Dendritic_Mtb, !v_Cell_Macrophage_Mtb, !v_Cell_Epithelial_CandidaAlbicans),Set(110, 38, 48, 53))
+
+Some(Vector(Set(v_Cell_Treg_PF, v_Cell_Th1_PF), Set(v_Cell_Macrophage_Mtb, v_Cell_Th1_Mtb), Set(v_Cell_Treg_HIV), Set(v_Cell_Th2_Helminth), Set(v_Cell_CD8_Mtb, v_Cell_Dendritic_Mtb), Set(v_Cell_Keratinocytes_HPV), Set(v_Cell_Macrophage_EBOV), Set(v_Cell_Treg_IAV), Set(v_Cell_Macrophage_Leishmania), Set(v_Cell_Monocytes_EBOV)))
+Some(Vector(Set(!v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Th1_Mtb, !v_Cell_Treg_IAV, !v_Cell_CD8_Mtb, !v_Cell_Monocytes_EBOV, !v_Cell_Th1_PF), Set(!v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Treg_IAV, !v_Cell_CD8_Mtb, !v_Cell_Monocytes_EBOV, !v_Cell_Th1_PF), Set(!v_Cell_Dendritic_Mtb, !v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Th1_Mtb, !v_Cell_Treg_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Th1_PF), Set(!v_Cell_Dendritic_Mtb, !v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Treg_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Th1_PF), Set(!v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Th1_Mtb, !v_Cell_Treg_IAV, !v_Cell_CD8_Mtb, !v_Cell_Monocytes_EBOV, !v_Cell_Treg_PF), Set(!v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Treg_IAV, !v_Cell_CD8_Mtb, !v_Cell_Monocytes_EBOV, !v_Cell_Treg_PF), Set(!v_Cell_Dendritic_Mtb, !v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Th1_Mtb, !v_Cell_Treg_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Treg_PF), Set(!v_Cell_Dendritic_Mtb, !v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Treg_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Treg_PF)))
+(Set(v_Cell_Treg_PF, v_Cell_Th1_PF),Set(-44, -74))
+(Set(v_Cell_Macrophage_Mtb, v_Cell_Th1_Mtb),Set(-48, -78))
+(Set(v_Cell_Treg_HIV),Set(-109))
+(Set(v_Cell_Th2_Helminth),Set(-86))
+(Set(v_Cell_CD8_Mtb, v_Cell_Dendritic_Mtb),Set(-15, -38))
+(Set(v_Cell_Keratinocytes_HPV),Set(-87))
+(Set(v_Cell_Macrophage_EBOV),Set(-110))
+(Set(v_Cell_Treg_IAV),Set(-21))
+(Set(v_Cell_Macrophage_Leishmania),Set(-111))
+(Set(v_Cell_Monocytes_EBOV),Set(-85))
+(Set(!v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Th1_Mtb, !v_Cell_Treg_IAV, !v_Cell_CD8_Mtb, !v_Cell_Monocytes_EBOV, !v_Cell_Th1_PF),Set(110, 78, 74, 85, 21, 109, 86, 87, 15, 111))
+(Set(!v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Treg_IAV, !v_Cell_CD8_Mtb, !v_Cell_Monocytes_EBOV, !v_Cell_Th1_PF),Set(110, 74, 85, 21, 109, 86, 48, 87, 15, 111))
+(Set(!v_Cell_Dendritic_Mtb, !v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Th1_Mtb, !v_Cell_Treg_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Th1_PF),Set(110, 78, 74, 85, 38, 21, 109, 86, 87, 111))
+(Set(!v_Cell_Dendritic_Mtb, !v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Treg_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Th1_PF),Set(110, 74, 85, 38, 21, 109, 86, 48, 87, 111))
+(Set(!v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Th1_Mtb, !v_Cell_Treg_IAV, !v_Cell_CD8_Mtb, !v_Cell_Monocytes_EBOV, !v_Cell_Treg_PF),Set(110, 78, 85, 21, 109, 44, 86, 87, 15, 111))
+(Set(!v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Treg_IAV, !v_Cell_CD8_Mtb, !v_Cell_Monocytes_EBOV, !v_Cell_Treg_PF),Set(110, 85, 21, 109, 44, 86, 48, 87, 15, 111))
+(Set(!v_Cell_Dendritic_Mtb, !v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Th1_Mtb, !v_Cell_Treg_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Treg_PF),Set(110, 78, 85, 38, 21, 109, 44, 86, 87, 111))
+(Set(!v_Cell_Dendritic_Mtb, !v_Cell_Th2_Helminth, !v_Cell_Treg_HIV, !v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Keratinocytes_HPV, !v_Cell_Treg_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Treg_PF),Set(110, 85, 38, 21, 109, 44, 86, 48, 87, 111))
+
+Some(Vector(Set(v_Cell_Macrophage_Mtb), Set(v_Cell_Dendritic_Leishmania), Set(!v_IL10, v_HealthyState, v_Cell_CD8_HIV), Set(v_Cell_Macrophage_IAV), Set(v_Cell_Dendritic_Mtb), Set(v_Cell_Dendritic_PF), Set(v_Cell_Macrophage_PF), Set(v_Cell_Dendritic_EBOV), Set(v_Cell_Macrophage_EBOV), Set(v_Cell_Monocytes_EBOV)))
+Some(Vector(Set(!v_Cell_Dendritic_Mtb, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Dendritic_Leishmania, !v_Cell_Dendritic_PF, !v_Cell_Macrophage_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Dendritic_EBOV, v_IL10, !v_Cell_Macrophage_PF), Set(!v_Cell_Dendritic_Mtb, !v_Cell_CD8_HIV, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Dendritic_Leishmania, !v_Cell_Dendritic_PF, !v_Cell_Macrophage_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Dendritic_EBOV, !v_Cell_Macrophage_PF), Set(!v_Cell_Dendritic_Mtb, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Dendritic_Leishmania, !v_Cell_Dendritic_PF, !v_Cell_Macrophage_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Dendritic_EBOV, !v_HealthyState, !v_Cell_Macrophage_PF)))
+(Set(v_Cell_Macrophage_Mtb),Set(-48))
+(Set(v_Cell_Dendritic_Leishmania),Set(-19))
+(Set(!v_IL10, v_HealthyState, v_Cell_CD8_HIV),Set(28, -63, -70))
+(Set(v_Cell_Macrophage_IAV),Set(-102))
+(Set(v_Cell_Dendritic_Mtb),Set(-38))
+(Set(v_Cell_Dendritic_PF),Set(-64))
+(Set(v_Cell_Macrophage_PF),Set(-2))
+(Set(v_Cell_Dendritic_EBOV),Set(-77))
+(Set(v_Cell_Macrophage_EBOV),Set(-110))
+(Set(v_Cell_Monocytes_EBOV),Set(-85))
+(Set(!v_Cell_Dendritic_Mtb, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Dendritic_Leishmania, !v_Cell_Dendritic_PF, !v_Cell_Macrophage_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Dendritic_EBOV, v_IL10, !v_Cell_Macrophage_PF),Set(110, 85, 102, 38, 77, 2, 64, 48, 19, -28))
+(Set(!v_Cell_Dendritic_Mtb, !v_Cell_CD8_HIV, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Dendritic_Leishmania, !v_Cell_Dendritic_PF, !v_Cell_Macrophage_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Dendritic_EBOV, !v_Cell_Macrophage_PF),Set(110, 85, 102, 38, 70, 77, 2, 64, 48, 19))
+(Set(!v_Cell_Dendritic_Mtb, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Dendritic_Leishmania, !v_Cell_Dendritic_PF, !v_Cell_Macrophage_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Dendritic_EBOV, !v_HealthyState, !v_Cell_Macrophage_PF),Set(110, 85, 102, 38, 77, 2, 64, 48, 63, 19))
+
+Some(Vector(Set(v_Cell_Th2_Helminth), Set(v_Cell_ILC2_Helminth), Set(v_Cell_Th2_IAV)))
+Some(Vector(Set(!v_Cell_Th2_IAV, !v_Cell_ILC2_Helminth, !v_Cell_Th2_Helminth)))
+(Set(v_Cell_Th2_Helminth),Set(-86))
+(Set(v_Cell_ILC2_Helminth),Set(-43))
+(Set(v_Cell_Th2_IAV),Set(-50))
+(Set(!v_Cell_Th2_IAV, !v_Cell_ILC2_Helminth, !v_Cell_Th2_Helminth),Set(50, 43, 86))
+
+Some(Vector(Set(v_HealthyState, v_Cell_CD8_HIV, !v_IL10), Set(v_Cell_Macrophage_Mtb)))
+Some(Vector(Set(!v_Cell_Macrophage_Mtb, v_IL10), Set(!v_Cell_Macrophage_Mtb, !v_Cell_CD8_HIV), Set(!v_Cell_Macrophage_Mtb, !v_HealthyState)))
+(Set(v_HealthyState, v_Cell_CD8_HIV, !v_IL10),Set(-63, -70, 28))
+(Set(v_Cell_Macrophage_Mtb),Set(-48))
+(Set(!v_Cell_Macrophage_Mtb, v_IL10),Set(48, -28))
+(Set(!v_Cell_Macrophage_Mtb, !v_Cell_CD8_HIV),Set(48, 70))
+(Set(!v_Cell_Macrophage_Mtb, !v_HealthyState),Set(48, 63))
+
+Some(Vector(Set(v_Cell_Th1_IAV), Set(v_Cell_Th1_PF)))
+Some(Vector(Set(!v_Cell_Th1_PF, !v_Cell_Th1_IAV)))
+(Set(v_Cell_Th1_IAV),Set(-13))
+(Set(v_Cell_Th1_PF),Set(-74))
+(Set(!v_Cell_Th1_PF, !v_Cell_Th1_IAV),Set(74, 13))
+
+Some(Vector(Set(v_Cell_Th1_PF), Set(v_Cell_Th17_CandidaAlbicans)))
+Some(Vector(Set(!v_Cell_Th17_CandidaAlbicans, !v_Cell_Th1_PF)))
+(Set(v_Cell_Th1_PF),Set(-74))
+(Set(v_Cell_Th17_CandidaAlbicans),Set(-67))
+(Set(!v_Cell_Th17_CandidaAlbicans, !v_Cell_Th1_PF),Set(67, 74))
+
+Some(Vector(Set(v_Cell_Epithelial_helminth), Set(v_Cell_Endothelial_Helminth)))
+Some(Vector(Set(!v_Cell_Endothelial_Helminth, !v_Cell_Epithelial_helminth)))
+(Set(v_Cell_Epithelial_helminth),Set(-40))
+(Set(v_Cell_Endothelial_Helminth),Set(-71))
+(Set(!v_Cell_Endothelial_Helminth, !v_Cell_Epithelial_helminth),Set(71, 40))
+
+Some(Vector(Set(v_Cell_Th1_PF), Set(v_Cell_Macrophage_Mtb)))
+Some(Vector(Set(!v_Cell_Macrophage_Mtb, !v_Cell_Th1_PF)))
+(Set(v_Cell_Th1_PF),Set(-74))
+(Set(v_Cell_Macrophage_Mtb),Set(-48))
+(Set(!v_Cell_Macrophage_Mtb, !v_Cell_Th1_PF),Set(48, 74))
+
+Some(Vector(Set(v_Cell_Endothelial_Helminth), Set(v_Cell_Epithelial_helminth)))
+Some(Vector(Set(!v_Cell_Epithelial_helminth, !v_Cell_Endothelial_Helminth)))
+(Set(v_Cell_Endothelial_Helminth),Set(-71))
+(Set(v_Cell_Epithelial_helminth),Set(-40))
+(Set(!v_Cell_Epithelial_helminth, !v_Cell_Endothelial_Helminth),Set(40, 71))
+
+Some(Vector(Set(v_Cell_Basophil_Helminth), Set(v_Cell_Th2_Helminth), Set(v_Cell_NKT_Helminth), Set(v_Cell_Eosinophil_Helminth), Set(v_Cell_Th2_IAV)))
+Some(Vector(Set(!v_Cell_Th2_Helminth, !v_Cell_NKT_Helminth, !v_Cell_Eosinophil_Helminth, !v_Cell_Th2_IAV, !v_Cell_Basophil_Helminth)))
+(Set(v_Cell_Basophil_Helminth),Set(-80))
+(Set(v_Cell_Th2_Helminth),Set(-86))
+(Set(v_Cell_NKT_Helminth),Set(-33))
+(Set(v_Cell_Eosinophil_Helminth),Set(-73))
+(Set(v_Cell_Th2_IAV),Set(-50))
+(Set(!v_Cell_Th2_Helminth, !v_Cell_NKT_Helminth, !v_Cell_Eosinophil_Helminth, !v_Cell_Th2_IAV, !v_Cell_Basophil_Helminth),Set(33, 73, 86, 80, 50))
+
+Some(Vector(Set(v_Cell_Th2_IAV), Set(v_Cell_ILC2_Helminth), Set(v_Cell_Th2_Helminth)))
+Some(Vector(Set(!v_Cell_Th2_Helminth, !v_Cell_ILC2_Helminth, !v_Cell_Th2_IAV)))
+(Set(v_Cell_Th2_IAV),Set(-50))
+(Set(v_Cell_ILC2_Helminth),Set(-43))
+(Set(v_Cell_Th2_Helminth),Set(-86))
+(Set(!v_Cell_Th2_Helminth, !v_Cell_ILC2_Helminth, !v_Cell_Th2_IAV),Set(86, 43, 50))
+
+Some(Vector(Set(v_Cell_Monocytes_EBOV), Set(v_Cell_Macrophage_EBOV), Set(v_Cell_Epithelial_IAV), Set(v_Cell_Epithelial_CandidaAlbicans)))
+Some(Vector(Set(!v_Cell_Epithelial_CandidaAlbicans, !v_Cell_Epithelial_IAV, !v_Cell_Macrophage_EBOV, !v_Cell_Monocytes_EBOV)))
+(Set(v_Cell_Monocytes_EBOV),Set(-85))
+(Set(v_Cell_Macrophage_EBOV),Set(-110))
+(Set(v_Cell_Epithelial_IAV),Set(-9))
+(Set(v_Cell_Epithelial_CandidaAlbicans),Set(-53))
+(Set(!v_Cell_Epithelial_CandidaAlbicans, !v_Cell_Epithelial_IAV, !v_Cell_Macrophage_EBOV, !v_Cell_Monocytes_EBOV),Set(53, 9, 110, 85))
+
+Some(Vector(Set(v_Cell_B_IAV), Set(v_Cell_B_HIV)))
+Some(Vector(Set(!v_Cell_B_HIV, !v_Cell_B_IAV)))
+(Set(v_Cell_B_IAV),Set(-105))
+(Set(v_Cell_B_HIV),Set(-108))
+(Set(!v_Cell_B_HIV, !v_Cell_B_IAV),Set(108, 105))
+
+Some(Vector(Set(v_Cell_B_IAV), Set(v_Cell_B_Helminth), Set(v_Cell_B_EBOV), Set(v_Cell_B_HIV), Set(v_Cell_B_PF)))
+Some(Vector(Set(!v_Cell_B_PF, !v_Cell_B_EBOV, !v_Cell_B_HIV, !v_Cell_B_Helminth, !v_Cell_B_IAV)))
+(Set(v_Cell_B_IAV),Set(-105))
+(Set(v_Cell_B_Helminth),Set(-58))
+(Set(v_Cell_B_EBOV),Set(-62))
+(Set(v_Cell_B_HIV),Set(-108))
+(Set(v_Cell_B_PF),Set(-35))
+(Set(!v_Cell_B_PF, !v_Cell_B_EBOV, !v_Cell_B_HIV, !v_Cell_B_Helminth, !v_Cell_B_IAV),Set(105, 108, 35, 58, 62))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_Cell_Macrophage_PF, !v_Cell_Dendritic_PF, v_Cell_Erythrocyte_PF)))
+Some(Vector(Set(v_Cell_B_PF, v_IgG, !v_Cell_Erythrocyte_PF), Set(v_Cell_Macrophage_PF), Set(v_Cell_Dendritic_PF)))
+(Set(!v_Cell_Macrophage_PF, !v_Cell_Dendritic_PF, v_Cell_Erythrocyte_PF),Set(2, 64, -98))
+(Set(v_Cell_B_PF, v_IgG, !v_Cell_Erythrocyte_PF),Set(-35, -95, 98))
+(Set(v_Cell_Macrophage_PF),Set(-2))
+(Set(v_Cell_Dendritic_PF),Set(-64))
+
+Some(Vector(Set(!v_TNFa, !v_IgG, v_Cell_Macrophage_EBOV), Set(v_Cell_Dendritic_EBOV, !v_TNFa, !v_IgG), Set(!v_TNFa, v_Cell_Monocytes_EBOV, !v_IgG), Set(!v_TNFa, v_Cell_Hepatocytes_EBOV, !v_IgG)))
+Some(Vector(Set(!v_Cell_Dendritic_EBOV, !v_Cell_Monocytes_EBOV, !v_Cell_Hepatocytes_EBOV, !v_Cell_Macrophage_EBOV), Set(v_TNFa), Set(v_IgG)))
+(Set(!v_TNFa, !v_IgG, v_Cell_Macrophage_EBOV),Set(83, 95, -110))
+(Set(v_Cell_Dendritic_EBOV, !v_TNFa, !v_IgG),Set(-77, 83, 95))
+(Set(!v_TNFa, v_Cell_Monocytes_EBOV, !v_IgG),Set(83, -85, 95))
+(Set(!v_TNFa, v_Cell_Hepatocytes_EBOV, !v_IgG),Set(83, -88, 95))
+(Set(!v_Cell_Dendritic_EBOV, !v_Cell_Monocytes_EBOV, !v_Cell_Hepatocytes_EBOV, !v_Cell_Macrophage_EBOV),Set(77, 85, 88, 110))
+(Set(v_TNFa),Set(-83))
+(Set(v_IgG),Set(-95))
+
+Some(Vector(Set(v_paramPV), Set(!v_Cell_CD4_Naive, v_Cell_CD4_HIV_infected), Set(v_Cell_Macrophage_HIV, !v_Cell_CD4_Naive), Set(v_Cell_Macrophage_HIV, !v_Cell_CD8_HIV), Set(v_Cell_CD4_HIV_infected, !v_Cell_CD8_HIV)))
+Some(Vector(Set(!v_Cell_Macrophage_HIV, v_IgA, !v_Cell_CD4_HIV_infected), Set(!v_Cell_Macrophage_HIV, !v_Cell_CD4_HIV_infected, v_IFNb), Set(v_Cell_CD4_Naive, v_Cell_CD8_HIV), Set(!v_Cell_Macrophage_HIV, !v_Cell_CD4_HIV_infected, v_IgG), Set(!v_Cell_Macrophage_HIV, v_IFNa, !v_Cell_CD4_HIV_infected)))
+(Set(v_paramPV),Set(-27))
+(Set(!v_Cell_CD4_Naive, v_Cell_CD4_HIV_infected),Set(52, -61))
+(Set(v_Cell_Macrophage_HIV, !v_Cell_CD4_Naive),Set(-10, 52))
+(Set(v_Cell_Macrophage_HIV, !v_Cell_CD8_HIV),Set(-10, 70))
+(Set(v_Cell_CD4_HIV_infected, !v_Cell_CD8_HIV),Set(-61, 70))
+(Set(!v_Cell_Macrophage_HIV, v_IgA, !v_Cell_CD4_HIV_infected),Set(10, -51, 61))
+(Set(!v_Cell_Macrophage_HIV, !v_Cell_CD4_HIV_infected, v_IFNb),Set(10, 61, -107))
+(Set(v_Cell_CD4_Naive, v_Cell_CD8_HIV),Set(-52, -70))
+(Set(!v_Cell_Macrophage_HIV, !v_Cell_CD4_HIV_infected, v_IgG),Set(10, 61, -95))
+(Set(!v_Cell_Macrophage_HIV, v_IFNa, !v_Cell_CD4_HIV_infected),Set(10, -18, 61))
+
+Some(Vector(Set(!v_IgG, !v_IgA, v_Cell_Epithelial_IAV, !v_Cell_Macrophage_IAV)))
+Some(Vector(Set(v_IgG), Set(v_Cell_Macrophage_IAV), Set(v_IgA)))
+(Set(!v_IgG, !v_IgA, v_Cell_Epithelial_IAV, !v_Cell_Macrophage_IAV),Set(102, 95, -9, 51))
+(Set(v_IgG),Set(-95))
+(Set(v_Cell_Macrophage_IAV),Set(-102))
+(Set(v_IgA),Set(-51))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_IFNg), Set(v_Cell_Neutrophil_Leishmania), Set(v_Cell_Macrophage_Leishmania)))
+Some(Vector(Set(!v_Cell_Macrophage_Leishmania, !v_Cell_Neutrophil_Leishmania, !v_IFNg)))
+(Set(v_IFNg),Set(-69))
+(Set(v_Cell_Neutrophil_Leishmania),Set(-56))
+(Set(v_Cell_Macrophage_Leishmania),Set(-111))
+(Set(!v_Cell_Macrophage_Leishmania, !v_Cell_Neutrophil_Leishmania, !v_IFNg),Set(111, 56, 69))
+
+Some(Vector(Set(!v_Cell_CD8_Mtb, v_Cell_Macrophage_Mtb, !v_Cell_Th1_Mtb), Set(v_Cell_Macrophage_Mtb, !v_IFNg, !v_TNFa), Set(!v_Cell_CD8_Mtb, !v_Cell_Th1_Mtb, v_Cell_Neutrophil_Mtb), Set(!v_IFNg, !v_TNFa, v_Cell_Neutrophil_Mtb), Set(!v_Cell_CD8_Mtb, v_Cell_Dendritic_Mtb, !v_Cell_Th1_Mtb), Set(v_Cell_Dendritic_Mtb, !v_IFNg, !v_TNFa)))
+Some(Vector(Set(v_IFNg, v_Cell_Th1_Mtb), Set(v_Cell_CD8_Mtb, v_IFNg), Set(v_Cell_Th1_Mtb, v_TNFa), Set(v_Cell_CD8_Mtb, v_TNFa)))
+(Set(!v_Cell_CD8_Mtb, v_Cell_Macrophage_Mtb, !v_Cell_Th1_Mtb),Set(15, -48, 78))
+(Set(v_Cell_Macrophage_Mtb, !v_IFNg, !v_TNFa),Set(-48, 69, 83))
+(Set(!v_Cell_CD8_Mtb, !v_Cell_Th1_Mtb, v_Cell_Neutrophil_Mtb),Set(15, 78, -97))
+(Set(!v_IFNg, !v_TNFa, v_Cell_Neutrophil_Mtb),Set(69, 83, -97))
+(Set(!v_Cell_CD8_Mtb, v_Cell_Dendritic_Mtb, !v_Cell_Th1_Mtb),Set(15, -38, 78))
+(Set(v_Cell_Dendritic_Mtb, !v_IFNg, !v_TNFa),Set(-38, 69, 83))
+(Set(v_IFNg, v_Cell_Th1_Mtb),Set(-69, -78))
+(Set(v_Cell_CD8_Mtb, v_IFNg),Set(-15, -69))
+(Set(v_Cell_Th1_Mtb, v_TNFa),Set(-78, -83))
+(Set(v_Cell_CD8_Mtb, v_TNFa),Set(-15, -83))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Cell_Keratinocytes_HPV), Set(v_Cell_Epithelial_CandidaAlbicans), Set(v_Cell_Treg_PF, v_Cell_Th1_PF)))
+Some(Vector(Set(!v_Cell_Th1_PF, !v_Cell_Epithelial_CandidaAlbicans, !v_Cell_Keratinocytes_HPV), Set(!v_Cell_Treg_PF, !v_Cell_Epithelial_CandidaAlbicans, !v_Cell_Keratinocytes_HPV)))
+(Set(v_Cell_Keratinocytes_HPV),Set(-87))
+(Set(v_Cell_Epithelial_CandidaAlbicans),Set(-53))
+(Set(v_Cell_Treg_PF, v_Cell_Th1_PF),Set(-44, -74))
+(Set(!v_Cell_Th1_PF, !v_Cell_Epithelial_CandidaAlbicans, !v_Cell_Keratinocytes_HPV),Set(74, 53, 87))
+(Set(!v_Cell_Treg_PF, !v_Cell_Epithelial_CandidaAlbicans, !v_Cell_Keratinocytes_HPV),Set(44, 53, 87))
+
+Some(Vector(Set(v_Cell_Macrophage_IAV), Set(!v_IL10, v_Cell_Macrophage_Mtb), Set(v_Cell_Macrophage_PF), Set(v_Cell_Macrophage_EBOV), Set(v_Cell_Macrophage_Leishmania), Set(v_Cell_Monocytes_EBOV)))
+Some(Vector(Set(!v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_EBOV, !v_Cell_Macrophage_IAV, !v_Cell_Monocytes_EBOV, v_IL10, !v_Cell_Macrophage_PF), Set(!v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Macrophage_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Macrophage_PF)))
+(Set(v_Cell_Macrophage_IAV),Set(-102))
+(Set(!v_IL10, v_Cell_Macrophage_Mtb),Set(28, -48))
+(Set(v_Cell_Macrophage_PF),Set(-2))
+(Set(v_Cell_Macrophage_EBOV),Set(-110))
+(Set(v_Cell_Macrophage_Leishmania),Set(-111))
+(Set(v_Cell_Monocytes_EBOV),Set(-85))
+(Set(!v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_EBOV, !v_Cell_Macrophage_IAV, !v_Cell_Monocytes_EBOV, v_IL10, !v_Cell_Macrophage_PF),Set(110, 85, 102, 2, -28, 111))
+(Set(!v_Cell_Macrophage_Leishmania, !v_Cell_Macrophage_Mtb, !v_Cell_Macrophage_EBOV, !v_Cell_Macrophage_IAV, !v_Cell_Monocytes_EBOV, !v_Cell_Macrophage_PF),Set(110, 85, 102, 2, 48, 111))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_IFNg, v_Cell_Macrophage_Leishmania)))
+Some(Vector(Set(!v_Cell_Macrophage_Leishmania), Set(!v_IFNg)))
+(Set(v_IFNg, v_Cell_Macrophage_Leishmania),Set(-69, -111))
+(Set(!v_Cell_Macrophage_Leishmania),Set(111))
+(Set(!v_IFNg),Set(69))
+
+Some(Vector())
+Some(Vector())
+Map(v_IL25 -> 1, v_Cell_Macrophage_PF -> 2, v_Cell_Th1_Leishmania -> 3, v_Cell_CD4_HIV -> 4, v_Fungi_CandidaAlbicans -> 5, v_Virus_IAV -> 6, v_PV_IAV -> 7, v_Virus_HPV -> 8, v_Cell_Epithelial_IAV -> 9, v_Cell_Macrophage_HIV -> 10, v_iNOS -> 11, v_Merozoites_PF -> 12, v_Cell_Th1_IAV -> 13, v_Rep_Mtb -> 14, v_Cell_CD8_Mtb -> 15, v_Cell_CD8_IAV -> 16, v_Apoptosis_Macrophage_Mtb -> 17, v_IFNa -> 18, v_Cell_Dendritic_Leishmania -> 19, v_Cell_CD8_Naive -> 20, v_Cell_Treg_IAV -> 21, v_IL4 -> 22, v_Cell_LC_HPV -> 23, v_Cell_NK_IAV -> 24, v_Cell_Neutrophil_CandidaAlbicans -> 25, v_Cell_Dendritic_Helminth -> 26, v_paramPV -> 27, v_IL10 -> 28, v_Cell_Th1_HPV -> 29, v_Promastigotes_Leishmania -> 30, v_TGFB -> 31, v_IL18 -> 32, v_Cell_NKT_Helminth -> 33, v_IL8 -> 34, v_Cell_B_PF -> 35, v_IL13 -> 36, v_Cell_CD8_HPV -> 37, v_Cell_Dendritic_Mtb -> 38, v_Cell_LC_HIV -> 39, v_Cell_Epithelial_helminth -> 40, v_epithelial_set -> 41, v_Cell_pKeratinocytes -> 42, v_Cell_ILC2_Helminth -> 43, v_Cell_Treg_PF -> 44, v_ROS -> 45, v_Amastgotes_Leishmania -> 46, v_PV_EBOV -> 47, v_Cell_Macrophage_Mtb -> 48, v_Cell_Dendritic_Healthy -> 49, v_Cell_Th2_IAV -> 50, v_IgA -> 51, v_Cell_CD4_Naive -> 52, v_Cell_Epithelial_CandidaAlbicans -> 53, v_IL27 -> 54, v_Larvae_Helminth -> 55, v_Cell_Neutrophil_Leishmania -> 56, v_IL12 -> 57, v_Cell_B_Helminth -> 58, v_Cell_Epithelial_Healthy -> 59, v_Cell_NK_HPV -> 60, v_Cell_CD4_HIV_infected -> 61, v_Cell_B_EBOV -> 62, v_HealthyState -> 63, v_Cell_Dendritic_PF -> 64, v_Cell_pDendritic_HIV -> 65, v_Cell_NK_Leishmania -> 66, v_Cell_Th17_CandidaAlbicans -> 67, v_IL5 -> 68, v_IFNg -> 69, v_Cell_CD8_HIV -> 70, v_Cell_Endothelial_Helminth -> 71, v_DaughterCells_CandidaAlbicans -> 72, v_Cell_Eosinophil_Helminth -> 73, v_Cell_Th1_PF -> 74, v_IL2 -> 75, v_erythrocyte_set -> 76, v_Cell_Dendritic_EBOV -> 77, v_Cell_Th1_Mtb -> 78, v_Bacterium_Mtb -> 79, v_Cell_Basophil_Helminth -> 80, v_Cell_Dendritic_HIV -> 81, v_Cell_Dendritic_IAV -> 82, v_TNFa -> 83, v_Cell_NK_PF -> 84, v_Cell_Monocytes_EBOV -> 85, v_Cell_Th2_Helminth -> 86, v_Cell_Keratinocytes_HPV -> 87, v_Cell_Hepatocytes_EBOV -> 88, v_Cell_Dendritic_CandidaAlbicans -> 89, v_IL33 -> 90, v_Cell_B_Healthy -> 91, v_Cell_monocytes_leishmania -> 92, v_Cell_Erythrocyte_Healthy -> 93, v_Virus_EBOV -> 94, v_IgG -> 95, v_Sporozoites_PF -> 96, v_Cell_Neutrophil_Mtb -> 97, v_Cell_Erythrocyte_PF -> 98, v_IL1 -> 99, v_Cell_Th1_EBOV -> 100, v_IL22 -> 101, v_Cell_Macrophage_IAV -> 102, v_Cell_Macrophage_Healthy -> 103, v_PV_HIV -> 104, v_Cell_B_IAV -> 105, v_Cell_CD8_EBOV -> 106, v_IFNb -> 107, v_Cell_B_HIV -> 108, v_Cell_Treg_HIV -> 109, v_Cell_Macrophage_EBOV -> 110, v_Cell_Macrophage_Leishmania -> 111, v_Cell_CD8_PF -> 112, v_Virus_HIV -> 113)
+p cnf 113 475
+69 -19 46 0
+-111 69 46 0
+111 19 -46 0
+-69 -46 0
+-83 -48 17 0
+48 -17 0
+83 -17 0
+-91 28 -77 62 83 0
+-28 -62 0
+-83 -62 0
+77 -62 0
+91 -62 0
+-91 -4 61 108 0
+-61 -108 0
+4 -108 0
+91 -108 0
+-63 91 0
+63 12 -91 0
+-91 -36 -22 58 0
+22 -58 0
+36 -58 0
+91 -58 0
+-50 105 0
+-91 -82 105 0
+82 50 -105 0
+91 50 -105 0
+-91 -74 35 0
+-91 -12 35 0
+91 -35 0
+63 -40 80 0
+63 -71 80 0
+71 40 -80 0
+-63 -80 0
+-52 -81 4 0
+81 -4 0
+52 -4 0
+-52 69 -113 61 0
+-39 -52 69 61 0
+-52 69 -104 61 0
+-69 -61 0
+39 104 113 -61 0
+52 -61 0
+-63 61 52 0
+-61 -52 0
+-20 -77 28 106 0
+-28 -106 0
+77 -106 0
+20 -106 0
+-52 -81 109 70 0
+-109 -70 0
+81 -70 0
+52 -70 0
+-20 -23 37 0
+23 -37 0
+20 -37 0
+-20 -82 16 0
+-13 -75 16 0
+-13 -69 16 0
+69 75 82 -16 0
+13 82 -16 0
+20 69 75 -16 0
+13 20 -16 0
+-48 15 0
+-38 15 0
+-97 15 0
+97 38 48 -15 0
+-63 104 20 0
+-104 -20 0
+63 -20 0
+-20 -64 112 0
+64 -112 0
+20 -112 0
+-49 -53 89 0
+53 -89 0
+49 -89 0
+-49 -94 95 77 0
+-49 -47 95 77 0
+-95 -77 0
+47 94 -77 0
+49 -77 0
+-49 -113 81 0
+-49 -39 81 0
+39 113 -81 0
+49 -81 0
+-19 49 0
+-63 49 0
+-64 49 0
+-49 64 63 72 19 0
+-71 26 0
+-40 26 0
+40 71 -26 0
+-49 -6 82 0
+-49 -9 82 0
+-49 -7 82 0
+7 9 6 -82 0
+49 -82 0
+-30 -92 19 0
+-49 -30 19 0
+49 92 -19 0
+30 -19 0
+-49 -17 38 0
+-14 -49 38 0
+14 17 -38 0
+49 -38 0
+-49 -98 64 0
+-49 -69 -84 64 0
+-49 -69 -74 64 0
+74 84 98 -64 0
+69 98 -64 0
+49 -64 0
+-55 71 86 63 95 58 0
+55 -71 0
+-86 -71 0
+-58 -71 0
+-95 -71 0
+-63 -71 0
+-63 -68 73 0
+68 -73 0
+63 -73 0
+101 -59 25 -72 53 67 0
+-25 -53 0
+-67 -53 0
+59 -53 0
+72 -53 0
+-101 -53 0
+-41 40 59 0
+-40 -59 0
+41 -59 0
+-59 24 102 9 16 -6 0
+-59 -7 24 102 9 16 0
+6 7 -9 0
+-102 -9 0
+-24 -9 0
+59 -9 0
+-16 -9 0
+-59 -55 86 95 40 58 0
+55 -40 0
+-86 -40 0
+-58 -40 0
+-95 -40 0
+59 -40 0
+-76 12 93 0
+-12 -93 0
+76 -93 0
+-93 12 -96 98 0
+-93 -12 98 0
+12 96 -98 0
+93 -98 0
+-63 -47 88 0
+47 -88 0
+63 -88 0
+-63 -90 -1 43 0
+1 -43 0
+90 -43 0
+63 -43 0
+-41 -42 87 0
+42 28 -87 0
+41 28 -87 0
+63 -113 39 0
+113 -39 0
+-63 -39 0
+63 -87 23 0
+87 -23 0
+-63 -23 0
+-103 110 106 -94 95 0
+-103 110 106 -47 95 0
+-95 -110 0
+-106 -110 0
+47 94 -110 0
+103 -110 0
+-103 -113 10 0
+-103 -104 10 0
+104 113 -10 0
+103 -10 0
+-63 103 0
+-2 103 0
+2 63 -104 -103 0
+2 -30 63 -103 0
+2 -14 63 -103 0
+-103 -9 16 102 0
+-16 -102 0
+9 -102 0
+103 -102 0
+-103 28 45 -46 11 111 0
+-103 28 -30 45 11 111 0
+-28 -111 0
+30 46 -111 0
+-45 -111 0
+-11 -111 0
+103 -111 0
+-103 -79 48 0
+-103 -14 48 0
+14 79 -48 0
+103 -48 0
+-103 -98 2 0
+98 -2 0
+103 -2 0
+-63 -94 85 0
+-63 -47 85 0
+47 94 -85 0
+63 -85 0
+-63 -55 33 0
+55 -33 0
+63 -33 0
+-63 -87 60 0
+87 -60 0
+63 -60 0
+-63 -9 24 0
+9 -24 0
+63 -24 0
+-63 -56 -30 66 0
+30 -66 0
+56 -66 0
+63 -66 0
+-64 84 -63 44 -57 0
+-64 84 -63 28 -57 0
+44 -74 -75 84 0
+28 -74 -75 84 0
+-28 -44 -84 0
+64 74 -84 0
+64 75 -84 0
+57 74 -84 0
+57 75 -84 0
+63 74 -84 0
+63 75 -84 0
+-63 -67 25 0
+25 -63 -99 -53 -34 0
+67 99 -25 0
+34 67 -25 0
+53 67 -25 0
+63 -25 0
+-63 -30 56 0
+30 -56 0
+63 -56 0
+-63 -14 97 0
+-79 -63 97 0
+79 14 -97 0
+63 -97 0
+-52 -89 67 0
+89 -67 0
+52 -67 0
+-52 -57 -77 100 0
+77 -100 0
+57 -100 0
+52 -100 0
+-52 -23 29 0
+23 -29 0
+52 -29 0
+-52 -57 -82 13 0
+82 -13 0
+57 -13 0
+52 -13 0
+-52 -57 -19 3 0
+19 -3 0
+57 -3 0
+52 -3 0
+-32 -54 78 28 -52 -57 -38 0
+-28 -78 0
+57 -78 0
+32 -78 0
+52 -78 0
+38 -78 0
+54 -78 0
+-69 -84 74 0
+-2 -52 -57 74 0
+-52 -57 -64 74 0
+-31 -74 0
+-28 -74 0
+2 64 69 -74 0
+52 69 -74 0
+57 69 -74 0
+69 -22 28 -26 54 86 -52 31 0
+-28 -86 0
+-31 -86 0
+26 -86 0
+22 -86 0
+52 -86 0
+-69 -86 0
+-54 -86 0
+-52 -82 28 50 0
+-28 -50 0
+82 -50 0
+52 -50 0
+-52 -65 109 0
+65 -109 0
+52 -109 0
+-52 -13 21 0
+-52 -50 21 0
+50 13 -21 0
+52 -21 0
+-52 -74 44 0
+74 -44 0
+52 -44 0
+-63 -30 92 0
+30 -92 0
+63 -92 0
+-63 -104 65 0
+104 -65 0
+63 -65 0
+-41 -8 42 0
+8 -42 0
+41 -42 0
+-5 67 101 72 0
+-101 -72 0
+-67 -72 0
+5 -72 0
+-63 -70 18 0
+-65 18 0
+65 70 -18 0
+65 63 -18 0
+-63 -70 107 0
+-65 107 0
+65 70 -107 0
+65 63 -107 0
+28 -78 69 0
+28 -106 69 0
+-15 28 69 0
+28 -110 69 0
+-74 69 0
+-5 -67 69 0
+-70 69 0
+-84 69 0
+-112 69 0
+28 -29 69 0
+-4 69 0
+-3 69 0
+28 -85 69 0
+28 -37 69 0
+-13 69 0
+28 -60 69 0
+-66 69 0
+28 -100 69 0
+5 37 110 78 29 106 84 74 60 85 70 13 -69 66 3 112 4 15 100 0
+37 110 78 29 106 84 74 60 85 70 13 -69 66 3 112 67 4 15 100 0
+5 84 74 70 13 -69 66 3 112 4 -28 0
+84 74 70 13 -69 66 3 112 67 4 -28 0
+-53 99 0
+-48 99 0
+-38 99 0
+-110 99 0
+110 -99 38 53 48 0
+-44 -74 28 0
+-48 -78 28 0
+-109 28 0
+-86 28 0
+-15 -38 28 0
+-87 28 0
+-110 28 0
+-21 28 0
+-111 28 0
+-85 28 0
+110 78 74 85 21 109 86 87 15 -28 111 0
+110 74 85 21 109 86 48 87 15 -28 111 0
+110 78 74 85 38 21 109 86 87 -28 111 0
+110 74 85 38 21 109 86 48 87 -28 111 0
+110 78 85 21 109 44 86 87 15 -28 111 0
+110 85 21 109 44 86 48 87 15 -28 111 0
+110 78 85 38 21 109 44 86 87 -28 111 0
+110 85 38 21 109 44 86 48 87 -28 111 0
+-48 57 0
+-19 57 0
+28 -63 -70 57 0
+-102 57 0
+-38 57 0
+-64 57 0
+-2 57 0
+-77 57 0
+-110 57 0
+-85 57 0
+110 85 102 38 77 2 64 -57 48 19 -28 0
+110 85 102 38 70 77 2 64 -57 48 19 0
+110 85 102 38 77 2 64 -57 48 63 19 0
+-86 36 0
+-43 36 0
+-50 36 0
+50 43 86 -36 0
+-63 -70 28 32 0
+-48 32 0
+48 -28 -32 0
+48 70 -32 0
+48 63 -32 0
+-13 75 0
+-74 75 0
+74 13 -75 0
+-74 101 0
+-67 101 0
+67 74 -101 0
+-40 1 0
+-71 1 0
+71 40 -1 0
+-74 54 0
+-48 54 0
+48 74 -54 0
+-71 90 0
+-40 90 0
+40 71 -90 0
+-80 22 0
+-86 22 0
+-33 22 0
+-73 22 0
+-50 22 0
+-22 33 73 86 80 50 0
+-50 68 0
+-43 68 0
+-86 68 0
+86 43 50 -68 0
+-85 34 0
+-110 34 0
+-9 34 0
+-53 34 0
+110 85 9 53 -34 0
+-105 51 0
+-108 51 0
+108 105 -51 0
+-105 95 0
+-58 95 0
+-62 95 0
+-108 95 0
+-35 95 0
+-95 105 108 35 58 62 0
+2 64 -98 12 0
+-35 -95 98 -12 0
+-2 -12 0
+-64 -12 0
+83 95 -110 47 0
+-77 83 95 47 0
+83 -85 95 47 0
+83 -88 95 47 0
+88 110 85 77 -47 0
+-83 -47 0
+-95 -47 0
+-27 104 0
+52 -61 104 0
+-10 52 104 0
+-10 70 104 0
+-61 70 104 0
+10 -51 61 -104 0
+10 61 -107 -104 0
+-52 -70 -104 0
+10 61 -95 -104 0
+10 -18 61 -104 0
+102 7 95 -9 51 0
+-95 -7 0
+-102 -7 0
+-51 -7 0
+-69 45 0
+-56 45 0
+-111 45 0
+111 56 69 -45 0
+15 -48 78 14 0
+-48 69 83 14 0
+15 78 -97 14 0
+69 83 -97 14 0
+15 -38 78 14 0
+-38 69 83 14 0
+-69 -78 -14 0
+-15 -69 -14 0
+-78 -83 -14 0
+-15 -83 -14 0
+-87 31 0
+-53 31 0
+-44 -74 31 0
+74 53 87 -31 0
+44 53 87 -31 0
+-102 83 0
+28 -48 83 0
+-2 83 0
+-110 83 0
+-111 83 0
+-85 83 0
+110 85 102 2 -83 -28 111 0
+110 85 102 2 -83 48 111 0
+-69 -111 11 0
+111 -11 0
+69 -11 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.VZOkkEyrG5.cnf'
+c opening file to read '/tmp/tmp.VZOkkEyrG5.cnf'
+c found 'p cnf 113 475' header
+c parsed 475 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  475 113 100%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  475 113 100%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  475 113 100%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 -36 -37 -38 -39 -40
+v -41 -42 -43 -44 -45 -46 -47 -48 -49 -50 -51 -52 -53 -54 -55 -56 -57 -58 -59
+v -60 -61 -62 -63 -64 -65 -66 -67 -68 -69 -70 -71 -72 -73 -74 -75 -76 -77 -78
+v -79 -80 -81 -82 -83 -84 -85 -86 -87 -88 -89 -90 -91 -92 -93 -94 -95 -96 -97
+v -98 -99 -100 -101 -102 -103 -104 -105 -106 -107 -108 -109 -110 -111 -112
+v -113 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00  181.10% parse
+c         0.00   33.66% search
+c         0.00   33.46% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   22.29% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            3.88    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=232
++ bdd_minisat_all_release /tmp/tmp.VZOkkEyrG5.cnf
++ wait 232
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.VZOkkEyrG5.cnf
+variables         :          113
+cutwidth          :          336
+restarts          :            1
+conflicts         :          497           (     1566 / sec      )
+decisions         :       107758           (   339613 / sec      )
+propagations      :       261264           (   823408 / sec      )
+inspects          :      1135149           (  3577571 / sec      )
+conflict literals :         1393           (     8.17 % deleted  )
+cpu time (solve)  :         0.32 sec	
+refreshes         :            0
+|obdd|            :      1734524
+cache hits        :        33394
+cache lookup      :        87540
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :       213157
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_078.bnet"
+	User time (seconds): 1.94
+	System time (seconds): 1.03
+	Percent of CPU this job got: 147%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.01
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 179200
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 83812
+	Voluntary context switches: 3518
+	Involuntary context switches: 159
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 2.5s

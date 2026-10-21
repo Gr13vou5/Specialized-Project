@@ -1,0 +1,15 @@
+targets, factors
+v_Apoptosis, (v_tp53 & !v_bcl2)
+v_Differentiation, ((v_cebpa | !v_erk) & !v_meis1)
+v_Proliferation, (v_myc | v_ccnd1 | !v_cebpa | v_meis1 | v_flt3)
+v_bcl2, (v_erk & !v_tp53)
+v_ccnd1, !(v_dnmt3a | v_gsk3b)
+v_cebpa, !v_flt3
+v_dnmt3a, v_dnmt3a
+v_erk, v_flt3
+v_flt3, v_flt3
+v_gsk3b, !v_flt3
+v_meis1, !(v_dnmt3a & v_npm1)
+v_myc, (v_erk & !(v_npm1 & v_gsk3b))
+v_npm1, v_npm1
+v_tp53, v_npm1

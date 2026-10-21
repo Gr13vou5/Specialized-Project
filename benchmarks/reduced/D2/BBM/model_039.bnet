@@ -1,0 +1,73 @@
+targets, factors
+v_ABL, (v_LCK | v_FYN)
+v_BCAR1, v_BCAR1
+v_CBL, (v_ZAP70 | v_PTEN)
+v_CBLB, ((v_nef & v_LCK) | v_cAMP | v_ZAP70)
+v_CCR5_CXCR4, (v_gp41 | v_Chemokine | v_gp120)
+v_CD28, !(v_gp41 | v_cAMP | v_nef)
+v_CD4, (!v_DLGH1 | v_MAPK1_3_Erk)
+v_CD45, v_CD45
+v_CDC42, (v_VAV1 | v_RASGRP2)
+v_CRKL, v_CRKL
+v_Chemokine, v_Chemokine
+v_DAG, ((v_PLCy1 & v_PIP2) | (v_PLCB & v_PIP2))
+v_DLGH1, v_DLGH1
+v_DOCK2_CRK_ELMO1, (v_Src | v_nef)
+v_FYN, (v_gp120 | (v_TCR & v_LCK) | (v_CD45 & v_LCK))
+v_GAB2, ((v_GRAP2_GADS & v_ZAP70 & v_LAT) | (v_GRB2 & v_ZAP70 & v_LAT))
+v_GRAP2_GADS, (v_CD28 | v_LAT)
+v_GRB2, (v_LAT | v_SHC | v_CD28)
+v_GRKL, v_GRKL
+v_GaiGby, (v_CCR5_CXCR4 & v_GRKL & !v_protease)
+v_ICOS, v_ICOS
+v_IKB, (v_vpu | (v_Ikkb_Ikky_Ikka & v_IKBNFKB))
+v_IKBNFKB, v_IKBNFKB
+v_IP3, ((v_PLCy1 & v_PIP2) | (v_PLCB & v_PIP2) | v_nef)
+v_ITK, ((v_CD28 & v_LCK) | (v_PIP3 & v_LCP2_SLP76 & v_ZAP70))
+v_Ikkb_Ikky_Ikka, (v_nef | v_MAP3K14_NIK | (v_PKCth & v_MAP3K7_TAK1))
+v_LAT, (v_ZAP70 | (v_gp120 & v_LCK))
+v_LCK, (v_tat | v_gp120 | (v_CD45 & v_CD4 & !(v_PAG | v_PTPN6_SHP1)) | !v_DLGH1)
+v_LCP2_SLP76, ((v_ZAP70 & v_GRAP2_GADS) | (v_gp120 & v_LCK))
+v_MAP3K14_NIK, (v_tat | v_PIP3)
+v_MAP3K7_TAK1, (v_PKCth | v_MAP4K1_Hpk1 | v_gp41)
+v_MAP4K1_Hpk1, (v_GRAP2_GADS | v_LAT | (v_ZAP70 & v_CRKL))
+v_MAPK14_p38, (v_DLGH1 | v_ZAP70)
+v_MAPK1_3_Erk, (v_RAF | v_PRKCZ)
+v_PAG, (v_FYN | v_TCR)
+v_PAK, (v_TCR | (v_RAC & v_CDC42) | v_nef)
+v_PDCD1_PD1, v_PDCD1_PD1
+v_PI3K, ((v_LCK & !(v_CBLB | v_PTPN6_SHP1)) | (v_CD28 & !(v_PTPN11_SHP2 | v_CBL)) | v_ICOS | (!v_DLGH1 & v_LCK & v_CD4) | v_LAT | (v_Src & !(v_CBLB | v_PTPN6_SHP1)) | v_GaiGby | v_tat | (v_nef & v_Src & v_ZAP70))
+v_PIP2, (v_PIP3 & v_PTEN)
+v_PIP3, (v_PI3K & v_PIP2)
+v_PKCB_D, ((v_VAV1 & v_PIP3 & v_DAG) | (v_VAV3 & v_PIP3 & v_DAG) | !v_DLGH1)
+v_PKCth, (!v_DLGH1 | v_PIP3)
+v_PLCB, (v_GaiGby | v_tat)
+v_PLCy1, (v_LAT | (v_gp120 & v_LCK) | v_tat)
+v_PRKCZ, (v_PIP3 | !v_DLGH1)
+v_PTEN, (v_VAV1 | v_tat | v_CBLB)
+v_PTK2B_Pyk2, (v_FYN | v_Src)
+v_PTPN11_SHP2, (v_GAB2 | v_PDCD1_PD1 | v_cAMP)
+v_PTPN6_SHP1, (v_PDCD1_PD1 | v_cAMP | v_LCK)
+v_P_REX1, (v_PIP3 & v_GaiGby)
+v_RAC, (v_VAV1 | v_CDC42 | v_DOCK2_CRK_ELMO1 | v_P_REX1)
+v_RAF, (v_RAS | (v_gp120 & v_LCK & v_CD4) | v_nef)
+v_RAS, ((v_SOS & v_GRB2 & v_LAT) | (v_SHC & v_GRB2 & v_SOS) | v_RASGRP1)
+v_RASGRP1, (v_DAG & v_PKCth)
+v_RASGRP2, ((v_DAG & v_PKCB_D) | (v_IP3 & v_DAG))
+v_SH3BP2, (v_ZAP70 & v_LAT)
+v_SHC, (v_TCR | v_Src | v_tat)
+v_SOS, (v_GRB2 | v_RASGRP1)
+v_Src, (v_PTK2B_Pyk2 | v_GaiGby)
+v_TCR, (v_DLGH1 | v_antigen | (v_FYN & v_LCK))
+v_VAV1, ((v_ITK & v_LAT) | v_nef | v_CD28 | (v_ZAP70 & v_SH3BP2))
+v_VAV3, (v_SH3BP2 | (v_ITK & v_LAT) | v_nef)
+v_ZAP70, ((v_gp120 & v_LCK) | (v_TCR & v_ABL))
+v_antigen, v_antigen
+v_cAMP, (v_matrix | v_gp41)
+v_gp120, (v_ITK | v_CD45 | v_MAPK14_p38)
+v_gp41, v_gp41
+v_matrix, (v_MAPK1_3_Erk | v_PAK | v_PRKCZ | v_PKCth | v_PKCB_D | v_nef)
+v_nef, (v_LCP2_SLP76 | v_cAMP)
+v_protease, !(v_PRKCZ | v_PKCB_D | v_PKCth)
+v_tat, (v_PRKCZ | v_IKB | v_PKCth | v_nef)
+v_vpu, v_vpu

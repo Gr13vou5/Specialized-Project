@@ -1,0 +1,841 @@
+# Host: MSI
+# Start date: Wed Oct 21 08:59:29 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/Selected/signaling-dependent-pluripotency.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-275 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/Selected:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 signaling-dependent-pluripotency.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/signaling-dependent-pluripotency.bnet --cnf /tmp/tmp.SEIu1TDvIG.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/signaling-dependent-pluripotency.bnet, cnfFileName = /tmp/tmp.SEIu1TDvIG.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector(Set(!Lefty1, Oct4, !Gbx2, !Sox2)))
+Some(Vector(Set(iAct, !Oct4), Set(Smad7, !Oct4), Set(Gbx2), Set(Lefty1), Set(Sox2)))
+(Set(!Lefty1, Oct4, !Gbx2, !Sox2),Set(24, -21, 11, 4))
+(Set(iAct, !Oct4),Set(-14, 21))
+(Set(Smad7, !Oct4),Set(-6, 21))
+(Set(Gbx2),Set(-24))
+(Set(Lefty1),Set(-11))
+(Set(Sox2),Set(-4))
+
+Some(Vector(Set(Myc), Set(Tbx3), Set(Gbx2)))
+Some(Vector(Set(!Myc, !Tbx3, !Gbx2, iBMP), Set(!Myc, !Tbx3, !Gbx2, Smad6), Set(!Myc, !Tbx3, !Gbx2, Smad7)))
+(Set(Myc),Set(-30))
+(Set(Tbx3),Set(-3))
+(Set(Gbx2),Set(-24))
+(Set(!Myc, !Tbx3, !Gbx2, iBMP),Set(24, -19, 3, 30))
+(Set(!Myc, !Tbx3, !Gbx2, Smad6),Set(-7, 24, 3, 30))
+(Set(!Myc, !Tbx3, !Gbx2, Smad7),Set(24, 3, -6, 30))
+
+Some(Vector(Set(Bmp4, !Smad6, !Smad7, !iBMP)))
+Some(Vector(Set(Oct4)))
+(Set(Bmp4, !Smad6, !Smad7, !iBMP),Set(6, 7, -9, 19))
+(Set(Oct4),Set(-21))
+
+Some(Vector(Set(!Cdx2, !Klf4, EpiTFs), Set(!Cdx2, Tcf3, !Klf4), Set(!Cdx2, !Klf4, Mycn)))
+Some(Vector(Set(Klf4), Set(Cdx2), Set(!Tcf3, !EpiTFs, !Mycn)))
+(Set(!Cdx2, !Klf4, EpiTFs),Set(1, 15, -17))
+(Set(!Cdx2, Tcf3, !Klf4),Set(1, -8, 15))
+(Set(!Cdx2, !Klf4, Mycn),Set(1, 15, -31))
+(Set(Klf4),Set(-15))
+(Set(Cdx2),Set(-1))
+(Set(!Tcf3, !EpiTFs, !Mycn),Set(8, 17, 31))
+
+Some(Vector(Set(Fgf4, Fgfr2, iBMP, !iERK), Set(bFGF, Fgfr2, iBMP, !iERK), Set(Fgf4, Smad6, Fgfr2, !iERK), Set(Smad6, bFGF, Fgfr2, !iERK), Set(Fgf4, !Bmp4, Fgfr2, !iERK), Set(!Bmp4, bFGF, Fgfr2, !iERK), Set(Fgf4, Smad7, Fgfr2, !iERK), Set(Smad7, bFGF, Fgfr2, !iERK)))
+Some(Vector(Set(!Smad7, !Smad6, Bmp4, !iBMP), Set(!Fgf4, !bFGF), Set(iERK), Set(!Fgfr2)))
+(Set(Fgf4, Fgfr2, iBMP, !iERK),Set(-5, -18, -19, 27))
+(Set(bFGF, Fgfr2, iBMP, !iERK),Set(-16, -18, -19, 27))
+(Set(Fgf4, Smad6, Fgfr2, !iERK),Set(-5, -7, -18, 27))
+(Set(Smad6, bFGF, Fgfr2, !iERK),Set(-7, -16, -18, 27))
+(Set(Fgf4, !Bmp4, Fgfr2, !iERK),Set(-5, 9, -18, 27))
+(Set(!Bmp4, bFGF, Fgfr2, !iERK),Set(9, -16, -18, 27))
+(Set(Fgf4, Smad7, Fgfr2, !iERK),Set(-5, -6, -18, 27))
+(Set(Smad7, bFGF, Fgfr2, !iERK),Set(-6, -16, -18, 27))
+(Set(!Smad7, !Smad6, Bmp4, !iBMP),Set(6, 7, -9, 19))
+(Set(!Fgf4, !bFGF),Set(5, 16))
+(Set(iERK),Set(-27))
+(Set(!Fgfr2),Set(18))
+
+Some(Vector(Set(!Klf4, Bmp4, !Smad6, !Cdx2, !Smad7, !iBMP), Set(!Cdx2, !Klf4, Dusp6), Set(!Cdx2, !Klf4, Pitx2), Set(Bmp4, !Smad6, !Sox2, !Cdx2, !Smad7, !iBMP), Set(!Cdx2, !Sox2, Dusp6), Set(!Cdx2, !Sox2, Pitx2)))
+Some(Vector(Set(Sox2, Klf4), Set(iBMP, !Dusp6, !Pitx2), Set(Smad6, !Dusp6, !Pitx2), Set(!Bmp4, !Dusp6, !Pitx2), Set(Smad7, !Dusp6, !Pitx2), Set(Cdx2)))
+(Set(!Klf4, Bmp4, !Smad6, !Cdx2, !Smad7, !iBMP),Set(1, 6, 7, -9, 19, 15))
+(Set(!Cdx2, !Klf4, Dusp6),Set(1, 15, -25))
+(Set(!Cdx2, !Klf4, Pitx2),Set(1, 15, -26))
+(Set(Bmp4, !Smad6, !Sox2, !Cdx2, !Smad7, !iBMP),Set(1, 6, 7, -9, 19, 4))
+(Set(!Cdx2, !Sox2, Dusp6),Set(1, 4, -25))
+(Set(!Cdx2, !Sox2, Pitx2),Set(1, 4, -26))
+(Set(Sox2, Klf4),Set(-4, -15))
+(Set(iBMP, !Dusp6, !Pitx2),Set(-19, 25, 26))
+(Set(Smad6, !Dusp6, !Pitx2),Set(-7, 25, 26))
+(Set(!Bmp4, !Dusp6, !Pitx2),Set(9, 25, 26))
+(Set(Smad7, !Dusp6, !Pitx2),Set(-6, 25, 26))
+(Set(Cdx2),Set(-1))
+
+Some(Vector(Set(Fgfr2, !EpiTFs, !Tcf3, Fgf4, !iWnt, SignalLIF, !Cdx2), Set(bFGF, Fgfr2, !EpiTFs, !Tcf3, !iWnt, SignalLIF, !Cdx2), Set(!EpiTFs, iGSK3b, !Tcf3, !iWnt, !Cdx2), Set(!EpiTFs, Nanog), Set(!EpiTFs, Klf2), Set(Klf4, !EpiTFs)))
+Some(Vector(Set(!Klf4, !Fgf4, !iGSK3b, !Klf2, !Nanog, !bFGF), Set(!Klf4, !iGSK3b, !Klf2, !Fgfr2, !Nanog), Set(!SignalLIF, !Klf4, !iGSK3b, !Klf2, !Nanog), Set(!Klf4, !Nanog, iWnt, !Klf2), Set(Cdx2, !Klf4, !Nanog, !Klf2), Set(Tcf3, !Klf4, !Nanog, !Klf2), Set(EpiTFs)))
+(Set(Fgfr2, !EpiTFs, !Tcf3, Fgf4, !iWnt, SignalLIF, !Cdx2),Set(-18, 1, 32, 17, -5, -29, 8))
+(Set(bFGF, Fgfr2, !EpiTFs, !Tcf3, !iWnt, SignalLIF, !Cdx2),Set(-18, 1, 32, 17, -29, -16, 8))
+(Set(!EpiTFs, iGSK3b, !Tcf3, !iWnt, !Cdx2),Set(1, 32, 17, 8, -2))
+(Set(!EpiTFs, Nanog),Set(17, -23))
+(Set(!EpiTFs, Klf2),Set(17, -33))
+(Set(Klf4, !EpiTFs),Set(-15, 17))
+(Set(!Klf4, !Fgf4, !iGSK3b, !Klf2, !Nanog, !bFGF),Set(5, 33, 2, 16, 23, 15))
+(Set(!Klf4, !iGSK3b, !Klf2, !Fgfr2, !Nanog),Set(33, 2, 18, 23, 15))
+(Set(!SignalLIF, !Klf4, !iGSK3b, !Klf2, !Nanog),Set(29, 33, 2, 23, 15))
+(Set(!Klf4, !Nanog, iWnt, !Klf2),Set(15, 23, -32, 33))
+(Set(Cdx2, !Klf4, !Nanog, !Klf2),Set(-1, 15, 23, 33))
+(Set(Tcf3, !Klf4, !Nanog, !Klf2),Set(-8, 15, 23, 33))
+(Set(EpiTFs),Set(-17))
+
+Some(Vector(Set(bFGF, Fgfr2, !Tcf3, !iWnt, SignalLIF, !Cdx2), Set(iGSK3b, !Tcf3, !iWnt, !Cdx2), Set(Esrrb), Set(Nanog)))
+Some(Vector(Set(!iGSK3b, !Esrrb, !Fgfr2, !Nanog), Set(!SignalLIF, !iGSK3b, !Esrrb, !Nanog), Set(!Esrrb, !Nanog, iWnt), Set(Cdx2, !Esrrb, !Nanog), Set(Tcf3, !Esrrb, !Nanog)))
+(Set(bFGF, Fgfr2, !Tcf3, !iWnt, SignalLIF, !Cdx2),Set(-18, 1, 32, -29, -16, 8))
+(Set(iGSK3b, !Tcf3, !iWnt, !Cdx2),Set(1, 32, 8, -2))
+(Set(Esrrb),Set(-22))
+(Set(Nanog),Set(-23))
+(Set(!iGSK3b, !Esrrb, !Fgfr2, !Nanog),Set(2, 22, 18, 23))
+(Set(!SignalLIF, !iGSK3b, !Esrrb, !Nanog),Set(29, 2, 22, 23))
+(Set(!Esrrb, !Nanog, iWnt),Set(22, 23, -32))
+(Set(Cdx2, !Esrrb, !Nanog),Set(-1, 22, 23))
+(Set(Tcf3, !Esrrb, !Nanog),Set(-8, 22, 23))
+
+Some(Vector(Set(Cdx2, !Oct4, !Nanog), Set(!Oct4, !Nanog, Gcnf)))
+Some(Vector(Set(!Fgf4, !Cdx2, !Gcnf, !bFGF), Set(Nanog), Set(Oct4)))
+(Set(Cdx2, !Oct4, !Nanog),Set(-1, 21, 23))
+(Set(!Oct4, !Nanog, Gcnf),Set(21, 23, -28))
+(Set(!Fgf4, !Cdx2, !Gcnf, !bFGF),Set(5, 1, 28, 16))
+(Set(Nanog),Set(-23))
+(Set(Oct4),Set(-21))
+
+Some(Vector(Set(bFGF, !Fgf4, Fgfr2, !Klf2, !iERK, !Nanog, iBMP), Set(bFGF, !Fgf4, Fgfr2, !Klf2, !iERK, !Nanog, Smad6), Set(bFGF, !Fgf4, Fgfr2, !Bmp4, !Klf2, !iERK, !Nanog), Set(bFGF, !Fgf4, Fgfr2, !Klf2, !iERK, Smad7, !Nanog)))
+Some(Vector(Set(Fgf4), Set(Klf2), Set(Nanog)))
+(Set(bFGF, !Fgf4, Fgfr2, !Klf2, !iERK, !Nanog, iBMP),Set(5, -18, 33, -19, 27, -16, 23))
+(Set(bFGF, !Fgf4, Fgfr2, !Klf2, !iERK, !Nanog, Smad6),Set(5, -7, -18, 33, 27, -16, 23))
+(Set(bFGF, !Fgf4, Fgfr2, !Bmp4, !Klf2, !iERK, !Nanog),Set(5, -18, 33, 9, 27, -16, 23))
+(Set(bFGF, !Fgf4, Fgfr2, !Klf2, !iERK, Smad7, !Nanog),Set(5, -18, 33, 27, -16, 23, -6))
+(Set(Fgf4),Set(-5))
+(Set(Klf2),Set(-33))
+(Set(Nanog),Set(-23))
+
+Some(Vector(Set(Jarid2, iGSK3b, !Tcf3, !Tbx3, !iWnt, !Cdx2), Set(!Tbx3, Jarid2, SignalLIF), Set(Esrrb, iGSK3b, !Tcf3, !Tbx3, !iWnt, !Cdx2), Set(!Tbx3, Esrrb, SignalLIF)))
+Some(Vector(Set(!Jarid2, !Esrrb), Set(!iGSK3b, !SignalLIF), Set(!SignalLIF, iWnt), Set(Cdx2, !SignalLIF), Set(Tcf3, !SignalLIF), Set(Tbx3)))
+(Set(Jarid2, iGSK3b, !Tcf3, !Tbx3, !iWnt, !Cdx2),Set(-12, 1, 32, 3, 8, -2))
+(Set(!Tbx3, Jarid2, SignalLIF),Set(3, -12, -29))
+(Set(Esrrb, iGSK3b, !Tcf3, !Tbx3, !iWnt, !Cdx2),Set(-22, 1, 32, 3, 8, -2))
+(Set(!Tbx3, Esrrb, SignalLIF),Set(3, -22, -29))
+(Set(!Jarid2, !Esrrb),Set(12, 22))
+(Set(!iGSK3b, !SignalLIF),Set(2, 29))
+(Set(!SignalLIF, iWnt),Set(29, -32))
+(Set(Cdx2, !SignalLIF),Set(-1, 29))
+(Set(Tcf3, !SignalLIF),Set(-8, 29))
+(Set(Tbx3),Set(-3))
+
+Some(Vector(Set(!EpiTFs, Gata6), Set(!EpiTFs, Cdx2)))
+Some(Vector(Set(!Cdx2, !Gata6), Set(EpiTFs)))
+(Set(!EpiTFs, Gata6),Set(17, -34))
+(Set(!EpiTFs, Cdx2),Set(17, -1))
+(Set(!Cdx2, !Gata6),Set(1, 34))
+(Set(EpiTFs),Set(-17))
+
+Some(Vector(Set(Klf4), Set(Oct4)))
+Some(Vector(Set(!Oct4, !Klf4)))
+(Set(Klf4),Set(-15))
+(Set(Oct4),Set(-21))
+(Set(!Oct4, !Klf4),Set(21, 15))
+
+Some(Vector(Set(Sox2, Klf4, !Dusp6, !Pitx2), Set(!Dusp6, !Pitx2, Mycn)))
+Some(Vector(Set(!Klf4, !Mycn), Set(!Sox2, !Mycn), Set(Dusp6), Set(Pitx2)))
+(Set(Sox2, Klf4, !Dusp6, !Pitx2),Set(-4, -15, 25, 26))
+(Set(!Dusp6, !Pitx2, Mycn),Set(25, 26, -31))
+(Set(!Klf4, !Mycn),Set(15, 31))
+(Set(!Sox2, !Mycn),Set(4, 31))
+(Set(Dusp6),Set(-25))
+(Set(Pitx2),Set(-26))
+
+Some(Vector(Set(Esrrb, Klf2, !EpiTFs, Sox2, Oct4, Nanog), Set(!EpiTFs, SignalLIF)))
+Some(Vector(Set(!Nanog, !SignalLIF), Set(!Sox2, !SignalLIF), Set(!Esrrb, !SignalLIF), Set(!Oct4, !SignalLIF), Set(EpiTFs)))
+(Set(Esrrb, Klf2, !EpiTFs, Sox2, Oct4, Nanog),Set(-22, -4, -23, 17, -21, -33))
+(Set(!EpiTFs, SignalLIF),Set(17, -29))
+(Set(!Nanog, !SignalLIF),Set(23, 29))
+(Set(!Sox2, !SignalLIF),Set(4, 29))
+(Set(!Esrrb, !SignalLIF),Set(22, 29))
+(Set(!Oct4, !SignalLIF),Set(21, 29))
+(Set(EpiTFs),Set(-17))
+
+Some(Vector(Set(Sox2, !Fgf4, !Jarid2, Oct4), Set(bFGF, !Fgf4, Fgfr2, !Tcf3, !iWnt, SignalLIF, !Cdx2, !Jarid2), Set(!Fgf4, iGSK3b, !Tcf3, !iWnt, !Cdx2, !Jarid2), Set(!Fgf4, !iAct, !Smad7, !Jarid2, ActivinA), Set(!Fgf4, !Jarid2, Mycn)))
+Some(Vector(Set(Jarid2), Set(!Fgf4, iAct, !iGSK3b, !Mycn, !Sox2, !bFGF), Set(!Fgf4, !iGSK3b, !Mycn, !Sox2, Smad7, !bFGF), Set(!Fgf4, !iGSK3b, !Mycn, !ActivinA, !Sox2, !bFGF), Set(iAct, !iGSK3b, !Mycn, !Fgfr2, !Sox2), Set(!iGSK3b, !Mycn, !Fgfr2, !Sox2, Smad7), Set(!iGSK3b, !Mycn, !ActivinA, !Fgfr2, !Sox2), Set(!SignalLIF, iAct, !iGSK3b, !Mycn, !Sox2), Set(!SignalLIF, !iGSK3b, !Mycn, !Sox2, Smad7), Set(!SignalLIF, !iGSK3b, !Mycn, !ActivinA, !Sox2), Set(!Sox2, iAct, !Mycn, iWnt), Set(!Sox2, Smad7, !Mycn, iWnt), Set(!Sox2, !ActivinA, !Mycn, iWnt), Set(Cdx2, !Sox2, iAct, !Mycn), Set(Cdx2, !Sox2, Smad7, !Mycn), Set(Cdx2, !Sox2, !ActivinA, !Mycn), Set(!Sox2, Tcf3, iAct, !Mycn), Set(!Sox2, Smad7, Tcf3, !Mycn), Set(!Sox2, Tcf3, !ActivinA, !Mycn), Set(!Fgf4, iAct, !iGSK3b, !Mycn, !Oct4, !bFGF), Set(!Fgf4, !iGSK3b, !Mycn, !Oct4, Smad7, !bFGF), Set(!Fgf4, !iGSK3b, !Mycn, !Oct4, !ActivinA, !bFGF), Set(iAct, !iGSK3b, !Mycn, !Oct4, !Fgfr2), Set(!iGSK3b, !Mycn, !Oct4, !Fgfr2, Smad7), Set(!iGSK3b, !Mycn, !Oct4, !ActivinA, !Fgfr2), Set(!SignalLIF, iAct, !iGSK3b, !Mycn, !Oct4), Set(!SignalLIF, !iGSK3b, !Mycn, !Oct4, Smad7), Set(!SignalLIF, !iGSK3b, !Mycn, !Oct4, !ActivinA), Set(iAct, !Oct4, !Mycn, iWnt), Set(Smad7, !Oct4, !Mycn, iWnt), Set(!ActivinA, !Oct4, !Mycn, iWnt), Set(Cdx2, iAct, !Oct4, !Mycn), Set(Cdx2, Smad7, !Oct4, !Mycn), Set(Cdx2, !ActivinA, !Oct4, !Mycn), Set(Tcf3, iAct, !Oct4, !Mycn), Set(Smad7, Tcf3, !Oct4, !Mycn), Set(Tcf3, !ActivinA, !Oct4, !Mycn), Set(Fgf4)))
+(Set(Sox2, !Fgf4, !Jarid2, Oct4),Set(-4, 5, 12, -21))
+(Set(bFGF, !Fgf4, Fgfr2, !Tcf3, !iWnt, SignalLIF, !Cdx2, !Jarid2),Set(5, -18, 1, 32, 12, -29, -16, 8))
+(Set(!Fgf4, iGSK3b, !Tcf3, !iWnt, !Cdx2, !Jarid2),Set(5, 1, 32, 12, 8, -2))
+(Set(!Fgf4, !iAct, !Smad7, !Jarid2, ActivinA),Set(5, 14, 6, 12, -20))
+(Set(!Fgf4, !Jarid2, Mycn),Set(5, 12, -31))
+(Set(Jarid2),Set(-12))
+(Set(!Fgf4, iAct, !iGSK3b, !Mycn, !Sox2, !bFGF),Set(5, 2, 16, -14, 31, 4))
+(Set(!Fgf4, !iGSK3b, !Mycn, !Sox2, Smad7, !bFGF),Set(5, 2, 16, 31, -6, 4))
+(Set(!Fgf4, !iGSK3b, !Mycn, !ActivinA, !Sox2, !bFGF),Set(5, 20, 2, 16, 31, 4))
+(Set(iAct, !iGSK3b, !Mycn, !Fgfr2, !Sox2),Set(2, 18, -14, 31, 4))
+(Set(!iGSK3b, !Mycn, !Fgfr2, !Sox2, Smad7),Set(2, 18, 31, -6, 4))
+(Set(!iGSK3b, !Mycn, !ActivinA, !Fgfr2, !Sox2),Set(20, 2, 18, 31, 4))
+(Set(!SignalLIF, iAct, !iGSK3b, !Mycn, !Sox2),Set(29, 2, -14, 31, 4))
+(Set(!SignalLIF, !iGSK3b, !Mycn, !Sox2, Smad7),Set(29, 2, 31, -6, 4))
+(Set(!SignalLIF, !iGSK3b, !Mycn, !ActivinA, !Sox2),Set(20, 29, 2, 31, 4))
+(Set(!Sox2, iAct, !Mycn, iWnt),Set(4, -14, 31, -32))
+(Set(!Sox2, Smad7, !Mycn, iWnt),Set(4, -6, 31, -32))
+(Set(!Sox2, !ActivinA, !Mycn, iWnt),Set(4, 20, 31, -32))
+(Set(Cdx2, !Sox2, iAct, !Mycn),Set(-1, 4, -14, 31))
+(Set(Cdx2, !Sox2, Smad7, !Mycn),Set(-1, 4, -6, 31))
+(Set(Cdx2, !Sox2, !ActivinA, !Mycn),Set(-1, 4, 20, 31))
+(Set(!Sox2, Tcf3, iAct, !Mycn),Set(4, -8, -14, 31))
+(Set(!Sox2, Smad7, Tcf3, !Mycn),Set(4, -6, -8, 31))
+(Set(!Sox2, Tcf3, !ActivinA, !Mycn),Set(4, -8, 20, 31))
+(Set(!Fgf4, iAct, !iGSK3b, !Mycn, !Oct4, !bFGF),Set(5, 21, 2, 16, -14, 31))
+(Set(!Fgf4, !iGSK3b, !Mycn, !Oct4, Smad7, !bFGF),Set(5, 21, 2, 16, 31, -6))
+(Set(!Fgf4, !iGSK3b, !Mycn, !Oct4, !ActivinA, !bFGF),Set(5, 20, 21, 2, 16, 31))
+(Set(iAct, !iGSK3b, !Mycn, !Oct4, !Fgfr2),Set(21, 2, 18, -14, 31))
+(Set(!iGSK3b, !Mycn, !Oct4, !Fgfr2, Smad7),Set(21, 2, 18, 31, -6))
+(Set(!iGSK3b, !Mycn, !Oct4, !ActivinA, !Fgfr2),Set(20, 21, 2, 18, 31))
+(Set(!SignalLIF, iAct, !iGSK3b, !Mycn, !Oct4),Set(29, 21, 2, -14, 31))
+(Set(!SignalLIF, !iGSK3b, !Mycn, !Oct4, Smad7),Set(29, 21, 2, 31, -6))
+(Set(!SignalLIF, !iGSK3b, !Mycn, !Oct4, !ActivinA),Set(20, 29, 21, 2, 31))
+(Set(iAct, !Oct4, !Mycn, iWnt),Set(-14, 21, 31, -32))
+(Set(Smad7, !Oct4, !Mycn, iWnt),Set(-6, 21, 31, -32))
+(Set(!ActivinA, !Oct4, !Mycn, iWnt),Set(20, 21, 31, -32))
+(Set(Cdx2, iAct, !Oct4, !Mycn),Set(-1, -14, 21, 31))
+(Set(Cdx2, Smad7, !Oct4, !Mycn),Set(-1, -6, 21, 31))
+(Set(Cdx2, !ActivinA, !Oct4, !Mycn),Set(-1, 20, 21, 31))
+(Set(Tcf3, iAct, !Oct4, !Mycn),Set(-8, -14, 21, 31))
+(Set(Smad7, Tcf3, !Oct4, !Mycn),Set(-6, -8, 21, 31))
+(Set(Tcf3, !ActivinA, !Oct4, !Mycn),Set(-8, 20, 21, 31))
+(Set(Fgf4),Set(-5))
+
+Some(Vector(Set(Sox2, !Tcf3, Oct4), Set(!Tcf3, Klf4), Set(Tbx3, !Tcf3)))
+Some(Vector(Set(!Tbx3, !Sox2, !Klf4), Set(!Tbx3, !Klf4, !Oct4), Set(Tcf3)))
+(Set(Sox2, !Tcf3, Oct4),Set(-4, 8, -21))
+(Set(!Tcf3, Klf4),Set(8, -15))
+(Set(Tbx3, !Tcf3),Set(-3, 8))
+(Set(!Tbx3, !Sox2, !Klf4),Set(3, 4, 15))
+(Set(!Tbx3, !Klf4, !Oct4),Set(3, 15, 21))
+(Set(Tcf3),Set(-8))
+
+Some(Vector(Set(iGSK3b, !Tcf3, !iWnt, !Cdx2, !Nanog), Set(Fgfr2, Fgf4, !iERK, !Nanog, iBMP), Set(bFGF, Fgfr2, !iERK, !Nanog, iBMP), Set(Fgfr2, Fgf4, !iERK, !Nanog, Smad6), Set(bFGF, Fgfr2, !iERK, !Nanog, Smad6), Set(Fgfr2, !Bmp4, Fgf4, !iERK, !Nanog), Set(bFGF, Fgfr2, !Bmp4, !iERK, !Nanog), Set(Fgfr2, Fgf4, !iERK, Smad7, !Nanog), Set(bFGF, Fgfr2, !iERK, Smad7, !Nanog), Set(!Nanog, Gbx2), Set(!Nanog, SignalLIF)))
+Some(Vector(Set(!SignalLIF, !iGSK3b, Bmp4, !Smad6, !Gbx2, !Smad7, !iBMP), Set(!SignalLIF, !Fgf4, !iGSK3b, !Gbx2, !bFGF), Set(!iGSK3b, !Gbx2, iERK, !SignalLIF), Set(!iGSK3b, !Fgfr2, !Gbx2, !SignalLIF), Set(!SignalLIF, Bmp4, !Smad6, !Gbx2, !Smad7, iWnt, !iBMP), Set(!SignalLIF, !Fgf4, !Gbx2, iWnt, !bFGF), Set(!Gbx2, iERK, !SignalLIF, iWnt), Set(!Fgfr2, !Gbx2, !SignalLIF, iWnt), Set(!SignalLIF, Bmp4, !Smad6, !Gbx2, !Smad7, Cdx2, !iBMP), Set(!SignalLIF, !Fgf4, !Gbx2, Cdx2, !bFGF), Set(Cdx2, !Gbx2, iERK, !SignalLIF), Set(Cdx2, !Fgfr2, !Gbx2, !SignalLIF), Set(!SignalLIF, Bmp4, !Smad6, Tcf3, !Gbx2, !Smad7, !iBMP), Set(!SignalLIF, !Fgf4, Tcf3, !Gbx2, !bFGF), Set(Tcf3, !Gbx2, iERK, !SignalLIF), Set(Tcf3, !Fgfr2, !Gbx2, !SignalLIF), Set(Nanog)))
+(Set(iGSK3b, !Tcf3, !iWnt, !Cdx2, !Nanog),Set(1, 32, 23, 8, -2))
+(Set(Fgfr2, Fgf4, !iERK, !Nanog, iBMP),Set(-18, -19, -5, 27, 23))
+(Set(bFGF, Fgfr2, !iERK, !Nanog, iBMP),Set(-18, -19, 27, -16, 23))
+(Set(Fgfr2, Fgf4, !iERK, !Nanog, Smad6),Set(-7, -18, -5, 27, 23))
+(Set(bFGF, Fgfr2, !iERK, !Nanog, Smad6),Set(-7, -18, 27, -16, 23))
+(Set(Fgfr2, !Bmp4, Fgf4, !iERK, !Nanog),Set(-18, 9, -5, 27, 23))
+(Set(bFGF, Fgfr2, !Bmp4, !iERK, !Nanog),Set(-18, 9, 27, -16, 23))
+(Set(Fgfr2, Fgf4, !iERK, Smad7, !Nanog),Set(-18, -5, 27, 23, -6))
+(Set(bFGF, Fgfr2, !iERK, Smad7, !Nanog),Set(-18, 27, -16, 23, -6))
+(Set(!Nanog, Gbx2),Set(23, -24))
+(Set(!Nanog, SignalLIF),Set(23, -29))
+(Set(!SignalLIF, !iGSK3b, Bmp4, !Smad6, !Gbx2, !Smad7, !iBMP),Set(24, 29, 6, 2, 7, -9, 19))
+(Set(!SignalLIF, !Fgf4, !iGSK3b, !Gbx2, !bFGF),Set(5, 24, 29, 2, 16))
+(Set(!iGSK3b, !Gbx2, iERK, !SignalLIF),Set(2, 24, -27, 29))
+(Set(!iGSK3b, !Fgfr2, !Gbx2, !SignalLIF),Set(2, 18, 24, 29))
+(Set(!SignalLIF, Bmp4, !Smad6, !Gbx2, !Smad7, iWnt, !iBMP),Set(-32, 24, 29, 6, 7, -9, 19))
+(Set(!SignalLIF, !Fgf4, !Gbx2, iWnt, !bFGF),Set(-32, 5, 24, 29, 16))
+(Set(!Gbx2, iERK, !SignalLIF, iWnt),Set(24, -27, 29, -32))
+(Set(!Fgfr2, !Gbx2, !SignalLIF, iWnt),Set(18, 24, 29, -32))
+(Set(!SignalLIF, Bmp4, !Smad6, !Gbx2, !Smad7, Cdx2, !iBMP),Set(24, 29, 6, 7, -1, -9, 19))
+(Set(!SignalLIF, !Fgf4, !Gbx2, Cdx2, !bFGF),Set(5, 24, 29, -1, 16))
+(Set(Cdx2, !Gbx2, iERK, !SignalLIF),Set(-1, 24, -27, 29))
+(Set(Cdx2, !Fgfr2, !Gbx2, !SignalLIF),Set(-1, 18, 24, 29))
+(Set(!SignalLIF, Bmp4, !Smad6, Tcf3, !Gbx2, !Smad7, !iBMP),Set(24, -8, 29, 6, 7, -9, 19))
+(Set(!SignalLIF, !Fgf4, Tcf3, !Gbx2, !bFGF),Set(5, 24, -8, 29, 16))
+(Set(Tcf3, !Gbx2, iERK, !SignalLIF),Set(-8, 24, -27, 29))
+(Set(Tcf3, !Fgfr2, !Gbx2, !SignalLIF),Set(-8, 18, 24, 29))
+(Set(Nanog),Set(-23))
+
+Some(Vector(Set(Oct4, Sox2, !Nanog)))
+Some(Vector(Set(Nanog), Set(!Sox2), Set(!Oct4)))
+(Set(Oct4, Sox2, !Nanog),Set(-21, -4, 23))
+(Set(Nanog),Set(-23))
+(Set(!Sox2),Set(4))
+(Set(!Oct4),Set(21))
+
+Some(Vector(Set(!Tcf3, Lrh1, !Gata6), Set(!Tcf3, Klf4, !Gata6), Set(!iAct, !Gata6, !Tcf3, !Smad7, ActivinA), Set(!Gata6, Sox2, !Tcf3, Oct4), Set(Tbx3, !Tcf3, !Gata6)))
+Some(Vector(Set(Gata6), Set(Tcf3)))
+(Set(!Tcf3, Lrh1, !Gata6),Set(8, -10, 34))
+(Set(!Tcf3, Klf4, !Gata6),Set(8, -15, 34))
+(Set(!iAct, !Gata6, !Tcf3, !Smad7, ActivinA),Set(14, 6, 34, -20, 8))
+(Set(!Gata6, Sox2, !Tcf3, Oct4),Set(-4, 34, -21, 8))
+(Set(Tbx3, !Tcf3, !Gata6),Set(-3, 8, 34))
+(Set(Gata6),Set(-34))
+(Set(Tcf3),Set(-8))
+
+Some(Vector(Set(Dnmt3b, !Klf2, !Gcnf, Lrh1), Set(Dnmt3b, !Klf2, Nanog, !Gcnf), Set(Dnmt3b, !Klf2, !Gcnf, Klf4), Set(!Dnmt3b, Nanog), Set(!Dnmt3b, Klf4), Set(Klf2)))
+Some(Vector(Set(!Klf4, !Lrh1, !Klf2, !Sox2, !Nanog), Set(Cdx2, Gcnf), Set(Dnmt3b, Gcnf, !Klf2), Set(Gcnf, !Klf4, !Klf2, !Sox2, !Nanog), Set(Cdx2, !Dnmt3b), Set(Cdx2, Klf2), Set(!Klf4, !Klf2, !Sox2, !Nanog, !Dnmt3b)))
+(Set(Dnmt3b, !Klf2, !Gcnf, Lrh1),Set(28, 33, -10, -13))
+(Set(Dnmt3b, !Klf2, Nanog, !Gcnf),Set(28, 33, -23, -13))
+(Set(Dnmt3b, !Klf2, !Gcnf, Klf4),Set(28, 33, -15, -13))
+(Set(!Dnmt3b, Nanog),Set(13, -23))
+(Set(!Dnmt3b, Klf4),Set(13, -15))
+(Set(Klf2),Set(-33))
+(Set(!Klf4, !Lrh1, !Klf2, !Sox2, !Nanog),Set(10, 33, 23, 4, 15))
+(Set(Cdx2, Gcnf),Set(-1, -28))
+(Set(Dnmt3b, Gcnf, !Klf2),Set(-13, -28, 33))
+(Set(Gcnf, !Klf4, !Klf2, !Sox2, !Nanog),Set(33, 23, 4, 15, -28))
+(Set(Cdx2, !Dnmt3b),Set(-1, 13))
+(Set(Cdx2, Klf2),Set(-1, -33))
+(Set(!Klf4, !Klf2, !Sox2, !Nanog, !Dnmt3b),Set(33, 13, 23, 4, 15))
+
+Some(Vector(Set(Fgfr2, !Tcf3, Fgf4, !iWnt, SignalLIF, !Sox2, !Cdx2, !Jarid2), Set(bFGF, Fgfr2, !Tcf3, !iWnt, SignalLIF, !Sox2, !Cdx2, !Jarid2), Set(iGSK3b, !Tcf3, !iWnt, !Sox2, !Cdx2, !Jarid2), Set(!iAct, !Sox2, !Smad7, !Jarid2, ActivinA)))
+Some(Vector(Set(!iGSK3b, !Fgf4, iAct, !bFGF), Set(!iGSK3b, !Fgf4, Smad7, !bFGF), Set(!iGSK3b, !Fgf4, !bFGF, !ActivinA), Set(!iGSK3b, iAct, !Fgfr2), Set(!iGSK3b, Smad7, !Fgfr2), Set(!iGSK3b, !Fgfr2, !ActivinA), Set(!iGSK3b, iAct, !SignalLIF), Set(!iGSK3b, Smad7, !SignalLIF), Set(!iGSK3b, !ActivinA, !SignalLIF), Set(iAct, iWnt), Set(Smad7, iWnt), Set(!ActivinA, iWnt), Set(Cdx2, iAct), Set(Cdx2, Smad7), Set(Cdx2, !ActivinA), Set(Tcf3, iAct), Set(Smad7, Tcf3), Set(Tcf3, !ActivinA), Set(Jarid2), Set(Sox2)))
+(Set(Fgfr2, !Tcf3, Fgf4, !iWnt, SignalLIF, !Sox2, !Cdx2, !Jarid2),Set(-18, 1, 32, -5, 12, -29, 8, 4))
+(Set(bFGF, Fgfr2, !Tcf3, !iWnt, SignalLIF, !Sox2, !Cdx2, !Jarid2),Set(-18, 1, 32, 12, -29, -16, 8, 4))
+(Set(iGSK3b, !Tcf3, !iWnt, !Sox2, !Cdx2, !Jarid2),Set(1, 32, 12, 8, 4, -2))
+(Set(!iAct, !Sox2, !Smad7, !Jarid2, ActivinA),Set(14, 6, 12, -20, 4))
+(Set(!iGSK3b, !Fgf4, iAct, !bFGF),Set(2, 5, -14, 16))
+(Set(!iGSK3b, !Fgf4, Smad7, !bFGF),Set(2, 5, -6, 16))
+(Set(!iGSK3b, !Fgf4, !bFGF, !ActivinA),Set(2, 5, 16, 20))
+(Set(!iGSK3b, iAct, !Fgfr2),Set(2, -14, 18))
+(Set(!iGSK3b, Smad7, !Fgfr2),Set(2, -6, 18))
+(Set(!iGSK3b, !Fgfr2, !ActivinA),Set(2, 18, 20))
+(Set(!iGSK3b, iAct, !SignalLIF),Set(2, -14, 29))
+(Set(!iGSK3b, Smad7, !SignalLIF),Set(2, -6, 29))
+(Set(!iGSK3b, !ActivinA, !SignalLIF),Set(2, 20, 29))
+(Set(iAct, iWnt),Set(-14, -32))
+(Set(Smad7, iWnt),Set(-6, -32))
+(Set(!ActivinA, iWnt),Set(20, -32))
+(Set(Cdx2, iAct),Set(-1, -14))
+(Set(Cdx2, Smad7),Set(-1, -6))
+(Set(Cdx2, !ActivinA),Set(-1, 20))
+(Set(Tcf3, iAct),Set(-8, -14))
+(Set(Smad7, Tcf3),Set(-6, -8))
+(Set(Tcf3, !ActivinA),Set(-8, 20))
+(Set(Jarid2),Set(-12))
+(Set(Sox2),Set(-4))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(Bmp4, !Oct4, !Smad7, !iBMP), Set(!Oct4, Gata6)))
+Some(Vector(Set(!Gata6), Set(Oct4)))
+(Set(Bmp4, !Oct4, !Smad7, !iBMP),Set(6, 21, -9, 19))
+(Set(!Oct4, Gata6),Set(21, -34))
+(Set(!Gata6),Set(34))
+(Set(Oct4),Set(-21))
+
+Some(Vector(Set(!Jarid2, Klf4, !Gbx2), Set(!Jarid2, Nanog, !Gbx2), Set(!Jarid2, Oct4, !Gbx2), Set(Tbx3, !Jarid2, !Gbx2), Set(!Jarid2, Esrrb, !Gbx2)))
+Some(Vector(Set(Jarid2), Set(Gbx2), Set(!Klf4, !Esrrb, !Oct4, !Tbx3, !Nanog)))
+(Set(!Jarid2, Klf4, !Gbx2),Set(12, -15, 24))
+(Set(!Jarid2, Nanog, !Gbx2),Set(12, -23, 24))
+(Set(!Jarid2, Oct4, !Gbx2),Set(12, -21, 24))
+(Set(Tbx3, !Jarid2, !Gbx2),Set(-3, 12, 24))
+(Set(!Jarid2, Esrrb, !Gbx2),Set(12, -22, 24))
+(Set(Jarid2),Set(-12))
+(Set(Gbx2),Set(-24))
+(Set(!Klf4, !Esrrb, !Oct4, !Tbx3, !Nanog),Set(21, 22, 3, 23, 15))
+
+Some(Vector(Set(Nanog)))
+Some(Vector(Set(!Nanog, !Oct4)))
+(Set(Nanog),Set(-23))
+(Set(!Nanog, !Oct4),Set(23, 21))
+
+Some(Vector(Set(Esrrb, Fgfr2, Bmp4, !Tcf3, Fgf4, !Smad6, SignalLIF, !Smad7, !iBMP), Set(Esrrb, bFGF, Fgfr2, Bmp4, !Tcf3, !Smad6, SignalLIF, !Smad7, !iBMP), Set(bFGF, Fgfr2, Bmp4, !Tcf3, !Smad6, SignalLIF, !Smad7, Klf4, !iBMP), Set(Esrrb, Fgfr2, !Tcf3, iERK, Fgf4, SignalLIF), Set(Esrrb, bFGF, Fgfr2, !Tcf3, iERK, SignalLIF), Set(Fgfr2, Bmp4, !Tcf3, Fgf4, !Smad6, Nanog, SignalLIF, !Smad7, !iBMP), Set(bFGF, Fgfr2, Bmp4, !Tcf3, !Smad6, Nanog, SignalLIF, !Smad7, !iBMP), Set(Fgfr2, !Tcf3, iERK, Fgf4, Nanog, SignalLIF), Set(bFGF, Fgfr2, !Tcf3, iERK, Nanog, SignalLIF), Set(Fgfr2, Bmp4, !Tcf3, Fgf4, !Smad6, SignalLIF, !Smad7, Klf4, !iBMP), Set(Fgfr2, !Tcf3, iERK, Fgf4, SignalLIF, Klf4), Set(bFGF, Fgfr2, !Tcf3, iERK, SignalLIF, Klf4)))
+Some(Vector(Set(Fgfr2, Fgf4, !iERK, iBMP), Set(bFGF, Fgfr2, !iERK, iBMP), Set(Fgfr2, Fgf4, !iERK, Smad6), Set(bFGF, Fgfr2, !iERK, Smad6), Set(Fgfr2, !Bmp4, Fgf4, !iERK), Set(bFGF, Fgfr2, !Bmp4, !iERK), Set(Fgfr2, Fgf4, !iERK, Smad7), Set(bFGF, Fgfr2, !iERK, Smad7), Set(!Klf4, !Esrrb, !Nanog), Set(Tcf3)))
+(Set(Esrrb, Fgfr2, Bmp4, !Tcf3, Fgf4, !Smad6, SignalLIF, !Smad7, !iBMP),Set(-22, -18, 6, -5, 7, -29, -9, 8, 19))
+(Set(Esrrb, bFGF, Fgfr2, Bmp4, !Tcf3, !Smad6, SignalLIF, !Smad7, !iBMP),Set(-22, -18, 6, 7, -29, -16, -9, 8, 19))
+(Set(bFGF, Fgfr2, Bmp4, !Tcf3, !Smad6, SignalLIF, !Smad7, Klf4, !iBMP),Set(-18, 6, -15, 7, -29, -16, -9, 8, 19))
+(Set(Esrrb, Fgfr2, !Tcf3, iERK, Fgf4, SignalLIF),Set(-27, -22, -18, -5, -29, 8))
+(Set(Esrrb, bFGF, Fgfr2, !Tcf3, iERK, SignalLIF),Set(-27, -22, -18, -29, -16, 8))
+(Set(Fgfr2, Bmp4, !Tcf3, Fgf4, !Smad6, Nanog, SignalLIF, !Smad7, !iBMP),Set(-18, 6, -23, -5, 7, -29, -9, 8, 19))
+(Set(bFGF, Fgfr2, Bmp4, !Tcf3, !Smad6, Nanog, SignalLIF, !Smad7, !iBMP),Set(-18, 6, -23, 7, -29, -16, -9, 8, 19))
+(Set(Fgfr2, !Tcf3, iERK, Fgf4, Nanog, SignalLIF),Set(-27, -18, -23, -5, -29, 8))
+(Set(bFGF, Fgfr2, !Tcf3, iERK, Nanog, SignalLIF),Set(-27, -18, -23, -29, -16, 8))
+(Set(Fgfr2, Bmp4, !Tcf3, Fgf4, !Smad6, SignalLIF, !Smad7, Klf4, !iBMP),Set(-18, 6, -15, -5, 7, -29, -9, 8, 19))
+(Set(Fgfr2, !Tcf3, iERK, Fgf4, SignalLIF, Klf4),Set(-27, -18, -15, -5, -29, 8))
+(Set(bFGF, Fgfr2, !Tcf3, iERK, SignalLIF, Klf4),Set(-27, -18, -15, -29, -16, 8))
+(Set(Fgfr2, Fgf4, !iERK, iBMP),Set(-18, -19, -5, 27))
+(Set(bFGF, Fgfr2, !iERK, iBMP),Set(-18, -19, 27, -16))
+(Set(Fgfr2, Fgf4, !iERK, Smad6),Set(-7, -18, -5, 27))
+(Set(bFGF, Fgfr2, !iERK, Smad6),Set(-7, -18, 27, -16))
+(Set(Fgfr2, !Bmp4, Fgf4, !iERK),Set(-18, 9, -5, 27))
+(Set(bFGF, Fgfr2, !Bmp4, !iERK),Set(-18, 9, 27, -16))
+(Set(Fgfr2, Fgf4, !iERK, Smad7),Set(-18, -5, 27, -6))
+(Set(bFGF, Fgfr2, !iERK, Smad7),Set(-18, 27, -16, -6))
+(Set(!Klf4, !Esrrb, !Nanog),Set(15, 22, 23))
+(Set(Tcf3),Set(-8))
+
+Some(Vector(Set(!iGSK3b, !Fgf4, !bFGF, Nanog), Set(!iGSK3b, !Fgfr2, Nanog), Set(!iGSK3b, Nanog, !SignalLIF), Set(Nanog, iWnt), Set(Cdx2, Nanog), Set(!iGSK3b, !Fgf4, !bFGF, Oct4), Set(!iGSK3b, !Fgfr2, Oct4), Set(!iGSK3b, Oct4, !SignalLIF), Set(Oct4, iWnt), Set(Cdx2, Oct4)))
+Some(Vector(Set(Fgfr2, Fgf4, !iWnt, SignalLIF, !Cdx2), Set(bFGF, Fgfr2, !iWnt, SignalLIF, !Cdx2), Set(!Cdx2, iGSK3b, !iWnt), Set(!Oct4, !Nanog)))
+(Set(!iGSK3b, !Fgf4, !bFGF, Nanog),Set(2, 5, 16, -23))
+(Set(!iGSK3b, !Fgfr2, Nanog),Set(2, 18, -23))
+(Set(!iGSK3b, Nanog, !SignalLIF),Set(2, -23, 29))
+(Set(Nanog, iWnt),Set(-23, -32))
+(Set(Cdx2, Nanog),Set(-1, -23))
+(Set(!iGSK3b, !Fgf4, !bFGF, Oct4),Set(2, 5, 16, -21))
+(Set(!iGSK3b, !Fgfr2, Oct4),Set(2, 18, -21))
+(Set(!iGSK3b, Oct4, !SignalLIF),Set(2, -21, 29))
+(Set(Oct4, iWnt),Set(-21, -32))
+(Set(Cdx2, Oct4),Set(-1, -21))
+(Set(Fgfr2, Fgf4, !iWnt, SignalLIF, !Cdx2),Set(-18, 1, 32, -5, -29))
+(Set(bFGF, Fgfr2, !iWnt, SignalLIF, !Cdx2),Set(-18, 1, 32, -29, -16))
+(Set(!Cdx2, iGSK3b, !iWnt),Set(1, -2, 32))
+(Set(!Oct4, !Nanog),Set(21, 23))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+Map(Cdx2 -> 1, iGSK3b -> 2, Tbx3 -> 3, Sox2 -> 4, Fgf4 -> 5, Smad7 -> 6, Smad6 -> 7, Tcf3 -> 8, Bmp4 -> 9, Lrh1 -> 10, Lefty1 -> 11, Jarid2 -> 12, Dnmt3b -> 13, iAct -> 14, Klf4 -> 15, bFGF -> 16, EpiTFs -> 17, Fgfr2 -> 18, iBMP -> 19, ActivinA -> 20, Oct4 -> 21, Esrrb -> 22, Nanog -> 23, Gbx2 -> 24, Dusp6 -> 25, Pitx2 -> 26, iERK -> 27, Gcnf -> 28, SignalLIF -> 29, Myc -> 30, Mycn -> 31, iWnt -> 32, Klf2 -> 33, Gata6 -> 34)
+p cnf 34 283
+24 20 -21 11 4 0
+-14 21 -20 0
+-6 21 -20 0
+-24 -20 0
+-11 -20 0
+-4 -20 0
+-30 9 0
+-3 9 0
+-24 9 0
+24 -19 3 -9 30 0
+-7 24 3 -9 30 0
+24 3 -9 -6 30 0
+1 6 7 -9 19 0
+-21 -1 0
+1 15 -17 13 0
+1 -8 15 13 0
+1 15 -31 13 0
+-15 -13 0
+-1 -13 0
+8 17 31 -13 0
+25 -18 -19 -5 27 0
+25 -18 -19 27 -16 0
+-7 25 -18 -5 27 0
+-7 25 -18 27 -16 0
+25 -18 9 -5 27 0
+25 -18 9 27 -16 0
+25 -18 -5 27 -6 0
+25 -18 27 -16 -6 0
+6 -25 7 -9 19 0
+5 16 -25 0
+-27 -25 0
+18 -25 0
+1 6 17 7 -9 19 15 0
+1 15 -25 17 0
+1 15 -26 17 0
+1 6 17 7 -9 19 4 0
+1 4 -25 17 0
+1 4 -26 17 0
+-4 -15 -17 0
+-19 25 26 -17 0
+-7 25 26 -17 0
+9 25 26 -17 0
+-6 25 26 -17 0
+-1 -17 0
+-18 1 32 17 22 -5 -29 8 0
+-18 1 32 17 22 -29 -16 8 0
+1 32 17 22 8 -2 0
+17 -23 22 0
+17 -33 22 0
+-15 17 22 0
+5 -22 33 2 16 23 15 0
+-22 33 2 18 23 15 0
+-22 29 33 2 23 15 0
+-32 -22 33 23 15 0
+-22 33 -1 23 15 0
+-22 -8 33 23 15 0
+-17 -22 0
+5 -18 1 32 -29 -16 8 0
+5 1 32 8 -2 0
+-22 5 0
+-23 5 0
+2 22 -5 18 23 0
+29 2 22 -5 23 0
+22 23 -32 -5 0
+-1 22 23 -5 0
+-8 22 23 -5 0
+-1 21 23 18 0
+21 23 -28 18 0
+5 -18 1 28 16 0
+-23 -18 0
+-21 -18 0
+5 -18 33 -19 34 27 -16 23 0
+5 -7 -18 33 34 27 -16 23 0
+5 -18 33 9 34 27 -16 23 0
+5 -18 33 34 27 -16 23 -6 0
+-5 -34 0
+-33 -34 0
+-23 -34 0
+24 -12 1 32 3 8 -2 0
+3 -12 -29 24 0
+24 -22 1 32 3 8 -2 0
+3 -22 -29 24 0
+12 22 -24 0
+2 29 -24 0
+29 -32 -24 0
+-1 29 -24 0
+-8 29 -24 0
+-3 -24 0
+17 -34 28 0
+17 -1 28 0
+1 34 -28 0
+-17 -28 0
+-15 12 0
+-21 12 0
+21 15 -12 0
+25 33 -4 -15 26 0
+25 26 -31 33 0
+15 31 -33 0
+4 31 -33 0
+-25 -33 0
+-26 -33 0
+-22 -4 -23 17 -21 -33 15 0
+17 -29 15 0
+23 29 -15 0
+4 29 -15 0
+22 29 -15 0
+21 29 -15 0
+-17 -15 0
+5 -4 12 -21 11 0
+5 -18 1 32 12 -29 11 -16 8 0
+5 1 32 12 11 8 -2 0
+5 14 6 12 -20 11 0
+5 12 -31 11 0
+-12 -11 0
+5 -11 2 16 -14 31 4 0
+5 -11 2 16 31 -6 4 0
+5 20 -11 2 16 31 4 0
+-11 2 18 -14 31 4 0
+-11 2 18 31 -6 4 0
+20 -11 2 18 31 4 0
+29 -11 2 -14 31 4 0
+29 -11 2 31 -6 4 0
+20 29 -11 2 31 4 0
+-32 -11 -14 31 4 0
+-32 -11 31 -6 4 0
+-32 20 -11 31 4 0
+-11 -1 -14 31 4 0
+-11 -1 31 -6 4 0
+20 -11 -1 31 4 0
+-8 -11 -14 31 4 0
+-8 -11 31 -6 4 0
+-8 20 -11 31 4 0
+5 -11 21 2 16 -14 31 0
+5 -11 21 2 16 31 -6 0
+5 20 -11 21 2 16 31 0
+-11 21 2 18 -14 31 0
+-11 21 2 18 31 -6 0
+20 -11 21 2 18 31 0
+29 -11 21 2 -14 31 0
+29 -11 21 2 31 -6 0
+20 29 -11 21 2 31 0
+-32 -11 21 -14 31 0
+-32 -11 21 31 -6 0
+-32 20 -11 21 31 0
+-11 21 -1 -14 31 0
+-11 21 -1 31 -6 0
+20 -11 21 -1 31 0
+-8 -11 21 -14 31 0
+-8 -11 21 31 -6 0
+-8 20 -11 21 31 0
+-5 -11 0
+-4 8 -21 10 0
+8 -15 10 0
+-3 8 10 0
+3 4 15 -10 0
+3 15 21 -10 0
+-8 -10 0
+1 32 23 8 30 -2 0
+-18 -19 -5 27 23 30 0
+-18 -19 27 -16 23 30 0
+-7 -18 -5 27 23 30 0
+-7 -18 27 -16 23 30 0
+-18 9 -5 27 23 30 0
+-18 9 27 -16 23 30 0
+-18 -5 27 23 -6 30 0
+-18 27 -16 23 -6 30 0
+23 -24 30 0
+23 -29 30 0
+24 29 6 2 -30 7 -9 19 0
+5 24 29 2 -30 16 0
+-27 24 29 2 -30 0
+24 29 2 -30 18 0
+-32 24 29 6 -30 7 -9 19 0
+-32 5 24 29 -30 16 0
+-32 -27 24 29 -30 0
+-32 24 29 -30 18 0
+24 29 6 -30 7 -1 -9 19 0
+5 24 29 -30 -1 16 0
+-27 24 29 -30 -1 0
+24 29 -30 18 -1 0
+24 -8 29 6 -30 7 -9 19 0
+5 24 -8 29 -30 16 0
+-27 24 -8 29 -30 0
+24 -8 29 -30 18 0
+-23 -30 0
+-21 -4 23 31 0
+-23 -31 0
+4 -31 0
+21 -31 0
+8 -10 34 23 0
+8 -15 34 23 0
+14 6 34 -20 23 8 0
+-4 34 -21 23 8 0
+-3 8 34 23 0
+-34 -23 0
+-8 -23 0
+28 21 33 -10 -13 0
+28 21 33 -23 -13 0
+28 21 33 -15 -13 0
+13 -23 21 0
+13 -15 21 0
+-33 21 0
+10 33 -21 23 4 15 0
+-1 -28 -21 0
+-13 -28 33 -21 0
+33 -21 23 4 15 -28 0
+-1 13 -21 0
+-1 -33 -21 0
+33 13 -21 23 4 15 0
+-18 1 32 -5 12 -29 26 8 4 0
+-18 1 32 12 -29 -16 26 8 4 0
+1 32 12 26 8 4 -2 0
+14 6 12 -20 26 4 0
+5 -26 2 16 -14 0
+5 -26 2 16 -6 0
+5 20 -26 2 16 0
+2 -14 18 -26 0
+2 -6 18 -26 0
+2 18 20 -26 0
+2 -14 29 -26 0
+2 -6 29 -26 0
+2 20 29 -26 0
+-14 -32 -26 0
+-6 -32 -26 0
+20 -32 -26 0
+-1 -14 -26 0
+-1 -6 -26 0
+-1 20 -26 0
+-8 -14 -26 0
+-6 -8 -26 0
+-8 20 -26 0
+-12 -26 0
+-4 -26 0
+6 21 7 -9 19 0
+21 -34 7 0
+34 -7 0
+-21 -7 0
+12 -15 24 6 0
+12 -23 24 6 0
+12 -21 24 6 0
+-3 12 24 6 0
+12 -22 24 6 0
+-12 -6 0
+-24 -6 0
+21 22 3 23 -6 15 0
+-23 4 0
+23 21 -4 0
+-22 -18 6 -5 7 -29 3 -9 8 19 0
+-22 -18 6 7 -29 3 -16 -9 8 19 0
+-18 6 -15 7 -29 3 -16 -9 8 19 0
+-27 -22 -18 -5 -29 3 8 0
+-27 -22 -18 -29 3 -16 8 0
+-18 6 -23 -5 7 -29 3 -9 8 19 0
+-18 6 -23 7 -29 3 -16 -9 8 19 0
+-27 -18 -23 -5 -29 3 8 0
+-27 -18 -23 -29 3 -16 8 0
+-18 6 -15 -5 7 -29 3 -9 8 19 0
+-27 -18 -15 -5 -29 3 8 0
+-27 -18 -15 -29 3 -16 8 0
+-3 -18 -19 -5 27 0
+-3 -18 -19 27 -16 0
+-7 -3 -18 -5 27 0
+-7 -3 -18 27 -16 0
+-3 -18 9 -5 27 0
+-3 -18 9 27 -16 0
+-3 -18 -5 27 -6 0
+-3 -18 27 -16 -6 0
+15 22 23 -3 0
+-8 -3 0
+5 -23 2 16 8 0
+2 18 -23 8 0
+2 -23 29 8 0
+-23 -32 8 0
+-1 -23 8 0
+5 2 16 -21 8 0
+2 18 -21 8 0
+2 -21 29 8 0
+-21 -32 8 0
+-1 -21 8 0
+-8 -18 1 32 -5 -29 0
+-8 -18 1 32 -29 -16 0
+1 -2 32 -8 0
+21 23 -8 0
++ exit_status=0
++ set +x
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.SEIu1TDvIG.cnf'
+c opening file to read '/tmp/tmp.SEIu1TDvIG.cnf'
+c found 'p cnf 34 283' header
+c parsed 283 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  283  34 100%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  283  34 100%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  283  34 100%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   98.40% parse
+c         0.00   26.60% search
+c         0.00   26.06% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   35.88% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.00    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=86
++ bdd_minisat_all_release /tmp/tmp.SEIu1TDvIG.cnf
++ wait 86
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.SEIu1TDvIG.cnf
+variables         :           34
+cutwidth          :          249
+restarts          :            1
+conflicts         :           44           (      inf / sec      )
+decisions         :          454           (      inf / sec      )
+propagations      :         1048           (      inf / sec      )
+inspects          :         7205           (      inf / sec      )
+conflict literals :          241           (    12.04 % deleted  )
+cpu time (solve)  :         0.00 sec	
+refreshes         :            0
+|obdd|            :         2302
+cache hits        :          116
+cache lookup      :          364
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :          412
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 signaling-dependent-pluripotency.bnet"
+	User time (seconds): 1.37
+	System time (seconds): 0.30
+	Percent of CPU this job got: 178%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.94
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 164420
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 39384
+	Voluntary context switches: 2792
+	Involuntary context switches: 138
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.3s

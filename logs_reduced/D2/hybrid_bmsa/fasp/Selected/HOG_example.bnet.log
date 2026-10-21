@@ -1,0 +1,838 @@
+# Host: MSI
+# Start date: Wed Oct 21 08:59:35 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/Selected/HOG_example.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-277 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/Selected:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 HOG_example.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/HOG_example.bnet --cnf /tmp/tmp.bsKdAKMLY1.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/HOG_example.bnet, cnfFileName = /tmp/tmp.bsKdAKMLY1.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector(Set(S0, S3, S5), Set(S1, S3, S5), Set(S0, S5, S2), Set(S1, S5, S2)))
+Some(Vector(Set(!S3, !S2), Set(!S1, !S0), Set(!S5)))
+(Set(S0, S3, S5),Set(-9, -20, -31))
+(Set(S1, S3, S5),Set(-4, -20, -31))
+(Set(S0, S5, S2),Set(-9, -31, -38))
+(Set(S1, S5, S2),Set(-4, -31, -38))
+(Set(!S3, !S2),Set(20, 38))
+(Set(!S1, !S0),Set(4, 9))
+(Set(!S5),Set(31))
+
+Some(Vector(Set(S0, S3, S5), Set(S1, S3, S5), Set(S0, S5, S2), Set(S1, S5, S2)))
+Some(Vector(Set(!S3, !S2), Set(!S1, !S0), Set(!S5)))
+(Set(S0, S3, S5),Set(-9, -20, -31))
+(Set(S1, S3, S5),Set(-4, -20, -31))
+(Set(S0, S5, S2),Set(-9, -31, -38))
+(Set(S1, S5, S2),Set(-4, -31, -38))
+(Set(!S3, !S2),Set(20, 38))
+(Set(!S1, !S0),Set(4, 9))
+(Set(!S5),Set(31))
+
+Some(Vector(Set(S17, S21, !S16, S19, S15), Set(S18, S15, S19, !S16), Set(S17, S20, S21, !S16, S15), Set(S18, S15, S20, !S16)))
+Some(Vector(Set(!S15, !S16), Set(!S19, !S20), Set(!S18, !S17), Set(S16), Set(!S18, !S21)))
+(Set(S17, S21, !S16, S19, S15),Set(-32, 42, -8, -18, -16))
+(Set(S18, S15, S19, !S16),Set(-1, -8, -18, 42))
+(Set(S17, S20, S21, !S16, S15),Set(-32, 42, -8, -25, -16))
+(Set(S18, S15, S20, !S16),Set(-1, -8, -25, 42))
+(Set(!S15, !S16),Set(8, 42))
+(Set(!S19, !S20),Set(18, 25))
+(Set(!S18, !S17),Set(1, 32))
+(Set(S16),Set(-42))
+(Set(!S18, !S21),Set(1, 16))
+
+Some(Vector(Set(S15, S21, S19, S17), Set(S18, S15, S19), Set(S15, S21, S20, S17), Set(S18, S15, S20), Set(S21, S19, S17, S16), Set(S18, S19, S16), Set(S21, S20, S17, S16), Set(S18, S20, S16)))
+Some(Vector(Set(!S19, !S20), Set(!S18, !S21), Set(!S18, !S17), Set(!S15, !S16)))
+(Set(S15, S21, S19, S17),Set(-8, -16, -18, -32))
+(Set(S18, S15, S19),Set(-1, -8, -18))
+(Set(S15, S21, S20, S17),Set(-8, -16, -25, -32))
+(Set(S18, S15, S20),Set(-1, -8, -25))
+(Set(S21, S19, S17, S16),Set(-16, -18, -32, -42))
+(Set(S18, S19, S16),Set(-1, -18, -42))
+(Set(S21, S20, S17, S16),Set(-16, -25, -32, -42))
+(Set(S18, S20, S16),Set(-1, -25, -42))
+(Set(!S19, !S20),Set(18, 25))
+(Set(!S18, !S21),Set(1, 16))
+(Set(!S18, !S17),Set(1, 32))
+(Set(!S15, !S16),Set(8, 42))
+
+Some(Vector(Set(S18, S19), Set(S18, S20)))
+Some(Vector(Set(!S20, !S19), Set(!S18)))
+(Set(S18, S19),Set(-1, -18))
+(Set(S18, S20),Set(-1, -25))
+(Set(!S20, !S19),Set(25, 18))
+(Set(!S18),Set(1))
+
+Some(Vector(Set(S21, S4, S20), Set(S18, S4, S20), Set(S21, S20, S5), Set(S18, S20, S5)))
+Some(Vector(Set(!S4, !S5), Set(!S18, !S21), Set(!S20)))
+(Set(S21, S4, S20),Set(-16, -22, -25))
+(Set(S18, S4, S20),Set(-1, -22, -25))
+(Set(S21, S20, S5),Set(-16, -25, -31))
+(Set(S18, S20, S5),Set(-1, -25, -31))
+(Set(!S4, !S5),Set(22, 31))
+(Set(!S18, !S21),Set(1, 16))
+(Set(!S20),Set(25))
+
+Some(Vector(Set(S15, S17, S22), Set(S17, S22, S16), Set(S18, S15, S22), Set(S18, S22, S16)))
+Some(Vector(Set(!S18, !S17), Set(!S15, !S16), Set(!S22)))
+(Set(S15, S17, S22),Set(-8, -32, -36))
+(Set(S17, S22, S16),Set(-32, -36, -42))
+(Set(S18, S15, S22),Set(-1, -8, -36))
+(Set(S18, S22, S16),Set(-1, -36, -42))
+(Set(!S18, !S17),Set(1, 32))
+(Set(!S15, !S16),Set(8, 42))
+(Set(!S22),Set(36))
+
+Some(Vector(Set(S15, S24, S17), Set(S24, S17, S16), Set(S18, S15, S24), Set(S18, S24, S16), Set(S15, S17, S23), Set(S17, S23, S16), Set(S18, S15, S23), Set(S18, S23, S16)))
+Some(Vector(Set(!S18, !S17), Set(!S15, !S16), Set(!S24, !S23)))
+(Set(S15, S24, S17),Set(-8, -21, -32))
+(Set(S24, S17, S16),Set(-21, -32, -42))
+(Set(S18, S15, S24),Set(-1, -8, -21))
+(Set(S18, S24, S16),Set(-1, -21, -42))
+(Set(S15, S17, S23),Set(-8, -32, -41))
+(Set(S17, S23, S16),Set(-32, -41, -42))
+(Set(S18, S15, S23),Set(-1, -8, -41))
+(Set(S18, S23, S16),Set(-1, -41, -42))
+(Set(!S18, !S17),Set(1, 32))
+(Set(!S15, !S16),Set(8, 42))
+(Set(!S24, !S23),Set(21, 41))
+
+Some(Vector(Set(S6, S0, S3), Set(S1, S6, S3), Set(S6, S0, S2), Set(S1, S6, S2)))
+Some(Vector(Set(!S3, !S2), Set(!S1, !S0), Set(!S6)))
+(Set(S6, S0, S3),Set(-6, -9, -20))
+(Set(S1, S6, S3),Set(-4, -6, -20))
+(Set(S6, S0, S2),Set(-6, -9, -38))
+(Set(S1, S6, S2),Set(-4, -6, -38))
+(Set(!S3, !S2),Set(20, 38))
+(Set(!S1, !S0),Set(4, 9))
+(Set(!S6),Set(6))
+
+Some(Vector(Set(S0, S7, S3), Set(S1, S7, S3), Set(S0, S7, S2), Set(S1, S7, S2)))
+Some(Vector(Set(!S3, !S2), Set(!S1, !S0), Set(!S7)))
+(Set(S0, S7, S3),Set(-9, -11, -20))
+(Set(S1, S7, S3),Set(-4, -11, -20))
+(Set(S0, S7, S2),Set(-9, -11, -38))
+(Set(S1, S7, S2),Set(-4, -11, -38))
+(Set(!S3, !S2),Set(20, 38))
+(Set(!S1, !S0),Set(4, 9))
+(Set(!S7),Set(11))
+
+Some(Vector(Set(S0, S3, S8), Set(S1, S3, S8), Set(S0, S8, S2), Set(S1, S8, S2)))
+Some(Vector(Set(!S3, !S2), Set(!S1, !S0), Set(!S8)))
+(Set(S0, S3, S8),Set(-9, -20, -27))
+(Set(S1, S3, S8),Set(-4, -20, -27))
+(Set(S0, S8, S2),Set(-9, -27, -38))
+(Set(S1, S8, S2),Set(-4, -27, -38))
+(Set(!S3, !S2),Set(20, 38))
+(Set(!S1, !S0),Set(4, 9))
+(Set(!S8),Set(27))
+
+Some(Vector(Set(S10, S13, S12), Set(S14, S10, S12), Set(S10, S13, S11), Set(S14, S10, S11), Set(S9, S13, S12), Set(S9, S14, S12), Set(S9, S13, S11), Set(S9, S14, S11)))
+Some(Vector(Set(!S12, !S11), Set(!S14, !S13), Set(!S9, !S10)))
+(Set(S10, S13, S12),Set(-14, -15, -24))
+(Set(S14, S10, S12),Set(-12, -14, -24))
+(Set(S10, S13, S11),Set(-14, -15, -37))
+(Set(S14, S10, S11),Set(-12, -14, -37))
+(Set(S9, S13, S12),Set(-2, -15, -24))
+(Set(S9, S14, S12),Set(-2, -12, -24))
+(Set(S9, S13, S11),Set(-2, -15, -37))
+(Set(S9, S14, S11),Set(-2, -12, -37))
+(Set(!S12, !S11),Set(24, 37))
+(Set(!S14, !S13),Set(12, 15))
+(Set(!S9, !S10),Set(2, 14))
+
+Some(Vector(Set(S10, S13, S24, S12), Set(S14, S10, S24, S12), Set(S10, S13, S24, S11), Set(S14, S10, S24, S11), Set(S10, S13, S12, S23), Set(S14, S10, S12, S23), Set(S10, S13, S11, S23), Set(S14, S10, S11, S23), Set(S9, S13, S24, S12), Set(S9, S14, S24, S12), Set(S9, S13, S24, S11), Set(S9, S14, S24, S11), Set(S9, S13, S12, S23), Set(S9, S14, S12, S23), Set(S9, S13, S11, S23), Set(S9, S14, S11, S23)))
+Some(Vector(Set(!S24, !S23), Set(!S12, !S11), Set(!S14, !S13), Set(!S9, !S10)))
+(Set(S10, S13, S24, S12),Set(-14, -15, -21, -24))
+(Set(S14, S10, S24, S12),Set(-12, -14, -21, -24))
+(Set(S10, S13, S24, S11),Set(-14, -15, -21, -37))
+(Set(S14, S10, S24, S11),Set(-12, -14, -21, -37))
+(Set(S10, S13, S12, S23),Set(-14, -15, -24, -41))
+(Set(S14, S10, S12, S23),Set(-12, -14, -24, -41))
+(Set(S10, S13, S11, S23),Set(-14, -15, -37, -41))
+(Set(S14, S10, S11, S23),Set(-12, -14, -37, -41))
+(Set(S9, S13, S24, S12),Set(-2, -15, -21, -24))
+(Set(S9, S14, S24, S12),Set(-2, -12, -21, -24))
+(Set(S9, S13, S24, S11),Set(-2, -15, -21, -37))
+(Set(S9, S14, S24, S11),Set(-2, -12, -21, -37))
+(Set(S9, S13, S12, S23),Set(-2, -15, -24, -41))
+(Set(S9, S14, S12, S23),Set(-2, -12, -24, -41))
+(Set(S9, S13, S11, S23),Set(-2, -15, -37, -41))
+(Set(S9, S14, S11, S23),Set(-2, -12, -37, -41))
+(Set(!S24, !S23),Set(21, 41))
+(Set(!S12, !S11),Set(24, 37))
+(Set(!S14, !S13),Set(12, 15))
+(Set(!S9, !S10),Set(2, 14))
+
+Some(Vector(Set(S10, S13, S12), Set(S14, S10, S12), Set(S10, S13, S11), Set(S14, S10, S11), Set(S9, S13, S12), Set(S9, S14, S12), Set(S9, S13, S11), Set(S9, S14, S11)))
+Some(Vector(Set(!S12, !S11), Set(!S14, !S13), Set(!S9, !S10)))
+(Set(S10, S13, S12),Set(-14, -15, -24))
+(Set(S14, S10, S12),Set(-12, -14, -24))
+(Set(S10, S13, S11),Set(-14, -15, -37))
+(Set(S14, S10, S11),Set(-12, -14, -37))
+(Set(S9, S13, S12),Set(-2, -15, -24))
+(Set(S9, S14, S12),Set(-2, -12, -24))
+(Set(S9, S13, S11),Set(-2, -15, -37))
+(Set(S9, S14, S11),Set(-2, -12, -37))
+(Set(!S12, !S11),Set(24, 37))
+(Set(!S14, !S13),Set(12, 15))
+(Set(!S9, !S10),Set(2, 14))
+
+Some(Vector(Set(S10, S13, S12), Set(S14, S10, S12), Set(S10, S13, S11), Set(S14, S10, S11), Set(S9, S13, S12), Set(S9, S14, S12), Set(S9, S13, S11), Set(S9, S14, S11)))
+Some(Vector(Set(!S12, !S11), Set(!S14, !S13), Set(!S9, !S10)))
+(Set(S10, S13, S12),Set(-14, -15, -24))
+(Set(S14, S10, S12),Set(-12, -14, -24))
+(Set(S10, S13, S11),Set(-14, -15, -37))
+(Set(S14, S10, S11),Set(-12, -14, -37))
+(Set(S9, S13, S12),Set(-2, -15, -24))
+(Set(S9, S14, S12),Set(-2, -12, -24))
+(Set(S9, S13, S11),Set(-2, -15, -37))
+(Set(S9, S14, S11),Set(-2, -12, -37))
+(Set(!S12, !S11),Set(24, 37))
+(Set(!S14, !S13),Set(12, 15))
+(Set(!S9, !S10),Set(2, 14))
+
+Some(Vector(Set(S14, S25, S10, S12), Set(S9, S14, S25, S12), Set(S14, S25, S10, S11), Set(S9, S14, S25, S11)))
+Some(Vector(Set(!S12, !S11), Set(!S9, !S10), Set(!S25), Set(!S14)))
+(Set(S14, S25, S10, S12),Set(-12, -13, -14, -24))
+(Set(S9, S14, S25, S12),Set(-2, -12, -13, -24))
+(Set(S14, S25, S10, S11),Set(-12, -13, -14, -37))
+(Set(S9, S14, S25, S11),Set(-2, -12, -13, -37))
+(Set(!S12, !S11),Set(24, 37))
+(Set(!S9, !S10),Set(2, 14))
+(Set(!S25),Set(13))
+(Set(!S14),Set(12))
+
+Some(Vector(Set(S1, S3, R2), Set(S1, R2, S2)))
+Some(Vector(Set(R0, !R2), Set(!S3, !S2)))
+(Set(S1, S3, R2),Set(-4, -20, -26))
+(Set(S1, R2, S2),Set(-4, -26, -38))
+(Set(R0, !R2),Set(-5, 26))
+(Set(!S3, !S2),Set(20, 38))
+
+Some(Vector(Set(R0, S0, S3), Set(R0, S0, S2)))
+Some(Vector(Set(!R0, R2), Set(!S3, !S2)))
+(Set(R0, S0, S3),Set(-5, -9, -20))
+(Set(R0, S0, S2),Set(-5, -9, -38))
+(Set(!R0, R2),Set(5, -26))
+(Set(!S3, !S2),Set(20, 38))
+
+Some(Vector(Set(R9, S12, S13, S9), Set(R9, S12, S14, S9), Set(S11, R9, S13, S9), Set(S11, R9, S14, S9)))
+Some(Vector(Set(R5, !R9, S11), Set(!S12, !S11), Set(!S14, !S13)))
+(Set(R9, S12, S13, S9),Set(-15, -30, -24, -2))
+(Set(R9, S12, S14, S9),Set(-12, -30, -24, -2))
+(Set(S11, R9, S13, S9),Set(-15, -30, -37, -2))
+(Set(S11, R9, S14, S9),Set(-12, -30, -37, -2))
+(Set(R5, !R9, S11),Set(-3, 30, -37))
+(Set(!S12, !S11),Set(24, 37))
+(Set(!S14, !S13),Set(12, 15))
+
+Some(Vector(Set(R6, S12, S10, S24, S13, R15, S15), Set(R6, S12, S24, S13, R15, S15, S9), Set(R6, S12, S10, S24, S14, R15, S15), Set(R6, S12, S24, S14, R15, S15, S9), Set(R6, S12, S10, S23, S13), Set(R6, S12, S23, S13, S9), Set(R6, S12, S10, S23, S14), Set(R6, S12, S23, S14, S9)))
+Some(Vector(Set(S10, !R15, R5, !S23), Set(!S15, S10, R5, !S23), Set(!S24, S10, R5, !S23), Set(R5, !R6, S10), Set(!S14, !S13), Set(!S9, !S10)))
+(Set(R6, S12, S10, S24, S13, R15, S15),Set(-8, -40, -15, -10, -14, -21, -24))
+(Set(R6, S12, S24, S13, R15, S15, S9),Set(-8, -40, -15, -10, -21, -24, -2))
+(Set(R6, S12, S10, S24, S14, R15, S15),Set(-8, -40, -12, -10, -14, -21, -24))
+(Set(R6, S12, S24, S14, R15, S15, S9),Set(-8, -40, -12, -10, -21, -24, -2))
+(Set(R6, S12, S10, S23, S13),Set(-15, -10, -14, -41, -24))
+(Set(R6, S12, S23, S13, S9),Set(-15, -10, -41, -24, -2))
+(Set(R6, S12, S10, S23, S14),Set(-12, -10, -14, -41, -24))
+(Set(R6, S12, S23, S14, S9),Set(-12, -10, -41, -24, -2))
+(Set(S10, !R15, R5, !S23),Set(-3, 41, -14, 40))
+(Set(!S15, S10, R5, !S23),Set(-3, 41, -14, 8))
+(Set(!S24, S10, R5, !S23),Set(-3, 21, 41, -14))
+(Set(R5, !R6, S10),Set(-3, 10, -14))
+(Set(!S14, !S13),Set(12, 15))
+(Set(!S9, !S10),Set(2, 14))
+
+Some(Vector(Set(S11, S10, S13, R5), Set(S11, S10, R5, S14), Set(S11, R9, S13, R5, S9), Set(S11, R9, R5, S14, S9)))
+Some(Vector(Set(R6, !R9, S23, !S10), Set(!R5, R6, S23), Set(!S9, !S10), Set(!S14, !S13)))
+(Set(S11, S10, S13, R5),Set(-3, -15, -37, -14))
+(Set(S11, S10, R5, S14),Set(-3, -12, -37, -14))
+(Set(S11, R9, S13, R5, S9),Set(-3, -15, -30, -37, -2))
+(Set(S11, R9, R5, S14, S9),Set(-3, -12, -30, -37, -2))
+(Set(R6, !R9, S23, !S10),Set(14, -10, 30, -41))
+(Set(!R5, R6, S23),Set(3, -10, -41))
+(Set(!S9, !S10),Set(2, 14))
+(Set(!S14, !S13),Set(12, 15))
+
+Some(Vector(Set(S12, S10, R8, S14), Set(S11, S10, R8, S14), Set(S12, R8, S14, S9), Set(S11, R8, S14, S9)))
+Some(Vector(Set(!R8, R7), Set(!S9, !S10), Set(!S12, !S11)))
+(Set(S12, S10, R8, S14),Set(-12, -14, -24, -17))
+(Set(S11, S10, R8, S14),Set(-12, -37, -14, -17))
+(Set(S12, R8, S14, S9),Set(-12, -24, -2, -17))
+(Set(S11, R8, S14, S9),Set(-12, -37, -2, -17))
+(Set(!R8, R7),Set(17, -28))
+(Set(!S9, !S10),Set(2, 14))
+(Set(!S12, !S11),Set(24, 37))
+
+Some(Vector(Set(S12, S10, R7, S13), Set(S11, S10, R7, S13), Set(S12, R7, S13, S9), Set(S11, R7, S13, S9)))
+Some(Vector(Set(R8, !R7), Set(!S9, !S10), Set(!S12, !S11)))
+(Set(S12, S10, R7, S13),Set(-15, -14, -24, -28))
+(Set(S11, S10, R7, S13),Set(-15, -37, -14, -28))
+(Set(S12, R7, S13, S9),Set(-15, -24, -2, -28))
+(Set(S11, R7, S13, S9),Set(-15, -37, -2, -28))
+(Set(R8, !R7),Set(-17, 28))
+(Set(!S9, !S10),Set(2, 14))
+(Set(!S12, !S11),Set(24, 37))
+
+Some(Vector(Set(R14, S17, S16), Set(S18, R14, S16)))
+Some(Vector(Set(!R14, S24, R15), Set(!S18, !S17)))
+(Set(R14, S17, S16),Set(-7, -32, -42))
+(Set(S18, R14, S16),Set(-1, -7, -42))
+(Set(!R14, S24, R15),Set(7, -21, -40))
+(Set(!S18, !S17),Set(1, 32))
+
+Some(Vector(Set(S17, R6, S12, S23, R15, S15), Set(R6, S12, S23, R15, S15, S18), Set(S17, S24, R15, S15), Set(S24, R15, S15, S18)))
+Some(Vector(Set(R14, !R6, !S24), Set(R14, !S24, !S12), Set(R14, !S24, !S23), Set(R14, !R15), Set(!S18, !S17)))
+(Set(S17, R6, S12, S23, R15, S15),Set(-32, -8, -40, -10, -41, -24))
+(Set(R6, S12, S23, R15, S15, S18),Set(-8, -40, -10, -1, -41, -24))
+(Set(S17, S24, R15, S15),Set(-32, -8, -40, -21))
+(Set(S24, R15, S15, S18),Set(-8, -40, -1, -21))
+(Set(R14, !R6, !S24),Set(-7, 10, 21))
+(Set(R14, !S24, !S12),Set(-7, 21, 24))
+(Set(R14, !S24, !S23),Set(-7, 21, 41))
+(Set(R14, !R15),Set(-7, 40))
+(Set(!S18, !S17),Set(1, 32))
+
+Some(Vector(Set(S18, S15, R11), Set(S18, R11, S16)))
+Some(Vector(Set(R10, S21, !S20, !S19, !S18), Set(S21, R10, !R11), Set(!S15, !S16)))
+(Set(S18, S15, R11),Set(-1, -8, -39))
+(Set(S18, R11, S16),Set(-1, -39, -42))
+(Set(R10, S21, !S20, !S19, !S18),Set(25, 1, 18, -16, -34))
+(Set(S21, R10, !R11),Set(-16, -34, 39))
+(Set(!S15, !S16),Set(8, 42))
+
+Some(Vector(Set(S17, R10, S21, S19, S15), Set(S17, R10, S16, S21, S19), Set(S17, S20, R10, S21, S15), Set(S17, S20, R10, S16, S21)))
+Some(Vector(Set(!S15, !S16), Set(!R10, R11), Set(!S19, !S20)))
+(Set(S17, R10, S21, S19, S15),Set(-32, -8, -18, -16, -34))
+(Set(S17, R10, S16, S21, S19),Set(-32, -18, -42, -16, -34))
+(Set(S17, S20, R10, S21, S15),Set(-32, -8, -25, -16, -34))
+(Set(S17, S20, R10, S16, S21),Set(-32, -42, -25, -16, -34))
+(Set(!S15, !S16),Set(8, 42))
+(Set(!R10, R11),Set(34, -39))
+(Set(!S19, !S20),Set(18, 25))
+
+Some(Vector())
+Some(Vector(Set(R12), Set(!S18, !S21)))
+(Set(R12),Set(-29))
+(Set(!S18, !S21),Set(1, 16))
+
+Some(Vector(Set(S0, S3, R4), Set(S0, S3, R3), Set(S1, S3, R3), Set(S1, S3, R4)))
+Some(Vector(Set(!R3, R1, !R4), Set(!S1, !S0)))
+(Set(S0, S3, R4),Set(-9, -20, -35))
+(Set(S0, S3, R3),Set(-9, -20, -23))
+(Set(S1, S3, R3),Set(-4, -20, -23))
+(Set(S1, S3, R4),Set(-4, -20, -35))
+(Set(!R3, R1, !R4),Set(23, -33, 35))
+(Set(!S1, !S0),Set(4, 9))
+
+Some(Vector(Set(S21, S19, R12), Set(S18, S19, R12)))
+Some(Vector(Set(!S18, !S21)))
+(Set(S21, S19, R12),Set(-16, -18, -29))
+(Set(S18, S19, R12),Set(-1, -18, -29))
+(Set(!S18, !S21),Set(1, 16))
+
+Some(Vector(Set(S18, S19, R11), Set(S18, S20, R11)))
+Some(Vector(Set(S17, !S15, R10, !S16, !S18), Set(S17, R10, !R11), Set(!S19, !S20)))
+(Set(S18, S19, R11),Set(-1, -18, -39))
+(Set(S18, S20, R11),Set(-1, -25, -39))
+(Set(S17, !S15, R10, !S16, !S18),Set(-32, 42, 1, 8, -34))
+(Set(S17, R10, !R11),Set(-32, -34, 39))
+(Set(!S19, !S20),Set(18, 25))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(S17, S16, R14, S24, R15), Set(S16, R14, S24, R15, S18), Set(S15, S24, R15)))
+Some(Vector(Set(R6, !S15, S12, !R14), Set(R6, !S15, S12, !S16), Set(R6, !S15, S12, !S18, !S17), Set(R6, S12, !R15)))
+(Set(S17, S16, R14, S24, R15),Set(-32, -7, -40, -42, -21))
+(Set(S16, R14, S24, R15, S18),Set(-7, -40, -42, -1, -21))
+(Set(S15, S24, R15),Set(-8, -21, -40))
+(Set(R6, !S15, S12, !R14),Set(-10, 7, 8, -24))
+(Set(R6, !S15, S12, !S16),Set(42, -10, 8, -24))
+(Set(R6, !S15, S12, !S18, !S17),Set(1, 32, -10, 8, -24))
+(Set(R6, S12, !R15),Set(-10, -24, 40))
+
+Some(Vector(Set(S11, R6, S10, S23, S13, R5), Set(S11, R6, S10, S23, R5, S14), Set(R6, S12, S23)))
+Some(Vector(Set(S15, !R6, R15), Set(!R5, !S12, R15, S15), Set(!S11, !S12, R15, S15), Set(!S14, !S12, !S13, R15, S15), Set(!S12, !S10, R15, S15)))
+(Set(S11, R6, S10, S23, S13, R5),Set(-3, -15, -10, -37, -14, -41))
+(Set(S11, R6, S10, S23, R5, S14),Set(-3, -12, -10, -37, -14, -41))
+(Set(R6, S12, S23),Set(-10, -24, -41))
+(Set(S15, !R6, R15),Set(-8, 10, -40))
+(Set(!R5, !S12, R15, S15),Set(24, -8, -40, 3))
+(Set(!S11, !S12, R15, S15),Set(24, 37, -8, -40))
+(Set(!S14, !S12, !S13, R15, S15),Set(24, -8, -40, 12, 15))
+(Set(!S12, !S10, R15, S15),Set(24, 14, -8, -40))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(S0, R1, S2), Set(S1, R1, S2)))
+Some(Vector(Set(R3, !R1), Set(!R1, R4), Set(!S1, !S0)))
+(Set(S0, R1, S2),Set(-9, -33, -38))
+(Set(S1, R1, S2),Set(-4, -33, -38))
+(Set(R3, !R1),Set(-23, 33))
+(Set(!R1, R4),Set(33, -35))
+(Set(!S1, !S0),Set(4, 9))
+
+Some(Vector())
+Some(Vector(Set(R13)))
+(Set(R13),Set(-19))
+
+Some(Vector(Set(S4, R13)))
+Some(Vector())
+(Set(S4, R13),Set(-22, -19))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(R6, S12, S10, S23, S13, R5), Set(R6, S12, S10, S23, R5, S14), Set(S11, S10, S13, R5), Set(S11, S10, R5, S14)))
+Some(Vector(Set(!R6, R9, !S11), Set(R9, !S11, !S23), Set(!R5, R9), Set(!S12, !S11), Set(!S14, !S13)))
+(Set(R6, S12, S10, S23, S13, R5),Set(-3, -15, -10, -14, -41, -24))
+(Set(R6, S12, S10, S23, R5, S14),Set(-3, -12, -10, -14, -41, -24))
+(Set(S11, S10, S13, R5),Set(-3, -15, -37, -14))
+(Set(S11, S10, R5, S14),Set(-3, -12, -37, -14))
+(Set(!R6, R9, !S11),Set(10, -30, 37))
+(Set(R9, !S11, !S23),Set(-30, 37, 41))
+(Set(!R5, R9),Set(3, -30))
+(Set(!S12, !S11),Set(24, 37))
+(Set(!S14, !S13),Set(12, 15))
+Map(S18 -> 1, S9 -> 2, R5 -> 3, S1 -> 4, R0 -> 5, S6 -> 6, R14 -> 7, S15 -> 8, S0 -> 9, R6 -> 10, S7 -> 11, S14 -> 12, S25 -> 13, S10 -> 14, S13 -> 15, S21 -> 16, R8 -> 17, S19 -> 18, R13 -> 19, S3 -> 20, S24 -> 21, S4 -> 22, R3 -> 23, S12 -> 24, S20 -> 25, R2 -> 26, S8 -> 27, R7 -> 28, R12 -> 29, R9 -> 30, S5 -> 31, S17 -> 32, R1 -> 33, R10 -> 34, R4 -> 35, S22 -> 36, S11 -> 37, S2 -> 38, R11 -> 39, R15 -> 40, S23 -> 41, S16 -> 42)
+p cnf 42 269
+-9 -20 -31 5 0
+-4 -20 -31 5 0
+-9 -31 -38 5 0
+-4 -31 -38 5 0
+20 38 -5 0
+4 9 -5 0
+31 -5 0
+-9 -20 -31 33 0
+-4 -20 -31 33 0
+-9 -31 -38 33 0
+-4 -31 -38 33 0
+20 38 -33 0
+4 9 -33 0
+31 -33 0
+-32 42 -8 -18 34 -16 0
+42 -8 -18 34 -1 0
+-32 42 -8 34 -25 -16 0
+42 -8 34 -25 -1 0
+8 42 -34 0
+18 25 -34 0
+1 32 -34 0
+-42 -34 0
+1 16 -34 0
+-32 -8 -18 39 -16 0
+-1 -8 -18 39 0
+-32 -8 -25 39 -16 0
+-1 -8 -25 39 0
+-32 -18 -42 39 -16 0
+-1 -18 -42 39 0
+-32 -42 -25 39 -16 0
+-1 -25 -42 39 0
+18 25 -39 0
+1 16 -39 0
+1 32 -39 0
+8 42 -39 0
+-1 -18 29 0
+-1 -25 29 0
+25 18 -29 0
+1 -29 0
+-16 -22 -25 19 0
+-1 -22 -25 19 0
+-16 -25 -31 19 0
+-1 -25 -31 19 0
+22 31 -19 0
+1 16 -19 0
+25 -19 0
+-8 -32 -36 7 0
+-32 -36 -42 7 0
+-1 -8 -36 7 0
+-1 -36 -42 7 0
+1 32 -7 0
+8 42 -7 0
+36 -7 0
+-8 -21 -32 40 0
+-21 -32 -42 40 0
+-1 -8 -21 40 0
+-1 -21 -42 40 0
+-8 -32 -41 40 0
+-32 -41 -42 40 0
+-1 -8 -41 40 0
+-1 -41 -42 40 0
+1 32 -40 0
+8 42 -40 0
+21 41 -40 0
+-6 -9 -20 26 0
+-4 -6 -20 26 0
+-6 -9 -38 26 0
+-4 -6 -38 26 0
+20 38 -26 0
+4 9 -26 0
+6 -26 0
+-9 -11 -20 23 0
+-4 -11 -20 23 0
+-9 -11 -38 23 0
+-4 -11 -38 23 0
+20 38 -23 0
+4 9 -23 0
+11 -23 0
+-9 -20 -27 35 0
+-4 -20 -27 35 0
+-9 -27 -38 35 0
+-4 -27 -38 35 0
+20 38 -35 0
+4 9 -35 0
+27 -35 0
+-14 -15 -24 3 0
+-12 -14 -24 3 0
+-14 -15 -37 3 0
+-12 -14 -37 3 0
+-2 -15 -24 3 0
+-2 -12 -24 3 0
+-2 -15 -37 3 0
+-2 -12 -37 3 0
+24 37 -3 0
+12 15 -3 0
+2 14 -3 0
+10 -15 -14 -21 -24 0
+10 -12 -14 -21 -24 0
+10 -15 -37 -14 -21 0
+10 -12 -37 -14 -21 0
+10 -15 -14 -41 -24 0
+10 -12 -14 -41 -24 0
+10 -15 -37 -14 -41 0
+10 -12 -37 -14 -41 0
+10 -15 -21 -24 -2 0
+10 -12 -21 -24 -2 0
+10 -15 -37 -21 -2 0
+10 -12 -37 -21 -2 0
+10 -15 -41 -24 -2 0
+10 -12 -41 -24 -2 0
+10 -15 -37 -41 -2 0
+10 -12 -37 -41 -2 0
+21 41 -10 0
+24 37 -10 0
+12 15 -10 0
+2 14 -10 0
+-14 -15 -24 28 0
+-12 -14 -24 28 0
+-14 -15 -37 28 0
+-12 -14 -37 28 0
+-2 -15 -24 28 0
+-2 -12 -24 28 0
+-2 -15 -37 28 0
+-2 -12 -37 28 0
+24 37 -28 0
+12 15 -28 0
+2 14 -28 0
+-14 -15 -24 17 0
+-12 -14 -24 17 0
+-14 -15 -37 17 0
+-12 -14 -37 17 0
+-2 -15 -24 17 0
+-2 -12 -24 17 0
+-2 -15 -37 17 0
+-2 -12 -37 17 0
+24 37 -17 0
+12 15 -17 0
+2 14 -17 0
+-12 -14 -13 30 -24 0
+-12 -13 30 -24 -2 0
+-12 -37 -14 -13 30 0
+-12 -37 -13 30 -2 0
+24 37 -30 0
+2 14 -30 0
+13 -30 0
+12 -30 0
+-4 -20 -26 9 0
+-4 -26 -38 9 0
+-5 26 -9 0
+20 38 -9 0
+-5 -9 -20 4 0
+-5 -9 -38 4 0
+5 -26 -4 0
+20 38 -4 0
+14 -15 -30 -24 -2 0
+14 -12 -30 -24 -2 0
+14 -15 -30 -37 -2 0
+14 -12 -30 -37 -2 0
+-3 30 -37 -14 0
+24 37 -14 0
+12 15 -14 0
+37 -8 -40 -15 -10 -14 -21 -24 0
+37 -8 -40 -15 -10 -21 -24 -2 0
+37 -8 -40 -12 -10 -14 -21 -24 0
+37 -8 -40 -12 -10 -21 -24 -2 0
+37 -15 -10 -14 -41 -24 0
+37 -15 -10 -41 -24 -2 0
+37 -12 -10 -14 -41 -24 0
+37 -12 -10 -41 -24 -2 0
+-3 41 -37 -14 40 0
+-3 41 -37 -14 8 0
+-3 21 41 -37 -14 0
+-3 10 -14 -37 0
+12 15 -37 0
+2 14 -37 0
+24 -3 -15 -37 -14 0
+24 -3 -12 -37 -14 0
+24 -3 -15 -30 -37 -2 0
+24 -3 -12 -30 -37 -2 0
+14 -10 30 -41 -24 0
+3 -10 -41 -24 0
+2 14 -24 0
+12 15 -24 0
+-12 -14 -24 -17 15 0
+-12 -37 -14 -17 15 0
+-12 -24 -2 -17 15 0
+-12 -37 -2 -17 15 0
+17 -28 -15 0
+2 14 -15 0
+24 37 -15 0
+-15 12 -14 -24 -28 0
+-15 12 -37 -14 -28 0
+-15 12 -24 -2 -28 0
+-15 12 -37 -2 -28 0
+-17 28 -12 0
+2 14 -12 0
+24 37 -12 0
+-7 -32 -42 8 0
+-1 -7 -42 8 0
+7 -21 -40 -8 0
+1 32 -8 0
+-32 42 -8 -40 -10 -41 -24 0
+42 -8 -40 -10 -1 -41 -24 0
+-32 42 -8 -40 -21 0
+42 -8 -40 -1 -21 0
+-7 10 21 -42 0
+-7 21 24 -42 0
+-7 21 41 -42 0
+-7 40 -42 0
+1 32 -42 0
+-1 -8 -39 32 0
+-1 -39 -42 32 0
+-32 25 1 18 -16 -34 0
+-16 -34 39 -32 0
+8 42 -32 0
+-32 -8 -18 1 -16 -34 0
+-32 -18 1 -42 -16 -34 0
+-32 -8 1 -25 -16 -34 0
+-32 1 -42 -25 -16 -34 0
+8 42 -1 0
+34 -39 -1 0
+18 25 -1 0
+-29 -18 0
+1 16 -18 0
+-9 -20 -35 38 0
+-9 -20 -23 38 0
+-4 -20 -23 38 0
+-4 -20 -35 38 0
+23 -33 35 -38 0
+4 9 -38 0
+-16 -18 -29 25 0
+-1 -18 -29 25 0
+1 16 -25 0
+-1 -18 -39 16 0
+-1 -25 -39 16 0
+-32 42 1 -16 8 -34 0
+-32 -34 39 -16 0
+18 25 -16 0
+-32 -7 -40 41 -42 -21 0
+-7 -40 41 -42 -1 -21 0
+-8 -21 -40 41 0
+-10 7 8 -41 -24 0
+42 -10 8 -41 -24 0
+1 32 -10 8 -41 -24 0
+-10 -24 40 -41 0
+-3 21 -15 -10 -37 -14 -41 0
+-3 -12 21 -10 -37 -14 -41 0
+-10 -24 -41 21 0
+-8 10 -40 -21 0
+24 -8 -40 3 -21 0
+24 37 -8 -40 -21 0
+24 -8 -40 12 -21 15 0
+24 14 -8 -40 -21 0
+-9 -33 -38 20 0
+-4 -33 -38 20 0
+-23 33 -20 0
+33 -35 -20 0
+4 9 -20 0
+-19 -22 0
+-22 -19 31 0
+-3 2 -15 -10 -14 -41 -24 0
+-3 -12 2 -10 -14 -41 -24 0
+-3 2 -15 -37 -14 0
+-3 -12 2 -37 -14 0
+10 -30 37 -2 0
+-30 37 41 -2 0
+3 -30 -2 0
+24 37 -2 0
+12 15 -2 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.bsKdAKMLY1.cnf'
+c opening file to read '/tmp/tmp.bsKdAKMLY1.cnf'
+c found 'p cnf 42 269' header
+c parsed 269 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  269  42 100%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  269  42 100%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  269  42 100%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 -36 -37 -38 -39 -40
+v -41 -42 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00  101.35% parse
+c         0.00   22.30% search
+c         0.00   20.95% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   37.00% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.00    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=102
++ wait 102
++ bdd_minisat_all_release /tmp/tmp.bsKdAKMLY1.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.bsKdAKMLY1.cnf
+variables         :           42
+cutwidth          :          247
+restarts          :            1
+conflicts         :           78           (     3076 / sec      )
+decisions         :        16552           (   652707 / sec      )
+propagations      :        40959           (  1615166 / sec      )
+inspects          :       245602           (  9685003 / sec      )
+conflict literals :          259           (     7.17 % deleted  )
+cpu time (solve)  :         0.03 sec	
+refreshes         :            0
+|obdd|            :        91489
+cache hits        :         4495
+cache lookup      :        12831
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :        25632
+# SAT SOLVE END
+
++ set +x
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 HOG_example.bnet"
+	User time (seconds): 1.84
+	System time (seconds): 0.23
+	Percent of CPU this job got: 218%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.95
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 182224
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 47795
+	Voluntary context switches: 3066
+	Involuntary context switches: 107
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.3s

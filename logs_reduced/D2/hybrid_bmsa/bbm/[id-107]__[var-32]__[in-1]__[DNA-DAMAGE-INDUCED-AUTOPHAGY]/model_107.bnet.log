@@ -1,0 +1,475 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:09:10 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_107.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-139 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_107.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_107.bnet --cnf /tmp/tmp.NHJpu5xrhn.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_107.bnet, cnfFileName = /tmp/tmp.NHJpu5xrhn.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector(Set(v_BMI1), Set(v_mTORC2), Set(!v_DDR_Activation, !v_PTEN)))
+Some(Vector(Set(v_PTEN, !v_mTORC2, !v_BMI1), Set(v_DDR_Activation, !v_mTORC2, !v_BMI1)))
+(Set(v_BMI1),Set(-23))
+(Set(v_mTORC2),Set(-18))
+(Set(!v_DDR_Activation, !v_PTEN),Set(24, 9))
+(Set(v_PTEN, !v_mTORC2, !v_BMI1),Set(-9, 18, 23))
+(Set(v_DDR_Activation, !v_mTORC2, !v_BMI1),Set(-24, 18, 23))
+
+Some(Vector(Set(v_DDR_Activation, !v_ULK1), Set(v_ATM, !v_ULK1)))
+Some(Vector(Set(v_ULK1), Set(!v_ATM, !v_DDR_Activation)))
+(Set(v_DDR_Activation, !v_ULK1),Set(-24, 19))
+(Set(v_ATM, !v_ULK1),Set(-7, 19))
+(Set(v_ULK1),Set(-19))
+(Set(!v_ATM, !v_DDR_Activation),Set(7, 24))
+
+Some(Vector(Set(v_DDR_Activation, !v_Wip1)))
+Some(Vector(Set(v_Wip1), Set(!v_DDR_Activation)))
+(Set(v_DDR_Activation, !v_Wip1),Set(-24, 14))
+(Set(v_Wip1),Set(-14))
+(Set(!v_DDR_Activation),Set(24))
+
+Some(Vector(Set(!v_BCL2, v_p53_K, !v_Wip1)))
+Some(Vector(Set(v_Wip1), Set(!v_p53_K), Set(v_BCL2)))
+(Set(!v_BCL2, v_p53_K, !v_Wip1),Set(16, -21, 14))
+(Set(v_Wip1),Set(-14))
+(Set(!v_p53_K),Set(21))
+(Set(v_BCL2),Set(-16))
+
+Some(Vector(Set(!v_miR_16, !v_p53_K)))
+Some(Vector(Set(v_p53_K), Set(v_miR_16)))
+(Set(!v_miR_16, !v_p53_K),Set(12, 21))
+(Set(v_p53_K),Set(-21))
+(Set(v_miR_16),Set(-12))
+
+Some(Vector(Set(!v_miR_16, v_Myc), Set(!v_miR_16, v_E2F1)))
+Some(Vector(Set(!v_E2F1, !v_Myc), Set(v_miR_16)))
+(Set(!v_miR_16, v_Myc),Set(12, -8))
+(Set(!v_miR_16, v_E2F1),Set(12, -17))
+(Set(!v_E2F1, !v_Myc),Set(17, 8))
+(Set(v_miR_16),Set(-12))
+
+Some(Vector(Set(v_Cdc25A, v_E2F1, !v_miR_16, !v_p21)))
+Some(Vector(Set(v_p21), Set(v_miR_16), Set(!v_E2F1), Set(!v_Cdc25A)))
+(Set(v_Cdc25A, v_E2F1, !v_miR_16, !v_p21),Set(-20, -17, 12, 10))
+(Set(v_p21),Set(-10))
+(Set(v_miR_16),Set(-12))
+(Set(!v_E2F1),Set(17))
+(Set(!v_Cdc25A),Set(20))
+
+Some(Vector(Set(v_Cdc25A, !v_miR_16, !v_p21)))
+Some(Vector(Set(v_p21), Set(v_miR_16), Set(!v_Cdc25A)))
+(Set(v_Cdc25A, !v_miR_16, !v_p21),Set(-20, 12, 10))
+(Set(v_p21),Set(-10))
+(Set(v_miR_16),Set(-12))
+(Set(!v_Cdc25A),Set(20))
+
+Some(Vector(Set(!v_p21, !v_BCL2), Set(v_BAX)))
+Some(Vector(Set(!v_BAX, v_BCL2), Set(!v_BAX, v_p21)))
+(Set(!v_p21, !v_BCL2),Set(10, 16))
+(Set(v_BAX),Set(-13))
+(Set(!v_BAX, v_BCL2),Set(13, -16))
+(Set(!v_BAX, v_p21),Set(13, -10))
+
+Some(Vector(Set(!v_ATM, !v_miR_16)))
+Some(Vector(Set(v_miR_16), Set(v_ATM)))
+(Set(!v_ATM, !v_miR_16),Set(7, 12))
+(Set(v_miR_16),Set(-12))
+(Set(v_ATM),Set(-7))
+
+Some(Vector(Set(v_Transfected_miRNA, !v_Cdc25A), Set(v_Transfected_miRNA, !v_BMI1), Set(v_Transfected_miRNA, !v_Wip1)))
+Some(Vector(Set(v_Wip1, v_BMI1, v_Cdc25A), Set(!v_Transfected_miRNA)))
+(Set(v_Transfected_miRNA, !v_Cdc25A),Set(-6, 20))
+(Set(v_Transfected_miRNA, !v_BMI1),Set(-6, 23))
+(Set(v_Transfected_miRNA, !v_Wip1),Set(-6, 14))
+(Set(v_Wip1, v_BMI1, v_Cdc25A),Set(-14, -23, -20))
+(Set(!v_Transfected_miRNA),Set(6))
+
+Some(Vector(Set(v_Myc), Set(!v_RB)))
+Some(Vector(Set(!v_ATM, !v_Myc), Set(!v_Myc, !v_Cdc25A), Set(v_RB, !v_Myc)))
+(Set(v_Myc),Set(-8))
+(Set(!v_RB),Set(5))
+(Set(!v_ATM, !v_Myc),Set(7, 8))
+(Set(!v_Myc, !v_Cdc25A),Set(8, 20))
+(Set(v_RB, !v_Myc),Set(-5, 8))
+
+Some(Vector(Set(v_p53_A, !v_ATM, v_AKT), Set(!v_Wip1, !v_ATM, v_AKT)))
+Some(Vector(Set(!v_AKT), Set(v_ATM), Set(v_Wip1, !v_p53_A)))
+(Set(v_p53_A, !v_ATM, v_AKT),Set(-22, 7, -2))
+(Set(!v_Wip1, !v_ATM, v_AKT),Set(14, 7, -2))
+(Set(!v_AKT),Set(2))
+(Set(v_ATM),Set(-7))
+(Set(v_Wip1, !v_p53_A),Set(-14, 22))
+
+Some(Vector(Set(v_AMPK, !v_RB, !v_p21), Set(v_E2F1, !v_RB, !v_p21)))
+Some(Vector(Set(v_p21), Set(v_RB), Set(!v_E2F1, !v_AMPK)))
+(Set(v_AMPK, !v_RB, !v_p21),Set(-3, 5, 10))
+(Set(v_E2F1, !v_RB, !v_p21),Set(-17, 5, 10))
+(Set(v_p21),Set(-10))
+(Set(v_RB),Set(-5))
+(Set(!v_E2F1, !v_AMPK),Set(17, 3))
+
+Some(Vector(Set(v_p53_K, !v_BMI1)))
+Some(Vector(Set(v_BMI1), Set(!v_p53_K)))
+(Set(v_p53_K, !v_BMI1),Set(-21, 23))
+(Set(v_BMI1),Set(-23))
+(Set(!v_p53_K),Set(21))
+
+Some(Vector(Set(!v_CDK46_CycD, !v_CDK2_CycE)))
+Some(Vector(Set(v_CDK2_CycE), Set(v_CDK46_CycD)))
+(Set(!v_CDK46_CycD, !v_CDK2_CycE),Set(11, 4))
+(Set(v_CDK2_CycE),Set(-4))
+(Set(v_CDK46_CycD),Set(-11))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_AMPK, !v_mTORC2, !v_mTORC1), Set(v_p53_K, !v_mTORC2, !v_mTORC1)))
+Some(Vector(Set(v_mTORC1), Set(v_mTORC2), Set(!v_p53_K, !v_AMPK)))
+(Set(v_AMPK, !v_mTORC2, !v_mTORC1),Set(-3, 18, 1))
+(Set(v_p53_K, !v_mTORC2, !v_mTORC1),Set(-21, 18, 1))
+(Set(v_mTORC1),Set(-1))
+(Set(v_mTORC2),Set(-18))
+(Set(!v_p53_K, !v_AMPK),Set(21, 3))
+
+Some(Vector(Set(v_p53_A, !v_miR_16)))
+Some(Vector(Set(v_miR_16), Set(!v_p53_A)))
+(Set(v_p53_A, !v_miR_16),Set(-22, 12))
+(Set(v_miR_16),Set(-12))
+(Set(!v_p53_A),Set(22))
+
+Some(Vector(Set(v_AKT, !v_AMPK, !v_miR_16), Set(v_AKT, !v_AMPK, !v_p53_K), Set(v_AKT, !v_AMPK, !v_ULK1)))
+Some(Vector(Set(v_AMPK), Set(v_miR_16, v_ULK1, v_p53_K), Set(!v_AKT)))
+(Set(v_AKT, !v_AMPK, !v_miR_16),Set(-2, 3, 12))
+(Set(v_AKT, !v_AMPK, !v_p53_K),Set(-2, 3, 21))
+(Set(v_AKT, !v_AMPK, !v_ULK1),Set(-2, 3, 19))
+(Set(v_AMPK),Set(-3))
+(Set(v_miR_16, v_ULK1, v_p53_K),Set(-12, -19, -21))
+(Set(!v_AKT),Set(2))
+
+Some(Vector(Set(!v_mTORC1, !v_AMPK, !v_E2F1, !v_p53_K), Set(v_AKT), Set(!v_miR_16)))
+Some(Vector(Set(!v_AKT, v_AMPK, v_miR_16), Set(!v_AKT, v_miR_16, v_E2F1), Set(v_mTORC1, !v_AKT, v_miR_16), Set(!v_AKT, v_miR_16, v_p53_K)))
+(Set(!v_mTORC1, !v_AMPK, !v_E2F1, !v_p53_K),Set(1, 3, 17, 21))
+(Set(v_AKT),Set(-2))
+(Set(!v_miR_16),Set(12))
+(Set(!v_AKT, v_AMPK, v_miR_16),Set(2, -3, -12))
+(Set(!v_AKT, v_miR_16, v_E2F1),Set(2, -12, -17))
+(Set(v_mTORC1, !v_AKT, v_miR_16),Set(-1, 2, -12))
+(Set(!v_AKT, v_miR_16, v_p53_K),Set(2, -12, -21))
+
+Some(Vector(Set(v_ATM, v_Transfected_miRNA)))
+Some(Vector(Set(!v_Transfected_miRNA), Set(!v_ATM)))
+(Set(v_ATM, v_Transfected_miRNA),Set(-7, -6))
+(Set(!v_Transfected_miRNA),Set(6))
+(Set(!v_ATM),Set(7))
+
+Some(Vector(Set(!v_AKT, !v_Myc, !v_BMI1, !v_Caspase3), Set(v_p53_A)))
+Some(Vector(Set(v_AKT, !v_p53_A), Set(!v_p53_A, v_BMI1), Set(!v_p53_A, v_Caspase3), Set(v_Myc, !v_p53_A)))
+(Set(!v_AKT, !v_Myc, !v_BMI1, !v_Caspase3),Set(2, 8, 23, 26))
+(Set(v_p53_A),Set(-22))
+(Set(v_AKT, !v_p53_A),Set(-2, 22))
+(Set(!v_p53_A, v_BMI1),Set(22, -23))
+(Set(!v_p53_A, v_Caspase3),Set(22, -26))
+(Set(v_Myc, !v_p53_A),Set(-8, 22))
+
+Some(Vector(Set(v_p53_A), Set(v_p53_K)))
+Some(Vector(Set(!v_p53_K, !v_p53_A)))
+(Set(v_p53_A),Set(-22))
+(Set(v_p53_K),Set(-21))
+(Set(!v_p53_K, !v_p53_A),Set(21, 22))
+
+Some(Vector(Set(v_AMPK, !v_Mdm2, !v_E2F1, !v_p53_K), Set(v_AMPK, !v_Wip1, !v_E2F1, !v_p53_K), Set(!v_E2F1, !v_p53_K, !v_p53INP1), Set(v_ATM, !v_E2F1, !v_p53_K)))
+Some(Vector(Set(!v_ATM, v_Wip1, v_Mdm2, v_p53INP1), Set(!v_AMPK, !v_ATM, v_p53INP1), Set(v_p53_K), Set(v_E2F1)))
+(Set(v_AMPK, !v_Mdm2, !v_E2F1, !v_p53_K),Set(-3, 15, 17, 21))
+(Set(v_AMPK, !v_Wip1, !v_E2F1, !v_p53_K),Set(-3, 14, 17, 21))
+(Set(!v_E2F1, !v_p53_K, !v_p53INP1),Set(17, 21, 25))
+(Set(v_ATM, !v_E2F1, !v_p53_K),Set(-7, 17, 21))
+(Set(!v_ATM, v_Wip1, v_Mdm2, v_p53INP1),Set(7, -14, -15, -25))
+(Set(!v_AMPK, !v_ATM, v_p53INP1),Set(3, 7, -25))
+(Set(v_p53_K),Set(-21))
+(Set(v_E2F1),Set(-17))
+
+Some(Vector(Set(v_ATM, !v_Wip1, !v_Mdm2, !v_p53_A), Set(v_ATM, !v_Mdm2, !v_E2F1, !v_p53_A)))
+Some(Vector(Set(v_Mdm2), Set(!v_ATM), Set(v_Wip1, v_E2F1), Set(v_p53_A)))
+(Set(v_ATM, !v_Wip1, !v_Mdm2, !v_p53_A),Set(-7, 14, 15, 22))
+(Set(v_ATM, !v_Mdm2, !v_E2F1, !v_p53_A),Set(-7, 15, 17, 22))
+(Set(v_Mdm2),Set(-15))
+(Set(!v_ATM),Set(7))
+(Set(v_Wip1, v_E2F1),Set(-14, -17))
+(Set(v_p53_A),Set(-22))
+Map(v_mTORC1 -> 1, v_AKT -> 2, v_AMPK -> 3, v_CDK2_CycE -> 4, v_RB -> 5, v_Transfected_miRNA -> 6, v_ATM -> 7, v_Myc -> 8, v_PTEN -> 9, v_p21 -> 10, v_CDK46_CycD -> 11, v_miR_16 -> 12, v_BAX -> 13, v_Wip1 -> 14, v_Mdm2 -> 15, v_BCL2 -> 16, v_E2F1 -> 17, v_mTORC2 -> 18, v_ULK1 -> 19, v_Cdc25A -> 20, v_p53_K -> 21, v_p53_A -> 22, v_BMI1 -> 23, v_DDR_Activation -> 24, v_p53INP1 -> 25, v_Caspase3 -> 26)
+p cnf 26 112
+-23 2 0
+-18 2 0
+24 9 2 0
+-9 18 23 -2 0
+-24 18 23 -2 0
+-24 19 3 0
+-7 19 3 0
+-19 -3 0
+7 24 -3 0
+-24 14 7 0
+-14 -7 0
+24 -7 0
+16 -21 14 13 0
+-14 -13 0
+21 -13 0
+-16 -13 0
+12 21 16 0
+-21 -16 0
+-12 -16 0
+12 -8 23 0
+12 -17 23 0
+17 8 -23 0
+-12 -23 0
+10 12 -20 4 -17 0
+-10 -4 0
+-12 -4 0
+17 -4 0
+20 -4 0
+-20 12 10 11 0
+-10 -11 0
+-12 -11 0
+20 -11 0
+10 16 26 0
+-13 26 0
+13 -16 -26 0
+13 -10 -26 0
+7 12 20 0
+-12 -20 0
+-7 -20 0
+-6 20 24 0
+-6 23 24 0
+-6 14 24 0
+-14 -23 -20 -24 0
+6 -24 0
+-8 17 0
+5 17 0
+7 8 -17 0
+8 20 -17 0
+-5 8 -17 0
+-22 7 -2 15 0
+14 7 -2 15 0
+2 -15 0
+-7 -15 0
+-14 22 -15 0
+-3 5 10 8 0
+-17 5 10 8 0
+-10 -8 0
+-5 -8 0
+17 3 -8 0
+-21 23 9 0
+-23 -9 0
+21 -9 0
+11 4 5 0
+-4 -5 0
+-11 -5 0
+-3 18 1 19 0
+-21 18 1 19 0
+-1 -19 0
+-18 -19 0
+21 3 -19 0
+-22 12 14 0
+-12 -14 0
+22 -14 0
+-2 3 12 1 0
+-2 3 21 1 0
+-2 3 19 1 0
+-3 -1 0
+-12 -19 -21 -1 0
+2 -1 0
+1 21 17 3 18 0
+-2 18 0
+12 18 0
+2 -3 -12 -18 0
+2 -12 -17 -18 0
+-1 2 -12 -18 0
+2 -12 -21 -18 0
+-7 -6 12 0
+6 -12 0
+7 -12 0
+10 2 26 23 8 0
+-22 10 0
+-2 22 -10 0
+22 -23 -10 0
+22 -26 -10 0
+-8 22 -10 0
+-22 25 0
+-21 25 0
+21 22 -25 0
+-3 21 17 22 15 0
+14 -3 21 17 22 0
+17 21 25 22 0
+-7 17 21 22 0
+-22 -15 -25 7 -14 0
+3 7 -25 -22 0
+-21 -22 0
+-17 -22 0
+-7 14 21 22 15 0
+-7 21 17 22 15 0
+-15 -21 0
+7 -21 0
+-14 -17 -21 0
+-22 -21 0
++ exit_status=0
++ set +x
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.NHJpu5xrhn.cnf'
+c opening file to read '/tmp/tmp.NHJpu5xrhn.cnf'
+c found 'p cnf 26 112' header
+c parsed 112 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  112  26 100%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  112  26 100%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  112  26 100%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 5 6 7 -8 9 -10 -11 12 13 -14 -15 -16 -17 -18 19 -20 21 -22 -23
+v 24 25 26 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   68.75% parse
+c         0.00   39.06% search
+c         0.00   37.50% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   36.26% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            3.88    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=81
++ wait 81
++ bdd_minisat_all_release /tmp/tmp.NHJpu5xrhn.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.NHJpu5xrhn.cnf
+variables         :           26
+cutwidth          :           83
+restarts          :            1
+conflicts         :            5           (     3676 / sec      )
+decisions         :           14           (    10294 / sec      )
+propagations      :          123           (    90441 / sec      )
+inspects          :          408           (   300000 / sec      )
+conflict literals :           11           (     0.00 % deleted  )
+cpu time (solve)  :         0.00 sec	
+refreshes         :            0
+|obdd|            :           92
+cache hits        :            0
+cache lookup      :            8
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :            4
+# SAT SOLVE END
+
++ set +x
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_107.bnet"
+	User time (seconds): 0.95
+	System time (seconds): 0.17
+	Percent of CPU this job got: 167%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.67
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 155144
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 36446
+	Voluntary context switches: 2739
+	Involuntary context switches: 40
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.0s

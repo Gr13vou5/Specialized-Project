@@ -1,0 +1,24 @@
+targets, factors
+v_ATM, v_ATM
+v_BRAF, (!v_PI3K & v_SOS)
+v_EGF, v_EGF
+v_EGFR, (!v_ERK_b1 & v_EGF & !v_FOXD3)
+v_ERK_b1, ((!v_ERK_b1 & v_MEK_b1) | (v_ERK_b1 & !v_ERK_b2 & v_MEK_b1) | (v_ERK_b1 & v_ERK_b2))
+v_ERK_b2, (v_ERK_b1 & v_MEK_b1 & v_MEK_b2)
+v_FGF, v_FGF
+v_FOXD3, (!v_ERK_b1 & v_SOX10)
+v_GAB1, ((!v_ERK_b1 & !v_GRB2 & v_HGF) | (!v_ERK_b1 & v_GRB2 & !v_EGFR & v_HGF) | (!v_ERK_b1 & v_GRB2 & v_EGFR) | (v_ERK_b1 & v_HGF))
+v_GRB2, ((!v_ERK_b1 & !v_EGFR & !v_HGF & !v_FGF & v_FOXD3) | (!v_ERK_b1 & !v_EGFR & !v_HGF & v_FGF) | (!v_ERK_b1 & !v_EGFR & v_HGF) | (!v_ERK_b1 & v_EGFR))
+v_HGF, v_HGF
+v_MDM2, (v_PI3K & !v_ATM & v_p53)
+v_MEK_b1, ((!v_MEK_b1 & !v_BRAF & v_SOS) | (!v_MEK_b1 & v_BRAF) | (v_MEK_b1 & !v_MEK_b2 & !v_BRAF & v_SOS) | (v_MEK_b1 & !v_MEK_b2 & v_BRAF) | (v_MEK_b1 & v_MEK_b2))
+v_MEK_b2, (v_MEK_b1 & v_BRAF)
+v_PI3K, ((!v_p53 & !v_SOS & !v_GAB1 & v_FOXD3) | (!v_p53 & !v_SOS & v_GAB1) | (!v_p53 & v_SOS))
+v_Proliferation_b1, ((!v_p70_b1 & !v_ERK_b1 & v_Proliferation_b1 & v_Proliferation_b2) | (!v_p70_b1 & v_ERK_b1 & !v_ERK_b2 & v_Proliferation_b1 & v_Proliferation_b2) | (!v_p70_b1 & v_ERK_b1 & v_ERK_b2 & !v_Proliferation_b1 & !v_p21) | (!v_p70_b1 & v_ERK_b1 & v_ERK_b2 & v_Proliferation_b1 & !v_Proliferation_b2 & !v_p21) | (!v_p70_b1 & v_ERK_b1 & v_ERK_b2 & v_Proliferation_b1 & v_Proliferation_b2) | (v_p70_b1 & !v_ERK_b1 & v_Proliferation_b1 & v_Proliferation_b2) | (v_p70_b1 & v_ERK_b1 & !v_Proliferation_b1 & !v_p21) | (v_p70_b1 & v_ERK_b1 & v_Proliferation_b1 & !v_Proliferation_b2 & !v_p21) | (v_p70_b1 & v_ERK_b1 & v_Proliferation_b1 & v_Proliferation_b2))
+v_Proliferation_b2, (v_p70_b1 & v_p70_b2 & v_ERK_b1 & v_Proliferation_b1 & !v_p21)
+v_SOS, (v_GRB2 & !v_ERK_b1)
+v_SOX10, v_SOX10
+v_p21, (!v_PI3K & v_p53)
+v_p53, (v_ATM & !v_MDM2)
+v_p70_b1, ((!v_PI3K & v_p70_b1 & v_p70_b2) | v_PI3K)
+v_p70_b2, (v_PI3K & v_p70_b1)

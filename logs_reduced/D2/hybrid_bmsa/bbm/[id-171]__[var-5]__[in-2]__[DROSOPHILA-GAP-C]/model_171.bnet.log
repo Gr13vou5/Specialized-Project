@@ -1,0 +1,222 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:08:13 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_171.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-83 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_171.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_171.bnet --cnf /tmp/tmp.viSJDq73gd.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_171.bnet, cnfFileName = /tmp/tmp.viSJDq73gd.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector(Set(!v_Hb_b3), Set(!v_Hb_b1)))
+(Set(!v_Hb_b3),Set(3))
+(Set(!v_Hb_b1),Set(5))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Kr_b1, !v_Hb_b1), Set(v_Kr_b1, v_Hb_b1, !v_Hb_b2)))
+Some(Vector(Set(v_Hb_b1, v_Hb_b2), Set(!v_Kr_b1)))
+(Set(v_Kr_b1, !v_Hb_b1),Set(-1, 5))
+(Set(v_Kr_b1, v_Hb_b1, !v_Hb_b2),Set(-1, -5, 6))
+(Set(v_Hb_b1, v_Hb_b2),Set(-5, -6))
+(Set(!v_Kr_b1),Set(1))
+
+Some(Vector(Set(!v_Kni, v_Hb_b1, !v_Hb_b2), Set(!v_Hb_b3, v_Hb_b1, !v_Kni, v_Hb_b2)))
+Some(Vector(Set(v_Hb_b3, !v_Kr_b2, v_Hb_b2), Set(!v_Kr_b2, !v_Hb_b1)))
+(Set(!v_Kni, v_Hb_b1, !v_Hb_b2),Set(2, -5, 6))
+(Set(!v_Hb_b3, v_Hb_b1, !v_Kni, v_Hb_b2),Set(2, -5, 3, -6))
+(Set(v_Hb_b3, !v_Kr_b2, v_Hb_b2),Set(-3, 4, -6))
+(Set(!v_Kr_b2, !v_Hb_b1),Set(4, 5))
+
+Some(Vector(Set(!v_Hb_b3, v_Hb_b1, !v_Kni, v_Kr_b1, v_Hb_b2), Set(v_Kr_b1, !v_Kni, v_Hb_b1, !v_Hb_b2)))
+Some(Vector(Set(v_Hb_b3, v_Hb_b2), Set(v_Kni), Set(!v_Kr_b1), Set(!v_Hb_b1)))
+(Set(!v_Hb_b3, v_Hb_b1, !v_Kni, v_Kr_b1, v_Hb_b2),Set(2, -5, 3, -1, -6))
+(Set(v_Kr_b1, !v_Kni, v_Hb_b1, !v_Hb_b2),Set(-1, 2, -5, 6))
+(Set(v_Hb_b3, v_Hb_b2),Set(-3, -6))
+(Set(v_Kni),Set(-2))
+(Set(!v_Kr_b1),Set(1))
+(Set(!v_Hb_b1),Set(5))
+Map(v_Kr_b1 -> 1, v_Kni -> 2, v_Hb_b3 -> 3, v_Kr_b2 -> 4, v_Hb_b1 -> 5, v_Hb_b2 -> 6)
+p cnf 6 16
+3 -6 0
+5 -6 0
+-1 5 2 0
+-1 -5 6 2 0
+-5 -6 -2 0
+1 -2 0
+2 -5 6 1 0
+1 2 -5 3 -6 0
+-3 4 -6 -1 0
+4 5 -1 0
+2 -5 3 -1 -6 4 0
+6 2 -5 -1 4 0
+-3 -6 -4 0
+-2 -4 0
+1 -4 0
+5 -4 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.viSJDq73gd.cnf'
+c opening file to read '/tmp/tmp.viSJDq73gd.cnf'
+c found 'p cnf 6 16' header
+c parsed 16 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   16   6 100%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   16   6 100%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   16   6 100%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   37.93% parse
+c         0.00   27.59% search
+c         0.00   26.90% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   38.46% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.00    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=38
++ wait 38
++ bdd_minisat_all_release /tmp/tmp.viSJDq73gd.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.viSJDq73gd.cnf
+variables         :            6
+cutwidth          :           13
+restarts          :            1
+conflicts         :            2           (      inf / sec      )
+decisions         :           11           (      inf / sec      )
+propagations      :           23           (      inf / sec      )
+inspects          :           39           (      inf / sec      )
+conflict literals :            2           (     0.00 % deleted  )
+cpu time (solve)  :         0.00 sec	
+refreshes         :            0
+|obdd|            :           18
+cache hits        :            0
+cache lookup      :            4
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :            5
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_171.bnet"
+	User time (seconds): 0.86
+	System time (seconds): 0.12
+	Percent of CPU this job got: 160%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.61
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 150304
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 34598
+	Voluntary context switches: 1765
+	Involuntary context switches: 25
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 0.9s

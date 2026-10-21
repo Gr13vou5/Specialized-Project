@@ -1,0 +1,21 @@
+targets, factors
+v_HOG1_T174_Y176, (!v_NBP2 | !v_PTP2_S258 | v_PBS2_S68 | v_PBS2_S248 | v_PBS2_S269)
+v_HOG1_T174__Y176, (!v_NBP2 | !v_PTP2_S258 | v_PBS2_S68 | v_PBS2_S248 | v_PBS2_S269)
+v_NBP2, (!v_PBS2_S68 | !v_PBS2_S248 | !v_PBS2_S269)
+v_NaCl, v_NaCl
+v_PBS2_S248, (v_STEcomplex | v_NaCl)
+v_PBS2_S269, (v_STEcomplex | v_NaCl)
+v_PBS2_S68, (v_STEcomplex | v_NaCl)
+v_PTP2_S258, (v_HOG1_T174__Y176 | v_HOG1_T174_Y176)
+v_STE11_S326, (v_STE20_T511 | v_STE20_T170_T172 | v_STE20_S195 | v_STE20_S192 | v_STE20_T573 | v_STE20_S196_T197 | v_STE20_T203_T207)
+v_STE20_S192, (v_NaCl | v_STE2r)
+v_STE20_S195, (v_NaCl | v_STE2r)
+v_STE20_S196_T197, (v_NaCl | v_STE2r)
+v_STE20_T170_T172, (v_NaCl | v_STE2r)
+v_STE20_T203_T207, (v_NaCl | v_STE2r)
+v_STE20_T511, (v_NaCl | v_STE2r)
+v_STE20_T573, (v_NaCl | v_STE2r)
+v_STE2r, (v_a | !v_STE2r)
+v_STE50_S202, (v_STE20_T511 | v_STE20_T170_T172 | v_STE20_S195 | v_STE20_S192 | v_STE20_T573 | v_STE20_S196_T197 | v_STE20_T203_T207)
+v_STEcomplex, (v_STE11_S326 & v_STE50_S202)
+v_a, v_a

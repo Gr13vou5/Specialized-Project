@@ -1,0 +1,43 @@
+targets, factors
+v_AKT, (v_PI3K | (v_TSC1_2 & !v_TRB3))
+v_APAF1, (v_CytochromeC | v_P53)
+v_ASK1, (v_OS | v_TRAF2 | v_FasL)
+v_BAD, (v_JNK & !v_AKT)
+v_BAK, (v_BAX & !v_BCL2)
+v_BAX, (v_JNK | (v_P53 & !v_BCL2))
+v_BCL2, (!v_JNK & !v_CHOP & !v_P53 & !v_BAD)
+v_BID, (v_CASP8 & !v_BCL2)
+v_CASP12, v_CASP12
+v_CASP3, (v_CASP9 | (v_CASP8 & !v_XIAP))
+v_CASP6, (v_CASP7 | v_CASP3)
+v_CASP7, (v_CASP9 | v_CASP8 | v_CASP3 | (v_CASP6 & !v_XIAP))
+v_CASP8, (v_RIPK1 | v_FADD | v_CASP3 | v_CASP6)
+v_CASP9, (v_RIPK1 | v_CASP8 | v_CASP3 | v_APAF1 | (v_CASP12 & !v_XIAP & !v_AKT))
+v_CHOP, (v_GRP78 | v_EIF2S1)
+v_CytochromeC, (v_BAX | v_BAK | v_BID)
+v_DIABLO, (v_BAX | v_BAK | v_BID)
+v_DNAJC3, (v_GRP78 | v_IRE1)
+v_EIF2S1, (v_CHOP & !v_PERK)
+v_ER, v_ER
+v_FADD, (v_FasL | v_TNF_alpha)
+v_FOXO1, (v_PERK & !v_AKT & !v_IRE1)
+v_FasL, v_FasL
+v_GADD45, v_GADD45
+v_GRP78, (v_GRP78 | v_IRE1 | (v_EIF2S1 & !v_ER))
+v_HtrA2, (v_BAX | v_BAK | v_BID)
+v_IL_6, (v_IL_6 | v_TRAF2)
+v_INS, v_INS
+v_IRE1, (v_BAX | v_BAK | v_GRP78)
+v_IRS, (v_INS & !v_JAK & !v_JNK & !v_TRAF2 & v_TSC1_2)
+v_JAK, (v_IL_6 & !v_JAK)
+v_JNK, (v_OS | v_ASK1 | v_GADD45)
+v_OS, v_OS
+v_P53, v_P53
+v_PERK, (v_GRP78 & !v_DNAJC3)
+v_PI3K, (v_IRS | v_JAK)
+v_RIPK1, (v_FasL | v_TNF_alpha)
+v_TNF_alpha, (v_TNF_alpha | v_TRAF2)
+v_TRAF2, (v_IRE1 | v_TNF_alpha)
+v_TRB3, (v_FOXO1 | v_CHOP)
+v_TSC1_2, (!v_AKT & !v_TRAF2)
+v_XIAP, (!v_DIABLO & !v_HtrA2 & !v_CASP3)

@@ -1,0 +1,394 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:16:26 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_089.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-240 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_089.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_089.bnet --cnf /tmp/tmp.VAEu46uq7D.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_089.bnet, cnfFileName = /tmp/tmp.VAEu46uq7D.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector(Set(v_PI3K, !v_p53)))
+Some(Vector(Set(v_p53), Set(!v_PI3K)))
+(Set(v_PI3K, !v_p53),Set(-4, 12))
+(Set(v_p53),Set(-12))
+(Set(!v_PI3K),Set(4))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_FRS2, !v_FGFR3, v_EGFR_stimulus, !v_TGFBR_stimulus), Set(!v_FRS2, !v_EGFR_stimulus, !v_FGFR3, !v_TGFBR_stimulus, v_ERK)))
+Some(Vector(Set(v_EGFR)))
+(Set(!v_FRS2, !v_FGFR3, v_EGFR_stimulus, !v_TGFBR_stimulus),Set(10, 13, 3, -6))
+(Set(!v_FRS2, !v_EGFR_stimulus, !v_FGFR3, !v_TGFBR_stimulus, v_ERK),Set(10, 6, 13, 3, -9))
+(Set(v_EGFR),Set(-8))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, !v_p53, v_MSK), Set(!v_FGFR3, !v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_MSK), Set(!v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_MSK)))
+Some(Vector(Set(!v_MSK), Set(!v_FGFR3, !v_EGFR), Set(v_p53), Set(v_TGFBR_stimulus), Set(v_DNA_damage)))
+(Set(!v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, !v_p53, v_MSK),Set(10, -8, 12, 11, -2))
+(Set(!v_FGFR3, !v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_MSK),Set(10, 12, 3, 11, 8, -13, -2))
+(Set(!v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_MSK),Set(10, -3, 12, 11, 8, -2))
+(Set(!v_MSK),Set(2))
+(Set(!v_FGFR3, !v_EGFR),Set(3, 8))
+(Set(v_p53),Set(-12))
+(Set(v_TGFBR_stimulus),Set(-10))
+(Set(v_DNA_damage),Set(-11))
+
+Some(Vector(Set(!v_FRS2, !v_TGFBR_stimulus, v_FGFR3_stimulus, !v_EGFR)))
+Some(Vector(Set(v_FGFR3)))
+(Set(!v_FRS2, !v_TGFBR_stimulus, v_FGFR3_stimulus, !v_EGFR),Set(10, -7, 13, 8))
+(Set(v_FGFR3),Set(-3))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_ERK, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR)))
+Some(Vector(Set(v_FRS2)))
+(Set(!v_ERK, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR),Set(10, -3, 9, 8))
+(Set(v_FRS2),Set(-13))
+
+Some(Vector(Set(!v_ERK, !v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, !v_p53), Set(v_ERK, !v_TGFBR_stimulus, !v_DNA_damage), Set(!v_ERK, !v_FGFR3, v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_p53, !v_EGFR), Set(!v_ERK, v_DNA_damage, !v_TGFBR_stimulus, v_p53), Set(!v_ERK, v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, !v_p53), Set(!v_FRS2, !v_ERK, !v_FGFR3, v_DNA_damage, !v_TGFBR_stimulus, !v_p53, !v_EGFR), Set(!v_ERK, !v_FGFR3, !v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_EGFR, v_p53), Set(!v_ERK, !v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_p53, !v_EGFR), Set(!v_ERK, !v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, v_p53), Set(!v_ERK, v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_p53, !v_EGFR), Set(!v_ERK, !v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR, v_p53), Set(!v_FRS2, !v_ERK, !v_FGFR3, !v_DNA_damage, !v_TGFBR_stimulus, !v_EGFR, v_p53), Set(!v_ERK, !v_FGFR3, !v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_p53, !v_EGFR), Set(v_ERK, !v_TGFBR_stimulus, v_DNA_damage), Set(v_TGFBR_stimulus)))
+Some(Vector(Set(!v_ERK, !v_DNA_damage, !v_TGFBR_stimulus, !v_p53), Set(!v_FRS2, !v_ERK, !v_FGFR3, !v_TGFBR_stimulus, !v_p53, !v_EGFR), Set(!v_FRS2, !v_ERK, !v_FGFR3, !v_DNA_damage, !v_TGFBR_stimulus, !v_EGFR)))
+(Set(!v_ERK, !v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, !v_p53),Set(10, -8, 9, 12, 11))
+(Set(v_ERK, !v_TGFBR_stimulus, !v_DNA_damage),Set(-9, 10, 11))
+(Set(!v_ERK, !v_FGFR3, v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_p53, !v_EGFR),Set(10, -11, 9, 12, 3, 8, -13))
+(Set(!v_ERK, v_DNA_damage, !v_TGFBR_stimulus, v_p53),Set(10, -12, -11, 9))
+(Set(!v_ERK, v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, !v_p53),Set(10, -8, -11, 9, 12))
+(Set(!v_FRS2, !v_ERK, !v_FGFR3, v_DNA_damage, !v_TGFBR_stimulus, !v_p53, !v_EGFR),Set(10, -11, 9, 13, 12, 3, 8))
+(Set(!v_ERK, !v_FGFR3, !v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_EGFR, v_p53),Set(10, -12, 9, 3, 11, 8, -13))
+(Set(!v_ERK, !v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_p53, !v_EGFR),Set(10, -3, 9, 12, 11, 8))
+(Set(!v_ERK, !v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, v_p53),Set(10, -8, -12, 9, 11))
+(Set(!v_ERK, v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_p53, !v_EGFR),Set(10, -3, -11, 9, 12, 8))
+(Set(!v_ERK, !v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR, v_p53),Set(10, -3, -12, 9, 11, 8))
+(Set(!v_FRS2, !v_ERK, !v_FGFR3, !v_DNA_damage, !v_TGFBR_stimulus, !v_EGFR, v_p53),Set(10, -12, 9, 13, 3, 11, 8))
+(Set(!v_ERK, !v_FGFR3, !v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_p53, !v_EGFR),Set(10, 9, 12, 3, 11, 8, -13))
+(Set(v_ERK, !v_TGFBR_stimulus, v_DNA_damage),Set(-9, 10, -11))
+(Set(v_TGFBR_stimulus),Set(-10))
+(Set(!v_ERK, !v_DNA_damage, !v_TGFBR_stimulus, !v_p53),Set(10, 9, 12, 11))
+(Set(!v_FRS2, !v_ERK, !v_FGFR3, !v_TGFBR_stimulus, !v_p53, !v_EGFR),Set(10, 9, 13, 12, 3, 8))
+(Set(!v_FRS2, !v_ERK, !v_FGFR3, !v_DNA_damage, !v_TGFBR_stimulus, !v_EGFR),Set(10, 9, 13, 3, 11, 8))
+
+Some(Vector(Set(!v_TGFBR_stimulus, v_EGFR), Set(!v_TGFBR_stimulus, !v_EGFR, v_FRS2), Set(v_TGFBR_stimulus)))
+Some(Vector())
+(Set(!v_TGFBR_stimulus, v_EGFR),Set(10, -8))
+(Set(!v_TGFBR_stimulus, !v_EGFR, v_FRS2),Set(10, 8, -13))
+(Set(v_TGFBR_stimulus),Set(-10))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, v_p53, v_MSK, v_ERK), Set(!v_ERK, !v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_p53, v_MSK), Set(!v_ERK, !v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR, v_p53, v_MSK), Set(!v_FRS2, !v_ERK, !v_FGFR3, !v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_EGFR, v_p53, v_MSK), Set(!v_FGFR3, !v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_EGFR, v_p53, v_MSK, v_ERK), Set(!v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR, v_p53, v_MSK, v_ERK), Set(v_MSK, v_TGFBR_stimulus), Set(!v_ERK, !v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, v_p53, v_MSK), Set(!v_ERK, !v_FGFR3, !v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_EGFR, v_p53, v_MSK), Set(!v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_p53, v_MSK, v_ERK), Set(!v_ERK, v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, !v_p53, v_MSK), Set(!v_ERK, v_DNA_damage, !v_TGFBR_stimulus, v_p53, v_MSK), Set(!v_FGFR3, v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_MSK, v_ERK), Set(!v_ERK, !v_FGFR3, v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_MSK), Set(v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, !v_p53, v_MSK, v_ERK), Set(!v_ERK, v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_MSK), Set(v_DNA_damage, !v_TGFBR_stimulus, v_p53, v_MSK, v_ERK), Set(!v_FRS2, !v_ERK, !v_FGFR3, v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_MSK), Set(v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_MSK, v_ERK)))
+Some(Vector(Set(!v_FRS2, !v_FGFR3, !v_AKT, !v_TGFBR_stimulus, !v_p53, !v_EGFR), Set(!v_FGFR3, !v_AKT, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_ERK), Set(!v_FRS2, !v_FGFR3, !v_AKT, !v_DNA_damage, !v_TGFBR_stimulus, !v_EGFR), Set(!v_FGFR3, !v_AKT, !v_DNA_damage, !v_TGFBR_stimulus, !v_EGFR, v_ERK), Set(!v_MSK), Set(!v_AKT, !v_TGFBR_stimulus, !v_DNA_damage, !v_p53)))
+(Set(!v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, v_p53, v_MSK, v_ERK),Set(10, -8, -12, 11, -9, -2))
+(Set(!v_ERK, !v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_p53, v_MSK),Set(10, 9, 12, -1, 11, -2))
+(Set(!v_ERK, !v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR, v_p53, v_MSK),Set(10, -3, -12, 9, 11, 8, -2))
+(Set(!v_FRS2, !v_ERK, !v_FGFR3, !v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_EGFR, v_p53, v_MSK),Set(10, -12, 9, 13, 3, -1, 11, 8, -2))
+(Set(!v_FGFR3, !v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_EGFR, v_p53, v_MSK, v_ERK),Set(10, -12, 3, -1, 11, -9, 8, -2))
+(Set(!v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR, v_p53, v_MSK, v_ERK),Set(10, -3, -12, 11, -9, 8, -2))
+(Set(v_MSK, v_TGFBR_stimulus),Set(-2, -10))
+(Set(!v_ERK, !v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, v_p53, v_MSK),Set(10, -8, -12, 9, 11, -2))
+(Set(!v_ERK, !v_FGFR3, !v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_EGFR, v_p53, v_MSK),Set(10, -12, 9, 3, 11, 8, -13, -2))
+(Set(!v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_p53, v_MSK, v_ERK),Set(10, 12, -1, 11, -9, -2))
+(Set(!v_ERK, v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, !v_p53, v_MSK),Set(10, -8, -11, 9, 12, -2))
+(Set(!v_ERK, v_DNA_damage, !v_TGFBR_stimulus, v_p53, v_MSK),Set(10, -12, -11, 9, -2))
+(Set(!v_FGFR3, v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_MSK, v_ERK),Set(10, -11, 12, 3, -1, -9, 8, -2))
+(Set(!v_ERK, !v_FGFR3, v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_MSK),Set(10, -11, 9, 12, 3, 8, -13, -2))
+(Set(v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, !v_p53, v_MSK, v_ERK),Set(10, -8, -11, 12, -9, -2))
+(Set(!v_ERK, v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_MSK),Set(10, -3, -11, 9, 12, 8, -2))
+(Set(v_DNA_damage, !v_TGFBR_stimulus, v_p53, v_MSK, v_ERK),Set(10, -12, -11, -9, -2))
+(Set(!v_FRS2, !v_ERK, !v_FGFR3, v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_MSK),Set(10, -11, 9, 13, 12, 3, -1, 8, -2))
+(Set(v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_MSK, v_ERK),Set(10, -3, -11, 12, -9, 8, -2))
+(Set(!v_FRS2, !v_FGFR3, !v_AKT, !v_TGFBR_stimulus, !v_p53, !v_EGFR),Set(10, 1, 13, 12, 3, 8))
+(Set(!v_FGFR3, !v_AKT, !v_TGFBR_stimulus, !v_p53, !v_EGFR, v_ERK),Set(10, 1, 12, 3, -9, 8))
+(Set(!v_FRS2, !v_FGFR3, !v_AKT, !v_DNA_damage, !v_TGFBR_stimulus, !v_EGFR),Set(10, 1, 13, 3, 11, 8))
+(Set(!v_FGFR3, !v_AKT, !v_DNA_damage, !v_TGFBR_stimulus, !v_EGFR, v_ERK),Set(10, 1, 3, 11, -9, 8))
+(Set(!v_MSK),Set(2))
+(Set(!v_AKT, !v_TGFBR_stimulus, !v_DNA_damage, !v_p53),Set(1, 10, 11, 12))
+
+Some(Vector(Set(!v_ERK, v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR), Set(!v_FGFR3, v_DNA_damage, v_AKT, v_p14, !v_TGFBR_stimulus, !v_EGFR, v_MSK, v_ERK), Set(v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR, v_ERK), Set(!v_ERK, !v_FGFR3, !v_AKT, !v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_EGFR, !v_MSK), Set(!v_ERK, !v_DNA_damage, v_AKT, v_FGFR3, v_p14, !v_TGFBR_stimulus, !v_EGFR, !v_MSK), Set(!v_ERK, !v_FGFR3, !v_DNA_damage, v_AKT, v_FRS2, v_p14, !v_TGFBR_stimulus, !v_EGFR, !v_MSK), Set(!v_FGFR3, v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_EGFR, !v_MSK, v_ERK), Set(!v_DNA_damage, v_AKT, v_EGFR, v_p14, !v_TGFBR_stimulus, !v_MSK, v_ERK), Set(!v_AKT, v_TGFBR_stimulus, !v_DNA_damage), Set(!v_ERK, !v_DNA_damage, v_AKT, v_EGFR, v_p14, !v_TGFBR_stimulus, !v_MSK), Set(!v_FRS2, !v_ERK, !v_FGFR3, v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_EGFR, !v_MSK), Set(!v_ERK, !v_FGFR3, v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_EGFR), Set(!v_FRS2, !v_ERK, !v_FGFR3, v_DNA_damage, !v_AKT, !v_TGFBR_stimulus, !v_EGFR), Set(!v_DNA_damage, v_AKT, v_p14, v_TGFBR_stimulus), Set(!v_ERK, !v_AKT, !v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, !v_MSK), Set(!v_AKT, !v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, !v_MSK, v_ERK), Set(!v_ERK, v_DNA_damage, v_EGFR, !v_TGFBR_stimulus), Set(v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, v_ERK), Set(!v_ERK, !v_AKT, !v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR, !v_MSK), Set(v_TGFBR_stimulus, v_DNA_damage), Set(!v_FRS2, !v_ERK, !v_FGFR3, v_DNA_damage, v_AKT, v_p14, !v_TGFBR_stimulus, !v_EGFR, v_MSK), Set(!v_DNA_damage, v_AKT, v_FGFR3, v_p14, !v_TGFBR_stimulus, !v_EGFR, !v_MSK, v_ERK), Set(!v_FGFR3, v_DNA_damage, !v_AKT, !v_TGFBR_stimulus, !v_EGFR, v_ERK), Set(!v_AKT, !v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR, !v_MSK, v_ERK)))
+Some(Vector(Set(!v_p14, !v_DNA_damage), Set(!v_FGFR3, !v_DNA_damage, !v_TGFBR_stimulus, !v_EGFR, v_MSK, v_ERK), Set(!v_FRS2, !v_FGFR3, !v_DNA_damage, !v_TGFBR_stimulus, !v_EGFR, v_MSK)))
+(Set(!v_ERK, v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR),Set(10, -3, -11, 9, 8))
+(Set(!v_FGFR3, v_DNA_damage, v_AKT, v_p14, !v_TGFBR_stimulus, !v_EGFR, v_MSK, v_ERK),Set(10, -11, -5, 3, -1, -9, 8, -2))
+(Set(v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR, v_ERK),Set(10, -3, -11, -9, 8))
+(Set(!v_ERK, !v_FGFR3, !v_AKT, !v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_EGFR, !v_MSK),Set(10, 1, 9, 2, 3, 11, 8, -13))
+(Set(!v_ERK, !v_DNA_damage, v_AKT, v_FGFR3, v_p14, !v_TGFBR_stimulus, !v_EGFR, !v_MSK),Set(10, -3, 9, 2, -5, -1, 11, 8))
+(Set(!v_ERK, !v_FGFR3, !v_DNA_damage, v_AKT, v_FRS2, v_p14, !v_TGFBR_stimulus, !v_EGFR, !v_MSK),Set(10, 9, 2, -5, 3, -1, 11, 8, -13))
+(Set(!v_FGFR3, v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_EGFR, !v_MSK, v_ERK),Set(10, -11, 2, 3, -1, -9, 8))
+(Set(!v_DNA_damage, v_AKT, v_EGFR, v_p14, !v_TGFBR_stimulus, !v_MSK, v_ERK),Set(10, -8, 2, -5, -1, 11, -9))
+(Set(!v_AKT, v_TGFBR_stimulus, !v_DNA_damage),Set(1, -10, 11))
+(Set(!v_ERK, !v_DNA_damage, v_AKT, v_EGFR, v_p14, !v_TGFBR_stimulus, !v_MSK),Set(10, -8, 9, 2, -5, -1, 11))
+(Set(!v_FRS2, !v_ERK, !v_FGFR3, v_DNA_damage, v_AKT, !v_TGFBR_stimulus, !v_EGFR, !v_MSK),Set(10, -11, 9, 13, 2, 3, -1, 8))
+(Set(!v_ERK, !v_FGFR3, v_DNA_damage, v_FRS2, !v_TGFBR_stimulus, !v_EGFR),Set(10, -11, 9, 3, 8, -13))
+(Set(!v_FRS2, !v_ERK, !v_FGFR3, v_DNA_damage, !v_AKT, !v_TGFBR_stimulus, !v_EGFR),Set(10, 1, -11, 9, 13, 3, 8))
+(Set(!v_DNA_damage, v_AKT, v_p14, v_TGFBR_stimulus),Set(-5, -10, -1, 11))
+(Set(!v_ERK, !v_AKT, !v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, !v_MSK),Set(10, -8, 1, 9, 2, 11))
+(Set(!v_AKT, !v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, !v_MSK, v_ERK),Set(10, -8, 1, 2, 11, -9))
+(Set(!v_ERK, v_DNA_damage, v_EGFR, !v_TGFBR_stimulus),Set(10, -8, -11, 9))
+(Set(v_DNA_damage, v_EGFR, !v_TGFBR_stimulus, v_ERK),Set(10, -8, -11, -9))
+(Set(!v_ERK, !v_AKT, !v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR, !v_MSK),Set(10, -3, 1, 9, 2, 11, 8))
+(Set(v_TGFBR_stimulus, v_DNA_damage),Set(-10, -11))
+(Set(!v_FRS2, !v_ERK, !v_FGFR3, v_DNA_damage, v_AKT, v_p14, !v_TGFBR_stimulus, !v_EGFR, v_MSK),Set(10, -11, 9, 13, -5, 3, -1, 8, -2))
+(Set(!v_DNA_damage, v_AKT, v_FGFR3, v_p14, !v_TGFBR_stimulus, !v_EGFR, !v_MSK, v_ERK),Set(10, -3, 2, -5, -1, 11, -9, 8))
+(Set(!v_FGFR3, v_DNA_damage, !v_AKT, !v_TGFBR_stimulus, !v_EGFR, v_ERK),Set(10, 1, -11, 3, -9, 8))
+(Set(!v_AKT, !v_DNA_damage, v_FGFR3, !v_TGFBR_stimulus, !v_EGFR, !v_MSK, v_ERK),Set(10, -3, 1, 2, 11, -9, 8))
+(Set(!v_p14, !v_DNA_damage),Set(5, 11))
+(Set(!v_FGFR3, !v_DNA_damage, !v_TGFBR_stimulus, !v_EGFR, v_MSK, v_ERK),Set(10, 3, 11, -9, 8, -2))
+(Set(!v_FRS2, !v_FGFR3, !v_DNA_damage, !v_TGFBR_stimulus, !v_EGFR, v_MSK),Set(10, 13, 3, 11, 8, -2))
+Map(v_AKT -> 1, v_MSK -> 2, v_FGFR3 -> 3, v_PI3K -> 4, v_p14 -> 5, v_EGFR_stimulus -> 6, v_FGFR3_stimulus -> 7, v_EGFR -> 8, v_ERK -> 9, v_TGFBR_stimulus -> 10, v_DNA_damage -> 11, v_p53 -> 12, v_FRS2 -> 13)
+p cnf 13 91
+-4 12 1 0
+-12 -1 0
+4 -1 0
+10 13 3 8 -6 0
+10 6 13 3 -9 8 0
+-8 0
+10 -8 9 12 11 -2 0
+10 9 12 3 11 8 -13 -2 0
+10 -3 9 12 11 8 -2 0
+2 -9 0
+3 8 -9 0
+-12 -9 0
+-10 -9 0
+-11 -9 0
+10 -7 13 3 8 0
+-3 0
+10 -3 9 13 8 0
+-13 0
+10 -8 9 2 12 11 0
+-9 10 11 2 0
+10 -11 9 2 12 3 8 -13 0
+10 -12 -11 9 2 0
+10 -8 -11 9 2 12 0
+10 -11 9 13 2 12 3 8 0
+10 -12 9 2 3 11 8 -13 0
+10 -3 9 2 12 11 8 0
+10 -8 -12 9 2 11 0
+10 -3 -11 9 2 12 8 0
+10 -3 -12 9 2 11 8 0
+10 -12 9 13 2 3 11 8 0
+10 9 2 12 3 11 8 -13 0
+-9 10 -11 2 0
+-10 2 0
+10 9 12 11 -2 0
+10 9 13 12 3 8 -2 0
+10 9 13 3 11 8 -2 0
+10 -8 4 0
+10 8 -13 4 0
+-10 4 0
+5 10 -8 -12 11 -9 -2 0
+5 10 9 12 -1 11 -2 0
+5 10 -3 -12 9 11 8 -2 0
+5 10 -12 9 13 3 -1 11 8 -2 0
+5 10 -12 3 -1 11 -9 8 -2 0
+5 10 -3 -12 11 -9 8 -2 0
+-2 -10 5 0
+5 10 -8 -12 9 11 -2 0
+5 10 -12 9 3 11 8 -13 -2 0
+5 10 12 -1 11 -9 -2 0
+5 10 -8 -11 9 12 -2 0
+5 10 -12 -11 9 -2 0
+5 10 -11 12 3 -1 -9 8 -2 0
+5 10 -11 9 12 3 8 -13 -2 0
+5 10 -8 -11 12 -9 -2 0
+5 10 -3 -11 9 12 8 -2 0
+5 10 -12 -11 -9 -2 0
+5 10 -11 9 13 12 3 -1 8 -2 0
+5 10 -3 -11 12 -9 8 -2 0
+10 1 13 -5 12 3 8 0
+10 1 -5 12 3 -9 8 0
+10 1 13 -5 3 11 8 0
+10 1 -5 3 11 -9 8 0
+2 -5 0
+10 1 -5 12 11 0
+10 -3 -11 9 12 8 0
+10 -11 -5 12 3 -1 -9 8 -2 0
+10 -3 -11 12 -9 8 0
+10 1 9 2 12 3 11 8 -13 0
+10 -3 9 2 -5 12 -1 11 8 0
+10 9 2 -5 12 3 -1 11 8 -13 0
+10 -11 2 12 3 -1 -9 8 0
+10 -8 2 -5 12 -1 11 -9 0
+1 -10 11 12 0
+10 -8 9 2 -5 12 -1 11 0
+10 -11 9 13 2 12 3 -1 8 0
+10 -11 9 12 3 8 -13 0
+10 1 -11 9 13 12 3 8 0
+-5 12 -10 -1 11 0
+10 -8 1 9 2 12 11 0
+10 -8 1 2 12 11 -9 0
+10 -8 -11 9 12 0
+10 -8 -11 12 -9 0
+10 -3 1 9 2 12 11 8 0
+-10 -11 12 0
+10 -11 9 13 -5 12 3 -1 8 -2 0
+10 -3 2 -5 12 -1 11 -9 8 0
+10 1 -11 12 3 -9 8 0
+10 -3 1 2 12 11 -9 8 0
+5 11 -12 0
+10 -12 3 11 -9 8 -2 0
+10 -12 13 3 11 8 -2 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.VAEu46uq7D.cnf'
+c opening file to read '/tmp/tmp.VAEu46uq7D.cnf'
+c found 'p cnf 13 91' header
+c parsed 91 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   38   9 69%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   38   9 69%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   38   9 69%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   94.12% parse
+c         0.00   28.68% search
+c         0.00   27.94% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   35.60% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c fixed:                         4        30.77 %  of all variables
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  4         0.03 M  per second
+c ticks:                        12         3.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            3.88    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=48
++ wait 48
++ bdd_minisat_all_release /tmp/tmp.VAEu46uq7D.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.VAEu46uq7D.cnf
+variables         :           13
+cutwidth          :           27
+restarts          :            1
+conflicts         :            4           (      inf / sec      )
+decisions         :           21           (      inf / sec      )
+propagations      :           54           (      inf / sec      )
+inspects          :          143           (      inf / sec      )
+conflict literals :            9           (    10.00 % deleted  )
+cpu time (solve)  :         0.00 sec	
+refreshes         :            0
+|obdd|            :           60
+cache hits        :            3
+cache lookup      :           14
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :           12
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_089.bnet"
+	User time (seconds): 1.23
+	System time (seconds): 0.15
+	Percent of CPU this job got: 189%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.73
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 165012
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 39785
+	Voluntary context switches: 2317
+	Involuntary context switches: 112
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.0s

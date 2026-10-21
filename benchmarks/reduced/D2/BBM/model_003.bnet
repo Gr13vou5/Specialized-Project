@@ -1,0 +1,12 @@
+targets, factors
+v_Akt1, (v_EGF | v_IGF1R)
+v_CDK2, (v_cMYC & !(v_p21 | v_p27))
+v_CDK4, (v_CycD1 & !(v_p21 | v_p27))
+v_CycD1, ((v_Akt1 & v_cMYC & v_ERa) | (v_MEK1 & v_ERa & v_cMYC))
+v_EGF, v_EGF
+v_ERa, (v_Akt1 | v_MEK1)
+v_IGF1R, ((v_ERa & !v_EGF) | (v_Akt1 & !v_EGF))
+v_MEK1, (v_EGF | v_IGF1R)
+v_cMYC, (v_MEK1 | v_Akt1 | v_ERa)
+v_p21, (v_ERa & !(v_CDK4 | v_Akt1 | v_cMYC))
+v_p27, (v_ERa & !(v_cMYC | v_CDK4 | v_Akt1 | v_CDK2))

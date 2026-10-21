@@ -1,0 +1,16 @@
+targets, factors
+v_AID, ((v_NF_kB & v_Pax5 & !v_Blimp1) | (v_STAT6 & !v_Blimp1))
+v_Ag, v_Ag
+v_Bach2, (v_Pax5 & !v_Blimp1)
+v_Bcl6, ((v_Bcl6 & v_Pax5 & !(v_Blimp1 | v_ERK | v_Irf4)) | (v_IL_2 & !(v_Blimp1 | v_ERK | v_Irf4)) | (v_STAT6 & !(v_Blimp1 | v_ERK | v_Irf4)))
+v_Blimp1, ((v_IL_21 & !(v_Bach2 | v_Pax5 | v_Bcl6)) | (v_ERK & !(v_Bach2 | v_Pax5 | v_Bcl6)) | (v_Irf4 & (!v_Bcl6 | !v_Pax5 | !v_Bach2) & !(v_Bach2 | v_Pax5 | v_Bcl6)))
+v_CD40L, v_CD40L
+v_ERK, v_Ag
+v_IL_2, v_IL_2
+v_IL_21, v_IL_21
+v_IL_4, v_IL_4
+v_Irf4, ((v_Blimp1 & !v_Bcl6) | v_NF_kB | (v_Irf4 & !v_Bcl6))
+v_NF_kB, v_CD40L
+v_Pax5, ((v_Pax5 & (!v_Irf4 | v_Pax5) & !(v_ERK | v_Blimp1)) | !(v_ERK | v_Irf4 | v_Blimp1 | v_Pax5))
+v_STAT6, v_IL_4
+v_XBP1, (v_Blimp1 & !v_Pax5)

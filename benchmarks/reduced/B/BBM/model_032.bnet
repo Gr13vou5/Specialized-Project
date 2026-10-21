@@ -1,0 +1,23 @@
+targets, factors
+v_AP1, (v_ERK & v_PKCth)
+v_CD45, v_CD45
+v_CD8, v_CD8
+v_CRE, v_ERK
+v_DAG, v_PLCg_act
+v_ERK, v_Ras
+v_Fyn, ((v_CD45 & v_Lck) | (v_TCRbind & v_CD45))
+v_Itk, (v_ZAP70 & v_SLP76)
+v_LAT, v_ZAP70
+v_Lck, (v_CD45 & v_CD8 & !v_PAGCsk)
+v_NFAT, v_PLCg_act
+v_Nfkb, v_PKCth
+v_PAGCsk, v_Fyn
+v_PKCth, v_DAG
+v_PLCg_act, ((v_ZAP70 & v_Lck & v_SLP76 & v_LAT) | (v_Itk & v_SLP76 & v_ZAP70 & v_LAT))
+v_Ras, (v_RasGRP1 | v_LAT)
+v_RasGRP1, (v_PKCth & v_DAG)
+v_SLP76, v_LAT
+v_TCRbind, (v_TCRlig & !v_cCbl)
+v_TCRlig, v_TCRlig
+v_ZAP70, (v_Fyn & v_Lck & !v_cCbl)
+v_cCbl, v_ZAP70

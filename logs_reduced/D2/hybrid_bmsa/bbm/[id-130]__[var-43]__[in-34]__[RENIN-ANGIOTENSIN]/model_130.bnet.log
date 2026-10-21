@@ -1,0 +1,457 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:10:27 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_130.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-200 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_130.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_130.bnet --cnf /tmp/tmp.ZkmMfOePd3.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_130.bnet, cnfFileName = /tmp/tmp.ZkmMfOePd3.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_ACE2_gene, !v_hypertension_phenotype, !v__Diabetes_mellitus__type_II_phenotype), Set(v_ACE2_gene, v_aging_phenotype), Set(!v_SARS_CoV_2_infection_phenotype), Set(v_ACE2_gene, !v_S, v_Calcitriol_simple_molecule), Set(v_ACE2_gene, !v_S, v_estradiol_simple_molecule)))
+Some(Vector(Set(v_SARS_CoV_2_infection_phenotype, v_S, v__Diabetes_mellitus__type_II_phenotype, !v_aging_phenotype), Set(!v_aging_phenotype, !v_estradiol_simple_molecule, !v_Calcitriol_simple_molecule, v__Diabetes_mellitus__type_II_phenotype, v_SARS_CoV_2_infection_phenotype), Set(v_SARS_CoV_2_infection_phenotype, v_hypertension_phenotype, v_S, !v_aging_phenotype), Set(v_hypertension_phenotype, !v_aging_phenotype, !v_estradiol_simple_molecule, !v_Calcitriol_simple_molecule, v_SARS_CoV_2_infection_phenotype), Set(!v_ACE2_gene, v_SARS_CoV_2_infection_phenotype)))
+(Set(v_ACE2_gene, !v_hypertension_phenotype, !v__Diabetes_mellitus__type_II_phenotype),Set(-6, 23, 41))
+(Set(v_ACE2_gene, v_aging_phenotype),Set(-6, -42))
+(Set(!v_SARS_CoV_2_infection_phenotype),Set(18))
+(Set(v_ACE2_gene, !v_S, v_Calcitriol_simple_molecule),Set(-6, 29, -31))
+(Set(v_ACE2_gene, !v_S, v_estradiol_simple_molecule),Set(-6, 29, -44))
+(Set(v_SARS_CoV_2_infection_phenotype, v_S, v__Diabetes_mellitus__type_II_phenotype, !v_aging_phenotype),Set(-18, -29, -41, 42))
+(Set(!v_aging_phenotype, !v_estradiol_simple_molecule, !v_Calcitriol_simple_molecule, v__Diabetes_mellitus__type_II_phenotype, v_SARS_CoV_2_infection_phenotype),Set(42, -18, 44, 31, -41))
+(Set(v_SARS_CoV_2_infection_phenotype, v_hypertension_phenotype, v_S, !v_aging_phenotype),Set(-18, -23, -29, 42))
+(Set(v_hypertension_phenotype, !v_aging_phenotype, !v_estradiol_simple_molecule, !v_Calcitriol_simple_molecule, v_SARS_CoV_2_infection_phenotype),Set(42, -18, -23, 44, 31))
+(Set(!v_ACE2_gene, v_SARS_CoV_2_infection_phenotype),Set(6, -18))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_estradiol_simple_molecule, !v_Calcitriol_simple_molecule)))
+Some(Vector(Set(v_Calcitriol_simple_molecule), Set(!v_estradiol_simple_molecule)))
+(Set(v_estradiol_simple_molecule, !v_Calcitriol_simple_molecule),Set(-44, 31))
+(Set(v_Calcitriol_simple_molecule),Set(-31))
+(Set(!v_estradiol_simple_molecule),Set(44))
+
+Some(Vector(Set(!v_Lisinopril_drug, v_ACE_cell), Set(v_ACE_cell, !v_sex__male_phenotype, !v_aging_phenotype), Set(v_ABO_blood_group_system_phenotype, v_ACE_cell), Set(v_ACE_cell, v_hypertension_phenotype), Set(v_ACE_cell, v_AGTR1_cell_active)))
+Some(Vector(Set(!v_ABO_blood_group_system_phenotype, v_sex__male_phenotype, v_Lisinopril_drug, !v_AGTR1_cell_active, !v_hypertension_phenotype), Set(!v_ABO_blood_group_system_phenotype, v_Lisinopril_drug, !v_AGTR1_cell_active, v_aging_phenotype, !v_hypertension_phenotype), Set(!v_ACE_cell)))
+(Set(!v_Lisinopril_drug, v_ACE_cell),Set(3, -9))
+(Set(v_ACE_cell, !v_sex__male_phenotype, !v_aging_phenotype),Set(-9, 37, 42))
+(Set(v_ABO_blood_group_system_phenotype, v_ACE_cell),Set(-7, -9))
+(Set(v_ACE_cell, v_hypertension_phenotype),Set(-9, -23))
+(Set(v_ACE_cell, v_AGTR1_cell_active),Set(-9, -35))
+(Set(!v_ABO_blood_group_system_phenotype, v_sex__male_phenotype, v_Lisinopril_drug, !v_AGTR1_cell_active, !v_hypertension_phenotype),Set(-3, 7, -37, 35, 23))
+(Set(!v_ABO_blood_group_system_phenotype, v_Lisinopril_drug, !v_AGTR1_cell_active, v_aging_phenotype, !v_hypertension_phenotype),Set(-3, -42, 7, 35, 23))
+(Set(!v_ACE_cell),Set(9))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_angiotensin_1_7_simple_molecule_cell, v_AGTR1_cell), Set(!v_Losartan_drug, v_AGTR1_cell), Set(v_angiotensin_IV_simple_molecule, v_AGTR1_cell), Set(v_angiotensin_II_simple_molecule_cell)))
+Some(Vector(Set(!v_angiotensin_IV_simple_molecule, v_angiotensin_1_7_simple_molecule_cell, v_Losartan_drug, !v_angiotensin_II_simple_molecule_cell), Set(!v_angiotensin_II_simple_molecule_cell, !v_AGTR1_cell)))
+(Set(!v_angiotensin_1_7_simple_molecule_cell, v_AGTR1_cell),Set(36, -40))
+(Set(!v_Losartan_drug, v_AGTR1_cell),Set(38, -40))
+(Set(v_angiotensin_IV_simple_molecule, v_AGTR1_cell),Set(-12, -40))
+(Set(v_angiotensin_II_simple_molecule_cell),Set(-39))
+(Set(!v_angiotensin_IV_simple_molecule, v_angiotensin_1_7_simple_molecule_cell, v_Losartan_drug, !v_angiotensin_II_simple_molecule_cell),Set(12, -36, -38, 39))
+(Set(!v_angiotensin_II_simple_molecule_cell, !v_AGTR1_cell),Set(39, 40))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_ENPEP_cell, !v_QGC001_drug), Set(v_ENPEP_cell, !v_sex__male_phenotype)))
+Some(Vector(Set(v_QGC001_drug, v_sex__male_phenotype), Set(!v_ENPEP_cell)))
+(Set(v_ENPEP_cell, !v_QGC001_drug),Set(-4, 10))
+(Set(v_ENPEP_cell, !v_sex__male_phenotype),Set(-4, 37))
+(Set(v_QGC001_drug, v_sex__male_phenotype),Set(-10, -37))
+(Set(!v_ENPEP_cell),Set(4))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_angiotensin_1_12_simple_molecule, v_MME_cell), Set(v_angiotensin_1_9_simple_molecule, v_MME_cell), Set(v_ACE_cell_active, v_angiotensin_1_9_simple_molecule), Set(v_PRCP, v_angiotensin_II_simple_molecule_cell), Set(v_ACE2_cell, v_angiotensin_II_simple_molecule_cell), Set(v_angiotensin_I_simple_molecule, v_PREP), Set(v_angiotensin_I_simple_molecule, v_THOP1), Set(v_angiotensin_I_simple_molecule, v_MME_cell)))
+Some(Vector(Set(!v_PREP, !v_angiotensin_II_simple_molecule_cell, !v_MME_cell, !v_THOP1, !v_angiotensin_1_9_simple_molecule), Set(!v_PRCP, !v_PREP, !v_ACE2_cell, !v_MME_cell, !v_THOP1, !v_angiotensin_1_9_simple_molecule), Set(!v_ACE_cell_active, !v_PREP, !v_angiotensin_II_simple_molecule_cell, !v_MME_cell, !v_THOP1), Set(!v_ACE_cell_active, !v_PRCP, !v_PREP, !v_ACE2_cell, !v_MME_cell, !v_THOP1), Set(!v_angiotensin_1_9_simple_molecule, !v_angiotensin_I_simple_molecule, !v_MME_cell, !v_angiotensin_II_simple_molecule_cell), Set(!v_angiotensin_1_12_simple_molecule, !v_angiotensin_1_9_simple_molecule, !v_angiotensin_I_simple_molecule, !v_angiotensin_II_simple_molecule_cell), Set(!v_angiotensin_I_simple_molecule, !v_PRCP, !v_ACE2_cell, !v_MME_cell, !v_angiotensin_1_9_simple_molecule), Set(!v_angiotensin_I_simple_molecule, !v_angiotensin_1_12_simple_molecule, !v_PRCP, !v_ACE2_cell, !v_angiotensin_1_9_simple_molecule), Set(!v_ACE_cell_active, !v_angiotensin_I_simple_molecule, !v_MME_cell, !v_angiotensin_II_simple_molecule_cell), Set(!v_ACE_cell_active, !v_angiotensin_I_simple_molecule, !v_PRCP, !v_ACE2_cell, !v_MME_cell)))
+(Set(v_angiotensin_1_12_simple_molecule, v_MME_cell),Set(-2, -27))
+(Set(v_angiotensin_1_9_simple_molecule, v_MME_cell),Set(-16, -27))
+(Set(v_ACE_cell_active, v_angiotensin_1_9_simple_molecule),Set(-5, -16))
+(Set(v_PRCP, v_angiotensin_II_simple_molecule_cell),Set(-15, -39))
+(Set(v_ACE2_cell, v_angiotensin_II_simple_molecule_cell),Set(-11, -39))
+(Set(v_angiotensin_I_simple_molecule, v_PREP),Set(-25, -33))
+(Set(v_angiotensin_I_simple_molecule, v_THOP1),Set(-25, -30))
+(Set(v_angiotensin_I_simple_molecule, v_MME_cell),Set(-25, -27))
+(Set(!v_PREP, !v_angiotensin_II_simple_molecule_cell, !v_MME_cell, !v_THOP1, !v_angiotensin_1_9_simple_molecule),Set(33, 27, 39, 16, 30))
+(Set(!v_PRCP, !v_PREP, !v_ACE2_cell, !v_MME_cell, !v_THOP1, !v_angiotensin_1_9_simple_molecule),Set(33, 27, 16, 11, 30, 15))
+(Set(!v_ACE_cell_active, !v_PREP, !v_angiotensin_II_simple_molecule_cell, !v_MME_cell, !v_THOP1),Set(5, 33, 27, 39, 30))
+(Set(!v_ACE_cell_active, !v_PRCP, !v_PREP, !v_ACE2_cell, !v_MME_cell, !v_THOP1),Set(5, 33, 27, 11, 30, 15))
+(Set(!v_angiotensin_1_9_simple_molecule, !v_angiotensin_I_simple_molecule, !v_MME_cell, !v_angiotensin_II_simple_molecule_cell),Set(16, 25, 27, 39))
+(Set(!v_angiotensin_1_12_simple_molecule, !v_angiotensin_1_9_simple_molecule, !v_angiotensin_I_simple_molecule, !v_angiotensin_II_simple_molecule_cell),Set(2, 16, 25, 39))
+(Set(!v_angiotensin_I_simple_molecule, !v_PRCP, !v_ACE2_cell, !v_MME_cell, !v_angiotensin_1_9_simple_molecule),Set(25, 27, 16, 11, 15))
+(Set(!v_angiotensin_I_simple_molecule, !v_angiotensin_1_12_simple_molecule, !v_PRCP, !v_ACE2_cell, !v_angiotensin_1_9_simple_molecule),Set(25, 2, 16, 11, 15))
+(Set(!v_ACE_cell_active, !v_angiotensin_I_simple_molecule, !v_MME_cell, !v_angiotensin_II_simple_molecule_cell),Set(5, 25, 27, 39))
+(Set(!v_ACE_cell_active, !v_angiotensin_I_simple_molecule, !v_PRCP, !v_ACE2_cell, !v_MME_cell),Set(5, 25, 27, 11, 15))
+
+Some(Vector(Set(v_angiotensin_I_simple_molecule, v_ACE2_cell)))
+Some(Vector(Set(!v_ACE2_cell), Set(!v_angiotensin_I_simple_molecule)))
+(Set(v_angiotensin_I_simple_molecule, v_ACE2_cell),Set(-25, -11))
+(Set(!v_ACE2_cell),Set(11))
+(Set(!v_angiotensin_I_simple_molecule),Set(25))
+
+Some(Vector(Set(v_angiotensin_II_simple_molecule_cell, v_ENPEP_cell_active)))
+Some(Vector(Set(!v_ENPEP_cell_active), Set(!v_angiotensin_II_simple_molecule_cell)))
+(Set(v_angiotensin_II_simple_molecule_cell, v_ENPEP_cell_active),Set(-39, -1))
+(Set(!v_ENPEP_cell_active),Set(1))
+(Set(!v_angiotensin_II_simple_molecule_cell),Set(39))
+
+Some(Vector(Set(v_angiotensin_1_12_simple_molecule, v_CMA1), Set(v_S), Set(v_CMA1, v_angiotensin_I_simple_molecule), Set(v_angiotensin_I_simple_molecule, v_KLK1), Set(v_ACE_cell, v_angiotensin_I_simple_molecule)))
+Some(Vector(Set(!v_CMA1, !v_ACE_cell, !v_S, !v_KLK1), Set(!v_CMA1, !v_angiotensin_I_simple_molecule, !v_S), Set(!v_angiotensin_1_12_simple_molecule, !v_angiotensin_I_simple_molecule, !v_S)))
+(Set(v_angiotensin_1_12_simple_molecule, v_CMA1),Set(-2, -8))
+(Set(v_S),Set(-29))
+(Set(v_CMA1, v_angiotensin_I_simple_molecule),Set(-8, -25))
+(Set(v_angiotensin_I_simple_molecule, v_KLK1),Set(-25, -34))
+(Set(v_ACE_cell, v_angiotensin_I_simple_molecule),Set(-9, -25))
+(Set(!v_CMA1, !v_ACE_cell, !v_S, !v_KLK1),Set(8, 9, 29, 34))
+(Set(!v_CMA1, !v_angiotensin_I_simple_molecule, !v_S),Set(8, 25, 29))
+(Set(!v_angiotensin_1_12_simple_molecule, !v_angiotensin_I_simple_molecule, !v_S),Set(2, 25, 29))
+
+Some(Vector(Set(v_angiotensin_III_simple_molecule, v_ANPEP_)))
+Some(Vector(Set(!v_ANPEP_), Set(!v_angiotensin_III_simple_molecule)))
+(Set(v_angiotensin_III_simple_molecule, v_ANPEP_),Set(-20, -14))
+(Set(!v_ANPEP_),Set(14))
+(Set(!v_angiotensin_III_simple_molecule),Set(20))
+
+Some(Vector(Set(v_angiotensin_1_12_simple_molecule, v_ACE_cell), Set(v_ethynylestradiol_simple_molecule, v_CTSG), Set(v_ethynylestradiol_simple_molecule, v_CTSD), Set(v_ethynylestradiol_simple_molecule, !v_Calcitriol_simple_molecule)))
+Some(Vector(Set(!v_ACE_cell, !v_CTSD, v_Calcitriol_simple_molecule, !v_CTSG), Set(!v_angiotensin_1_12_simple_molecule, !v_CTSD, v_Calcitriol_simple_molecule, !v_CTSG), Set(!v_ACE_cell, !v_ethynylestradiol_simple_molecule), Set(!v_angiotensin_1_12_simple_molecule, !v_ethynylestradiol_simple_molecule)))
+(Set(v_angiotensin_1_12_simple_molecule, v_ACE_cell),Set(-2, -9))
+(Set(v_ethynylestradiol_simple_molecule, v_CTSG),Set(-17, -45))
+(Set(v_ethynylestradiol_simple_molecule, v_CTSD),Set(-17, -26))
+(Set(v_ethynylestradiol_simple_molecule, !v_Calcitriol_simple_molecule),Set(-17, 31))
+(Set(!v_ACE_cell, !v_CTSD, v_Calcitriol_simple_molecule, !v_CTSG),Set(9, 26, -31, 45))
+(Set(!v_angiotensin_1_12_simple_molecule, !v_CTSD, v_Calcitriol_simple_molecule, !v_CTSG),Set(2, 26, -31, 45))
+(Set(!v_ACE_cell, !v_ethynylestradiol_simple_molecule),Set(9, 17))
+(Set(!v_angiotensin_1_12_simple_molecule, !v_ethynylestradiol_simple_molecule),Set(2, 17))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+Map(v_ENPEP_cell_active -> 1, v_angiotensin_1_12_simple_molecule -> 2, v_Lisinopril_drug -> 3, v_ENPEP_cell -> 4, v_ACE_cell_active -> 5, v_ACE2_gene -> 6, v_ABO_blood_group_system_phenotype -> 7, v_CMA1 -> 8, v_ACE_cell -> 9, v_QGC001_drug -> 10, v_ACE2_cell -> 11, v_angiotensin_IV_simple_molecule -> 12, v_androgen_simple_molecule -> 13, v_ANPEP_ -> 14, v_PRCP -> 15, v_angiotensin_1_9_simple_molecule -> 16, v_ethynylestradiol_simple_molecule -> 17, v_SARS_CoV_2_infection_phenotype -> 18, v_CGP42112A_drug -> 19, v_angiotensin_III_simple_molecule -> 20, v_LNPEP_cell -> 21, v_AR234960_drug -> 22, v_hypertension_phenotype -> 23, v_Camostat_mesilate_drug -> 24, v_angiotensin_I_simple_molecule -> 25, v_CTSD -> 26, v_MME_cell -> 27, v_AGTR2_cell -> 28, v_S -> 29, v_THOP1 -> 30, v_Calcitriol_simple_molecule -> 31, v_ADAM17 -> 32, v_PREP -> 33, v_KLK1 -> 34, v_AGTR1_cell_active -> 35, v_angiotensin_1_7_simple_molecule_cell -> 36, v_sex__male_phenotype -> 37, v_Losartan_drug -> 38, v_angiotensin_II_simple_molecule_cell -> 39, v_AGTR1_cell -> 40, v__Diabetes_mellitus__type_II_phenotype -> 41, v_aging_phenotype -> 42, v_MRGPRD_cell -> 43, v_estradiol_simple_molecule -> 44, v_CTSG -> 45)
+p cnf 45 74
+-6 23 41 11 0
+-6 -42 11 0
+18 11 0
+-6 29 -31 11 0
+-6 29 -44 11 0
+42 -18 -11 -29 -41 0
+42 -18 -11 44 31 -41 0
+42 -18 -11 -23 -29 0
+42 -18 -11 -23 44 31 0
+6 -18 -11 0
+-44 31 9 0
+-31 -9 0
+44 -9 0
+3 -9 5 0
+-9 37 42 5 0
+-7 -9 5 0
+-9 -23 5 0
+-9 -35 5 0
+-3 -5 7 -37 35 23 0
+-3 -42 -5 7 35 23 0
+9 -5 0
+36 -40 35 0
+38 -40 35 0
+-12 -40 35 0
+-39 35 0
+-35 -36 12 39 -38 0
+39 40 -35 0
+-4 10 1 0
+-4 37 1 0
+-10 -37 -1 0
+4 -1 0
+-2 -27 36 0
+-16 -27 36 0
+-5 -16 36 0
+-15 -39 36 0
+-11 -39 36 0
+-25 -33 36 0
+-25 -30 36 0
+-25 -27 36 0
+33 -36 27 39 16 30 0
+33 -36 27 16 11 30 15 0
+5 33 -36 27 39 30 0
+5 33 -36 27 11 30 15 0
+25 -36 27 39 16 0
+25 -36 2 39 16 0
+25 -36 27 16 11 15 0
+25 -36 2 16 11 15 0
+5 25 -36 27 39 0
+5 25 -36 27 11 15 0
+-25 -11 16 0
+11 -16 0
+25 -16 0
+-39 -1 20 0
+1 -20 0
+39 -20 0
+-2 -8 39 0
+-29 39 0
+-8 -25 39 0
+-25 -34 39 0
+-9 -25 39 0
+-39 29 9 34 8 0
+8 25 29 -39 0
+2 25 29 -39 0
+-20 -14 12 0
+14 -12 0
+20 -12 0
+-2 -9 25 0
+-17 -45 25 0
+-17 -26 25 0
+-17 31 25 0
+-31 9 45 -25 26 0
+-31 2 45 -25 26 0
+9 17 -25 0
+2 17 -25 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.ZkmMfOePd3.cnf'
+c opening file to read '/tmp/tmp.ZkmMfOePd3.cnf'
+c found 'p cnf 45 74' header
+c parsed 74 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   74  37 82%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   74  37 82%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   74  37 82%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 -36 -37 -38 -39 -40
+v -41 -42 -43 -44 -45 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   72.54% parse
+c         0.00   25.35% search
+c         0.00   24.65% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   32.87% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            3.88    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=53
++ wait 53
++ bdd_minisat_all_release /tmp/tmp.ZkmMfOePd3.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.ZkmMfOePd3.cnf
+variables         :           45
+cutwidth          :           57
+restarts          :            1
+conflicts         :            3           (       23 / sec      )
+decisions         :       167429           (  1260476 / sec      )
+propagations      :       193965           (  1460250 / sec      )
+inspects          :       231996           (  1746563 / sec      )
+conflict literals :           11           (     0.00 % deleted  )
+cpu time (solve)  :         0.13 sec	
+refreshes         :            0
+|obdd|            :       212409
+cache hits        :        83705
+cache lookup      :       167419
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :  17179869184
+# SAT SOLVE END
+
++ set +x
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_130.bnet"
+	User time (seconds): 1.16
+	System time (seconds): 0.18
+	Percent of CPU this job got: 160%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.84
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 156536
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 42991
+	Voluntary context switches: 2478
+	Involuntary context switches: 34
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.5s

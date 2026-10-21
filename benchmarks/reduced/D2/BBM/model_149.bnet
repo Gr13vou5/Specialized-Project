@@ -1,0 +1,7 @@
+targets, factors
+v_GSK3, v_GSK3
+v_PI3K, ((!v_GSK3 & v_betacatenin) | v_GSK3)
+v_Prosurvival_b1, ((!v_PI3K & !v_betacatenin & v_Prosurvival_b1 & v_Prosurvival_b2) | (!v_PI3K & v_betacatenin) | (v_PI3K & !v_GSK3 & !v_betacatenin & v_Prosurvival_b1 & v_Prosurvival_b2) | (v_PI3K & !v_GSK3 & v_betacatenin) | (v_PI3K & v_GSK3))
+v_Prosurvival_b2, ((!v_betacatenin & v_Prosurvival_b1 & v_Prosurvival_b2 & v_Prosurvival_b3) | (v_betacatenin & v_Prosurvival_b1))
+v_Prosurvival_b3, (v_PI3K & v_betacatenin & v_Prosurvival_b1 & v_Prosurvival_b2)
+v_betacatenin, v_betacatenin

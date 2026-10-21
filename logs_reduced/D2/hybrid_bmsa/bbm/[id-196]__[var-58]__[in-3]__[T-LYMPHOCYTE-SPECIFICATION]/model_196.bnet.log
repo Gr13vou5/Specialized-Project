@@ -1,0 +1,674 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:15:12 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_196.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-232 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_196.bnet
+------------------------------------------------------------
+# ENCODE START
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_196.bnet --cnf /tmp/tmp.J6w6A4cZk5.cnf -h3
++ cmd_pid=11
++ wait 11
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_196.bnet, cnfFileName = /tmp/tmp.J6w6A4cZk5.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector(Set(v_Runx1_b1, v_Gata3_b1, v_HEB_E2A, v_TCF1, !v_Pu1_b1, v_NTC), Set(!v_Pu1_b2, v_Runx1_b1, v_Gata3_b1, v_HEB_E2A, v_TCF1, v_NTC, v_Pu1_b1)))
+Some(Vector(Set(v_Pu1_b1, v_Pu1_b2), Set(!v_Runx1_b1), Set(!v_NTC), Set(!v_HEB_E2A), Set(!v_TCF1), Set(!v_Gata3_b1)))
+(Set(v_Runx1_b1, v_Gata3_b1, v_HEB_E2A, v_TCF1, !v_Pu1_b1, v_NTC),Set(-39, -18, 9, -29, -2, -17))
+(Set(!v_Pu1_b2, v_Runx1_b1, v_Gata3_b1, v_HEB_E2A, v_TCF1, v_NTC, v_Pu1_b1),Set(-39, -18, 22, -29, -9, -2, -17))
+(Set(v_Pu1_b1, v_Pu1_b2),Set(-9, -22))
+(Set(!v_Runx1_b1),Set(29))
+(Set(!v_NTC),Set(18))
+(Set(!v_HEB_E2A),Set(39))
+(Set(!v_TCF1),Set(2))
+(Set(!v_Gata3_b1),Set(17))
+
+Some(Vector(Set(v_Runx1_b1, v_Pu1_b2, !v_Foxo1, v_Pu1_b1, !v_Hes1)))
+Some(Vector(Set(!v_Runx1_b1), Set(v_Foxo1), Set(!v_Pu1_b1), Set(v_Hes1), Set(!v_Pu1_b2)))
+(Set(v_Runx1_b1, v_Pu1_b2, !v_Foxo1, v_Pu1_b1, !v_Hes1),Set(-22, -29, -9, 26, 8))
+(Set(!v_Runx1_b1),Set(29))
+(Set(v_Foxo1),Set(-26))
+(Set(!v_Pu1_b1),Set(9))
+(Set(v_Hes1),Set(-8))
+(Set(!v_Pu1_b2),Set(22))
+
+Some(Vector(Set(v_CEBPa, v_Pu1_b1, v_Pu1_b2)))
+Some(Vector(Set(!v_Pu1_b2), Set(!v_Pu1_b1)))
+(Set(v_CEBPa, v_Pu1_b1, v_Pu1_b2),Set(-24, -9, -22))
+(Set(!v_Pu1_b2),Set(22))
+(Set(!v_Pu1_b1),Set(9))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_HEB_E2A, v_NTC)))
+Some(Vector(Set(!v_NTC), Set(v_HEB_E2A)))
+(Set(!v_HEB_E2A, v_NTC),Set(39, -18))
+(Set(!v_NTC),Set(18))
+(Set(v_HEB_E2A),Set(-39))
+
+Some(Vector(Set(!v_Pu1_b1, v_Pax5, v_EBF1, v_Ikaros), Set(!v_Pu1_b2, v_Ikaros, v_EBF1, v_Pax5, v_Pu1_b1), Set(!v_Pu1_b2, v_Ikaros, v_EBF1, !v_Pax5, v_NTC, v_Pu1_b1), Set(!v_Pu1_b2, !v_EBF1, v_Ikaros, v_NTC, v_Pu1_b1)))
+Some(Vector(Set(!v_Pax5, !v_NTC), Set(!v_NTC, !v_EBF1), Set(!v_Pu1_b1, !v_EBF1), Set(!v_Pax5, v_Pu1_b2), Set(v_Pu1_b2, !v_EBF1), Set(!v_Pu1_b1, !v_Pax5), Set(!v_Ikaros), Set(v_Pu1_b1, v_Pu1_b2)))
+(Set(!v_Pu1_b1, v_Pax5, v_EBF1, v_Ikaros),Set(9, -10, -27, -38))
+(Set(!v_Pu1_b2, v_Ikaros, v_EBF1, v_Pax5, v_Pu1_b1),Set(-27, 22, -10, -38, -9))
+(Set(!v_Pu1_b2, v_Ikaros, v_EBF1, !v_Pax5, v_NTC, v_Pu1_b1),Set(-27, 10, -18, 22, -38, -9))
+(Set(!v_Pu1_b2, !v_EBF1, v_Ikaros, v_NTC, v_Pu1_b1),Set(-18, 22, 27, -38, -9))
+(Set(!v_Pax5, !v_NTC),Set(10, 18))
+(Set(!v_NTC, !v_EBF1),Set(18, 27))
+(Set(!v_Pu1_b1, !v_EBF1),Set(9, 27))
+(Set(!v_Pax5, v_Pu1_b2),Set(10, -22))
+(Set(v_Pu1_b2, !v_EBF1),Set(-22, 27))
+(Set(!v_Pu1_b1, !v_Pax5),Set(9, 10))
+(Set(!v_Ikaros),Set(38))
+(Set(v_Pu1_b1, v_Pu1_b2),Set(-9, -22))
+
+Some(Vector(Set(!v_Id2, v_E2A_gene)))
+Some(Vector(Set(!v_E2A_gene), Set(v_Id2)))
+(Set(!v_Id2, v_E2A_gene),Set(6, -14))
+(Set(!v_E2A_gene),Set(14))
+(Set(v_Id2),Set(-6))
+
+Some(Vector(Set(v_Ets1, !v_CEBPb, v_IL7Ra_act, v_E2A_protein, !v_Gata3_b1, !v_NTC, v_Foxo1, v_Pu1_b1, !v_CEBPa)))
+Some(Vector(Set(!v_Pax5, !v_IL7Ra_act), Set(!v_E2A_protein), Set(v_NTC), Set(v_Gata3_b1), Set(!v_Pu1_b1, !v_Pax5), Set(!v_Foxo1), Set(v_CEBPb), Set(v_CEBPa), Set(!v_Ets1)))
+(Set(v_Ets1, !v_CEBPb, v_IL7Ra_act, v_E2A_protein, !v_Gata3_b1, !v_NTC, v_Foxo1, v_Pu1_b1, !v_CEBPa),Set(24, -26, -15, 17, -25, 18, -16, -9, 4))
+(Set(!v_Pax5, !v_IL7Ra_act),Set(10, 15))
+(Set(!v_E2A_protein),Set(25))
+(Set(v_NTC),Set(-18))
+(Set(v_Gata3_b1),Set(-17))
+(Set(!v_Pu1_b1, !v_Pax5),Set(9, 10))
+(Set(!v_Foxo1),Set(26))
+(Set(v_CEBPb),Set(-4))
+(Set(v_CEBPa),Set(-24))
+(Set(!v_Ets1),Set(16))
+
+Some(Vector(Set(!v_Pu1_b1, v_E2A_protein), Set(!v_Pu1_b1, v_Gata3_b1, !v_E2A_protein, v_Bcl11b), Set(v_Pu1_b1, !v_Pu1_b2, v_E2A_protein), Set(!v_Pu1_b2, v_Gata3_b1, !v_E2A_protein, v_Pu1_b1, v_Bcl11b)))
+Some(Vector(Set(!v_Gata3_b1, !v_E2A_protein), Set(!v_E2A_protein, !v_Bcl11b), Set(v_Pu1_b1, v_Pu1_b2)))
+(Set(!v_Pu1_b1, v_E2A_protein),Set(9, -25))
+(Set(!v_Pu1_b1, v_Gata3_b1, !v_E2A_protein, v_Bcl11b),Set(9, -17, 25, -28))
+(Set(v_Pu1_b1, !v_Pu1_b2, v_E2A_protein),Set(-9, 22, -25))
+(Set(!v_Pu1_b2, v_Gata3_b1, !v_E2A_protein, v_Pu1_b1, v_Bcl11b),Set(25, 22, -9, -17, -28))
+(Set(!v_Gata3_b1, !v_E2A_protein),Set(17, 25))
+(Set(!v_E2A_protein, !v_Bcl11b),Set(25, 28))
+(Set(v_Pu1_b1, v_Pu1_b2),Set(-9, -22))
+
+Some(Vector(Set(!v_CEBPa, v_EBF1), Set(!v_CEBPa, !v_EBF1, v_E2A_protein)))
+Some(Vector(Set(!v_EBF1, !v_E2A_protein), Set(v_CEBPa)))
+(Set(!v_CEBPa, v_EBF1),Set(24, -27))
+(Set(!v_CEBPa, !v_EBF1, v_E2A_protein),Set(24, 27, -25))
+(Set(!v_EBF1, !v_E2A_protein),Set(27, 25))
+(Set(v_CEBPa),Set(-24))
+
+Some(Vector(Set(!v_Pu1_b2, v_HEB_E2A, !v_EBF1, v_NTC, v_Pu1_b1, !v_TCF1), Set(!v_EBF1, v_TCF1, !v_Pu1_b1, v_NTC), Set(v_HEB_E2A, !v_EBF1, !v_Pu1_b1, v_NTC, !v_TCF1), Set(!v_Pu1_b2, !v_EBF1, v_TCF1, v_NTC, v_Pu1_b1)))
+Some(Vector(Set(!v_TCF1, !v_Gata3_b2, !v_HEB_E2A), Set(!v_NTC, !v_Gata3_b2), Set(!v_Gata3_b2, v_EBF1), Set(v_Pu1_b1, !v_Gata3_b2, v_Pu1_b2)))
+(Set(!v_Pu1_b2, v_HEB_E2A, !v_EBF1, v_NTC, v_Pu1_b1, !v_TCF1),Set(-39, -18, 2, 22, 27, -9))
+(Set(!v_EBF1, v_TCF1, !v_Pu1_b1, v_NTC),Set(-18, 9, 27, -2))
+(Set(v_HEB_E2A, !v_EBF1, !v_Pu1_b1, v_NTC, !v_TCF1),Set(-39, -18, 9, 2, 27))
+(Set(!v_Pu1_b2, !v_EBF1, v_TCF1, v_NTC, v_Pu1_b1),Set(-18, 22, 27, -9, -2))
+(Set(!v_TCF1, !v_Gata3_b2, !v_HEB_E2A),Set(2, 19, 39))
+(Set(!v_NTC, !v_Gata3_b2),Set(18, 19))
+(Set(!v_Gata3_b2, v_EBF1),Set(19, -27))
+(Set(v_Pu1_b1, !v_Gata3_b2, v_Pu1_b2),Set(-9, 19, -22))
+
+Some(Vector(Set(v_Gata3_b1, !v_EBF1, v_TCF1, !v_Pu1_b1, !v_Bcl11b, v_NTC, !v_HEB_E2A), Set(!v_Pu1_b2, v_Gata3_b1, !v_EBF1, v_TCF1, !v_Bcl11b, v_NTC, v_Pu1_b1, !v_HEB_E2A)))
+Some(Vector(Set(v_Pu1_b1, v_Pu1_b2), Set(v_Bcl11b), Set(!v_TCF1), Set(!v_Gata3_b1), Set(v_EBF1), Set(!v_NTC), Set(v_HEB_E2A)))
+(Set(v_Gata3_b1, !v_EBF1, v_TCF1, !v_Pu1_b1, !v_Bcl11b, v_NTC, !v_HEB_E2A),Set(-18, 28, 9, 27, 39, -2, -17))
+(Set(!v_Pu1_b2, v_Gata3_b1, !v_EBF1, v_TCF1, !v_Bcl11b, v_NTC, v_Pu1_b1, !v_HEB_E2A),Set(-18, 28, 22, 27, 39, -9, -2, -17))
+(Set(v_Pu1_b1, v_Pu1_b2),Set(-9, -22))
+(Set(v_Bcl11b),Set(-28))
+(Set(!v_TCF1),Set(2))
+(Set(!v_Gata3_b1),Set(17))
+(Set(v_EBF1),Set(-27))
+(Set(!v_NTC),Set(18))
+(Set(v_HEB_E2A),Set(-39))
+
+Some(Vector(Set(!v_CEBPa, !v_Pu1_b1, v_HEB_E2A), Set(!v_CEBPa, v_Pu1_b1, v_HEB_E2A, !v_Pu1_b2), Set(v_CEBPa, v_Pu1_b1, !v_Pu1_b2), Set(v_CEBPa, !v_Pu1_b1)))
+Some(Vector(Set(v_Pu1_b1, v_Pu1_b2), Set(!v_CEBPa, !v_HEB_E2A)))
+(Set(!v_CEBPa, !v_Pu1_b1, v_HEB_E2A),Set(24, 9, -39))
+(Set(!v_CEBPa, v_Pu1_b1, v_HEB_E2A, !v_Pu1_b2),Set(24, -9, -39, 22))
+(Set(v_CEBPa, v_Pu1_b1, !v_Pu1_b2),Set(-24, -9, 22))
+(Set(v_CEBPa, !v_Pu1_b1),Set(-24, 9))
+(Set(v_Pu1_b1, v_Pu1_b2),Set(-9, -22))
+(Set(!v_CEBPa, !v_HEB_E2A),Set(24, 39))
+
+Some(Vector(Set(!v_Id2, !v_Id3, v_E2A_protein, v_HEB_gene)))
+Some(Vector(Set(!v_HEB_gene), Set(!v_E2A_protein), Set(v_Id3), Set(v_Id2)))
+(Set(!v_Id2, !v_Id3, v_E2A_protein, v_HEB_gene),Set(6, 33, -25, -5))
+(Set(!v_HEB_gene),Set(5))
+(Set(!v_E2A_protein),Set(25))
+(Set(v_Id3),Set(-33))
+(Set(v_Id2),Set(-6))
+
+Some(Vector(Set(v_Pu1_b1, !v_Pu1_b2, v_NTC)))
+Some(Vector(Set(!v_NTC), Set(v_Pu1_b2), Set(!v_Pu1_b1)))
+(Set(v_Pu1_b1, !v_Pu1_b2, v_NTC),Set(-9, 22, -18))
+(Set(!v_NTC),Set(18))
+(Set(v_Pu1_b2),Set(-22))
+(Set(!v_Pu1_b1),Set(9))
+
+Some(Vector(Set(!v_Pu1_b1, v_HEB_E2A, v_NTC), Set(v_Pu1_b1, v_HEB_E2A, v_NTC, !v_Pu1_b2)))
+Some(Vector(Set(!v_NTC), Set(!v_HEB_E2A), Set(v_Pu1_b1, v_Pu1_b2)))
+(Set(!v_Pu1_b1, v_HEB_E2A, v_NTC),Set(9, -39, -18))
+(Set(v_Pu1_b1, v_HEB_E2A, v_NTC, !v_Pu1_b2),Set(-9, -39, -18, 22))
+(Set(!v_NTC),Set(18))
+(Set(!v_HEB_E2A),Set(39))
+(Set(v_Pu1_b1, v_Pu1_b2),Set(-9, -22))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_IL7Ra_gene, v_IL7)))
+Some(Vector(Set(!v_IL7), Set(!v_IL7Ra_gene)))
+(Set(v_IL7Ra_gene, v_IL7),Set(-30, -1))
+(Set(!v_IL7),Set(1))
+(Set(!v_IL7Ra_gene),Set(30))
+
+Some(Vector(Set(!v_Pu1_b1, v_Notch_gene_b1), Set(v_Pu1_b1)))
+Some(Vector(Set(!v_Pu1_b1, !v_Notch_gene_b1)))
+(Set(!v_Pu1_b1, v_Notch_gene_b1),Set(9, -3))
+(Set(v_Pu1_b1),Set(-9))
+(Set(!v_Pu1_b1, !v_Notch_gene_b1),Set(9, 3))
+
+Some(Vector(Set(!v_Gfi1, !v_EBF1, !v_Bcl11b, v_Pu1_b1, !v_HEB_E2A)))
+Some(Vector(Set(v_Bcl11b), Set(v_Gfi1), Set(v_EBF1), Set(!v_Pu1_b1), Set(v_HEB_E2A)))
+(Set(!v_Gfi1, !v_EBF1, !v_Bcl11b, v_Pu1_b1, !v_HEB_E2A),Set(28, 27, 39, 11, -9))
+(Set(v_Bcl11b),Set(-28))
+(Set(v_Gfi1),Set(-11))
+(Set(v_EBF1),Set(-27))
+(Set(!v_Pu1_b1),Set(9))
+(Set(v_HEB_E2A),Set(-39))
+
+Some(Vector(Set(v_prog_ass_Eprot, !v_Pu1_b1, !v_NTC, !v_Scl, v_Lyl1), Set(!v_Pu1_b1, !v_NTC, v_prog_ass_Eprot, v_Scl), Set(v_prog_ass_Eprot, v_Pu1_b2, !v_NTC, v_Scl, v_Pu1_b1), Set(v_prog_ass_Eprot, v_Pu1_b2, !v_NTC, !v_Scl, v_Pu1_b1, v_Lyl1), Set(v_IL7Ra_act, v_prog_ass_Eprot, !v_Pu1_b1, !v_NTC, !v_Scl, !v_Lyl1), Set(v_IL7Ra_act, v_prog_ass_Eprot, v_Pu1_b2, !v_NTC, !v_Scl, !v_Lyl1, v_Pu1_b1)))
+Some(Vector(Set(v_Pu1_b1, !v_Pu1_b2), Set(!v_prog_ass_Eprot), Set(!v_IL7Ra_act, !v_Scl, !v_Lyl1), Set(v_NTC)))
+(Set(v_prog_ass_Eprot, !v_Pu1_b1, !v_NTC, !v_Scl, v_Lyl1),Set(-36, 9, -20, 18, 23))
+(Set(!v_Pu1_b1, !v_NTC, v_prog_ass_Eprot, v_Scl),Set(9, 18, -20, -23))
+(Set(v_prog_ass_Eprot, v_Pu1_b2, !v_NTC, v_Scl, v_Pu1_b1),Set(-22, -23, -20, 18, -9))
+(Set(v_prog_ass_Eprot, v_Pu1_b2, !v_NTC, !v_Scl, v_Pu1_b1, v_Lyl1),Set(-22, -36, -20, 18, -9, 23))
+(Set(v_IL7Ra_act, v_prog_ass_Eprot, !v_Pu1_b1, !v_NTC, !v_Scl, !v_Lyl1),Set(9, -15, -20, 18, 23, 36))
+(Set(v_IL7Ra_act, v_prog_ass_Eprot, v_Pu1_b2, !v_NTC, !v_Scl, !v_Lyl1, v_Pu1_b1),Set(-22, -15, -20, 18, -9, 23, 36))
+(Set(v_Pu1_b1, !v_Pu1_b2),Set(-9, 22))
+(Set(!v_prog_ass_Eprot),Set(20))
+(Set(!v_IL7Ra_act, !v_Scl, !v_Lyl1),Set(15, 23, 36))
+(Set(v_NTC),Set(-18))
+
+Some(Vector(Set(v_Pu1_b1, !v_Pu1_b2, v_Runx1_b1)))
+Some(Vector(Set(!v_Runx1_b1), Set(v_Pu1_b2), Set(!v_Pu1_b1)))
+(Set(v_Pu1_b1, !v_Pu1_b2, v_Runx1_b1),Set(-9, 22, -29))
+(Set(!v_Runx1_b1),Set(29))
+(Set(v_Pu1_b2),Set(-22))
+(Set(!v_Pu1_b1),Set(9))
+
+Some(Vector(Set(v_NTC)))
+Some(Vector(Set(!v_NTC, !v_Lef1_b2)))
+(Set(v_NTC),Set(-18))
+(Set(!v_NTC, !v_Lef1_b2),Set(18, 32))
+
+Some(Vector(Set(!v_TCF1, v_Lef1_b1, v_NTC)))
+Some(Vector(Set(!v_NTC), Set(!v_Lef1_b1), Set(v_TCF1)))
+(Set(!v_TCF1, v_Lef1_b1, v_NTC),Set(2, -31, -18))
+(Set(!v_NTC),Set(18))
+(Set(!v_Lef1_b1),Set(31))
+(Set(v_TCF1),Set(-2))
+
+Some(Vector(Set(v_Pu1_b1, v_Pu1_b2, !v_HEB_E2A, v_Gfi1)))
+Some(Vector(Set(!v_Gfi1), Set(v_HEB_E2A), Set(!v_Pu1_b2), Set(!v_Pu1_b1)))
+(Set(v_Pu1_b1, v_Pu1_b2, !v_HEB_E2A, v_Gfi1),Set(-9, -22, 39, -11))
+(Set(!v_Gfi1),Set(11))
+(Set(v_HEB_E2A),Set(-39))
+(Set(!v_Pu1_b2),Set(22))
+(Set(!v_Pu1_b1),Set(9))
+
+Some(Vector(Set(v_Pu1_b1, !v_NTC)))
+Some(Vector(Set(v_NTC), Set(!v_Pu1_b1)))
+(Set(v_Pu1_b1, !v_NTC),Set(-9, 18))
+(Set(v_NTC),Set(-18))
+(Set(!v_Pu1_b1),Set(9))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Notch1_rec, !v_Deltex)))
+Some(Vector(Set(v_Deltex), Set(!v_Notch1_rec)))
+(Set(v_Notch1_rec, !v_Deltex),Set(-7, 12))
+(Set(v_Deltex),Set(-12))
+(Set(!v_Notch1_rec),Set(7))
+
+Some(Vector(Set(v_Notch_gene_b1, v_Delta)))
+Some(Vector(Set(!v_Delta), Set(!v_Notch_gene_b1)))
+(Set(v_Notch_gene_b1, v_Delta),Set(-3, -21))
+(Set(!v_Delta),Set(21))
+(Set(!v_Notch_gene_b1),Set(3))
+
+Some(Vector(Set(v_HEB_E2A, !v_Pax5, v_NTC, !v_Lyl1), Set(!v_Pax5, v_Lyl1, v_HEB_E2A)))
+Some(Vector(Set(!v_Notch_gene_b2, !v_HEB_E2A), Set(v_Pax5, !v_Notch_gene_b2), Set(!v_NTC, !v_Notch_gene_b2, !v_Lyl1)))
+(Set(v_HEB_E2A, !v_Pax5, v_NTC, !v_Lyl1),Set(10, -39, -18, 36))
+(Set(!v_Pax5, v_Lyl1, v_HEB_E2A),Set(10, -36, -39))
+(Set(!v_Notch_gene_b2, !v_HEB_E2A),Set(35, 39))
+(Set(v_Pax5, !v_Notch_gene_b2),Set(-10, 35))
+(Set(!v_NTC, !v_Notch_gene_b2, !v_Lyl1),Set(18, 35, 36))
+
+Some(Vector(Set(v_HEB_E2A, v_Notch_gene_b1, !v_Pax5, !v_NTC, v_Lyl1)))
+Some(Vector(Set(!v_HEB_E2A), Set(v_Pax5), Set(!v_Lyl1), Set(v_NTC), Set(!v_Notch_gene_b1)))
+(Set(v_HEB_E2A, v_Notch_gene_b1, !v_Pax5, !v_NTC, v_Lyl1),Set(10, -39, -3, -36, 18))
+(Set(!v_HEB_E2A),Set(39))
+(Set(v_Pax5),Set(-10))
+(Set(!v_Lyl1),Set(36))
+(Set(v_NTC),Set(-18))
+(Set(!v_Notch_gene_b1),Set(3))
+
+Some(Vector(Set(!v_CEBPa, v_EBF1)))
+Some(Vector(Set(!v_EBF1), Set(v_CEBPa)))
+(Set(!v_CEBPa, v_EBF1),Set(24, -27))
+(Set(!v_EBF1),Set(27))
+(Set(v_CEBPa),Set(-24))
+
+Some(Vector())
+Some(Vector(Set(!v_Pu1_b2, !v_Runx1_b1)))
+(Set(!v_Pu1_b2, !v_Runx1_b1),Set(22, 29))
+
+Some(Vector(Set(v_Runx1_b1, !v_Runx1_b2, !v_Gata3_b1, !v_Pax5, v_MCSF, v_Pu1_b1, !v_TCF1), Set(v_Runx1_b1, v_Gata3_b1, !v_Gata3_b2, !v_Runx1_b2, !v_Pax5, v_MCSF, v_Pu1_b1, !v_TCF1)))
+Some(Vector(Set(v_Runx1_b2), Set(!v_Runx1_b1), Set(!v_MCSF), Set(!v_Pu1_b1), Set(v_Pax5), Set(v_TCF1), Set(v_Gata3_b1, v_Gata3_b2)))
+(Set(v_Runx1_b1, !v_Runx1_b2, !v_Gata3_b1, !v_Pax5, v_MCSF, v_Pu1_b1, !v_TCF1),Set(10, 13, 2, 17, -29, -9, -34))
+(Set(v_Runx1_b1, v_Gata3_b1, !v_Gata3_b2, !v_Runx1_b2, !v_Pax5, v_MCSF, v_Pu1_b1, !v_TCF1),Set(10, 13, 2, -29, -9, -34, 19, -17))
+(Set(v_Runx1_b2),Set(-13))
+(Set(!v_Runx1_b1),Set(29))
+(Set(!v_MCSF),Set(34))
+(Set(!v_Pu1_b1),Set(9))
+(Set(v_Pax5),Set(-10))
+(Set(v_TCF1),Set(-2))
+(Set(v_Gata3_b1, v_Gata3_b2),Set(-17, -19))
+
+Some(Vector(Set(v_Pu1_b1, v_Scl), Set(v_Pu1_b1, !v_Scl), Set(!v_Pu1_b1, v_prog_ass_Eprot, v_Scl)))
+Some(Vector(Set(!v_Pu1_b1, !v_Runx1_b2, !v_prog_ass_Eprot), Set(!v_Pu1_b1, !v_Runx1_b2, !v_Scl)))
+(Set(v_Pu1_b1, v_Scl),Set(-9, -23))
+(Set(v_Pu1_b1, !v_Scl),Set(-9, 23))
+(Set(!v_Pu1_b1, v_prog_ass_Eprot, v_Scl),Set(9, -20, -23))
+(Set(!v_Pu1_b1, !v_Runx1_b2, !v_prog_ass_Eprot),Set(9, 13, 20))
+(Set(!v_Pu1_b1, !v_Runx1_b2, !v_Scl),Set(9, 13, 23))
+
+Some(Vector(Set(!v_Pu1_b2, v_Runx1_b1, v_prog_ass_Eprot, v_Scl, v_Pu1_b1), Set(!v_Pu1_b1, v_prog_ass_Eprot, v_Scl, v_Runx1_b1)))
+Some(Vector(Set(v_Pu1_b1, v_Pu1_b2), Set(!v_Runx1_b1), Set(!v_prog_ass_Eprot), Set(!v_Scl)))
+(Set(!v_Pu1_b2, v_Runx1_b1, v_prog_ass_Eprot, v_Scl, v_Pu1_b1),Set(-23, 22, -20, -29, -9))
+(Set(!v_Pu1_b1, v_prog_ass_Eprot, v_Scl, v_Runx1_b1),Set(9, -20, -23, -29))
+(Set(v_Pu1_b1, v_Pu1_b2),Set(-9, -22))
+(Set(!v_Runx1_b1),Set(29))
+(Set(!v_prog_ass_Eprot),Set(20))
+(Set(!v_Scl),Set(23))
+
+Some(Vector(Set(!v_Gata3_b1, !v_HEB_E2A, !v_Bcl11b, v_Gfi1), Set(v_Gata3_b1, !v_HEB_E2A, !v_Bcl11b)))
+Some(Vector(Set(!v_Gata3_b1, !v_Gfi1), Set(v_Bcl11b), Set(v_HEB_E2A)))
+(Set(!v_Gata3_b1, !v_HEB_E2A, !v_Bcl11b, v_Gfi1),Set(17, 39, 28, -11))
+(Set(v_Gata3_b1, !v_HEB_E2A, !v_Bcl11b),Set(-17, 39, 28))
+(Set(!v_Gata3_b1, !v_Gfi1),Set(17, 11))
+(Set(v_Bcl11b),Set(-28))
+(Set(v_HEB_E2A),Set(-39))
+
+Some(Vector(Set(!v_Pu1_b1, !v_Gata3_b1, v_NTC, !v_EBF1), Set(v_Gata3_b1, !v_Gata3_b2, !v_EBF1, !v_Pu1_b1, v_NTC), Set(!v_Pu1_b2, v_Gata3_b1, !v_Gata3_b2, !v_EBF1, v_NTC, v_Pu1_b1), Set(!v_Pu1_b2, !v_EBF1, !v_Gata3_b1, v_NTC, v_Pu1_b1)))
+Some(Vector(Set(v_Gata3_b1, v_Gata3_b2), Set(v_EBF1), Set(!v_NTC), Set(v_Pu1_b1, v_Pu1_b2)))
+(Set(!v_Pu1_b1, !v_Gata3_b1, v_NTC, !v_EBF1),Set(9, 17, -18, 27))
+(Set(v_Gata3_b1, !v_Gata3_b2, !v_EBF1, !v_Pu1_b1, v_NTC),Set(-18, 9, 27, 19, -17))
+(Set(!v_Pu1_b2, v_Gata3_b1, !v_Gata3_b2, !v_EBF1, v_NTC, v_Pu1_b1),Set(-18, 22, 27, -9, 19, -17))
+(Set(!v_Pu1_b2, !v_EBF1, !v_Gata3_b1, v_NTC, v_Pu1_b1),Set(-18, 17, 22, 27, -9))
+(Set(v_Gata3_b1, v_Gata3_b2),Set(-17, -19))
+(Set(v_EBF1),Set(-27))
+(Set(!v_NTC),Set(18))
+(Set(v_Pu1_b1, v_Pu1_b2),Set(-9, -22))
+
+Some(Vector(Set(!v_Scl, v_Lmo2, v_E2A_protein), Set(!v_Scl, !v_Lmo2, v_Lyl1, v_E2A_protein), Set(v_Scl, v_E2A_protein)))
+Some(Vector(Set(!v_E2A_protein), Set(!v_Scl, !v_Lmo2, !v_Lyl1)))
+(Set(!v_Scl, v_Lmo2, v_E2A_protein),Set(23, -37, -25))
+(Set(!v_Scl, !v_Lmo2, v_Lyl1, v_E2A_protein),Set(23, 37, -36, -25))
+(Set(v_Scl, v_E2A_protein),Set(-23, -25))
+(Set(!v_E2A_protein),Set(25))
+(Set(!v_Scl, !v_Lmo2, !v_Lyl1),Set(23, 37, 36))
+Map(v_IL7 -> 1, v_TCF1 -> 2, v_Notch_gene_b1 -> 3, v_CEBPb -> 4, v_HEB_gene -> 5, v_Id2 -> 6, v_Notch1_rec -> 7, v_Hes1 -> 8, v_Pu1_b1 -> 9, v_Pax5 -> 10, v_Gfi1 -> 11, v_Deltex -> 12, v_Runx1_b2 -> 13, v_E2A_gene -> 14, v_IL7Ra_act -> 15, v_Ets1 -> 16, v_Gata3_b1 -> 17, v_NTC -> 18, v_Gata3_b2 -> 19, v_prog_ass_Eprot -> 20, v_Delta -> 21, v_Pu1_b2 -> 22, v_Scl -> 23, v_CEBPa -> 24, v_E2A_protein -> 25, v_Foxo1 -> 26, v_EBF1 -> 27, v_Bcl11b -> 28, v_Runx1_b1 -> 29, v_IL7Ra_gene -> 30, v_Lef1_b1 -> 31, v_Lef1_b2 -> 32, v_Id3 -> 33, v_MCSF -> 34, v_Notch_gene_b2 -> 35, v_Lyl1 -> 36, v_Lmo2 -> 37, v_Ikaros -> 38, v_HEB_E2A -> 39)
+p cnf 39 192
+-39 -18 28 9 -29 -2 -17 0
+-39 -18 28 22 -29 -9 -2 -17 0
+-9 -22 -28 0
+29 -28 0
+18 -28 0
+39 -28 0
+2 -28 0
+17 -28 0
+24 -22 -29 -9 26 8 0
+29 -24 0
+-26 -24 0
+9 -24 0
+-8 -24 0
+22 -24 0
+-24 -9 -22 4 0
+22 -4 0
+9 -4 0
+39 -18 12 0
+18 -12 0
+-39 -12 0
+-27 14 9 -10 -38 0
+-27 14 22 -10 -38 -9 0
+-27 10 14 -18 22 -38 -9 0
+14 -18 22 27 -38 -9 0
+10 18 -14 0
+18 27 -14 0
+9 27 -14 0
+10 -22 -14 0
+-22 27 -14 0
+9 10 -14 0
+38 -14 0
+-9 -22 -14 0
+6 -14 25 0
+14 -25 0
+-6 -25 0
+24 -26 -15 17 27 -25 18 -16 -9 4 0
+10 15 -27 0
+25 -27 0
+-18 -27 0
+-17 -27 0
+9 10 -27 0
+26 -27 0
+-4 -27 0
+-24 -27 0
+16 -27 0
+9 -25 16 0
+25 9 16 -17 -28 0
+-9 22 -25 16 0
+25 22 16 -9 -17 -28 0
+17 25 -16 0
+25 28 -16 0
+-9 -22 -16 0
+24 -27 26 0
+24 27 -25 26 0
+27 25 -26 0
+-24 -26 0
+-39 -18 2 17 22 27 -9 0
+-18 9 17 27 -2 0
+-39 -18 9 2 17 27 0
+-18 17 22 27 -9 -2 0
+2 19 39 -17 0
+18 19 -17 0
+19 -27 -17 0
+-9 19 -22 -17 0
+-18 28 9 27 39 19 -2 -17 0
+-18 28 22 27 39 -9 19 -2 -17 0
+-9 -22 -19 0
+-28 -19 0
+2 -19 0
+17 -19 0
+-27 -19 0
+18 -19 0
+-39 -19 0
+24 9 -39 11 0
+24 -39 22 11 -9 0
+-24 -9 22 11 0
+-24 9 11 0
+-9 -22 -11 0
+24 39 -11 0
+6 33 -5 -25 39 0
+5 -39 0
+25 -39 0
+-33 -39 0
+-6 -39 0
+-9 22 -18 5 0
+18 -5 0
+-22 -5 0
+9 -5 0
+9 -39 -18 8 0
+-39 -18 22 -9 8 0
+18 -8 0
+39 -8 0
+-9 -22 -8 0
+-30 -1 15 0
+1 -15 0
+30 -15 0
+9 -3 30 0
+-9 30 0
+9 3 -30 0
+6 28 27 39 11 -9 0
+-28 -6 0
+-11 -6 0
+-27 -6 0
+9 -6 0
+-39 -6 0
+33 -36 9 -20 18 23 0
+33 -23 9 -20 18 0
+-22 33 -23 -20 18 -9 0
+-22 33 -36 -20 18 -9 23 0
+33 9 -15 -20 18 23 36 0
+-22 33 -15 -20 18 -9 23 36 0
+-9 22 -33 0
+20 -33 0
+15 23 36 -33 0
+-18 -33 0
+-9 22 -29 38 0
+29 -38 0
+-22 -38 0
+9 -38 0
+-18 31 0
+18 32 -31 0
+2 -31 -18 32 0
+18 -32 0
+31 -32 0
+-2 -32 0
+-22 37 -11 39 -9 0
+11 -37 0
+-39 -37 0
+22 -37 0
+9 -37 0
+-9 18 36 0
+-18 -36 0
+9 -36 0
+-7 12 18 0
+-12 -18 0
+7 -18 0
+-3 -21 7 0
+21 -7 0
+3 -7 0
+10 -39 -18 3 36 0
+10 -36 -39 3 0
+35 39 -3 0
+-10 35 -3 0
+18 35 36 -3 0
+10 -39 -3 -36 35 18 0
+39 -35 0
+-10 -35 0
+36 -35 0
+-18 -35 0
+3 -35 0
+24 -27 10 0
+27 -10 0
+-24 -10 0
+22 29 -9 0
+10 13 2 17 22 -29 -9 -34 0
+10 13 2 22 -29 -9 -34 19 -17 0
+-13 -22 0
+29 -22 0
+34 -22 0
+9 -22 0
+-10 -22 0
+-2 -22 0
+-17 -19 -22 0
+-9 -23 29 0
+-9 23 29 0
+9 -20 -23 29 0
+9 13 20 -29 0
+9 13 23 -29 0
+-23 13 22 -20 -29 -9 0
+-23 9 13 -20 -29 0
+-9 -22 -13 0
+29 -13 0
+20 -13 0
+23 -13 0
+-11 28 17 39 23 0
+-17 39 28 23 0
+17 11 -23 0
+-28 -23 0
+-39 -23 0
+-18 9 2 17 27 0
+-18 9 2 27 19 -17 0
+-18 2 22 27 -9 19 -17 0
+-18 2 17 22 27 -9 0
+-17 -19 -2 0
+-27 -2 0
+18 -2 0
+-9 -22 -2 0
+23 -37 -25 20 0
+37 20 -36 -25 23 0
+-23 -25 20 0
+25 -20 0
+23 37 36 -20 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.J6w6A4cZk5.cnf'
+c opening file to read '/tmp/tmp.J6w6A4cZk5.cnf'
+c found 'p cnf 39 192' header
+c parsed 192 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  192  39 100%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  192  39 100%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  192  39 100%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 -36 -37 -38 -39 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00  113.81% parse
+c         0.00   34.11% search
+c         0.00   33.78% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   26.19% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            3.88    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=103
++ wait 103
++ bdd_minisat_all_release /tmp/tmp.J6w6A4cZk5.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.J6w6A4cZk5.cnf
+variables         :           39
+cutwidth          :          146
+restarts          :            1
+conflicts         :            4           (      inf / sec      )
+decisions         :           46           (      inf / sec      )
+propagations      :          325           (      inf / sec      )
+inspects          :         1246           (      inf / sec      )
+conflict literals :           13           (     0.00 % deleted  )
+cpu time (solve)  :         0.00 sec	
+refreshes         :            0
+|obdd|            :          464
+cache hits        :            7
+cache lookup      :           31
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :           28
+# SAT SOLVE END
+
++ set +x
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_196.bnet"
+	User time (seconds): 1.75
+	System time (seconds): 1.06
+	Percent of CPU this job got: 158%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.76
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 171480
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 42120
+	Voluntary context switches: 3018
+	Involuntary context switches: 237
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 2.3s

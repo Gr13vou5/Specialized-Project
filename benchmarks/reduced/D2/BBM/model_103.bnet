@@ -1,0 +1,26 @@
+targets, factors
+v_BCLXLp, (v_MDM2p & (v_PIP3p | v_HER2p | v_RASp))
+v_Beclin1p, (!v_BCLXLp & !v_CASPp)
+v_CASPp, (!v_PIP3p & (!v_MDM2p | v_Beclin1p | !v_BCLXLp))
+v_CyclinDp, (!v_P21p & v_PIP3p)
+v_EGFRp, (v_RASp | v_HER2p)
+v_ERKs, (v_TGFb | v_RASs)
+v_HER2p, v_HER2p
+v_IFNg, v_IFNg
+v_MDM2p, (!v_CyclinDp & (v_PIP3p | !v_MDM2p))
+v_MDM2s, (v_PIP3s | v_P53s)
+v_NFkBs, (v_TNFa | v_PIP3s)
+v_P21p, (!v_HER2p & (v_TGFb | !v_MDM2p))
+v_P38s, (v_RASs | v_P53s)
+v_P53s, (!v_MDM2s & v_P38s)
+v_PI3Kp, (v_EGFRp | v_RASp)
+v_PI3Ks, (v_TGFb | v_RASs)
+v_PIP3p, (v_MDM2p & v_PI3Kp)
+v_PIP3s, (!v_P53s & v_PI3Ks)
+v_RASp, (v_EGFRp | v_bFGF)
+v_RASs, (v_VEGF | v_RASp | v_bFGF)
+v_TGFb, v_TGFb
+v_TNFa, v_TNFa
+v_Thiazolidinedione, v_Thiazolidinedione
+v_VEGF, (v_NFkBs | v_HER2p | v_PIP3p)
+v_bFGF, (v_ERKs | v_RASp)

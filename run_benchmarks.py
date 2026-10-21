@@ -21,8 +21,10 @@ Usage, from the repository root in Linux or WSL with Docker running:
     python3 run_benchmarks.py                     # all tools on BBM, Selected, Random
     python3 run_benchmarks.py --sets selected --limit 2      # quick smoke test
     python3 run_benchmarks.py --sets adf          # the ICCMA 2019 ADF networks
+    python3 run_benchmarks.py --reduced B D2      # networks reduced by bn_reduce.py
 
-Logs are written to logs_rerun/ (the original logs/ stay untouched). See
+Logs are written to logs_rerun/ (the original logs/ stay untouched), or to
+logs_reduced/<variant>/ for reduced networks, in the same layout. See
 readme.md for analysing them.
 """
 
@@ -51,11 +53,15 @@ ROOT = Path(__file__).resolve().parent
 DATASET = ROOT / "benchmarks" / "fASP" / "dataset"
 BBM_MODELS = ROOT / "benchmarks" / "biodivine-boolean-models" / "models"
 ADF_BNET = ROOT / "benchmarks" / "ADF" / "ICCMA2019" / "bnet"
+REDUCED = ROOT / "benchmarks" / "reduced"  # bn_reduce.py output: <variant>/<set>/<model>.bnet
 PFVS_DIR = ROOT / "PFVS"
 
 SETS = ("bbm", "selected", "random", "adf")
 DEFAULT_SETS = ("bbm", "selected", "random")
 TOOLS = ("fasp_c", "fasp_s", "he", "pfvs")
+VARIANTS = ("A", "B", "C", "D1", "D2")  # bn_reduce.py variants
+# folder of each set under benchmarks/reduced/<variant>/ (bn_reduce.py --set, or the input folder name)
+REDUCED_SET_DIRS = {"bbm": ("BBM",), "random": ("Random",), "selected": ("Selected",), "adf": ("ADF", "bnet")}
 
 # directory layout expected by logs_analysis/log_parser.py
 SET_DIR = {"bbm": "bbm", "random": "fasp/Random", "selected": "fasp/Selected", "adf": "adf"}
@@ -74,6 +80,7 @@ class Instance:
     name: str  # file stem: model_001, 100_4379_60916, Leishmania, ...
     bnet: Path
     sbml_dir: Path | None = None  # BBM only: biodivine model directory, the H.E. input
+    variant: str | None = None  # bn_reduce.py variant for reduced networks
 
 
 @dataclass
@@ -97,12 +104,20 @@ def parse_size_kb(text):
     return int(m.group(1)) * {"k": 1, "m": 1024, "g": 1024**2}[m.group(2).lower()]
 
 
-def find_instances(set_name):
-    folder = ADF_BNET if set_name == "adf" else DATASET / {
-        "bbm": "BBM", "random": "Random", "selected": "Selected"}[set_name]
+def find_instances(set_name, variant=None, reduced_dir=REDUCED):
+    if variant:
+        candidates = [reduced_dir / variant / d for d in REDUCED_SET_DIRS[set_name]]
+        folder = next((c for c in candidates if any(c.glob("*.bnet"))), candidates[0])
+    else:
+        folder = ADF_BNET if set_name == "adf" else DATASET / {
+            "bbm": "BBM", "random": "Random", "selected": "Selected"}[set_name]
     files = sorted(folder.glob("*.bnet"), key=lambda p: (p.stat().st_size, p.name))
     if not files:
-        hint = " (run python3 ADF/adf_to_bnet.py first)" if set_name == "adf" else ""
+        if variant:
+            hint = (f" (reduce the set first, e.g. python3 bn_reduce.py reduction.csv "
+                    f"<{set_name} .bnet files> --set {REDUCED_SET_DIRS[set_name][0]} --variants {variant})")
+        else:
+            hint = " (run python3 ADF/adf_to_bnet.py first)" if set_name == "adf" else ""
         sys.exit(f"no .bnet files in {folder}{hint}")
     out = []
     for f in files:
@@ -113,21 +128,34 @@ def find_instances(set_name):
             if len(hits) != 1 or not (hits[0] / "model.sbml").exists():
                 sys.exit(f"no unique biodivine model directory with model.sbml for {f.name}")
             sbml_dir = hits[0]
-        out.append(Instance(set_name, f.stem, f, sbml_dir))
+        out.append(Instance(set_name, f.stem, f, sbml_dir, variant))
     return out
 
 
+def logs_root(cfg, inst):
+    return cfg.logs / inst.variant if inst.variant else cfg.logs
+
+
+def solver_input(tool, inst):
+    """File the solver reads: the biodivine SBML for H.E. on the original BBM models, else the .bnet."""
+    if tool == "he" and inst.set == "bbm" and not inst.variant:
+        return inst.sbml_dir / "model.sbml"
+    return inst.bnet
+
+
 def log_path(cfg, tool, inst):
+    root = logs_root(cfg, inst)
     if tool == "pfvs":
-        return cfg.logs / "pfvs" / inst.set / f"{inst.name}.log"
-    base = cfg.logs / TOOL_DIR[tool] / SET_DIR[inst.set]
+        return root / "pfvs" / inst.set / f"{inst.name}.log"
+    base = root / TOOL_DIR[tool] / SET_DIR[inst.set]
     if tool == "he" and inst.set == "bbm":
-        return base / inst.sbml_dir.name / "model.sbml.log"
+        # log_parser.py finds BBM H.E. logs by the biodivine directory name
+        return base / inst.sbml_dir.name / f"{solver_input(tool, inst).name}.log"
     return base / f"{inst.name}.bnet.log"
 
 
 def pfvs_work(cfg, inst):
-    return cfg.logs / "pfvs" / "work" / inst.set
+    return logs_root(cfg, inst) / "pfvs" / "work" / inst.set
 
 
 def docker_run(cfg, container, image, mounts, args):
@@ -146,9 +174,9 @@ def command(cfg, tool, inst, container):
         args = [inst.bnet.name, "-c", "-m", "0"] + (["-e", "source"] if tool == "fasp_s" else [])
         return docker_run(cfg, container, cfg.fasp_image, [(inst.bnet.parent, "/benchmark", True)], args)
     if tool == "he":
-        folder, file = (inst.sbml_dir, "model.sbml") if inst.set == "bbm" else (inst.bnet.parent, inst.bnet.name)
-        return docker_run(cfg, container, cfg.he_image, [(folder, "/benchmark", True)],
-                          ["/app/solve-bmsa.sh", cfg.heap, "1g", "h3", file])
+        f = solver_input(tool, inst)
+        return docker_run(cfg, container, cfg.he_image, [(f.parent, "/benchmark", True)],
+                          ["/app/solve-bmsa.sh", cfg.heap, "1g", "h3", f.name])
     # PFVS has no image of its own; the H.E. image provides java and GNU time
     return docker_run(cfg, container, cfg.he_image,
                       [(pfvs_work(cfg, inst), "/benchmark", False), (PFVS_DIR, "/pfvs", True)],
@@ -201,12 +229,15 @@ class Runner:
         self.lock = threading.Lock()
         self.stopping = threading.Event()
 
-    def header(self, cmd):
+    def header(self, cmd, tool, inst):
         cfg = self.cfg
+        f = solver_input(tool, inst)
+        source = f"bn_reduce.py variant {inst.variant}" if inst.variant else "original"
         return (f"# Host: {self.host}\n"
                 f"# Start date: {datetime.now().astimezone().strftime('%a %b %d %H:%M:%S %Z %Y')}\n"
                 f"# Machine: {self.machine}\n"
                 f"# Limits: cpu_time_s={cfg.time_limit} memory_kb={cfg.memory_kb} wall_s={cfg.wall_limit}\n"
+                f"# Input: {f.relative_to(ROOT) if f.is_relative_to(ROOT) else f} ({source})\n"
                 f"# Command: {shlex.join(map(str, cmd))}\n"
                 + "-" * 60 + "\n")
 
@@ -227,7 +258,7 @@ class Runner:
         wall_hit = False
         start = time.monotonic()
         with open(tmp, "w") as fh:
-            fh.write(self.header(cmd))
+            fh.write(self.header(cmd, tool, inst))
             fh.flush()
             with self.lock:
                 self.active.add(container)
@@ -305,7 +336,10 @@ def pfvs_result(text, cfg):
 
 def write_pfvs_csv(cfg, set_name, insts):
     """Results table in the format of logs_analysis/merge_pfvs_into_results.py."""
-    out = cfg.logs / "pfvs" / f"pfvs_{set_name}_results.csv"
+    if not insts:
+        return None, 0
+    out = logs_root(cfg, insts[0]) / "pfvs" / f"pfvs_{set_name}_results.csv"
+    out.parent.mkdir(parents=True, exist_ok=True)
     rows = []
     for inst in insts:
         log = log_path(cfg, "pfvs", inst)
@@ -317,6 +351,20 @@ def write_pfvs_csv(cfg, set_name, insts):
         w.writerow(["instance", "solver", "status", "time_sec", "num_fp"])
         w.writerows(rows)
     return out, len(rows)
+
+
+def check_docker():
+    """Exit with Docker's own error message if the docker command or daemon is unavailable."""
+    try:
+        r = subprocess.run(["docker", "version"], capture_output=True, text=True)
+    except FileNotFoundError:
+        sys.exit("the docker command is not available here; on Windows, turn on Docker Desktop > "
+                 "Settings > Resources > WSL integration for this Linux distribution")
+    if r.returncode != 0:
+        detail = (r.stderr or r.stdout).strip().splitlines()[-3:]
+        sys.exit("Docker is not reachable:\n  " + "\n  ".join(detail) + "\n"
+                 "start Docker Desktop and wait for 'Engine running' (or start the docker service), "
+                 "then try again")
 
 
 def docker_ok(args):
@@ -338,7 +386,13 @@ def main(argv=None):
                     help="benchmark sets (default: bbm selected random)")
     ap.add_argument("--tools", nargs="+", choices=TOOLS, default=list(TOOLS),
                     help="solvers (default: all)")
-    ap.add_argument("--logs", type=Path, default=ROOT / "logs_rerun", help="log directory (default: logs_rerun)")
+    ap.add_argument("--reduced", nargs="+", choices=VARIANTS, metavar="VARIANT",
+                    help="run the networks reduced by bn_reduce.py with these variants (A B C D1 D2) "
+                         "instead of the original ones")
+    ap.add_argument("--reduced-dir", type=Path, default=REDUCED,
+                    help="where bn_reduce.py wrote the reduced networks (default: benchmarks/reduced)")
+    ap.add_argument("--logs", type=Path,
+                    help="log directory (default: logs_rerun, or logs_reduced/<variant> with --reduced)")
     ap.add_argument("--time-limit", type=int, default=1800, help="CPU seconds per process (default: 1800)")
     ap.add_argument("--memory", help="memory per run, e.g. 12g (default: 80%% of Docker's memory)")
     ap.add_argument("--heap", help="Java heap for H.E. and PFVS (default: memory minus 2g)")
@@ -352,8 +406,7 @@ def main(argv=None):
     ap.add_argument("--he-image", default="bsaf")
     args = ap.parse_args(argv)
 
-    if not docker_ok(["version"]):
-        sys.exit("Docker is not reachable; start Docker Desktop (or the docker service) first")
+    check_docker()
     images = {args.fasp_image} if set(args.tools) & {"fasp_c", "fasp_s"} else set()
     images |= {args.he_image} if set(args.tools) & {"he", "pfvs"} else set()
     missing = [i for i in sorted(images) if not docker_ok(["image", "inspect", i])]
@@ -375,22 +428,27 @@ def main(argv=None):
     if heap_kb >= memory_kb:
         sys.exit("--heap must be smaller than --memory")
 
+    logs = args.logs or ROOT / ("logs_reduced" if args.reduced else "logs_rerun")
     cfg = Config(
-        logs=args.logs.resolve(), time_limit=args.time_limit,
+        logs=logs.resolve(), time_limit=args.time_limit,
         wall_limit=2 * args.time_limit + 120,
         memory=f"{memory_kb // 1024}m", memory_kb=memory_kb, heap=f"{heap_kb // 1024}m",
         fasp_image=args.fasp_image, he_image=args.he_image,
         user=f"{os.getuid()}:{os.getgid()}" if hasattr(os, "getuid") else None,
         force=args.force)
 
+    variants = args.reduced or [None]
     insts = {}
-    for s in args.sets:
-        found = [i for i in find_instances(s) if not args.only or fnmatch(i.name, args.only)]
-        insts[s] = found[: args.limit] if args.limit else found
-    jobs = [(t, i) for s in args.sets for t in args.tools for i in insts[s]]
+    for v in variants:
+        for s in args.sets:
+            found = [i for i in find_instances(s, v, args.reduced_dir.resolve())
+                     if not args.only or fnmatch(i.name, args.only)]
+            insts[v, s] = found[: args.limit] if args.limit else found
+    jobs = [(t, i) for v in variants for s in args.sets for t in args.tools for i in insts[v, s]]
     todo = [(t, i) for t, i in jobs if cfg.force or not log_path(cfg, t, i).exists()]
 
-    print(f"{len(jobs)} runs ({len(jobs) - len(todo)} already done), logs in {cfg.logs}")
+    where = ", ".join(str(cfg.logs / v) for v in args.reduced) if args.reduced else cfg.logs
+    print(f"{len(jobs)} runs ({len(jobs) - len(todo)} already done), logs in {where}")
     print(f"limits: {cfg.time_limit}s CPU per process, {memory_kb / 1024**2:.1f} GiB memory, "
           f"Java heap {heap_kb / 1024**2:.1f} GiB, {args.jobs} job(s)")
     print(f"worst case {len(todo) * cfg.time_limit / args.jobs / 3600:.1f} h if every run hits the time limit")
@@ -414,7 +472,8 @@ def main(argv=None):
                 status = f"FAILED: {e}"
             elapsed = time.monotonic() - started
             eta = elapsed / done * (len(todo) - done)
-            print(f"[{done}/{len(todo)}] {t:6s} {i.set:8s} {i.name}: {status}"
+            label = f"{i.name} [reduced {i.variant}]" if i.variant else i.name
+            print(f"[{done}/{len(todo)}] {t:6s} {i.set:8s} {label}: {status}"
                   f"  (elapsed {elapsed / 3600:.1f} h, remaining about {eta / 3600:.1f} h)", flush=True)
     except KeyboardInterrupt:
         print("\ninterrupted: stopping running containers; rerun the same command to continue", file=sys.stderr)
@@ -424,9 +483,12 @@ def main(argv=None):
     pool.shutdown()
 
     if "pfvs" in args.tools:
-        for s in args.sets:
-            out, n = write_pfvs_csv(cfg, s, find_instances(s))
-            print(f"PFVS results for {n} {s} instances: {out}")
+        for v in variants:
+            for s in args.sets:
+                out, n = write_pfvs_csv(cfg, s, find_instances(s, v, args.reduced_dir.resolve()))
+                print(f"PFVS results for {n} {s} instances{f' (reduced {v})' if v else ''}: {out}")
+    for v in args.reduced or []:
+        print(f"analyse variant {v} with: cd logs_analysis && LOGS_DIR={cfg.logs / v} python3 fps_and_cpu.py")
     return 0
 
 

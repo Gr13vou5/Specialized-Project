@@ -1,0 +1,47 @@
+targets, factors
+v_CHUK, v_CHUK
+v_DDX58, v_DDX58
+v_DDX58_dsRNA_complex, (v_dsRNA_rna_cell & v_DDX58 & !v_M & !v_Nsp3)
+v_DDX58_ubiquitinated, ((v_RNF135 | v_TRIM25 | v_DDX58_dsRNA_complex) & !v_N)
+v_EIF2AK2, v_EIF2AK2
+v_IFIH1, v_IFIH1
+v_IFIH1_dsRNA_complex, (v_IFIH1 & v_dsRNA_rna_cell & !v_M & !v_Nsp15 & !v_Nsp3)
+v_IKBKB, v_IKBKB
+v_IKBKG, v_IKBKG
+v_IRAK1, v_IRAK1
+v_IRAK4, v_IRAK4
+v_IRF3, v_IRF3
+v_M, v_M
+v_MAVS, (v_DDX58_ubiquitinated | v_IFIH1_dsRNA_complex)
+v_MAVS_TRAF_complex, (v_TRAF2 & v_TRAF5 & v_TRAF6 & v_MAVS)
+v_MYD88, (v_TLR7_ssRNA_complex | v_TLR8_ssRNA_complex)
+v_MYD88_IRAK_TRAF_complex, (v_MYD88 & v_IRAK1 & v_IRAK4 & v_TRAF6)
+v_N, v_N
+v_NFKB1, v_NFKB1
+v_NFKBIA, v_NFKBIA
+v_Nsp15, v_Nsp15
+v_Nsp3, v_Nsp3
+v_Orf3b, v_Orf3b
+v_Orf8, v_Orf8
+v_Orf9, v_Orf9
+v_RELA, v_RELA
+v_RNF135, v_RNF135
+v_TANK, v_TANK
+v_TLR7, v_TLR7
+v_TLR7_ssRNA_complex, (v_TLR7 & v_ssRNA_rna)
+v_TLR8, v_TLR8
+v_TLR8_ssRNA_complex, (v_TLR8 & v_ssRNA_rna)
+v_TRADD, v_TRADD
+v_TRAF2, v_TRAF2
+v_TRAF3, v_TRAF3
+v_TRAF5, v_TRAF5
+v_TRAF6, (v_TRAF6_ubiquitinated & v_Nsp3)
+v_TRAF6_ubiquitinated, (v_TRAF6 & v_UBE2N & v_MYD88_IRAK_TRAF_complex & v_MAVS_TRAF_complex)
+v_TRIM25, v_TRIM25
+v_UBE2N, v_UBE2N
+v_dsRNA_rna_cell, v_dsRNA_rna_cell
+v_dsRNA_rna_endosome, v_dsRNA_rna_endosome
+v_sa418_TICAM1_cell, v_sa418_TICAM1_cell
+v_sa426_TBK1_cell, v_sa426_TBK1_cell
+v_sa427_IKBKE_cell, v_sa427_IKBKE_cell
+v_ssRNA_rna, v_ssRNA_rna

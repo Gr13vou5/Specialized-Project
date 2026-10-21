@@ -1,0 +1,4 @@
+targets, factors
+v_Dopamine, (v_Tryosine_hydroxylase & !v_Dopamine)
+v_Glutamate, v_Glutamate
+v_Tryosine_hydroxylase, v_Tryosine_hydroxylase

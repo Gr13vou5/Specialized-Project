@@ -1,0 +1,13 @@
+targets, factors
+v_B, ((!v_Clb2 & !v_CD) | (v_B & !v_CD) | (v_Clb5 & !v_CD))
+v_CD, (v_M & v_Cdc14 & v_Cdc20 & !v_CD)
+v_CKI, (v_Cdc14 & v_Swi5)
+v_Cdc14, (v_Cdc20 & v_MEN)
+v_Cdc20, (v_M & v_SFF & v_Clb2)
+v_Clb2, ((v_B & (!v_Cdc20 | !v_Cdc14) & !v_CKI) | (v_Clb2 & (!v_Cdc20 | !v_Cdc14) & v_SFF & !v_CKI))
+v_Clb5, (!v_Clb2 & !v_Cdc20)
+v_M, ((v_M & !v_CD) | (v_S & v_Clb2 & !v_CD))
+v_MEN, (v_Cdc20 & v_Clb2)
+v_S, ((v_Clb5 & !v_CD) | (v_Clb2 & !v_CD) | (v_S & !v_CD))
+v_SFF, ((v_Clb2 & v_SFF) | (v_B & (!v_Cdc20 | !v_Cdc14) & !v_CKI))
+v_Swi5, ((v_Cdc14 & v_SFF) | (v_SFF & !v_Clb2))

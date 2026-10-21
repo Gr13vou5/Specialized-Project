@@ -1,0 +1,1513 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:16:33 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_220.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-243 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_220.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_220.bnet --cnf /tmp/tmp.BOZyK0ZKJy.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_220.bnet, cnfFileName = /tmp/tmp.BOZyK0ZKJy.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_IL4_LONG_T, v_PI3K)))
+Some(Vector(Set(!v_PI3K), Set(!v_IL4_LONG_T)))
+(Set(v_IL4_LONG_T, v_PI3K),Set(-148, -54))
+(Set(!v_PI3K),Set(54))
+(Set(!v_IL4_LONG_T),Set(148))
+
+Some(Vector(Set(v_PAK_T), Set(v_PDK1_T), Set(v_CDC42_plus_RAC_T), Set(v_SHC_T), Set(v_JAK1_T), Set(v_IKK_BETA_T, v_IKK_ALPHA_T), Set(v_PKC_THETA_T), Set(v_TRAF2_T)))
+Some(Vector(Set(!v_PDK1_T, !v_TRAF2_T, !v_PKC_THETA_T, !v_JAK1_T, !v_PAK_T, !v_CDC42_plus_RAC_T, !v_SHC_T, !v_IKK_BETA_T), Set(!v_PDK1_T, !v_TRAF2_T, !v_PKC_THETA_T, !v_JAK1_T, !v_PAK_T, !v_IKK_ALPHA_T, !v_CDC42_plus_RAC_T, !v_SHC_T)))
+(Set(v_PAK_T),Set(-110))
+(Set(v_PDK1_T),Set(-64))
+(Set(v_CDC42_plus_RAC_T),Set(-126))
+(Set(v_SHC_T),Set(-106))
+(Set(v_JAK1_T),Set(-151))
+(Set(v_IKK_BETA_T, v_IKK_ALPHA_T),Set(-18, -136))
+(Set(v_PKC_THETA_T),Set(-61))
+(Set(v_TRAF2_T),Set(-167))
+(Set(!v_PDK1_T, !v_TRAF2_T, !v_PKC_THETA_T, !v_JAK1_T, !v_PAK_T, !v_CDC42_plus_RAC_T, !v_SHC_T, !v_IKK_BETA_T),Set(110, 106, 61, 64, 167, 18, 151, 126))
+(Set(!v_PDK1_T, !v_TRAF2_T, !v_PKC_THETA_T, !v_JAK1_T, !v_PAK_T, !v_IKK_ALPHA_T, !v_CDC42_plus_RAC_T, !v_SHC_T),Set(110, 106, 61, 64, 167, 151, 126, 136))
+
+Some(Vector(Set(v_ERK1_2, !v_LPG_L), Set(!v_GP63_L, v_ERK1_2)))
+Some(Vector(Set(!v_ERK1_2), Set(v_GP63_L, v_LPG_L)))
+(Set(v_ERK1_2, !v_LPG_L),Set(-166, 32))
+(Set(!v_GP63_L, v_ERK1_2),Set(63, -166))
+(Set(!v_ERK1_2),Set(166))
+(Set(v_GP63_L, v_LPG_L),Set(-63, -32))
+
+Some(Vector(Set(v_C_FOS_T, v_C_JUN_T, v_JNK_T), Set(!v_IFN_GAMMA_T)))
+Some(Vector(Set(v_IFN_GAMMA_T, !v_JNK_T), Set(v_IFN_GAMMA_T, !v_C_JUN_T), Set(v_IFN_GAMMA_T, !v_C_FOS_T)))
+(Set(v_C_FOS_T, v_C_JUN_T, v_JNK_T),Set(-90, -147, -40))
+(Set(!v_IFN_GAMMA_T),Set(107))
+(Set(v_IFN_GAMMA_T, !v_JNK_T),Set(-107, 40))
+(Set(v_IFN_GAMMA_T, !v_C_JUN_T),Set(-107, 147))
+(Set(v_IFN_GAMMA_T, !v_C_FOS_T),Set(-107, 90))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_PIP2_T, v_CALCIUM_OUT_T)))
+Some(Vector(Set(!v_CALCIUM_OUT_T), Set(!v_PIP2_T)))
+(Set(v_PIP2_T, v_CALCIUM_OUT_T),Set(-80, -42))
+(Set(!v_CALCIUM_OUT_T),Set(42))
+(Set(!v_PIP2_T),Set(80))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_LCK_T), Set(!v_PAG_plus_CSK_T)))
+Some(Vector(Set(v_PAG_plus_CSK_T, !v_LCK_T)))
+(Set(v_LCK_T),Set(-118))
+(Set(!v_PAG_plus_CSK_T),Set(39))
+(Set(v_PAG_plus_CSK_T, !v_LCK_T),Set(-39, 118))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_MHC_CLASS_II_plus_LPG_L), Set(v_LCK_T)))
+Some(Vector(Set(!v_LCK_T, !v_MHC_CLASS_II_plus_LPG_L)))
+(Set(v_MHC_CLASS_II_plus_LPG_L),Set(-62))
+(Set(v_LCK_T),Set(-118))
+(Set(!v_LCK_T, !v_MHC_CLASS_II_plus_LPG_L),Set(118, 62))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_VAV_T, !v_PIP2_T)))
+Some(Vector(Set(v_PIP2_T), Set(!v_VAV_T)))
+(Set(v_VAV_T, !v_PIP2_T),Set(-22, 80))
+(Set(v_PIP2_T),Set(-80))
+(Set(!v_VAV_T),Set(22))
+
+Some(Vector(Set(v_LFAA_L, v_ASMASE)))
+Some(Vector(Set(!v_ASMASE), Set(!v_LFAA_L)))
+(Set(v_LFAA_L, v_ASMASE),Set(-119, -142))
+(Set(!v_ASMASE),Set(142))
+(Set(!v_LFAA_L),Set(119))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_MKK3_6_T), Set(v_ERK1_2_T), Set(v_C_JUN_T)))
+Some(Vector(Set(!v_C_JUN_T, !v_ERK1_2_T, !v_MKK3_6_T)))
+(Set(v_MKK3_6_T),Set(-52))
+(Set(v_ERK1_2_T),Set(-111))
+(Set(v_C_JUN_T),Set(-147))
+(Set(!v_C_JUN_T, !v_ERK1_2_T, !v_MKK3_6_T),Set(147, 111, 52))
+
+Some(Vector(Set(v_JNK_T), Set(v_C_FOS_T)))
+Some(Vector(Set(!v_C_FOS_T, !v_JNK_T)))
+(Set(v_JNK_T),Set(-40))
+(Set(v_C_FOS_T),Set(-90))
+(Set(!v_C_FOS_T, !v_JNK_T),Set(90, 40))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_TRIF, !v_GP63_L, !v_SHP1, v_TLR3), Set(v_CD40L_T, v_MKP3), Set(v_TRIF, !v_GP63_L, !v_SHP1, v_TLR4), Set(v_LPG_L), Set(!v_CERAMIDE)))
+Some(Vector(Set(!v_TLR3, !v_LPG_L, !v_TLR4, !v_MKP3, v_CERAMIDE), Set(!v_TLR3, !v_LPG_L, !v_TLR4, !v_CD40L_T, v_CERAMIDE), Set(v_CERAMIDE, !v_TRIF, !v_LPG_L, !v_MKP3), Set(v_CERAMIDE, !v_TRIF, !v_LPG_L, !v_CD40L_T), Set(v_CERAMIDE, !v_LPG_L, !v_MKP3, v_SHP1), Set(v_CERAMIDE, !v_LPG_L, !v_CD40L_T, v_SHP1), Set(v_CERAMIDE, !v_LPG_L, v_GP63_L, !v_MKP3), Set(v_CERAMIDE, !v_LPG_L, !v_CD40L_T, v_GP63_L)))
+(Set(v_TRIF, !v_GP63_L, !v_SHP1, v_TLR3),Set(-19, 63, 77, -134))
+(Set(v_CD40L_T, v_MKP3),Set(-34, -70))
+(Set(v_TRIF, !v_GP63_L, !v_SHP1, v_TLR4),Set(-19, 63, 77, -103))
+(Set(v_LPG_L),Set(-32))
+(Set(!v_CERAMIDE),Set(4))
+(Set(!v_TLR3, !v_LPG_L, !v_TLR4, !v_MKP3, v_CERAMIDE),Set(70, -4, 134, 32, 103))
+(Set(!v_TLR3, !v_LPG_L, !v_TLR4, !v_CD40L_T, v_CERAMIDE),Set(-4, 134, 32, 34, 103))
+(Set(v_CERAMIDE, !v_TRIF, !v_LPG_L, !v_MKP3),Set(-4, 19, 32, 70))
+(Set(v_CERAMIDE, !v_TRIF, !v_LPG_L, !v_CD40L_T),Set(-4, 19, 32, 34))
+(Set(v_CERAMIDE, !v_LPG_L, !v_MKP3, v_SHP1),Set(-4, 32, 70, -77))
+(Set(v_CERAMIDE, !v_LPG_L, !v_CD40L_T, v_SHP1),Set(-4, 32, 34, -77))
+(Set(v_CERAMIDE, !v_LPG_L, v_GP63_L, !v_MKP3),Set(-4, 32, -63, 70))
+(Set(v_CERAMIDE, !v_LPG_L, !v_CD40L_T, v_GP63_L),Set(-4, 32, 34, -63))
+
+Some(Vector(Set(v_MEK1_2_T, !v_MKP_T)))
+Some(Vector(Set(v_MKP_T), Set(!v_MEK1_2_T)))
+(Set(v_MEK1_2_T, !v_MKP_T),Set(-135, 145))
+(Set(v_MKP_T),Set(-145))
+(Set(!v_MEK1_2_T),Set(135))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_SHC_T), Set(v_ERK1_2_T)))
+Some(Vector(Set(!v_ERK1_2_T, !v_SHC_T)))
+(Set(v_SHC_T),Set(-106))
+(Set(v_ERK1_2_T),Set(-111))
+(Set(!v_ERK1_2_T, !v_SHC_T),Set(111, 106))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_SHC_T), Set(v_PAK_T)))
+Some(Vector(Set(!v_PAK_T, !v_SHC_T)))
+(Set(v_SHC_T),Set(-106))
+(Set(v_PAK_T),Set(-110))
+(Set(!v_PAK_T, !v_SHC_T),Set(110, 106))
+
+Some(Vector(Set(v_RAS_GRP_T), Set(v_CD28_T, v_CD86), Set(v_CD80, v_CD28_T)))
+Some(Vector(Set(!v_CD80, !v_CD86, !v_RAS_GRP_T), Set(!v_CD28_T, !v_RAS_GRP_T)))
+(Set(v_RAS_GRP_T),Set(-38))
+(Set(v_CD28_T, v_CD86),Set(-162, -83))
+(Set(v_CD80, v_CD28_T),Set(-91, -162))
+(Set(!v_CD80, !v_CD86, !v_RAS_GRP_T),Set(91, 83, 38))
+(Set(!v_CD28_T, !v_RAS_GRP_T),Set(162, 38))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_TRIF, v_IRF3, v_TLR4), Set(v_TLR3, v_TRIF, v_IRF3)))
+Some(Vector(Set(!v_TLR3, !v_TLR4), Set(!v_IRF3), Set(!v_TRIF)))
+(Set(v_TRIF, v_IRF3, v_TLR4),Set(-19, -21, -103))
+(Set(v_TLR3, v_TRIF, v_IRF3),Set(-134, -19, -21))
+(Set(!v_TLR3, !v_TLR4),Set(134, 103))
+(Set(!v_IRF3),Set(21))
+(Set(!v_TRIF),Set(19))
+
+Some(Vector(Set(!v_ERK1_2), Set(v_CALCIUM_IN_T, v_AP1_T, v_JAK2_T)))
+Some(Vector(Set(!v_JAK2_T, v_ERK1_2), Set(!v_AP1_T, v_ERK1_2), Set(!v_CALCIUM_IN_T, v_ERK1_2)))
+(Set(!v_ERK1_2),Set(166))
+(Set(v_CALCIUM_IN_T, v_AP1_T, v_JAK2_T),Set(-68, -141, -130))
+(Set(!v_JAK2_T, v_ERK1_2),Set(130, -166))
+(Set(!v_AP1_T, v_ERK1_2),Set(141, -166))
+(Set(!v_CALCIUM_IN_T, v_ERK1_2),Set(68, -166))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_IKK_ALPHA_T, !v_IKK_BETA_T, !v_IKK_GAMMA_T)))
+Some(Vector(Set(v_IKK_GAMMA_T), Set(v_IKK_BETA_T), Set(v_IKK_ALPHA_T)))
+(Set(!v_IKK_ALPHA_T, !v_IKK_BETA_T, !v_IKK_GAMMA_T),Set(136, 18, 122))
+(Set(v_IKK_GAMMA_T),Set(-122))
+(Set(v_IKK_BETA_T),Set(-18))
+(Set(v_IKK_ALPHA_T),Set(-136))
+
+Some(Vector(Set(v_TRAF2_T), Set(v_NIK_T)))
+Some(Vector(Set(!v_NIK_T, !v_TRAF2_T)))
+(Set(v_TRAF2_T),Set(-167))
+(Set(v_NIK_T),Set(-55))
+(Set(!v_NIK_T, !v_TRAF2_T),Set(55, 167))
+
+Some(Vector(Set(v_TRAF2_T), Set(v_IKK_ALPHA_T), Set(v_PKC_THETA_T)))
+Some(Vector(Set(!v_PKC_THETA_T, !v_IKK_ALPHA_T, !v_TRAF2_T)))
+(Set(v_TRAF2_T),Set(-167))
+(Set(v_IKK_ALPHA_T),Set(-136))
+(Set(v_PKC_THETA_T),Set(-61))
+(Set(!v_PKC_THETA_T, !v_IKK_ALPHA_T, !v_TRAF2_T),Set(61, 136, 167))
+
+Some(Vector(Set(v_TRAF2_T), Set(v_IKK_ALPHA_T, v_IKK_BETA_T), Set(v_PKC_THETA_T)))
+Some(Vector(Set(!v_PKC_THETA_T, !v_IKK_BETA_T, !v_TRAF2_T), Set(!v_PKC_THETA_T, !v_IKK_ALPHA_T, !v_TRAF2_T)))
+(Set(v_TRAF2_T),Set(-167))
+(Set(v_IKK_ALPHA_T, v_IKK_BETA_T),Set(-136, -18))
+(Set(v_PKC_THETA_T),Set(-61))
+(Set(!v_PKC_THETA_T, !v_IKK_BETA_T, !v_TRAF2_T),Set(61, 18, 167))
+(Set(!v_PKC_THETA_T, !v_IKK_ALPHA_T, !v_TRAF2_T),Set(61, 136, 167))
+
+Some(Vector(Set(v_ERK1_2), Set(v_IL10_T)))
+Some(Vector(Set(!v_IL10_T, !v_ERK1_2)))
+(Set(v_ERK1_2),Set(-166))
+(Set(v_IL10_T),Set(-95))
+(Set(!v_IL10_T, !v_ERK1_2),Set(95, 166))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_IFN_GAMMA_T, v_CALCIUM_IN_T), Set(v_AP1_T, v_ERK1_2_T, !v_IFN_GAMMA_T)))
+Some(Vector(Set(!v_ERK1_2_T, !v_CALCIUM_IN_T), Set(!v_AP1_T, !v_CALCIUM_IN_T), Set(v_IFN_GAMMA_T)))
+(Set(!v_IFN_GAMMA_T, v_CALCIUM_IN_T),Set(107, -68))
+(Set(v_AP1_T, v_ERK1_2_T, !v_IFN_GAMMA_T),Set(-141, -111, 107))
+(Set(!v_ERK1_2_T, !v_CALCIUM_IN_T),Set(111, 68))
+(Set(!v_AP1_T, !v_CALCIUM_IN_T),Set(141, 68))
+(Set(v_IFN_GAMMA_T),Set(-107))
+
+Some(Vector(Set(v_AP1), Set(v_NFKB, v_P38, !v_ERK1_2, !v_MTOR, v_STAT1_ALPHA_P)))
+Some(Vector(Set(!v_NFKB, !v_AP1), Set(!v_AP1, !v_P38), Set(!v_STAT1_ALPHA_P, !v_AP1), Set(!v_AP1, v_MTOR), Set(!v_AP1, v_ERK1_2)))
+(Set(v_AP1),Set(-96))
+(Set(v_NFKB, v_P38, !v_ERK1_2, !v_MTOR, v_STAT1_ALPHA_P),Set(166, -153, -33, -85, 114))
+(Set(!v_NFKB, !v_AP1),Set(85, 96))
+(Set(!v_AP1, !v_P38),Set(96, 153))
+(Set(!v_STAT1_ALPHA_P, !v_AP1),Set(33, 96))
+(Set(!v_AP1, v_MTOR),Set(96, -114))
+(Set(!v_AP1, v_ERK1_2),Set(96, -166))
+
+Some(Vector(Set(v_NFKB_T), Set(v_AP1_T, v_CALCIUM_IN_T)))
+Some(Vector(Set(!v_CALCIUM_IN_T, !v_NFKB_T), Set(!v_AP1_T, !v_NFKB_T)))
+(Set(v_NFKB_T),Set(-165))
+(Set(v_AP1_T, v_CALCIUM_IN_T),Set(-141, -68))
+(Set(!v_CALCIUM_IN_T, !v_NFKB_T),Set(68, 165))
+(Set(!v_AP1_T, !v_NFKB_T),Set(141, 165))
+
+Some(Vector(Set(!v_FACTOR13), Set(v_FACTOR12, v_CALCIUM_IN_T, !v_IFN_GAMMA_T, v_AP1_T)))
+Some(Vector(Set(!v_FACTOR12, v_FACTOR13), Set(v_FACTOR13, v_IFN_GAMMA_T), Set(!v_CALCIUM_IN_T, v_FACTOR13), Set(v_FACTOR13, !v_AP1_T)))
+(Set(!v_FACTOR13),Set(105))
+(Set(v_FACTOR12, v_CALCIUM_IN_T, !v_IFN_GAMMA_T, v_AP1_T),Set(-58, -68, 107, -141))
+(Set(!v_FACTOR12, v_FACTOR13),Set(58, -105))
+(Set(v_FACTOR13, v_IFN_GAMMA_T),Set(-105, -107))
+(Set(!v_CALCIUM_IN_T, v_FACTOR13),Set(68, -105))
+(Set(v_FACTOR13, !v_AP1_T),Set(-105, 141))
+
+Some(Vector(Set(!v_FACTOR15), Set(!v_IFN_GAMMA_T, v_ERK1_2_T, v_FACTOR14, v_AP1_T)))
+Some(Vector(Set(!v_FACTOR14, v_FACTOR15), Set(v_IFN_GAMMA_T, v_FACTOR15), Set(!v_ERK1_2_T, v_FACTOR15), Set(!v_AP1_T, v_FACTOR15)))
+(Set(!v_FACTOR15),Set(159))
+(Set(!v_IFN_GAMMA_T, v_ERK1_2_T, v_FACTOR14, v_AP1_T),Set(107, -111, -128, -141))
+(Set(!v_FACTOR14, v_FACTOR15),Set(128, -159))
+(Set(v_IFN_GAMMA_T, v_FACTOR15),Set(-107, -159))
+(Set(!v_ERK1_2_T, v_FACTOR15),Set(111, -159))
+(Set(!v_AP1_T, v_FACTOR15),Set(141, -159))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_IRAK4, v_MYD88_plus_TIR_plus_IRAK1)))
+Some(Vector(Set(!v_MYD88_plus_TIR_plus_IRAK1), Set(!v_IRAK4)))
+(Set(v_IRAK4, v_MYD88_plus_TIR_plus_IRAK1),Set(-72, -150))
+(Set(!v_MYD88_plus_TIR_plus_IRAK1),Set(150))
+(Set(!v_IRAK4),Set(72))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_TRIF, v_TLR3), Set(v_LPG_L, v_TLR4, v_TRIF)))
+Some(Vector(Set(!v_TLR4, !v_TLR3), Set(!v_LPG_L, !v_TLR3), Set(!v_TRIF)))
+(Set(v_TRIF, v_TLR3),Set(-19, -134))
+(Set(v_LPG_L, v_TLR4, v_TRIF),Set(-32, -103, -19))
+(Set(!v_TLR4, !v_TLR3),Set(103, 134))
+(Set(!v_LPG_L, !v_TLR3),Set(32, 134))
+(Set(!v_TRIF),Set(19))
+
+Some(Vector(Set(v_LCK_T), Set(v_CD2_T)))
+Some(Vector(Set(!v_CD2_T, !v_LCK_T)))
+(Set(v_LCK_T),Set(-118))
+(Set(v_CD2_T),Set(-26))
+(Set(!v_CD2_T, !v_LCK_T),Set(26, 118))
+
+Some(Vector(Set(v_IFN_BETA), Set(v_SHC_T), Set(v_GRB2_T), Set(!v_SOCS3_T)))
+Some(Vector(Set(v_SOCS3_T, !v_GRB2_T, !v_SHC_T, !v_IFN_BETA)))
+(Set(v_IFN_BETA),Set(-156))
+(Set(v_SHC_T),Set(-106))
+(Set(v_GRB2_T),Set(-65))
+(Set(!v_SOCS3_T),Set(28))
+(Set(v_SOCS3_T, !v_GRB2_T, !v_SHC_T, !v_IFN_BETA),Set(-28, 65, 106, 156))
+
+Some(Vector(Set(v_IL12), Set(v_IFN_GAMMA_T)))
+Some(Vector(Set(!v_IFN_GAMMA_T, !v_IL12)))
+(Set(v_IL12),Set(-78))
+(Set(v_IFN_GAMMA_T),Set(-107))
+(Set(!v_IFN_GAMMA_T, !v_IL12),Set(107, 78))
+
+Some(Vector(Set(v_IL12), Set(!v_SHP2_T)))
+Some(Vector(Set(v_SHP2_T, !v_IL12)))
+(Set(v_IL12),Set(-78))
+(Set(!v_SHP2_T),Set(20))
+(Set(v_SHP2_T, !v_IL12),Set(-20, 78))
+
+Some(Vector(Set(v_TRAF3_T), Set(v_MKK7_T), Set(v_MKK4_7_T, !v_MKP_T), Set(v_MKK_T)))
+Some(Vector(Set(!v_TRAF3_T, !v_MKK_T, v_MKP_T, !v_MKK7_T), Set(!v_TRAF3_T, !v_MKK4_7_T, !v_MKK_T, !v_MKK7_T)))
+(Set(v_TRAF3_T),Set(-30))
+(Set(v_MKK7_T),Set(-168))
+(Set(v_MKK4_7_T, !v_MKP_T),Set(-75, 145))
+(Set(v_MKK_T),Set(-88))
+(Set(!v_TRAF3_T, !v_MKK_T, v_MKP_T, !v_MKK7_T),Set(30, 88, -145, 168))
+(Set(!v_TRAF3_T, !v_MKK4_7_T, !v_MKK_T, !v_MKK7_T),Set(30, 75, 88, 168))
+
+Some(Vector(Set(v_ZAP70_T), Set(v_ITK_T)))
+Some(Vector(Set(!v_ITK_T, !v_ZAP70_T)))
+(Set(v_ZAP70_T),Set(-99))
+(Set(v_ITK_T),Set(-66))
+(Set(!v_ITK_T, !v_ZAP70_T),Set(66, 99))
+
+Some(Vector(Set(v_LAT_T, v_GRB2_T, v_ERK1_2_T)))
+Some(Vector(Set(!v_ERK1_2_T), Set(!v_GRB2_T), Set(!v_LAT_T)))
+(Set(v_LAT_T, v_GRB2_T, v_ERK1_2_T),Set(-139, -65, -111))
+(Set(!v_ERK1_2_T),Set(111))
+(Set(!v_GRB2_T),Set(65))
+(Set(!v_LAT_T),Set(139))
+
+Some(Vector(Set(!v_PAG_plus_CSK_T, v_CD4_T, v_MHC_CLASS_II_plus_LPG_L), Set(!v_PAG_plus_CSK_T, v_CSK_T)))
+Some(Vector(Set(!v_CSK_T, !v_MHC_CLASS_II_plus_LPG_L), Set(!v_CSK_T, !v_CD4_T), Set(v_PAG_plus_CSK_T)))
+(Set(!v_PAG_plus_CSK_T, v_CD4_T, v_MHC_CLASS_II_plus_LPG_L),Set(39, -112, -62))
+(Set(!v_PAG_plus_CSK_T, v_CSK_T),Set(39, -104))
+(Set(!v_CSK_T, !v_MHC_CLASS_II_plus_LPG_L),Set(104, 62))
+(Set(!v_CSK_T, !v_CD4_T),Set(104, 112))
+(Set(v_PAG_plus_CSK_T),Set(-39))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_MKP_T, v_P21RAS_T), Set(!v_MKP_T, v_RAF_T), Set(v_PAK_T, !v_MKP_T)))
+Some(Vector(Set(!v_PAK_T, !v_RAF_T, !v_P21RAS_T), Set(v_MKP_T)))
+(Set(!v_MKP_T, v_P21RAS_T),Set(145, -121))
+(Set(!v_MKP_T, v_RAF_T),Set(145, -25))
+(Set(v_PAK_T, !v_MKP_T),Set(-110, 145))
+(Set(!v_PAK_T, !v_RAF_T, !v_P21RAS_T),Set(110, 25, 121))
+(Set(v_MKP_T),Set(-145))
+
+Some(Vector(Set(v_RAC1_T), Set(v_CDC42_plus_RAC_T)))
+Some(Vector(Set(!v_CDC42_plus_RAC_T, !v_RAC1_T)))
+(Set(v_RAC1_T),Set(-120))
+(Set(v_CDC42_plus_RAC_T),Set(-126))
+(Set(!v_CDC42_plus_RAC_T, !v_RAC1_T),Set(126, 120))
+
+Some(Vector(Set(v_PAK_T), Set(v_LAT_T), Set(v_TRAF2_T), Set(v_CDC42_plus_RAC_T)))
+Some(Vector(Set(!v_CDC42_plus_RAC_T, !v_TRAF2_T, !v_LAT_T, !v_PAK_T)))
+(Set(v_PAK_T),Set(-110))
+(Set(v_LAT_T),Set(-139))
+(Set(v_TRAF2_T),Set(-167))
+(Set(v_CDC42_plus_RAC_T),Set(-126))
+(Set(!v_CDC42_plus_RAC_T, !v_TRAF2_T, !v_LAT_T, !v_PAK_T),Set(126, 167, 139, 110))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_MHC_CLASS_II, v_LPG_L)))
+Some(Vector(Set(!v_LPG_L), Set(!v_MHC_CLASS_II)))
+(Set(v_MHC_CLASS_II, v_LPG_L),Set(-9, -32))
+(Set(!v_LPG_L),Set(32))
+(Set(!v_MHC_CLASS_II),Set(9))
+
+Some(Vector(Set(v_RAC1_T), Set(v_MEKK1_4_T)))
+Some(Vector(Set(!v_MEKK1_4_T, !v_RAC1_T)))
+(Set(v_RAC1_T),Set(-120))
+(Set(v_MEKK1_4_T),Set(-116))
+(Set(!v_MEKK1_4_T, !v_RAC1_T),Set(116, 120))
+
+Some(Vector(Set(!v_MKP_T, v_CDC42_plus_RAC_T), Set(v_TRAF2_T)))
+Some(Vector(Set(!v_TRAF2_T, !v_CDC42_plus_RAC_T), Set(!v_TRAF2_T, v_MKP_T)))
+(Set(!v_MKP_T, v_CDC42_plus_RAC_T),Set(145, -126))
+(Set(v_TRAF2_T),Set(-167))
+(Set(!v_TRAF2_T, !v_CDC42_plus_RAC_T),Set(167, 126))
+(Set(!v_TRAF2_T, v_MKP_T),Set(167, -145))
+
+Some(Vector(Set(v_PKC_THETA_T), Set(v_MEKK_T)))
+Some(Vector(Set(!v_MEKK_T, !v_PKC_THETA_T)))
+(Set(v_PKC_THETA_T),Set(-61))
+(Set(v_MEKK_T),Set(-157))
+(Set(!v_MEKK_T, !v_PKC_THETA_T),Set(157, 61))
+
+Some(Vector(Set(v_MEKK_T), Set(v_TRAF2_T)))
+Some(Vector(Set(!v_TRAF2_T, !v_MEKK_T)))
+(Set(v_MEKK_T),Set(-157))
+(Set(v_TRAF2_T),Set(-167))
+(Set(!v_TRAF2_T, !v_MEKK_T),Set(167, 157))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_AKT, v_IL4_LONG_T), Set(!v_CERAMIDE, !v_GP63_L, v_AKT)))
+Some(Vector(Set(v_GP63_L, !v_IL4_LONG_T), Set(!v_AKT), Set(v_CERAMIDE, !v_IL4_LONG_T)))
+(Set(v_AKT, v_IL4_LONG_T),Set(-5, -148))
+(Set(!v_CERAMIDE, !v_GP63_L, v_AKT),Set(4, 63, -5))
+(Set(v_GP63_L, !v_IL4_LONG_T),Set(-63, 148))
+(Set(!v_AKT),Set(5))
+(Set(v_CERAMIDE, !v_IL4_LONG_T),Set(-4, 148))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_LPG_L, v_TIR)))
+Some(Vector(Set(!v_TIR), Set(!v_LPG_L)))
+(Set(v_LPG_L, v_TIR),Set(-32, -155))
+(Set(!v_TIR),Set(155))
+(Set(!v_LPG_L),Set(32))
+
+Some(Vector(Set(v_MYD88_plus_TIR, v_IRAK1)))
+Some(Vector(Set(!v_IRAK1), Set(!v_MYD88_plus_TIR)))
+(Set(v_MYD88_plus_TIR, v_IRAK1),Set(-94, -131))
+(Set(!v_IRAK1),Set(131))
+(Set(!v_MYD88_plus_TIR),Set(94))
+
+Some(Vector(Set(!v_MTOR, v_TNF_ALPHA_T, v_TRAF2), Set(v_CD40L_T, v_IRAK1_P), Set(v_TRIF, v_TLR4, !v_MTOR, v_ERK1_2), Set(v_TRIF, v_TLR3, v_ERK1_2), Set(v_TRIF, !v_GP63_L, v_TLR4, v_ERK1_2)))
+Some(Vector(Set(!v_CD40L_T, !v_TLR4, !v_TNF_ALPHA_T, !v_TLR3), Set(!v_CD40L_T, !v_TLR4, !v_TLR3, !v_TRAF2), Set(!v_IRAK1_P, !v_TLR4, !v_TNF_ALPHA_T, !v_TLR3), Set(!v_IRAK1_P, !v_TLR4, !v_TLR3, !v_TRAF2), Set(!v_CD40L_T, !v_TLR4, v_MTOR, !v_TLR3), Set(!v_IRAK1_P, !v_TLR4, v_MTOR, !v_TLR3), Set(!v_CD40L_T, v_GP63_L, v_MTOR, !v_TLR3), Set(!v_IRAK1_P, v_GP63_L, v_MTOR, !v_TLR3), Set(!v_CD40L_T, !v_TNF_ALPHA_T, !v_ERK1_2), Set(!v_CD40L_T, !v_TRAF2, !v_ERK1_2), Set(!v_IRAK1_P, !v_TNF_ALPHA_T, !v_ERK1_2), Set(!v_TRIF, !v_CD40L_T, !v_TNF_ALPHA_T), Set(!v_TRIF, !v_CD40L_T, !v_TRAF2), Set(!v_TRIF, !v_IRAK1_P, !v_TNF_ALPHA_T), Set(!v_TRIF, !v_IRAK1_P, !v_TRAF2), Set(!v_TRIF, !v_CD40L_T, v_MTOR), Set(!v_TRIF, !v_IRAK1_P, v_MTOR), Set(!v_IRAK1_P, !v_TRAF2, !v_ERK1_2), Set(!v_IRAK1_P, v_MTOR, !v_ERK1_2), Set(!v_CD40L_T, v_MTOR, !v_ERK1_2)))
+(Set(!v_MTOR, v_TNF_ALPHA_T, v_TRAF2),Set(114, -124, -158))
+(Set(v_CD40L_T, v_IRAK1_P),Set(-34, -41))
+(Set(v_TRIF, v_TLR4, !v_MTOR, v_ERK1_2),Set(-19, -103, 114, -166))
+(Set(v_TRIF, v_TLR3, v_ERK1_2),Set(-19, -134, -166))
+(Set(v_TRIF, !v_GP63_L, v_TLR4, v_ERK1_2),Set(-19, 63, -103, -166))
+(Set(!v_CD40L_T, !v_TLR4, !v_TNF_ALPHA_T, !v_TLR3),Set(34, 103, 124, 134))
+(Set(!v_CD40L_T, !v_TLR4, !v_TLR3, !v_TRAF2),Set(34, 103, 134, 158))
+(Set(!v_IRAK1_P, !v_TLR4, !v_TNF_ALPHA_T, !v_TLR3),Set(41, 103, 124, 134))
+(Set(!v_IRAK1_P, !v_TLR4, !v_TLR3, !v_TRAF2),Set(41, 103, 134, 158))
+(Set(!v_CD40L_T, !v_TLR4, v_MTOR, !v_TLR3),Set(34, 103, -114, 134))
+(Set(!v_IRAK1_P, !v_TLR4, v_MTOR, !v_TLR3),Set(41, 103, -114, 134))
+(Set(!v_CD40L_T, v_GP63_L, v_MTOR, !v_TLR3),Set(34, -63, -114, 134))
+(Set(!v_IRAK1_P, v_GP63_L, v_MTOR, !v_TLR3),Set(41, -63, -114, 134))
+(Set(!v_CD40L_T, !v_TNF_ALPHA_T, !v_ERK1_2),Set(34, 124, 166))
+(Set(!v_CD40L_T, !v_TRAF2, !v_ERK1_2),Set(34, 158, 166))
+(Set(!v_IRAK1_P, !v_TNF_ALPHA_T, !v_ERK1_2),Set(41, 124, 166))
+(Set(!v_TRIF, !v_CD40L_T, !v_TNF_ALPHA_T),Set(19, 34, 124))
+(Set(!v_TRIF, !v_CD40L_T, !v_TRAF2),Set(19, 34, 158))
+(Set(!v_TRIF, !v_IRAK1_P, !v_TNF_ALPHA_T),Set(19, 41, 124))
+(Set(!v_TRIF, !v_IRAK1_P, !v_TRAF2),Set(19, 41, 158))
+(Set(!v_TRIF, !v_CD40L_T, v_MTOR),Set(19, 34, -114))
+(Set(!v_TRIF, !v_IRAK1_P, v_MTOR),Set(19, 41, -114))
+(Set(!v_IRAK1_P, !v_TRAF2, !v_ERK1_2),Set(41, 158, 166))
+(Set(!v_IRAK1_P, v_MTOR, !v_ERK1_2),Set(41, -114, 166))
+(Set(!v_CD40L_T, v_MTOR, !v_ERK1_2),Set(34, -114, 166))
+
+Some(Vector(Set(v_NIK_T), Set(!v_IKB_BETA_T, v_IKK_BETA_T)))
+Some(Vector(Set(!v_IKK_BETA_T, !v_NIK_T), Set(v_IKB_BETA_T, !v_NIK_T)))
+(Set(v_NIK_T),Set(-55))
+(Set(!v_IKB_BETA_T, v_IKK_BETA_T),Set(71, -18))
+(Set(!v_IKK_BETA_T, !v_NIK_T),Set(18, 55))
+(Set(v_IKB_BETA_T, !v_NIK_T),Set(-71, 55))
+
+Some(Vector(Set(v_TRAF5_T), Set(v_TRAF2_T)))
+Some(Vector(Set(!v_TRAF2_T, !v_TRAF5_T)))
+(Set(v_TRAF5_T),Set(-37))
+(Set(v_TRAF2_T),Set(-167))
+(Set(!v_TRAF2_T, !v_TRAF5_T),Set(167, 37))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_LAT_plus_GRB2_plus_SOS1_T), Set(v_JAK2_T)))
+Some(Vector(Set(!v_JAK2_T, !v_LAT_plus_GRB2_plus_SOS1_T)))
+(Set(v_LAT_plus_GRB2_plus_SOS1_T),Set(-74))
+(Set(v_JAK2_T),Set(-130))
+(Set(!v_JAK2_T, !v_LAT_plus_GRB2_plus_SOS1_T),Set(130, 74))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_CD40L_T, v_MKP1), Set(v_TNF_ALPHA, !v_GP63_L, !v_SHP1), Set(!v_GP63_L, !v_SHP1, v_NFKB), Set(v_TRIF, v_TLR3), Set(v_TRIF, v_TLR4), Set(v_LPG_L, v_TLR4)))
+Some(Vector(Set(!v_TLR3, !v_TLR4, !v_MKP1, !v_TNF_ALPHA, !v_NFKB), Set(v_GP63_L, !v_MKP1, !v_TLR4, !v_TLR3), Set(!v_TLR3, !v_TLR4, !v_CD40L_T, !v_TNF_ALPHA, !v_NFKB), Set(!v_CD40L_T, v_GP63_L, !v_TLR4, !v_TLR3), Set(!v_LPG_L, !v_MKP1, !v_TRIF, !v_TNF_ALPHA, !v_NFKB), Set(!v_TRIF, !v_LPG_L, v_GP63_L, !v_MKP1), Set(!v_TLR4, !v_MKP1, !v_TRIF, !v_TNF_ALPHA, !v_NFKB), Set(!v_TRIF, v_GP63_L, !v_MKP1, !v_TLR4), Set(!v_LPG_L, !v_CD40L_T, !v_TRIF, !v_TNF_ALPHA, !v_NFKB), Set(!v_TRIF, !v_LPG_L, !v_CD40L_T, v_GP63_L), Set(!v_TLR4, !v_CD40L_T, !v_TRIF, !v_TNF_ALPHA, !v_NFKB), Set(!v_TRIF, !v_CD40L_T, v_GP63_L, !v_TLR4), Set(v_SHP1, !v_MKP1, !v_TLR4, !v_TLR3), Set(!v_CD40L_T, v_SHP1, !v_TLR4, !v_TLR3), Set(!v_TRIF, !v_LPG_L, v_SHP1, !v_MKP1), Set(!v_TRIF, v_SHP1, !v_MKP1, !v_TLR4), Set(!v_TRIF, !v_LPG_L, !v_CD40L_T, v_SHP1), Set(!v_TRIF, !v_CD40L_T, v_SHP1, !v_TLR4)))
+(Set(v_CD40L_T, v_MKP1),Set(-34, -101))
+(Set(v_TNF_ALPHA, !v_GP63_L, !v_SHP1),Set(-46, 63, 77))
+(Set(!v_GP63_L, !v_SHP1, v_NFKB),Set(63, 77, -85))
+(Set(v_TRIF, v_TLR3),Set(-19, -134))
+(Set(v_TRIF, v_TLR4),Set(-19, -103))
+(Set(v_LPG_L, v_TLR4),Set(-32, -103))
+(Set(!v_TLR3, !v_TLR4, !v_MKP1, !v_TNF_ALPHA, !v_NFKB),Set(101, 46, 85, 134, 103))
+(Set(v_GP63_L, !v_MKP1, !v_TLR4, !v_TLR3),Set(-63, 101, 103, 134))
+(Set(!v_TLR3, !v_TLR4, !v_CD40L_T, !v_TNF_ALPHA, !v_NFKB),Set(46, 85, 134, 34, 103))
+(Set(!v_CD40L_T, v_GP63_L, !v_TLR4, !v_TLR3),Set(34, -63, 103, 134))
+(Set(!v_LPG_L, !v_MKP1, !v_TRIF, !v_TNF_ALPHA, !v_NFKB),Set(101, 46, 85, 32, 19))
+(Set(!v_TRIF, !v_LPG_L, v_GP63_L, !v_MKP1),Set(19, 32, -63, 101))
+(Set(!v_TLR4, !v_MKP1, !v_TRIF, !v_TNF_ALPHA, !v_NFKB),Set(101, 46, 85, 103, 19))
+(Set(!v_TRIF, v_GP63_L, !v_MKP1, !v_TLR4),Set(19, -63, 101, 103))
+(Set(!v_LPG_L, !v_CD40L_T, !v_TRIF, !v_TNF_ALPHA, !v_NFKB),Set(46, 85, 32, 34, 19))
+(Set(!v_TRIF, !v_LPG_L, !v_CD40L_T, v_GP63_L),Set(19, 32, 34, -63))
+(Set(!v_TLR4, !v_CD40L_T, !v_TRIF, !v_TNF_ALPHA, !v_NFKB),Set(46, 85, 34, 103, 19))
+(Set(!v_TRIF, !v_CD40L_T, v_GP63_L, !v_TLR4),Set(19, 34, -63, 103))
+(Set(v_SHP1, !v_MKP1, !v_TLR4, !v_TLR3),Set(-77, 101, 103, 134))
+(Set(!v_CD40L_T, v_SHP1, !v_TLR4, !v_TLR3),Set(34, -77, 103, 134))
+(Set(!v_TRIF, !v_LPG_L, v_SHP1, !v_MKP1),Set(19, 32, -77, 101))
+(Set(!v_TRIF, v_SHP1, !v_MKP1, !v_TLR4),Set(19, -77, 101, 103))
+(Set(!v_TRIF, !v_LPG_L, !v_CD40L_T, v_SHP1),Set(19, 32, 34, -77))
+(Set(!v_TRIF, !v_CD40L_T, v_SHP1, !v_TLR4),Set(19, 34, -77, 103))
+
+Some(Vector(Set(!v_CD45_T, !v_PAG_plus_CSK_T), Set(!v_CD45_T, v_LCK_T)))
+Some(Vector(Set(!v_LCK_T, v_PAG_plus_CSK_T), Set(v_CD45_T)))
+(Set(!v_CD45_T, !v_PAG_plus_CSK_T),Set(138, 39))
+(Set(!v_CD45_T, v_LCK_T),Set(138, -118))
+(Set(!v_LCK_T, v_PAG_plus_CSK_T),Set(118, -39))
+(Set(v_CD45_T),Set(-138))
+
+Some(Vector(Set(v_PAG_T, v_CSK_T, !v_CD45_T)))
+Some(Vector(Set(!v_LCK_T), Set(v_CD45_T), Set(!v_CSK_T), Set(!v_PAG_T)))
+(Set(v_PAG_T, v_CSK_T, !v_CD45_T),Set(-44, -104, 138))
+(Set(!v_LCK_T),Set(118))
+(Set(v_CD45_T),Set(-138))
+(Set(!v_CSK_T),Set(104))
+(Set(!v_PAG_T),Set(44))
+
+Some(Vector(Set(!v_PIP_T, !v_RAS_T), Set(v_GRB2_T), Set(v_ERK1_2_T, !v_PIP_T)))
+Some(Vector(Set(!v_ERK1_2_T, !v_GRB2_T, v_RAS_T), Set(v_PIP_T, !v_GRB2_T)))
+(Set(!v_PIP_T, !v_RAS_T),Set(13, 23))
+(Set(v_GRB2_T),Set(-65))
+(Set(v_ERK1_2_T, !v_PIP_T),Set(-111, 13))
+(Set(!v_ERK1_2_T, !v_GRB2_T, v_RAS_T),Set(111, 65, -23))
+(Set(v_PIP_T, !v_GRB2_T),Set(-13, 65))
+
+Some(Vector(Set(v_PIP3_T), Set(v_PKC_THETA_T)))
+Some(Vector(Set(!v_PKC_THETA_T, !v_PIP3_T)))
+(Set(v_PIP3_T),Set(-53))
+(Set(v_PKC_THETA_T),Set(-61))
+(Set(!v_PKC_THETA_T, !v_PIP3_T),Set(61, 53))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_GRB2_T), Set(v_GAB1_T), Set(v_ICOSL, v_ICOS_T), Set(v_RAS_T), Set(v_CD80, v_CD28_T), Set(v_SHP2_T), Set(v_CD86, v_CD28_T)))
+Some(Vector(Set(!v_CD80, !v_GAB1_T, !v_ICOS_T, !v_SHP2_T, !v_GRB2_T, !v_RAS_T, !v_CD86), Set(!v_CD80, !v_GAB1_T, !v_ICOSL, !v_SHP2_T, !v_GRB2_T, !v_RAS_T, !v_CD86), Set(!v_GAB1_T, !v_ICOS_T, !v_CD28_T, !v_SHP2_T, !v_GRB2_T, !v_RAS_T), Set(!v_GAB1_T, !v_ICOSL, !v_CD28_T, !v_SHP2_T, !v_GRB2_T, !v_RAS_T)))
+(Set(v_GRB2_T),Set(-65))
+(Set(v_GAB1_T),Set(-143))
+(Set(v_ICOSL, v_ICOS_T),Set(-127, -152))
+(Set(v_RAS_T),Set(-23))
+(Set(v_CD80, v_CD28_T),Set(-91, -162))
+(Set(v_SHP2_T),Set(-20))
+(Set(v_CD86, v_CD28_T),Set(-83, -162))
+(Set(!v_CD80, !v_GAB1_T, !v_ICOS_T, !v_SHP2_T, !v_GRB2_T, !v_RAS_T, !v_CD86),Set(20, 152, 65, 91, 143, 23, 83))
+(Set(!v_CD80, !v_GAB1_T, !v_ICOSL, !v_SHP2_T, !v_GRB2_T, !v_RAS_T, !v_CD86),Set(20, 65, 91, 127, 143, 23, 83))
+(Set(!v_GAB1_T, !v_ICOS_T, !v_CD28_T, !v_SHP2_T, !v_GRB2_T, !v_RAS_T),Set(20, 152, 65, 162, 143, 23))
+(Set(!v_GAB1_T, !v_ICOSL, !v_CD28_T, !v_SHP2_T, !v_GRB2_T, !v_RAS_T),Set(20, 65, 162, 127, 143, 23))
+
+Some(Vector(Set(v_PLC_GAMMA_T), Set(v_PI3K_T)))
+Some(Vector(Set(!v_PI3K_T, !v_PLC_GAMMA_T)))
+(Set(v_PLC_GAMMA_T),Set(-109))
+(Set(v_PI3K_T),Set(-35))
+(Set(!v_PI3K_T, !v_PLC_GAMMA_T),Set(35, 109))
+
+Some(Vector(Set(v_PTEN_T), Set(v_PIP2_T)))
+Some(Vector(Set(!v_PIP2_T, !v_PTEN_T)))
+(Set(v_PTEN_T),Set(-81))
+(Set(v_PIP2_T),Set(-80))
+(Set(!v_PIP2_T, !v_PTEN_T),Set(80, 81))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_PDK1_T), Set(v_TRAF2_T), Set(v_PIP2_T), Set(v_AKT_T)))
+Some(Vector(Set(!v_AKT_T, !v_PIP2_T, !v_TRAF2_T, !v_PDK1_T)))
+(Set(v_PDK1_T),Set(-64))
+(Set(v_TRAF2_T),Set(-167))
+(Set(v_PIP2_T),Set(-80))
+(Set(v_AKT_T),Set(-51))
+(Set(!v_AKT_T, !v_PIP2_T, !v_TRAF2_T, !v_PDK1_T),Set(51, 80, 167, 64))
+
+Some(Vector(Set(v_GRB2_T), Set(v_GAB1_T), Set(v_SHC_T), Set(v_SHP2_T), Set(v_LAT_T), Set(v_ITK_T)))
+Some(Vector(Set(!v_GAB1_T, !v_SHP2_T, !v_LAT_T, !v_ITK_T, !v_GRB2_T, !v_SHC_T)))
+(Set(v_GRB2_T),Set(-65))
+(Set(v_GAB1_T),Set(-143))
+(Set(v_SHC_T),Set(-106))
+(Set(v_SHP2_T),Set(-20))
+(Set(v_LAT_T),Set(-139))
+(Set(v_ITK_T),Set(-66))
+(Set(!v_GAB1_T, !v_SHP2_T, !v_LAT_T, !v_ITK_T, !v_GRB2_T, !v_SHC_T),Set(20, 106, 65, 66, 143, 139))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_VAV_T), Set(!v_RAS_T)))
+Some(Vector(Set(v_RAS_T, !v_VAV_T)))
+(Set(v_VAV_T),Set(-22))
+(Set(!v_RAS_T),Set(23))
+(Set(v_RAS_T, !v_VAV_T),Set(-23, 22))
+
+Some(Vector(Set(v_RAS_T), Set(v_JAK1_T, !v_AKT_T), Set(v_PAK_T)))
+Some(Vector(Set(!v_PAK_T, v_AKT_T, !v_RAS_T), Set(!v_PAK_T, !v_JAK1_T, !v_RAS_T)))
+(Set(v_RAS_T),Set(-23))
+(Set(v_JAK1_T, !v_AKT_T),Set(-151, 51))
+(Set(v_PAK_T),Set(-110))
+(Set(!v_PAK_T, v_AKT_T, !v_RAS_T),Set(110, -51, 23))
+(Set(!v_PAK_T, !v_JAK1_T, !v_RAS_T),Set(110, 151, 23))
+
+Some(Vector(Set(!v_RAS_T), Set(v_GRB2_T)))
+Some(Vector(Set(!v_GRB2_T, v_RAS_T)))
+(Set(!v_RAS_T),Set(23))
+(Set(v_GRB2_T),Set(-65))
+(Set(!v_GRB2_T, v_RAS_T),Set(65, -23))
+
+Some(Vector(Set(v_LAT_T), Set(v_PIP2_T)))
+Some(Vector(Set(!v_PIP2_T, !v_LAT_T)))
+(Set(v_LAT_T),Set(-139))
+(Set(v_PIP2_T),Set(-80))
+(Set(!v_PIP2_T, !v_LAT_T),Set(80, 139))
+
+Some(Vector(Set(v_RAS_GRP_T), Set(v_GRB2_plus_SOS_T), Set(!v_RAS_GAP_T), Set(!v_IFN_BETA)))
+Some(Vector(Set(v_IFN_BETA, v_RAS_GAP_T, !v_GRB2_plus_SOS_T, !v_RAS_GRP_T)))
+(Set(v_RAS_GRP_T),Set(-38))
+(Set(v_GRB2_plus_SOS_T),Set(-117))
+(Set(!v_RAS_GAP_T),Set(84))
+(Set(!v_IFN_BETA),Set(156))
+(Set(v_IFN_BETA, v_RAS_GAP_T, !v_GRB2_plus_SOS_T, !v_RAS_GRP_T),Set(-156, -84, 117, 38))
+
+Some(Vector(Set(v_JAK1_T), Set(v_PI3K_T), Set(v_IL2_T, v_NFKB_T)))
+Some(Vector())
+(Set(v_JAK1_T),Set(-151))
+(Set(v_PI3K_T),Set(-35))
+(Set(v_IL2_T, v_NFKB_T),Set(-11, -165))
+
+Some(Vector(Set(v_GP63_L), Set(v_EF1_ALPHA_L)))
+Some(Vector(Set(!v_EF1_ALPHA_L, !v_GP63_L)))
+(Set(v_GP63_L),Set(-63))
+(Set(v_EF1_ALPHA_L),Set(-57))
+(Set(!v_EF1_ALPHA_L, !v_GP63_L),Set(57, 63))
+
+Some(Vector(Set(v_PDL, v_CALCIUM_IN_T), Set(v_CALCIUM_IN_T, v_CD86), Set(v_CALCIUM_IN_T, v_CD80), Set(!v_ERK1_2_T)))
+Some(Vector(Set(!v_PDL, !v_CD86, !v_CD80, v_ERK1_2_T), Set(!v_CALCIUM_IN_T, v_ERK1_2_T)))
+(Set(v_PDL, v_CALCIUM_IN_T),Set(-47, -68))
+(Set(v_CALCIUM_IN_T, v_CD86),Set(-68, -83))
+(Set(v_CALCIUM_IN_T, v_CD80),Set(-68, -91))
+(Set(!v_ERK1_2_T),Set(111))
+(Set(!v_PDL, !v_CD86, !v_CD80, v_ERK1_2_T),Set(47, 83, 91, -111))
+(Set(!v_CALCIUM_IN_T, v_ERK1_2_T),Set(68, -111))
+
+Some(Vector(Set(v_CALCIUM_IN_T, v_CD86), Set(v_ERK1_2_T), Set(v_CALCIUM_IN_T, v_CD80), Set(v_SHC_T), Set(!v_LCK_T)))
+Some(Vector(Set(!v_CD80, v_LCK_T, !v_ERK1_2_T, !v_CD86, !v_SHC_T), Set(!v_CALCIUM_IN_T, !v_SHC_T, !v_ERK1_2_T, v_LCK_T)))
+(Set(v_CALCIUM_IN_T, v_CD86),Set(-68, -83))
+(Set(v_ERK1_2_T),Set(-111))
+(Set(v_CALCIUM_IN_T, v_CD80),Set(-68, -91))
+(Set(v_SHC_T),Set(-106))
+(Set(!v_LCK_T),Set(118))
+(Set(!v_CD80, v_LCK_T, !v_ERK1_2_T, !v_CD86, !v_SHC_T),Set(-118, 106, 91, 111, 83))
+(Set(!v_CALCIUM_IN_T, !v_SHC_T, !v_ERK1_2_T, v_LCK_T),Set(68, 106, 111, -118))
+
+Some(Vector(Set(!v_RAS_T), Set(v_IFN_BETA)))
+Some(Vector(Set(!v_IFN_BETA, v_RAS_T)))
+(Set(!v_RAS_T),Set(23))
+(Set(v_IFN_BETA),Set(-156))
+(Set(!v_IFN_BETA, v_RAS_T),Set(156, -23))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_STAT1_ALPHA_P, v_SHP1), Set(v_GP63_L, v_STAT1_ALPHA_P)))
+Some(Vector(Set(!v_GP63_L, !v_SHP1), Set(!v_STAT1_ALPHA_P)))
+(Set(v_STAT1_ALPHA_P, v_SHP1),Set(-33, -77))
+(Set(v_GP63_L, v_STAT1_ALPHA_P),Set(-63, -33))
+(Set(!v_GP63_L, !v_SHP1),Set(63, 77))
+(Set(!v_STAT1_ALPHA_P),Set(33))
+
+Some(Vector(Set(v_STAT1_ALPHA), Set(v_IFN_GAMMA_T, v_JAK2)))
+Some(Vector(Set(!v_JAK2, !v_STAT1_ALPHA), Set(!v_IFN_GAMMA_T, !v_STAT1_ALPHA)))
+(Set(v_STAT1_ALPHA),Set(-1))
+(Set(v_IFN_GAMMA_T, v_JAK2),Set(-107, -36))
+(Set(!v_JAK2, !v_STAT1_ALPHA),Set(36, 1))
+(Set(!v_IFN_GAMMA_T, !v_STAT1_ALPHA),Set(107, 1))
+
+Some(Vector(Set(v_JAK2, v_IL12), Set(v_IL10R, v_TYK2, v_IL10_T), Set(v_IL6_NATIVE_T)))
+Some(Vector(Set(!v_JAK2, !v_IL6_NATIVE_T, !v_IL10_T), Set(!v_JAK2, !v_IL6_NATIVE_T, !v_TYK2), Set(!v_IL10R, !v_JAK2, !v_IL6_NATIVE_T), Set(!v_IL6_NATIVE_T, !v_IL12, !v_IL10_T), Set(!v_IL6_NATIVE_T, !v_TYK2, !v_IL12), Set(!v_IL10R, !v_IL6_NATIVE_T, !v_IL12)))
+(Set(v_JAK2, v_IL12),Set(-36, -78))
+(Set(v_IL10R, v_TYK2, v_IL10_T),Set(-27, -67, -95))
+(Set(v_IL6_NATIVE_T),Set(-48))
+(Set(!v_JAK2, !v_IL6_NATIVE_T, !v_IL10_T),Set(36, 48, 95))
+(Set(!v_JAK2, !v_IL6_NATIVE_T, !v_TYK2),Set(36, 48, 67))
+(Set(!v_IL10R, !v_JAK2, !v_IL6_NATIVE_T),Set(27, 36, 48))
+(Set(!v_IL6_NATIVE_T, !v_IL12, !v_IL10_T),Set(48, 78, 95))
+(Set(!v_IL6_NATIVE_T, !v_TYK2, !v_IL12),Set(48, 67, 78))
+(Set(!v_IL10R, !v_IL6_NATIVE_T, !v_IL12),Set(27, 48, 78))
+
+Some(Vector(Set(v_IL10R_T, v_IFN_BETA, v_ERK1_2), Set(v_JAK1_T)))
+Some(Vector(Set(!v_JAK1_T, !v_ERK1_2), Set(!v_JAK1_T, !v_IFN_BETA), Set(!v_JAK1_T, !v_IL10R_T)))
+(Set(v_IL10R_T, v_IFN_BETA, v_ERK1_2),Set(-98, -156, -166))
+(Set(v_JAK1_T),Set(-151))
+(Set(!v_JAK1_T, !v_ERK1_2),Set(151, 166))
+(Set(!v_JAK1_T, !v_IFN_BETA),Set(151, 156))
+(Set(!v_JAK1_T, !v_IL10R_T),Set(151, 98))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_TCR_T, v_LCK_T), Set(v_MHC_CLASS_II_plus_LPG_L)))
+Some(Vector(Set(!v_MHC_CLASS_II_plus_LPG_L, !v_LCK_T), Set(!v_MHC_CLASS_II_plus_LPG_L, !v_TCR_T)))
+(Set(v_TCR_T, v_LCK_T),Set(-10, -118))
+(Set(v_MHC_CLASS_II_plus_LPG_L),Set(-62))
+(Set(!v_MHC_CLASS_II_plus_LPG_L, !v_LCK_T),Set(62, 118))
+(Set(!v_MHC_CLASS_II_plus_LPG_L, !v_TCR_T),Set(62, 10))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_STAT3), Set(!v_ERK1_2, v_NFKB)))
+Some(Vector(Set(!v_NFKB, !v_STAT3), Set(v_ERK1_2, !v_STAT3)))
+(Set(v_STAT3),Set(-163))
+(Set(!v_ERK1_2, v_NFKB),Set(166, -85))
+(Set(!v_NFKB, !v_STAT3),Set(85, 163))
+(Set(v_ERK1_2, !v_STAT3),Set(-166, 163))
+
+Some(Vector(Set(v_STAT3_T), Set(v_AP1_T, !v_IFN_GAMMA_T)))
+Some(Vector(Set(v_IFN_GAMMA_T, !v_STAT3_T), Set(!v_AP1_T, !v_STAT3_T)))
+(Set(v_STAT3_T),Set(-50))
+(Set(v_AP1_T, !v_IFN_GAMMA_T),Set(-141, 107))
+(Set(v_IFN_GAMMA_T, !v_STAT3_T),Set(-107, 50))
+(Set(!v_AP1_T, !v_STAT3_T),Set(141, 50))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_OX40L, v_OX40_T), Set(v_TNF_ALPHA_T)))
+Some(Vector(Set(!v_TNF_ALPHA_T, !v_OX40_T), Set(!v_TNF_ALPHA_T, !v_OX40L)))
+(Set(v_OX40L, v_OX40_T),Set(-144, -17))
+(Set(v_TNF_ALPHA_T),Set(-124))
+(Set(!v_TNF_ALPHA_T, !v_OX40_T),Set(124, 17))
+(Set(!v_TNF_ALPHA_T, !v_OX40L),Set(124, 144))
+
+Some(Vector(Set(v_TNFSF9_T, v_TNFSF9R_T)))
+Some(Vector(Set(!v_TNFSF9R_T), Set(!v_TNFSF9_T)))
+(Set(v_TNFSF9_T, v_TNFSF9R_T),Set(-15, -29))
+(Set(!v_TNFSF9R_T),Set(29))
+(Set(!v_TNFSF9_T),Set(15))
+
+Some(Vector(Set(v_LIGHT, v_LTBR_T), Set(v_CD70, v_CD27_T)))
+Some(Vector(Set(!v_CD27_T, !v_LTBR_T), Set(!v_CD70, !v_LTBR_T), Set(!v_CD27_T, !v_LIGHT), Set(!v_CD70, !v_LIGHT)))
+(Set(v_LIGHT, v_LTBR_T),Set(-87, -2))
+(Set(v_CD70, v_CD27_T),Set(-113, -56))
+(Set(!v_CD27_T, !v_LTBR_T),Set(56, 2))
+(Set(!v_CD70, !v_LTBR_T),Set(113, 2))
+(Set(!v_CD27_T, !v_LIGHT),Set(56, 87))
+(Set(!v_CD70, !v_LIGHT),Set(113, 87))
+
+Some(Vector(Set(v_LIGHT, v_LTBR_T), Set(v_CD70, v_CD27_T)))
+Some(Vector(Set(!v_CD27_T, !v_LTBR_T), Set(!v_CD70, !v_LTBR_T), Set(!v_CD27_T, !v_LIGHT), Set(!v_CD70, !v_LIGHT)))
+(Set(v_LIGHT, v_LTBR_T),Set(-87, -2))
+(Set(v_CD70, v_CD27_T),Set(-113, -56))
+(Set(!v_CD27_T, !v_LTBR_T),Set(56, 2))
+(Set(!v_CD70, !v_LTBR_T),Set(113, 2))
+(Set(!v_CD27_T, !v_LIGHT),Set(56, 87))
+(Set(!v_CD70, !v_LIGHT),Set(113, 87))
+
+Some(Vector(Set(v_TLR3), Set(v_LPG_L, v_TLR4)))
+Some(Vector(Set(!v_TLR4, !v_TLR3), Set(!v_LPG_L, !v_TLR3)))
+(Set(v_TLR3),Set(-134))
+(Set(v_LPG_L, v_TLR4),Set(-32, -103))
+(Set(!v_TLR4, !v_TLR3),Set(103, 134))
+(Set(!v_LPG_L, !v_TLR3),Set(32, 134))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_LAT_T, v_GADS_T, v_ITK_T), Set(v_JAK1_T)))
+Some(Vector(Set(!v_JAK1_T, !v_ITK_T), Set(!v_JAK1_T, !v_GADS_T), Set(!v_JAK1_T, !v_LAT_T)))
+(Set(v_LAT_T, v_GADS_T, v_ITK_T),Set(-139, -59, -66))
+(Set(v_JAK1_T),Set(-151))
+(Set(!v_JAK1_T, !v_ITK_T),Set(151, 66))
+(Set(!v_JAK1_T, !v_GADS_T),Set(151, 59))
+(Set(!v_JAK1_T, !v_LAT_T),Set(151, 139))
+
+Some(Vector(Set(!v_PAG_plus_CSK_T, v_TCR_plus_CD3_T, v_MHC_CLASS_II_plus_LPG_L, !v_SHP1), Set(!v_SHP1_T, v_LCK_T), Set(!v_SHP1_T, v_TCR_plus_CD3_T, v_MHC_CLASS_II_plus_LPG_L, v_ABL_T)))
+Some(Vector(Set(!v_ABL_T, v_SHP1, !v_LCK_T), Set(v_SHP1_T, v_SHP1), Set(v_PAG_plus_CSK_T, !v_ABL_T, !v_LCK_T), Set(v_SHP1_T, v_PAG_plus_CSK_T), Set(!v_MHC_CLASS_II_plus_LPG_L, !v_LCK_T), Set(!v_TCR_plus_CD3_T, !v_LCK_T), Set(v_SHP1_T, !v_MHC_CLASS_II_plus_LPG_L), Set(v_SHP1_T, !v_TCR_plus_CD3_T)))
+(Set(!v_PAG_plus_CSK_T, v_TCR_plus_CD3_T, v_MHC_CLASS_II_plus_LPG_L, !v_SHP1),Set(39, -45, -62, 77))
+(Set(!v_SHP1_T, v_LCK_T),Set(3, -118))
+(Set(!v_SHP1_T, v_TCR_plus_CD3_T, v_MHC_CLASS_II_plus_LPG_L, v_ABL_T),Set(3, -45, -62, -76))
+(Set(!v_ABL_T, v_SHP1, !v_LCK_T),Set(76, -77, 118))
+(Set(v_SHP1_T, v_SHP1),Set(-3, -77))
+(Set(v_PAG_plus_CSK_T, !v_ABL_T, !v_LCK_T),Set(-39, 76, 118))
+(Set(v_SHP1_T, v_PAG_plus_CSK_T),Set(-3, -39))
+(Set(!v_MHC_CLASS_II_plus_LPG_L, !v_LCK_T),Set(62, 118))
+(Set(!v_TCR_plus_CD3_T, !v_LCK_T),Set(45, 118))
+(Set(v_SHP1_T, !v_MHC_CLASS_II_plus_LPG_L),Set(-3, 62))
+(Set(v_SHP1_T, !v_TCR_plus_CD3_T),Set(-3, 45))
+Map(v_STAT1_ALPHA -> 1, v_LTBR_T -> 2, v_SHP1_T -> 3, v_CERAMIDE -> 4, v_AKT -> 5, v_FC_GAMMAR -> 6, v_MYD88_T -> 7, v_FACTOR6 -> 8, v_MHC_CLASS_II -> 9, v_TCR_T -> 10, v_IL2_T -> 11, v_FACTOR16 -> 12, v_PIP_T -> 13, v_CRE_T -> 14, v_TNFSF9_T -> 15, v_MEF2A_T -> 16, v_OX40_T -> 17, v_IKK_BETA_T -> 18, v_TRIF -> 19, v_SHP2_T -> 20, v_IRF3 -> 21, v_VAV_T -> 22, v_RAS_T -> 23, v_FACTOR20 -> 24, v_RAF_T -> 25, v_CD2_T -> 26, v_IL10R -> 27, v_SOCS3_T -> 28, v_TNFSF9R_T -> 29, v_TRAF3_T -> 30, v_FACTOR2 -> 31, v_LPG_L -> 32, v_STAT1_ALPHA_P -> 33, v_CD40L_T -> 34, v_PI3K_T -> 35, v_JAK2 -> 36, v_TRAF5_T -> 37, v_RAS_GRP_T -> 38, v_PAG_plus_CSK_T -> 39, v_JNK_T -> 40, v_IRAK1_P -> 41, v_CALCIUM_OUT_T -> 42, v_FACTOR17 -> 43, v_PAG_T -> 44, v_TCR_plus_CD3_T -> 45, v_TNF_ALPHA -> 46, v_PDL -> 47, v_IL6_NATIVE_T -> 48, v_FACTOR23 -> 49, v_STAT3_T -> 50, v_AKT_T -> 51, v_MKK3_6_T -> 52, v_PIP3_T -> 53, v_PI3K -> 54, v_NIK_T -> 55, v_CD27_T -> 56, v_EF1_ALPHA_L -> 57, v_FACTOR12 -> 58, v_GADS_T -> 59, v_MEF2B_T -> 60, v_PKC_THETA_T -> 61, v_MHC_CLASS_II_plus_LPG_L -> 62, v_GP63_L -> 63, v_PDK1_T -> 64, v_GRB2_T -> 65, v_ITK_T -> 66, v_TYK2 -> 67, v_CALCIUM_IN_T -> 68, v_IRAK1_T -> 69, v_MKP3 -> 70, v_IKB_BETA_T -> 71, v_IRAK4 -> 72, v_FACTOR3 -> 73, v_LAT_plus_GRB2_plus_SOS1_T -> 74, v_MKK4_7_T -> 75, v_ABL_T -> 76, v_SHP1 -> 77, v_IL12 -> 78, v_IRAK4_T -> 79, v_PIP2_T -> 80, v_PTEN_T -> 81, v_IFN_OMEGA_T -> 82, v_CD86 -> 83, v_RAS_GAP_T -> 84, v_NFKB -> 85, v_IGG -> 86, v_LIGHT -> 87, v_MKK_T -> 88, v_FACTOR4 -> 89, v_C_FOS_T -> 90, v_CD80 -> 91, v_CBL_T -> 92, v_FACTOR18 -> 93, v_MYD88_plus_TIR -> 94, v_IL10_T -> 95, v_AP1 -> 96, v_FACTOR9 -> 97, v_IL10R_T -> 98, v_ZAP70_T -> 99, v_CALCIPRESSIN_T -> 100, v_MKP1 -> 101, v_MEF2D_T -> 102, v_TLR4 -> 103, v_CSK_T -> 104, v_FACTOR13 -> 105, v_SHC_T -> 106, v_IFN_GAMMA_T -> 107, v_TNF_BETA_T -> 108, v_PLC_GAMMA_T -> 109, v_PAK_T -> 110, v_ERK1_2_T -> 111, v_CD4_T -> 112, v_CD70 -> 113, v_MTOR -> 114, v_FACTOR7 -> 115, v_MEKK1_4_T -> 116, v_GRB2_plus_SOS_T -> 117, v_LCK_T -> 118, v_LFAA_L -> 119, v_RAC1_T -> 120, v_P21RAS_T -> 121, v_IKK_GAMMA_T -> 122, v_FACTOR11 -> 123, v_TNF_ALPHA_T -> 124, v_FACTOR22 -> 125, v_CDC42_plus_RAC_T -> 126, v_ICOSL -> 127, v_FACTOR14 -> 128, v_FACTOR5 -> 129, v_JAK2_T -> 130, v_IRAK1 -> 131, v_FACTOR19 -> 132, v_IFN_ALPHA_T -> 133, v_TLR3 -> 134, v_MEK1_2_T -> 135, v_IKK_ALPHA_T -> 136, v_MEF2C_T -> 137, v_CD45_T -> 138, v_LAT_T -> 139, v_P300_T -> 140, v_AP1_T -> 141, v_ASMASE -> 142, v_GAB1_T -> 143, v_OX40L -> 144, v_MKP_T -> 145, v_HDAC_T -> 146, v_C_JUN_T -> 147, v_IL4_LONG_T -> 148, v_SOS_T -> 149, v_MYD88_plus_TIR_plus_IRAK1 -> 150, v_JAK1_T -> 151, v_ICOS_T -> 152, v_P38 -> 153, v_FACTOR10 -> 154, v_TIR -> 155, v_IFN_BETA -> 156, v_MEKK_T -> 157, v_TRAF2 -> 158, v_FACTOR15 -> 159, v_FACTOR21 -> 160, v_FACTOR8 -> 161, v_CD28_T -> 162, v_STAT3 -> 163, v_FACTOR1 -> 164, v_NFKB_T -> 165, v_ERK1_2 -> 166, v_TRAF2_T -> 167, v_MKK7_T -> 168)
+p cnf 168 427
+-148 -54 5 0
+54 -5 0
+148 -5 0
+-110 51 0
+-64 51 0
+-126 51 0
+-106 51 0
+-151 51 0
+-18 -136 51 0
+-61 51 0
+-167 51 0
+110 106 61 -51 64 167 18 151 126 0
+110 106 61 -51 64 167 151 126 136 0
+-166 32 96 0
+63 -166 96 0
+166 -96 0
+-63 -32 -96 0
+-90 -147 -40 141 0
+107 141 0
+-107 40 -141 0
+-107 147 -141 0
+-107 90 -141 0
+-80 -42 68 0
+42 -68 0
+80 -68 0
+-118 26 0
+39 26 0
+-39 118 -26 0
+-62 112 0
+-118 112 0
+118 62 -112 0
+-22 80 126 0
+-80 -126 0
+22 -126 0
+-119 -142 4 0
+142 -4 0
+119 -4 0
+-52 90 0
+-111 90 0
+-147 90 0
+147 111 52 -90 0
+-40 147 0
+-90 147 0
+90 40 -147 0
+77 -19 166 63 -134 0
+-34 -70 166 0
+-103 77 -19 166 63 0
+-32 166 0
+4 166 0
+70 -4 134 32 103 -166 0
+-4 134 32 34 103 -166 0
+70 -4 32 -166 19 0
+-4 32 34 -166 19 0
+70 -4 32 -166 -77 0
+-4 32 34 -166 -77 0
+-63 70 -4 32 -166 0
+-63 -4 32 34 -166 0
+-135 145 111 0
+-145 -111 0
+135 -111 0
+-106 143 0
+-111 143 0
+111 106 -143 0
+-106 65 0
+-110 65 0
+110 106 -65 0
+-38 117 0
+-162 -83 117 0
+-91 -162 117 0
+91 83 38 -117 0
+162 38 -117 0
+-19 -21 -103 156 0
+-134 -19 -21 156 0
+134 103 -156 0
+21 -156 0
+19 -156 0
+166 107 0
+-68 -141 -130 107 0
+130 -166 -107 0
+141 -166 -107 0
+68 -166 -107 0
+136 18 122 71 0
+-122 -71 0
+-18 -71 0
+-136 -71 0
+-167 136 0
+-55 136 0
+55 167 -136 0
+-167 18 0
+-136 18 0
+-61 18 0
+61 136 167 -18 0
+-167 122 0
+-136 -18 122 0
+-61 122 0
+61 18 167 -122 0
+61 136 167 -122 0
+-166 27 0
+-95 27 0
+95 166 -27 0
+107 -68 95 0
+-141 -111 107 95 0
+111 68 -95 0
+141 68 -95 0
+-107 -95 0
+-96 78 0
+78 166 -153 -33 -85 114 0
+85 96 -78 0
+96 153 -78 0
+33 96 -78 0
+96 -114 -78 0
+96 -166 -78 0
+-165 11 0
+-141 -68 11 0
+68 165 -11 0
+141 165 -11 0
+105 148 0
+-58 -68 148 -141 107 0
+58 -105 -148 0
+-105 -107 -148 0
+68 -105 -148 0
+-105 141 -148 0
+159 48 0
+-128 -111 48 -141 107 0
+128 -159 -48 0
+-107 -159 -48 0
+111 -159 -48 0
+141 -159 -48 0
+-72 -150 41 0
+150 -41 0
+72 -41 0
+-19 -134 21 0
+-32 -103 -19 21 0
+103 134 -21 0
+32 134 -21 0
+19 -21 0
+-118 66 0
+-26 66 0
+26 118 -66 0
+-156 151 0
+-106 151 0
+-65 151 0
+28 151 0
+106 65 156 -151 -28 0
+-78 36 0
+-107 36 0
+107 78 -36 0
+-78 130 0
+20 130 0
+-20 78 -130 0
+-30 40 0
+-168 40 0
+-75 145 40 0
+-88 40 0
+88 -145 -40 168 30 0
+88 -40 75 168 30 0
+-99 139 0
+-66 139 0
+66 99 -139 0
+-139 -65 -111 74 0
+111 -74 0
+65 -74 0
+139 -74 0
+39 -112 -62 118 0
+39 -104 118 0
+104 62 -118 0
+104 112 -118 0
+-39 -118 0
+145 -121 135 0
+145 -25 135 0
+-110 145 135 0
+110 25 121 -135 0
+-145 -135 0
+-120 116 0
+-126 116 0
+126 120 -116 0
+-110 157 0
+-139 157 0
+-167 157 0
+-126 157 0
+110 167 -157 139 126 0
+-9 -32 62 0
+32 -62 0
+9 -62 0
+-120 52 0
+-116 52 0
+116 120 -52 0
+145 -126 75 0
+-167 75 0
+167 126 -75 0
+167 -145 -75 0
+-61 168 0
+-157 168 0
+157 61 -168 0
+-157 88 0
+-167 88 0
+167 157 -88 0
+-5 -148 114 0
+4 63 -5 114 0
+-63 148 -114 0
+5 -114 0
+-4 148 -114 0
+-32 -155 94 0
+155 -94 0
+32 -94 0
+-94 -131 150 0
+131 -150 0
+94 -150 0
+114 -124 -158 85 0
+-34 -41 85 0
+-103 85 -19 114 -166 0
+-19 -134 -166 85 0
+-103 85 -19 63 -166 0
+124 134 34 103 -85 0
+134 34 103 -85 158 0
+124 41 134 103 -85 0
+41 134 103 -85 158 0
+-114 134 34 103 -85 0
+-114 41 134 103 -85 0
+-63 -114 134 34 -85 0
+-63 -114 41 134 -85 0
+34 124 166 -85 0
+34 158 166 -85 0
+41 124 166 -85 0
+19 34 124 -85 0
+19 34 158 -85 0
+19 41 124 -85 0
+19 41 158 -85 0
+19 34 -114 -85 0
+19 41 -114 -85 0
+41 158 166 -85 0
+41 -114 166 -85 0
+34 -114 166 -85 0
+-55 165 0
+71 -18 165 0
+18 55 -165 0
+-71 55 -165 0
+-37 55 0
+-167 55 0
+167 37 -55 0
+-74 121 0
+-130 121 0
+130 74 -121 0
+-34 -101 153 0
+-46 63 77 153 0
+63 77 -85 153 0
+-19 -134 153 0
+-19 -103 153 0
+-32 -103 153 0
+101 46 85 134 103 -153 0
+101 -63 134 103 -153 0
+46 85 134 34 103 -153 0
+-63 134 34 103 -153 0
+101 46 85 32 -153 19 0
+101 -63 32 -153 19 0
+101 46 85 103 -153 19 0
+101 -63 103 -153 19 0
+46 85 32 34 -153 19 0
+-63 32 34 -153 19 0
+46 85 34 103 -153 19 0
+-63 34 103 -153 19 0
+101 134 103 -153 -77 0
+134 34 103 -153 -77 0
+101 32 -153 19 -77 0
+101 103 -153 19 -77 0
+32 34 -153 19 -77 0
+34 103 -153 19 -77 0
+138 39 44 0
+138 -118 44 0
+118 -39 -44 0
+-138 -44 0
+-44 -104 138 39 0
+118 -39 0
+-138 -39 0
+104 -39 0
+44 -39 0
+13 23 110 0
+-65 110 0
+-111 13 110 0
+111 65 -23 -110 0
+-13 65 -110 0
+-53 64 0
+-61 64 0
+61 53 -64 0
+-65 35 0
+-143 35 0
+-127 -152 35 0
+-23 35 0
+-91 -162 35 0
+-20 35 0
+-83 -162 35 0
+20 152 -35 65 91 143 23 83 0
+20 -35 65 91 127 143 23 83 0
+20 152 -35 65 162 143 23 0
+20 -35 65 162 127 143 23 0
+-109 80 0
+-35 80 0
+35 109 -80 0
+-81 53 0
+-80 53 0
+80 81 -53 0
+-64 61 0
+-167 61 0
+-80 61 0
+-51 61 0
+64 80 167 -61 51 0
+-65 109 0
+-143 109 0
+-106 109 0
+-20 109 0
+-139 109 0
+-66 109 0
+20 106 65 66 143 139 -109 0
+-22 120 0
+23 120 0
+-23 22 -120 0
+-23 25 0
+-151 51 25 0
+-110 25 0
+110 -51 23 -25 0
+110 151 23 -25 0
+23 84 0
+-65 84 0
+65 -23 -84 0
+-139 38 0
+-80 38 0
+80 139 -38 0
+-38 23 0
+-117 23 0
+84 23 0
+156 23 0
+117 38 -23 -84 -156 0
+-151 106 0
+-35 106 0
+-11 -165 106 0
+-63 77 0
+-57 77 0
+57 63 -77 0
+-47 -68 3 0
+-68 -83 3 0
+-68 -91 3 0
+111 3 0
+-3 -111 91 47 83 0
+68 -111 -3 0
+-68 -83 20 0
+-111 20 0
+-68 -91 20 0
+-106 20 0
+118 20 0
+-118 106 -20 91 111 83 0
+-118 106 -20 68 111 0
+23 28 0
+-156 28 0
+156 -23 -28 0
+-33 -77 1 0
+-63 -33 1 0
+63 77 -1 0
+33 -1 0
+-1 33 0
+-107 -36 33 0
+36 1 -33 0
+107 1 -33 0
+-36 -78 163 0
+-27 -67 -95 163 0
+-48 163 0
+36 48 95 -163 0
+36 48 67 -163 0
+27 36 48 -163 0
+48 78 95 -163 0
+48 67 78 -163 0
+27 48 78 -163 0
+-98 -156 -166 50 0
+-151 50 0
+151 166 -50 0
+151 156 -50 0
+151 98 -50 0
+-10 -118 45 0
+-62 45 0
+62 118 -45 0
+62 10 -45 0
+-163 46 0
+166 -85 46 0
+85 163 -46 0
+-166 163 -46 0
+-50 124 0
+-141 107 124 0
+-107 50 -124 0
+141 50 -124 0
+-144 -17 158 0
+-124 158 0
+124 17 -158 0
+124 144 -158 0
+-15 -29 167 0
+29 -167 0
+15 -167 0
+-87 -2 30 0
+-113 -56 30 0
+56 2 -30 0
+113 2 -30 0
+56 87 -30 0
+113 87 -30 0
+-87 -2 37 0
+-113 -56 37 0
+56 2 -37 0
+113 2 -37 0
+56 87 -37 0
+113 87 -37 0
+-134 19 0
+-32 -103 19 0
+103 134 -19 0
+32 134 -19 0
+-139 -59 -66 22 0
+-151 22 0
+151 66 -22 0
+151 59 -22 0
+151 139 -22 0
+77 -62 39 99 -45 0
+3 -118 99 0
+-76 -62 3 99 -45 0
+76 -77 118 -99 0
+-3 -77 -99 0
+-39 76 118 -99 0
+-3 -39 -99 0
+62 118 -99 0
+45 118 -99 0
+-3 62 -99 0
+-3 45 -99 0
++ exit_status=0
++ set +x
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.BOZyK0ZKJy.cnf'
+c opening file to read '/tmp/tmp.BOZyK0ZKJy.cnf'
+c found 'p cnf 168 427' header
+c parsed 427 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  427 131 78%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  427 131 78%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  427 131 78%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 11 -12 -13 -14 -15 -16 -17 18 -19 20 -21 22
+v 23 -24 25 26 27 -28 -29 -30 -31 -32 -33 -34 35 36 -37 38 -39 40 -41 -42 -43
+v -44 -45 46 -47 -48 -49 50 51 52 53 -54 -55 -56 -57 -58 -59 -60 61 -62 -63 64
+v 65 66 -67 -68 -69 -70 -71 -72 -73 74 -75 -76 -77 78 -79 80 -81 -82 -83 84 85
+v -86 -87 88 -89 90 -91 -92 -93 -94 95 96 -97 -98 -99 -100 -101 -102 -103 -104
+v -105 106 -107 -108 109 110 111 -112 -113 -114 -115 116 117 -118 -119 120 121
+v 122 -123 124 -125 -126 -127 -128 -129 130 -131 -132 -133 -134 135 -136 -137
+v 138 139 -140 141 -142 143 -144 -145 -146 147 148 -149 -150 151 -152 153 -154
+v -155 -156 157 158 159 -160 -161 -162 163 -164 165 166 -167 168 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00  150.30% parse
+c         0.00   32.73% search
+c         0.00   32.12% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   30.39% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.00    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=204
++ wait 204
++ bdd_minisat_all_release /tmp/tmp.BOZyK0ZKJy.cnf
+/app/solve.sh: line 76:   204 Killed                  $4 "$cnf_tmp"
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_220.bnet"
+	User time (seconds): 71.20
+	System time (seconds): 7.34
+	Percent of CPU this job got: 101%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:17.15
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9418624
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2399025
+	Voluntary context switches: 3632
+	Involuntary context switches: 434
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 75.1s

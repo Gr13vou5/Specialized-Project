@@ -1,0 +1,19 @@
+targets, factors
+v_Arm, (v_Hipk & v_CK1alpha & !(!v_Dsh & v_Proteasome & v_Slmb))
+v_Boca, v_Boca
+v_CK1alpha, v_CK1alpha
+v_Dsh, ((v_Wg & !v_Nkd) | (v_Fz & !v_Nkd))
+v_Fz, (v_Wg & v_Boca)
+v_Gro, v_Gro
+v_Hipk, v_Hipk
+v_Hyx, v_Hyx
+v_Lgs, v_Lgs
+v_Nej, v_Nej
+v_Nkd, v_Nkd
+v_Pan, (v_Arm & !v_Pan)
+v_Proteasome, v_Proteasome
+v_Pygo, v_Pygo
+v_Slmb, v_Slmb
+v_Ttv, v_Ttv
+v_Wf, v_Wf
+v_Wg, v_Wg

@@ -1,0 +1,15 @@
+targets, factors
+v_FOXA2, v_FOXA2
+v_LRRK2, v_LRRK2
+v_NCOR2, v_NCOR2
+v_PBX1, v_PBX1
+v_PIAS4, v_PIAS4
+v_PIN1, v_PIN1
+v_PITX3, (v_TF_space_NR4A2_complex & !v_TF_space_PITX3_complex)
+v_SNCA, v_SNCA
+v_TF_space_FOXA1_2_complex, v_TF_space_FOXA1_2_complex
+v_TF_space_LMX1A_B_complex, v_TF_space_LMX1A_B_complex
+v_TF_space_NR4A2_complex, ((v_PITX3 | v_PIN1 | v_FOXA2 | v_retinoic_space_acid_simple_molecule) & v_sa6075_NR4A2_nucleus & !v_PIAS4 & !v_NCOR2 & !v_SNCA)
+v_TF_space_PITX3_complex, (!v_LRRK2 | v_PBX1)
+v_retinoic_space_acid_simple_molecule, v_retinoic_space_acid_simple_molecule
+v_sa6075_NR4A2_nucleus, v_sa6075_NR4A2_nucleus

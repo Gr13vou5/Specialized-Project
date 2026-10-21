@@ -1,0 +1,100 @@
+targets, factors
+v_AP1, (v_MEK1_2 | v_STAT4 | v_JNK)
+v_APC, v_APC
+v_B7, v_B7
+v_Bintegrin, (v_TCR | v_ECM)
+v_CARMA1, (v_DAG | v_CAV1_scaffold)
+v_CAV1_ACTIVATOR, v_CAV1_ACTIVATOR
+v_CAV1_scaffold, (v_CAV1_ACTIVATOR | v_Bintegrin)
+v_CD28, (v_B7 | v_APC)
+v_CD4, (v_TCR & v_MHC_II)
+v_CGC, v_CGC
+v_Cdc42, (v_Bintegrin | v_RhoGEF)
+v_DAG, (v_ZAP_70 | v_Galpha_QL)
+v_ECM, v_ECM
+v_FOXP3, ((v_NFAT & v_STAT5 & v_FOXP3) | (v_TGFBR & v_STAT5 & v_NFAT & !((v_STAT3 & v_RORGT) | v_STAT1)))
+v_FYN, (v_TCR | v_CAV1_scaffold)
+v_GAB2, (v_Shc1 & v_Grb2)
+v_GADD45B, (v_IL12_e & v_TCR)
+v_GADD45G, (v_IL12_e | v_TCR)
+v_GATA3, ((v_IL4R & !v_TBET) | v_GATA3)
+v_GP130, v_GP130
+v_GalphaS_L, v_GalphaS_L
+v_Galpha_QL, v_Galpha_QL
+v_Galpha_iL, v_Galpha_iL
+v_Grb2, (v_ZAP_70 | v_Shc1)
+v_IFNB_e, v_IFNB_e
+v_IFNG, ((v_AP1 & v_STAT4 & !(v_FOXP3 | v_STAT3)) | (v_STAT4 & v_NFAT & v_proliferation & !(v_FOXP3 | v_STAT3)) | (v_TBET & !(v_FOXP3 | v_STAT3)) | (v_MEKK4 & !(v_FOXP3 | v_STAT3)))
+v_IFNGR, ((v_IFNG_e & v_IFNGR2 & v_IFNGR1) | (v_IFNG & v_IFNGR2 & v_IFNGR1))
+v_IFNGR1, v_IFNGR1
+v_IFNGR2, v_IFNGR2
+v_IFNG_e, v_IFNG_e
+v_IKKcomplex, (v_IL18_e | v_CARMA1 | v_TCR)
+v_IL10, (v_NFAT & (v_STAT3 | v_GATA3) & v_proliferation)
+v_IL10R, ((v_IL10 & v_IL10RB & v_IL10RA) | (v_IL10_e & v_IL10RB & v_IL10RA))
+v_IL10RA, v_IL10RA
+v_IL10RB, v_IL10RB
+v_IL10_e, v_IL10_e
+v_IL12RB1, (v_STAT1 | v_IL12_e)
+v_IL12_e, v_IL12_e
+v_IL15R, (v_CGC & v_IL2RB & v_IL15RA & v_IL15_e)
+v_IL15RA, v_IL15RA
+v_IL15_e, v_IL15_e
+v_IL18_e, v_IL18_e
+v_IL2, ((v_NFKB & !((v_STAT5 & v_IL4R) | (v_TBET & v_NFKB))) | (v_NFAT & !v_FOXP3 & !((v_STAT5 & v_IL4R) | (v_TBET & v_NFKB))))
+v_IL21, (v_NFAT & v_STAT3 & v_proliferation)
+v_IL21R, ((v_IL21 & v_CGC & v_GP130) | (v_IL21_e & v_CGC & v_GP130))
+v_IL21_e, v_IL21_e
+v_IL22_e, v_IL22_e
+v_IL23, (v_NFAT & v_STAT3 & v_proliferation)
+v_IL23R, ((v_IL23 & v_IL12RB1 & v_STAT3 & v_RORGT & v_GP130) | (v_IL23_e & v_IL12RB1 & v_STAT3 & v_RORGT & v_GP130))
+v_IL23_e, v_IL23_e
+v_IL27R, (v_GP130 & v_IL27_e & v_IL27RA)
+v_IL27RA, v_IL27RA
+v_IL27_e, v_IL27_e
+v_IL2R, ((v_IL2 & v_CGC & v_IL2RB & !v_IL2RA) | (v_IL2_e & v_CGC & v_IL2RB & !v_IL2RA))
+v_IL2RA, ((v_NFKB & v_NFAT) | (v_FOXP3 & v_NFAT) | (v_STAT5 & v_NFAT) | (v_TGFBR & v_NFAT))
+v_IL2RB, v_IL2RB
+v_IL2R_HIGH, ((v_IL2 & v_CGC & v_IL2RB & v_IL2RA) | (v_IL2_e & v_CGC & v_IL2RB & v_IL2RA))
+v_IL2_e, v_IL2_e
+v_IL4R, ((v_GATA3 & v_CGC & !v_STAT5_HIGH) | (v_IL4_e & v_CGC & !v_STAT5_HIGH))
+v_IL4R_HIGH, ((v_IL4_e & v_CGC & v_STAT5_HIGH) | (v_GATA3 & v_CGC & v_STAT5_HIGH))
+v_IL4_e, v_IL4_e
+v_IL6R, (v_GP130 & v_IL6RA & v_IL6_e)
+v_IL6RA, v_IL6RA
+v_IL6_e, v_IL6_e
+v_IL9R, (v_IL9_e | v_IL2R)
+v_IL9_e, v_IL9_e
+v_JAK1, ((v_IL22_e & !v_STAT3) | (v_IL2R & !v_STAT3) | (v_IL9R & !v_STAT3))
+v_JAK2, (v_IL12RB1 & v_IL12_e)
+v_JNK, (v_IL18_e | v_MEKK4 | (v_rac1 & v_Bintegrin))
+v_Lck, ((v_IL2R & v_IL2RB) | v_CD4 | v_CD28)
+v_MEK1_2, (v_Ras | v_PAK | v_Rap1)
+v_MEKK4, (v_GADD45B & v_GADD45G)
+v_MHC_II, v_MHC_II
+v_NFAT, ((v_CD28 & v_TCR) | (v_TCR & v_CD28) | (v_ZAP_70 & v_MEKK4 & v_PI3K))
+v_NFKB, !(!v_IKKcomplex | v_FOXP3)
+v_PAK, (v_rac1 | v_ZAP_70 | v_Cdc42)
+v_PI3K, (v_IL2R | v_Ras | v_SHP2 | v_Bintegrin | v_GAB2 | (v_CD28 & v_APC))
+v_RORGT, ((v_TGFBR & v_STAT3) | (v_RORGT & (v_TGFBR | v_STAT3)))
+v_Rap1, (v_GalphaS_L | v_Bintegrin)
+v_Ras, (v_DAG | v_Grb2)
+v_RhoGEF, (v_alpha_13L | v_Bintegrin)
+v_SHP2, (v_IL2RB | v_GAB2)
+v_SOCS1, (v_IL4R | v_STAT3)
+v_STAT1, ((v_IFNGR & !v_SOCS1) | (v_IL27R & !v_SOCS1) | (v_IFNB_e & !v_SOCS1))
+v_STAT3, (v_IL10R | v_IL27R | v_IL6R | v_IL21R | v_IL23R)
+v_STAT4, ((v_MEKK4 & v_Tyk2 & !v_GATA3) | (v_JAK2 & !v_GATA3))
+v_STAT5, (v_IL4R | v_IL2R | v_JAK1 | v_IL15R | v_Lck)
+v_STAT5_HIGH, (v_IL4R_HIGH | v_IL2R_HIGH)
+v_Shc1, (v_FYN | (v_IL2RB & v_IL2R))
+v_TBET, ((v_TBET & !v_GATA3) | (v_STAT1 & !v_GATA3))
+v_TCR, (v_APC & v_CD28)
+v_TGFB, (v_FOXP3 & v_NFAT & v_proliferation)
+v_TGFBR, (v_TGFB | v_TGFB_e)
+v_TGFB_e, v_TGFB_e
+v_Tyk2, (v_IL12RB1 & v_IL12_e)
+v_ZAP_70, (v_Lck & v_TCR)
+v_alpha_13L, v_alpha_13L
+v_proliferation, (v_STAT5_HIGH | v_proliferation)
+v_rac1, (v_ZAP_70 | v_Bintegrin | v_CAV1_scaffold)

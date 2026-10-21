@@ -1,0 +1,45 @@
+targets, factors
+v_ADAM17, v_ADAM17
+v_AKT, (!(v_EBP1 & v_INPP4B & v_AR) & !(!v_Cdc37 & !v_PKIB & !v_NFKB & !v_Bmi1 & !v_PI3K))
+v_AR, (!v_TGFB & v_ERBB2 & v_EGFR & v_FOXO1 & !v_Bmi1 & v_Wnt & v_EBP1 & !(v_SIAH2 & !v_CK2) & !(!v_AKT & !v_CACNA1D & !v_EP300 & !v_MED1 & !v_FHL2 & !v_NFKB & !v_Vav3 & !v_IL_6))
+v_Bmi1, !(v_PTEN & !v_E2F1)
+v_CACNA1D, (v_TMPRSS2 & v_ERG)
+v_CDKN1A, (!(v_RAC1 & !v_ZnT4) & !(!v_SMAD3 & !v_TGFB))
+v_CK2, v_CK2
+v_Cdc37, v_Cdc37
+v_E2F1, !(!v_CDKN1A & !v_AKT)
+v_EBP1, v_EBP1
+v_EGFR, !(!v_ADAM17 & v_MTUS1)
+v_EP300, !(!v_IL_4 & !v_E2F1)
+v_ERBB2, !(!v_Cdc37 & v_MTUS1)
+v_ERG, v_ERG
+v_ERK, !(!v_TRAP6 & !v_Bmi1 & !v_TGFB & !v_MEK)
+v_EpCAM, v_EpCAM
+v_FHL2, v_FHL2
+v_FOXO1, (!v_FHL2 & v_PTEN)
+v_IGF_1, !(!v_Wnt & v_CACNA1D)
+v_IL_4, v_IL_4
+v_IL_6, !(!v_MAPK & !v_NFKB)
+v_INPP4B, (v_AR & !v_CK2)
+v_KAT5, v_KAT5
+v_MAPK, !(!v_ERK & !v_CACNA1D & v_MTUS1 & !v_TGFB & !v_Bmi1)
+v_MED1, !(!v_ERK & !v_AKT)
+v_MED15, v_MED15
+v_MEK, !(!v_Raf & !v_IGF_1 & !v_EGFR)
+v_MTUS1, v_MTUS1
+v_NFKB, (!v_AKT & !(!v_IGF_1 & !v_TGFB & !v_AR & !v_IL_6 & !v_Bmi1 & v_ZnT4 & !v_Wnt & !v_RhoGAP & !v_AKT))
+v_PI3K, !(v_MTUS1 & !v_IL_4 & v_PTEN & !v_TGFB & !v_EpCAM & !v_KAT5 & !v_Vav3)
+v_PKIB, v_PKIB
+v_PTEN, v_PTEN
+v_RAC1, v_RAC1
+v_Raf, (!v_AKT & !(!v_Cdc37 & !v_EGFR))
+v_RhoGAP, v_RhoGAP
+v_SIAH2, v_SIAH2
+v_SKIP, v_SKIP
+v_SMAD3, !(!v_TGFB & !v_MED15)
+v_TGFB, !(!v_AR & !v_SKIP & !v_MED15)
+v_TMPRSS2, v_TMPRSS2
+v_TRAP6, v_TRAP6
+v_Vav3, v_Vav3
+v_Wnt, v_Wnt
+v_ZnT4, v_ZnT4

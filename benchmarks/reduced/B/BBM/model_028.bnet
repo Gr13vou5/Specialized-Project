@@ -1,0 +1,15 @@
+targets, factors
+v_CNK, v_CNK
+v_Ksr, v_Ksr
+v_Pnt, v_Rl
+v_Pvf1, v_Pvf1
+v_Pvf2, v_Pvf2
+v_Pvf3, v_Pvf3
+v_Pvr, (v_Pvf2 | v_Pvf1 | v_Pvf3)
+v_Raf, (v_Ras & v_CNK & v_Ksr & v_Src42)
+v_Ras, (v_Pvr & !v_Sty)
+v_Rl, (v_Raf & v_msk)
+v_Src42, v_Src42
+v_Sty, v_Sty
+v_Targets, (v_Pnt & v_Rl)
+v_msk, v_msk

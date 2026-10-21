@@ -1,0 +1,27 @@
+targets, factors
+v_IFN_III_rna, (v_RIG_I_MAVS_complex_mitochondrion | v_dsRNA_rna)
+v_IFN_sensitive_response_element_gene, v_IFN_sensitive_response_element_gene
+v_IRF9, v_IRF9
+v_Ifn_lambda_complex, (v_IFN_III_rna | v_csa10_receptor_complex_complex_cell)
+v_M, v_M
+v_MAVS, v_MAVS
+v_Nsp1, v_Nsp1
+v_PLPro, v_PLPro
+v_RIG_I, v_RIG_I
+v_RIG_I_MAVS_complex_mitochondrion, (v_csa37_RIG_I_dsRNA_complex_mitochondrion & v_MAVS)
+v_RNA_rna, v_RNA_rna
+v_Riplet_TRIM25_complex, v_Riplet_TRIM25_complex
+v_SOCS1, v_SOCS1
+v_SOCS3, v_SOCS3
+v_STAT1_empty, v_STAT1_empty
+v_STAT2_empty, v_STAT2_empty
+v_STAT3, v_STAT3
+v_csa10_receptor_complex_complex_cell, (v_csa10_receptor_complex_complex_cell & v_Ifn_lambda_complex)
+v_csa36_RIG_I_dsRNA_complex_mitochondrion, ((v_RIG_I & v_dsRNA_rna) | (v_csa37_RIG_I_dsRNA_complex_mitochondrion & v_PLPro))
+v_csa37_RIG_I_dsRNA_complex_mitochondrion, (v_csa36_RIG_I_dsRNA_complex_mitochondrion & v_Riplet_TRIM25_complex)
+v_dsRNA_rna, (v_dsRNA_rna | v_RNA_rna)
+v_nsp14, v_nsp14
+v_nsp16, v_nsp16
+v_ribosomal_40S_subunit_complex, v_ribosomal_40S_subunit_complex
+v_ribosomal_60S_subunit_complex, v_ribosomal_60S_subunit_complex
+v_viral_RNA_rna, v_viral_RNA_rna

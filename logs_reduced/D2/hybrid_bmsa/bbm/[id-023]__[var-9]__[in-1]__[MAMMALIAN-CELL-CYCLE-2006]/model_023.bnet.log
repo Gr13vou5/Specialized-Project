@@ -1,0 +1,266 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:08:27 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_023.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-98 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_023.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_023.bnet --cnf /tmp/tmp.MymUm4wUTb.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_023.bnet, cnfFileName = /tmp/tmp.MymUm4wUTb.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector(Set(!v_CycB, !v_p27, !v_CycA), Set(!v_CycB, v_p27), Set(v_CycB)))
+Some(Vector(Set(!v_CycB, !v_p27, v_CycA)))
+(Set(!v_CycB, !v_p27, !v_CycA),Set(4, 6, 3))
+(Set(!v_CycB, v_p27),Set(4, -6))
+(Set(v_CycB),Set(-4))
+(Set(!v_CycB, !v_p27, v_CycA),Set(4, 6, -3))
+
+Some(Vector(Set(!v_UbcH10, !v_Rb, !v_CycB, v_E2F), Set(!v_Rb, !v_CycB, !v_Cdh1, v_E2F)))
+Some(Vector(Set(v_Cdh1, v_UbcH10), Set(v_Rb), Set(v_CycB)))
+(Set(!v_UbcH10, !v_Rb, !v_CycB, v_E2F),Set(1, 9, -5, 4))
+(Set(!v_Rb, !v_CycB, !v_Cdh1, v_E2F),Set(1, 2, -5, 4))
+(Set(v_Cdh1, v_UbcH10),Set(-2, -9))
+(Set(v_Rb),Set(-1))
+(Set(v_CycB),Set(-4))
+
+Some(Vector(Set(!v_Cdh1)))
+Some(Vector(Set(v_CycB)))
+(Set(!v_Cdh1),Set(2))
+(Set(v_CycB),Set(-4))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_E2F, !v_Rb)))
+Some(Vector(Set(v_Rb), Set(!v_E2F)))
+(Set(v_E2F, !v_Rb),Set(-5, 1))
+(Set(v_Rb),Set(-1))
+(Set(!v_E2F),Set(5))
+
+Some(Vector(Set(!v_p27, !v_CycB, !v_Rb, !v_CycA), Set(v_p27, !v_CycB, !v_Rb)))
+Some(Vector(Set(!v_p27, v_CycA), Set(v_Rb), Set(v_CycB)))
+(Set(!v_p27, !v_CycB, !v_Rb, !v_CycA),Set(6, 4, 1, 3))
+(Set(v_p27, !v_CycB, !v_Rb),Set(-6, 4, 1))
+(Set(!v_p27, v_CycA),Set(6, -3))
+(Set(v_Rb),Set(-1))
+(Set(v_CycB),Set(-4))
+
+Some(Vector(Set(!v_CycD, !v_CycE, !v_CycA, !v_CycB, !v_p27), Set(!v_CycB, v_p27, !v_CycD)))
+Some(Vector(Set(v_CycA, !v_p27), Set(!v_p27, v_CycE), Set(v_CycB), Set(v_CycD)))
+(Set(!v_CycD, !v_CycE, !v_CycA, !v_CycB, !v_p27),Set(6, 7, 3, 8, 4))
+(Set(!v_CycB, v_p27, !v_CycD),Set(4, -6, 8))
+(Set(v_CycA, !v_p27),Set(-3, 6))
+(Set(!v_p27, v_CycE),Set(6, -7))
+(Set(v_CycB),Set(-4))
+(Set(v_CycD),Set(-8))
+
+Some(Vector(Set(!v_Cdh1, !v_CycB, !v_CycA), Set(!v_Cdh1, v_CycB), Set(!v_Cdh1, v_CycA)))
+Some(Vector(Set(v_Cdh1, !v_CycB, !v_CycA)))
+(Set(!v_Cdh1, !v_CycB, !v_CycA),Set(2, 4, 3))
+(Set(!v_Cdh1, v_CycB),Set(2, -4))
+(Set(!v_Cdh1, v_CycA),Set(2, -3))
+(Set(v_Cdh1, !v_CycB, !v_CycA),Set(-2, 4, 3))
+
+Some(Vector(Set(!v_CycD, !v_CycE, !v_CycA, !v_CycB)))
+Some(Vector(Set(v_CycB), Set(v_CycA, v_CycE), Set(v_CycD)))
+(Set(!v_CycD, !v_CycE, !v_CycA, !v_CycB),Set(7, 3, 8, 4))
+(Set(v_CycB),Set(-4))
+(Set(v_CycA, v_CycE),Set(-3, -7))
+(Set(v_CycD),Set(-8))
+Map(v_Rb -> 1, v_Cdh1 -> 2, v_CycA -> 3, v_CycB -> 4, v_E2F -> 5, v_p27 -> 6, v_CycE -> 7, v_CycD -> 8, v_UbcH10 -> 9)
+p cnf 9 33
+4 6 3 2 0
+4 -6 2 0
+-4 2 0
+4 6 -3 -2 0
+1 9 -5 3 4 0
+1 2 -5 3 4 0
+-2 -9 -3 0
+-1 -3 0
+-4 -3 0
+2 4 0
+-4 0
+-5 1 7 0
+-1 -7 0
+5 -7 0
+5 1 6 3 4 0
+-6 4 1 5 0
+6 -3 -5 0
+-1 -5 0
+-4 -5 0
+1 6 7 3 8 4 0
+4 -6 8 1 0
+-3 6 -1 0
+6 -7 -1 0
+-4 -1 0
+-8 -1 0
+2 4 3 9 0
+2 -4 9 0
+2 -3 9 0
+-2 4 3 -9 0
+6 7 3 8 4 0
+-4 -6 0
+-3 -7 -6 0
+-8 -6 0
++ exit_status=0
++ set +x
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.MymUm4wUTb.cnf'
+c opening file to read '/tmp/tmp.MymUm4wUTb.cnf'
+c found 'p cnf 9 33' header
+c parsed 33 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   26   7 78%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   26   7 78%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   26   7 78%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v 1 2 -3 -4 -5 6 -7 -8 -9 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   54.70% parse
+c         0.00   26.50% search
+c         0.00   24.79% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   42.09% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c fixed:                         2        22.22 %  of all variables
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  2         0.02 M  per second
+c ticks:                        13         6.50    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.00    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=47
++ wait 47
++ bdd_minisat_all_release /tmp/tmp.MymUm4wUTb.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.MymUm4wUTb.cnf
+variables         :            9
+cutwidth          :           17
+restarts          :            1
+conflicts         :            2           (      inf / sec      )
+decisions         :            3           (      inf / sec      )
+propagations      :           15           (      inf / sec      )
+inspects          :           30           (      inf / sec      )
+conflict literals :            3           (     0.00 % deleted  )
+cpu time (solve)  :         0.00 sec	
+refreshes         :            0
+|obdd|            :            9
+cache hits        :            0
+cache lookup      :            1
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :            1
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_023.bnet"
+	User time (seconds): 0.87
+	System time (seconds): 0.13
+	Percent of CPU this job got: 164%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.61
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 152300
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 35274
+	Voluntary context switches: 2099
+	Involuntary context switches: 24
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 0.9s

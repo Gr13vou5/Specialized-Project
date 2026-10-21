@@ -1,0 +1,2343 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:53:09 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_122.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-253 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_122.bnet
+------------------------------------------------------------
+# ENCODE START
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_122.bnet --cnf /tmp/tmp.H93i5tmYHm.cnf -h3
++ cmd_pid=11
++ wait 11
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_122.bnet, cnfFileName = /tmp/tmp.H93i5tmYHm.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Aminoimidazole_ribotide_simple_molecule, v_CO2_simple_molecule, v_PAICS)))
+Some(Vector(Set(!v_PAICS), Set(!v_CO2_simple_molecule), Set(!v_Aminoimidazole_ribotide_simple_molecule)))
+(Set(v_Aminoimidazole_ribotide_simple_molecule, v_CO2_simple_molecule, v_PAICS),Set(-60, -5, -63))
+(Set(!v_PAICS),Set(63))
+(Set(!v_CO2_simple_molecule),Set(5))
+(Set(!v_Aminoimidazole_ribotide_simple_molecule),Set(60))
+
+Some(Vector(Set(v_1__5_Phospho_D_ribosyl__5_amino_4_imidazolecarboxylate_simple_molecule, v_L_Aspartate_simple_molecule, v_ATP_simple_molecule, v_PAICS)))
+Some(Vector(Set(!v_PAICS), Set(!v_ATP_simple_molecule), Set(!v_L_Aspartate_simple_molecule), Set(!v_1__5_Phospho_D_ribosyl__5_amino_4_imidazolecarboxylate_simple_molecule)))
+(Set(v_1__5_Phospho_D_ribosyl__5_amino_4_imidazolecarboxylate_simple_molecule, v_L_Aspartate_simple_molecule, v_ATP_simple_molecule, v_PAICS),Set(-48, -9, -85, -63))
+(Set(!v_PAICS),Set(63))
+(Set(!v_ATP_simple_molecule),Set(85))
+(Set(!v_L_Aspartate_simple_molecule),Set(9))
+(Set(!v_1__5_Phospho_D_ribosyl__5_amino_4_imidazolecarboxylate_simple_molecule),Set(48))
+
+Some(Vector(Set(v_1__5__Phosphoribosyl__5_amino_4__N_succinocarboxamide__imidazole_simple_molecule, v_ADSL)))
+Some(Vector(Set(!v_ADSL), Set(!v_1__5__Phosphoribosyl__5_amino_4__N_succinocarboxamide__imidazole_simple_molecule)))
+(Set(v_1__5__Phosphoribosyl__5_amino_4__N_succinocarboxamide__imidazole_simple_molecule, v_ADSL),Set(-99, -28))
+(Set(!v_ADSL),Set(28))
+(Set(!v_1__5__Phosphoribosyl__5_amino_4__N_succinocarboxamide__imidazole_simple_molecule),Set(99))
+
+Some(Vector(Set(v_1__5__Phosphoribosyl__5_amino_4_imidazolecarboxamide_simple_molecule, v_10_Formyltetrahydrofolate_simple_molecule, v_ATIC)))
+Some(Vector(Set(!v_ATIC), Set(!v_10_Formyltetrahydrofolate_simple_molecule), Set(!v_1__5__Phosphoribosyl__5_amino_4_imidazolecarboxamide_simple_molecule)))
+(Set(v_1__5__Phosphoribosyl__5_amino_4_imidazolecarboxamide_simple_molecule, v_10_Formyltetrahydrofolate_simple_molecule, v_ATIC),Set(-4, -97, -37))
+(Set(!v_ATIC),Set(37))
+(Set(!v_10_Formyltetrahydrofolate_simple_molecule),Set(97))
+(Set(!v_1__5__Phosphoribosyl__5_amino_4_imidazolecarboxamide_simple_molecule),Set(4))
+
+Some(Vector(Set(v_5_phosphoribosyl_N_formylglycinamide_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_PFAS)))
+Some(Vector(Set(!v_H2O_simple_molecule_cell), Set(!v_L_Glutamine_simple_molecule), Set(!v_PFAS), Set(!v_ATP_simple_molecule), Set(!v_5_phosphoribosyl_N_formylglycinamide_simple_molecule)))
+(Set(v_5_phosphoribosyl_N_formylglycinamide_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_PFAS),Set(-15, -20, -52, -85, -2))
+(Set(!v_H2O_simple_molecule_cell),Set(52))
+(Set(!v_L_Glutamine_simple_molecule),Set(2))
+(Set(!v_PFAS),Set(15))
+(Set(!v_ATP_simple_molecule),Set(85))
+(Set(!v_5_phosphoribosyl_N_formylglycinamide_simple_molecule),Set(20))
+
+Some(Vector(Set(v_Deoxyguanosine_simple_molecule, v_Pi_simple_molecule, v_PNP)))
+Some(Vector(Set(!v_PNP), Set(!v_Pi_simple_molecule), Set(!v_Deoxyguanosine_simple_molecule)))
+(Set(v_Deoxyguanosine_simple_molecule, v_Pi_simple_molecule, v_PNP),Set(-82, -87, -21))
+(Set(!v_PNP),Set(21))
+(Set(!v_Pi_simple_molecule),Set(87))
+(Set(!v_Deoxyguanosine_simple_molecule),Set(82))
+
+Some(Vector(Set(v_PRPS1L1, v_ATP_simple_molecule, v_D_Ribose_5P_simple_molecule), Set(v_PRPS2, v_ATP_simple_molecule, v_D_Ribose_5P_simple_molecule), Set(v_PRPS1, v_ATP_simple_molecule, v_D_Ribose_5P_simple_molecule)))
+Some(Vector(Set(!v_ATP_simple_molecule), Set(!v_D_Ribose_5P_simple_molecule), Set(!v_PRPS1, !v_PRPS1L1, !v_PRPS2)))
+(Set(v_PRPS1L1, v_ATP_simple_molecule, v_D_Ribose_5P_simple_molecule),Set(-18, -85, -109))
+(Set(v_PRPS2, v_ATP_simple_molecule, v_D_Ribose_5P_simple_molecule),Set(-32, -85, -109))
+(Set(v_PRPS1, v_ATP_simple_molecule, v_D_Ribose_5P_simple_molecule),Set(-7, -85, -109))
+(Set(!v_ATP_simple_molecule),Set(85))
+(Set(!v_D_Ribose_5P_simple_molecule),Set(109))
+(Set(!v_PRPS1, !v_PRPS1L1, !v_PRPS2),Set(7, 18, 32))
+
+Some(Vector(Set(v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_PPAT)))
+Some(Vector(Set(!v_PPAT), Set(!v_L_Glutamine_simple_molecule), Set(!v_H2O_simple_molecule_cell), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule)))
+(Set(v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_PPAT),Set(-93, -52, -2, -101))
+(Set(!v_PPAT),Set(101))
+(Set(!v_L_Glutamine_simple_molecule),Set(2))
+(Set(!v_H2O_simple_molecule_cell),Set(52))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(93))
+
+Some(Vector(Set(v_5_phospho_beta_D_ribosylamine_simple_molecule, v_Glycine_simple_molecule, v_ATP_simple_molecule, v_GART)))
+Some(Vector(Set(!v_GART), Set(!v_ATP_simple_molecule), Set(!v_Glycine_simple_molecule), Set(!v_5_phospho_beta_D_ribosylamine_simple_molecule)))
+(Set(v_5_phospho_beta_D_ribosylamine_simple_molecule, v_Glycine_simple_molecule, v_ATP_simple_molecule, v_GART),Set(-119, -26, -85, -83))
+(Set(!v_GART),Set(83))
+(Set(!v_ATP_simple_molecule),Set(85))
+(Set(!v_Glycine_simple_molecule),Set(26))
+(Set(!v_5_phospho_beta_D_ribosylamine_simple_molecule),Set(119))
+
+Some(Vector(Set(v_5_phospho_beta_D_ribosylglycinamide_simple_molecule, v_10_Formyltetrahydrofolate_simple_molecule, v_GART)))
+Some(Vector(Set(!v_GART), Set(!v_10_Formyltetrahydrofolate_simple_molecule), Set(!v_5_phospho_beta_D_ribosylglycinamide_simple_molecule)))
+(Set(v_5_phospho_beta_D_ribosylglycinamide_simple_molecule, v_10_Formyltetrahydrofolate_simple_molecule, v_GART),Set(-12, -97, -83))
+(Set(!v_GART),Set(83))
+(Set(!v_10_Formyltetrahydrofolate_simple_molecule),Set(97))
+(Set(!v_5_phospho_beta_D_ribosylglycinamide_simple_molecule),Set(12))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_dGMP_simple_molecule, v_ATP_simple_molecule, v_GUK1), Set(v_5_phosphoribosyl_N_formylglycinamide_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_PFAS), Set(v_2__Formamido__N1__5__phosphoribosyl_acetamidine_simple_molecule, v_GART, v_ATP_simple_molecule), Set(v_AMP_simple_molecule, v_ATP_simple_molecule, v_AK8), Set(v_AMP_simple_molecule, v_ATP_simple_molecule, v_AK1), Set(v_AK7, v_AMP_simple_molecule, v_ATP_simple_molecule), Set(v_AMP_simple_molecule, v_ATP_simple_molecule, v_AK5), Set(v_NRK1, v_ATP_simple_molecule, v_N_Ribosyl_nicotinamide_simple_molecule), Set(v_dAMP_simple_molecule, v_ATP_simple_molecule, v_AK5), Set(v_Deoxyadenosine_simple_molecule, v_DCK, v_ATP_simple_molecule), Set(v_Glycine_simple_molecule, v_GART, v_ATP_simple_molecule, v_5_phospho_beta_D_ribosylamine_simple_molecule), Set(v_L_Aspartate_simple_molecule, v_1__5_Phospho_D_ribosyl__5_amino_4_imidazolecarboxylate_simple_molecule, v_PAICS, v_ATP_simple_molecule), Set(v_Deamino_NAD_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_NADSYN1, v_L_Glutamine_simple_molecule), Set(v_NAD_simple_molecule, v_ATP_simple_molecule, v_NADK), Set(v_GALK1, v_ATP_simple_molecule, v__alpha__D_Galactose_simple_molecule), Set(v_ADK, v_ATP_simple_molecule, v_Adenosine_simple_molecule), Set(v_ATP_simple_molecule, v_dADP_simple_molecule, v_csa5_Nucleoside_diphosphate_kinase_complex_cell), Set(v_NME6, v_ATP_simple_molecule, v_dADP_simple_molecule), Set(v_ATP_simple_molecule, v_dADP_simple_molecule, v_NME5), Set(v_NME7, v_ATP_simple_molecule, v_dADP_simple_molecule), Set(v_ATP_simple_molecule, v_NME3, v_dADP_simple_molecule), Set(v_DCK, v_Deoxyguanosine_simple_molecule, v_ATP_simple_molecule), Set(v_GDP_simple_molecule, v_NME6, v_ATP_simple_molecule), Set(v_GDP_simple_molecule, v_ATP_simple_molecule, v_NME5), Set(v_csa2_Nucleoside_diphosphate_kinase_complex_cell, v_GDP_simple_molecule, v_ATP_simple_molecule), Set(v_NME7, v_GDP_simple_molecule, v_ATP_simple_molecule), Set(v_GDP_simple_molecule, v_ATP_simple_molecule, v_NME3), Set(v_GMP_simple_molecule, v_ATP_simple_molecule, v_GUK1), Set(v_csa2_Nucleoside_diphosphate_kinase_complex_cell, v_dGDP_simple_molecule, v_ATP_simple_molecule), Set(v_NME6, v_dGDP_simple_molecule, v_ATP_simple_molecule), Set(v_dGDP_simple_molecule, v_ATP_simple_molecule, v_NME5), Set(v_NME7, v_dGDP_simple_molecule, v_ATP_simple_molecule), Set(v_dGDP_simple_molecule, v_ATP_simple_molecule, v_NME3), Set(v_ATP_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_Nicotinate_simple_molecule, v_NAPRT1, v_H2O_simple_molecule_cell)))
+None
+
+# Use TseitinTransitionEncoder
+
+# Formula
+Or(And(v_ATP_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_Nicotinate_simple_molecule, v_NAPRT1, v_H2O_simple_molecule_cell), And(Or(v_NME3, v_NME7, v_csa2_Nucleoside_diphosphate_kinase_complex_cell, v_NME5, v_NME6), v_dGDP_simple_molecule, v_ATP_simple_molecule), And(v__alpha__D_Galactose_simple_molecule, v_ATP_simple_molecule, v_GALK1), And(v_GMP_simple_molecule, v_ATP_simple_molecule, v_GUK1), And(Or(v_NME3, v_NME7, v_csa2_Nucleoside_diphosphate_kinase_complex_cell, v_NME5, v_NME6), v_GDP_simple_molecule, v_ATP_simple_molecule), And(v_Deoxyguanosine_simple_molecule, v_ATP_simple_molecule, v_DCK), And(Or(v_NME3, v_csa5_Nucleoside_diphosphate_kinase_complex_cell, v_NME7, v_NME5, v_NME6), v_dADP_simple_molecule, v_ATP_simple_molecule), And(v_Adenosine_simple_molecule, v_ATP_simple_molecule, v_ADK), And(v_NAD_simple_molecule, v_ATP_simple_molecule, v_NADK), And(v_dGMP_simple_molecule, v_ATP_simple_molecule, v_GUK1), And(v_Deamino_NAD_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_NADSYN1, v_L_Glutamine_simple_molecule), And(v_1__5_Phospho_D_ribosyl__5_amino_4_imidazolecarboxylate_simple_molecule, v_L_Aspartate_simple_molecule, v_ATP_simple_molecule, v_PAICS), And(v_5_phospho_beta_D_ribosylamine_simple_molecule, v_Glycine_simple_molecule, v_ATP_simple_molecule, v_GART), And(v_Deoxyadenosine_simple_molecule, v_ATP_simple_molecule, v_DCK), And(v_dAMP_simple_molecule, v_ATP_simple_molecule, v_AK5), And(v_N_Ribosyl_nicotinamide_simple_molecule, v_ATP_simple_molecule, v_NRK1), And(Or(v_AK7, v_AK1, v_AK8, v_AK5), v_AMP_simple_molecule, v_ATP_simple_molecule), And(v_2__Formamido__N1__5__phosphoribosyl_acetamidine_simple_molecule, v_ATP_simple_molecule, v_GART), And(v_5_phosphoribosyl_N_formylglycinamide_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_PFAS))
+Or(And(v_ATP_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_Nicotinate_simple_molecule, v_NAPRT1, v_H2O_simple_molecule_cell), And(Or(v_NME3, v_NME7, v_csa2_Nucleoside_diphosphate_kinase_complex_cell, v_NME5, v_NME6), v_dGDP_simple_molecule, v_ATP_simple_molecule), And(v__alpha__D_Galactose_simple_molecule, v_ATP_simple_molecule, v_GALK1), And(v_GMP_simple_molecule, v_ATP_simple_molecule, v_GUK1), And(Or(v_NME3, v_NME7, v_csa2_Nucleoside_diphosphate_kinase_complex_cell, v_NME5, v_NME6), v_GDP_simple_molecule, v_ATP_simple_molecule), And(v_Deoxyguanosine_simple_molecule, v_ATP_simple_molecule, v_DCK), And(Or(v_NME3, v_csa5_Nucleoside_diphosphate_kinase_complex_cell, v_NME7, v_NME5, v_NME6), v_dADP_simple_molecule, v_ATP_simple_molecule), And(v_Adenosine_simple_molecule, v_ATP_simple_molecule, v_ADK), And(v_NAD_simple_molecule, v_ATP_simple_molecule, v_NADK), And(v_dGMP_simple_molecule, v_ATP_simple_molecule, v_GUK1), And(v_Deamino_NAD_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_NADSYN1, v_L_Glutamine_simple_molecule), And(v_1__5_Phospho_D_ribosyl__5_amino_4_imidazolecarboxylate_simple_molecule, v_L_Aspartate_simple_molecule, v_ATP_simple_molecule, v_PAICS), And(v_5_phospho_beta_D_ribosylamine_simple_molecule, v_Glycine_simple_molecule, v_ATP_simple_molecule, v_GART), And(v_Deoxyadenosine_simple_molecule, v_ATP_simple_molecule, v_DCK), And(v_dAMP_simple_molecule, v_ATP_simple_molecule, v_AK5), And(v_N_Ribosyl_nicotinamide_simple_molecule, v_ATP_simple_molecule, v_NRK1), And(Or(v_AK7, v_AK1, v_AK8, v_AK5), v_AMP_simple_molecule, v_ATP_simple_molecule), And(v_2__Formamido__N1__5__phosphoribosyl_acetamidine_simple_molecule, v_ATP_simple_molecule, v_GART), And(v_5_phosphoribosyl_N_formylglycinamide_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_PFAS))
+# Output lit: 24, x lit: 171
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_PRPS1L1, v_ATP_simple_molecule, v_D_Ribose_5P_simple_molecule), Set(v_PRPS2, v_ATP_simple_molecule, v_D_Ribose_5P_simple_molecule), Set(v_PRPS1, v_ATP_simple_molecule, v_D_Ribose_5P_simple_molecule), Set(v_Adenine_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_APRT), Set(v_ADK, v_ATP_simple_molecule, v_Adenosine_simple_molecule), Set(v_ATP_simple_molecule, v_GMPS, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_XMP_simple_molecule), Set(v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_ENPP3), Set(v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_ENPP1)))
+Some(Vector(Set(!v_ADK, !v_NAD_simple_molecule, !v_L_Glutamine_simple_molecule, !v_APRT, !v_D_Ribose_5P_simple_molecule), Set(!v_ADK, !v_NAD_simple_molecule, !v_XMP_simple_molecule, !v_APRT, !v_D_Ribose_5P_simple_molecule), Set(!v_ADK, !v_GMPS, !v_NAD_simple_molecule, !v_APRT, !v_D_Ribose_5P_simple_molecule), Set(!v_ADK, !v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_XMP_simple_molecule, !v_APRT, !v_PRPS1L1), Set(!v_ADK, !v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_L_Glutamine_simple_molecule, !v_APRT, !v_PRPS1L1), Set(!v_ADK, !v_PRPS2, !v_GMPS, !v_NAD_simple_molecule, !v_PRPS1, !v_APRT, !v_PRPS1L1), Set(!v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_APRT, !v_PRPS1L1), Set(!v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_APRT, !v_D_Ribose_5P_simple_molecule), Set(!v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_APRT, !v_D_Ribose_5P_simple_molecule), Set(!v_GMPS, !v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_APRT, !v_D_Ribose_5P_simple_molecule), Set(!v_PRPS2, !v_GMPS, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_APRT, !v_PRPS1L1), Set(!v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_APRT, !v_PRPS1L1), Set(!v_NAD_simple_molecule, !v_ATP_simple_molecule, !v_APRT), Set(!v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_D_Ribose_5P_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_NAD_simple_molecule, !v_XMP_simple_molecule, !v_D_Ribose_5P_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_NAD_simple_molecule, !v_L_Glutamine_simple_molecule, !v_D_Ribose_5P_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_GMPS, !v_NAD_simple_molecule, !v_D_Ribose_5P_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_XMP_simple_molecule, !v_PRPS1L1), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_L_Glutamine_simple_molecule, !v_PRPS1L1), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_PRPS2, !v_GMPS, !v_NAD_simple_molecule, !v_PRPS1, !v_PRPS1L1), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_D_Ribose_5P_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_D_Ribose_5P_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_D_Ribose_5P_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_PRPS1L1), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_PRPS1L1), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_PRPS2, !v_GMPS, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_PRPS1L1), Set(!v_NAD_simple_molecule, !v_ATP_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule), Set(!v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_D_Ribose_5P_simple_molecule), Set(!v_ADK, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_XMP_simple_molecule, !v_D_Ribose_5P_simple_molecule), Set(!v_ADK, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_L_Glutamine_simple_molecule, !v_D_Ribose_5P_simple_molecule), Set(!v_ADK, !v_GMPS, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_D_Ribose_5P_simple_molecule), Set(!v_ADK, !v_PRPS2, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_PRPS1, !v_XMP_simple_molecule, !v_PRPS1L1), Set(!v_ADK, !v_PRPS2, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_PRPS1, !v_L_Glutamine_simple_molecule, !v_PRPS1L1), Set(!v_ADK, !v_PRPS2, !v_GMPS, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_PRPS1, !v_PRPS1L1), Set(!v_PRPS2, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_PRPS1L1), Set(!v_GMPS, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_D_Ribose_5P_simple_molecule), Set(!v_PRPS2, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_PRPS1L1), Set(!v_PRPS2, !v_GMPS, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_PRPS1L1), Set(!v_NAD_simple_molecule, !v_Adenine_simple_molecule, !v_ATP_simple_molecule), Set(!v_Adenine_simple_molecule, !v_H2O_simple_molecule_cell, !v_D_Ribose_5P_simple_molecule, !v_Adenosine_simple_molecule), Set(!v_ADK, !v_ENPP1, !v_XMP_simple_molecule, !v_APRT, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_ADK, !v_ENPP1, !v_L_Glutamine_simple_molecule, !v_APRT, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_ADK, !v_GMPS, !v_ENPP1, !v_APRT, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_ADK, !v_PRPS2, !v_ENPP1, !v_PRPS1, !v_XMP_simple_molecule, !v_APRT, !v_PRPS1L1, !v_ENPP3), Set(!v_ADK, !v_PRPS2, !v_ENPP1, !v_PRPS1, !v_L_Glutamine_simple_molecule, !v_APRT, !v_PRPS1L1, !v_ENPP3), Set(!v_ADK, !v_PRPS2, !v_GMPS, !v_ENPP1, !v_PRPS1, !v_APRT, !v_PRPS1L1, !v_ENPP3), Set(!v_ENPP1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_APRT, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_ENPP1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_APRT, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_GMPS, !v_ENPP1, !v_Adenosine_simple_molecule, !v_APRT, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_PRPS2, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_APRT, !v_PRPS1L1, !v_ENPP3), Set(!v_PRPS2, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_APRT, !v_PRPS1L1, !v_ENPP3), Set(!v_PRPS2, !v_GMPS, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_APRT, !v_PRPS1L1, !v_ENPP3), Set(!v_ATP_simple_molecule, !v_ENPP1, !v_APRT, !v_ENPP3), Set(!v_Adenine_simple_molecule, !v_ENPP1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_ENPP1, !v_XMP_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_ENPP1, !v_L_Glutamine_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_GMPS, !v_ENPP1, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_PRPS2, !v_ENPP1, !v_PRPS1, !v_XMP_simple_molecule, !v_PRPS1L1, !v_ENPP3), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_PRPS2, !v_ENPP1, !v_PRPS1, !v_L_Glutamine_simple_molecule, !v_PRPS1L1, !v_ENPP3), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_PRPS2, !v_GMPS, !v_ENPP1, !v_PRPS1, !v_PRPS1L1, !v_ENPP3), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ENPP1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ENPP1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_ENPP1, !v_Adenosine_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_PRPS2, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_PRPS1L1, !v_ENPP3), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_PRPS2, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_PRPS1L1, !v_ENPP3), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_PRPS2, !v_GMPS, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_PRPS1L1, !v_ENPP3), Set(!v_ATP_simple_molecule, !v_ENPP1, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ENPP3), Set(!v_Adenine_simple_molecule, !v_ENPP1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_ADK, !v_Adenine_simple_molecule, !v_ENPP1, !v_XMP_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_ADK, !v_Adenine_simple_molecule, !v_ENPP1, !v_L_Glutamine_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_ADK, !v_GMPS, !v_Adenine_simple_molecule, !v_ENPP1, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_ADK, !v_PRPS2, !v_Adenine_simple_molecule, !v_ENPP1, !v_PRPS1, !v_XMP_simple_molecule, !v_PRPS1L1, !v_ENPP3), Set(!v_ADK, !v_PRPS2, !v_Adenine_simple_molecule, !v_ENPP1, !v_PRPS1, !v_L_Glutamine_simple_molecule, !v_PRPS1L1, !v_ENPP3), Set(!v_ADK, !v_PRPS2, !v_GMPS, !v_Adenine_simple_molecule, !v_ENPP1, !v_PRPS1, !v_PRPS1L1, !v_ENPP3), Set(!v_PRPS2, !v_Adenine_simple_molecule, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_PRPS1L1, !v_ENPP3), Set(!v_GMPS, !v_Adenine_simple_molecule, !v_ENPP1, !v_Adenosine_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule), Set(!v_PRPS2, !v_Adenine_simple_molecule, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_PRPS1L1, !v_ENPP3), Set(!v_PRPS2, !v_GMPS, !v_Adenine_simple_molecule, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_PRPS1L1, !v_ENPP3), Set(!v_Adenine_simple_molecule, !v_ATP_simple_molecule, !v_ENPP1, !v_ENPP3), Set(!v_PRPS2, !v_Adenine_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_H2O_simple_molecule_cell, !v_PRPS1L1), Set(!v_ADK, !v_H2O_simple_molecule_cell, !v_D_Ribose_5P_simple_molecule, !v_APRT), Set(!v_ADK, !v_PRPS2, !v_PRPS1, !v_H2O_simple_molecule_cell, !v_APRT, !v_PRPS1L1), Set(!v_PRPS2, !v_PRPS1, !v_Adenosine_simple_molecule, !v_H2O_simple_molecule_cell, !v_APRT, !v_PRPS1L1), Set(!v_H2O_simple_molecule_cell, !v_D_Ribose_5P_simple_molecule, !v_APRT, !v_Adenosine_simple_molecule), Set(!v_H2O_simple_molecule_cell, !v_ATP_simple_molecule, !v_APRT), Set(!v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_D_Ribose_5P_simple_molecule, !v_Adenosine_simple_molecule), Set(!v_ADK, !v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_D_Ribose_5P_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_PRPS2, !v_PRPS1, !v_H2O_simple_molecule_cell, !v_PRPS1L1), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_PRPS2, !v_PRPS1, !v_Adenosine_simple_molecule, !v_H2O_simple_molecule_cell, !v_PRPS1L1), Set(!v_H2O_simple_molecule_cell, !v_ATP_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule), Set(!v_Adenine_simple_molecule, !v_ADK, !v_H2O_simple_molecule_cell, !v_D_Ribose_5P_simple_molecule), Set(!v_ADK, !v_PRPS2, !v_Adenine_simple_molecule, !v_PRPS1, !v_H2O_simple_molecule_cell, !v_PRPS1L1), Set(!v_Adenine_simple_molecule, !v_H2O_simple_molecule_cell, !v_ATP_simple_molecule)))
+(Set(v_PRPS1L1, v_ATP_simple_molecule, v_D_Ribose_5P_simple_molecule),Set(-18, -85, -109))
+(Set(v_PRPS2, v_ATP_simple_molecule, v_D_Ribose_5P_simple_molecule),Set(-32, -85, -109))
+(Set(v_PRPS1, v_ATP_simple_molecule, v_D_Ribose_5P_simple_molecule),Set(-7, -85, -109))
+(Set(v_Adenine_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_APRT),Set(-19, -93, -111))
+(Set(v_ADK, v_ATP_simple_molecule, v_Adenosine_simple_molecule),Set(-50, -85, -121))
+(Set(v_ATP_simple_molecule, v_GMPS, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_XMP_simple_molecule),Set(-52, -85, -102, -56, -2))
+(Set(v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_ENPP3),Set(-8, -52, -129))
+(Set(v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_ENPP1),Set(-8, -52, -92))
+(Set(!v_ADK, !v_NAD_simple_molecule, !v_L_Glutamine_simple_molecule, !v_APRT, !v_D_Ribose_5P_simple_molecule),Set(109, 2, 50, 8, 111))
+(Set(!v_ADK, !v_NAD_simple_molecule, !v_XMP_simple_molecule, !v_APRT, !v_D_Ribose_5P_simple_molecule),Set(102, 109, 50, 8, 111))
+(Set(!v_ADK, !v_GMPS, !v_NAD_simple_molecule, !v_APRT, !v_D_Ribose_5P_simple_molecule),Set(56, 109, 50, 8, 111))
+(Set(!v_ADK, !v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_XMP_simple_molecule, !v_APRT, !v_PRPS1L1),Set(102, 32, 7, 18, 50, 8, 111))
+(Set(!v_ADK, !v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_L_Glutamine_simple_molecule, !v_APRT, !v_PRPS1L1),Set(2, 32, 7, 18, 50, 8, 111))
+(Set(!v_ADK, !v_PRPS2, !v_GMPS, !v_NAD_simple_molecule, !v_PRPS1, !v_APRT, !v_PRPS1L1),Set(56, 32, 7, 18, 50, 8, 111))
+(Set(!v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_APRT, !v_PRPS1L1),Set(121, 102, 32, 7, 18, 8, 111))
+(Set(!v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_APRT, !v_D_Ribose_5P_simple_molecule),Set(121, 102, 109, 8, 111))
+(Set(!v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_APRT, !v_D_Ribose_5P_simple_molecule),Set(121, 109, 2, 8, 111))
+(Set(!v_GMPS, !v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_APRT, !v_D_Ribose_5P_simple_molecule),Set(56, 121, 109, 8, 111))
+(Set(!v_PRPS2, !v_GMPS, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_APRT, !v_PRPS1L1),Set(56, 121, 32, 7, 18, 8, 111))
+(Set(!v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_APRT, !v_PRPS1L1),Set(121, 2, 32, 7, 18, 8, 111))
+(Set(!v_NAD_simple_molecule, !v_ATP_simple_molecule, !v_APRT),Set(8, 85, 111))
+(Set(!v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_D_Ribose_5P_simple_molecule),Set(121, 102, 109, 8, 19))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_NAD_simple_molecule, !v_XMP_simple_molecule, !v_D_Ribose_5P_simple_molecule),Set(93, 102, 109, 50, 8))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_NAD_simple_molecule, !v_L_Glutamine_simple_molecule, !v_D_Ribose_5P_simple_molecule),Set(93, 109, 2, 50, 8))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_GMPS, !v_NAD_simple_molecule, !v_D_Ribose_5P_simple_molecule),Set(56, 93, 109, 50, 8))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_XMP_simple_molecule, !v_PRPS1L1),Set(93, 102, 32, 7, 18, 50, 8))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_L_Glutamine_simple_molecule, !v_PRPS1L1),Set(93, 2, 32, 7, 18, 50, 8))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_PRPS2, !v_GMPS, !v_NAD_simple_molecule, !v_PRPS1, !v_PRPS1L1),Set(56, 93, 32, 7, 18, 50, 8))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_D_Ribose_5P_simple_molecule),Set(93, 121, 102, 109, 8))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_D_Ribose_5P_simple_molecule),Set(93, 121, 109, 2, 8))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_D_Ribose_5P_simple_molecule),Set(56, 93, 121, 109, 8))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_PRPS1L1),Set(93, 121, 102, 32, 7, 18, 8))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_PRPS2, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_PRPS1L1),Set(93, 121, 2, 32, 7, 18, 8))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_PRPS2, !v_GMPS, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_PRPS1L1),Set(56, 93, 121, 32, 7, 18, 8))
+(Set(!v_NAD_simple_molecule, !v_ATP_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(8, 85, 93))
+(Set(!v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_D_Ribose_5P_simple_molecule),Set(121, 109, 2, 8, 19))
+(Set(!v_ADK, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_XMP_simple_molecule, !v_D_Ribose_5P_simple_molecule),Set(102, 109, 50, 8, 19))
+(Set(!v_ADK, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_L_Glutamine_simple_molecule, !v_D_Ribose_5P_simple_molecule),Set(109, 2, 50, 8, 19))
+(Set(!v_ADK, !v_GMPS, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_D_Ribose_5P_simple_molecule),Set(56, 109, 50, 8, 19))
+(Set(!v_ADK, !v_PRPS2, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_PRPS1, !v_XMP_simple_molecule, !v_PRPS1L1),Set(102, 32, 7, 18, 50, 8, 19))
+(Set(!v_ADK, !v_PRPS2, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_PRPS1, !v_L_Glutamine_simple_molecule, !v_PRPS1L1),Set(2, 32, 7, 18, 50, 8, 19))
+(Set(!v_ADK, !v_PRPS2, !v_GMPS, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_PRPS1, !v_PRPS1L1),Set(56, 32, 7, 18, 50, 8, 19))
+(Set(!v_PRPS2, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_PRPS1L1),Set(121, 102, 32, 7, 18, 8, 19))
+(Set(!v_GMPS, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_Adenosine_simple_molecule, !v_D_Ribose_5P_simple_molecule),Set(56, 121, 109, 8, 19))
+(Set(!v_PRPS2, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_PRPS1L1),Set(121, 2, 32, 7, 18, 8, 19))
+(Set(!v_PRPS2, !v_GMPS, !v_Adenine_simple_molecule, !v_NAD_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_PRPS1L1),Set(56, 121, 32, 7, 18, 8, 19))
+(Set(!v_NAD_simple_molecule, !v_Adenine_simple_molecule, !v_ATP_simple_molecule),Set(8, 19, 85))
+(Set(!v_Adenine_simple_molecule, !v_H2O_simple_molecule_cell, !v_D_Ribose_5P_simple_molecule, !v_Adenosine_simple_molecule),Set(19, 52, 109, 121))
+(Set(!v_ADK, !v_ENPP1, !v_XMP_simple_molecule, !v_APRT, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(102, 92, 109, 129, 50, 111))
+(Set(!v_ADK, !v_ENPP1, !v_L_Glutamine_simple_molecule, !v_APRT, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(92, 109, 129, 2, 50, 111))
+(Set(!v_ADK, !v_GMPS, !v_ENPP1, !v_APRT, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(56, 92, 109, 129, 50, 111))
+(Set(!v_ADK, !v_PRPS2, !v_ENPP1, !v_PRPS1, !v_XMP_simple_molecule, !v_APRT, !v_PRPS1L1, !v_ENPP3),Set(102, 92, 129, 32, 7, 18, 50, 111))
+(Set(!v_ADK, !v_PRPS2, !v_ENPP1, !v_PRPS1, !v_L_Glutamine_simple_molecule, !v_APRT, !v_PRPS1L1, !v_ENPP3),Set(92, 129, 2, 32, 7, 18, 50, 111))
+(Set(!v_ADK, !v_PRPS2, !v_GMPS, !v_ENPP1, !v_PRPS1, !v_APRT, !v_PRPS1L1, !v_ENPP3),Set(56, 92, 129, 32, 7, 18, 50, 111))
+(Set(!v_ENPP1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_APRT, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(121, 102, 92, 109, 129, 111))
+(Set(!v_ENPP1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_APRT, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(121, 92, 109, 129, 2, 111))
+(Set(!v_GMPS, !v_ENPP1, !v_Adenosine_simple_molecule, !v_APRT, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(56, 121, 92, 109, 129, 111))
+(Set(!v_PRPS2, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_APRT, !v_PRPS1L1, !v_ENPP3),Set(121, 102, 92, 129, 32, 7, 18, 111))
+(Set(!v_PRPS2, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_APRT, !v_PRPS1L1, !v_ENPP3),Set(121, 92, 129, 2, 32, 7, 18, 111))
+(Set(!v_PRPS2, !v_GMPS, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_APRT, !v_PRPS1L1, !v_ENPP3),Set(56, 121, 92, 129, 32, 7, 18, 111))
+(Set(!v_ATP_simple_molecule, !v_ENPP1, !v_APRT, !v_ENPP3),Set(85, 92, 111, 129))
+(Set(!v_Adenine_simple_molecule, !v_ENPP1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(121, 102, 92, 109, 129, 19))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_ENPP1, !v_XMP_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(93, 102, 92, 109, 129, 50))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_ENPP1, !v_L_Glutamine_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(93, 92, 109, 129, 2, 50))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_GMPS, !v_ENPP1, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(56, 93, 92, 109, 129, 50))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_PRPS2, !v_ENPP1, !v_PRPS1, !v_XMP_simple_molecule, !v_PRPS1L1, !v_ENPP3),Set(93, 102, 92, 129, 32, 7, 18, 50))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_PRPS2, !v_ENPP1, !v_PRPS1, !v_L_Glutamine_simple_molecule, !v_PRPS1L1, !v_ENPP3),Set(93, 92, 129, 2, 32, 7, 18, 50))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_PRPS2, !v_GMPS, !v_ENPP1, !v_PRPS1, !v_PRPS1L1, !v_ENPP3),Set(56, 93, 92, 129, 32, 7, 18, 50))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ENPP1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(93, 121, 102, 92, 109, 129))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ENPP1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(93, 121, 92, 109, 129, 2))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_ENPP1, !v_Adenosine_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(56, 93, 121, 92, 109, 129))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_PRPS2, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_PRPS1L1, !v_ENPP3),Set(93, 121, 102, 92, 129, 32, 7, 18))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_PRPS2, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_PRPS1L1, !v_ENPP3),Set(93, 121, 92, 129, 2, 32, 7, 18))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_PRPS2, !v_GMPS, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_PRPS1L1, !v_ENPP3),Set(56, 93, 121, 92, 129, 32, 7, 18))
+(Set(!v_ATP_simple_molecule, !v_ENPP1, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ENPP3),Set(85, 92, 93, 129))
+(Set(!v_Adenine_simple_molecule, !v_ENPP1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(121, 92, 109, 129, 2, 19))
+(Set(!v_ADK, !v_Adenine_simple_molecule, !v_ENPP1, !v_XMP_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(102, 92, 109, 129, 50, 19))
+(Set(!v_ADK, !v_Adenine_simple_molecule, !v_ENPP1, !v_L_Glutamine_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(92, 109, 129, 2, 50, 19))
+(Set(!v_ADK, !v_GMPS, !v_Adenine_simple_molecule, !v_ENPP1, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(56, 92, 109, 129, 50, 19))
+(Set(!v_ADK, !v_PRPS2, !v_Adenine_simple_molecule, !v_ENPP1, !v_PRPS1, !v_XMP_simple_molecule, !v_PRPS1L1, !v_ENPP3),Set(102, 92, 129, 32, 7, 18, 50, 19))
+(Set(!v_ADK, !v_PRPS2, !v_Adenine_simple_molecule, !v_ENPP1, !v_PRPS1, !v_L_Glutamine_simple_molecule, !v_PRPS1L1, !v_ENPP3),Set(92, 129, 2, 32, 7, 18, 50, 19))
+(Set(!v_ADK, !v_PRPS2, !v_GMPS, !v_Adenine_simple_molecule, !v_ENPP1, !v_PRPS1, !v_PRPS1L1, !v_ENPP3),Set(56, 92, 129, 32, 7, 18, 50, 19))
+(Set(!v_PRPS2, !v_Adenine_simple_molecule, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_XMP_simple_molecule, !v_PRPS1L1, !v_ENPP3),Set(121, 102, 92, 129, 32, 7, 18, 19))
+(Set(!v_GMPS, !v_Adenine_simple_molecule, !v_ENPP1, !v_Adenosine_simple_molecule, !v_ENPP3, !v_D_Ribose_5P_simple_molecule),Set(56, 121, 92, 109, 129, 19))
+(Set(!v_PRPS2, !v_Adenine_simple_molecule, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_L_Glutamine_simple_molecule, !v_PRPS1L1, !v_ENPP3),Set(121, 92, 129, 2, 32, 7, 18, 19))
+(Set(!v_PRPS2, !v_GMPS, !v_Adenine_simple_molecule, !v_ENPP1, !v_PRPS1, !v_Adenosine_simple_molecule, !v_PRPS1L1, !v_ENPP3),Set(56, 121, 92, 129, 32, 7, 18, 19))
+(Set(!v_Adenine_simple_molecule, !v_ATP_simple_molecule, !v_ENPP1, !v_ENPP3),Set(19, 85, 92, 129))
+(Set(!v_PRPS2, !v_Adenine_simple_molecule, !v_PRPS1, !v_Adenosine_simple_molecule, !v_H2O_simple_molecule_cell, !v_PRPS1L1),Set(52, 121, 32, 7, 18, 19))
+(Set(!v_ADK, !v_H2O_simple_molecule_cell, !v_D_Ribose_5P_simple_molecule, !v_APRT),Set(50, 52, 109, 111))
+(Set(!v_ADK, !v_PRPS2, !v_PRPS1, !v_H2O_simple_molecule_cell, !v_APRT, !v_PRPS1L1),Set(52, 32, 7, 18, 50, 111))
+(Set(!v_PRPS2, !v_PRPS1, !v_Adenosine_simple_molecule, !v_H2O_simple_molecule_cell, !v_APRT, !v_PRPS1L1),Set(52, 121, 32, 7, 18, 111))
+(Set(!v_H2O_simple_molecule_cell, !v_D_Ribose_5P_simple_molecule, !v_APRT, !v_Adenosine_simple_molecule),Set(52, 109, 111, 121))
+(Set(!v_H2O_simple_molecule_cell, !v_ATP_simple_molecule, !v_APRT),Set(52, 85, 111))
+(Set(!v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_D_Ribose_5P_simple_molecule, !v_Adenosine_simple_molecule),Set(52, 93, 109, 121))
+(Set(!v_ADK, !v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_D_Ribose_5P_simple_molecule),Set(50, 52, 93, 109))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ADK, !v_PRPS2, !v_PRPS1, !v_H2O_simple_molecule_cell, !v_PRPS1L1),Set(52, 93, 32, 7, 18, 50))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_PRPS2, !v_PRPS1, !v_Adenosine_simple_molecule, !v_H2O_simple_molecule_cell, !v_PRPS1L1),Set(52, 93, 121, 32, 7, 18))
+(Set(!v_H2O_simple_molecule_cell, !v_ATP_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(52, 85, 93))
+(Set(!v_Adenine_simple_molecule, !v_ADK, !v_H2O_simple_molecule_cell, !v_D_Ribose_5P_simple_molecule),Set(19, 50, 52, 109))
+(Set(!v_ADK, !v_PRPS2, !v_Adenine_simple_molecule, !v_PRPS1, !v_H2O_simple_molecule_cell, !v_PRPS1L1),Set(52, 32, 7, 18, 50, 19))
+(Set(!v_Adenine_simple_molecule, !v_H2O_simple_molecule_cell, !v_ATP_simple_molecule),Set(19, 52, 85))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Adenosine_simple_molecule, v_Pi_simple_molecule, v_PNP)))
+Some(Vector(Set(!v_PNP), Set(!v_Pi_simple_molecule), Set(!v_Adenosine_simple_molecule)))
+(Set(v_Adenosine_simple_molecule, v_Pi_simple_molecule, v_PNP),Set(-121, -87, -21))
+(Set(!v_PNP),Set(21))
+(Set(!v_Pi_simple_molecule),Set(87))
+(Set(!v_Adenosine_simple_molecule),Set(121))
+
+Some(Vector(Set(v_AMP_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E)))
+Some(Vector(Set(!v_NT5E), Set(!v_H2O_simple_molecule_cell), Set(!v_AMP_simple_molecule)))
+(Set(v_AMP_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E),Set(-73, -52, -90))
+(Set(!v_NT5E),Set(90))
+(Set(!v_H2O_simple_molecule_cell),Set(52))
+(Set(!v_AMP_simple_molecule),Set(73))
+
+Some(Vector(Set(v_2__Formamido__N1__5__phosphoribosyl_acetamidine_simple_molecule, v_ATP_simple_molecule, v_GART)))
+Some(Vector(Set(!v_GART), Set(!v_ATP_simple_molecule), Set(!v_2__Formamido__N1__5__phosphoribosyl_acetamidine_simple_molecule)))
+(Set(v_2__Formamido__N1__5__phosphoribosyl_acetamidine_simple_molecule, v_ATP_simple_molecule, v_GART),Set(-17, -85, -83))
+(Set(!v_GART),Set(83))
+(Set(!v_ATP_simple_molecule),Set(85))
+(Set(!v_2__Formamido__N1__5__phosphoribosyl_acetamidine_simple_molecule),Set(17))
+
+Some(Vector(Set(v_Deoxyadenosine_simple_molecule, v_H2O_simple_molecule_cell, v_ADA, v_H_simple_molecule), Set(v_H2O_simple_molecule_cell, v_Adenosine_simple_molecule, v_ADA, v_H_simple_molecule), Set(v_H2O_simple_molecule_cell, v_GDA, v_Guanine_simple_molecule, v_H_simple_molecule), Set(v_AMPD3, v_H2O_simple_molecule_cell, v_AMP_simple_molecule, v_H_simple_molecule), Set(v_H2O_simple_molecule_cell, v_AMP_simple_molecule, v_H_simple_molecule, v_AMPD1), Set(v_H2O_simple_molecule_cell, v_AMP_simple_molecule, v_AMDP2, v_H_simple_molecule)))
+Some(Vector(Set(!v_GDA, !v_AMPD3, !v_Adenosine_simple_molecule, !v_AMDP2, !v_Deoxyadenosine_simple_molecule, !v_AMPD1), Set(!v_Deoxyadenosine_simple_molecule, !v_GDA, !v_AMP_simple_molecule, !v_Adenosine_simple_molecule), Set(!v_AMPD3, !v_Adenosine_simple_molecule, !v_Guanine_simple_molecule, !v_AMDP2, !v_Deoxyadenosine_simple_molecule, !v_AMPD1), Set(!v_Deoxyadenosine_simple_molecule, !v_AMP_simple_molecule, !v_Guanine_simple_molecule, !v_Adenosine_simple_molecule), Set(!v_AMP_simple_molecule, !v_Guanine_simple_molecule, !v_ADA), Set(!v_GDA, !v_AMP_simple_molecule, !v_ADA), Set(!v_GDA, !v_AMPD3, !v_ADA, !v_AMDP2, !v_AMPD1), Set(!v_AMPD3, !v_Guanine_simple_molecule, !v_ADA, !v_AMDP2, !v_AMPD1), Set(!v_H_simple_molecule), Set(!v_H2O_simple_molecule_cell)))
+(Set(v_Deoxyadenosine_simple_molecule, v_H2O_simple_molecule_cell, v_ADA, v_H_simple_molecule),Set(-22, -52, -130, -142))
+(Set(v_H2O_simple_molecule_cell, v_Adenosine_simple_molecule, v_ADA, v_H_simple_molecule),Set(-52, -121, -130, -142))
+(Set(v_H2O_simple_molecule_cell, v_GDA, v_Guanine_simple_molecule, v_H_simple_molecule),Set(-52, -62, -103, -142))
+(Set(v_AMPD3, v_H2O_simple_molecule_cell, v_AMP_simple_molecule, v_H_simple_molecule),Set(-3, -52, -73, -142))
+(Set(v_H2O_simple_molecule_cell, v_AMP_simple_molecule, v_H_simple_molecule, v_AMPD1),Set(-52, -73, -142, -147))
+(Set(v_H2O_simple_molecule_cell, v_AMP_simple_molecule, v_AMDP2, v_H_simple_molecule),Set(-52, -73, -138, -142))
+(Set(!v_GDA, !v_AMPD3, !v_Adenosine_simple_molecule, !v_AMDP2, !v_Deoxyadenosine_simple_molecule, !v_AMPD1),Set(138, 121, 147, 22, 3, 62))
+(Set(!v_Deoxyadenosine_simple_molecule, !v_GDA, !v_AMP_simple_molecule, !v_Adenosine_simple_molecule),Set(22, 62, 73, 121))
+(Set(!v_AMPD3, !v_Adenosine_simple_molecule, !v_Guanine_simple_molecule, !v_AMDP2, !v_Deoxyadenosine_simple_molecule, !v_AMPD1),Set(138, 121, 147, 22, 103, 3))
+(Set(!v_Deoxyadenosine_simple_molecule, !v_AMP_simple_molecule, !v_Guanine_simple_molecule, !v_Adenosine_simple_molecule),Set(22, 73, 103, 121))
+(Set(!v_AMP_simple_molecule, !v_Guanine_simple_molecule, !v_ADA),Set(73, 103, 130))
+(Set(!v_GDA, !v_AMP_simple_molecule, !v_ADA),Set(62, 73, 130))
+(Set(!v_GDA, !v_AMPD3, !v_ADA, !v_AMDP2, !v_AMPD1),Set(138, 147, 130, 3, 62))
+(Set(!v_AMPD3, !v_Guanine_simple_molecule, !v_ADA, !v_AMDP2, !v_AMPD1),Set(138, 147, 103, 130, 3))
+(Set(!v_H_simple_molecule),Set(142))
+(Set(!v_H2O_simple_molecule_cell),Set(52))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Quinolinate_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_H_simple_molecule, v_QPRT)))
+Some(Vector(Set(!v_QPRT), Set(!v_H_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule), Set(!v_Quinolinate_simple_molecule)))
+(Set(v_Quinolinate_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_H_simple_molecule, v_QPRT),Set(-143, -93, -142, -86))
+(Set(!v_QPRT),Set(86))
+(Set(!v_H_simple_molecule),Set(142))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(93))
+(Set(!v_Quinolinate_simple_molecule),Set(143))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Raffinose_simple_molecule, v_H2O_simple_molecule_cell, v_GLA_Nsp14_complex, !v_Migalastat_drug), Set(v_H2O_simple_molecule_cell, v_GLA_Nsp14_complex, !v_Migalastat_drug, v_Melibiose_simple_molecule), Set(v_NADP_simple_molecule, v_Galacitol_simple_molecule, v_AKR1B1), Set(v_LCT, v_Lactose_simple_molecule, v_H2O_simple_molecule_cell), Set(v_Lactose_simple_molecule, v_H2O_simple_molecule_cell, v_GLB1), Set(v_H2O_simple_molecule_cell, v_GLA_Nsp14_complex, !v_Migalastat_drug, v_Stachyose_simple_molecule), Set(v_Raffinose_simple_molecule, v_H2O_simple_molecule_cell, !v_Migalastat_drug, v_GLA), Set(v_H2O_simple_molecule_cell, !v_Migalastat_drug, v_Melibiose_simple_molecule, v_GLA), Set(v_H2O_simple_molecule_cell, !v_Migalastat_drug, v_Stachyose_simple_molecule, v_GLA)))
+Some(Vector(Set(!v_Stachyose_simple_molecule, !v_Raffinose_simple_molecule, !v_Lactose_simple_molecule, !v_Melibiose_simple_molecule, !v_AKR1B1), Set(!v_Stachyose_simple_molecule, !v_Raffinose_simple_molecule, !v_Melibiose_simple_molecule, !v_GLB1, !v_LCT, !v_AKR1B1), Set(!v_Lactose_simple_molecule, !v_GLA_Nsp14_complex, !v_AKR1B1, !v_GLA), Set(!v_GLB1, !v_LCT, !v_GLA, !v_AKR1B1, !v_GLA_Nsp14_complex), Set(!v_H2O_simple_molecule_cell, !v_AKR1B1), Set(!v_Lactose_simple_molecule, !v_AKR1B1, v_Migalastat_drug), Set(!v_LCT, !v_GLB1, !v_AKR1B1, v_Migalastat_drug), Set(!v_Galacitol_simple_molecule, !v_H2O_simple_molecule_cell), Set(!v_Stachyose_simple_molecule, !v_Raffinose_simple_molecule, !v_Lactose_simple_molecule, !v_Melibiose_simple_molecule, !v_NADP_simple_molecule), Set(!v_Stachyose_simple_molecule, !v_Raffinose_simple_molecule, !v_Melibiose_simple_molecule, !v_GLB1, !v_LCT, !v_NADP_simple_molecule), Set(!v_NADP_simple_molecule, !v_Lactose_simple_molecule, !v_GLA_Nsp14_complex, !v_GLA), Set(!v_GLB1, !v_LCT, !v_GLA, !v_NADP_simple_molecule, !v_GLA_Nsp14_complex), Set(!v_NADP_simple_molecule, !v_LCT, !v_GLB1, v_Migalastat_drug), Set(!v_NADP_simple_molecule, !v_H2O_simple_molecule_cell), Set(!v_NADP_simple_molecule, !v_Lactose_simple_molecule, v_Migalastat_drug), Set(!v_Galacitol_simple_molecule, !v_LCT, !v_GLB1, v_Migalastat_drug), Set(!v_Stachyose_simple_molecule, !v_Raffinose_simple_molecule, !v_Lactose_simple_molecule, !v_Melibiose_simple_molecule, !v_Galacitol_simple_molecule), Set(!v_Stachyose_simple_molecule, !v_Raffinose_simple_molecule, !v_Melibiose_simple_molecule, !v_GLB1, !v_LCT, !v_Galacitol_simple_molecule), Set(!v_Galacitol_simple_molecule, !v_Lactose_simple_molecule, !v_GLA_Nsp14_complex, !v_GLA), Set(!v_GLB1, !v_LCT, !v_GLA, !v_GLA_Nsp14_complex, !v_Galacitol_simple_molecule), Set(!v_Galacitol_simple_molecule, !v_Lactose_simple_molecule, v_Migalastat_drug)))
+(Set(v_Raffinose_simple_molecule, v_H2O_simple_molecule_cell, v_GLA_Nsp14_complex, !v_Migalastat_drug),Set(-27, -52, -64, 112))
+(Set(v_H2O_simple_molecule_cell, v_GLA_Nsp14_complex, !v_Migalastat_drug, v_Melibiose_simple_molecule),Set(-52, -64, 112, -126))
+(Set(v_NADP_simple_molecule, v_Galacitol_simple_molecule, v_AKR1B1),Set(-11, -14, -78))
+(Set(v_LCT, v_Lactose_simple_molecule, v_H2O_simple_molecule_cell),Set(-35, -45, -52))
+(Set(v_Lactose_simple_molecule, v_H2O_simple_molecule_cell, v_GLB1),Set(-45, -52, -69))
+(Set(v_H2O_simple_molecule_cell, v_GLA_Nsp14_complex, !v_Migalastat_drug, v_Stachyose_simple_molecule),Set(-52, -64, 112, -124))
+(Set(v_Raffinose_simple_molecule, v_H2O_simple_molecule_cell, !v_Migalastat_drug, v_GLA),Set(-27, -52, 112, -134))
+(Set(v_H2O_simple_molecule_cell, !v_Migalastat_drug, v_Melibiose_simple_molecule, v_GLA),Set(-52, 112, -126, -134))
+(Set(v_H2O_simple_molecule_cell, !v_Migalastat_drug, v_Stachyose_simple_molecule, v_GLA),Set(-52, 112, -124, -134))
+(Set(!v_Stachyose_simple_molecule, !v_Raffinose_simple_molecule, !v_Lactose_simple_molecule, !v_Melibiose_simple_molecule, !v_AKR1B1),Set(78, 124, 45, 27, 126))
+(Set(!v_Stachyose_simple_molecule, !v_Raffinose_simple_molecule, !v_Melibiose_simple_molecule, !v_GLB1, !v_LCT, !v_AKR1B1),Set(69, 78, 124, 27, 35, 126))
+(Set(!v_Lactose_simple_molecule, !v_GLA_Nsp14_complex, !v_AKR1B1, !v_GLA),Set(45, 64, 78, 134))
+(Set(!v_GLB1, !v_LCT, !v_GLA, !v_AKR1B1, !v_GLA_Nsp14_complex),Set(69, 78, 134, 64, 35))
+(Set(!v_H2O_simple_molecule_cell, !v_AKR1B1),Set(52, 78))
+(Set(!v_Lactose_simple_molecule, !v_AKR1B1, v_Migalastat_drug),Set(45, 78, -112))
+(Set(!v_LCT, !v_GLB1, !v_AKR1B1, v_Migalastat_drug),Set(35, 69, 78, -112))
+(Set(!v_Galacitol_simple_molecule, !v_H2O_simple_molecule_cell),Set(14, 52))
+(Set(!v_Stachyose_simple_molecule, !v_Raffinose_simple_molecule, !v_Lactose_simple_molecule, !v_Melibiose_simple_molecule, !v_NADP_simple_molecule),Set(124, 45, 27, 11, 126))
+(Set(!v_Stachyose_simple_molecule, !v_Raffinose_simple_molecule, !v_Melibiose_simple_molecule, !v_GLB1, !v_LCT, !v_NADP_simple_molecule),Set(69, 124, 27, 35, 11, 126))
+(Set(!v_NADP_simple_molecule, !v_Lactose_simple_molecule, !v_GLA_Nsp14_complex, !v_GLA),Set(11, 45, 64, 134))
+(Set(!v_GLB1, !v_LCT, !v_GLA, !v_NADP_simple_molecule, !v_GLA_Nsp14_complex),Set(69, 134, 64, 35, 11))
+(Set(!v_NADP_simple_molecule, !v_LCT, !v_GLB1, v_Migalastat_drug),Set(11, 35, 69, -112))
+(Set(!v_NADP_simple_molecule, !v_H2O_simple_molecule_cell),Set(11, 52))
+(Set(!v_NADP_simple_molecule, !v_Lactose_simple_molecule, v_Migalastat_drug),Set(11, 45, -112))
+(Set(!v_Galacitol_simple_molecule, !v_LCT, !v_GLB1, v_Migalastat_drug),Set(14, 35, 69, -112))
+(Set(!v_Stachyose_simple_molecule, !v_Raffinose_simple_molecule, !v_Lactose_simple_molecule, !v_Melibiose_simple_molecule, !v_Galacitol_simple_molecule),Set(14, 124, 45, 27, 126))
+(Set(!v_Stachyose_simple_molecule, !v_Raffinose_simple_molecule, !v_Melibiose_simple_molecule, !v_GLB1, !v_LCT, !v_Galacitol_simple_molecule),Set(69, 14, 124, 27, 35, 126))
+(Set(!v_Galacitol_simple_molecule, !v_Lactose_simple_molecule, !v_GLA_Nsp14_complex, !v_GLA),Set(14, 45, 64, 134))
+(Set(!v_GLB1, !v_LCT, !v_GLA, !v_GLA_Nsp14_complex, !v_Galacitol_simple_molecule),Set(69, 14, 134, 64, 35))
+(Set(!v_Galacitol_simple_molecule, !v_Lactose_simple_molecule, v_Migalastat_drug),Set(14, 45, -112))
+
+Some(Vector(Set(v__alpha_D_Ribose_1P_simple_molecule, v_PGM2)))
+Some(Vector(Set(!v_PGM2), Set(!v__alpha_D_Ribose_1P_simple_molecule)))
+(Set(v__alpha_D_Ribose_1P_simple_molecule, v_PGM2),Set(-57, -79))
+(Set(!v_PGM2),Set(79))
+(Set(!v__alpha_D_Ribose_1P_simple_molecule),Set(57))
+
+Some(Vector(Set(v_Nicotinate_D_ribonucleotide_simple_molecule, v_ATP_simple_molecule, v_NMNAT3, v_H_simple_molecule), Set(v_Nicotinate_D_ribonucleotide_simple_molecule, v_ATP_simple_molecule, v_NMNAT2, v_H_simple_molecule), Set(v_Nicotinate_D_ribonucleotide_simple_molecule, v_NMNAT1, v_ATP_simple_molecule, v_H_simple_molecule)))
+Some(Vector(Set(!v_ATP_simple_molecule), Set(!v_H_simple_molecule), Set(!v_Nicotinate_D_ribonucleotide_simple_molecule), Set(!v_NMNAT1, !v_NMNAT3, !v_NMNAT2)))
+(Set(v_Nicotinate_D_ribonucleotide_simple_molecule, v_ATP_simple_molecule, v_NMNAT3, v_H_simple_molecule),Set(-44, -85, -116, -142))
+(Set(v_Nicotinate_D_ribonucleotide_simple_molecule, v_ATP_simple_molecule, v_NMNAT2, v_H_simple_molecule),Set(-44, -85, -125, -142))
+(Set(v_Nicotinate_D_ribonucleotide_simple_molecule, v_NMNAT1, v_ATP_simple_molecule, v_H_simple_molecule),Set(-44, -49, -85, -142))
+(Set(!v_ATP_simple_molecule),Set(85))
+(Set(!v_H_simple_molecule),Set(142))
+(Set(!v_Nicotinate_D_ribonucleotide_simple_molecule),Set(44))
+(Set(!v_NMNAT1, !v_NMNAT3, !v_NMNAT2),Set(49, 116, 125))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_GTP_simple_molecule, v_H2O_simple_molecule_cell, v_NTPCR), Set(v_GTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD2), Set(v_GMP_simple_molecule, v_ATP_simple_molecule, v_GUK1)))
+Some(Vector(Set(!v_H2O_simple_molecule_cell, !v_GUK1), Set(!v_H2O_simple_molecule_cell, !v_ATP_simple_molecule), Set(!v_H2O_simple_molecule_cell, !v_GMP_simple_molecule), Set(!v_GTP_simple_molecule, !v_GUK1), Set(!v_GTP_simple_molecule, !v_ATP_simple_molecule), Set(!v_GTP_simple_molecule, !v_GMP_simple_molecule), Set(!v_NTPCR, !v_GUK1, !v_ENTPD2), Set(!v_NTPCR, !v_ATP_simple_molecule, !v_ENTPD2), Set(!v_GMP_simple_molecule, !v_NTPCR, !v_ENTPD2)))
+(Set(v_GTP_simple_molecule, v_H2O_simple_molecule_cell, v_NTPCR),Set(-30, -52, -70))
+(Set(v_GTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD2),Set(-30, -52, -141))
+(Set(v_GMP_simple_molecule, v_ATP_simple_molecule, v_GUK1),Set(-67, -85, -104))
+(Set(!v_H2O_simple_molecule_cell, !v_GUK1),Set(52, 104))
+(Set(!v_H2O_simple_molecule_cell, !v_ATP_simple_molecule),Set(52, 85))
+(Set(!v_H2O_simple_molecule_cell, !v_GMP_simple_molecule),Set(52, 67))
+(Set(!v_GTP_simple_molecule, !v_GUK1),Set(30, 104))
+(Set(!v_GTP_simple_molecule, !v_ATP_simple_molecule),Set(30, 85))
+(Set(!v_GTP_simple_molecule, !v_GMP_simple_molecule),Set(30, 67))
+(Set(!v_NTPCR, !v_GUK1, !v_ENTPD2),Set(70, 104, 141))
+(Set(!v_NTPCR, !v_ATP_simple_molecule, !v_ENTPD2),Set(70, 85, 141))
+(Set(!v_GMP_simple_molecule, !v_NTPCR, !v_ENTPD2),Set(67, 70, 141))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_GLA, v_Nsp14_cell)))
+Some(Vector(Set(!v_Nsp14_cell), Set(!v_GLA)))
+(Set(v_GLA, v_Nsp14_cell),Set(-134, -105))
+(Set(!v_Nsp14_cell),Set(105))
+(Set(!v_GLA),Set(134))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_HPRT1, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_Guanine_simple_molecule), Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_CANT1), Set(v_ENTPD5, v_GDP_simple_molecule, v_H2O_simple_molecule_cell), Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD6), Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD4), Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD2), Set(v_ATP_simple_molecule, v_GMPS, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_XMP_simple_molecule), Set(v_NADP_simple_molecule, v_GMPR2, v_IMP_simple_molecule, v_Ammonium_simple_molecule), Set(v_NADP_simple_molecule, v_IMP_simple_molecule, v_GMPR, v_Ammonium_simple_molecule), Set(v_GTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD2)))
+Some(Vector(Set(!v_ENTPD2, !v_HPRT1, !v_XMP_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_XMP_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_HPRT1, !v_L_Glutamine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_L_Glutamine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_ATP_simple_molecule, !v_HPRT1, !v_NADP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_ATP_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_GMPS, !v_HPRT1, !v_NADP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_NADP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_GMPS, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule), Set(!v_HPRT1, !v_XMP_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_XMP_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_HPRT1, !v_L_Glutamine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_L_Glutamine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_ATP_simple_molecule, !v_HPRT1, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_ATP_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_GMPS, !v_HPRT1, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_GMPS, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_XMP_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_XMP_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_L_Glutamine_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_L_Glutamine_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_HPRT1, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_HPRT1, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_NADP_simple_molecule, !v_H2O_simple_molecule_cell, !v_HPRT1), Set(!v_NADP_simple_molecule, !v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule), Set(!v_NADP_simple_molecule, !v_H2O_simple_molecule_cell, !v_Guanine_simple_molecule), Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_GMPR, !v_XMP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_HPRT1, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_HPRT1, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_ATP_simple_molecule, !v_HPRT1, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_ATP_simple_molecule, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_GMPS, !v_HPRT1, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_GMPS, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule), Set(!v_HPRT1, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_HPRT1, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_ATP_simple_molecule, !v_HPRT1, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_ATP_simple_molecule, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_GMPS, !v_HPRT1, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_GMPS, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_HPRT1, !v_Ammonium_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_Ammonium_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_HPRT1, !v_Ammonium_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_Ammonium_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_H2O_simple_molecule_cell, !v_HPRT1, !v_Ammonium_simple_molecule), Set(!v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_Ammonium_simple_molecule), Set(!v_H2O_simple_molecule_cell, !v_Guanine_simple_molecule, !v_Ammonium_simple_molecule), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_XMP_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_HPRT1, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_HPRT1, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_ATP_simple_molecule, !v_HPRT1, !v_GDP_simple_molecule, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_ATP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_GMPS, !v_HPRT1, !v_GDP_simple_molecule, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_GDP_simple_molecule, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_GMPS, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule), Set(!v_HPRT1, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule), Set(!v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule), Set(!v_HPRT1, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule), Set(!v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule), Set(!v_ATP_simple_molecule, !v_HPRT1, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule), Set(!v_ATP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule), Set(!v_GMPS, !v_HPRT1, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule), Set(!v_GMPS, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_XMP_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_L_Glutamine_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_L_Glutamine_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_HPRT1, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_HPRT1, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule), Set(!v_ENTPD2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule), Set(!v_H2O_simple_molecule_cell, !v_HPRT1, !v_IMP_simple_molecule), Set(!v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_IMP_simple_molecule), Set(!v_H2O_simple_molecule_cell, !v_IMP_simple_molecule, !v_Guanine_simple_molecule), Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_GMPR, !v_XMP_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_GMPR2, !v_HPRT1, !v_GMPR, !v_XMP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPR, !v_XMP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_GMPR2, !v_GMPR, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_GMPR2, !v_HPRT1, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_GMPR2, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_GMPR2, !v_ATP_simple_molecule, !v_HPRT1, !v_GMPR, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_GMPR, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_GMPR2, !v_ATP_simple_molecule, !v_GMPR, !v_Guanine_simple_molecule, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_GMPR2, !v_GMPS, !v_HPRT1, !v_GMPR, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_GMPR, !v_GDP_simple_molecule), Set(!v_ENTPD2, !v_GMPR2, !v_GMPS, !v_GMPR, !v_Guanine_simple_molecule, !v_GDP_simple_molecule), Set(!v_GMPR2, !v_HPRT1, !v_GMPR, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPR, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_GMPR2, !v_GMPR, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_GMPR2, !v_HPRT1, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_GMPR2, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_GMPR2, !v_ATP_simple_molecule, !v_HPRT1, !v_GMPR, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_GMPR, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_GMPR2, !v_ATP_simple_molecule, !v_GMPR, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_GMPR2, !v_GMPS, !v_HPRT1, !v_GMPR, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_GMPR, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_GMPR2, !v_GMPS, !v_GMPR, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule), Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_ENTPD4, !v_GMPR, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_ENTPD4, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_HPRT1, !v_GMPR, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_GMPR, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_GMPR, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_HPRT1, !v_GMPR, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_GMPR, !v_ENTPD6, !v_ENTPD5), Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_GMPR, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5), Set(!v_GMPR2, !v_H2O_simple_molecule_cell, !v_HPRT1, !v_GMPR), Set(!v_GMPR2, !v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPR), Set(!v_GMPR2, !v_H2O_simple_molecule_cell, !v_Guanine_simple_molecule, !v_GMPR)))
+(Set(v_HPRT1, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_Guanine_simple_molecule),Set(-58, -93, -103))
+(Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_CANT1),Set(-36, -52, -118))
+(Set(v_ENTPD5, v_GDP_simple_molecule, v_H2O_simple_molecule_cell),Set(-29, -36, -52))
+(Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD6),Set(-36, -52, -59))
+(Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD4),Set(-36, -52, -132))
+(Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD2),Set(-36, -52, -141))
+(Set(v_ATP_simple_molecule, v_GMPS, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_XMP_simple_molecule),Set(-52, -85, -102, -56, -2))
+(Set(v_NADP_simple_molecule, v_GMPR2, v_IMP_simple_molecule, v_Ammonium_simple_molecule),Set(-11, -46, -98, -144))
+(Set(v_NADP_simple_molecule, v_IMP_simple_molecule, v_GMPR, v_Ammonium_simple_molecule),Set(-11, -98, -110, -144))
+(Set(v_GTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD2),Set(-30, -52, -141))
+(Set(!v_ENTPD2, !v_HPRT1, !v_XMP_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule),Set(102, 141, 11, 58, 36))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_XMP_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule),Set(93, 102, 141, 11, 36))
+(Set(!v_ENTPD2, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule),Set(102, 141, 103, 11, 36))
+(Set(!v_ENTPD2, !v_HPRT1, !v_L_Glutamine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule),Set(141, 2, 11, 58, 36))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_L_Glutamine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule),Set(93, 141, 2, 11, 36))
+(Set(!v_ENTPD2, !v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule),Set(141, 2, 103, 11, 36))
+(Set(!v_ENTPD2, !v_ATP_simple_molecule, !v_HPRT1, !v_NADP_simple_molecule, !v_GDP_simple_molecule),Set(85, 141, 11, 58, 36))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule),Set(93, 85, 141, 11, 36))
+(Set(!v_ENTPD2, !v_ATP_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule),Set(85, 141, 103, 11, 36))
+(Set(!v_ENTPD2, !v_GMPS, !v_HPRT1, !v_NADP_simple_molecule, !v_GDP_simple_molecule),Set(56, 141, 11, 58, 36))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_NADP_simple_molecule, !v_GDP_simple_molecule),Set(56, 93, 141, 11, 36))
+(Set(!v_ENTPD2, !v_GMPS, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule),Set(56, 141, 103, 11, 36))
+(Set(!v_HPRT1, !v_XMP_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(102, 11, 58, 36, 30))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_XMP_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(93, 102, 11, 36, 30))
+(Set(!v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(102, 103, 11, 36, 30))
+(Set(!v_HPRT1, !v_L_Glutamine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(2, 11, 58, 36, 30))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_L_Glutamine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(93, 2, 11, 36, 30))
+(Set(!v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(2, 103, 11, 36, 30))
+(Set(!v_ATP_simple_molecule, !v_HPRT1, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(85, 11, 58, 36, 30))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(93, 85, 11, 36, 30))
+(Set(!v_ATP_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(85, 103, 11, 36, 30))
+(Set(!v_GMPS, !v_HPRT1, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(56, 11, 58, 36, 30))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(56, 93, 11, 36, 30))
+(Set(!v_GMPS, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(56, 103, 11, 36, 30))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_XMP_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(29, 132, 102, 141, 59, 118, 11, 58))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_XMP_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(93, 29, 132, 102, 141, 59, 118, 11))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(29, 132, 102, 141, 59, 118, 103, 11))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_L_Glutamine_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(29, 132, 141, 2, 59, 118, 11, 58))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_L_Glutamine_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(93, 29, 132, 141, 2, 59, 118, 11))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(29, 132, 141, 2, 59, 118, 103, 11))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_HPRT1, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(29, 132, 85, 141, 59, 118, 11, 58))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(93, 29, 132, 85, 141, 59, 118, 11))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(29, 132, 85, 141, 59, 118, 103, 11))
+(Set(!v_ENTPD2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_HPRT1, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(56, 29, 132, 141, 59, 118, 11, 58))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(56, 93, 29, 132, 141, 59, 118, 11))
+(Set(!v_ENTPD2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_Guanine_simple_molecule, !v_NADP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(56, 29, 132, 141, 59, 118, 103, 11))
+(Set(!v_NADP_simple_molecule, !v_H2O_simple_molecule_cell, !v_HPRT1),Set(11, 52, 58))
+(Set(!v_NADP_simple_molecule, !v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(11, 52, 93))
+(Set(!v_NADP_simple_molecule, !v_H2O_simple_molecule_cell, !v_Guanine_simple_molecule),Set(11, 52, 103))
+(Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_GMPR, !v_XMP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(110, 46, 29, 132, 102, 141, 59, 118, 58))
+(Set(!v_ENTPD2, !v_HPRT1, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_GDP_simple_molecule),Set(102, 141, 144, 58, 36))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_GDP_simple_molecule),Set(93, 102, 141, 144, 36))
+(Set(!v_ENTPD2, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule),Set(102, 141, 144, 103, 36))
+(Set(!v_ENTPD2, !v_HPRT1, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule),Set(141, 2, 144, 58, 36))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule),Set(93, 141, 2, 144, 36))
+(Set(!v_ENTPD2, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule),Set(141, 2, 144, 103, 36))
+(Set(!v_ENTPD2, !v_ATP_simple_molecule, !v_HPRT1, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule),Set(85, 141, 144, 58, 36))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule),Set(93, 85, 141, 144, 36))
+(Set(!v_ENTPD2, !v_ATP_simple_molecule, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule),Set(85, 141, 144, 103, 36))
+(Set(!v_ENTPD2, !v_GMPS, !v_HPRT1, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule),Set(56, 141, 144, 58, 36))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule),Set(56, 93, 141, 144, 36))
+(Set(!v_ENTPD2, !v_GMPS, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule),Set(56, 141, 144, 103, 36))
+(Set(!v_HPRT1, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(102, 144, 58, 36, 30))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(93, 102, 144, 36, 30))
+(Set(!v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(102, 144, 103, 36, 30))
+(Set(!v_HPRT1, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(2, 144, 58, 36, 30))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(93, 2, 144, 36, 30))
+(Set(!v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(2, 144, 103, 36, 30))
+(Set(!v_ATP_simple_molecule, !v_HPRT1, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(85, 144, 58, 36, 30))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(93, 85, 144, 36, 30))
+(Set(!v_ATP_simple_molecule, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(85, 144, 103, 36, 30))
+(Set(!v_GMPS, !v_HPRT1, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(56, 144, 58, 36, 30))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_Ammonium_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(56, 93, 144, 36, 30))
+(Set(!v_GMPS, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(56, 144, 103, 36, 30))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(29, 132, 102, 141, 59, 118, 144, 58))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(93, 29, 132, 102, 141, 59, 118, 144))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_Ammonium_simple_molecule, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(29, 132, 102, 141, 59, 118, 144, 103))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(29, 132, 141, 2, 59, 118, 144, 58))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(93, 29, 132, 141, 2, 59, 118, 144))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_L_Glutamine_simple_molecule, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(29, 132, 141, 2, 59, 118, 144, 103))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_HPRT1, !v_Ammonium_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(29, 132, 85, 141, 59, 118, 144, 58))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_Ammonium_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(93, 29, 132, 85, 141, 59, 118, 144))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(29, 132, 85, 141, 59, 118, 144, 103))
+(Set(!v_ENTPD2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_HPRT1, !v_Ammonium_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(56, 29, 132, 141, 59, 118, 144, 58))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_Ammonium_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(56, 93, 29, 132, 141, 59, 118, 144))
+(Set(!v_ENTPD2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_Ammonium_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(56, 29, 132, 141, 59, 118, 144, 103))
+(Set(!v_H2O_simple_molecule_cell, !v_HPRT1, !v_Ammonium_simple_molecule),Set(52, 58, 144))
+(Set(!v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_Ammonium_simple_molecule),Set(52, 93, 144))
+(Set(!v_H2O_simple_molecule_cell, !v_Guanine_simple_molecule, !v_Ammonium_simple_molecule),Set(52, 103, 144))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_XMP_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule),Set(29, 132, 102, 141, 59, 118, 98, 58))
+(Set(!v_ENTPD2, !v_HPRT1, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule),Set(102, 141, 98, 58, 36))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule),Set(93, 102, 141, 98, 36))
+(Set(!v_ENTPD2, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule),Set(102, 141, 98, 103, 36))
+(Set(!v_ENTPD2, !v_HPRT1, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule),Set(141, 2, 98, 58, 36))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule),Set(93, 141, 2, 98, 36))
+(Set(!v_ENTPD2, !v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule),Set(141, 2, 98, 103, 36))
+(Set(!v_ENTPD2, !v_ATP_simple_molecule, !v_HPRT1, !v_GDP_simple_molecule, !v_IMP_simple_molecule),Set(85, 141, 98, 58, 36))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule),Set(93, 85, 141, 98, 36))
+(Set(!v_ENTPD2, !v_ATP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule),Set(85, 141, 98, 103, 36))
+(Set(!v_ENTPD2, !v_GMPS, !v_HPRT1, !v_GDP_simple_molecule, !v_IMP_simple_molecule),Set(56, 141, 98, 58, 36))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_GDP_simple_molecule, !v_IMP_simple_molecule),Set(56, 93, 141, 98, 36))
+(Set(!v_ENTPD2, !v_GMPS, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_IMP_simple_molecule),Set(56, 141, 98, 103, 36))
+(Set(!v_HPRT1, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule),Set(102, 98, 58, 36, 30))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule),Set(93, 102, 98, 36, 30))
+(Set(!v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule),Set(102, 98, 103, 36, 30))
+(Set(!v_HPRT1, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule),Set(2, 98, 58, 36, 30))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule),Set(93, 2, 98, 36, 30))
+(Set(!v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule),Set(2, 98, 103, 36, 30))
+(Set(!v_ATP_simple_molecule, !v_HPRT1, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule),Set(85, 98, 58, 36, 30))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule),Set(93, 85, 98, 36, 30))
+(Set(!v_ATP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule),Set(85, 98, 103, 36, 30))
+(Set(!v_GMPS, !v_HPRT1, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule),Set(56, 98, 58, 36, 30))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule),Set(56, 93, 98, 36, 30))
+(Set(!v_GMPS, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule, !v_IMP_simple_molecule),Set(56, 98, 103, 36, 30))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_XMP_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule),Set(93, 29, 132, 102, 141, 59, 118, 98))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule),Set(29, 132, 102, 141, 59, 118, 98, 103))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_L_Glutamine_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule),Set(29, 132, 141, 2, 59, 118, 98, 58))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_L_Glutamine_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule),Set(93, 29, 132, 141, 2, 59, 118, 98))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule),Set(29, 132, 141, 2, 59, 118, 98, 103))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_HPRT1, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule),Set(29, 132, 85, 141, 59, 118, 98, 58))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule),Set(93, 29, 132, 85, 141, 59, 118, 98))
+(Set(!v_ENTPD2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule),Set(29, 132, 85, 141, 59, 118, 98, 103))
+(Set(!v_ENTPD2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_HPRT1, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule),Set(56, 29, 132, 141, 59, 118, 98, 58))
+(Set(!v_ENTPD2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule),Set(56, 93, 29, 132, 141, 59, 118, 98))
+(Set(!v_ENTPD2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5, !v_IMP_simple_molecule),Set(56, 29, 132, 141, 59, 118, 98, 103))
+(Set(!v_H2O_simple_molecule_cell, !v_HPRT1, !v_IMP_simple_molecule),Set(52, 58, 98))
+(Set(!v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_IMP_simple_molecule),Set(52, 93, 98))
+(Set(!v_H2O_simple_molecule_cell, !v_IMP_simple_molecule, !v_Guanine_simple_molecule),Set(52, 98, 103))
+(Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_GMPR, !v_XMP_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(110, 46, 93, 29, 132, 102, 141, 59, 118))
+(Set(!v_ENTPD2, !v_GMPR2, !v_HPRT1, !v_GMPR, !v_XMP_simple_molecule, !v_GDP_simple_molecule),Set(110, 46, 102, 141, 58, 36))
+(Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPR, !v_XMP_simple_molecule, !v_GDP_simple_molecule),Set(110, 46, 93, 102, 141, 36))
+(Set(!v_ENTPD2, !v_GMPR2, !v_GMPR, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule),Set(110, 46, 102, 141, 103, 36))
+(Set(!v_ENTPD2, !v_GMPR2, !v_HPRT1, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule),Set(110, 46, 141, 2, 58, 36))
+(Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule),Set(110, 46, 93, 141, 2, 36))
+(Set(!v_ENTPD2, !v_GMPR2, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule),Set(110, 46, 141, 2, 103, 36))
+(Set(!v_ENTPD2, !v_GMPR2, !v_ATP_simple_molecule, !v_HPRT1, !v_GMPR, !v_GDP_simple_molecule),Set(110, 46, 85, 141, 58, 36))
+(Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_GMPR, !v_GDP_simple_molecule),Set(110, 46, 93, 85, 141, 36))
+(Set(!v_ENTPD2, !v_GMPR2, !v_ATP_simple_molecule, !v_GMPR, !v_Guanine_simple_molecule, !v_GDP_simple_molecule),Set(110, 46, 85, 141, 103, 36))
+(Set(!v_ENTPD2, !v_GMPR2, !v_GMPS, !v_HPRT1, !v_GMPR, !v_GDP_simple_molecule),Set(56, 110, 46, 141, 58, 36))
+(Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_GMPR, !v_GDP_simple_molecule),Set(56, 110, 46, 93, 141, 36))
+(Set(!v_ENTPD2, !v_GMPR2, !v_GMPS, !v_GMPR, !v_Guanine_simple_molecule, !v_GDP_simple_molecule),Set(56, 110, 46, 141, 103, 36))
+(Set(!v_GMPR2, !v_HPRT1, !v_GMPR, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(110, 46, 102, 58, 36, 30))
+(Set(!v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPR, !v_XMP_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(110, 46, 93, 102, 36, 30))
+(Set(!v_GMPR2, !v_GMPR, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(110, 46, 102, 103, 36, 30))
+(Set(!v_GMPR2, !v_HPRT1, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(110, 46, 2, 58, 36, 30))
+(Set(!v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(110, 46, 93, 2, 36, 30))
+(Set(!v_GMPR2, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(110, 46, 2, 103, 36, 30))
+(Set(!v_GMPR2, !v_ATP_simple_molecule, !v_HPRT1, !v_GMPR, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(110, 46, 85, 58, 36, 30))
+(Set(!v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ATP_simple_molecule, !v_GMPR, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(110, 46, 93, 85, 36, 30))
+(Set(!v_GMPR2, !v_ATP_simple_molecule, !v_GMPR, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(110, 46, 85, 103, 36, 30))
+(Set(!v_GMPR2, !v_GMPS, !v_HPRT1, !v_GMPR, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(56, 110, 46, 58, 36, 30))
+(Set(!v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPS, !v_GMPR, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(56, 110, 46, 93, 36, 30))
+(Set(!v_GMPR2, !v_GMPS, !v_GMPR, !v_Guanine_simple_molecule, !v_GDP_simple_molecule, !v_GTP_simple_molecule),Set(56, 110, 46, 103, 36, 30))
+(Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_ENTPD4, !v_GMPR, !v_XMP_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(110, 46, 29, 132, 102, 141, 59, 118, 103))
+(Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_ENTPD4, !v_HPRT1, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(110, 46, 29, 132, 141, 2, 59, 118, 58))
+(Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(110, 46, 93, 29, 132, 141, 2, 59, 118))
+(Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_ENTPD4, !v_GMPR, !v_L_Glutamine_simple_molecule, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(110, 46, 29, 132, 141, 2, 59, 118, 103))
+(Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_HPRT1, !v_GMPR, !v_ENTPD6, !v_ENTPD5),Set(110, 46, 29, 132, 85, 141, 59, 118, 58))
+(Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_GMPR, !v_ENTPD6, !v_ENTPD5),Set(110, 46, 93, 29, 132, 85, 141, 59, 118))
+(Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_ENTPD4, !v_ATP_simple_molecule, !v_GMPR, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(110, 46, 29, 132, 85, 141, 59, 118, 103))
+(Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_HPRT1, !v_GMPR, !v_ENTPD6, !v_ENTPD5),Set(56, 110, 46, 29, 132, 141, 59, 118, 58))
+(Set(!v_ENTPD2, !v_GMPR2, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_GMPR, !v_ENTPD6, !v_ENTPD5),Set(56, 110, 46, 93, 29, 132, 141, 59, 118))
+(Set(!v_ENTPD2, !v_GMPR2, !v_CANT1, !v_GMPS, !v_ENTPD4, !v_GMPR, !v_Guanine_simple_molecule, !v_ENTPD6, !v_ENTPD5),Set(56, 110, 46, 29, 132, 141, 59, 118, 103))
+(Set(!v_GMPR2, !v_H2O_simple_molecule_cell, !v_HPRT1, !v_GMPR),Set(46, 52, 58, 110))
+(Set(!v_GMPR2, !v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_GMPR),Set(46, 52, 93, 110))
+(Set(!v_GMPR2, !v_H2O_simple_molecule_cell, !v_Guanine_simple_molecule, !v_GMPR),Set(46, 52, 103, 110))
+
+Some(Vector(Set(v_GDP_simple_molecule, v_NME6, v_ATP_simple_molecule), Set(v_GDP_simple_molecule, v_ATP_simple_molecule, v_NME5), Set(v_csa2_Nucleoside_diphosphate_kinase_complex_cell, v_GDP_simple_molecule, v_ATP_simple_molecule), Set(v_NME7, v_GDP_simple_molecule, v_ATP_simple_molecule), Set(v_GDP_simple_molecule, v_ATP_simple_molecule, v_NME3)))
+Some(Vector(Set(!v_ATP_simple_molecule), Set(!v_GDP_simple_molecule), Set(!v_NME5, !v_csa2_Nucleoside_diphosphate_kinase_complex_cell, !v_NME6, !v_NME7, !v_NME3)))
+(Set(v_GDP_simple_molecule, v_NME6, v_ATP_simple_molecule),Set(-36, -40, -85))
+(Set(v_GDP_simple_molecule, v_ATP_simple_molecule, v_NME5),Set(-36, -85, -146))
+(Set(v_csa2_Nucleoside_diphosphate_kinase_complex_cell, v_GDP_simple_molecule, v_ATP_simple_molecule),Set(-34, -36, -85))
+(Set(v_NME7, v_GDP_simple_molecule, v_ATP_simple_molecule),Set(-6, -36, -85))
+(Set(v_GDP_simple_molecule, v_ATP_simple_molecule, v_NME3),Set(-36, -85, -88))
+(Set(!v_ATP_simple_molecule),Set(85))
+(Set(!v_GDP_simple_molecule),Set(36))
+(Set(!v_NME5, !v_csa2_Nucleoside_diphosphate_kinase_complex_cell, !v_NME6, !v_NME7, !v_NME3),Set(88, 6, 34, 40, 146))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Pi_simple_molecule, v_PNP, v_Guanosine_simple_molecule), Set(v_Deoxyguanosine_simple_molecule, v_Pi_simple_molecule, v_PNP)))
+Some(Vector(Set(!v_Deoxyguanosine_simple_molecule, !v_Guanosine_simple_molecule), Set(!v_PNP), Set(!v_Pi_simple_molecule)))
+(Set(v_Pi_simple_molecule, v_PNP, v_Guanosine_simple_molecule),Set(-87, -21, -114))
+(Set(v_Deoxyguanosine_simple_molecule, v_Pi_simple_molecule, v_PNP),Set(-82, -87, -21))
+(Set(!v_Deoxyguanosine_simple_molecule, !v_Guanosine_simple_molecule),Set(82, 114))
+(Set(!v_PNP),Set(21))
+(Set(!v_Pi_simple_molecule),Set(87))
+
+Some(Vector(Set(v_GMP_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E)))
+Some(Vector(Set(!v_NT5E), Set(!v_H2O_simple_molecule_cell), Set(!v_GMP_simple_molecule)))
+(Set(v_GMP_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E),Set(-67, -52, -90))
+(Set(!v_NT5E),Set(90))
+(Set(!v_H2O_simple_molecule_cell),Set(52))
+(Set(!v_GMP_simple_molecule),Set(67))
+
+Some(Vector(Set(v_ADP_simple_molecule, v_csa4_ribonucleoside_reductase_complex_cell, v_Thioredoxin_simple_molecule), Set(v_csa3_ribonucleoside_reductase_complex_cell, v_GDP_simple_molecule, v_Thioredoxin_simple_molecule), Set(v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, v_ATIC)))
+Some(Vector(Set(!v_csa3_ribonucleoside_reductase_complex_cell, !v_ATIC, !v_csa4_ribonucleoside_reductase_complex_cell), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_csa3_ribonucleoside_reductase_complex_cell, !v_csa4_ribonucleoside_reductase_complex_cell), Set(!v_GDP_simple_molecule, !v_ATIC, !v_csa4_ribonucleoside_reductase_complex_cell), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_GDP_simple_molecule, !v_csa4_ribonucleoside_reductase_complex_cell), Set(!v_csa3_ribonucleoside_reductase_complex_cell, !v_ADP_simple_molecule, !v_ATIC), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_csa3_ribonucleoside_reductase_complex_cell, !v_ADP_simple_molecule), Set(!v_ADP_simple_molecule, !v_GDP_simple_molecule, !v_ATIC), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_ADP_simple_molecule, !v_GDP_simple_molecule), Set(!v_ATIC, !v_Thioredoxin_simple_molecule), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_Thioredoxin_simple_molecule)))
+(Set(v_ADP_simple_molecule, v_csa4_ribonucleoside_reductase_complex_cell, v_Thioredoxin_simple_molecule),Set(-24, -77, -100))
+(Set(v_csa3_ribonucleoside_reductase_complex_cell, v_GDP_simple_molecule, v_Thioredoxin_simple_molecule),Set(-23, -36, -100))
+(Set(v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, v_ATIC),Set(-13, -37))
+(Set(!v_csa3_ribonucleoside_reductase_complex_cell, !v_ATIC, !v_csa4_ribonucleoside_reductase_complex_cell),Set(23, 37, 77))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_csa3_ribonucleoside_reductase_complex_cell, !v_csa4_ribonucleoside_reductase_complex_cell),Set(13, 23, 77))
+(Set(!v_GDP_simple_molecule, !v_ATIC, !v_csa4_ribonucleoside_reductase_complex_cell),Set(36, 37, 77))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_GDP_simple_molecule, !v_csa4_ribonucleoside_reductase_complex_cell),Set(13, 36, 77))
+(Set(!v_csa3_ribonucleoside_reductase_complex_cell, !v_ADP_simple_molecule, !v_ATIC),Set(23, 24, 37))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_csa3_ribonucleoside_reductase_complex_cell, !v_ADP_simple_molecule),Set(13, 23, 24))
+(Set(!v_ADP_simple_molecule, !v_GDP_simple_molecule, !v_ATIC),Set(24, 36, 37))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_ADP_simple_molecule, !v_GDP_simple_molecule),Set(13, 24, 36))
+(Set(!v_ATIC, !v_Thioredoxin_simple_molecule),Set(37, 100))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_Thioredoxin_simple_molecule),Set(13, 100))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_Hypoxanthine_simple_molecule, v_XDH), Set(v_5_phosphoribosyl_N_formylglycinamide_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_PFAS), Set(v_2__Formamido__N1__5__phosphoribosyl_acetamidine_simple_molecule, v_GART, v_ATP_simple_molecule), Set(v_GTP_simple_molecule, v_H2O_simple_molecule_cell, v_NTPCR), Set(v_GTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD2), Set(v_NRK1, v_ATP_simple_molecule, v_N_Ribosyl_nicotinamide_simple_molecule), Set(v_NADP_simple_molecule, v_Galacitol_simple_molecule, v_AKR1B1), Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_CANT1), Set(v_ENTPD5, v_GDP_simple_molecule, v_H2O_simple_molecule_cell), Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD6), Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD4), Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD2), Set(v_5_phospho_beta_D_ribosylglycinamide_simple_molecule, v_GART, v_10_Formyltetrahydrofolate_simple_molecule), Set(v_Deoxyadenosine_simple_molecule, v_DCK, v_ATP_simple_molecule), Set(v_Glycine_simple_molecule, v_GART, v_ATP_simple_molecule, v_5_phospho_beta_D_ribosylamine_simple_molecule), Set(v_L_Aspartate_simple_molecule, v_1__5_Phospho_D_ribosyl__5_amino_4_imidazolecarboxylate_simple_molecule, v_PAICS, v_ATP_simple_molecule), Set(v_Deamino_NAD_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_NADSYN1, v_L_Glutamine_simple_molecule), Set(v_CD38, v_NAD_simple_molecule, v_H2O_simple_molecule_cell), Set(v_NAD_simple_molecule, v_ATP_simple_molecule, v_NADK), Set(v_ADK, v_ATP_simple_molecule, v_Adenosine_simple_molecule), Set(v_dGTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENPP3), Set(v_dGTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENPP1), Set(v_ITPA, v_dGTP_simple_molecule, v_H2O_simple_molecule_cell), Set(v_ATP_simple_molecule, v_GMPS, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_XMP_simple_molecule), Set(v_DCK, v_Deoxyguanosine_simple_molecule, v_ATP_simple_molecule), Set(v_CO2_simple_molecule, v_Aminoimidazole_ribotide_simple_molecule, v_PAICS), Set(v_NADP_simple_molecule, v_GMPR2, v_IMP_simple_molecule, v_Ammonium_simple_molecule), Set(v_NADP_simple_molecule, v_IMP_simple_molecule, v_GMPR, v_Ammonium_simple_molecule), Set(!v_Merimepodib_drug, !v_Ribavirin_drug, !v_Mycophenolic_acid_drug, v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_IMP_simple_molecule, v_IMPDH2_Nsp14_complex), Set(!v_Merimepodib_drug, !v_Ribavirin_drug, v_IMPDH2, !v_Mycophenolic_acid_drug, v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_IMP_simple_molecule), Set(!v_Merimepodib_drug, !v_Ribavirin_drug, !v_Mycophenolic_acid_drug, v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_IMP_simple_molecule, v_IMPDH1)))
+None
+
+# Use TseitinTransitionEncoder
+
+# Formula
+Or(And(v_GTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD2), And(Or(v_GMPR, v_GMPR2), v_IMP_simple_molecule, v_Ammonium_simple_molecule, v_NADP_simple_molecule), And(v_Aminoimidazole_ribotide_simple_molecule, v_CO2_simple_molecule, v_PAICS), And(v_Deoxyguanosine_simple_molecule, v_ATP_simple_molecule, v_DCK), And(v_ATP_simple_molecule, v_GMPS, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_XMP_simple_molecule), And(Or(v_ITPA, v_ENPP1, v_ENPP3), v_dGTP_simple_molecule, v_H2O_simple_molecule_cell), And(v_Adenosine_simple_molecule, v_ATP_simple_molecule, v_ADK), And(v_NAD_simple_molecule, v_ATP_simple_molecule, v_NADK), And(v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_CD38), And(v_Deamino_NAD_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_NADSYN1, v_L_Glutamine_simple_molecule), And(v_1__5_Phospho_D_ribosyl__5_amino_4_imidazolecarboxylate_simple_molecule, v_L_Aspartate_simple_molecule, v_ATP_simple_molecule, v_PAICS), And(v_5_phospho_beta_D_ribosylamine_simple_molecule, v_Glycine_simple_molecule, v_ATP_simple_molecule, v_GART), And(v_Deoxyadenosine_simple_molecule, v_ATP_simple_molecule, v_DCK), And(v_5_phospho_beta_D_ribosylglycinamide_simple_molecule, v_10_Formyltetrahydrofolate_simple_molecule, v_GART), And(Or(v_ENTPD2, v_ENTPD4, v_ENTPD6, v_ENTPD5, v_CANT1), v_GDP_simple_molecule, v_H2O_simple_molecule_cell), And(v_Galacitol_simple_molecule, v_NADP_simple_molecule, v_AKR1B1), And(v_N_Ribosyl_nicotinamide_simple_molecule, v_ATP_simple_molecule, v_NRK1), And(Or(v_ENTPD2, v_NTPCR), v_GTP_simple_molecule, v_H2O_simple_molecule_cell), And(v_2__Formamido__N1__5__phosphoribosyl_acetamidine_simple_molecule, v_ATP_simple_molecule, v_GART), And(v_NAD_simple_molecule, Neg(v_Merimepodib_drug), Neg(v_Mycophenolic_acid_drug), Or(v_IMPDH1, v_IMPDH2, v_IMPDH2_Nsp14_complex), v_H2O_simple_molecule_cell, v_IMP_simple_molecule, Neg(v_Ribavirin_drug)), And(v_5_phosphoribosyl_N_formylglycinamide_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_PFAS), And(v_Hypoxanthine_simple_molecule, v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_XDH))
+Or(And(!v_Merimepodib_drug, !v_Ribavirin_drug, !v_Mycophenolic_acid_drug, v_NAD_simple_molecule, Or(v_IMPDH1, v_IMPDH2, v_IMPDH2_Nsp14_complex), v_H2O_simple_molecule_cell, v_IMP_simple_molecule), And(v_GTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD2), And(Or(v_GMPR, v_GMPR2), v_IMP_simple_molecule, v_Ammonium_simple_molecule, v_NADP_simple_molecule), And(v_Aminoimidazole_ribotide_simple_molecule, v_CO2_simple_molecule, v_PAICS), And(v_Deoxyguanosine_simple_molecule, v_ATP_simple_molecule, v_DCK), And(v_ATP_simple_molecule, v_GMPS, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_XMP_simple_molecule), And(Or(v_ITPA, v_ENPP1, v_ENPP3), v_dGTP_simple_molecule, v_H2O_simple_molecule_cell), And(v_Adenosine_simple_molecule, v_ATP_simple_molecule, v_ADK), And(v_NAD_simple_molecule, v_ATP_simple_molecule, v_NADK), And(v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_CD38), And(v_Deamino_NAD_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_NADSYN1, v_L_Glutamine_simple_molecule), And(v_1__5_Phospho_D_ribosyl__5_amino_4_imidazolecarboxylate_simple_molecule, v_L_Aspartate_simple_molecule, v_ATP_simple_molecule, v_PAICS), And(v_5_phospho_beta_D_ribosylamine_simple_molecule, v_Glycine_simple_molecule, v_ATP_simple_molecule, v_GART), And(v_Deoxyadenosine_simple_molecule, v_ATP_simple_molecule, v_DCK), And(v_5_phospho_beta_D_ribosylglycinamide_simple_molecule, v_10_Formyltetrahydrofolate_simple_molecule, v_GART), And(Or(v_ENTPD2, v_ENTPD4, v_ENTPD6, v_ENTPD5, v_CANT1), v_GDP_simple_molecule, v_H2O_simple_molecule_cell), And(v_Galacitol_simple_molecule, v_NADP_simple_molecule, v_AKR1B1), And(v_N_Ribosyl_nicotinamide_simple_molecule, v_ATP_simple_molecule, v_NRK1), And(Or(v_ENTPD2, v_NTPCR), v_GTP_simple_molecule, v_H2O_simple_molecule_cell), And(v_2__Formamido__N1__5__phosphoribosyl_acetamidine_simple_molecule, v_ATP_simple_molecule, v_GART), And(v_5_phosphoribosyl_N_formylglycinamide_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_PFAS), And(v_Hypoxanthine_simple_molecule, v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_XDH))
+# Output lit: 142, x lit: 199
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Inosine_simple_molecule, v_Pi_simple_molecule, v_PNP)))
+Some(Vector(Set(!v_PNP), Set(!v_Pi_simple_molecule), Set(!v_Inosine_simple_molecule)))
+(Set(v_Inosine_simple_molecule, v_Pi_simple_molecule, v_PNP),Set(-16, -87, -21))
+(Set(!v_PNP),Set(21))
+(Set(!v_Pi_simple_molecule),Set(87))
+(Set(!v_Inosine_simple_molecule),Set(16))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_IMPDH2, v_Nsp14_cell)))
+Some(Vector(Set(!v_Nsp14_cell), Set(!v_IMPDH2)))
+(Set(v_IMPDH2, v_Nsp14_cell),Set(-75, -105))
+(Set(!v_Nsp14_cell),Set(105))
+(Set(!v_IMPDH2),Set(75))
+
+Some(Vector(Set(v_HPRT1, v_Hypoxanthine_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule), Set(v_AMPD3, v_H2O_simple_molecule_cell, v_AMP_simple_molecule, v_H_simple_molecule), Set(v_H2O_simple_molecule_cell, v_AMP_simple_molecule, v_H_simple_molecule, v_AMPD1), Set(v_H2O_simple_molecule_cell, v_AMP_simple_molecule, v_AMDP2, v_H_simple_molecule), Set(v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, v_ATIC)))
+Some(Vector(Set(!v_ATIC, !v_H2O_simple_molecule_cell, !v_HPRT1), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_H2O_simple_molecule_cell, !v_HPRT1), Set(!v_ATIC, !v_HPRT1, !v_H_simple_molecule), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_HPRT1, !v_H_simple_molecule), Set(!v_ATIC, !v_HPRT1, !v_AMP_simple_molecule), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_HPRT1, !v_AMP_simple_molecule), Set(!v_HPRT1, !v_AMPD3, !v_ATIC, !v_AMDP2, !v_AMPD1), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_HPRT1, !v_AMPD3, !v_AMDP2, !v_AMPD1), Set(!v_ATIC, !v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule), Set(!v_ATIC, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_H_simple_molecule), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_H_simple_molecule), Set(!v_ATIC, !v_AMP_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_AMP_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_AMPD3, !v_ATIC, !v_AMDP2, !v_AMPD1), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_AMPD3, !v_AMDP2, !v_AMPD1), Set(!v_ATIC, !v_H2O_simple_molecule_cell, !v_Hypoxanthine_simple_molecule), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_H2O_simple_molecule_cell, !v_Hypoxanthine_simple_molecule), Set(!v_ATIC, !v_Hypoxanthine_simple_molecule, !v_H_simple_molecule), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_Hypoxanthine_simple_molecule, !v_H_simple_molecule), Set(!v_ATIC, !v_AMP_simple_molecule, !v_Hypoxanthine_simple_molecule), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_AMP_simple_molecule, !v_Hypoxanthine_simple_molecule), Set(!v_AMPD3, !v_ATIC, !v_Hypoxanthine_simple_molecule, !v_AMDP2, !v_AMPD1), Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_AMPD3, !v_Hypoxanthine_simple_molecule, !v_AMDP2, !v_AMPD1)))
+(Set(v_HPRT1, v_Hypoxanthine_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(-58, -89, -93))
+(Set(v_AMPD3, v_H2O_simple_molecule_cell, v_AMP_simple_molecule, v_H_simple_molecule),Set(-3, -52, -73, -142))
+(Set(v_H2O_simple_molecule_cell, v_AMP_simple_molecule, v_H_simple_molecule, v_AMPD1),Set(-52, -73, -142, -147))
+(Set(v_H2O_simple_molecule_cell, v_AMP_simple_molecule, v_AMDP2, v_H_simple_molecule),Set(-52, -73, -138, -142))
+(Set(v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, v_ATIC),Set(-13, -37))
+(Set(!v_ATIC, !v_H2O_simple_molecule_cell, !v_HPRT1),Set(37, 52, 58))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_H2O_simple_molecule_cell, !v_HPRT1),Set(13, 52, 58))
+(Set(!v_ATIC, !v_HPRT1, !v_H_simple_molecule),Set(37, 58, 142))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_HPRT1, !v_H_simple_molecule),Set(13, 58, 142))
+(Set(!v_ATIC, !v_HPRT1, !v_AMP_simple_molecule),Set(37, 58, 73))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_HPRT1, !v_AMP_simple_molecule),Set(13, 58, 73))
+(Set(!v_HPRT1, !v_AMPD3, !v_ATIC, !v_AMDP2, !v_AMPD1),Set(138, 37, 147, 3, 58))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_HPRT1, !v_AMPD3, !v_AMDP2, !v_AMPD1),Set(138, 147, 13, 3, 58))
+(Set(!v_ATIC, !v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(37, 52, 93))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(13, 52, 93))
+(Set(!v_ATIC, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_H_simple_molecule),Set(37, 93, 142))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_H_simple_molecule),Set(13, 93, 142))
+(Set(!v_ATIC, !v_AMP_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(37, 73, 93))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_AMP_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(13, 73, 93))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_AMPD3, !v_ATIC, !v_AMDP2, !v_AMPD1),Set(138, 37, 93, 147, 3))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_AMPD3, !v_AMDP2, !v_AMPD1),Set(138, 93, 147, 13, 3))
+(Set(!v_ATIC, !v_H2O_simple_molecule_cell, !v_Hypoxanthine_simple_molecule),Set(37, 52, 89))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_H2O_simple_molecule_cell, !v_Hypoxanthine_simple_molecule),Set(13, 52, 89))
+(Set(!v_ATIC, !v_Hypoxanthine_simple_molecule, !v_H_simple_molecule),Set(37, 89, 142))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_Hypoxanthine_simple_molecule, !v_H_simple_molecule),Set(13, 89, 142))
+(Set(!v_ATIC, !v_AMP_simple_molecule, !v_Hypoxanthine_simple_molecule),Set(37, 73, 89))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_AMP_simple_molecule, !v_Hypoxanthine_simple_molecule),Set(13, 73, 89))
+(Set(!v_AMPD3, !v_ATIC, !v_Hypoxanthine_simple_molecule, !v_AMDP2, !v_AMPD1),Set(138, 37, 147, 89, 3))
+(Set(!v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule, !v_AMPD3, !v_Hypoxanthine_simple_molecule, !v_AMDP2, !v_AMPD1),Set(138, 147, 89, 13, 3))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_H2O_simple_molecule_cell, v_Adenosine_simple_molecule, v_ADA, v_H_simple_molecule), Set(v_H2O_simple_molecule_cell, v_NT5E, v_IMP_simple_molecule)))
+Some(Vector(Set(!v_NT5E, !v_ADA), Set(!v_IMP_simple_molecule, !v_ADA), Set(!v_NT5E, !v_H_simple_molecule), Set(!v_IMP_simple_molecule, !v_H_simple_molecule), Set(!v_NT5E, !v_Adenosine_simple_molecule), Set(!v_IMP_simple_molecule, !v_Adenosine_simple_molecule), Set(!v_H2O_simple_molecule_cell)))
+(Set(v_H2O_simple_molecule_cell, v_Adenosine_simple_molecule, v_ADA, v_H_simple_molecule),Set(-52, -121, -130, -142))
+(Set(v_H2O_simple_molecule_cell, v_NT5E, v_IMP_simple_molecule),Set(-52, -90, -98))
+(Set(!v_NT5E, !v_ADA),Set(90, 130))
+(Set(!v_IMP_simple_molecule, !v_ADA),Set(98, 130))
+(Set(!v_NT5E, !v_H_simple_molecule),Set(90, 142))
+(Set(!v_IMP_simple_molecule, !v_H_simple_molecule),Set(98, 142))
+(Set(!v_NT5E, !v_Adenosine_simple_molecule),Set(90, 121))
+(Set(!v_IMP_simple_molecule, !v_Adenosine_simple_molecule),Set(98, 121))
+(Set(!v_H2O_simple_molecule_cell),Set(52))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_UDP__alpha__D_Galactose_simple_molecule, v__alpha__D_Glucose_simple_molecule, v_lactose_synthetase_complex)))
+Some(Vector(Set(!v_lactose_synthetase_complex), Set(!v__alpha__D_Glucose_simple_molecule), Set(!v_UDP__alpha__D_Galactose_simple_molecule)))
+(Set(v_UDP__alpha__D_Galactose_simple_molecule, v__alpha__D_Glucose_simple_molecule, v_lactose_synthetase_complex),Set(-127, -136, -41))
+(Set(!v_lactose_synthetase_complex),Set(41))
+(Set(!v__alpha__D_Glucose_simple_molecule),Set(136))
+(Set(!v_UDP__alpha__D_Galactose_simple_molecule),Set(127))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_NADP_simple_molecule, v_GMPR2, v_IMP_simple_molecule, v_Ammonium_simple_molecule), Set(v_NADP_simple_molecule, v_IMP_simple_molecule, v_GMPR, v_Ammonium_simple_molecule), Set(v_NADP_simple_molecule, v_Galacitol_simple_molecule, v_AKR1B1)))
+Some(Vector(Set(!v_AKR1B1, !v_Ammonium_simple_molecule), Set(!v_Galacitol_simple_molecule, !v_Ammonium_simple_molecule), Set(!v_AKR1B1, !v_IMP_simple_molecule), Set(!v_Galacitol_simple_molecule, !v_IMP_simple_molecule), Set(!v_GMPR2, !v_AKR1B1, !v_GMPR), Set(!v_Galacitol_simple_molecule, !v_GMPR2, !v_GMPR), Set(!v_NADP_simple_molecule)))
+(Set(v_NADP_simple_molecule, v_GMPR2, v_IMP_simple_molecule, v_Ammonium_simple_molecule),Set(-11, -46, -98, -144))
+(Set(v_NADP_simple_molecule, v_IMP_simple_molecule, v_GMPR, v_Ammonium_simple_molecule),Set(-11, -98, -110, -144))
+(Set(v_NADP_simple_molecule, v_Galacitol_simple_molecule, v_AKR1B1),Set(-11, -14, -78))
+(Set(!v_AKR1B1, !v_Ammonium_simple_molecule),Set(78, 144))
+(Set(!v_Galacitol_simple_molecule, !v_Ammonium_simple_molecule),Set(14, 144))
+(Set(!v_AKR1B1, !v_IMP_simple_molecule),Set(78, 98))
+(Set(!v_Galacitol_simple_molecule, !v_IMP_simple_molecule),Set(14, 98))
+(Set(!v_GMPR2, !v_AKR1B1, !v_GMPR),Set(46, 78, 110))
+(Set(!v_Galacitol_simple_molecule, !v_GMPR2, !v_GMPR),Set(14, 46, 110))
+(Set(!v_NADP_simple_molecule),Set(11))
+
+Some(Vector(Set(v_NAD_simple_molecule, v_ATP_simple_molecule, v_NADK), Set(v_NAD_simple_molecule, v_NNT, v_NADPH_simple_molecule)))
+Some(Vector(Set(!v_NNT, !v_NADK), Set(!v_NNT, !v_ATP_simple_molecule), Set(!v_NADK, !v_NADPH_simple_molecule), Set(!v_ATP_simple_molecule, !v_NADPH_simple_molecule), Set(!v_NAD_simple_molecule)))
+(Set(v_NAD_simple_molecule, v_ATP_simple_molecule, v_NADK),Set(-8, -85, -115))
+(Set(v_NAD_simple_molecule, v_NNT, v_NADPH_simple_molecule),Set(-8, -76, -140))
+(Set(!v_NNT, !v_NADK),Set(76, 115))
+(Set(!v_NNT, !v_ATP_simple_molecule),Set(76, 85))
+(Set(!v_NADK, !v_NADPH_simple_molecule),Set(115, 140))
+(Set(!v_ATP_simple_molecule, !v_NADPH_simple_molecule),Set(85, 140))
+(Set(!v_NAD_simple_molecule),Set(8))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Nicotinamide_D_ribonucleotide_simple_molecule, v_ATP_simple_molecule, v_NMNAT3, v_H_simple_molecule), Set(v_NMNAT1, v_Nicotinamide_D_ribonucleotide_simple_molecule, v_ATP_simple_molecule, v_H_simple_molecule), Set(v_Nicotinamide_D_ribonucleotide_simple_molecule, v_ATP_simple_molecule, v_NMNAT2, v_H_simple_molecule), Set(v_Deamino_NAD_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_NADSYN1, v_L_Glutamine_simple_molecule)))
+Some(Vector(Set(!v_Deamino_NAD_simple_molecule, !v_H_simple_molecule), Set(!v_H2O_simple_molecule_cell, !v_H_simple_molecule), Set(!v_NADSYN1, !v_H_simple_molecule), Set(!v_L_Glutamine_simple_molecule, !v_H_simple_molecule), Set(!v_Nicotinamide_D_ribonucleotide_simple_molecule, !v_Deamino_NAD_simple_molecule), Set(!v_H2O_simple_molecule_cell, !v_Nicotinamide_D_ribonucleotide_simple_molecule), Set(!v_Nicotinamide_D_ribonucleotide_simple_molecule, !v_NADSYN1), Set(!v_L_Glutamine_simple_molecule, !v_Nicotinamide_D_ribonucleotide_simple_molecule), Set(!v_NMNAT1, !v_NMNAT3, !v_NMNAT2, !v_Deamino_NAD_simple_molecule), Set(!v_NMNAT1, !v_H2O_simple_molecule_cell, !v_NMNAT3, !v_NMNAT2), Set(!v_NMNAT1, !v_NADSYN1, !v_NMNAT3, !v_NMNAT2), Set(!v_L_Glutamine_simple_molecule, !v_NMNAT1, !v_NMNAT3, !v_NMNAT2), Set(!v_ATP_simple_molecule)))
+(Set(v_Nicotinamide_D_ribonucleotide_simple_molecule, v_ATP_simple_molecule, v_NMNAT3, v_H_simple_molecule),Set(-54, -85, -116, -142))
+(Set(v_NMNAT1, v_Nicotinamide_D_ribonucleotide_simple_molecule, v_ATP_simple_molecule, v_H_simple_molecule),Set(-49, -54, -85, -142))
+(Set(v_Nicotinamide_D_ribonucleotide_simple_molecule, v_ATP_simple_molecule, v_NMNAT2, v_H_simple_molecule),Set(-54, -85, -125, -142))
+(Set(v_Deamino_NAD_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_NADSYN1, v_L_Glutamine_simple_molecule),Set(-107, -52, -133, -85, -2))
+(Set(!v_Deamino_NAD_simple_molecule, !v_H_simple_molecule),Set(133, 142))
+(Set(!v_H2O_simple_molecule_cell, !v_H_simple_molecule),Set(52, 142))
+(Set(!v_NADSYN1, !v_H_simple_molecule),Set(107, 142))
+(Set(!v_L_Glutamine_simple_molecule, !v_H_simple_molecule),Set(2, 142))
+(Set(!v_Nicotinamide_D_ribonucleotide_simple_molecule, !v_Deamino_NAD_simple_molecule),Set(54, 133))
+(Set(!v_H2O_simple_molecule_cell, !v_Nicotinamide_D_ribonucleotide_simple_molecule),Set(52, 54))
+(Set(!v_Nicotinamide_D_ribonucleotide_simple_molecule, !v_NADSYN1),Set(54, 107))
+(Set(!v_L_Glutamine_simple_molecule, !v_Nicotinamide_D_ribonucleotide_simple_molecule),Set(2, 54))
+(Set(!v_NMNAT1, !v_NMNAT3, !v_NMNAT2, !v_Deamino_NAD_simple_molecule),Set(49, 116, 125, 133))
+(Set(!v_NMNAT1, !v_H2O_simple_molecule_cell, !v_NMNAT3, !v_NMNAT2),Set(49, 52, 116, 125))
+(Set(!v_NMNAT1, !v_NADSYN1, !v_NMNAT3, !v_NMNAT2),Set(49, 107, 116, 125))
+(Set(!v_L_Glutamine_simple_molecule, !v_NMNAT1, !v_NMNAT3, !v_NMNAT2),Set(2, 49, 116, 125))
+(Set(!v_ATP_simple_molecule),Set(85))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Nicotinamide_D_ribonucleotide_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E)))
+Some(Vector(Set(!v_NT5E), Set(!v_H2O_simple_molecule_cell), Set(!v_Nicotinamide_D_ribonucleotide_simple_molecule)))
+(Set(v_Nicotinamide_D_ribonucleotide_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E),Set(-54, -52, -90))
+(Set(!v_NT5E),Set(90))
+(Set(!v_H2O_simple_molecule_cell),Set(52))
+(Set(!v_Nicotinamide_D_ribonucleotide_simple_molecule),Set(54))
+
+Some(Vector(Set(v_NAMPT, v_Nicotinamide_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule), Set(v_NRK1, v_ATP_simple_molecule, v_N_Ribosyl_nicotinamide_simple_molecule), Set(v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_ENPP3), Set(v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_ENPP1)))
+Some(Vector(Set(!v_NRK1, !v_NAMPT, !v_H2O_simple_molecule_cell), Set(!v_NAD_simple_molecule, !v_NRK1, !v_NAMPT), Set(!v_NRK1, !v_NAMPT, !v_ENPP1, !v_ENPP3), Set(!v_NAMPT, !v_H2O_simple_molecule_cell, !v_ATP_simple_molecule), Set(!v_NAD_simple_molecule, !v_NAMPT, !v_ATP_simple_molecule), Set(!v_NAMPT, !v_ATP_simple_molecule, !v_ENPP1, !v_ENPP3), Set(!v_NAMPT, !v_H2O_simple_molecule_cell, !v_N_Ribosyl_nicotinamide_simple_molecule), Set(!v_NAD_simple_molecule, !v_NAMPT, !v_N_Ribosyl_nicotinamide_simple_molecule), Set(!v_NAMPT, !v_ENPP1, !v_N_Ribosyl_nicotinamide_simple_molecule, !v_ENPP3), Set(!v_NRK1, !v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule), Set(!v_NAD_simple_molecule, !v_NRK1, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule), Set(!v_NRK1, !v_ENPP1, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ENPP3), Set(!v_H2O_simple_molecule_cell, !v_ATP_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule), Set(!v_NAD_simple_molecule, !v_ATP_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule), Set(!v_ATP_simple_molecule, !v_ENPP1, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ENPP3), Set(!v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule), Set(!v_NAD_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule), Set(!v_ENPP1, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule, !v_ENPP3), Set(!v_NRK1, !v_Nicotinamide_simple_molecule, !v_H2O_simple_molecule_cell), Set(!v_NAD_simple_molecule, !v_NRK1, !v_Nicotinamide_simple_molecule), Set(!v_NRK1, !v_Nicotinamide_simple_molecule, !v_ENPP1, !v_ENPP3), Set(!v_Nicotinamide_simple_molecule, !v_H2O_simple_molecule_cell, !v_ATP_simple_molecule), Set(!v_NAD_simple_molecule, !v_Nicotinamide_simple_molecule, !v_ATP_simple_molecule), Set(!v_Nicotinamide_simple_molecule, !v_ATP_simple_molecule, !v_ENPP1, !v_ENPP3), Set(!v_Nicotinamide_simple_molecule, !v_H2O_simple_molecule_cell, !v_N_Ribosyl_nicotinamide_simple_molecule), Set(!v_NAD_simple_molecule, !v_Nicotinamide_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule), Set(!v_Nicotinamide_simple_molecule, !v_ENPP1, !v_N_Ribosyl_nicotinamide_simple_molecule, !v_ENPP3)))
+(Set(v_NAMPT, v_Nicotinamide_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(-33, -38, -93))
+(Set(v_NRK1, v_ATP_simple_molecule, v_N_Ribosyl_nicotinamide_simple_molecule),Set(-10, -85, -123))
+(Set(v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_ENPP3),Set(-8, -52, -129))
+(Set(v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_ENPP1),Set(-8, -52, -92))
+(Set(!v_NRK1, !v_NAMPT, !v_H2O_simple_molecule_cell),Set(10, 33, 52))
+(Set(!v_NAD_simple_molecule, !v_NRK1, !v_NAMPT),Set(8, 10, 33))
+(Set(!v_NRK1, !v_NAMPT, !v_ENPP1, !v_ENPP3),Set(10, 33, 92, 129))
+(Set(!v_NAMPT, !v_H2O_simple_molecule_cell, !v_ATP_simple_molecule),Set(33, 52, 85))
+(Set(!v_NAD_simple_molecule, !v_NAMPT, !v_ATP_simple_molecule),Set(8, 33, 85))
+(Set(!v_NAMPT, !v_ATP_simple_molecule, !v_ENPP1, !v_ENPP3),Set(33, 85, 92, 129))
+(Set(!v_NAMPT, !v_H2O_simple_molecule_cell, !v_N_Ribosyl_nicotinamide_simple_molecule),Set(33, 52, 123))
+(Set(!v_NAD_simple_molecule, !v_NAMPT, !v_N_Ribosyl_nicotinamide_simple_molecule),Set(8, 33, 123))
+(Set(!v_NAMPT, !v_ENPP1, !v_N_Ribosyl_nicotinamide_simple_molecule, !v_ENPP3),Set(33, 92, 123, 129))
+(Set(!v_NRK1, !v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(10, 52, 93))
+(Set(!v_NAD_simple_molecule, !v_NRK1, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(8, 10, 93))
+(Set(!v_NRK1, !v_ENPP1, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ENPP3),Set(10, 92, 93, 129))
+(Set(!v_H2O_simple_molecule_cell, !v_ATP_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(52, 85, 93))
+(Set(!v_NAD_simple_molecule, !v_ATP_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(8, 85, 93))
+(Set(!v_ATP_simple_molecule, !v_ENPP1, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_ENPP3),Set(85, 92, 93, 129))
+(Set(!v_H2O_simple_molecule_cell, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule),Set(52, 93, 123))
+(Set(!v_NAD_simple_molecule, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule),Set(8, 93, 123))
+(Set(!v_ENPP1, !v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule, !v_ENPP3),Set(92, 93, 123, 129))
+(Set(!v_NRK1, !v_Nicotinamide_simple_molecule, !v_H2O_simple_molecule_cell),Set(10, 38, 52))
+(Set(!v_NAD_simple_molecule, !v_NRK1, !v_Nicotinamide_simple_molecule),Set(8, 10, 38))
+(Set(!v_NRK1, !v_Nicotinamide_simple_molecule, !v_ENPP1, !v_ENPP3),Set(10, 38, 92, 129))
+(Set(!v_Nicotinamide_simple_molecule, !v_H2O_simple_molecule_cell, !v_ATP_simple_molecule),Set(38, 52, 85))
+(Set(!v_NAD_simple_molecule, !v_Nicotinamide_simple_molecule, !v_ATP_simple_molecule),Set(8, 38, 85))
+(Set(!v_Nicotinamide_simple_molecule, !v_ATP_simple_molecule, !v_ENPP1, !v_ENPP3),Set(38, 85, 92, 129))
+(Set(!v_Nicotinamide_simple_molecule, !v_H2O_simple_molecule_cell, !v_N_Ribosyl_nicotinamide_simple_molecule),Set(38, 52, 123))
+(Set(!v_NAD_simple_molecule, !v_Nicotinamide_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule),Set(8, 38, 123))
+(Set(!v_Nicotinamide_simple_molecule, !v_ENPP1, !v_N_Ribosyl_nicotinamide_simple_molecule, !v_ENPP3),Set(38, 92, 123, 129))
+
+Some(Vector(Set(v_Nicotinate_simple_molecule), Set(v_CD38, v_NAD_simple_molecule, v_H2O_simple_molecule_cell), Set(v_NAD_simple_molecule, v_H2O_simple_molecule_mitochondrion, v_Histone_N6_acetyl_L_lysine_simple_molecule, v_SIRT5_Nsp14_complex), Set(v_NAD_simple_molecule, v_H2O_simple_molecule_mitochondrion, v_Histone_N6_acetyl_L_lysine_simple_molecule, v_SIRT5), Set(v_PNP, v_Pi_simple_molecule, v_N_Ribosyl_nicotinamide_simple_molecule)))
+Some(Vector(Set(!v_CD38, !v_PNP, !v_H2O_simple_molecule_mitochondrion, !v_Nicotinate_simple_molecule), Set(!v_CD38, !v_H2O_simple_molecule_mitochondrion, !v_Pi_simple_molecule, !v_Nicotinate_simple_molecule), Set(!v_CD38, !v_H2O_simple_molecule_mitochondrion, !v_Nicotinate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule), Set(!v_CD38, !v_PNP, !v_Histone_N6_acetyl_L_lysine_simple_molecule, !v_Nicotinate_simple_molecule), Set(!v_CD38, !v_Histone_N6_acetyl_L_lysine_simple_molecule, !v_Pi_simple_molecule, !v_Nicotinate_simple_molecule), Set(!v_CD38, !v_Histone_N6_acetyl_L_lysine_simple_molecule, !v_Nicotinate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule), Set(!v_PNP, !v_CD38, !v_SIRT5_Nsp14_complex, !v_Nicotinate_simple_molecule, !v_SIRT5), Set(!v_CD38, !v_Pi_simple_molecule, !v_SIRT5_Nsp14_complex, !v_Nicotinate_simple_molecule, !v_SIRT5), Set(!v_CD38, !v_N_Ribosyl_nicotinamide_simple_molecule, !v_SIRT5_Nsp14_complex, !v_Nicotinate_simple_molecule, !v_SIRT5), Set(!v_PNP, !v_H2O_simple_molecule_mitochondrion, !v_H2O_simple_molecule_cell, !v_Nicotinate_simple_molecule), Set(!v_H2O_simple_molecule_mitochondrion, !v_H2O_simple_molecule_cell, !v_Pi_simple_molecule, !v_Nicotinate_simple_molecule), Set(!v_H2O_simple_molecule_mitochondrion, !v_H2O_simple_molecule_cell, !v_Nicotinate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule), Set(!v_PNP, !v_H2O_simple_molecule_cell, !v_Histone_N6_acetyl_L_lysine_simple_molecule, !v_Nicotinate_simple_molecule), Set(!v_H2O_simple_molecule_cell, !v_Histone_N6_acetyl_L_lysine_simple_molecule, !v_Pi_simple_molecule, !v_Nicotinate_simple_molecule), Set(!v_H2O_simple_molecule_cell, !v_Histone_N6_acetyl_L_lysine_simple_molecule, !v_Nicotinate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule), Set(!v_PNP, !v_SIRT5_Nsp14_complex, !v_H2O_simple_molecule_cell, !v_Nicotinate_simple_molecule, !v_SIRT5), Set(!v_Pi_simple_molecule, !v_SIRT5_Nsp14_complex, !v_H2O_simple_molecule_cell, !v_Nicotinate_simple_molecule, !v_SIRT5), Set(!v_N_Ribosyl_nicotinamide_simple_molecule, !v_SIRT5_Nsp14_complex, !v_H2O_simple_molecule_cell, !v_Nicotinate_simple_molecule, !v_SIRT5), Set(!v_NAD_simple_molecule, !v_PNP, !v_Nicotinate_simple_molecule), Set(!v_NAD_simple_molecule, !v_Pi_simple_molecule, !v_Nicotinate_simple_molecule), Set(!v_NAD_simple_molecule, !v_Nicotinate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule)))
+(Set(v_Nicotinate_simple_molecule),Set(-91))
+(Set(v_CD38, v_NAD_simple_molecule, v_H2O_simple_molecule_cell),Set(-1, -8, -52))
+(Set(v_NAD_simple_molecule, v_H2O_simple_molecule_mitochondrion, v_Histone_N6_acetyl_L_lysine_simple_molecule, v_SIRT5_Nsp14_complex),Set(-8, -25, -55, -117))
+(Set(v_NAD_simple_molecule, v_H2O_simple_molecule_mitochondrion, v_Histone_N6_acetyl_L_lysine_simple_molecule, v_SIRT5),Set(-8, -25, -55, -131))
+(Set(v_PNP, v_Pi_simple_molecule, v_N_Ribosyl_nicotinamide_simple_molecule),Set(-21, -87, -123))
+(Set(!v_CD38, !v_PNP, !v_H2O_simple_molecule_mitochondrion, !v_Nicotinate_simple_molecule),Set(1, 21, 25, 91))
+(Set(!v_CD38, !v_H2O_simple_molecule_mitochondrion, !v_Pi_simple_molecule, !v_Nicotinate_simple_molecule),Set(1, 25, 87, 91))
+(Set(!v_CD38, !v_H2O_simple_molecule_mitochondrion, !v_Nicotinate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule),Set(1, 25, 91, 123))
+(Set(!v_CD38, !v_PNP, !v_Histone_N6_acetyl_L_lysine_simple_molecule, !v_Nicotinate_simple_molecule),Set(1, 21, 55, 91))
+(Set(!v_CD38, !v_Histone_N6_acetyl_L_lysine_simple_molecule, !v_Pi_simple_molecule, !v_Nicotinate_simple_molecule),Set(1, 55, 87, 91))
+(Set(!v_CD38, !v_Histone_N6_acetyl_L_lysine_simple_molecule, !v_Nicotinate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule),Set(1, 55, 91, 123))
+(Set(!v_PNP, !v_CD38, !v_SIRT5_Nsp14_complex, !v_Nicotinate_simple_molecule, !v_SIRT5),Set(1, 117, 21, 91, 131))
+(Set(!v_CD38, !v_Pi_simple_molecule, !v_SIRT5_Nsp14_complex, !v_Nicotinate_simple_molecule, !v_SIRT5),Set(1, 117, 91, 87, 131))
+(Set(!v_CD38, !v_N_Ribosyl_nicotinamide_simple_molecule, !v_SIRT5_Nsp14_complex, !v_Nicotinate_simple_molecule, !v_SIRT5),Set(1, 117, 91, 123, 131))
+(Set(!v_PNP, !v_H2O_simple_molecule_mitochondrion, !v_H2O_simple_molecule_cell, !v_Nicotinate_simple_molecule),Set(21, 25, 52, 91))
+(Set(!v_H2O_simple_molecule_mitochondrion, !v_H2O_simple_molecule_cell, !v_Pi_simple_molecule, !v_Nicotinate_simple_molecule),Set(25, 52, 87, 91))
+(Set(!v_H2O_simple_molecule_mitochondrion, !v_H2O_simple_molecule_cell, !v_Nicotinate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule),Set(25, 52, 91, 123))
+(Set(!v_PNP, !v_H2O_simple_molecule_cell, !v_Histone_N6_acetyl_L_lysine_simple_molecule, !v_Nicotinate_simple_molecule),Set(21, 52, 55, 91))
+(Set(!v_H2O_simple_molecule_cell, !v_Histone_N6_acetyl_L_lysine_simple_molecule, !v_Pi_simple_molecule, !v_Nicotinate_simple_molecule),Set(52, 55, 87, 91))
+(Set(!v_H2O_simple_molecule_cell, !v_Histone_N6_acetyl_L_lysine_simple_molecule, !v_Nicotinate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule),Set(52, 55, 91, 123))
+(Set(!v_PNP, !v_SIRT5_Nsp14_complex, !v_H2O_simple_molecule_cell, !v_Nicotinate_simple_molecule, !v_SIRT5),Set(52, 117, 21, 91, 131))
+(Set(!v_Pi_simple_molecule, !v_SIRT5_Nsp14_complex, !v_H2O_simple_molecule_cell, !v_Nicotinate_simple_molecule, !v_SIRT5),Set(52, 117, 91, 87, 131))
+(Set(!v_N_Ribosyl_nicotinamide_simple_molecule, !v_SIRT5_Nsp14_complex, !v_H2O_simple_molecule_cell, !v_Nicotinate_simple_molecule, !v_SIRT5),Set(52, 117, 91, 123, 131))
+(Set(!v_NAD_simple_molecule, !v_PNP, !v_Nicotinate_simple_molecule),Set(8, 21, 91))
+(Set(!v_NAD_simple_molecule, !v_Pi_simple_molecule, !v_Nicotinate_simple_molecule),Set(8, 87, 91))
+(Set(!v_NAD_simple_molecule, !v_Nicotinate_simple_molecule, !v_N_Ribosyl_nicotinamide_simple_molecule),Set(8, 91, 123))
+
+Some(Vector(Set(v_ATP_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_Nicotinate_simple_molecule, v_NAPRT1, v_H2O_simple_molecule_cell), Set(v_QPRT, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_H_simple_molecule, v_Quinolinate_simple_molecule)))
+Some(Vector(Set(!v_QPRT, !v_Nicotinate_simple_molecule), Set(!v_Nicotinate_simple_molecule, !v_H_simple_molecule), Set(!v_Nicotinate_simple_molecule, !v_Quinolinate_simple_molecule), Set(!v_H2O_simple_molecule_cell, !v_QPRT), Set(!v_H2O_simple_molecule_cell, !v_H_simple_molecule), Set(!v_H2O_simple_molecule_cell, !v_Quinolinate_simple_molecule), Set(!v_NAPRT1, !v_QPRT), Set(!v_NAPRT1, !v_H_simple_molecule), Set(!v_NAPRT1, !v_Quinolinate_simple_molecule), Set(!v_ATP_simple_molecule, !v_QPRT), Set(!v_ATP_simple_molecule, !v_H_simple_molecule), Set(!v_ATP_simple_molecule, !v_Quinolinate_simple_molecule), Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule)))
+(Set(v_ATP_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_Nicotinate_simple_molecule, v_NAPRT1, v_H2O_simple_molecule_cell),Set(-71, -91, -52, -93, -85))
+(Set(v_QPRT, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_H_simple_molecule, v_Quinolinate_simple_molecule),Set(-86, -93, -142, -143))
+(Set(!v_QPRT, !v_Nicotinate_simple_molecule),Set(86, 91))
+(Set(!v_Nicotinate_simple_molecule, !v_H_simple_molecule),Set(91, 142))
+(Set(!v_Nicotinate_simple_molecule, !v_Quinolinate_simple_molecule),Set(91, 143))
+(Set(!v_H2O_simple_molecule_cell, !v_QPRT),Set(52, 86))
+(Set(!v_H2O_simple_molecule_cell, !v_H_simple_molecule),Set(52, 142))
+(Set(!v_H2O_simple_molecule_cell, !v_Quinolinate_simple_molecule),Set(52, 143))
+(Set(!v_NAPRT1, !v_QPRT),Set(71, 86))
+(Set(!v_NAPRT1, !v_H_simple_molecule),Set(71, 142))
+(Set(!v_NAPRT1, !v_Quinolinate_simple_molecule),Set(71, 143))
+(Set(!v_ATP_simple_molecule, !v_QPRT),Set(85, 86))
+(Set(!v_ATP_simple_molecule, !v_H_simple_molecule),Set(85, 142))
+(Set(!v_ATP_simple_molecule, !v_Quinolinate_simple_molecule),Set(85, 143))
+(Set(!v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule),Set(93))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_GTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD2), Set(v_H2O_simple_molecule_cell, v_Nicotinamide_D_ribonucleotide_simple_molecule, v_NT5E), Set(v_PNP, v_2_deoxy__alpha__D_ribose_1_phosphate_simple_molecule, v_Hypoxanthine_simple_molecule), Set(v_GTP_simple_molecule, v_H2O_simple_molecule_cell, v_NTPCR), Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD2), Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_CANT1), Set(v_ENTPD5, v_GDP_simple_molecule, v_H2O_simple_molecule_cell), Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD6), Set(v_GDP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD4), Set(v_H2O_simple_molecule_cell, v_AMP_simple_molecule, v_NT5E), Set(v_H2O_simple_molecule_cell, v_NT5E, v_XMP_simple_molecule), Set(v_H2O_simple_molecule_cell, v_NT5E, v_IMP_simple_molecule), Set(v_H2O_simple_molecule_cell, v_GMP_simple_molecule, v_NT5E), Set(v_2__Formamido__N1__5__phosphoribosyl_acetamidine_simple_molecule, v_GART, v_ATP_simple_molecule), Set(v_5_phosphoribosyl_N_formylglycinamide_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_PFAS), Set(v_ATP_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_Nicotinate_simple_molecule, v_NAPRT1, v_H2O_simple_molecule_cell), Set(v_Glycine_simple_molecule, v_GART, v_ATP_simple_molecule, v_5_phospho_beta_D_ribosylamine_simple_molecule), Set(v_L_Aspartate_simple_molecule, v_1__5_Phospho_D_ribosyl__5_amino_4_imidazolecarboxylate_simple_molecule, v_PAICS, v_ATP_simple_molecule)))
+None
+
+# Use TseitinTransitionEncoder
+
+# Formula
+Or(And(v_ATP_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_Nicotinate_simple_molecule, v_NAPRT1, v_H2O_simple_molecule_cell), And(v_GMP_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E), And(v_GTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD2), And(v_AMP_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E), And(v_IMP_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E), And(v_1__5_Phospho_D_ribosyl__5_amino_4_imidazolecarboxylate_simple_molecule, v_L_Aspartate_simple_molecule, v_ATP_simple_molecule, v_PAICS), And(v_XMP_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E), And(v_5_phospho_beta_D_ribosylamine_simple_molecule, v_Glycine_simple_molecule, v_ATP_simple_molecule, v_GART), And(Or(v_ENTPD2, v_ENTPD4, v_ENTPD6, v_ENTPD5, v_CANT1), v_GDP_simple_molecule, v_H2O_simple_molecule_cell), And(Or(v_ENTPD2, v_NTPCR), v_GTP_simple_molecule, v_H2O_simple_molecule_cell), And(v_2__Formamido__N1__5__phosphoribosyl_acetamidine_simple_molecule, v_ATP_simple_molecule, v_GART), And(v_Hypoxanthine_simple_molecule, v_2_deoxy__alpha__D_ribose_1_phosphate_simple_molecule, v_PNP), And(v_Nicotinamide_D_ribonucleotide_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E), And(v_5_phosphoribosyl_N_formylglycinamide_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_PFAS))
+Or(And(v_ATP_simple_molecule, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule, v_Nicotinate_simple_molecule, v_NAPRT1, v_H2O_simple_molecule_cell), And(v_GMP_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E), And(v_GTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENTPD2), And(v_AMP_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E), And(v_IMP_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E), And(v_1__5_Phospho_D_ribosyl__5_amino_4_imidazolecarboxylate_simple_molecule, v_L_Aspartate_simple_molecule, v_ATP_simple_molecule, v_PAICS), And(v_XMP_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E), And(v_5_phospho_beta_D_ribosylamine_simple_molecule, v_Glycine_simple_molecule, v_ATP_simple_molecule, v_GART), And(Or(v_ENTPD2, v_ENTPD4, v_ENTPD6, v_ENTPD5, v_CANT1), v_GDP_simple_molecule, v_H2O_simple_molecule_cell), And(Or(v_ENTPD2, v_NTPCR), v_GTP_simple_molecule, v_H2O_simple_molecule_cell), And(v_2__Formamido__N1__5__phosphoribosyl_acetamidine_simple_molecule, v_ATP_simple_molecule, v_GART), And(v_Hypoxanthine_simple_molecule, v_2_deoxy__alpha__D_ribose_1_phosphate_simple_molecule, v_PNP), And(v_Nicotinamide_D_ribonucleotide_simple_molecule, v_H2O_simple_molecule_cell, v_NT5E), And(v_5_phosphoribosyl_N_formylglycinamide_simple_molecule, v_ATP_simple_molecule, v_H2O_simple_molecule_cell, v_L_Glutamine_simple_molecule, v_PFAS))
+# Output lit: 87, x lit: 216
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_H2O_simple_molecule_cell, v_GLA_Nsp14_complex, !v_Migalastat_drug, v_Stachyose_simple_molecule), Set(v_H2O_simple_molecule_cell, !v_Migalastat_drug, v_Stachyose_simple_molecule, v_GLA)))
+Some(Vector(Set(v_Migalastat_drug), Set(!v_H2O_simple_molecule_cell), Set(!v_Stachyose_simple_molecule), Set(!v_GLA_Nsp14_complex, !v_GLA)))
+(Set(v_H2O_simple_molecule_cell, v_GLA_Nsp14_complex, !v_Migalastat_drug, v_Stachyose_simple_molecule),Set(-52, -64, 112, -124))
+(Set(v_H2O_simple_molecule_cell, !v_Migalastat_drug, v_Stachyose_simple_molecule, v_GLA),Set(-52, 112, -124, -134))
+(Set(v_Migalastat_drug),Set(-112))
+(Set(!v_H2O_simple_molecule_cell),Set(52))
+(Set(!v_Stachyose_simple_molecule),Set(124))
+(Set(!v_GLA_Nsp14_complex, !v_GLA),Set(64, 134))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_SIRT5, v_Nsp14_mitochondrion)))
+Some(Vector(Set(!v_Nsp14_mitochondrion), Set(!v_SIRT5)))
+(Set(v_SIRT5, v_Nsp14_mitochondrion),Set(-131, -43))
+(Set(!v_Nsp14_mitochondrion),Set(43))
+(Set(!v_SIRT5),Set(131))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_UDP__alpha__D_Glucose_simple_molecule, v_GALE), Set(v__alpha__D_Galactose_1P_simple_molecule, v_UDP__alpha__D_Glucose_simple_molecule, v_GALT)))
+Some(Vector(Set(!v_GALT, !v_GALE), Set(!v__alpha__D_Galactose_1P_simple_molecule, !v_GALE), Set(!v_UDP__alpha__D_Glucose_simple_molecule)))
+(Set(v_UDP__alpha__D_Glucose_simple_molecule, v_GALE),Set(-80, -122))
+(Set(v__alpha__D_Galactose_1P_simple_molecule, v_UDP__alpha__D_Glucose_simple_molecule, v_GALT),Set(-128, -80, -53))
+(Set(!v_GALT, !v_GALE),Set(53, 122))
+(Set(!v__alpha__D_Galactose_1P_simple_molecule, !v_GALE),Set(128, 122))
+(Set(!v_UDP__alpha__D_Glucose_simple_molecule),Set(80))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_Merimepodib_drug, !v_Ribavirin_drug, !v_Mycophenolic_acid_drug, v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_IMP_simple_molecule, v_IMPDH2_Nsp14_complex), Set(!v_Merimepodib_drug, !v_Ribavirin_drug, v_IMPDH2, !v_Mycophenolic_acid_drug, v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_IMP_simple_molecule), Set(!v_Merimepodib_drug, !v_Ribavirin_drug, !v_Mycophenolic_acid_drug, v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_IMP_simple_molecule, v_IMPDH1)))
+Some(Vector(Set(!v_IMP_simple_molecule), Set(!v_IMPDH2_Nsp14_complex, !v_IMPDH2, !v_IMPDH1), Set(!v_H2O_simple_molecule_cell), Set(v_Mycophenolic_acid_drug), Set(v_Ribavirin_drug), Set(!v_NAD_simple_molecule), Set(v_Merimepodib_drug)))
+(Set(!v_Merimepodib_drug, !v_Ribavirin_drug, !v_Mycophenolic_acid_drug, v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_IMP_simple_molecule, v_IMPDH2_Nsp14_complex),Set(-98, -8, -42, -52, 66, 95, 94))
+(Set(!v_Merimepodib_drug, !v_Ribavirin_drug, v_IMPDH2, !v_Mycophenolic_acid_drug, v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_IMP_simple_molecule),Set(-98, -8, -75, -52, 66, 95, 94))
+(Set(!v_Merimepodib_drug, !v_Ribavirin_drug, !v_Mycophenolic_acid_drug, v_NAD_simple_molecule, v_H2O_simple_molecule_cell, v_IMP_simple_molecule, v_IMPDH1),Set(-98, -96, -8, -52, 66, 95, 94))
+(Set(!v_IMP_simple_molecule),Set(98))
+(Set(!v_IMPDH2_Nsp14_complex, !v_IMPDH2, !v_IMPDH1),Set(42, 75, 96))
+(Set(!v_H2O_simple_molecule_cell),Set(52))
+(Set(v_Mycophenolic_acid_drug),Set(-66))
+(Set(v_Ribavirin_drug),Set(-95))
+(Set(!v_NAD_simple_molecule),Set(8))
+(Set(v_Merimepodib_drug),Set(-94))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v__alpha__D_Galactose_simple_molecule, v_ATP_simple_molecule, v_GALK1)))
+Some(Vector(Set(!v_GALK1), Set(!v_ATP_simple_molecule), Set(!v__alpha__D_Galactose_simple_molecule)))
+(Set(v__alpha__D_Galactose_simple_molecule, v_ATP_simple_molecule, v_GALK1),Set(-135, -85, -68))
+(Set(!v_GALK1),Set(68))
+(Set(!v_ATP_simple_molecule),Set(85))
+(Set(!v__alpha__D_Galactose_simple_molecule),Set(135))
+
+Some(Vector(Set(v_D_Galactose_simple_molecule, v_GALM)))
+Some(Vector(Set(!v_GALM), Set(!v_D_Galactose_simple_molecule)))
+(Set(v_D_Galactose_simple_molecule, v_GALM),Set(-81, -113))
+(Set(!v_GALM),Set(113))
+(Set(!v_D_Galactose_simple_molecule),Set(81))
+
+Some(Vector(Set(v_H2O_simple_molecule_cell, v_GLA_Nsp14_complex, !v_Migalastat_drug, v_Melibiose_simple_molecule), Set(v_H2O_simple_molecule_cell, !v_Migalastat_drug, v_Melibiose_simple_molecule, v_GLA), Set(v_LCT, v_Lactose_simple_molecule, v_H2O_simple_molecule_cell), Set(v_Lactose_simple_molecule, v_H2O_simple_molecule_cell, v_GLB1)))
+Some(Vector(Set(!v_LCT, !v_GLB1, v_Migalastat_drug), Set(!v_Lactose_simple_molecule, v_Migalastat_drug), Set(!v_LCT, !v_GLA_Nsp14_complex, !v_GLB1, !v_GLA), Set(!v_Lactose_simple_molecule, !v_Melibiose_simple_molecule), Set(!v_LCT, !v_GLB1, !v_Melibiose_simple_molecule), Set(!v_Lactose_simple_molecule, !v_GLA_Nsp14_complex, !v_GLA), Set(!v_H2O_simple_molecule_cell)))
+(Set(v_H2O_simple_molecule_cell, v_GLA_Nsp14_complex, !v_Migalastat_drug, v_Melibiose_simple_molecule),Set(-52, -64, 112, -126))
+(Set(v_H2O_simple_molecule_cell, !v_Migalastat_drug, v_Melibiose_simple_molecule, v_GLA),Set(-52, 112, -126, -134))
+(Set(v_LCT, v_Lactose_simple_molecule, v_H2O_simple_molecule_cell),Set(-35, -45, -52))
+(Set(v_Lactose_simple_molecule, v_H2O_simple_molecule_cell, v_GLB1),Set(-45, -52, -69))
+(Set(!v_LCT, !v_GLB1, v_Migalastat_drug),Set(35, 69, -112))
+(Set(!v_Lactose_simple_molecule, v_Migalastat_drug),Set(45, -112))
+(Set(!v_LCT, !v_GLA_Nsp14_complex, !v_GLB1, !v_GLA),Set(35, 64, 69, 134))
+(Set(!v_Lactose_simple_molecule, !v_Melibiose_simple_molecule),Set(45, 126))
+(Set(!v_LCT, !v_GLB1, !v_Melibiose_simple_molecule),Set(35, 69, 126))
+(Set(!v_Lactose_simple_molecule, !v_GLA_Nsp14_complex, !v_GLA),Set(45, 64, 134))
+(Set(!v_H2O_simple_molecule_cell),Set(52))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_ADP_simple_molecule, v_csa4_ribonucleoside_reductase_complex_cell, v_Thioredoxin_simple_molecule), Set(v_dAMP_simple_molecule, v_ATP_simple_molecule, v_AK5)))
+Some(Vector(Set(!v_csa4_ribonucleoside_reductase_complex_cell, !v_AK5), Set(!v_csa4_ribonucleoside_reductase_complex_cell, !v_ATP_simple_molecule), Set(!v_dAMP_simple_molecule, !v_csa4_ribonucleoside_reductase_complex_cell), Set(!v_Thioredoxin_simple_molecule, !v_AK5), Set(!v_ATP_simple_molecule, !v_Thioredoxin_simple_molecule), Set(!v_dAMP_simple_molecule, !v_Thioredoxin_simple_molecule), Set(!v_ADP_simple_molecule, !v_AK5), Set(!v_ADP_simple_molecule, !v_ATP_simple_molecule), Set(!v_ADP_simple_molecule, !v_dAMP_simple_molecule)))
+(Set(v_ADP_simple_molecule, v_csa4_ribonucleoside_reductase_complex_cell, v_Thioredoxin_simple_molecule),Set(-24, -77, -100))
+(Set(v_dAMP_simple_molecule, v_ATP_simple_molecule, v_AK5),Set(-65, -85, -120))
+(Set(!v_csa4_ribonucleoside_reductase_complex_cell, !v_AK5),Set(77, 120))
+(Set(!v_csa4_ribonucleoside_reductase_complex_cell, !v_ATP_simple_molecule),Set(77, 85))
+(Set(!v_dAMP_simple_molecule, !v_csa4_ribonucleoside_reductase_complex_cell),Set(65, 77))
+(Set(!v_Thioredoxin_simple_molecule, !v_AK5),Set(100, 120))
+(Set(!v_ATP_simple_molecule, !v_Thioredoxin_simple_molecule),Set(85, 100))
+(Set(!v_dAMP_simple_molecule, !v_Thioredoxin_simple_molecule),Set(65, 100))
+(Set(!v_ADP_simple_molecule, !v_AK5),Set(24, 120))
+(Set(!v_ADP_simple_molecule, !v_ATP_simple_molecule),Set(24, 85))
+(Set(!v_ADP_simple_molecule, !v_dAMP_simple_molecule),Set(24, 65))
+
+Some(Vector(Set(v_Deoxyadenosine_simple_molecule, v_ATP_simple_molecule, v_DCK)))
+Some(Vector(Set(!v_DCK), Set(!v_ATP_simple_molecule), Set(!v_Deoxyadenosine_simple_molecule)))
+(Set(v_Deoxyadenosine_simple_molecule, v_ATP_simple_molecule, v_DCK),Set(-22, -85, -51))
+(Set(!v_DCK),Set(51))
+(Set(!v_ATP_simple_molecule),Set(85))
+(Set(!v_Deoxyadenosine_simple_molecule),Set(22))
+
+Some(Vector(Set(v_dGMP_simple_molecule, v_ATP_simple_molecule, v_GUK1), Set(v_csa3_ribonucleoside_reductase_complex_cell, v_GDP_simple_molecule, v_Thioredoxin_simple_molecule)))
+Some(Vector(Set(!v_csa3_ribonucleoside_reductase_complex_cell, !v_GUK1), Set(!v_Thioredoxin_simple_molecule, !v_GUK1), Set(!v_GDP_simple_molecule, !v_GUK1), Set(!v_csa3_ribonucleoside_reductase_complex_cell, !v_ATP_simple_molecule), Set(!v_ATP_simple_molecule, !v_Thioredoxin_simple_molecule), Set(!v_GDP_simple_molecule, !v_ATP_simple_molecule), Set(!v_csa3_ribonucleoside_reductase_complex_cell, !v_dGMP_simple_molecule), Set(!v_dGMP_simple_molecule, !v_Thioredoxin_simple_molecule), Set(!v_GDP_simple_molecule, !v_dGMP_simple_molecule)))
+(Set(v_dGMP_simple_molecule, v_ATP_simple_molecule, v_GUK1),Set(-84, -85, -104))
+(Set(v_csa3_ribonucleoside_reductase_complex_cell, v_GDP_simple_molecule, v_Thioredoxin_simple_molecule),Set(-23, -36, -100))
+(Set(!v_csa3_ribonucleoside_reductase_complex_cell, !v_GUK1),Set(23, 104))
+(Set(!v_Thioredoxin_simple_molecule, !v_GUK1),Set(100, 104))
+(Set(!v_GDP_simple_molecule, !v_GUK1),Set(36, 104))
+(Set(!v_csa3_ribonucleoside_reductase_complex_cell, !v_ATP_simple_molecule),Set(23, 85))
+(Set(!v_ATP_simple_molecule, !v_Thioredoxin_simple_molecule),Set(85, 100))
+(Set(!v_GDP_simple_molecule, !v_ATP_simple_molecule),Set(36, 85))
+(Set(!v_csa3_ribonucleoside_reductase_complex_cell, !v_dGMP_simple_molecule),Set(23, 84))
+(Set(!v_dGMP_simple_molecule, !v_Thioredoxin_simple_molecule),Set(84, 100))
+(Set(!v_GDP_simple_molecule, !v_dGMP_simple_molecule),Set(36, 84))
+
+Some(Vector(Set(v_dGTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENPP3), Set(v_dGTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENPP1), Set(v_ITPA, v_dGTP_simple_molecule, v_H2O_simple_molecule_cell), Set(v_DCK, v_Deoxyguanosine_simple_molecule, v_ATP_simple_molecule)))
+Some(Vector(Set(!v_DCK, !v_H2O_simple_molecule_cell), Set(!v_H2O_simple_molecule_cell, !v_ATP_simple_molecule), Set(!v_H2O_simple_molecule_cell, !v_Deoxyguanosine_simple_molecule), Set(!v_dGTP_simple_molecule, !v_DCK), Set(!v_dGTP_simple_molecule, !v_ATP_simple_molecule), Set(!v_dGTP_simple_molecule, !v_Deoxyguanosine_simple_molecule), Set(!v_ITPA, !v_DCK, !v_ENPP1, !v_ENPP3), Set(!v_ITPA, !v_ATP_simple_molecule, !v_ENPP1, !v_ENPP3), Set(!v_ITPA, !v_Deoxyguanosine_simple_molecule, !v_ENPP1, !v_ENPP3)))
+(Set(v_dGTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENPP3),Set(-47, -52, -129))
+(Set(v_dGTP_simple_molecule, v_H2O_simple_molecule_cell, v_ENPP1),Set(-47, -52, -92))
+(Set(v_ITPA, v_dGTP_simple_molecule, v_H2O_simple_molecule_cell),Set(-31, -47, -52))
+(Set(v_DCK, v_Deoxyguanosine_simple_molecule, v_ATP_simple_molecule),Set(-51, -82, -85))
+(Set(!v_DCK, !v_H2O_simple_molecule_cell),Set(51, 52))
+(Set(!v_H2O_simple_molecule_cell, !v_ATP_simple_molecule),Set(52, 85))
+(Set(!v_H2O_simple_molecule_cell, !v_Deoxyguanosine_simple_molecule),Set(52, 82))
+(Set(!v_dGTP_simple_molecule, !v_DCK),Set(47, 51))
+(Set(!v_dGTP_simple_molecule, !v_ATP_simple_molecule),Set(47, 85))
+(Set(!v_dGTP_simple_molecule, !v_Deoxyguanosine_simple_molecule),Set(47, 82))
+(Set(!v_ITPA, !v_DCK, !v_ENPP1, !v_ENPP3),Set(31, 51, 92, 129))
+(Set(!v_ITPA, !v_ATP_simple_molecule, !v_ENPP1, !v_ENPP3),Set(31, 85, 92, 129))
+(Set(!v_ITPA, !v_Deoxyguanosine_simple_molecule, !v_ENPP1, !v_ENPP3),Set(31, 82, 92, 129))
+
+Some(Vector(Set(v_NME6, v_dGDP_simple_molecule, v_ATP_simple_molecule), Set(v_dGDP_simple_molecule, v_ATP_simple_molecule, v_NME5), Set(v_csa2_Nucleoside_diphosphate_kinase_complex_cell, v_dGDP_simple_molecule, v_ATP_simple_molecule), Set(v_NME7, v_dGDP_simple_molecule, v_ATP_simple_molecule), Set(v_dGDP_simple_molecule, v_ATP_simple_molecule, v_NME3)))
+Some(Vector(Set(!v_ATP_simple_molecule), Set(!v_dGDP_simple_molecule), Set(!v_NME5, !v_csa2_Nucleoside_diphosphate_kinase_complex_cell, !v_NME6, !v_NME7, !v_NME3)))
+(Set(v_NME6, v_dGDP_simple_molecule, v_ATP_simple_molecule),Set(-40, -72, -85))
+(Set(v_dGDP_simple_molecule, v_ATP_simple_molecule, v_NME5),Set(-72, -85, -146))
+(Set(v_csa2_Nucleoside_diphosphate_kinase_complex_cell, v_dGDP_simple_molecule, v_ATP_simple_molecule),Set(-34, -72, -85))
+(Set(v_NME7, v_dGDP_simple_molecule, v_ATP_simple_molecule),Set(-6, -72, -85))
+(Set(v_dGDP_simple_molecule, v_ATP_simple_molecule, v_NME3),Set(-72, -85, -88))
+(Set(!v_ATP_simple_molecule),Set(85))
+(Set(!v_dGDP_simple_molecule),Set(72))
+(Set(!v_NME5, !v_csa2_Nucleoside_diphosphate_kinase_complex_cell, !v_NME6, !v_NME7, !v_NME3),Set(88, 6, 34, 40, 146))
+
+Some(Vector())
+Some(Vector())
+Map(v_CD38 -> 1, v_L_Glutamine_simple_molecule -> 2, v_AMPD3 -> 3, v_1__5__Phosphoribosyl__5_amino_4_imidazolecarboxamide_simple_molecule -> 4, v_CO2_simple_molecule -> 5, v_NME7 -> 6, v_PRPS1 -> 7, v_NAD_simple_molecule -> 8, v_L_Aspartate_simple_molecule -> 9, v_NRK1 -> 10, v_NADP_simple_molecule -> 11, v_5_phospho_beta_D_ribosylglycinamide_simple_molecule -> 12, v_1__5__Phosphoribosyl__5_formamido_4_imidazolecarboxamide_simple_molecule -> 13, v_Galacitol_simple_molecule -> 14, v_PFAS -> 15, v_Inosine_simple_molecule -> 16, v_2__Formamido__N1__5__phosphoribosyl_acetamidine_simple_molecule -> 17, v_PRPS1L1 -> 18, v_Adenine_simple_molecule -> 19, v_5_phosphoribosyl_N_formylglycinamide_simple_molecule -> 20, v_PNP -> 21, v_Deoxyadenosine_simple_molecule -> 22, v_csa3_ribonucleoside_reductase_complex_cell -> 23, v_ADP_simple_molecule -> 24, v_H2O_simple_molecule_mitochondrion -> 25, v_Glycine_simple_molecule -> 26, v_Raffinose_simple_molecule -> 27, v_ADSL -> 28, v_ENTPD5 -> 29, v_GTP_simple_molecule -> 30, v_ITPA -> 31, v_PRPS2 -> 32, v_NAMPT -> 33, v_csa2_Nucleoside_diphosphate_kinase_complex_cell -> 34, v_LCT -> 35, v_GDP_simple_molecule -> 36, v_ATIC -> 37, v_Nicotinamide_simple_molecule -> 38, v_AK7 -> 39, v_NME6 -> 40, v_lactose_synthetase_complex -> 41, v_IMPDH2_Nsp14_complex -> 42, v_Nsp14_mitochondrion -> 43, v_Nicotinate_D_ribonucleotide_simple_molecule -> 44, v_Lactose_simple_molecule -> 45, v_GMPR2 -> 46, v_dGTP_simple_molecule -> 47, v_1__5_Phospho_D_ribosyl__5_amino_4_imidazolecarboxylate_simple_molecule -> 48, v_NMNAT1 -> 49, v_ADK -> 50, v_DCK -> 51, v_H2O_simple_molecule_cell -> 52, v_GALT -> 53, v_Nicotinamide_D_ribonucleotide_simple_molecule -> 54, v_Histone_N6_acetyl_L_lysine_simple_molecule -> 55, v_GMPS -> 56, v__alpha_D_Ribose_1P_simple_molecule -> 57, v_HPRT1 -> 58, v_ENTPD6 -> 59, v_Aminoimidazole_ribotide_simple_molecule -> 60, v_UGP2 -> 61, v_GDA -> 62, v_PAICS -> 63, v_GLA_Nsp14_complex -> 64, v_dAMP_simple_molecule -> 65, v_Mycophenolic_acid_drug -> 66, v_GMP_simple_molecule -> 67, v_GALK1 -> 68, v_GLB1 -> 69, v_NTPCR -> 70, v_NAPRT1 -> 71, v_dGDP_simple_molecule -> 72, v_AMP_simple_molecule -> 73, v_2_deoxy__alpha__D_ribose_1_phosphate_simple_molecule -> 74, v_IMPDH2 -> 75, v_NNT -> 76, v_csa4_ribonucleoside_reductase_complex_cell -> 77, v_AKR1B1 -> 78, v_PGM2 -> 79, v_UDP__alpha__D_Glucose_simple_molecule -> 80, v_D_Galactose_simple_molecule -> 81, v_Deoxyguanosine_simple_molecule -> 82, v_GART -> 83, v_dGMP_simple_molecule -> 84, v_ATP_simple_molecule -> 85, v_QPRT -> 86, v_Pi_simple_molecule -> 87, v_NME3 -> 88, v_Hypoxanthine_simple_molecule -> 89, v_NT5E -> 90, v_Nicotinate_simple_molecule -> 91, v_ENPP1 -> 92, v_5_phospho__alpha__D_ribose_1_diphosphate_simple_molecule -> 93, v_Merimepodib_drug -> 94, v_Ribavirin_drug -> 95, v_IMPDH1 -> 96, v_10_Formyltetrahydrofolate_simple_molecule -> 97, v_IMP_simple_molecule -> 98, v_1__5__Phosphoribosyl__5_amino_4__N_succinocarboxamide__imidazole_simple_molecule -> 99, v_Thioredoxin_simple_molecule -> 100, v_PPAT -> 101, v_XMP_simple_molecule -> 102, v_Guanine_simple_molecule -> 103, v_GUK1 -> 104, v_Nsp14_cell -> 105, v_AK8 -> 106, v_NADSYN1 -> 107, v_dADP_simple_molecule -> 108, v_D_Ribose_5P_simple_molecule -> 109, v_GMPR -> 110, v_APRT -> 111, v_Migalastat_drug -> 112, v_GALM -> 113, v_Guanosine_simple_molecule -> 114, v_NADK -> 115, v_NMNAT3 -> 116, v_SIRT5_Nsp14_complex -> 117, v_CANT1 -> 118, v_5_phospho_beta_D_ribosylamine_simple_molecule -> 119, v_AK5 -> 120, v_Adenosine_simple_molecule -> 121, v_GALE -> 122, v_N_Ribosyl_nicotinamide_simple_molecule -> 123, v_Stachyose_simple_molecule -> 124, v_NMNAT2 -> 125, v_Melibiose_simple_molecule -> 126, v_UDP__alpha__D_Galactose_simple_molecule -> 127, v__alpha__D_Galactose_1P_simple_molecule -> 128, v_ENPP3 -> 129, v_ADA -> 130, v_SIRT5 -> 131, v_ENTPD4 -> 132, v_Deamino_NAD_simple_molecule -> 133, v_GLA -> 134, v__alpha__D_Galactose_simple_molecule -> 135, v__alpha__D_Glucose_simple_molecule -> 136, v_csa5_Nucleoside_diphosphate_kinase_complex_cell -> 137, v_AMDP2 -> 138, v_AK1 -> 139, v_NADPH_simple_molecule -> 140, v_ENTPD2 -> 141, v_H_simple_molecule -> 142, v_Quinolinate_simple_molecule -> 143, v_Ammonium_simple_molecule -> 144, v_XDH -> 145, v_NME5 -> 146, v_AMPD1 -> 147)
+p cnf 216 1043
+-60 -5 -63 48 0
+63 -48 0
+5 -48 0
+60 -48 0
+-63 -48 99 -85 -9 0
+63 -99 0
+85 -99 0
+9 -99 0
+48 -99 0
+-99 -28 4 0
+28 -4 0
+99 -4 0
+-4 -97 -37 13 0
+37 -13 0
+97 -13 0
+4 -13 0
+-15 17 -20 -52 -85 -2 0
+52 -17 0
+2 -17 0
+15 -17 0
+85 -17 0
+20 -17 0
+-82 -87 -21 74 0
+21 -74 0
+87 -74 0
+82 -74 0
+-18 -85 -109 93 0
+-32 -85 -109 93 0
+-7 -85 -109 93 0
+85 -93 0
+109 -93 0
+7 18 32 -93 0
+-101 -52 -93 119 -2 0
+101 -119 0
+2 -119 0
+52 -119 0
+93 -119 0
+-26 -119 -83 12 -85 0
+83 -12 0
+85 -12 0
+26 -12 0
+119 -12 0
+-12 -97 -83 20 0
+83 -20 0
+97 -20 0
+12 -20 0
+-148 52 0
+-148 93 0
+-148 85 0
+-148 71 0
+-148 91 0
+-71 -91 148 -52 -93 -85 0
+88 6 34 40 146 -149 0
+-88 149 0
+-6 149 0
+-34 149 0
+-40 149 0
+-146 149 0
+-150 149 0
+-150 72 0
+-150 85 0
+-149 -72 -85 150 0
+-151 135 0
+-151 85 0
+-151 68 0
+-135 -85 -68 151 0
+-152 67 0
+-152 85 0
+-152 104 0
+-67 -85 -104 152 0
+88 6 34 -153 40 146 0
+-88 153 0
+-6 153 0
+-34 153 0
+-40 153 0
+-146 153 0
+-154 153 0
+-154 36 0
+-154 85 0
+-153 -36 -85 154 0
+-155 82 0
+-155 85 0
+-155 51 0
+-82 -85 -51 155 0
+88 6 137 40 -156 146 0
+-88 156 0
+-6 156 0
+-137 156 0
+-40 156 0
+-146 156 0
+-157 156 0
+-157 108 0
+-157 85 0
+-156 -108 -85 157 0
+-158 121 0
+-158 85 0
+-158 50 0
+-121 -85 -50 158 0
+-159 8 0
+-159 85 0
+-159 115 0
+-8 -85 -115 159 0
+-160 84 0
+-160 85 0
+-160 104 0
+-84 -85 -104 160 0
+-161 52 0
+-161 133 0
+-161 85 0
+-161 2 0
+-161 107 0
+-107 161 -52 -133 -85 -2 0
+-162 48 0
+-162 9 0
+-162 85 0
+-162 63 0
+-63 162 -48 -85 -9 0
+-163 119 0
+-163 26 0
+-163 85 0
+-163 83 0
+-26 -119 -83 -85 163 0
+-164 22 0
+-164 85 0
+-164 51 0
+-22 -85 -51 164 0
+-165 65 0
+-165 85 0
+-165 120 0
+-65 -85 -120 165 0
+-166 123 0
+-166 85 0
+-166 10 0
+-123 -85 -10 166 0
+120 -167 106 39 139 0
+-39 167 0
+-139 167 0
+-106 167 0
+-120 167 0
+-168 167 0
+-168 73 0
+-168 85 0
+-167 -73 -85 168 0
+-169 17 0
+-169 85 0
+-169 83 0
+-17 -85 -83 169 0
+-170 52 0
+-170 20 0
+-170 85 0
+-170 2 0
+-170 15 0
+170 -15 -20 -52 -85 -2 0
+170 157 152 164 160 165 169 -171 166 148 161 159 155 162 150 154 158 151 168 163 0
+-170 171 0
+-157 171 0
+-152 171 0
+-164 171 0
+-160 171 0
+-165 171 0
+-169 171 0
+-166 171 0
+-148 171 0
+-161 171 0
+-159 171 0
+-155 171 0
+-162 171 0
+-150 171 0
+-154 171 0
+-158 171 0
+-151 171 0
+-168 171 0
+-163 171 0
+24 -171 0
+-24 171 0
+-18 -85 -109 73 0
+-32 -85 -109 73 0
+-7 -85 -109 73 0
+-19 -93 -111 73 0
+-50 -85 -121 73 0
+73 -52 -85 -102 -56 -2 0
+-8 -52 -129 73 0
+-8 -52 -92 73 0
+109 2 50 8 111 -73 0
+102 109 50 8 111 -73 0
+56 109 50 8 111 -73 0
+102 32 7 18 50 8 111 -73 0
+2 32 7 18 50 8 111 -73 0
+56 32 7 18 50 8 111 -73 0
+121 102 32 7 18 8 111 -73 0
+121 102 109 8 111 -73 0
+121 109 2 8 111 -73 0
+56 121 109 8 111 -73 0
+56 121 32 7 18 8 111 -73 0
+121 2 32 7 18 8 111 -73 0
+8 85 111 -73 0
+121 102 109 8 19 -73 0
+93 102 109 50 8 -73 0
+93 109 2 50 8 -73 0
+56 93 109 50 8 -73 0
+93 102 32 7 18 50 8 -73 0
+93 2 32 7 18 50 8 -73 0
+56 93 32 7 18 50 8 -73 0
+93 121 102 109 8 -73 0
+93 121 109 2 8 -73 0
+56 93 121 109 8 -73 0
+93 121 102 32 7 18 8 -73 0
+93 121 2 32 7 18 8 -73 0
+56 93 121 32 7 18 8 -73 0
+8 85 93 -73 0
+121 109 2 8 19 -73 0
+102 109 50 8 19 -73 0
+109 2 50 8 19 -73 0
+56 109 50 8 19 -73 0
+102 32 7 18 50 8 19 -73 0
+2 32 7 18 50 8 19 -73 0
+56 32 7 18 50 8 19 -73 0
+121 102 32 7 18 8 19 -73 0
+56 121 109 8 19 -73 0
+121 2 32 7 18 8 19 -73 0
+56 121 32 7 18 8 19 -73 0
+8 19 85 -73 0
+52 121 109 19 -73 0
+102 92 109 129 50 111 -73 0
+92 109 129 2 50 111 -73 0
+56 92 109 129 50 111 -73 0
+102 92 129 32 7 18 50 111 -73 0
+92 129 2 32 7 18 50 111 -73 0
+56 92 129 32 7 18 50 111 -73 0
+121 102 92 109 129 111 -73 0
+121 92 109 129 2 111 -73 0
+56 121 92 109 129 111 -73 0
+121 102 92 129 32 7 18 111 -73 0
+121 92 129 2 32 7 18 111 -73 0
+56 121 92 129 32 7 18 111 -73 0
+85 92 129 111 -73 0
+121 102 92 109 129 19 -73 0
+93 102 92 109 129 50 -73 0
+93 92 109 129 2 50 -73 0
+56 93 92 109 129 50 -73 0
+93 102 92 129 32 7 18 50 -73 0
+93 92 129 2 32 7 18 50 -73 0
+56 93 92 129 32 7 18 50 -73 0
+93 121 102 92 109 129 -73 0
+93 121 92 109 129 2 -73 0
+56 93 121 92 109 129 -73 0
+93 121 102 92 129 32 7 18 -73 0
+93 121 92 129 2 32 7 18 -73 0
+56 93 121 92 129 32 7 18 -73 0
+93 85 92 129 -73 0
+121 92 109 129 2 19 -73 0
+102 92 109 129 50 19 -73 0
+92 109 129 2 50 19 -73 0
+56 92 109 129 50 19 -73 0
+102 92 129 32 7 18 50 19 -73 0
+92 129 2 32 7 18 50 19 -73 0
+56 92 129 32 7 18 50 19 -73 0
+121 102 92 129 32 7 18 19 -73 0
+56 121 92 109 129 19 -73 0
+121 92 129 2 32 7 18 19 -73 0
+56 121 92 129 32 7 18 19 -73 0
+85 92 129 19 -73 0
+52 121 32 7 18 19 -73 0
+52 109 50 111 -73 0
+52 32 7 18 50 111 -73 0
+52 121 32 7 18 111 -73 0
+52 121 109 111 -73 0
+52 85 111 -73 0
+52 93 121 109 -73 0
+52 93 109 50 -73 0
+52 93 32 7 18 50 -73 0
+52 93 121 32 7 18 -73 0
+52 85 93 -73 0
+52 109 50 19 -73 0
+52 32 7 18 50 19 -73 0
+19 52 85 -73 0
+-121 -87 -21 19 0
+21 -19 0
+87 -19 0
+121 -19 0
+-73 -52 -90 121 0
+90 -121 0
+52 -121 0
+73 -121 0
+-17 -85 -83 60 0
+83 -60 0
+85 -60 0
+17 -60 0
+-22 -130 144 -142 -52 0
+-130 144 -142 -52 -121 0
+-103 -62 144 -142 -52 0
+-3 144 -142 -52 -73 0
+144 -142 -52 -147 -73 0
+144 -142 -52 -138 -73 0
+138 121 147 22 3 -144 62 0
+121 73 22 -144 62 0
+138 121 147 22 103 3 -144 0
+121 73 22 103 -144 0
+73 103 130 -144 0
+62 73 130 -144 0
+138 147 130 3 -144 62 0
+138 147 103 130 3 -144 0
+142 -144 0
+52 -144 0
+5 -86 -143 -142 -93 0
+86 -5 0
+142 -5 0
+93 -5 0
+143 -5 0
+-64 -27 81 -52 112 0
+-64 -126 81 -52 112 0
+-11 -14 -78 81 0
+-35 -45 -52 81 0
+-45 -52 -69 81 0
+-64 81 -52 112 -124 0
+-27 81 -52 112 -134 0
+-126 81 -52 112 -134 0
+81 -52 112 -124 -134 0
+-81 78 124 45 27 126 0
+69 -81 78 124 27 35 126 0
+-81 78 134 45 64 0
+69 -81 78 134 64 35 0
+52 78 -81 0
+45 78 -112 -81 0
+69 -81 78 35 -112 0
+14 52 -81 0
+-81 124 45 27 11 126 0
+69 -81 124 27 35 11 126 0
+-81 134 45 64 11 0
+69 -81 134 64 35 11 0
+69 -81 35 11 -112 0
+11 52 -81 0
+11 45 -112 -81 0
+69 -81 14 35 -112 0
+-81 14 124 45 27 126 0
+69 -81 14 124 27 35 126 0
+-81 14 134 45 64 0
+69 -81 14 134 64 35 0
+14 45 -112 -81 0
+-57 -79 109 0
+79 -109 0
+57 -109 0
+-44 133 -116 -142 -85 0
+-44 133 -142 -125 -85 0
+-49 -44 133 -142 -85 0
+85 -133 0
+142 -133 0
+44 -133 0
+49 116 125 -133 0
+-30 -52 -70 36 0
+-30 -52 -141 36 0
+-67 -85 -104 36 0
+52 104 -36 0
+52 85 -36 0
+52 67 -36 0
+30 104 -36 0
+30 85 -36 0
+30 67 -36 0
+70 104 141 -36 0
+70 85 141 -36 0
+67 70 141 -36 0
+-134 -105 64 0
+105 -64 0
+134 -64 0
+-58 -93 -103 67 0
+-36 -52 -118 67 0
+-29 -36 -52 67 0
+-36 -52 -59 67 0
+-36 -52 -132 67 0
+-36 -52 -141 67 0
+-52 67 -85 -102 -56 -2 0
+-98 -11 -46 67 -144 0
+-98 -11 67 -110 -144 0
+-30 -52 -141 67 0
+-67 102 141 11 58 36 0
+93 -67 102 141 11 36 0
+-67 102 141 103 11 36 0
+-67 141 2 11 58 36 0
+93 -67 141 2 11 36 0
+-67 141 2 103 11 36 0
+-67 85 141 11 58 36 0
+93 -67 85 141 11 36 0
+-67 85 141 103 11 36 0
+56 -67 141 11 58 36 0
+56 93 -67 141 11 36 0
+56 -67 141 103 11 36 0
+-67 102 11 58 36 30 0
+93 -67 102 11 36 30 0
+-67 102 103 11 36 30 0
+-67 2 11 58 36 30 0
+93 -67 2 11 36 30 0
+-67 2 103 11 36 30 0
+-67 85 11 58 36 30 0
+93 -67 85 11 36 30 0
+-67 85 103 11 36 30 0
+56 -67 11 58 36 30 0
+56 93 -67 11 36 30 0
+56 -67 103 11 36 30 0
+29 -67 132 102 141 59 118 11 58 0
+93 29 -67 132 102 141 59 118 11 0
+29 -67 132 102 141 59 118 103 11 0
+29 -67 132 141 2 59 118 11 58 0
+93 29 -67 132 141 2 59 118 11 0
+29 -67 132 141 2 59 118 103 11 0
+29 -67 132 85 141 59 118 11 58 0
+93 29 -67 132 85 141 59 118 11 0
+29 -67 132 85 141 59 118 103 11 0
+56 29 -67 132 141 59 118 11 58 0
+56 93 29 -67 132 141 59 118 11 0
+56 29 -67 132 141 59 118 103 11 0
+11 52 58 -67 0
+11 52 93 -67 0
+11 52 103 -67 0
+110 46 29 -67 132 102 141 59 118 58 0
+-67 102 141 144 58 36 0
+93 -67 102 141 144 36 0
+-67 102 141 144 103 36 0
+-67 141 2 144 58 36 0
+93 -67 141 2 144 36 0
+-67 141 2 144 103 36 0
+-67 85 141 144 58 36 0
+93 -67 85 141 144 36 0
+-67 85 141 144 103 36 0
+56 -67 141 144 58 36 0
+56 93 -67 141 144 36 0
+56 -67 141 144 103 36 0
+-67 102 144 58 36 30 0
+93 -67 102 144 36 30 0
+-67 102 144 103 36 30 0
+-67 2 144 58 36 30 0
+93 -67 2 144 36 30 0
+-67 2 144 103 36 30 0
+-67 85 144 58 36 30 0
+93 -67 85 144 36 30 0
+-67 85 144 103 36 30 0
+56 -67 144 58 36 30 0
+56 93 -67 144 36 30 0
+56 -67 144 103 36 30 0
+29 -67 132 102 141 59 118 144 58 0
+93 29 -67 132 102 141 59 118 144 0
+29 -67 132 102 141 59 118 144 103 0
+29 -67 132 141 2 59 118 144 58 0
+93 29 -67 132 141 2 59 118 144 0
+29 -67 132 141 2 59 118 144 103 0
+29 -67 132 85 141 59 118 144 58 0
+93 29 -67 132 85 141 59 118 144 0
+29 -67 132 85 141 59 118 144 103 0
+56 29 -67 132 141 59 118 144 58 0
+56 93 29 -67 132 141 59 118 144 0
+56 29 -67 132 141 59 118 144 103 0
+52 58 144 -67 0
+52 93 144 -67 0
+52 103 144 -67 0
+29 -67 132 102 141 59 118 98 58 0
+-67 102 141 98 58 36 0
+93 -67 102 141 98 36 0
+-67 102 141 98 103 36 0
+-67 141 2 98 58 36 0
+93 -67 141 2 98 36 0
+-67 141 2 98 103 36 0
+-67 85 141 98 58 36 0
+93 -67 85 141 98 36 0
+-67 85 141 98 103 36 0
+56 -67 141 98 58 36 0
+56 93 -67 141 98 36 0
+56 -67 141 98 103 36 0
+-67 102 98 58 36 30 0
+93 -67 102 98 36 30 0
+-67 102 98 103 36 30 0
+-67 2 98 58 36 30 0
+93 -67 2 98 36 30 0
+-67 2 98 103 36 30 0
+-67 85 98 58 36 30 0
+93 -67 85 98 36 30 0
+-67 85 98 103 36 30 0
+56 -67 98 58 36 30 0
+56 93 -67 98 36 30 0
+56 -67 98 103 36 30 0
+93 29 -67 132 102 141 59 118 98 0
+29 -67 132 102 141 59 118 98 103 0
+29 -67 132 141 2 59 118 98 58 0
+93 29 -67 132 141 2 59 118 98 0
+29 -67 132 141 2 59 118 98 103 0
+29 -67 132 85 141 59 118 98 58 0
+93 29 -67 132 85 141 59 118 98 0
+29 -67 132 85 141 59 118 98 103 0
+56 29 -67 132 141 59 118 98 58 0
+56 93 29 -67 132 141 59 118 98 0
+56 29 -67 132 141 59 118 98 103 0
+52 58 98 -67 0
+52 93 98 -67 0
+52 98 103 -67 0
+110 46 93 29 -67 132 102 141 59 118 0
+110 46 -67 102 141 58 36 0
+110 46 93 -67 102 141 36 0
+110 46 -67 102 141 103 36 0
+110 46 -67 141 2 58 36 0
+110 46 93 -67 141 2 36 0
+110 46 -67 141 2 103 36 0
+110 46 -67 85 141 58 36 0
+110 46 93 -67 85 141 36 0
+110 46 -67 85 141 103 36 0
+56 110 46 -67 141 58 36 0
+56 110 46 93 -67 141 36 0
+56 110 46 -67 141 103 36 0
+110 46 -67 102 58 36 30 0
+110 46 93 -67 102 36 30 0
+110 46 -67 102 103 36 30 0
+110 46 -67 2 58 36 30 0
+110 46 93 -67 2 36 30 0
+110 46 -67 2 103 36 30 0
+110 46 -67 85 58 36 30 0
+110 46 93 -67 85 36 30 0
+110 46 -67 85 103 36 30 0
+56 110 46 -67 58 36 30 0
+56 110 46 93 -67 36 30 0
+56 110 46 -67 103 36 30 0
+110 46 29 -67 132 102 141 59 118 103 0
+110 46 29 -67 132 141 2 59 118 58 0
+110 46 93 29 -67 132 141 2 59 118 0
+110 46 29 -67 132 141 2 59 118 103 0
+110 46 29 -67 132 85 141 59 118 58 0
+110 46 93 29 -67 132 85 141 59 118 0
+110 46 29 -67 132 85 141 59 118 103 0
+56 110 46 29 -67 132 141 59 118 58 0
+56 110 46 93 29 -67 132 141 59 118 0
+56 110 46 29 -67 132 141 59 118 103 0
+52 110 46 -67 58 0
+52 110 46 93 -67 0
+52 110 46 -67 103 0
+-36 -40 -85 30 0
+-36 -85 -146 30 0
+-34 -36 -85 30 0
+-6 -36 -85 30 0
+-36 -85 -88 30 0
+85 -30 0
+36 -30 0
+88 6 -30 34 40 146 0
+-87 -21 -114 103 0
+-82 -87 -21 103 0
+82 114 -103 0
+21 -103 0
+87 -103 0
+-67 -52 -90 114 0
+90 -114 0
+52 -114 0
+67 -114 0
+-24 -77 -100 52 0
+-23 -36 -100 52 0
+-13 -37 52 0
+23 37 77 -52 0
+13 23 77 -52 0
+36 37 77 -52 0
+13 36 77 -52 0
+23 24 37 -52 0
+13 23 24 -52 0
+24 36 37 -52 0
+13 24 36 -52 0
+37 100 -52 0
+13 100 -52 0
+96 75 42 -172 0
+-96 172 0
+-75 172 0
+-42 172 0
+-173 -66 0
+-173 52 0
+-173 -95 0
+-173 -94 0
+-173 172 0
+-173 98 0
+-173 8 0
+-98 -8 -172 173 -52 66 95 94 0
+-174 30 0
+-174 52 0
+-174 141 0
+-30 -52 -141 174 0
+110 46 -175 0
+-110 175 0
+-46 175 0
+-176 175 0
+-176 98 0
+-176 144 0
+-176 11 0
+-98 -11 -175 176 -144 0
+-177 60 0
+-177 5 0
+-177 63 0
+-60 -5 -63 177 0
+-178 82 0
+-178 85 0
+-178 51 0
+-82 -85 -51 178 0
+-179 56 0
+-179 52 0
+-179 85 0
+-179 102 0
+-179 2 0
+179 -52 -85 -102 -56 -2 0
+31 92 129 -180 0
+-31 180 0
+-92 180 0
+-129 180 0
+-181 180 0
+-181 47 0
+-181 52 0
+-180 -47 -52 181 0
+-182 121 0
+-182 85 0
+-182 50 0
+-121 -85 -50 182 0
+-183 8 0
+-183 85 0
+-183 115 0
+-8 -85 -115 183 0
+-184 8 0
+-184 52 0
+-184 1 0
+-8 -52 -1 184 0
+-185 52 0
+-185 133 0
+-185 85 0
+-185 2 0
+-185 107 0
+185 -107 -52 -133 -85 -2 0
+-186 48 0
+-186 9 0
+-186 85 0
+-186 63 0
+-63 -48 -85 -9 186 0
+-187 119 0
+-187 26 0
+-187 85 0
+-187 83 0
+-26 -119 -83 187 -85 0
+-188 22 0
+-188 85 0
+-188 51 0
+-22 -85 -51 188 0
+-189 12 0
+-189 97 0
+-189 83 0
+-12 -97 -83 189 0
+29 132 141 -190 59 118 0
+-29 190 0
+-132 190 0
+-141 190 0
+-59 190 0
+-118 190 0
+-191 190 0
+-191 36 0
+-191 52 0
+-190 -36 -52 191 0
+-192 14 0
+-192 11 0
+-192 78 0
+-14 -11 -78 192 0
+-193 123 0
+-193 85 0
+-193 10 0
+-123 -85 -10 193 0
+141 70 -194 0
+-141 194 0
+-70 194 0
+-195 194 0
+-195 30 0
+-195 52 0
+-194 -30 -52 195 0
+-196 17 0
+-196 85 0
+-196 83 0
+-17 -85 -83 196 0
+-197 52 0
+-197 20 0
+-197 85 0
+-197 2 0
+-197 15 0
+197 -15 -20 -52 -85 -2 0
+-198 89 0
+-198 8 0
+-198 52 0
+-198 145 0
+-145 -8 -52 198 -89 0
+174 185 184 196 189 179 -199 192 197 188 193 173 176 191 181 187 198 177 182 186 183 195 178 0
+-174 199 0
+-185 199 0
+-184 199 0
+-196 199 0
+-189 199 0
+-179 199 0
+-192 199 0
+-197 199 0
+-188 199 0
+-193 199 0
+-173 199 0
+-176 199 0
+-191 199 0
+-181 199 0
+-187 199 0
+-198 199 0
+-177 199 0
+-182 199 0
+-186 199 0
+-183 199 0
+-195 199 0
+-178 199 0
+142 -199 0
+-142 199 0
+-16 -87 -21 89 0
+21 -89 0
+87 -89 0
+16 -89 0
+-75 -105 42 0
+105 -42 0
+75 -42 0
+-58 -89 -93 98 0
+-3 -142 98 -52 -73 0
+-142 98 -52 -147 -73 0
+-142 98 -52 -138 -73 0
+-13 -37 98 0
+37 52 58 -98 0
+13 52 58 -98 0
+37 58 142 -98 0
+13 58 142 -98 0
+37 58 73 -98 0
+13 58 73 -98 0
+138 -98 37 147 3 58 0
+138 -98 147 13 3 58 0
+37 52 93 -98 0
+13 52 93 -98 0
+37 93 142 -98 0
+13 93 142 -98 0
+37 73 93 -98 0
+13 73 93 -98 0
+138 -98 37 93 147 3 0
+138 -98 93 147 13 3 0
+37 52 89 -98 0
+13 52 89 -98 0
+37 89 142 -98 0
+13 89 142 -98 0
+37 73 89 -98 0
+13 73 89 -98 0
+138 -98 37 147 89 3 0
+138 -98 147 89 13 3 0
+-130 -142 -52 16 -121 0
+-52 -90 -98 16 0
+90 130 -16 0
+98 130 -16 0
+90 142 -16 0
+98 142 -16 0
+90 121 -16 0
+98 121 -16 0
+52 -16 0
+-127 -136 -41 45 0
+41 -45 0
+136 -45 0
+127 -45 0
+-98 -11 140 -46 -144 0
+-98 -11 140 -110 -144 0
+-11 -14 -78 140 0
+78 144 -140 0
+14 144 -140 0
+78 98 -140 0
+14 98 -140 0
+46 78 110 -140 0
+14 46 110 -140 0
+11 -140 0
+-8 -85 -115 11 0
+-8 -76 -140 11 0
+76 115 -11 0
+76 85 -11 0
+115 140 -11 0
+85 140 -11 0
+8 -11 0
+-54 -116 -142 -85 8 0
+-49 -54 -142 -85 8 0
+-54 -142 -125 -85 8 0
+-107 -52 -133 -85 8 -2 0
+133 142 -8 0
+52 142 -8 0
+107 142 -8 0
+2 142 -8 0
+54 133 -8 0
+52 54 -8 0
+54 107 -8 0
+2 54 -8 0
+125 -8 133 116 49 0
+52 125 -8 116 49 0
+125 -8 116 49 107 0
+125 -8 116 2 49 0
+85 -8 0
+-54 -52 -90 123 0
+90 -123 0
+52 -123 0
+54 -123 0
+-33 -38 -93 54 0
+-10 -85 -123 54 0
+-8 -52 -129 54 0
+-8 -52 -92 54 0
+10 33 52 -54 0
+8 10 33 -54 0
+10 -54 33 92 129 0
+33 52 85 -54 0
+8 33 85 -54 0
+-54 85 33 92 129 0
+33 52 123 -54 0
+8 33 123 -54 0
+-54 33 92 129 123 0
+10 52 93 -54 0
+8 10 93 -54 0
+10 -54 93 92 129 0
+52 85 93 -54 0
+8 85 93 -54 0
+-54 93 85 92 129 0
+52 93 123 -54 0
+8 93 123 -54 0
+-54 93 92 129 123 0
+10 38 52 -54 0
+8 10 38 -54 0
+10 -54 38 92 129 0
+38 52 85 -54 0
+8 38 85 -54 0
+-54 85 38 92 129 0
+38 52 123 -54 0
+8 38 123 -54 0
+-54 38 92 129 123 0
+-91 38 0
+-1 -8 -52 38 0
+-8 38 -55 -25 -117 0
+-8 38 -55 -131 -25 0
+-21 -87 -123 38 0
+25 1 21 91 -38 0
+25 1 91 87 -38 0
+25 1 91 123 -38 0
+1 21 91 -38 55 0
+1 91 87 -38 55 0
+1 91 123 -38 55 0
+1 117 21 91 -38 131 0
+1 117 91 87 -38 131 0
+1 117 91 123 -38 131 0
+25 52 21 91 -38 0
+25 52 91 87 -38 0
+25 52 91 123 -38 0
+52 21 91 -38 55 0
+52 91 87 -38 55 0
+52 91 123 -38 55 0
+52 117 21 91 -38 131 0
+52 117 91 87 -38 131 0
+52 117 91 123 -38 131 0
+8 21 91 -38 0
+8 87 91 -38 0
+8 91 123 -38 0
+-71 -91 44 -52 -93 -85 0
+-86 -143 44 -142 -93 0
+86 91 -44 0
+91 142 -44 0
+91 143 -44 0
+52 86 -44 0
+52 142 -44 0
+52 143 -44 0
+71 86 -44 0
+71 142 -44 0
+71 143 -44 0
+85 86 -44 0
+85 142 -44 0
+85 143 -44 0
+93 -44 0
+-200 52 0
+-200 93 0
+-200 85 0
+-200 71 0
+-200 91 0
+-71 -91 -52 -93 -85 200 0
+-201 67 0
+-201 52 0
+-201 90 0
+-67 -52 -90 201 0
+-202 30 0
+-202 52 0
+-202 141 0
+-30 -52 -141 202 0
+-203 73 0
+-203 52 0
+-203 90 0
+-73 -52 -90 203 0
+-204 98 0
+-204 52 0
+-204 90 0
+-98 -52 -90 204 0
+-205 48 0
+-205 9 0
+-205 85 0
+-205 63 0
+-63 205 -48 -85 -9 0
+-206 102 0
+-206 52 0
+-206 90 0
+-102 -52 -90 206 0
+-207 119 0
+-207 26 0
+-207 85 0
+-207 83 0
+-26 -119 -83 -85 207 0
+29 132 141 59 118 -208 0
+-29 208 0
+-132 208 0
+-141 208 0
+-59 208 0
+-118 208 0
+-209 208 0
+-209 36 0
+-209 52 0
+-208 -36 -52 209 0
+141 70 -210 0
+-141 210 0
+-70 210 0
+-211 210 0
+-211 30 0
+-211 52 0
+-210 -30 -52 211 0
+-212 17 0
+-212 85 0
+-212 83 0
+-17 -85 -83 212 0
+-213 89 0
+-213 74 0
+-213 21 0
+-89 -74 -21 213 0
+-214 54 0
+-214 52 0
+-214 90 0
+-54 -52 -90 214 0
+-215 52 0
+-215 20 0
+-215 85 0
+-215 2 0
+-215 15 0
+-15 -20 -52 -85 -2 215 0
+202 211 206 201 212 205 204 213 209 203 -216 207 214 200 215 0
+-202 216 0
+-211 216 0
+-206 216 0
+-201 216 0
+-212 216 0
+-205 216 0
+-204 216 0
+-213 216 0
+-209 216 0
+-203 216 0
+-207 216 0
+-214 216 0
+-200 216 0
+-215 216 0
+87 -216 0
+-87 216 0
+-64 27 -52 112 -124 0
+27 -52 112 -124 -134 0
+-112 -27 0
+52 -27 0
+124 -27 0
+64 134 -27 0
+-131 -43 117 0
+43 -117 0
+131 -117 0
+-80 -122 127 0
+-128 -80 -53 127 0
+53 122 -127 0
+128 122 -127 0
+80 -127 0
+-98 -8 102 -42 -52 66 95 94 0
+-98 -8 102 -75 -52 66 95 94 0
+-98 -96 -8 102 -52 66 95 94 0
+98 -102 0
+42 75 96 -102 0
+52 -102 0
+-66 -102 0
+-95 -102 0
+8 -102 0
+-94 -102 0
+-135 -85 -68 128 0
+68 -128 0
+85 -128 0
+135 -128 0
+-81 -113 135 0
+113 -135 0
+81 -135 0
+-64 -126 -52 112 136 0
+-126 -52 112 136 -134 0
+-35 -45 -52 136 0
+-45 -52 -69 136 0
+35 69 -112 -136 0
+45 -112 -136 0
+69 -136 134 64 35 0
+45 126 -136 0
+35 69 126 -136 0
+45 64 134 -136 0
+52 -136 0
+-24 -77 -100 108 0
+-65 -85 -120 108 0
+77 120 -108 0
+77 85 -108 0
+65 77 -108 0
+100 120 -108 0
+85 100 -108 0
+65 100 -108 0
+24 120 -108 0
+24 85 -108 0
+24 65 -108 0
+-22 -85 -51 65 0
+51 -65 0
+85 -65 0
+22 -65 0
+-84 -85 -104 72 0
+-23 -36 -100 72 0
+23 104 -72 0
+100 104 -72 0
+36 104 -72 0
+23 85 -72 0
+85 100 -72 0
+36 85 -72 0
+23 84 -72 0
+84 100 -72 0
+36 84 -72 0
+-47 -52 -129 84 0
+-47 -52 -92 84 0
+-31 -47 -52 84 0
+-51 -82 -85 84 0
+51 52 -84 0
+52 85 -84 0
+52 82 -84 0
+47 51 -84 0
+47 85 -84 0
+47 82 -84 0
+92 129 -84 31 51 0
+85 92 129 -84 31 0
+92 129 -84 31 82 0
+-40 -72 -85 47 0
+-72 -85 -146 47 0
+-34 -72 -85 47 0
+-6 -72 -85 47 0
+-72 -85 -88 47 0
+85 -47 0
+72 -47 0
+88 6 34 -47 40 146 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.H93i5tmYHm.cnf'
+c opening file to read '/tmp/tmp.H93i5tmYHm.cnf'
+c found 'p cnf 216 1043' header
+c parsed 1043 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0% 1043 215 100%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0% 1043 215 100%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0% 1043 215 100%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 -36 -37 -38 -39 -40
+v -41 -42 -43 -44 -45 -46 -47 -48 -49 -50 -51 -52 -53 -54 -55 -56 -57 -58 -59
+v -60 -61 -62 -63 -64 -65 -66 -67 -68 -69 -70 -71 -72 -73 -74 -75 -76 -77 -78
+v -79 -80 -81 -82 -83 -84 -85 -86 -87 -88 -89 -90 -91 -92 -93 -94 -95 -96 -97
+v -98 -99 -100 -101 -102 -103 -104 -105 -106 -107 -108 -109 -110 -111 -112
+v -113 -114 -115 -116 -117 -118 -119 -120 -121 -122 -123 -124 -125 -126 -127
+v -128 -129 -130 -131 -132 -133 -134 -135 -136 -137 -138 -139 -140 -141 -142
+v -143 -144 -145 -146 -147 -148 -149 -150 -151 -152 -153 -154 -155 -156 -157
+v -158 -159 -160 -161 -162 -163 -164 -165 -166 -167 -168 -169 -170 -171 -172
+v -173 -174 -175 -176 -177 -178 -179 -180 -181 -182 -183 -184 -185 -186 -187
+v -188 -189 -190 -191 -192 -193 -194 -195 -196 -197 -198 -199 -200 -201 -202
+v -203 -204 -205 -206 -207 -208 -209 -210 -211 -212 -213 -214 -215 -216 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00  228.35% parse
+c         0.00   39.69% search
+c         0.00   39.18% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   24.84% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.12    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=137
++ wait 137
++ bdd_minisat_all_release /tmp/tmp.H93i5tmYHm.cnf
+/app/solve.sh: line 76:   137 Killed                  $4 "$cnf_tmp"
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_122.bnet"
+	User time (seconds): 39.23
+	System time (seconds): 15.60
+	Percent of CPU this job got: 103%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:52.99
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9418496
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2470782
+	Voluntary context switches: 3714
+	Involuntary context switches: 374
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 40
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 50.8s

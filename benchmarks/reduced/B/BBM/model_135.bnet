@@ -1,0 +1,19 @@
+targets, factors
+v_ap1, v_map3k1
+v_creb, v_mek
+v_egf, v_egf
+v_egfr, v_egf
+v_ex, v_nfkb
+v_gsk3, !v_pi3k
+v_ikb, (!v_map3k7 | v_ex)
+v_map3k1, (v_pi3k | v_ras)
+v_map3k7, v_tnfr
+v_mek, v_ras
+v_mkk4, (v_map3k7 | v_map3k1)
+v_nfkb, !v_ikb
+v_p38, v_mkk4
+v_pi3k, (v_tnfr | v_egfr)
+v_ras, v_sos
+v_sos, (v_egfr | !v_mek)
+v_tnfa, v_tnfa
+v_tnfr, v_tnfa

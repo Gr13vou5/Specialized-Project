@@ -1,0 +1,585 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:10:34 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_124.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-206 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_124.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_124.bnet --cnf /tmp/tmp.gIPePWxXTw.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_124.bnet, cnfFileName = /tmp/tmp.gIPePWxXTw.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector(Set(!v_Nafamostat_drug), Set(!v_PLAT)))
+(Set(!v_Nafamostat_drug),Set(102))
+(Set(!v_PLAT),Set(124))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+Map(v_CYB5R3 -> 1, v_Suramin_drug -> 2, v_NARS2 -> 3, v_GFER -> 4, v_COPS2 -> 5, v_Ambrisentan_drug -> 6, v_favipiravir_drug -> 7, v_Mycophenolate_mofetil_drug -> 8, v_TAT -> 9, v_MPHOSPH10 -> 10, v_POLR2B -> 11, v_Zonisamide_drug -> 12, v_COPS5 -> 13, v_ZC3H7A_ -> 14, v_CCDC86 -> 15, v_Acetylsalicylic_acid_drug -> 16, v_Benzthiazide_drug -> 17, v_Mercaptopurine_drug -> 18, v_Tolcapone_drug -> 19, v_LARP7 -> 20, v_BCKDK -> 21, v_BAG6 -> 22, v_MYCBP2 -> 23, v_AIFM1 -> 24, v_ADP_simple_molecule -> 25, v_csa8_Fibrillin_complex_human_host -> 26, v__3_4_DIHYDROXY_2_NITROPHENYL__PHENYL_METHANONE_drug -> 27, v_SBNO1 -> 28, v_FBLN5 -> 29, v_COPS7A -> 30, v_Sitaxentan_drug -> 31, v_RAB7A -> 32, v_COMT -> 33, v_SPART -> 34, v_Nsp10_nucleus -> 35, v_Insulin -> 36, v_CA12 -> 37, v_NEK9 -> 38, v_GDP_simple_molecule -> 39, v_Flavin_adenine_dinucleotide_drug -> 40, v_RdRpassembled_rna -> 41, v_Nsp10_cell -> 42, v_Entacapone_drug -> 43, v_LOXL1 -> 44, v_COPS8 -> 45, v_Macitentan_drug -> 46, v_POLR2A -> 47, v_POLR2E -> 48, v_MRPS2 -> 49, v_AP2A2 -> 50, v_TCF12 -> 51, v_L_Asparagine_simple_molecule -> 52, v_FAD_simple_molecule -> 53, v_EDNRA -> 54, v_Nsp16 -> 55, v_PCSK1 -> 56, v_Phosphatidyl_serine_simple_molecule -> 57, v_NUP62 -> 58, v_NOL10 -> 59, v_Nsp8 -> 60, v_SRP19 -> 61, v_Hydroflumethiazide_drug -> 62, v_ssRNAoligo_rna -> 63, v_NEK6 -> 64, v_NUP88 -> 65, v_NUP58 -> 66, v_NADH_simple_molecule -> 67, v_POLR2G -> 68, v_ERGIC1 -> 69, v_IMPDH2 -> 70, v_DLL1 -> 71, v_PEG10 -> 72, v_RHOA -> 73, v_NEK7 -> 74, v_LARP4B_ -> 75, v_SCARB1 -> 76, v_remdesivir__drug -> 77, v_MAT2B -> 78, v_ENV -> 79, v_COPS4 -> 80, v_Vpr -> 81, v_DCAF7 -> 82, v_GTF2F2 -> 83, v_MAT1A -> 84, v_3_5_Dinitrocatechol_drug -> 85, v_FOCAD -> 86, v_Rofecoxib_drug -> 87, v_Ribavirin_drug -> 88, v_NUP214 -> 89, v_DDX10 -> 90, v_Ademetionine_drug -> 91, v_EXOSC8 -> 92, v_Nsp7 -> 93, v_RALA -> 94, v_GTF2B -> 95, v_AP2M1 -> 96, v_ACSL3 -> 97, v_MRPS5 -> 98, v_SRP72 -> 99, v_NEMF -> 100, v_Nsp14_cell -> 101, v_Nafamostat_drug -> 102, v_NUP54 -> 103, v_Pyridoxal_phosphate_simple_molecule -> 104, v_EXOSC3 -> 105, v_S_Adenosylmethionine_drug -> 106, v_EXOSC5 -> 107, v_ZNF318 -> 108, v_Ellagic_Acid_drug -> 109, v_Nsp14_nucleus -> 110, v_NGDN -> 111, v_SEPSECS -> 112, v_MAT2A -> 113, v_UBQLN4 -> 114, v_COPS6 -> 115, v_RBM41 -> 116, v_ZNF503 -> 117, v_2_Methoxyestradiol_drug -> 118, v_SRP54 -> 119, v_SIRT5 -> 120, v_EIF4H -> 121, v_ELN -> 122, v_Hydrochlorothiazide_drug -> 123, v_PLAT -> 124, v_PTGS2 -> 125, v_MIB1 -> 126, v_Nsp9_nucleus -> 127, v_EXOSC2 -> 128, v_MEPCE -> 129, v_Nsp9_cell -> 130, v_PLG -> 131, v_ZNF250 -> 132, v_Nsp12 -> 133, v_AATF -> 134)
+p cnf 134 2
+102 -131 0
+124 -131 0
++ exit_status=0
++ set +x
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.gIPePWxXTw.cnf'
+c opening file to read '/tmp/tmp.gIPePWxXTw.cnf'
+c found 'p cnf 134 2' header
+c parsed 2 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%    2   3  2%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%    2   3  2%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%    2   3  2%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 -36 -37 -38 -39 -40
+v -41 -42 -43 -44 -45 -46 -47 -48 -49 -50 -51 -52 -53 -54 -55 -56 -57 -58 -59
+v -60 -61 -62 -63 -64 -65 -66 -67 -68 -69 -70 -71 -72 -73 -74 -75 -76 -77 -78
+v -79 -80 -81 -82 -83 -84 -85 -86 -87 -88 -89 -90 -91 -92 -93 -94 -95 -96 -97
+v -98 -99 -100 -101 -102 -103 -104 -105 -106 -107 -108 -109 -110 -111 -112
+v -113 -114 -115 -116 -117 -118 -119 -120 -121 -122 -123 -124 -125 -126 -127
+v -128 -129 -130 -131 -132 -133 -134 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   52.34% parse
+c         0.00   25.00% lucky
+c         0.00   25.00% search
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   37.10% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.00    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=32
++ wait 32
++ bdd_minisat_all_release /tmp/tmp.gIPePWxXTw.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.gIPePWxXTw.cnf
+variables         :          131
+cutwidth          :            2
+restarts          :            1
+conflicts         :            0           (     -nan / sec      )
+decisions         :          343           (      inf / sec      )
+propagations      :          344           (      inf / sec      )
+inspects          :            5           (      inf / sec      )
+conflict literals :            0           (     -nan % deleted  )
+cpu time (solve)  :         0.00 sec	
+refreshes         :            0
+|obdd|            :          177
+cache hits        :          164
+cache lookup      :          334
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        : 9223372036854775807+
+# SAT SOLVE END
+
++ set +x
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_124.bnet"
+	User time (seconds): 0.97
+	System time (seconds): 0.15
+	Percent of CPU this job got: 163%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 161600
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 37358
+	Voluntary context switches: 1987
+	Involuntary context switches: 38
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.0s

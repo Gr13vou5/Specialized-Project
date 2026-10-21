@@ -1,0 +1,50 @@
+targets, factors
+v_AKT, (v_SMAD | v_RAS)
+v_AXIN2, (v_AXIN2 | v_TCF_LEF)
+v_CDC42, (v_TGFR | v_CHD1L)
+v_CHD1L, v_CHD1L
+v_Csl, v_NOTCH
+v_Csn, v_NFB
+v_Dest_Compl, ((v_GSK3 & v_AXIN2 & v_catenin_nuc) | (v_GSK3 & v_Dest_Compl))
+v_EGF, v_EGF
+v_EGFR, v_EGF
+v_EMT, (!v_E_cadherin | v_EMT)
+v_ERK, v_MEK
+v_E_cadherin, (v_catenin_memb & (!v_SNAI1 | !v_HEY1 | !v_ZEB1 | !v_ZEB2 | !v_FOXC2 | !v_TWIST1 | !v_SNAI2))
+v_FGF, v_FGF
+v_FGFR, v_FGF
+v_FOXC2, (v_Goosecoid | v_SNAI1 | v_TWIST1)
+v_GLI, (v_TCF_LEF | !v_SUFU)
+v_GSK3, (!v_GLI & !v_AKT & (!v_Csn | !v_ERK | !v_Dest_Compl))
+v_Goosecoid, v_Goosecoid
+v_HEY1, (v_Csl | v_SMAD)
+v_HGF, v_HGF
+v_HIF1, v_Hypoxia
+v_Hypoxia, v_Hypoxia
+v_IGF1, v_IGF1
+v_IGF1R, v_IGF1
+v_Jagged, (v_TCF_LEF | v_SMAD)
+v_MEK, (v_RAS | !v_RKIP)
+v_NFB, v_AKT
+v_NOTCH, (v_RAS | v_Jagged)
+v_PDGF, v_PDGF
+v_PDGFR, v_PDGF
+v_RAS, (v_SOS_GRB2 | v_SRC | !v_GSK3 | v_TCF_LEF)
+v_RKIP, (!v_ERK | !v_SNAI1)
+v_SHH, (v_SMAD | v_GLI)
+v_SMAD, ((v_ERK | v_TGFR) & (v_ZEB1 | !v_ZEB2))
+v_SNAI1, (v_GLI | v_HIF1 | v_SMAD | v_SRC | v_CDC42 | v_Csl | v_ERK | v_Goosecoid | v_Csn | !v_GSK3)
+v_SNAI2, (v_ERK | v_catenin_nuc | v_SNAI2 | v_TWIST1)
+v_SOS_GRB2, ((v_PDGFR | v_cMet | v_TGFR | v_FGFR | v_IGF1R | v_EGFR) & !v_ERK)
+v_SRC, (v_PDGFR | v_EGFR | v_FGFR | v_cMet | v_IGF1R)
+v_SUFU, !v_SHH
+v_TCF_LEF, v_catenin_nuc
+v_TGF, (v_Goosecoid | v_SNAI1 | v_TWIST1 | v_GLI)
+v_TGFR, v_TGF
+v_TWIST1, (v_NFB | v_HIF1 | v_TCF_LEF | v_Goosecoid | v_SNAI1)
+v_ZEB1, ((v_HIF1 | v_SNAI1 | v_Goosecoid) & !v_miR200)
+v_ZEB2, ((v_HIF1 | v_SNAI1 | v_Goosecoid) & !v_miR200)
+v_cMet, (v_HGF | v_TCF_LEF)
+v_catenin_memb, (v_E_cadherin & !v_catenin_nuc)
+v_catenin_nuc, (!v_Dest_Compl & !v_catenin_memb & (!v_SUFU | !v_E_cadherin))
+v_miR200, (!v_SNAI1 & !v_ZEB1 & !v_ZEB2)

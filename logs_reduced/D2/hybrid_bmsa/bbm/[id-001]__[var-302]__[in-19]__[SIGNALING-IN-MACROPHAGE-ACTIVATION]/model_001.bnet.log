@@ -1,0 +1,756 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:14:23 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_001.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-227 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_001.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_001.bnet --cnf /tmp/tmp.OJ7rNxO3b9.cnf -h3
++ wait 11
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_001.bnet, cnfFileName = /tmp/tmp.OJ7rNxO3b9.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector(Set(v_External_Activator, v_Mitochondrial_Activator)))
+Some(Vector(Set(!v_Mitochondrial_Activator), Set(!v_External_Activator)))
+(Set(v_External_Activator, v_Mitochondrial_Activator),Set(-25, -71))
+(Set(!v_Mitochondrial_Activator),Set(71))
+(Set(!v_External_Activator),Set(25))
+
+Some(Vector(Set(v_APAF1_CYCS, v_CASP6_Activator)))
+Some(Vector(Set(!v_CASP6_Activator), Set(!v_APAF1_CYCS)))
+(Set(v_APAF1_CYCS, v_CASP6_Activator),Set(-3, -31))
+(Set(!v_CASP6_Activator),Set(31))
+(Set(!v_APAF1_CYCS),Set(3))
+
+Some(Vector(Set(v_TNF_BAG4_TNFRSF1A), Set(v_External_Activator)))
+Some(Vector(Set(!v_External_Activator, !v_TNF_BAG4_TNFRSF1A)))
+(Set(v_TNF_BAG4_TNFRSF1A),Set(-52))
+(Set(v_External_Activator),Set(-25))
+(Set(!v_External_Activator, !v_TNF_BAG4_TNFRSF1A),Set(25, 52))
+
+Some(Vector(Set(v_BAG4, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_BAG4)))
+(Set(v_BAG4, v_External_Activator),Set(-60, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_BAG4),Set(60))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_External_Activator, v_DNA_Fragmentation)))
+Some(Vector(Set(!v_DNA_Fragmentation), Set(!v_External_Activator)))
+(Set(v_External_Activator, v_DNA_Fragmentation),Set(-25, -12))
+(Set(!v_DNA_Fragmentation),Set(12))
+(Set(!v_External_Activator),Set(25))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_CASP3_Activator, v_Apoptosome), Set(v_CASP3_Activator, v_External_Activator), Set(v_CASP3_Activator, v_CASP8)))
+Some(Vector(Set(!v_CASP8, !v_External_Activator, !v_Apoptosome), Set(!v_CASP3_Activator)))
+(Set(v_CASP3_Activator, v_Apoptosome),Set(-14, -62))
+(Set(v_CASP3_Activator, v_External_Activator),Set(-14, -25))
+(Set(v_CASP3_Activator, v_CASP8),Set(-14, -59))
+(Set(!v_CASP8, !v_External_Activator, !v_Apoptosome),Set(59, 25, 62))
+(Set(!v_CASP3_Activator),Set(14))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_External_Activator, v_TNFSF10_TNFRSF10A_FADD), Set(v_FASLG_FAS_FADD_FAF1_DAXX_CFLAR, v_External_Activator), Set(v_External_Activator, v_FASLG_FAS_FADD_FAF1_DAXX), Set(v_External_Activator, v_TNFSF10_TNFSF10B_FADD)))
+Some(Vector(Set(!v_FASLG_FAS_FADD_FAF1_DAXX_CFLAR, !v_TNFSF10_TNFSF10B_FADD, !v_TNFSF10_TNFRSF10A_FADD, !v_FASLG_FAS_FADD_FAF1_DAXX), Set(!v_External_Activator)))
+(Set(v_External_Activator, v_TNFSF10_TNFRSF10A_FADD),Set(-25, -51))
+(Set(v_FASLG_FAS_FADD_FAF1_DAXX_CFLAR, v_External_Activator),Set(-21, -25))
+(Set(v_External_Activator, v_FASLG_FAS_FADD_FAF1_DAXX),Set(-25, -67))
+(Set(v_External_Activator, v_TNFSF10_TNFSF10B_FADD),Set(-25, -35))
+(Set(!v_FASLG_FAS_FADD_FAF1_DAXX_CFLAR, !v_TNFSF10_TNFSF10B_FADD, !v_TNFSF10_TNFRSF10A_FADD, !v_FASLG_FAS_FADD_FAF1_DAXX),Set(21, 35, 51, 67))
+(Set(!v_External_Activator),Set(25))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_IDFFA), Set(v_Fragmented_DNAnucleus)))
+Some(Vector(Set(!v_Fragmented_DNAnucleus, !v_IDFFA)))
+(Set(v_IDFFA),Set(-19))
+(Set(v_Fragmented_DNAnucleus),Set(-58))
+(Set(!v_Fragmented_DNAnucleus, !v_IDFFA),Set(58, 19))
+
+Some(Vector(Set(v_tBID, v_Mitochondrial_Activator)))
+Some(Vector(Set(!v_Mitochondrial_Activator), Set(!v_tBID)))
+(Set(v_tBID, v_Mitochondrial_Activator),Set(-18, -71))
+(Set(!v_Mitochondrial_Activator),Set(71))
+(Set(!v_tBID),Set(18))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_FASLG, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_FASLG)))
+(Set(v_FASLG, v_External_Activator),Set(-27, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_FASLG),Set(27))
+
+Some(Vector(Set(v_FASLG_FAS, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_FASLG_FAS)))
+(Set(v_FASLG_FAS, v_External_Activator),Set(-61, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_FASLG_FAS),Set(61))
+
+Some(Vector(Set(v_FASLG_FAS_FADD_FAF1_DAXX, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_FASLG_FAS_FADD_FAF1_DAXX)))
+(Set(v_FASLG_FAS_FADD_FAF1_DAXX, v_External_Activator),Set(-67, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_FASLG_FAS_FADD_FAF1_DAXX),Set(67))
+
+Some(Vector(Set(v_External_Activator, v_PDCD8cytoplasm), Set(v_External_Activator, v_ENDOGcytoplasm)))
+Some(Vector(Set(!v_ENDOGcytoplasm, !v_PDCD8cytoplasm), Set(!v_External_Activator)))
+(Set(v_External_Activator, v_PDCD8cytoplasm),Set(-25, -13))
+(Set(v_External_Activator, v_ENDOGcytoplasm),Set(-25, -16))
+(Set(!v_ENDOGcytoplasm, !v_PDCD8cytoplasm),Set(16, 13))
+(Set(!v_External_Activator),Set(25))
+
+Some(Vector(Set(v_External_Activator, v_CASP3cytoplasm)))
+Some(Vector(Set(!v_CASP3cytoplasm), Set(!v_External_Activator)))
+(Set(v_External_Activator, v_CASP3cytoplasm),Set(-25, -15))
+(Set(!v_CASP3cytoplasm),Set(15))
+(Set(!v_External_Activator),Set(25))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_External_Activator, v_MAP3K7IP1_MAP3K7IP2_MAP3K7), Set(v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3, v_External_Activator)))
+Some(Vector(Set(!v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3, !v_MAP3K7IP1_MAP3K7IP2_MAP3K7), Set(!v_External_Activator)))
+(Set(v_External_Activator, v_MAP3K7IP1_MAP3K7IP2_MAP3K7),Set(-25, -68))
+(Set(v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3, v_External_Activator),Set(-45, -25))
+(Set(!v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3, !v_MAP3K7IP1_MAP3K7IP2_MAP3K7),Set(45, 68))
+(Set(!v_External_Activator),Set(25))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_ILIB, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_ILIB)))
+(Set(v_ILIB, v_External_Activator),Set(-43, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_ILIB),Set(43))
+
+Some(Vector(Set(v_ILIB_IL1R1, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_ILIB_IL1R1)))
+(Set(v_ILIB_IL1R1, v_External_Activator),Set(-69, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_ILIB_IL1R1),Set(69))
+
+Some(Vector(Set(v_ILIB_IL1R1_MYD88_IRAK1_IRAK4, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_ILIB_IL1R1_MYD88_IRAK1_IRAK4)))
+(Set(v_ILIB_IL1R1_MYD88_IRAK1_IRAK4, v_External_Activator),Set(-46, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_ILIB_IL1R1_MYD88_IRAK1_IRAK4),Set(46))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_TLR9_MYD88_TRAF6_IRF5), Set(v_Virus), Set(v_TLR7_MYD88_TRAF6_IRF5)))
+Some(Vector(Set(!v_TLR7_MYD88_TRAF6_IRF5, !v_Virus, !v_TLR9_MYD88_TRAF6_IRF5)))
+(Set(v_TLR9_MYD88_TRAF6_IRF5),Set(-6))
+(Set(v_Virus),Set(-40))
+(Set(v_TLR7_MYD88_TRAF6_IRF5),Set(-23))
+(Set(!v_TLR7_MYD88_TRAF6_IRF5, !v_Virus, !v_TLR9_MYD88_TRAF6_IRF5),Set(23, 40, 6))
+
+Some(Vector(Set(v_External_Activator, v_ILIB_IL1R1_MYD88_IRAK1_IRAK4_TRAF6), Set(v_TLR7_MYD88_IRAK1_IRAK4_TRAF6, v_External_Activator), Set(v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6, v_External_Activator), Set(v_External_Activator, v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6), Set(v_External_Activator, v_TLR5_MYD88_IRAK1_IRAK4_TRAF6), Set(v_External_Activator, v_TLR9_MYD88_IRAK1_IRAK4_TRAF6), Set(v_External_Activator, v_TLR3_TICAM1_TICAM2_TRAF6)))
+Some(Vector(Set(!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6, !v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6, !v_TLR7_MYD88_IRAK1_IRAK4_TRAF6, !v_TLR5_MYD88_IRAK1_IRAK4_TRAF6, !v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6, !v_ILIB_IL1R1_MYD88_IRAK1_IRAK4_TRAF6, !v_TLR3_TICAM1_TICAM2_TRAF6), Set(!v_External_Activator)))
+(Set(v_External_Activator, v_ILIB_IL1R1_MYD88_IRAK1_IRAK4_TRAF6),Set(-25, -32))
+(Set(v_TLR7_MYD88_IRAK1_IRAK4_TRAF6, v_External_Activator),Set(-22, -25))
+(Set(v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6, v_External_Activator),Set(-17, -25))
+(Set(v_External_Activator, v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6),Set(-25, -72))
+(Set(v_External_Activator, v_TLR5_MYD88_IRAK1_IRAK4_TRAF6),Set(-25, -34))
+(Set(v_External_Activator, v_TLR9_MYD88_IRAK1_IRAK4_TRAF6),Set(-25, -49))
+(Set(v_External_Activator, v_TLR3_TICAM1_TICAM2_TRAF6),Set(-25, -53))
+(Set(!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6, !v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6, !v_TLR7_MYD88_IRAK1_IRAK4_TRAF6, !v_TLR5_MYD88_IRAK1_IRAK4_TRAF6, !v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6, !v_ILIB_IL1R1_MYD88_IRAK1_IRAK4_TRAF6, !v_TLR3_TICAM1_TICAM2_TRAF6),Set(53, 32, 34, 17, 22, 49, 72))
+(Set(!v_External_Activator),Set(25))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_NFKBIA_RELAp65_NFKB1p50), Set(v_RELA_NFKB1_Activator)))
+Some(Vector(Set(!v_RELA_NFKB1_Activator, !v_NFKBIA_RELAp65_NFKB1p50)))
+(Set(v_NFKBIA_RELAp65_NFKB1p50),Set(-10))
+(Set(v_RELA_NFKB1_Activator),Set(-8))
+(Set(!v_RELA_NFKB1_Activator, !v_NFKBIA_RELAp65_NFKB1p50),Set(8, 10))
+
+Some(Vector(Set(v_NFKBIA, v_RELA_NFKB1_Activator, v_IKBKG_CHUK_IKBKB), Set(v_TNF_IKBKG_Complex, v_NFKBIA, v_RELA_NFKB1_Activator)))
+Some(Vector(Set(!v_TNF_IKBKG_Complex, !v_IKBKG_CHUK_IKBKB), Set(!v_RELA_NFKB1_Activator), Set(!v_NFKBIA)))
+(Set(v_NFKBIA, v_RELA_NFKB1_Activator, v_IKBKG_CHUK_IKBKB),Set(-47, -8, -5))
+(Set(v_TNF_IKBKG_Complex, v_NFKBIA, v_RELA_NFKB1_Activator),Set(-55, -47, -8))
+(Set(!v_TNF_IKBKG_Complex, !v_IKBKG_CHUK_IKBKB),Set(55, 5))
+(Set(!v_RELA_NFKB1_Activator),Set(8))
+(Set(!v_NFKBIA),Set(47))
+
+Some(Vector(Set(v_tBID, v_Mitochondrial_Activator)))
+Some(Vector(Set(!v_Mitochondrial_Activator), Set(!v_tBID)))
+(Set(v_tBID, v_Mitochondrial_Activator),Set(-18, -71))
+(Set(!v_Mitochondrial_Activator),Set(71))
+(Set(!v_tBID),Set(18))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Bacteria, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_Bacteria)))
+(Set(v_Bacteria, v_External_Activator),Set(-26, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_Bacteria),Set(26))
+
+Some(Vector(Set(v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4)))
+(Set(v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4, v_External_Activator),Set(-57, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4),Set(57))
+
+Some(Vector(Set(v_External_Activator, v_Bacteria)))
+Some(Vector(Set(!v_Bacteria), Set(!v_External_Activator)))
+(Set(v_External_Activator, v_Bacteria),Set(-25, -26))
+(Set(!v_Bacteria),Set(26))
+(Set(!v_External_Activator),Set(25))
+
+Some(Vector(Set(v_TLR2_TLR6, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TLR2_TLR6)))
+(Set(v_TLR2_TLR6, v_External_Activator),Set(-28, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TLR2_TLR6),Set(28))
+
+Some(Vector(Set(v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4)))
+(Set(v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4, v_External_Activator),Set(-36, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4),Set(36))
+
+Some(Vector(Set(v_TLR3_TLR3, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TLR3_TLR3)))
+(Set(v_TLR3_TLR3, v_External_Activator),Set(-41, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TLR3_TLR3),Set(41))
+
+Some(Vector(Set(v_TLR3_TICAM1_TICAM2, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TLR3_TICAM1_TICAM2)))
+(Set(v_TLR3_TICAM1_TICAM2, v_External_Activator),Set(-33, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TLR3_TICAM1_TICAM2),Set(33))
+
+Some(Vector(Set(v_TLR3_TICAM1_TICAM2_RIPK1, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TLR3_TICAM1_TICAM2_RIPK1)))
+(Set(v_TLR3_TICAM1_TICAM2_RIPK1, v_External_Activator),Set(-24, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TLR3_TICAM1_TICAM2_RIPK1),Set(24))
+
+Some(Vector(Set(v_TLR3_TICAM1_TICAM2, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TLR3_TICAM1_TICAM2)))
+(Set(v_TLR3_TICAM1_TICAM2, v_External_Activator),Set(-33, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TLR3_TICAM1_TICAM2),Set(33))
+
+Some(Vector(Set(v_Virus, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_Virus)))
+(Set(v_Virus, v_External_Activator),Set(-40, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_Virus),Set(40))
+
+Some(Vector(Set(v_TLR5_TLR5, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TLR5_TLR5)))
+(Set(v_TLR5_TLR5, v_External_Activator),Set(-54, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TLR5_TLR5),Set(54))
+
+Some(Vector(Set(v_TLR5_MYD88_IRAK1_IRAK4, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TLR5_MYD88_IRAK1_IRAK4)))
+(Set(v_TLR5_MYD88_IRAK1_IRAK4, v_External_Activator),Set(-44, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TLR5_MYD88_IRAK1_IRAK4),Set(44))
+
+Some(Vector(Set(v_External_Activator, v_Bacteria)))
+Some(Vector(Set(!v_Bacteria), Set(!v_External_Activator)))
+(Set(v_External_Activator, v_Bacteria),Set(-25, -26))
+(Set(!v_Bacteria),Set(26))
+(Set(!v_External_Activator),Set(25))
+
+Some(Vector(Set(v_TLR7_TLR7, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TLR7_TLR7)))
+(Set(v_TLR7_TLR7, v_External_Activator),Set(-30, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TLR7_TLR7),Set(30))
+
+Some(Vector(Set(v_TLR7_MYD88_IRAK1_IRAK4, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TLR7_MYD88_IRAK1_IRAK4)))
+(Set(v_TLR7_MYD88_IRAK1_IRAK4, v_External_Activator),Set(-66, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TLR7_MYD88_IRAK1_IRAK4),Set(66))
+
+Some(Vector(Set(v_TLR7_TLR7, v_External_Activator, !v_IRF5)))
+Some(Vector(Set(v_IRF5), Set(!v_External_Activator), Set(!v_TLR7_TLR7)))
+(Set(v_TLR7_TLR7, v_External_Activator, !v_IRF5),Set(-30, -25, 7))
+(Set(v_IRF5),Set(-7))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TLR7_TLR7),Set(30))
+
+Some(Vector(Set(v_External_Activator, v_Virus)))
+Some(Vector(Set(!v_Virus), Set(!v_External_Activator)))
+(Set(v_External_Activator, v_Virus),Set(-25, -40))
+(Set(!v_Virus),Set(40))
+(Set(!v_External_Activator),Set(25))
+
+Some(Vector(Set(v_TLR9_TLR9, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TLR9_TLR9)))
+(Set(v_TLR9_TLR9, v_External_Activator),Set(-29, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TLR9_TLR9),Set(29))
+
+Some(Vector(Set(v_TLR9_MYD88_IRAK1_IRAK4, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TLR9_MYD88_IRAK1_IRAK4)))
+(Set(v_TLR9_MYD88_IRAK1_IRAK4, v_External_Activator),Set(-42, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TLR9_MYD88_IRAK1_IRAK4),Set(42))
+
+Some(Vector(Set(v_TLR9_TLR9, v_External_Activator, !v_IRF5)))
+Some(Vector(Set(v_IRF5), Set(!v_External_Activator), Set(!v_TLR9_TLR9)))
+(Set(v_TLR9_TLR9, v_External_Activator, !v_IRF5),Set(-29, -25, 7))
+(Set(v_IRF5),Set(-7))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TLR9_TLR9),Set(29))
+
+Some(Vector(Set(v_External_Activator, v_Viral_Bacterial_CpG)))
+Some(Vector(Set(!v_Viral_Bacterial_CpG), Set(!v_External_Activator)))
+(Set(v_External_Activator, v_Viral_Bacterial_CpG),Set(-25, -56))
+(Set(!v_Viral_Bacterial_CpG),Set(56))
+(Set(!v_External_Activator),Set(25))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_TNFSF10, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TNFSF10)))
+(Set(v_TNFSF10, v_External_Activator),Set(-11, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TNFSF10),Set(11))
+
+Some(Vector(Set(v_TNFSF10_TNFRSF10A, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TNFSF10_TNFRSF10A)))
+(Set(v_TNFSF10_TNFRSF10A, v_External_Activator),Set(-73, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TNFSF10_TNFRSF10A),Set(73))
+
+Some(Vector(Set(v_TNFSF10, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TNFSF10)))
+(Set(v_TNFSF10, v_External_Activator),Set(-11, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TNFSF10),Set(11))
+
+Some(Vector(Set(v_TNFSF10_TNFSF10B, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TNFSF10_TNFSF10B)))
+(Set(v_TNFSF10_TNFSF10B, v_External_Activator),Set(-50, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TNFSF10_TNFSF10B),Set(50))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_TNF, v_BAG4_TNFRSF1A)))
+Some(Vector(Set(!v_BAG4_TNFRSF1A), Set(!v_TNF)))
+(Set(v_TNF, v_BAG4_TNFRSF1A),Set(-4, -63))
+(Set(!v_BAG4_TNFRSF1A),Set(63))
+(Set(!v_TNF),Set(4))
+
+Some(Vector(Set(v_TNF_TNFRSF1A_FADD_TRADD_TRAF2_RIPK1, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TNF_TNFRSF1A_FADD_TRADD_TRAF2_RIPK1)))
+(Set(v_TNF_TNFRSF1A_FADD_TRADD_TRAF2_RIPK1, v_External_Activator),Set(-2, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TNF_TNFRSF1A_FADD_TRADD_TRAF2_RIPK1),Set(2))
+
+Some(Vector(Set(v_TNF_BAG4_TNFRSF1A, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TNF_BAG4_TNFRSF1A)))
+(Set(v_TNF_BAG4_TNFRSF1A, v_External_Activator),Set(-52, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TNF_BAG4_TNFRSF1A),Set(52))
+
+Some(Vector(Set(v_TNF_TNFRSF1A_FADD_TRADD, v_External_Activator)))
+Some(Vector(Set(!v_External_Activator), Set(!v_TNF_TNFRSF1A_FADD_TRADD)))
+(Set(v_TNF_TNFRSF1A_FADD_TRADD, v_External_Activator),Set(-64, -25))
+(Set(!v_External_Activator),Set(25))
+(Set(!v_TNF_TNFRSF1A_FADD_TRADD),Set(64))
+
+Some(Vector(Set(v_Bacteria), Set(v_Virus)))
+Some(Vector(Set(!v_Virus, !v_Bacteria)))
+(Set(v_Bacteria),Set(-26))
+(Set(v_Virus),Set(-40))
+(Set(!v_Virus, !v_Bacteria),Set(40, 26))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_External_Activator, v_CASP2), Set(v_External_Activator, v_CASP8)))
+Some(Vector(Set(!v_CASP8, !v_CASP2), Set(!v_External_Activator)))
+(Set(v_External_Activator, v_CASP2),Set(-25, -65))
+(Set(v_External_Activator, v_CASP8),Set(-25, -59))
+(Set(!v_CASP8, !v_CASP2),Set(59, 65))
+(Set(!v_External_Activator),Set(25))
+Map(v_IRF1_IRF1_Activator -> 1, v_TNF_TNFRSF1A_FADD_TRADD_TRAF2_RIPK1 -> 2, v_APAF1_CYCS -> 3, v_TNF -> 4, v_IKBKG_CHUK_IKBKB -> 5, v_TLR9_MYD88_TRAF6_IRF5 -> 6, v_IRF5 -> 7, v_RELA_NFKB1_Activator -> 8, v_TNFSF13B -> 9, v_NFKBIA_RELAp65_NFKB1p50 -> 10, v_TNFSF10 -> 11, v_DNA_Fragmentation -> 12, v_PDCD8cytoplasm -> 13, v_CASP3_Activator -> 14, v_CASP3cytoplasm -> 15, v_ENDOGcytoplasm -> 16, v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 -> 17, v_tBID -> 18, v_IDFFA -> 19, v_IFNA -> 20, v_FASLG_FAS_FADD_FAF1_DAXX_CFLAR -> 21, v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 -> 22, v_TLR7_MYD88_TRAF6_IRF5 -> 23, v_TLR3_TICAM1_TICAM2_RIPK1 -> 24, v_External_Activator -> 25, v_Bacteria -> 26, v_FASLG -> 27, v_TLR2_TLR6 -> 28, v_TLR9_TLR9 -> 29, v_TLR7_TLR7 -> 30, v_CASP6_Activator -> 31, v_ILIB_IL1R1_MYD88_IRAK1_IRAK4_TRAF6 -> 32, v_TLR3_TICAM1_TICAM2 -> 33, v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 -> 34, v_TNFSF10_TNFSF10B_FADD -> 35, v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4 -> 36, v_IFNB1 -> 37, v_CASP7_Activator -> 38, v_CD40LG -> 39, v_Virus -> 40, v_TLR3_TLR3 -> 41, v_TLR9_MYD88_IRAK1_IRAK4 -> 42, v_ILIB -> 43, v_TLR5_MYD88_IRAK1_IRAK4 -> 44, v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 -> 45, v_ILIB_IL1R1_MYD88_IRAK1_IRAK4 -> 46, v_NFKBIA -> 47, v_IFNG -> 48, v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 -> 49, v_TNFSF10_TNFSF10B -> 50, v_TNFSF10_TNFRSF10A_FADD -> 51, v_TNF_BAG4_TNFRSF1A -> 52, v_TLR3_TICAM1_TICAM2_TRAF6 -> 53, v_TLR5_TLR5 -> 54, v_TNF_IKBKG_Complex -> 55, v_Viral_Bacterial_CpG -> 56, v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4 -> 57, v_Fragmented_DNAnucleus -> 58, v_CASP8 -> 59, v_BAG4 -> 60, v_FASLG_FAS -> 61, v_Apoptosome -> 62, v_BAG4_TNFRSF1A -> 63, v_TNF_TNFRSF1A_FADD_TRADD -> 64, v_CASP2 -> 65, v_TLR7_MYD88_IRAK1_IRAK4 -> 66, v_FASLG_FAS_FADD_FAF1_DAXX -> 67, v_MAP3K7IP1_MAP3K7IP2_MAP3K7 -> 68, v_ILIB_IL1R1 -> 69, v_IRF2_Activator -> 70, v_Mitochondrial_Activator -> 71, v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 -> 72, v_TNFSF10_TNFRSF10A -> 73)
+p cnf 73 181
+-25 -71 3 0
+71 -3 0
+25 -3 0
+-3 -31 62 0
+31 -62 0
+3 -62 0
+-52 60 0
+-25 60 0
+25 52 -60 0
+-60 -25 63 0
+25 -63 0
+60 -63 0
+-25 -12 65 0
+12 -65 0
+25 -65 0
+-14 -62 15 0
+-14 -25 15 0
+-14 -59 15 0
+59 25 62 -15 0
+14 -15 0
+-25 -51 59 0
+-21 -25 59 0
+-25 -67 59 0
+-25 -35 59 0
+-59 21 35 67 51 0
+25 -59 0
+-19 12 0
+-58 12 0
+58 19 -12 0
+-18 -71 16 0
+71 -16 0
+18 -16 0
+-27 -25 61 0
+25 -61 0
+27 -61 0
+-61 -25 67 0
+25 -67 0
+61 -67 0
+-67 -25 21 0
+25 -21 0
+67 -21 0
+-25 -13 58 0
+-25 -16 58 0
+16 13 -58 0
+25 -58 0
+-25 -15 19 0
+15 -19 0
+25 -19 0
+-25 -68 5 0
+-45 -25 5 0
+45 68 -5 0
+25 -5 0
+-43 -25 69 0
+25 -69 0
+43 -69 0
+-69 -25 46 0
+25 -46 0
+69 -46 0
+-46 -25 32 0
+25 -32 0
+46 -32 0
+-6 7 0
+-40 7 0
+-23 7 0
+23 40 6 -7 0
+-25 -32 68 0
+-22 -25 68 0
+-17 -25 68 0
+-25 -72 68 0
+-25 -34 68 0
+-25 -49 68 0
+-25 -53 68 0
+-68 53 32 34 17 22 49 72 0
+25 -68 0
+-10 47 0
+-8 47 0
+8 10 -47 0
+-47 -8 -5 10 0
+-55 -47 -8 10 0
+55 5 -10 0
+8 -10 0
+47 -10 0
+-18 -71 13 0
+71 -13 0
+18 -13 0
+-26 -25 57 0
+25 -57 0
+26 -57 0
+-57 -25 17 0
+25 -17 0
+57 -17 0
+-25 -26 28 0
+26 -28 0
+25 -28 0
+-28 -25 36 0
+25 -36 0
+28 -36 0
+-36 -25 72 0
+25 -72 0
+36 -72 0
+-41 -25 33 0
+25 -33 0
+41 -33 0
+-33 -25 24 0
+25 -24 0
+33 -24 0
+-24 -25 45 0
+25 -45 0
+24 -45 0
+-33 -25 53 0
+25 -53 0
+33 -53 0
+-40 -25 41 0
+25 -41 0
+40 -41 0
+-54 -25 44 0
+25 -44 0
+54 -44 0
+-44 -25 34 0
+25 -34 0
+44 -34 0
+-25 -26 54 0
+26 -54 0
+25 -54 0
+-30 -25 66 0
+25 -66 0
+30 -66 0
+-66 -25 22 0
+25 -22 0
+66 -22 0
+-30 -25 7 23 0
+-7 -23 0
+25 -23 0
+30 -23 0
+-25 -40 30 0
+40 -30 0
+25 -30 0
+-29 -25 42 0
+25 -42 0
+29 -42 0
+-42 -25 49 0
+25 -49 0
+42 -49 0
+-29 -25 7 6 0
+-7 -6 0
+25 -6 0
+29 -6 0
+-25 -56 29 0
+56 -29 0
+25 -29 0
+-11 -25 73 0
+25 -73 0
+11 -73 0
+-73 -25 51 0
+25 -51 0
+73 -51 0
+-11 -25 50 0
+25 -50 0
+11 -50 0
+-50 -25 35 0
+25 -35 0
+50 -35 0
+-4 -63 52 0
+63 -52 0
+4 -52 0
+-2 -25 55 0
+25 -55 0
+2 -55 0
+-52 -25 64 0
+25 -64 0
+52 -64 0
+-64 -25 2 0
+25 -2 0
+64 -2 0
+-26 56 0
+-40 56 0
+40 26 -56 0
+-25 -65 18 0
+-25 -59 18 0
+59 65 -18 0
+25 -18 0
++ exit_status=0
++ set +x
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.OJ7rNxO3b9.cnf'
+c opening file to read '/tmp/tmp.OJ7rNxO3b9.cnf'
+c found 'p cnf 73 181' header
+c parsed 181 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  181  65 89%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  181  65 89%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  181  65 89%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 -36 -37 -38 -39 -40
+v -41 -42 -43 -44 -45 -46 -47 -48 -49 -50 -51 -52 -53 -54 -55 -56 -57 -58 -59
+v -60 -61 -62 -63 -64 -65 -66 -67 -68 -69 -70 -71 -72 -73 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00  130.71% parse
+c         0.00   26.43% search
+c         0.00   25.00% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   30.50% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.00    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=139
++ wait 139
++ bdd_minisat_all_release /tmp/tmp.OJ7rNxO3b9.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.OJ7rNxO3b9.cnf
+variables         :           73
+cutwidth          :          134
+restarts          :            1
+conflicts         :           41           (     2780 / sec      )
+decisions         :        11591           (   785831 / sec      )
+propagations      :        17417           (  1180814 / sec      )
+inspects          :        20764           (  1407729 / sec      )
+conflict literals :          108           (     0.00 % deleted  )
+cpu time (solve)  :         0.01 sec	
+refreshes         :            0
+|obdd|            :        73452
+cache hits        :         5735
+cache lookup      :        11549
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :       471040
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_001.bnet"
+	User time (seconds): 1.10
+	System time (seconds): 0.18
+	Percent of CPU this job got: 169%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.76
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 161520
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 40757
+	Voluntary context switches: 3211
+	Involuntary context switches: 65
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.0s

@@ -1,0 +1,32 @@
+targets, factors
+v_ABA, v_ABA
+v_ABH1, v_ABH1
+v_ABPS, (v_CA & !v_ABA & !v_PI4P)
+v_ACTIN, (v_ARP23 & v_SCAB1 & v_ABA & (v_ROS | (v_CA & v_ABPS)))
+v_AHA1, (!v_PA & !v_CA & !v_pH)
+v_ARP23, (v_PI4P | v_ROS)
+v_CA, ((v_ACTIN | v_NO | v_Ica | v_InSP6) & !v_CA & !v_CIPK)
+v_CDPK, (v_CA & v_ABA)
+v_CIPK, (v_CA & v_ABA)
+v_DEPOLAR, (v_CA | v_TPK1 | !v_AHA1 | v_SLAC1 | v_QUAC)
+v_ERA1, v_ERA1
+v_Ica, ((!v_ABH1 | !v_ERA1 | v_MRP5) & v_ROS & !v_DEPOLAR)
+v_InSP3, (v_PI4P & v_PLC)
+v_InSP6, (v_InSP3 & !v_MRP5)
+v_MALATE, (v_PEPC & !v_QUAC & !v_CA)
+v_MAPK, ((v_ROS | (v_CDPK & v_CA)) & v_ABA)
+v_MRP5, v_MRP5
+v_NO, (v_ROS & v_CA)
+v_PA, (v_PLD | (v_PLC & v_PI4P))
+v_PEPC, (!v_MALATE & !v_ABA)
+v_PI4P, (v_ABA | v_PA)
+v_PLC, (v_ABA & v_CA)
+v_PLD, (v_SK | v_NO | v_CA)
+v_QUAC, (v_ABA & v_DEPOLAR)
+v_RBOH, ((v_ABA | (v_CDPK & v_CA)) & v_PA & (v_ABA | v_PI4P) & v_pH)
+v_ROS, (((v_ABA | v_RBOH) & !v_ROS) | (v_ABA & v_RBOH))
+v_SCAB1, (v_ABA | v_InSP6)
+v_SK, (v_ABA | v_PA)
+v_SLAC1, (v_ABA & v_MAPK & (!v_ERA1 | v_MRP5 | !v_ABH1) & !v_MALATE)
+v_TPK1, (v_CA & !v_pH)
+v_pH, (v_ABA & !v_AHA1)

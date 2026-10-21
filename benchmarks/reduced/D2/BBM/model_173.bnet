@@ -1,0 +1,38 @@
+targets, factors
+v_GAL1, ((!v_Mig1p & v_Gal4p) | v_GAL11)
+v_GAL11, v_GAL11
+v_GAL2, (v_GAL11 | v_Gal4p)
+v_GAL3, (!v_Mig1p | v_Gal4p)
+v_GLC7, v_GLC7
+v_GRR1, v_GRR1
+v_Gal2p, (!v_glucose_ext | v_GAL2)
+v_Gal3p, (v_GAL3 & v_galactose_int)
+v_Gal4, v_Gal4
+v_Gal4p, (!v_Mig1p & !v_Gal80p)
+v_Gal80p, (!v_GAL1 & !v_Gal3p & v_Gal4p)
+v_Glc7Reg1, (v_glucose_ext & v_REG1 & v_GLC7)
+v_MALT, (!v_Mig1p & v_MalRp)
+v_MIG1, (v_Rgt1p | !v_Mig3p)
+v_MalRp, (v_maltose_int & !v_Mig1p)
+v_MalTp, (!v_glucose_ext | v_MALT)
+v_Mig1p, (!v_Snf1p & v_MIG1)
+v_Mig3p, (!v_Rgt1p & !v_Snf1p)
+v_Mth1p, (!v_GRR1 | (!v_Snf3p & !v_Rgt2p) | !v_YCK1_2)
+v_REG1, v_REG1
+v_RGT1, v_RGT1
+v_RGT2, v_RGT2
+v_Rgt1, v_Rgt1
+v_Rgt1p, ((v_Mth1p & v_RGT1) | (v_Std1p & v_RGT1))
+v_Rgt2p, (v_glucose_ext & v_RGT2)
+v_SNF1, v_SNF1
+v_SNF3, ((!v_Mig1p & v_Rgt1p) | !v_Mig3p)
+v_SNF4, v_SNF4
+v_Snf1p, (!v_Glc7Reg1 & v_SNF1 & v_SNF4)
+v_Snf3p, (v_glucose_ext & v_SNF3)
+v_Std1p, ((!v_Rgt1p & !v_GRR1) | (!v_Rgt1p & !v_Snf3p & !v_Rgt2p) | (!v_Rgt1p & !v_YCK1_2))
+v_YCK1_2, v_YCK1_2
+v_galactose_ext, v_galactose_ext
+v_galactose_int, (v_galactose_ext & v_Gal2p)
+v_glucose_ext, v_glucose_ext
+v_maltose_ext, v_maltose_ext
+v_maltose_int, (v_maltose_ext & v_MalTp)

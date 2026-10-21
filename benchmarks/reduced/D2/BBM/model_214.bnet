@@ -1,0 +1,23 @@
+targets, factors
+v_14_3_3_neuron, (v_14_3_3_neuron & v_MAPK8)
+v_AKT1_phosphorylated, v_AKT1_phosphorylated
+v_AMPK_complex_neuron, v_AMPK_complex_neuron
+v_AMPK_complex_nucleus, v_AMPK_complex_nucleus
+v_CLPP, v_CLPP
+v_DDIT3, v_DDIT3
+v_FOXO3_acetylated_phosphorylated_phosphorylated_phosphorylated, (v_csa1501_TF_space_FOXO3_complex_nucleus & v_AKT1_phosphorylated)
+v_HSPD1, v_HSPD1
+v_HSPE1, v_HSPE1
+v_HTRA2, v_HTRA2
+v_JUN, v_JUN
+v_LONP1, v_LONP1
+v_MAPK8, v_MAPK8
+v_PINK1, v_PINK1
+v_PPARGC1A_phosphorylated, v_PPARGC1A_phosphorylated
+v_ROS_simple_molecule_mitochondrial_space_matrix, v_ROS_simple_molecule_mitochondrial_space_matrix
+v_ROS_simple_molecule_neuron, v_ROS_simple_molecule_neuron
+v_SIRT2, v_SIRT2
+v_SIRT3, ((!v_HTRA2 | v_ROS_simple_molecule_mitochondrial_space_matrix) & v_SIRT3)
+v_SNCA, v_SNCA
+v_csa1501_TF_space_FOXO3_complex_nucleus, (((v_SIRT2 | v_PINK1) & v_FOXO3_acetylated_phosphorylated_phosphorylated_phosphorylated) | v_AMPK_complex_neuron)
+v_mtUPR_phenotype, v_mtUPR_phenotype

@@ -1,0 +1,18 @@
+targets, factors
+v_BAX, (v_CASP8 & !v_NFKB1)
+v_CASP3, (!v_XIAP & v_apoptosome)
+v_CASP8, ((!v_DISC_TNF & !v_DISC_FAS & v_CASP3 & !v_NFKB1) | (!v_DISC_TNF & v_DISC_FAS & !v_NFKB1) | (v_DISC_TNF & !v_NFKB1))
+v_DISC_FAS, (v_FASL & v_FADD)
+v_DISC_TNF, (v_TNF & v_FADD)
+v_FADD, v_FADD
+v_FASL, v_FASL
+v_MOMP, ((!v_BAX & v_MPT) | v_BAX)
+v_MPT, (!v_NFKB1 & v_ROS)
+v_NFKB1, (v_RIP1ub & !v_CASP3)
+v_RIP1, ((!v_TNF & v_DISC_FAS & !v_CASP8) | (v_TNF & !v_CASP8))
+v_RIP1ub, (v_RIP1 & v_cIAP)
+v_ROS, ((!v_RIP1 & v_MPT & !v_NFKB1) | (v_RIP1 & !v_NFKB1))
+v_TNF, ((!v_TNF & v_NFKB1) | v_TNF)
+v_XIAP, (!v_MOMP & v_NFKB1)
+v_apoptosome, (!v_MPT & v_MOMP & !v_XIAP)
+v_cIAP, (!v_MOMP & v_NFKB1)

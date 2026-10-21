@@ -1,0 +1,42 @@
+targets, factors
+v_ACE2_blood, v_ACE2_blood
+v_ACTH_simple_molecule, v_ACTH_simple_molecule
+v_AGT, v_AGT
+v_C2, v_C2
+v_C3, v_C3
+v_C3b_Bb_complex, v_C3b_Bb_complex
+v_C4, v_C4
+v_C5, v_C5
+v_CFI, v_CFI
+v_F10, v_F10
+v_F11a, (v_F12a & v_Thrombin_blood_active)
+v_F12, v_F12
+v_F12a, (v_F12 & v_KLKB1)
+v_F13a, v_F13a
+v_F5, v_F5
+v_F5a_F10a_complex, ((v_F10 & v_F9a & v_SARS_CoV_2_infection_phenotype) | (v_F5 & !v_Thrombin_Thrombomodulin_complex & !v_SARS_CoV_2_infection_phenotype))
+v_F9, v_F9
+v_F9a, (v_F9 & v_F11a)
+v_GP6, v_GP6
+v_Heparin_simple_molecule, v_Heparin_simple_molecule
+v_Hypokalemia_phenotype, (v_SARS_CoV_2_infection_phenotype | v_aldosterone_simple_molecule_blood)
+v_ITGA2_ITGAB1_complex, v_ITGA2_ITGAB1_complex
+v_KLKB1, v_KLKB1
+v_KNG1, v_KNG1
+v_KNG1_KLKB1_complex, (v_KLKB1 & v_KNG1)
+v_Kallikrein, (v_KNG1_KLKB1_complex | (v_KLKB1 & v_F12a))
+v_MBL2, v_MBL2
+v_PLAT_blood, v_PLAT_blood
+v_Prorenin, v_Prorenin
+v_Prothrombin, v_Prothrombin
+v_REN, (v_Prorenin & v_Kallikrein)
+v_S, v_S
+v_SARS_CoV_2_infection_phenotype, v_SARS_CoV_2_infection_phenotype
+v_SERPINF2, v_SERPINF2
+v_Thrombin_Thrombomodulin_complex, (v_Thrombin_blood_active & v_SARS_CoV_2_infection_phenotype)
+v_Thrombin_blood, (v_Prothrombin & v_F5a_F10a_complex)
+v_Thrombin_blood_active, (v_Thrombin_blood & v_Heparin_simple_molecule & v_SARS_CoV_2_infection_phenotype)
+v_aldosterone_simple_molecule_blood, (v_angiotensin_II_simple_molecule | !v_Hypokalemia_phenotype | v_ACTH_simple_molecule | v_SARS_CoV_2_infection_phenotype)
+v_angiotensin_II_simple_molecule, (v_angiotensin_I_simple_molecule | v_SARS_CoV_2_infection_phenotype)
+v_angiotensin_I_simple_molecule, (v_AGT & v_REN)
+v_cytokine_storm_phenotype, v_cytokine_storm_phenotype

@@ -1,0 +1,10 @@
+targets, factors
+v_Cat1_2, (v_ROS & !v_HapX)
+v_HapX, (!v_SreA & !v_LIP)
+v_LIP, ((!v_SreA & v__Iron) | (v_SidA & v_MirB & !v_SreA))
+v_MirB, (v_HapX & !v_SreA)
+v_ROS, ((v_Superoxide & !(v_ROS & v_Cat1_2)) | (v_ROS & !(v_ROS & (v_ROS | v_Cat1_2))) | v_LIP)
+v_SidA, (v_HapX & !v_SreA)
+v_SreA, (v_LIP & !v_HapX)
+v_Superoxide, v_Superoxide
+v__Iron, v__Iron

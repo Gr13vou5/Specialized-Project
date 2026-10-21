@@ -1,0 +1,16 @@
+targets, factors
+v_Ciact_b1, ((!v_Fz & v_En & v_Ciact_b1 & v_Ciact_b2) | (!v_Fz & !v_En & !v_Ciact_b1 & !v_Pka_b1) | (!v_Fz & !v_En & v_Ciact_b1 & !v_Ciact_b2 & !v_Pka_b1) | (!v_Fz & !v_En & v_Ciact_b1 & v_Ciact_b2) | (v_Fz & v_En & v_Ciact_b1 & v_Ciact_b2) | (v_Fz & !v_En))
+v_Ciact_b2, (v_Fz & !v_En & v_Ciact_b1 & !v_Pka_b1)
+v_En, (v_Fz & !v_Slp)
+v_Fz, ((!v_Wg_b1 & v_Wg_ext) | v_Wg_b1)
+v_Hh_ext, v_Hh_ext
+v_Nkd_b1, ((!v_Nkd_b1 & !v_En) | (v_Nkd_b1 & !v_Nkd_b2 & !v_En) | (v_Nkd_b1 & v_Nkd_b2))
+v_Nkd_b2, (v_Fz & v_Nkd_b1 & !v_En)
+v_Pka_b1, ((!v_Pka_b1 & v_Ptc_b1) | (v_Pka_b1 & !v_Pka_b2 & v_Ptc_b1) | (v_Pka_b1 & v_Pka_b2))
+v_Pka_b2, (v_Pka_b1 & v_Ptc_b1)
+v_Ptc_b1, ((!v_En & !v_Ptc_b1 & !v_Hh_ext) | (!v_En & v_Ptc_b1 & !v_Ptc_b2 & !v_Hh_ext) | (!v_En & v_Ptc_b1 & v_Ptc_b2) | (v_En & v_Ptc_b1 & v_Ptc_b2))
+v_Ptc_b2, (!v_En & v_Ciact_b1 & v_Ptc_b1 & !v_Hh_ext)
+v_Slp, (v_Fz & !v_En)
+v_Wg_b1, ((!v_Wg_b1 & v_Slp & !v_Nkd_b1 & !v_En & v_Ciact_b1) | (!v_Wg_b1 & v_Slp & v_Nkd_b1 & !v_Nkd_b2 & !v_En & v_Ciact_b1) | (!v_Wg_b1 & v_Slp & v_Nkd_b1 & v_Nkd_b2 & !v_En & v_Ciact_b1 & v_Ciact_b2) | (v_Wg_b1 & !v_Wg_b2 & v_Slp & !v_Nkd_b1 & !v_En & v_Ciact_b1) | (v_Wg_b1 & !v_Wg_b2 & v_Slp & v_Nkd_b1 & !v_Nkd_b2 & !v_En & v_Ciact_b1) | (v_Wg_b1 & !v_Wg_b2 & v_Slp & v_Nkd_b1 & v_Nkd_b2 & !v_En & v_Ciact_b1 & v_Ciact_b2) | (v_Wg_b1 & v_Wg_b2))
+v_Wg_b2, (v_Wg_b1 & v_Slp & !v_En & v_Ciact_b1 & v_Ciact_b2)
+v_Wg_ext, v_Wg_ext

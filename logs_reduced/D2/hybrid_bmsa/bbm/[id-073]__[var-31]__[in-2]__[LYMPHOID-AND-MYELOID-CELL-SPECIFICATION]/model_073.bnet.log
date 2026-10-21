@@ -1,0 +1,401 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:09:17 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_073.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-146 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_073.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_073.bnet --cnf /tmp/tmp.gZxwRSyBOz.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_073.bnet, cnfFileName = /tmp/tmp.gZxwRSyBOz.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector(Set(v_Cebpa_gene)))
+Some(Vector())
+(Set(v_Cebpa_gene),Set(-3))
+
+Some(Vector(Set(v_Spi1, !v_E2A_gene)))
+Some(Vector(Set(v_E2A_gene), Set(!v_Spi1)))
+(Set(v_Spi1, !v_E2A_gene),Set(-4, 10))
+(Set(v_E2A_gene),Set(-10))
+(Set(!v_Spi1),Set(4))
+
+Some(Vector(Set(v_Spi1_2, v_Cebpa)))
+Some(Vector(Set(!v_Spi1_2)))
+(Set(v_Spi1_2, v_Cebpa),Set(-14, -6))
+(Set(!v_Spi1_2),Set(14))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Spi1, !v_Pax5_protein_active)))
+Some(Vector(Set(v_Pax5_protein_active), Set(!v_Spi1)))
+(Set(v_Spi1, !v_Pax5_protein_active),Set(-4, 9))
+(Set(v_Pax5_protein_active),Set(-9))
+(Set(!v_Spi1),Set(4))
+
+Some(Vector(Set(v_Csf1r, v_Csf1)))
+Some(Vector(Set(!v_Csf1), Set(!v_Csf1r)))
+(Set(v_Csf1r, v_Csf1),Set(-15, -19))
+(Set(!v_Csf1),Set(19))
+(Set(!v_Csf1r),Set(15))
+
+Some(Vector(Set(v_Ikzf1, v_Ebf1_gene, v_Pax5_protein_active), Set(v_Ikzf1, v_Spi1)))
+Some(Vector(Set(!v_Spi1, !v_Pax5_protein_active), Set(!v_Spi1, !v_Ebf1_gene), Set(!v_Ikzf1)))
+(Set(v_Ikzf1, v_Ebf1_gene, v_Pax5_protein_active),Set(-5, -12, -9))
+(Set(v_Ikzf1, v_Spi1),Set(-5, -4))
+(Set(!v_Spi1, !v_Pax5_protein_active),Set(4, 9))
+(Set(!v_Spi1, !v_Ebf1_gene),Set(4, 12))
+(Set(!v_Ikzf1),Set(5))
+
+Some(Vector(Set(v_E2A_gene, !v_Id2)))
+Some(Vector(Set(v_Id2), Set(!v_E2A_gene)))
+(Set(v_E2A_gene, !v_Id2),Set(-10, 2))
+(Set(v_Id2),Set(-2))
+(Set(!v_E2A_gene),Set(10))
+
+Some(Vector(Set(v_E2A_gene, v_IL7r_activated, !v_Cebpa, v_Spi1, v_E2A_protein_active), Set(v_E2A_gene, !v_Cebpb, v_IL7r_activated, v_Spi1, v_E2A_protein_active)))
+Some(Vector(Set(!v_Pax5_protein_active, !v_IL7r_activated), Set(!v_E2A_protein_active), Set(v_Cebpa, v_Cebpb), Set(!v_Spi1, !v_Pax5_protein_active), Set(!v_E2A_gene)))
+(Set(v_E2A_gene, v_IL7r_activated, !v_Cebpa, v_Spi1, v_E2A_protein_active),Set(-18, 6, -4, -10, -21))
+(Set(v_E2A_gene, !v_Cebpb, v_IL7r_activated, v_Spi1, v_E2A_protein_active),Set(-18, -4, -10, 7, -21))
+(Set(!v_Pax5_protein_active, !v_IL7r_activated),Set(9, 18))
+(Set(!v_E2A_protein_active),Set(21))
+(Set(v_Cebpa, v_Cebpb),Set(-6, -7))
+(Set(!v_Spi1, !v_Pax5_protein_active),Set(4, 9))
+(Set(!v_E2A_gene),Set(10))
+
+Some(Vector(Set(v_Spi1_2), Set(v_Spi1, !v_Gfi1), Set(v_Pax5_protein_active)))
+Some(Vector(Set(!v_Pax5_protein_active, v_Gfi1, !v_Spi1_2), Set(!v_Pax5_protein_active, !v_Spi1, !v_Spi1_2)))
+(Set(v_Spi1_2),Set(-14))
+(Set(v_Spi1, !v_Gfi1),Set(-4, 8))
+(Set(v_Pax5_protein_active),Set(-9))
+(Set(!v_Pax5_protein_active, v_Gfi1, !v_Spi1_2),Set(9, -8, 14))
+(Set(!v_Pax5_protein_active, !v_Spi1, !v_Spi1_2),Set(9, 4, 14))
+
+Some(Vector(Set(!v_Egr1, v_Ikzf1), Set(v_Pax5_protein_active), Set(v_Cebpa, !v_Egr1)))
+Some(Vector(Set(!v_Cebpa, !v_Pax5_protein_active, !v_Ikzf1), Set(v_Egr1, !v_Pax5_protein_active)))
+(Set(!v_Egr1, v_Ikzf1),Set(17, -5))
+(Set(v_Pax5_protein_active),Set(-9))
+(Set(v_Cebpa, !v_Egr1),Set(-6, 17))
+(Set(!v_Cebpa, !v_Pax5_protein_active, !v_Ikzf1),Set(6, 9, 5))
+(Set(v_Egr1, !v_Pax5_protein_active),Set(-17, 9))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Spi1, !v_Cebpa, v_Mef2c), Set(v_Spi1, !v_Cebpb, v_Mef2c), Set(!v_Cebpa, v_E2A_gene, v_Ebf1_gene), Set(!v_Cebpb, v_E2A_gene, v_Ebf1_gene)))
+Some(Vector(Set(v_Cebpa, v_Cebpb), Set(!v_E2A_gene, !v_Mef2c), Set(!v_Ebf1_gene, !v_Mef2c), Set(!v_Spi1, !v_E2A_gene), Set(!v_Spi1, !v_Ebf1_gene)))
+(Set(v_Spi1, !v_Cebpa, v_Mef2c),Set(-4, 6, -13))
+(Set(v_Spi1, !v_Cebpb, v_Mef2c),Set(-4, 7, -13))
+(Set(!v_Cebpa, v_E2A_gene, v_Ebf1_gene),Set(6, -10, -12))
+(Set(!v_Cebpb, v_E2A_gene, v_Ebf1_gene),Set(7, -10, -12))
+(Set(v_Cebpa, v_Cebpb),Set(-6, -7))
+(Set(!v_E2A_gene, !v_Mef2c),Set(10, 13))
+(Set(!v_Ebf1_gene, !v_Mef2c),Set(12, 13))
+(Set(!v_Spi1, !v_E2A_gene),Set(4, 10))
+(Set(!v_Spi1, !v_Ebf1_gene),Set(4, 12))
+
+Some(Vector(Set(v_IL7, v_IL7r)))
+Some(Vector(Set(!v_IL7r), Set(!v_IL7)))
+(Set(v_IL7, v_IL7r),Set(-1, -16))
+(Set(!v_IL7r),Set(16))
+(Set(!v_IL7),Set(1))
+
+Some(Vector(Set(!v_Gfi1, v_Spi1, v_Cebpa, v_Cebpb, !v_Ebf1_gene)))
+Some(Vector(Set(v_Gfi1), Set(v_Ebf1_gene), Set(!v_Spi1), Set(!v_Cebpa), Set(!v_Cebpb)))
+(Set(!v_Gfi1, v_Spi1, v_Cebpa, v_Cebpb, !v_Ebf1_gene),Set(-7, -4, 12, 8, -6))
+(Set(v_Gfi1),Set(-8))
+(Set(v_Ebf1_gene),Set(-12))
+(Set(!v_Spi1),Set(4))
+(Set(!v_Cebpa),Set(6))
+(Set(!v_Cebpb),Set(7))
+
+Some(Vector(Set(v_Pax5_protein_active), Set(v_Mef2c)))
+Some(Vector(Set(!v_Mef2c, !v_Pax5_protein_active)))
+(Set(v_Pax5_protein_active),Set(-9))
+(Set(v_Mef2c),Set(-13))
+(Set(!v_Mef2c, !v_Pax5_protein_active),Set(13, 9))
+
+Some(Vector(Set(v_Spi1, !v_Cebpa), Set(v_Spi1, !v_Cebpb)))
+Some(Vector(Set(v_Cebpb, v_Cebpa), Set(!v_Spi1)))
+(Set(v_Spi1, !v_Cebpa),Set(-4, 6))
+(Set(v_Spi1, !v_Cebpb),Set(-4, 7))
+(Set(v_Cebpb, v_Cebpa),Set(-7, -6))
+(Set(!v_Spi1),Set(4))
+
+Some(Vector(Set(v_Ebf1_gene, !v_Cebpa), Set(v_Ebf1_gene, !v_Cebpb)))
+Some(Vector(Set(v_Cebpb, v_Cebpa), Set(!v_Ebf1_gene)))
+(Set(v_Ebf1_gene, !v_Cebpa),Set(-12, 6))
+(Set(v_Ebf1_gene, !v_Cebpb),Set(-12, 7))
+(Set(v_Cebpb, v_Cebpa),Set(-7, -6))
+(Set(!v_Ebf1_gene),Set(12))
+
+Some(Vector(Set(v_Pax5_gene, !v_Id2)))
+Some(Vector(Set(v_Id2), Set(!v_Pax5_gene)))
+(Set(v_Pax5_gene, !v_Id2),Set(-20, 2))
+(Set(v_Id2),Set(-2))
+(Set(!v_Pax5_gene),Set(20))
+
+Some(Vector(Set(v_Ikzf1, v_E2A_gene, v_Ebf1_gene)))
+Some(Vector(Set(!v_Gfi1, !v_Ikzf1, v_Cebpa, v_Cebpb), Set(!v_Gfi1, v_E2A_gene, v_Cebpa, v_Cebpb), Set(!v_Ikzf1, !v_Gfi1, v_Csf1r_activated), Set(!v_Gfi1, v_E2A_gene, v_Csf1r_activated)))
+(Set(v_Ikzf1, v_E2A_gene, v_Ebf1_gene),Set(-5, -10, -12))
+(Set(!v_Gfi1, !v_Ikzf1, v_Cebpa, v_Cebpb),Set(5, -7, 8, -6))
+(Set(!v_Gfi1, v_E2A_gene, v_Cebpa, v_Cebpb),Set(-7, -10, 8, -6))
+(Set(!v_Ikzf1, !v_Gfi1, v_Csf1r_activated),Set(5, 8, -11))
+(Set(!v_Gfi1, v_E2A_gene, v_Csf1r_activated),Set(8, -10, -11))
+
+Some(Vector(Set(v_Spi1, v_Cebpb, v_Csf1r_activated), Set(v_Spi1, v_Cebpa, v_Csf1r_activated), Set(v_Spi1, !v_Gfi1), Set(v_Spi1, !v_Ikzf1, !v_E2A_gene)))
+Some(Vector(Set(!v_Cebpa, !v_Cebpb, v_Gfi1, v_E2A_gene), Set(v_Ikzf1, !v_Cebpa, !v_Cebpb, v_Gfi1), Set(v_Gfi1, v_E2A_gene, !v_Csf1r_activated), Set(v_Ikzf1, v_Gfi1, !v_Csf1r_activated), Set(!v_Spi1)))
+(Set(v_Spi1, v_Cebpb, v_Csf1r_activated),Set(-4, -7, -11))
+(Set(v_Spi1, v_Cebpa, v_Csf1r_activated),Set(-4, -6, -11))
+(Set(v_Spi1, !v_Gfi1),Set(-4, 8))
+(Set(v_Spi1, !v_Ikzf1, !v_E2A_gene),Set(-4, 5, 10))
+(Set(!v_Cebpa, !v_Cebpb, v_Gfi1, v_E2A_gene),Set(6, 7, -8, -10))
+(Set(v_Ikzf1, !v_Cebpa, !v_Cebpb, v_Gfi1),Set(-5, 6, 7, -8))
+(Set(v_Gfi1, v_E2A_gene, !v_Csf1r_activated),Set(-8, -10, 11))
+(Set(v_Ikzf1, v_Gfi1, !v_Csf1r_activated),Set(-5, -8, 11))
+(Set(!v_Spi1),Set(4))
+Map(v_IL7 -> 1, v_Id2 -> 2, v_Cebpa_gene -> 3, v_Spi1 -> 4, v_Ikzf1 -> 5, v_Cebpa -> 6, v_Cebpb -> 7, v_Gfi1 -> 8, v_Pax5_protein_active -> 9, v_E2A_gene -> 10, v_Csf1r_activated -> 11, v_Ebf1_gene -> 12, v_Mef2c -> 13, v_Spi1_2 -> 14, v_Csf1r -> 15, v_IL7r -> 16, v_Egr1 -> 17, v_IL7r_activated -> 18, v_Csf1 -> 19, v_Pax5_gene -> 20, v_E2A_protein_active -> 21)
+p cnf 21 83
+-3 6 0
+-4 10 3 0
+-10 -3 0
+4 -3 0
+-14 -6 7 0
+14 -7 0
+-4 9 15 0
+-9 -15 0
+4 -15 0
+-15 -19 11 0
+19 -11 0
+15 -11 0
+-5 -12 -9 10 0
+-5 -4 10 0
+4 9 -10 0
+4 12 -10 0
+5 -10 0
+-10 2 21 0
+-2 -21 0
+10 -21 0
+-18 6 -4 12 -10 -21 0
+-18 -4 12 -10 7 -21 0
+9 18 -12 0
+21 -12 0
+-6 -7 -12 0
+4 9 -12 0
+10 -12 0
+-14 17 0
+-4 8 17 0
+-9 17 0
+9 -8 14 -17 0
+9 4 14 -17 0
+17 -5 8 0
+-9 8 0
+-6 17 8 0
+6 9 5 -8 0
+-17 9 -8 0
+-4 6 -13 16 0
+-4 7 -13 16 0
+6 -10 -12 16 0
+7 -10 -12 16 0
+-6 -7 -16 0
+10 13 -16 0
+12 13 -16 0
+4 10 -16 0
+4 12 -16 0
+-1 -16 18 0
+16 -18 0
+1 -18 0
+-7 -4 2 12 8 -6 0
+-8 -2 0
+-12 -2 0
+4 -2 0
+6 -2 0
+7 -2 0
+-9 5 0
+-13 5 0
+13 9 -5 0
+-4 6 13 0
+-4 7 13 0
+-7 -6 -13 0
+4 -13 0
+-12 6 20 0
+-12 7 20 0
+-7 -6 -20 0
+12 -20 0
+-20 2 9 0
+-2 -9 0
+20 -9 0
+-5 -10 -12 4 0
+5 -7 -4 8 -6 0
+-7 -4 -10 8 -6 0
+5 8 -11 -4 0
+8 -10 -11 -4 0
+-4 -7 -11 14 0
+-4 -6 -11 14 0
+-4 8 14 0
+-4 5 10 14 0
+-8 6 -10 7 -14 0
+-8 6 -5 7 -14 0
+-8 -10 11 -14 0
+-5 -8 11 -14 0
+4 -14 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.gZxwRSyBOz.cnf'
+c opening file to read '/tmp/tmp.gZxwRSyBOz.cnf'
+c found 'p cnf 21 83' header
+c parsed 83 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   83  21 100%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   83  21 100%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   83  21 100%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   65.55% parse
+c         0.00   33.61% search
+c         0.00   32.77% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   38.14% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            3.88    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=68
++ wait 68
++ bdd_minisat_all_release /tmp/tmp.gZxwRSyBOz.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.gZxwRSyBOz.cnf
+variables         :           21
+cutwidth          :           61
+restarts          :            1
+conflicts         :            5           (      inf / sec      )
+decisions         :           36           (      inf / sec      )
+propagations      :          181           (      inf / sec      )
+inspects          :          636           (      inf / sec      )
+conflict literals :           13           (     0.00 % deleted  )
+cpu time (solve)  :         0.00 sec	
+refreshes         :            0
+|obdd|            :          187
+cache hits        :            5
+cache lookup      :           24
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :           21
+# SAT SOLVE END
+
++ set +x
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_073.bnet"
+	User time (seconds): 0.97
+	System time (seconds): 0.15
+	Percent of CPU this job got: 165%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.68
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 154480
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 36134
+	Voluntary context switches: 2621
+	Involuntary context switches: 33
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.0s

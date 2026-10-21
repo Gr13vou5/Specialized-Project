@@ -1,0 +1,2298 @@
+# Host: MSI
+# Start date: Wed Oct 21 09:34:20 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/Selected/Executable_file_for_Alzheimer_model_BCC.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-283 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/Selected:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 Executable_file_for_Alzheimer_model_BCC.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/Executable_file_for_Alzheimer_model_BCC.bnet --cnf /tmp/tmp.VmcHlsuvhb.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/Executable_file_for_Alzheimer_model_BCC.bnet, cnfFileName = /tmp/tmp.VmcHlsuvhb.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector(Set(sa23, sa74)))
+Some(Vector(Set(!sa74), Set(!sa23)))
+(Set(sa23, sa74),Set(-203, -335))
+(Set(!sa74),Set(335))
+(Set(!sa23),Set(203))
+
+Some(Vector(Set(csa9, !sa67, !csa208, sa74), Set(sa132, !csa9, sa89), Set(csa9, sa67), Set(!csa208, sa89, sa132, !sa74, !sa67, csa9), Set(csa9, !sa67, csa208)))
+Some(Vector(Set(!sa67, !sa89, !csa208, !sa74), Set(!csa9, !sa89), Set(!sa132, !sa67, !csa208, !sa74), Set(!sa132, !csa9)))
+(Set(csa9, !sa67, !csa208, sa74),Set(-56, 171, 264, -335))
+(Set(sa132, !csa9, sa89),Set(-1, 56, -206))
+(Set(csa9, sa67),Set(-56, -171))
+(Set(!csa208, sa89, sa132, !sa74, !sa67, csa9),Set(264, 335, -206, -1, 171, -56))
+(Set(csa9, !sa67, csa208),Set(-56, 171, -264))
+(Set(!sa67, !sa89, !csa208, !sa74),Set(171, 206, 264, 335))
+(Set(!csa9, !sa89),Set(56, 206))
+(Set(!sa132, !sa67, !csa208, !sa74),Set(1, 171, 264, 335))
+(Set(!sa132, !csa9),Set(1, 56))
+
+Some(Vector(Set(!csa158, csa224), Set(!csa158, !csa224, sa119), Set(csa158)))
+Some(Vector(Set(!csa158, !csa224, !sa119)))
+(Set(!csa158, csa224),Set(54, -48))
+(Set(!csa158, !csa224, sa119),Set(54, 48, -163))
+(Set(csa158),Set(-54))
+(Set(!csa158, !csa224, !sa119),Set(54, 48, 163))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!csa269, sa973, sa1834), Set(!csa269, sa973, !sa1834, sa2452), Set(csa269, sa973)))
+Some(Vector(Set(!csa269, !sa1834, !sa2452), Set(!sa973)))
+(Set(!csa269, sa973, sa1834),Set(181, -145, -295))
+(Set(!csa269, sa973, !sa1834, sa2452),Set(181, -145, 295, -329))
+(Set(csa269, sa973),Set(-181, -145))
+(Set(!csa269, !sa1834, !sa2452),Set(181, 295, 329))
+(Set(!sa973),Set(145))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!csa251, sa70, sa106), Set(!csa251, !sa70, sa106, sa2320), Set(csa251)))
+Some(Vector(Set(!csa251, !sa70, !sa2320), Set(!csa251, !sa106)))
+(Set(!csa251, sa70, sa106),Set(248, -150, -23))
+(Set(!csa251, !sa70, sa106, sa2320),Set(248, 150, -23, -239))
+(Set(csa251),Set(-248))
+(Set(!csa251, !sa70, !sa2320),Set(248, 150, 239))
+(Set(!csa251, !sa106),Set(248, 23))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!csa56, csa174, sa1452), Set(csa56, csa174)))
+Some(Vector(Set(!csa56, !sa1452), Set(!csa174)))
+(Set(!csa56, csa174, sa1452),Set(183, -8, -296))
+(Set(csa56, csa174),Set(-183, -8))
+(Set(!csa56, !sa1452),Set(183, 296))
+(Set(!csa174),Set(8))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa1081, sa1651)))
+Some(Vector(Set(!sa1651), Set(!sa1081)))
+(Set(sa1081, sa1651),Set(-119, -118))
+(Set(!sa1651),Set(118))
+(Set(!sa1081),Set(119))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa119, sa1898)))
+Some(Vector(Set(!sa1898), Set(!sa119)))
+(Set(sa119, sa1898),Set(-163, -280))
+(Set(!sa1898),Set(280))
+(Set(!sa119),Set(163))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa683, csa243)))
+Some(Vector(Set(!csa243), Set(!sa683)))
+(Set(sa683, csa243),Set(-5, -176))
+(Set(!csa243),Set(176))
+(Set(!sa683),Set(5))
+
+Some(Vector(Set(csa240, csa243)))
+Some(Vector(Set(!csa243), Set(!csa240)))
+(Set(csa240, csa243),Set(-161, -176))
+(Set(!csa243),Set(176))
+(Set(!csa240),Set(161))
+
+Some(Vector(Set(csa242, sa2021)))
+Some(Vector(Set(!sa2021), Set(!csa242)))
+(Set(csa242, sa2021),Set(-60, -245))
+(Set(!sa2021),Set(245))
+(Set(!csa242),Set(60))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa32, sa2201)))
+Some(Vector(Set(!sa2201), Set(!sa32)))
+(Set(sa32, sa2201),Set(-30, -236))
+(Set(!sa2201),Set(236))
+(Set(!sa32),Set(30))
+
+Some(Vector(Set(sa32, sa2204)))
+Some(Vector(Set(!sa2204), Set(!sa32)))
+(Set(sa32, sa2204),Set(-30, -275))
+(Set(!sa2204),Set(275))
+(Set(!sa32),Set(30))
+
+Some(Vector(Set(csa174, csa176), Set(!csa174, csa176), Set(csa174, sa1825, !sa1526, !csa176), Set(!sa1526, !csa176, !sa1825, csa174, sa2102), Set(csa174, sa1526, !csa176)))
+Some(Vector(Set(!sa2102, !sa1825, !sa1526, !csa176), Set(!csa174, !csa176)))
+(Set(csa174, csa176),Set(-8, -357))
+(Set(!csa174, csa176),Set(8, -357))
+(Set(csa174, sa1825, !sa1526, !csa176),Set(-8, -92, 191, 357))
+(Set(!sa1526, !csa176, !sa1825, csa174, sa2102),Set(-8, 357, 92, -55, 191))
+(Set(csa174, sa1526, !csa176),Set(-8, -191, 357))
+(Set(!sa2102, !sa1825, !sa1526, !csa176),Set(55, 92, 191, 357))
+(Set(!csa174, !csa176),Set(8, 357))
+
+Some(Vector(Set(sa2131, sa2160)))
+Some(Vector(Set(!sa2160), Set(!sa2131)))
+(Set(sa2131, sa2160),Set(-82, -64))
+(Set(!sa2160),Set(64))
+(Set(!sa2131),Set(82))
+
+Some(Vector(Set(!csa226, sa1923, sa2374), Set(csa226)))
+Some(Vector(Set(!csa226, !sa2374), Set(!csa226, !sa1923)))
+(Set(!csa226, sa1923, sa2374),Set(178, -159, -115))
+(Set(csa226),Set(-178))
+(Set(!csa226, !sa2374),Set(178, 115))
+(Set(!csa226, !sa1923),Set(178, 159))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector(Set(!sa2606)))
+(Set(!sa2606),Set(42))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa202, sa194)))
+Some(Vector(Set(!sa194), Set(!sa202)))
+(Set(sa202, sa194),Set(-312, -352))
+(Set(!sa194),Set(352))
+(Set(!sa202),Set(312))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(csa30, sa202)))
+Some(Vector(Set(!sa202), Set(!csa30)))
+(Set(csa30, sa202),Set(-250, -312))
+(Set(!sa202),Set(312))
+(Set(!csa30),Set(250))
+
+Some(Vector(Set(sa89, csa33)))
+Some(Vector(Set(!csa33), Set(!sa89)))
+(Set(sa89, csa33),Set(-206, -111))
+(Set(!csa33),Set(111))
+(Set(!sa89),Set(206))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa130, sa830), Set(!sa130, !sa830, !sa2301), Set(sa130, sa830, !sa219), Set(sa130, sa219), Set(sa130, !sa830, !sa2301, !sa219)))
+Some(Vector(Set(!sa219, !sa830, sa2301), Set(!sa130, !sa830, sa2301)))
+(Set(!sa130, sa830),Set(143, -19))
+(Set(!sa130, !sa830, !sa2301),Set(143, 19, 332))
+(Set(sa130, sa830, !sa219),Set(-143, -19, 61))
+(Set(sa130, sa219),Set(-143, -61))
+(Set(sa130, !sa830, !sa2301, !sa219),Set(-143, 19, 332, 61))
+(Set(!sa219, !sa830, sa2301),Set(61, 19, -332))
+(Set(!sa130, !sa830, sa2301),Set(143, 19, -332))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa67, sa2248)))
+Some(Vector(Set(!sa2248), Set(!sa67)))
+(Set(sa67, sa2248),Set(-171, -244))
+(Set(!sa2248),Set(244))
+(Set(!sa67),Set(171))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa498, !sa1319, sa89, !sa2301, csa58, csa53), Set(csa53, sa498, sa633, !csa58), Set(!csa53, !sa1319, sa89, !sa2301, csa58), Set(sa633, csa58, csa53, sa498, !sa89), Set(sa633, sa89, csa58, csa53, sa498), Set(!sa1319, sa89, csa58, !sa633, csa53, sa498), Set(sa2301, csa58, !sa633, csa53, sa498, !sa89), Set(sa1319, sa2301, sa89, csa58, !sa633, csa53, sa498), Set(sa2301, !sa633, csa53, !csa58, sa498)))
+Some(Vector(Set(!sa498, !sa89), Set(!sa633, !sa89, !sa2301), Set(sa1319, !sa633, !sa2301), Set(sa1319, !sa498), Set(!csa53, !sa89), Set(!sa498, sa2301), Set(!sa498, !csa58), Set(!sa633, !csa58, !sa2301), Set(!csa53, !csa58), Set(sa1319, !csa53), Set(!csa53, sa2301)))
+(Set(!sa498, !sa1319, sa89, !sa2301, csa58, csa53),Set(165, -322, 71, -206, -124, 332))
+(Set(csa53, sa498, sa633, !csa58),Set(-124, -165, -172, 322))
+(Set(!csa53, !sa1319, sa89, !sa2301, csa58),Set(-322, 124, 71, -206, 332))
+(Set(sa633, csa58, csa53, sa498, !sa89),Set(-172, 206, -322, -165, -124))
+(Set(sa633, sa89, csa58, csa53, sa498),Set(-172, -322, -206, -165, -124))
+(Set(!sa1319, sa89, csa58, !sa633, csa53, sa498),Set(-322, 71, 172, -206, -165, -124))
+(Set(sa2301, csa58, !sa633, csa53, sa498, !sa89),Set(206, -332, -322, 172, -165, -124))
+(Set(sa1319, sa2301, sa89, csa58, !sa633, csa53, sa498),Set(-71, -332, -322, 172, -206, -165, -124))
+(Set(sa2301, !sa633, csa53, !csa58, sa498),Set(-332, 172, -165, -124, 322))
+(Set(!sa498, !sa89),Set(165, 206))
+(Set(!sa633, !sa89, !sa2301),Set(172, 206, 332))
+(Set(sa1319, !sa633, !sa2301),Set(-71, 172, 332))
+(Set(sa1319, !sa498),Set(-71, 165))
+(Set(!csa53, !sa89),Set(124, 206))
+(Set(!sa498, sa2301),Set(165, -332))
+(Set(!sa498, !csa58),Set(165, 322))
+(Set(!sa633, !csa58, !sa2301),Set(172, 322, 332))
+(Set(!csa53, !csa58),Set(124, 322))
+(Set(sa1319, !csa53),Set(-71, 124))
+(Set(!csa53, sa2301),Set(124, -332))
+
+Some(Vector(Set(csa54, !sa1285)))
+Some(Vector(Set(sa1285), Set(!csa54)))
+(Set(csa54, !sa1285),Set(-68, 319))
+(Set(sa1285),Set(-319))
+(Set(!csa54),Set(68))
+
+Some(Vector(Set(csa56, sa465, !csa57), Set(sa1319, csa56, !sa465, !csa57), Set(!sa465, sa1590, csa56, !sa1319, !sa1448, !csa57), Set(csa56, csa57), Set(!sa465, sa1448, csa56, !sa1319, !csa57)))
+Some(Vector(Set(!sa465, !sa1319, !sa1448, !sa1590, !csa57), Set(!csa56)))
+(Set(csa56, sa465, !csa57),Set(-183, -247, 306))
+(Set(sa1319, csa56, !sa465, !csa57),Set(-71, -183, 247, 306))
+(Set(!sa465, sa1590, csa56, !sa1319, !sa1448, !csa57),Set(247, -123, -183, 71, 350, 306))
+(Set(csa56, csa57),Set(-183, -306))
+(Set(!sa465, sa1448, csa56, !sa1319, !csa57),Set(247, -350, -183, 71, 306))
+(Set(!sa465, !sa1319, !sa1448, !sa1590, !csa57),Set(247, 71, 350, 306, 123))
+(Set(!csa56),Set(183))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa2246, sa503)))
+Some(Vector(Set(!sa503), Set(!sa2246)))
+(Set(sa2246, sa503),Set(-305, -243))
+(Set(!sa503),Set(243))
+(Set(!sa2246),Set(305))
+
+Some(Vector(Set(!csa64, sa603), Set(csa64, sa603), Set(csa64, !sa603, sa506)))
+Some(Vector(Set(!sa603, !sa506), Set(!csa64, !sa603)))
+(Set(!csa64, sa603),Set(207, -100))
+(Set(csa64, sa603),Set(-207, -100))
+(Set(csa64, !sa603, sa506),Set(-207, 100, -137))
+(Set(!sa603, !sa506),Set(100, 137))
+(Set(!csa64, !sa603),Set(207, 100))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa649, sa2348)))
+Some(Vector(Set(!sa2348), Set(!sa649)))
+(Set(sa649, sa2348),Set(-130, -276))
+(Set(!sa2348),Set(276))
+(Set(!sa649),Set(130))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa97, sa1836)))
+Some(Vector(Set(!sa1836), Set(!sa97)))
+(Set(sa97, sa1836),Set(-224, -90))
+(Set(!sa1836),Set(90))
+(Set(!sa97),Set(224))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa1012, !sa997, sa1015), Set(!sa1012, !sa997, !sa1015, sa1038), Set(!sa1031, sa1015, !sa997, !sa1012, sa1038), Set(sa1012, !sa997, !sa1015, sa1038), Set(!sa1012, !sa997, sa1015, sa1031), Set(sa997)))
+Some(Vector(Set(!sa997, !sa1015, !sa1038), Set(!sa1012, !sa997, !sa1031, !sa1038)))
+(Set(sa1012, !sa997, sa1015),Set(-18, 32, -63))
+(Set(!sa1012, !sa997, !sa1015, sa1038),Set(18, 32, 63, -269))
+(Set(!sa1031, sa1015, !sa997, !sa1012, sa1038),Set(189, -63, 32, -269, 18))
+(Set(sa1012, !sa997, !sa1015, sa1038),Set(-18, 32, 63, -269))
+(Set(!sa1012, !sa997, sa1015, sa1031),Set(18, 32, -63, -189))
+(Set(sa997),Set(-32))
+(Set(!sa997, !sa1015, !sa1038),Set(32, 63, 269))
+(Set(!sa1012, !sa997, !sa1031, !sa1038),Set(18, 32, 189, 269))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa988, sa1021)))
+Some(Vector(Set(!sa1021), Set(!sa988)))
+(Set(sa988, sa1021),Set(-49, -252))
+(Set(!sa1021),Set(252))
+(Set(!sa988),Set(49))
+
+Some(Vector(Set(!sa1010, sa1045, sa1046), Set(sa1010, sa1018), Set(sa1010, sa1045, sa1046, !sa1018)))
+Some(Vector(Set(!sa1046, !sa1018), Set(!sa1045, !sa1018), Set(!sa1010, !sa1046), Set(!sa1010, !sa1045)))
+(Set(!sa1010, sa1045, sa1046),Set(226, -16, -233))
+(Set(sa1010, sa1018),Set(-226, -155))
+(Set(sa1010, sa1045, sa1046, !sa1018),Set(-226, -16, -233, 155))
+(Set(!sa1046, !sa1018),Set(233, 155))
+(Set(!sa1045, !sa1018),Set(16, 155))
+(Set(!sa1010, !sa1046),Set(226, 233))
+(Set(!sa1010, !sa1045),Set(226, 16))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa1021, sa984)))
+Some(Vector(Set(!sa984), Set(!sa1021)))
+(Set(sa1021, sa984),Set(-252, -138))
+(Set(!sa984),Set(138))
+(Set(!sa1021),Set(252))
+
+Some(Vector(Set(!csa1, sa1042), Set(csa1)))
+Some(Vector(Set(!csa1, !sa1042)))
+(Set(!csa1, sa1042),Set(353, -261))
+(Set(csa1),Set(-353))
+(Set(!csa1, !sa1042),Set(353, 261))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa1001, !sa988, sa989), Set(!sa1001, sa988, sa989, sa1041, !sa1003), Set(sa1001, sa988, sa989), Set(sa988, sa1041, !sa1003, !sa989), Set(!sa1001, sa988, sa1003, sa989), Set(sa988, sa1003, !sa989)))
+Some(Vector(Set(!sa1001, !sa1041, !sa1003), Set(!sa1041, !sa1003, !sa989), Set(!sa988, !sa989), Set(!sa1001, !sa988)))
+(Set(sa1001, !sa988, sa989),Set(-3, 49, -326))
+(Set(!sa1001, sa988, sa989, sa1041, !sa1003),Set(-49, 211, -151, -326, 3))
+(Set(sa1001, sa988, sa989),Set(-3, -49, -326))
+(Set(sa988, sa1041, !sa1003, !sa989),Set(-49, -151, 211, 326))
+(Set(!sa1001, sa988, sa1003, sa989),Set(3, -49, -211, -326))
+(Set(sa988, sa1003, !sa989),Set(-49, -211, 326))
+(Set(!sa1001, !sa1041, !sa1003),Set(3, 151, 211))
+(Set(!sa1041, !sa1003, !sa989),Set(151, 211, 326))
+(Set(!sa988, !sa989),Set(49, 326))
+(Set(!sa1001, !sa988),Set(3, 49))
+
+Some(Vector(Set(sa1018, sa1013)))
+Some(Vector(Set(!sa1013), Set(!sa1018)))
+(Set(sa1018, sa1013),Set(-155, -91))
+(Set(!sa1013),Set(91))
+(Set(!sa1018),Set(155))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa106, sa633, !sa1856)))
+Some(Vector(Set(sa1856), Set(!sa633), Set(!sa106)))
+(Set(sa106, sa633, !sa1856),Set(-23, -172, 4))
+(Set(sa1856),Set(-4))
+(Set(!sa633),Set(172))
+(Set(!sa106),Set(23))
+
+Some(Vector(Set(!csa127, sa1856, !sa2067), Set(csa127, !sa2067)))
+Some(Vector(Set(sa2067), Set(!csa127, !sa1856)))
+(Set(!csa127, sa1856, !sa2067),Set(210, -4, 10))
+(Set(csa127, !sa2067),Set(-210, 10))
+(Set(sa2067),Set(-10))
+(Set(!csa127, !sa1856),Set(210, 4))
+
+Some(Vector(Set(!sa1078, sa2433), Set(sa1078)))
+Some(Vector(Set(!sa1078, !sa2433)))
+(Set(!sa1078, sa2433),Set(2, -149))
+(Set(sa1078),Set(-2))
+(Set(!sa1078, !sa2433),Set(2, 149))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa83, sa119), Set(sa83)))
+Some(Vector(Set(!sa83, !sa119)))
+(Set(!sa83, sa119),Set(162, -163))
+(Set(sa83),Set(-162))
+(Set(!sa83, !sa119),Set(162, 163))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(csa5, !csa35), Set(sa121, !csa5, !csa35), Set(!sa121, !csa5, sa126, !csa35), Set(!sa121, !csa5, !sa126, !csa35, sa856), Set(csa35)))
+Some(Vector(Set(!sa121, !csa5, !sa856, !sa126, !csa35)))
+(Set(csa5, !csa35),Set(-139, 263))
+(Set(sa121, !csa5, !csa35),Set(-67, 139, 263))
+(Set(!sa121, !csa5, sa126, !csa35),Set(67, 139, -231, 263))
+(Set(!sa121, !csa5, !sa126, !csa35, sa856),Set(-51, 263, 67, 231, 139))
+(Set(csa35),Set(-263))
+(Set(!sa121, !csa5, !sa856, !sa126, !csa35),Set(263, 67, 231, 139, 51))
+
+Some(Vector(Set(sa622, !csa259, !sa74), Set(!sa622, !csa259, sa1650, !sa74), Set(!csa259, sa74), Set(csa259), Set(sa728, !sa622, !sa1650, !sa74, !csa259)))
+Some(Vector(Set(!sa622, !sa1650, !sa728, !sa74, !csa259)))
+(Set(sa622, !csa259, !sa74),Set(-13, 125, 335))
+(Set(!sa622, !csa259, sa1650, !sa74),Set(13, 125, -173, 335))
+(Set(!csa259, sa74),Set(125, -335))
+(Set(csa259),Set(-125))
+(Set(sa728, !sa622, !sa1650, !sa74, !csa259),Set(-219, 125, 173, 13, 335))
+(Set(!sa622, !sa1650, !sa728, !sa74, !csa259),Set(125, 173, 13, 335, 219))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(csa5, !sa81, sa298, sa19), Set(!sa81, sa1434, sa298, !csa5, sa19), Set(csa5, sa81), Set(!csa5, sa81)))
+Some(Vector(Set(!sa81, !sa298), Set(!sa1434, !csa5, !sa81), Set(!sa81, !sa19)))
+(Set(csa5, !sa81, sa298, sa19),Set(-139, 152, -232, -330))
+(Set(!sa81, sa1434, sa298, !csa5, sa19),Set(-330, -232, 152, -126, 139))
+(Set(csa5, sa81),Set(-139, -152))
+(Set(!csa5, sa81),Set(139, -152))
+(Set(!sa81, !sa298),Set(152, 232))
+(Set(!sa1434, !csa5, !sa81),Set(126, 139, 152))
+(Set(!sa81, !sa19),Set(152, 330))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa1412, !sa1635, !sa1631, sa2283, !sa74), Set(!sa1412, sa1635, !sa1631, !sa74), Set(!sa1412, !sa1635, sa2433, !sa1631, !sa2283, !sa74), Set(sa1412, !sa74), Set(!sa1412, sa1631, !sa74), Set(sa74)))
+Some(Vector(Set(!sa1412, !sa1635, !sa1631, !sa2283, !sa2433, !sa74)))
+(Set(!sa1412, !sa1635, !sa1631, sa2283, !sa74),Set(160, 192, 335, -109, 15))
+(Set(!sa1412, sa1635, !sa1631, !sa74),Set(15, -160, 192, 335))
+(Set(!sa1412, !sa1635, sa2433, !sa1631, !sa2283, !sa74),Set(160, 192, 109, 335, -149, 15))
+(Set(sa1412, !sa74),Set(-15, 335))
+(Set(!sa1412, sa1631, !sa74),Set(15, -192, 335))
+(Set(sa74),Set(-335))
+(Set(!sa1412, !sa1635, !sa1631, !sa2283, !sa2433, !sa74),Set(160, 192, 109, 149, 335, 15))
+
+Some(Vector(Set(!csa269, sa1526), Set(csa269)))
+Some(Vector(Set(!csa269, !sa1526)))
+(Set(!csa269, sa1526),Set(181, -191))
+(Set(csa269),Set(-181))
+(Set(!csa269, !sa1526),Set(181, 191))
+
+Some(Vector(Set(!csa56, sa2301, sa85)))
+Some(Vector(Set(!sa85), Set(!sa2301), Set(csa56)))
+(Set(!csa56, sa2301, sa85),Set(183, -332, -328))
+(Set(!sa85),Set(328))
+(Set(!sa2301),Set(332))
+(Set(csa56),Set(-183))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa150, sa956), Set(sa150)))
+Some(Vector(Set(!sa150, !sa956)))
+(Set(!sa150, sa956),Set(324, -179))
+(Set(sa150),Set(-324))
+(Set(!sa150, !sa956),Set(324, 179))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa97, sa137), Set(sa97)))
+Some(Vector(Set(!sa97, !sa137)))
+(Set(!sa97, sa137),Set(224, -187))
+(Set(sa97),Set(-224))
+(Set(!sa97, !sa137),Set(224, 187))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa1421, sa1426), Set(sa1421)))
+Some(Vector(Set(!sa1421, !sa1426)))
+(Set(!sa1421, sa1426),Set(147, -266))
+(Set(sa1421),Set(-147))
+(Set(!sa1421, !sa1426),Set(147, 266))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa19, sa1432)))
+Some(Vector(Set(!sa1432), Set(!sa19)))
+(Set(sa19, sa1432),Set(-330, -41))
+(Set(!sa1432),Set(41))
+(Set(!sa19),Set(330))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa1651, csa173), Set(sa1319, !sa1651, !sa212, !csa173), Set(!sa212, !csa173, !sa1651, !sa1319, sa1825), Set(!sa1651, sa212, !csa173)))
+Some(Vector(Set(!sa1319, !sa1825, !sa212, !csa173), Set(sa1651)))
+(Set(!sa1651, csa173),Set(118, -341))
+(Set(sa1319, !sa1651, !sa212, !csa173),Set(-71, 118, 339, 341))
+(Set(!sa212, !csa173, !sa1651, !sa1319, sa1825),Set(339, 118, 71, 341, -92))
+(Set(!sa1651, sa212, !csa173),Set(118, -339, 341))
+(Set(!sa1319, !sa1825, !sa212, !csa173),Set(71, 92, 339, 341))
+(Set(sa1651),Set(-118))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!csa124, !sa1412, sa164, !sa160), Set(!sa1412, csa124), Set(!sa1412, !csa124, sa160), Set(!csa124, !sa164, !sa1412, sa2419, !sa1416, !sa160), Set(!csa124, sa1416, !sa164, !sa1412, !sa160), Set(sa1412)))
+Some(Vector())
+(Set(!csa124, !sa1412, sa164, !sa160),Set(188, -292, 15, 309))
+(Set(!sa1412, csa124),Set(15, -188))
+(Set(!sa1412, !csa124, sa160),Set(15, 188, -309))
+(Set(!csa124, !sa164, !sa1412, sa2419, !sa1416, !sa160),Set(-194, 292, 38, 188, 15, 309))
+(Set(!csa124, sa1416, !sa164, !sa1412, !sa160),Set(292, 188, -38, 15, 309))
+(Set(sa1412),Set(-15))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa138, sa74), Set(!sa138, !sa74, sa1598), Set(sa138)))
+Some(Vector(Set(!sa138, !sa74, !sa1598)))
+(Set(!sa138, sa74),Set(284, -335))
+(Set(!sa138, !sa74, sa1598),Set(284, 335, -157))
+(Set(sa138),Set(-284))
+(Set(!sa138, !sa74, !sa1598),Set(284, 335, 157))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa74, sa2446)))
+Some(Vector(Set(!sa2446), Set(!sa74)))
+(Set(sa74, sa2446),Set(-335, -75))
+(Set(!sa2446),Set(75))
+(Set(!sa74),Set(335))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa159, sa153)))
+Some(Vector(Set(!sa153), Set(!sa159)))
+(Set(sa159, sa153),Set(-221, -289))
+(Set(!sa153),Set(289))
+(Set(!sa159),Set(221))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa159, sa153, !sa2167), Set(sa159, sa2167)))
+Some(Vector(Set(!sa153, !sa2167), Set(!sa159)))
+(Set(sa159, sa153, !sa2167),Set(-221, -289, 283))
+(Set(sa159, sa2167),Set(-221, -283))
+(Set(!sa153, !sa2167),Set(289, 283))
+(Set(!sa159),Set(221))
+
+Some(Vector(Set(sa1081, !csa192)))
+Some(Vector(Set(csa192), Set(!sa1081)))
+(Set(sa1081, !csa192),Set(-119, 73))
+(Set(csa192),Set(-73))
+(Set(!sa1081),Set(119))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!csa32, sa856), Set(csa32)))
+Some(Vector(Set(!csa32, !sa856)))
+(Set(!csa32, sa856),Set(62, -51))
+(Set(csa32),Set(-62))
+(Set(!csa32, !sa856),Set(62, 51))
+
+Some(Vector(Set(sa1825, sa1826)))
+Some(Vector(Set(!sa1826), Set(!sa1825)))
+(Set(sa1825, sa1826),Set(-92, -356))
+(Set(!sa1826),Set(356))
+(Set(!sa1825),Set(92))
+
+Some(Vector(Set(sa1824)))
+Some(Vector(Set(!sa1824, !sa2474, !sa2479, !sa856)))
+(Set(sa1824),Set(-9))
+(Set(!sa1824, !sa2474, !sa2479, !sa856),Set(9, 300, 51, 337))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa126, sa107), Set(sa126)))
+Some(Vector(Set(!sa126, !sa107)))
+(Set(!sa126, sa107),Set(231, -76))
+(Set(sa126),Set(-231))
+(Set(!sa126, !sa107),Set(231, 76))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa1835), Set(!sa1835, sa74)))
+Some(Vector())
+(Set(sa1835),Set(-28))
+(Set(!sa1835, sa74),Set(28, -335))
+
+Some(Vector(Set(sa1836, sa1838)))
+Some(Vector(Set(!sa1838), Set(!sa1836)))
+(Set(sa1836, sa1838),Set(-90, -271))
+(Set(!sa1838),Set(271))
+(Set(!sa1836),Set(90))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa1837, sa2183), Set(sa89, !sa1837, sa2183)))
+Some(Vector(Set(!sa2183), Set(!sa89, !sa1837)))
+(Set(sa1837, sa2183),Set(-355, -336))
+(Set(sa89, !sa1837, sa2183),Set(-206, 355, -336))
+(Set(!sa2183),Set(336))
+(Set(!sa89, !sa1837),Set(206, 355))
+
+Some(Vector(Set(sa18, !sa1858)))
+Some(Vector(Set(sa1858), Set(!sa18)))
+(Set(sa18, !sa1858),Set(-229, 148))
+(Set(sa1858),Set(-148))
+(Set(!sa18),Set(229))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa796, sa799)))
+Some(Vector(Set(!sa799), Set(!sa796)))
+(Set(sa796, sa799),Set(-345, -193))
+(Set(!sa799),Set(193))
+(Set(!sa796),Set(345))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa796, !sa2280)))
+Some(Vector(Set(sa2280), Set(!sa796)))
+(Set(sa796, !sa2280),Set(-345, 12))
+(Set(sa2280),Set(-12))
+(Set(!sa796),Set(345))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa2301, sa2223)))
+Some(Vector(Set(!sa2223), Set(sa2301)))
+(Set(!sa2301, sa2223),Set(332, -225))
+(Set(!sa2223),Set(225))
+(Set(sa2301),Set(-332))
+
+Some(Vector(Set(!csa282, csa31), Set(!csa282, !csa31, sa811), Set(csa282)))
+Some(Vector(Set(!csa282, !csa31, !sa811)))
+(Set(!csa282, csa31),Set(96, -128))
+(Set(!csa282, !csa31, sa811),Set(96, 128, -122))
+(Set(csa282),Set(-96))
+(Set(!csa282, !csa31, !sa811),Set(96, 128, 122))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!csa1, sa74), Set(csa1)))
+Some(Vector(Set(!csa1, !sa74)))
+(Set(!csa1, sa74),Set(353, -335))
+(Set(csa1),Set(-353))
+(Set(!csa1, !sa74),Set(353, 335))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa190, sa196)))
+Some(Vector(Set(!sa196), Set(!sa190)))
+(Set(sa190, sa196),Set(-167, -131))
+(Set(!sa196),Set(131))
+(Set(!sa190),Set(167))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa2097, sa2103)))
+Some(Vector(Set(!sa2103), Set(!sa2097)))
+(Set(sa2097, sa2103),Set(-93, -25))
+(Set(!sa2103),Set(25))
+(Set(!sa2097),Set(93))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa1837, !sa1842)))
+Some(Vector(Set(sa1842), Set(sa1837)))
+(Set(!sa1837, !sa1842),Set(355, 74))
+(Set(sa1842),Set(-74))
+(Set(sa1837),Set(-355))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa2178, sa2177)))
+Some(Vector(Set(!sa2177), Set(!sa2178)))
+(Set(sa2178, sa2177),Set(-285, -168))
+(Set(!sa2177),Set(168))
+(Set(!sa2178),Set(285))
+
+Some(Vector(Set(sa2175, sa2176)))
+Some(Vector(Set(!sa2176), Set(!sa2175)))
+(Set(sa2175, sa2176),Set(-17, -84))
+(Set(!sa2176),Set(84))
+(Set(!sa2175),Set(17))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa1841, sa1837), Set(sa89, sa1841, !sa1837)))
+Some(Vector(Set(!sa89, !sa1837), Set(!sa1841)))
+(Set(sa1841, sa1837),Set(-358, -355))
+(Set(sa89, sa1841, !sa1837),Set(-206, -358, 355))
+(Set(!sa89, !sa1837),Set(206, 355))
+(Set(!sa1841),Set(358))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa252, sa266, sa272), Set(sa252, sa253), Set(sa252, sa266, sa272, !sa253)))
+Some(Vector(Set(!sa272, !sa253), Set(!sa266, !sa253), Set(!sa252, !sa272), Set(!sa252, !sa266)))
+(Set(!sa252, sa266, sa272),Set(97, -33, -81))
+(Set(sa252, sa253),Set(-97, -158))
+(Set(sa252, sa266, sa272, !sa253),Set(-97, -33, -81, 158))
+(Set(!sa272, !sa253),Set(81, 158))
+(Set(!sa266, !sa253),Set(33, 158))
+(Set(!sa252, !sa272),Set(97, 81))
+(Set(!sa252, !sa266),Set(97, 33))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa1910, sa19)))
+Some(Vector(Set(!sa19), Set(!sa1910)))
+(Set(sa1910, sa19),Set(-346, -330))
+(Set(!sa19),Set(330))
+(Set(!sa1910),Set(346))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(csa158, sa70)))
+Some(Vector(Set(!sa70), Set(!csa158)))
+(Set(csa158, sa70),Set(-54, -150))
+(Set(!sa70),Set(150))
+(Set(!csa158),Set(54))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa74, sa89), Set(!sa74, !sa89, sa107), Set(!sa74, !sa89, sa1325, !sa107), Set(sa74)))
+Some(Vector(Set(!sa74, !sa89, !sa1325, !sa107)))
+(Set(!sa74, sa89),Set(335, -206))
+(Set(!sa74, !sa89, sa107),Set(335, 206, -76))
+(Set(!sa74, !sa89, sa1325, !sa107),Set(335, 206, -315, 76))
+(Set(sa74),Set(-335))
+(Set(!sa74, !sa89, !sa1325, !sa107),Set(335, 206, 315, 76))
+
+Some(Vector(Set(!sa728, csa274), Set(sa728)))
+Some(Vector(Set(!sa728, !csa274)))
+(Set(!sa728, csa274),Set(219, -334))
+(Set(sa728),Set(-219))
+(Set(!sa728, !csa274),Set(219, 334))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa32, sa123)))
+Some(Vector(Set(!sa123), Set(!sa32)))
+(Set(sa32, sa123),Set(-30, -314))
+(Set(!sa123),Set(314))
+(Set(!sa32),Set(30))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa89, sa2420), Set(sa2546, !sa89, sa2614), Set(sa2546, sa89, sa2614, !sa2420)))
+Some(Vector(Set(!sa2614, !sa2420), Set(!sa2546, !sa2420), Set(!sa89, !sa2614), Set(!sa2546, !sa89)))
+(Set(sa89, sa2420),Set(-206, -331))
+(Set(sa2546, !sa89, sa2614),Set(-302, 206, -293))
+(Set(sa2546, sa89, sa2614, !sa2420),Set(-302, -206, -293, 331))
+(Set(!sa2614, !sa2420),Set(293, 331))
+(Set(!sa2546, !sa2420),Set(302, 331))
+(Set(!sa89, !sa2614),Set(206, 293))
+(Set(!sa2546, !sa89),Set(302, 206))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa97, sa136), Set(sa97)))
+Some(Vector(Set(!sa97, !sa136)))
+(Set(!sa97, sa136),Set(224, -106))
+(Set(sa97),Set(-224))
+(Set(!sa97, !sa136),Set(224, 106))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa2472, !sa2478, sa2487), Set(sa2472, sa2478)))
+Some(Vector(Set(!sa2478, !sa2487), Set(!sa2472)))
+(Set(sa2472, !sa2478, sa2487),Set(-113, 70, -169))
+(Set(sa2472, sa2478),Set(-113, -70))
+(Set(!sa2478, !sa2487),Set(70, 169))
+(Set(!sa2472),Set(113))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa254, sa628), Set(sa254, sa255), Set(sa254, sa628, !sa255)))
+Some(Vector(Set(!sa628, !sa255), Set(!sa254, !sa628)))
+(Set(!sa254, sa628),Set(304, -79))
+(Set(sa254, sa255),Set(-304, -36))
+(Set(sa254, sa628, !sa255),Set(-304, -79, 36))
+(Set(!sa628, !sa255),Set(79, 36))
+(Set(!sa254, !sa628),Set(304, 79))
+
+Some(Vector(Set(sa253, sa256)))
+Some(Vector(Set(!sa256), Set(!sa253)))
+(Set(sa253, sa256),Set(-158, -216))
+(Set(!sa256),Set(216))
+(Set(!sa253),Set(158))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!csa296, csa297), Set(!csa296, !csa297, csa298), Set(!csa296, !csa297, !csa298, csa306), Set(csa296)))
+Some(Vector(Set(!csa296, !csa297, !csa298, !csa306)))
+(Set(!csa296, csa297),Set(274, -44))
+(Set(!csa296, !csa297, csa298),Set(274, 44, -175))
+(Set(!csa296, !csa297, !csa298, csa306),Set(274, 44, 175, -349))
+(Set(csa296),Set(-274))
+(Set(!csa296, !csa297, !csa298, !csa306),Set(274, 44, 175, 349))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa2240, sa2609), Set(sa2240)))
+Some(Vector(Set(!sa2240, !sa2609)))
+(Set(!sa2240, sa2609),Set(101, -20))
+(Set(sa2240),Set(-101))
+(Set(!sa2240, !sa2609),Set(101, 20))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!csa145, csa133), Set(csa145)))
+Some(Vector(Set(!csa145, !csa133)))
+(Set(!csa145, csa133),Set(227, -46))
+(Set(csa145),Set(-227))
+(Set(!csa145, !csa133),Set(227, 46))
+
+Some(Vector())
+Some(Vector(Set(!csa10)))
+(Set(!csa10),Set(50))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!csa81, sa656, sa658), Set(csa81, sa658)))
+Some(Vector(Set(!sa658), Set(!csa81, !sa656)))
+(Set(!csa81, sa656, sa658),Set(102, -22, -201))
+(Set(csa81, sa658),Set(-102, -201))
+(Set(!sa658),Set(201))
+(Set(!csa81, !sa656),Set(102, 22))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa622, !sa728, sa2800, sa2799), Set(sa728, sa2800, sa2799), Set(!csa126, !sa1078, sa1856, !sa1598, !sa1671, sa2799, !sa622, sa2800, !sa728, !sa74), Set(!csa126, !sa1078, sa1598, sa2799, !sa622, sa2800, !sa728, !sa74), Set(!csa126, !sa1078, !sa1598, sa2799, sa1671, !sa622, sa2800, !sa728, !sa74), Set(!csa126, sa2799, !sa622, sa2800, sa1078, !sa728), Set(!csa126, !sa1078, sa2799, !sa622, sa74, sa2800, !sa728), Set(csa126, sa2799, !sa622, sa2800, !sa728)))
+Some(Vector(Set(!csa126, !sa1078, !sa1598, !sa1671, !sa622, !sa1856, !sa728, !sa74), Set(!sa2800), Set(!sa2799)))
+(Set(sa622, !sa728, sa2800, sa2799),Set(-13, 219, -342, -359))
+(Set(sa728, sa2800, sa2799),Set(-219, -342, -359))
+(Set(!csa126, !sa1078, sa1856, !sa1598, !sa1671, sa2799, !sa622, sa2800, !sa728, !sa74),Set(157, -359, -342, -4, 13, 2, 335, 219, 318, 323))
+(Set(!csa126, !sa1078, sa1598, sa2799, !sa622, sa2800, !sa728, !sa74),Set(-359, -342, 13, 2, 335, 219, 323, -157))
+(Set(!csa126, !sa1078, !sa1598, sa2799, sa1671, !sa622, sa2800, !sa728, !sa74),Set(-318, 157, -359, -342, 13, 2, 335, 219, 323))
+(Set(!csa126, sa2799, !sa622, sa2800, sa1078, !sa728),Set(-359, -342, 13, 219, 323, -2))
+(Set(!csa126, !sa1078, sa2799, !sa622, sa74, sa2800, !sa728),Set(-335, -359, -342, 13, 2, 219, 323))
+(Set(csa126, sa2799, !sa622, sa2800, !sa728),Set(-323, -359, -342, 13, 219))
+(Set(!csa126, !sa1078, !sa1598, !sa1671, !sa622, !sa1856, !sa728, !sa74),Set(157, 13, 2, 335, 219, 318, 323, 4))
+(Set(!sa2800),Set(342))
+(Set(!sa2799),Set(359))
+
+Some(Vector(Set(!csa58, sa649, sa91), Set(csa58, sa649)))
+Some(Vector(Set(!csa58, !sa91), Set(!sa649)))
+(Set(!csa58, sa649, sa91),Set(322, -130, -98))
+(Set(csa58, sa649),Set(-322, -130))
+(Set(!csa58, !sa91),Set(322, 98))
+(Set(!sa649),Set(130))
+
+Some(Vector(Set(sa91, !sa86, csa88, !csa58), Set(csa88, sa86, sa648, !sa91, !csa58), Set(sa86, !csa88, sa648, !csa58), Set(sa91, sa86, csa88, !csa58), Set(sa86, !csa88, sa648, csa58), Set(csa88, csa58)))
+Some(Vector(Set(!csa88, !sa648), Set(!sa91, !sa648, !csa58), Set(!sa91, !sa86, !csa58), Set(!sa86, !csa88)))
+(Set(sa91, !sa86, csa88, !csa58),Set(-98, 228, -258, 322))
+(Set(csa88, sa86, sa648, !sa91, !csa58),Set(-299, -258, 98, -228, 322))
+(Set(sa86, !csa88, sa648, !csa58),Set(-228, 258, -299, 322))
+(Set(sa91, sa86, csa88, !csa58),Set(-98, -228, -258, 322))
+(Set(sa86, !csa88, sa648, csa58),Set(-228, 258, -299, -322))
+(Set(csa88, csa58),Set(-258, -322))
+(Set(!csa88, !sa648),Set(258, 299))
+(Set(!sa91, !sa648, !csa58),Set(98, 299, 322))
+(Set(!sa91, !sa86, !csa58),Set(98, 228, 322))
+(Set(!sa86, !csa88),Set(228, 258))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(csa77, csa81)))
+Some(Vector(Set(!csa81), Set(!csa77)))
+(Set(csa77, csa81),Set(-255, -102))
+(Set(!csa81),Set(102))
+(Set(!csa77),Set(255))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa1412, csa91)))
+Some(Vector(Set(!csa91), Set(!sa1412)))
+(Set(sa1412, csa91),Set(-15, -40))
+(Set(!csa91),Set(40))
+(Set(!sa1412),Set(15))
+
+Some(Vector(Set(!sa68, csa57), Set(sa68)))
+Some(Vector(Set(!sa68, !csa57)))
+(Set(!sa68, csa57),Set(94, -306))
+(Set(sa68),Set(-94))
+(Set(!sa68, !csa57),Set(94, 306))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa2357, sa2229, !csa273, !sa2131, !sa15, !sa1896, !csa11, !sa2126, !csa179, !sa83), Set(!csa11, csa273, !sa2357, !sa15), Set(!sa2357, !sa1586, !csa273, !sa15, !csa11, sa83, !csa179, sa1896, !sa84), Set(!sa2357, !csa273, !sa15, !sa1896, !sa2126, !csa179, sa2131, csa11, !sa83), Set(!sa2357, !csa273, !sa15, !sa1896, !csa11, !sa2126, !csa179, sa2131, !sa83), Set(csa11, sa15), Set(!sa2357, !csa273, !sa15, !sa1896, sa2126, !csa11, !csa179, !sa83), Set(!sa2357, !csa273, !sa15, !csa11, !csa179, sa1896, !sa83), Set(!sa2357, !sa1586, !csa273, !sa15, !sa1896, !csa11, sa83, !sa2126, !csa179, sa2131, !sa84), Set(!sa2357, !csa273, !sa15, csa11, csa179), Set(!sa2357, !csa273, !sa15, !sa1896, sa2126, !csa179, csa11, !sa83), Set(!sa2357, !csa273, !sa15, !csa179, sa1896, csa11, !sa83), Set(!sa2357, !csa273, !sa15, !csa11, csa179), Set(!sa2357, !sa1586, !csa273, !sa15, !sa1896, sa2126, !csa11, sa83, !csa179, !sa84), Set(!sa2357, sa2229, !csa273, !sa2131, !sa15, !sa1896, !sa2126, !csa179, csa11, !sa83), Set(!sa2357, !csa273, !sa15, sa84, !csa11, sa83, !csa179), Set(csa11, csa273, !sa2357, !sa15), Set(!csa11, sa15), Set(!sa2357, !csa273, !sa15, !csa11, sa83, !csa179, sa1586, !sa84), Set(!sa2357, !csa273, !sa15, sa83, !csa179, csa11), Set(!sa2357, sa2229, !sa1586, !csa273, !sa2131, !sa15, !sa1896, !csa11, sa83, !sa2126, !csa179, !sa84), Set(!csa11, sa2357, !sa15), Set(csa11, sa2357, !sa15)))
+Some(Vector(Set(!sa2357, !sa1586, !csa273, !sa2131, !sa15, !sa2229, !sa1896, !csa11, !sa2126, !csa179, !sa84), Set(!sa2357, !csa273, !sa2131, !sa15, !sa2229, !sa1896, !sa2126, !csa179, !sa83)))
+(Set(!sa2357, sa2229, !csa273, !sa2131, !sa15, !sa1896, !csa11, !sa2126, !csa179, !sa83),Set(110, 156, -262, 204, 223, 162, 82, 242, 47, 354))
+(Set(!csa11, csa273, !sa2357, !sa15),Set(47, -204, 223, 354))
+(Set(!sa2357, !sa1586, !csa273, !sa15, !csa11, sa83, !csa179, sa1896, !sa84),Set(110, -162, -242, 204, 278, 223, 99, 47, 354))
+(Set(!sa2357, !csa273, !sa15, !sa1896, !sa2126, !csa179, sa2131, csa11, !sa83),Set(110, -82, 156, -47, 204, 223, 162, 242, 354))
+(Set(!sa2357, !csa273, !sa15, !sa1896, !csa11, !sa2126, !csa179, sa2131, !sa83),Set(110, -82, 156, 204, 223, 162, 242, 47, 354))
+(Set(csa11, sa15),Set(-47, -354))
+(Set(!sa2357, !csa273, !sa15, !sa1896, sa2126, !csa11, !csa179, !sa83),Set(110, 204, 223, 162, -156, 242, 47, 354))
+(Set(!sa2357, !csa273, !sa15, !csa11, !csa179, sa1896, !sa83),Set(110, -242, 204, 223, 162, 47, 354))
+(Set(!sa2357, !sa1586, !csa273, !sa15, !sa1896, !csa11, sa83, !sa2126, !csa179, sa2131, !sa84),Set(110, -162, -82, 156, 204, 278, 223, 99, 242, 47, 354))
+(Set(!sa2357, !csa273, !sa15, csa11, csa179),Set(-47, 204, 223, -110, 354))
+(Set(!sa2357, !csa273, !sa15, !sa1896, sa2126, !csa179, csa11, !sa83),Set(110, -47, 204, 223, 162, -156, 242, 354))
+(Set(!sa2357, !csa273, !sa15, !csa179, sa1896, csa11, !sa83),Set(110, -242, -47, 204, 223, 162, 354))
+(Set(!sa2357, !csa273, !sa15, !csa11, csa179),Set(204, 223, -110, 47, 354))
+(Set(!sa2357, !sa1586, !csa273, !sa15, !sa1896, sa2126, !csa11, sa83, !csa179, !sa84),Set(110, -162, 204, 278, 223, 99, -156, 242, 47, 354))
+(Set(!sa2357, sa2229, !csa273, !sa2131, !sa15, !sa1896, !sa2126, !csa179, csa11, !sa83),Set(110, 156, -262, -47, 204, 223, 162, 82, 242, 354))
+(Set(!sa2357, !csa273, !sa15, sa84, !csa11, sa83, !csa179),Set(110, -162, -99, 204, 223, 47, 354))
+(Set(csa11, csa273, !sa2357, !sa15),Set(-47, -204, 223, 354))
+(Set(!csa11, sa15),Set(47, -354))
+(Set(!sa2357, !csa273, !sa15, !csa11, sa83, !csa179, sa1586, !sa84),Set(110, -162, -278, 204, 223, 99, 47, 354))
+(Set(!sa2357, !csa273, !sa15, sa83, !csa179, csa11),Set(110, -162, -47, 204, 223, 354))
+(Set(!sa2357, sa2229, !sa1586, !csa273, !sa2131, !sa15, !sa1896, !csa11, sa83, !sa2126, !csa179, !sa84),Set(110, -162, 156, -262, 204, 278, 223, 99, 82, 242, 47, 354))
+(Set(!csa11, sa2357, !sa15),Set(47, -223, 354))
+(Set(csa11, sa2357, !sa15),Set(-47, -223, 354))
+(Set(!sa2357, !sa1586, !csa273, !sa2131, !sa15, !sa2229, !sa1896, !csa11, !sa2126, !csa179, !sa84),Set(110, 156, 204, 278, 223, 99, 82, 262, 242, 47, 354))
+(Set(!sa2357, !csa273, !sa2131, !sa15, !sa2229, !sa1896, !sa2126, !csa179, !sa83),Set(110, 156, 204, 223, 162, 82, 262, 242, 354))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa1943, sa220, sa788)))
+Some(Vector(Set(!sa788), Set(!sa220), Set(!sa1943)))
+(Set(sa1943, sa220, sa788),Set(-6, -316, -154))
+(Set(!sa788),Set(154))
+(Set(!sa220),Set(316))
+(Set(!sa1943),Set(6))
+
+Some(Vector(Set(sa789, !sa1861)))
+Some(Vector(Set(sa1861), Set(!sa789)))
+(Set(sa789, !sa1861),Set(-291, 205))
+(Set(sa1861),Set(-205))
+(Set(!sa789),Set(291))
+
+Some(Vector(Set(sa790, sa793)))
+Some(Vector(Set(!sa793), Set(!sa790)))
+(Set(sa790, sa793),Set(-281, -215))
+(Set(!sa793),Set(215))
+(Set(!sa790),Set(281))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa792, sa795)))
+Some(Vector(Set(!sa795), Set(!sa792)))
+(Set(sa792, sa795),Set(-279, -57))
+(Set(!sa795),Set(57))
+(Set(!sa792),Set(279))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa794, sa1863), Set(sa794, sa797), Set(sa794, sa1863, !sa797)))
+Some(Vector(Set(!sa1863, !sa797), Set(!sa794, !sa1863)))
+(Set(!sa794, sa1863),Set(116, -320))
+(Set(sa794, sa797),Set(-116, -127))
+(Set(sa794, sa1863, !sa797),Set(-116, -320, 127))
+(Set(!sa1863, !sa797),Set(320, 127))
+(Set(!sa794, !sa1863),Set(116, 320))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa2280, sa1872)))
+Some(Vector(Set(!sa1872), Set(sa2280)))
+(Set(!sa2280, sa1872),Set(12, -199))
+(Set(!sa1872),Set(199))
+(Set(sa2280),Set(-12))
+
+Some(Vector(Set(sa803, !sa2295, sa805)))
+Some(Vector(Set(!sa805), Set(sa2295), Set(!sa803)))
+(Set(sa803, !sa2295, sa805),Set(-256, 153, -107))
+(Set(!sa805),Set(107))
+(Set(sa2295),Set(-153))
+(Set(!sa803),Set(256))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!csa4, csa5), Set(!csa4, sa100, !csa5), Set(!csa4, sa1302, !sa100, !csa5), Set(csa4)))
+Some(Vector(Set(!csa4, !sa1302, !sa100, !csa5)))
+(Set(!csa4, csa5),Set(272, -139))
+(Set(!csa4, sa100, !csa5),Set(272, -282, 139))
+(Set(!csa4, sa1302, !sa100, !csa5),Set(272, -114, 282, 139))
+(Set(csa4),Set(-272))
+(Set(!csa4, !sa1302, !sa100, !csa5),Set(272, 114, 282, 139))
+
+Some(Vector(Set(!sa1868, sa804)))
+Some(Vector(Set(!sa804), Set(sa1868)))
+(Set(!sa1868, sa804),Set(86, -140))
+(Set(!sa804),Set(140))
+(Set(sa1868),Set(-86))
+
+Some(Vector(Set(sa74, !sa118, sa212), Set(sa74, sa118)))
+Some(Vector(Set(!sa118, !sa212), Set(!sa74)))
+(Set(sa74, !sa118, sa212),Set(-335, 43, -339))
+(Set(sa74, sa118),Set(-335, -43))
+(Set(!sa118, !sa212),Set(43, 339))
+(Set(!sa74),Set(335))
+
+Some(Vector(Set(sa2230, !csa257, !csa57, !sa856, !sa1425), Set(!sa856, csa257), Set(!sa856, sa1425, !csa257), Set(sa2301, !csa257, !csa57, !sa856, !sa2230, !sa1425), Set(sa856), Set(!sa856, !sa1425, !csa257, csa57)))
+Some(Vector(Set(!csa257, !csa57, !sa856, !sa2301, !sa2230, !sa1425)))
+(Set(sa2230, !csa257, !csa57, !sa856, !sa1425),Set(-136, 89, 306, 246, 51))
+(Set(!sa856, csa257),Set(51, -246))
+(Set(!sa856, sa1425, !csa257),Set(51, -89, 246))
+(Set(sa2301, !csa257, !csa57, !sa856, !sa2230, !sa1425),Set(89, -332, 306, 246, 51, 136))
+(Set(sa856),Set(-51))
+(Set(!sa856, !sa1425, !csa257, csa57),Set(51, 89, 246, -306))
+(Set(!csa257, !csa57, !sa856, !sa2301, !sa2230, !sa1425),Set(89, 306, 246, 51, 136, 332))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!sa1892, sa119), Set(sa1892)))
+Some(Vector(Set(!sa1892, !sa119)))
+(Set(!sa1892, sa119),Set(103, -163))
+(Set(sa1892),Set(-103))
+(Set(!sa1892, !sa119),Set(103, 163))
+
+Some(Vector(Set(csa58, sa86)))
+Some(Vector(Set(!sa86), Set(!csa58)))
+(Set(csa58, sa86),Set(-322, -228))
+(Set(!sa86),Set(228))
+(Set(!csa58),Set(322))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(csa10, !csa56, !csa58, sa85), Set(!sa110, !sa1872, !csa56, sa2362, sa85, !csa10, !sa87, !csa58, !sa2230), Set(sa87, !csa56, sa85, !csa10, !csa58), Set(!sa110, !csa56, sa1872, sa85, !csa10, !sa87, !csa58), Set(!sa110, !sa1872, !sa2362, !csa56, sa85, !csa10, !sa87, sa119, !csa58, !sa2230), Set(csa56, !csa58, sa85), Set(!sa110, sa2230, !sa1872, !csa56, sa85, !csa10, !sa87, !csa58), Set(!csa56, sa85, sa110, !csa10, !sa87, !csa58)))
+Some(Vector(Set(!sa85), Set(!sa110, !sa119, !sa1872, !sa2362, !csa56, !csa10, !sa87, !sa2230), Set(csa58)))
+(Set(csa10, !csa56, !csa58, sa85),Set(-50, 183, 322, -328))
+(Set(!sa110, !sa1872, !csa56, sa2362, sa85, !csa10, !sa87, !csa58, !sa2230),Set(-27, 24, 78, -328, 50, 199, 183, 136, 322))
+(Set(sa87, !csa56, sa85, !csa10, !csa58),Set(-328, 50, -24, 183, 322))
+(Set(!sa110, !csa56, sa1872, sa85, !csa10, !sa87, !csa58),Set(24, 78, -199, -328, 50, 183, 322))
+(Set(!sa110, !sa1872, !sa2362, !csa56, sa85, !csa10, !sa87, sa119, !csa58, !sa2230),Set(24, 78, -163, 27, -328, 50, 199, 183, 136, 322))
+(Set(csa56, !csa58, sa85),Set(-183, 322, -328))
+(Set(!sa110, sa2230, !sa1872, !csa56, sa85, !csa10, !sa87, !csa58),Set(-136, 24, 78, -328, 50, 199, 183, 322))
+(Set(!csa56, sa85, sa110, !csa10, !sa87, !csa58),Set(24, -328, -78, 50, 183, 322))
+(Set(!sa85),Set(328))
+(Set(!sa110, !sa119, !sa1872, !sa2362, !csa56, !csa10, !sa87, !sa2230),Set(24, 78, 27, 50, 199, 183, 136, 163))
+(Set(csa58),Set(-322))
+
+Some(Vector(Set(!sa89, sa126), Set(sa89)))
+Some(Vector(Set(!sa89, !sa126)))
+(Set(!sa89, sa126),Set(206, -231))
+(Set(sa89),Set(-206))
+(Set(!sa89, !sa126),Set(206, 231))
+
+Some(Vector(Set(csa131, sa1103)))
+Some(Vector(Set(!sa1103), Set(!csa131)))
+(Set(csa131, sa1103),Set(-177, -104))
+(Set(!sa1103),Set(104))
+(Set(!csa131),Set(177))
+
+Some(Vector(Set(sa86, sa190, !sa1323)))
+Some(Vector(Set(sa1323), Set(!sa190), Set(!sa86)))
+(Set(sa86, sa190, !sa1323),Set(-228, -167, 198))
+(Set(sa1323),Set(-198))
+(Set(!sa190),Set(167))
+(Set(!sa86),Set(228))
+
+Some(Vector(Set(!csa269, sa74, !csa1), Set(sa1526, !sa220, !csa269, !sa2229, !csa1, !sa1513, !sa74), Set(!csa269, sa220, !sa74, !csa1), Set(!sa220, sa2229, !csa269, !csa1, !sa1513, !sa74), Set(csa269, !csa1), Set(csa1), Set(sa1513, !sa220, !csa269, !csa1, !sa74)))
+Some(Vector(Set(!sa1526, !sa220, !csa269, !sa2229, !csa1, !sa1513, !sa74)))
+(Set(!csa269, sa74, !csa1),Set(181, -335, 353))
+(Set(sa1526, !sa220, !csa269, !sa2229, !csa1, !sa1513, !sa74),Set(-191, 316, 353, 132, 335, 181, 262))
+(Set(!csa269, sa220, !sa74, !csa1),Set(181, -316, 335, 353))
+(Set(!sa220, sa2229, !csa269, !csa1, !sa1513, !sa74),Set(316, 353, 132, -262, 335, 181))
+(Set(csa269, !csa1),Set(-181, 353))
+(Set(csa1),Set(-353))
+(Set(sa1513, !sa220, !csa269, !csa1, !sa74),Set(316, 353, -132, 335, 181))
+(Set(!sa1526, !sa220, !csa269, !sa2229, !csa1, !sa1513, !sa74),Set(316, 353, 132, 191, 335, 181, 262))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa96, sa95), Set(sa136, sa96, !sa95)))
+Some(Vector(Set(!sa136, !sa95), Set(!sa96)))
+(Set(sa96, sa95),Set(-190, -77))
+(Set(sa136, sa96, !sa95),Set(-106, -190, 77))
+(Set(!sa136, !sa95),Set(106, 77))
+(Set(!sa96),Set(190))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa988, sa983, sa998)))
+Some(Vector(Set(!sa998), Set(!sa983), Set(!sa988)))
+(Set(sa988, sa983, sa998),Set(-49, -65, -313))
+(Set(!sa998),Set(313))
+(Set(!sa983),Set(65))
+(Set(!sa988),Set(49))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(sa1000, sa988)))
+Some(Vector(Set(!sa988), Set(!sa1000)))
+(Set(sa1000, sa988),Set(-310, -49))
+(Set(!sa988),Set(49))
+(Set(!sa1000),Set(310))
+
+Some(Vector(Set(sa1004, sa1044)))
+Some(Vector(Set(!sa1044), Set(!sa1004)))
+(Set(sa1004, sa1044),Set(-53, -273))
+(Set(!sa1044),Set(273))
+(Set(!sa1004),Set(53))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+Map(sa132 -> 1, sa1078 -> 2, sa1001 -> 3, sa1856 -> 4, sa683 -> 5, sa1943 -> 6, sa1615 -> 7, csa174 -> 8, sa1824 -> 9, sa2067 -> 10, sa712 -> 11, sa2280 -> 12, sa622 -> 13, sa2829 -> 14, sa1412 -> 15, sa1045 -> 16, sa2175 -> 17, sa1012 -> 18, sa830 -> 19, sa2609 -> 20, sa2840 -> 21, sa656 -> 22, sa106 -> 23, sa87 -> 24, sa2103 -> 25, sa2832 -> 26, sa2362 -> 27, sa1835 -> 28, sa2839 -> 29, sa32 -> 30, sa1261 -> 31, sa997 -> 32, sa266 -> 33, sa1611 -> 34, sa835 -> 35, sa255 -> 36, sa1616 -> 37, sa1416 -> 38, csa286 -> 39, csa91 -> 40, sa1432 -> 41, sa2606 -> 42, sa118 -> 43, csa297 -> 44, csa59 -> 45, csa133 -> 46, csa11 -> 47, csa224 -> 48, sa988 -> 49, csa10 -> 50, sa856 -> 51, sa2644 -> 52, sa1004 -> 53, csa158 -> 54, sa2102 -> 55, csa9 -> 56, sa795 -> 57, sa2378 -> 58, sa2560 -> 59, csa242 -> 60, sa219 -> 61, csa32 -> 62, sa1015 -> 63, sa2160 -> 64, sa983 -> 65, sa2627 -> 66, sa121 -> 67, csa54 -> 68, sa1293 -> 69, sa2478 -> 70, sa1319 -> 71, sa2643 -> 72, csa192 -> 73, sa1842 -> 74, sa2446 -> 75, sa107 -> 76, sa95 -> 77, sa110 -> 78, sa628 -> 79, sa1870 -> 80, sa272 -> 81, sa2131 -> 82, csa288 -> 83, sa2176 -> 84, sa630 -> 85, sa1868 -> 86, sa2363 -> 87, sa281 -> 88, sa1425 -> 89, sa1836 -> 90, sa1013 -> 91, sa1825 -> 92, sa2097 -> 93, sa68 -> 94, sa2559 -> 95, csa282 -> 96, sa252 -> 97, sa91 -> 98, sa84 -> 99, sa603 -> 100, sa2240 -> 101, csa81 -> 102, sa1892 -> 103, sa1103 -> 104, sa2086 -> 105, sa136 -> 106, sa805 -> 107, sa1944 -> 108, sa2283 -> 109, csa179 -> 110, csa33 -> 111, sa2262 -> 112, sa2472 -> 113, sa1302 -> 114, sa2374 -> 115, sa794 -> 116, sa1219 -> 117, sa1651 -> 118, sa1081 -> 119, sa2109 -> 120, sa2594 -> 121, sa811 -> 122, sa1590 -> 123, csa53 -> 124, csa259 -> 125, sa1434 -> 126, sa797 -> 127, csa31 -> 128, sa2516 -> 129, sa649 -> 130, sa196 -> 131, sa1513 -> 132, sa1901 -> 133, sa2601 -> 134, sa807 -> 135, sa2230 -> 136, sa506 -> 137, sa984 -> 138, csa5 -> 139, sa804 -> 140, sa2831 -> 141, sa1142 -> 142, sa130 -> 143, sa2493 -> 144, sa973 -> 145, csa294 -> 146, sa1421 -> 147, sa1858 -> 148, sa2433 -> 149, sa70 -> 150, sa1041 -> 151, sa81 -> 152, sa2295 -> 153, sa788 -> 154, sa1018 -> 155, sa2126 -> 156, sa1598 -> 157, sa253 -> 158, sa1923 -> 159, sa1635 -> 160, csa240 -> 161, sa83 -> 162, sa119 -> 163, sa2494 -> 164, sa498 -> 165, csa295 -> 166, sa190 -> 167, sa2177 -> 168, sa2487 -> 169, csa287 -> 170, sa67 -> 171, sa633 -> 172, sa1650 -> 173, sa2763 -> 174, csa298 -> 175, csa243 -> 176, csa131 -> 177, csa226 -> 178, sa956 -> 179, sa2545 -> 180, csa269 -> 181, sa1447 -> 182, csa56 -> 183, sa2289 -> 184, sa284 -> 185, sa2841 -> 186, sa137 -> 187, csa124 -> 188, sa1031 -> 189, sa96 -> 190, sa1526 -> 191, sa1631 -> 192, sa799 -> 193, sa2419 -> 194, csa276 -> 195, csa284 -> 196, sa2823 -> 197, sa1323 -> 198, sa1872 -> 199, sa1555 -> 200, sa658 -> 201, sa2071 -> 202, sa23 -> 203, csa273 -> 204, sa1861 -> 205, sa89 -> 206, csa64 -> 207, sa2830 -> 208, csa254 -> 209, csa127 -> 210, sa1003 -> 211, sa2595 -> 212, sa2776 -> 213, sa1661 -> 214, sa793 -> 215, sa256 -> 216, sa2284 -> 217, sa1882 -> 218, sa728 -> 219, sa193 -> 220, sa159 -> 221, sa278 -> 222, sa2357 -> 223, sa97 -> 224, sa2223 -> 225, sa1010 -> 226, csa145 -> 227, sa86 -> 228, sa18 -> 229, sa2824 -> 230, sa126 -> 231, sa298 -> 232, sa1046 -> 233, sa2596 -> 234, sa2775 -> 235, sa2201 -> 236, sa1602 -> 237, sa2834 -> 238, sa2320 -> 239, csa41 -> 240, sa1873 -> 241, sa1896 -> 242, sa503 -> 243, sa2248 -> 244, sa2021 -> 245, csa257 -> 246, sa465 -> 247, csa251 -> 248, sa1154 -> 249, csa30 -> 250, sa2267 -> 251, sa1021 -> 252, sa584 -> 253, sa1606 -> 254, csa77 -> 255, sa803 -> 256, sa291 -> 257, csa88 -> 258, sa2629 -> 259, sa999 -> 260, sa1042 -> 261, sa2229 -> 262, csa35 -> 263, csa208 -> 264, sa832 -> 265, sa1426 -> 266, sa2256 -> 267, csa323 -> 268, sa1038 -> 269, sa2771 -> 270, sa1838 -> 271, csa4 -> 272, sa1044 -> 273, csa296 -> 274, sa2204 -> 275, sa2348 -> 276, sa349 -> 277, sa1586 -> 278, sa792 -> 279, sa1898 -> 280, sa790 -> 281, sa100 -> 282, sa2167 -> 283, sa138 -> 284, sa2178 -> 285, sa2770 -> 286, sa1032 -> 287, sa1556 -> 288, sa153 -> 289, sa1022 -> 290, sa789 -> 291, sa164 -> 292, sa2614 -> 293, sa1139 -> 294, sa1834 -> 295, sa1452 -> 296, sa2091 -> 297, sa1874 -> 298, sa648 -> 299, sa2479 -> 300, sa131 -> 301, sa2546 -> 302, sa2195 -> 303, sa254 -> 304, sa2246 -> 305, csa57 -> 306, sa303 -> 307, sa1130 -> 308, sa160 -> 309, sa1000 -> 310, sa2174 -> 311, sa202 -> 312, sa998 -> 313, sa123 -> 314, sa1325 -> 315, sa220 -> 316, sa2076 -> 317, sa1671 -> 318, sa1285 -> 319, sa1863 -> 320, sa1871 -> 321, csa58 -> 322, csa126 -> 323, sa150 -> 324, sa2632 -> 325, sa989 -> 326, sa295 -> 327, sa85 -> 328, sa2452 -> 329, sa19 -> 330, sa2420 -> 331, sa2301 -> 332, sa1894 -> 333, csa274 -> 334, sa74 -> 335, sa2183 -> 336, sa2474 -> 337, sa2247 -> 338, sa212 -> 339, sa2349 -> 340, csa173 -> 341, sa2800 -> 342, sa1664 -> 343, sa1539 -> 344, sa796 -> 345, sa1910 -> 346, sa2066 -> 347, sa297 -> 348, csa306 -> 349, sa1448 -> 350, sa2597 -> 351, sa194 -> 352, csa1 -> 353, sa15 -> 354, sa1837 -> 355, sa1826 -> 356, csa176 -> 357, sa1841 -> 358, sa2799 -> 359)
+p cnf 359 526
+-203 -335 353 0
+335 -353 0
+203 -353 0
+-335 264 50 171 -56 0
+-1 56 -206 50 0
+-56 -171 50 0
+264 335 -206 -1 50 171 -56 0
+-56 171 -264 50 0
+-50 206 264 335 171 0
+56 206 -50 0
+-50 1 264 335 171 0
+1 56 -50 0
+54 -48 47 0
+54 48 -163 47 0
+-54 47 0
+54 48 163 -47 0
+181 -145 -295 46 0
+-145 46 181 295 -329 0
+-181 -145 46 0
+181 295 329 -46 0
+145 -46 0
+248 -150 -23 54 0
+248 -23 -239 54 150 0
+-248 54 0
+248 150 239 -54 0
+248 23 -54 0
+183 -8 -296 357 0
+-183 -8 357 0
+183 296 -357 0
+8 -357 0
+-119 -118 73 0
+118 -73 0
+119 -73 0
+-163 -280 48 0
+280 -48 0
+163 -48 0
+-5 -176 161 0
+176 -161 0
+5 -161 0
+-161 -176 60 0
+176 -60 0
+161 -60 0
+-60 -245 176 0
+245 -176 0
+60 -176 0
+-30 -236 246 0
+236 -246 0
+30 -246 0
+-30 -275 125 0
+275 -125 0
+30 -125 0
+-8 -357 181 0
+8 -357 181 0
+-8 357 191 181 -92 0
+-8 357 92 -55 191 181 0
+-8 -191 357 181 0
+-181 357 92 191 55 0
+8 357 -181 0
+-82 -64 204 0
+64 -204 0
+82 -204 0
+178 -159 -115 334 0
+-178 334 0
+178 115 -334 0
+178 159 -334 0
+42 -146 0
+-312 -352 250 0
+352 -250 0
+312 -250 0
+-250 -312 128 0
+312 -128 0
+250 -128 0
+-206 -111 62 0
+111 -62 0
+206 -62 0
+143 -19 263 0
+143 19 332 263 0
+-143 -19 61 263 0
+-143 -61 263 0
+61 -143 263 19 332 0
+61 19 -332 -263 0
+143 19 -332 -263 0
+-171 -244 139 0
+244 -139 0
+171 -139 0
+165 -322 71 -206 -124 183 332 0
+-172 -165 -124 183 322 0
+-322 124 71 -206 183 332 0
+-172 206 -322 -165 -124 183 0
+-172 -322 -206 -165 -124 183 0
+-322 71 172 -206 -165 -124 183 0
+206 -332 -322 172 -165 -124 183 0
+-71 -332 -322 172 -206 -165 -124 183 0
+-332 172 -165 -124 183 322 0
+165 206 -183 0
+172 206 332 -183 0
+-71 172 332 -183 0
+-71 165 -183 0
+124 206 -183 0
+165 -332 -183 0
+165 322 -183 0
+172 322 332 -183 0
+124 322 -183 0
+-71 124 -183 0
+124 -332 -183 0
+-68 319 306 0
+-319 -306 0
+68 -306 0
+-183 -247 306 322 0
+-71 247 -183 306 322 0
+247 -123 -183 71 350 306 322 0
+-183 -306 322 0
+247 -350 -183 71 306 322 0
+247 -322 71 350 306 123 0
+183 -322 0
+-305 -243 207 0
+243 -207 0
+305 -207 0
+207 -100 255 0
+-207 -100 255 0
+-207 100 -137 255 0
+100 137 -255 0
+207 100 -255 0
+-130 -276 258 0
+276 -258 0
+130 -258 0
+-224 -90 282 0
+90 -282 0
+224 -282 0
+-18 32 -63 226 0
+32 -269 226 63 18 0
+189 -63 32 -269 226 18 0
+-18 32 -269 226 63 0
+-63 32 226 -189 18 0
+-32 226 0
+32 63 269 -226 0
+269 189 -226 32 18 0
+-49 -252 91 0
+252 -91 0
+49 -91 0
+226 -16 -233 63 0
+-226 -155 63 0
+-226 155 63 -16 -233 0
+233 155 -63 0
+16 155 -63 0
+226 233 -63 0
+226 16 -63 0
+-252 -138 269 0
+138 -269 0
+252 -269 0
+353 -261 151 0
+-353 151 0
+353 261 -151 0
+-3 49 -326 273 0
+-49 211 -151 -326 3 273 0
+-3 -49 -326 273 0
+-49 211 -151 273 326 0
+-49 -326 3 -211 273 0
+-49 -211 326 273 0
+3 151 211 -273 0
+151 211 326 -273 0
+49 326 -273 0
+3 49 -273 0
+-155 -91 16 0
+91 -16 0
+155 -16 0
+-23 -172 4 76 0
+-4 -76 0
+172 -76 0
+23 -76 0
+210 -4 10 2 0
+-210 10 2 0
+-10 -2 0
+210 4 -2 0
+2 -149 119 0
+-2 119 0
+2 149 -119 0
+162 -163 67 0
+-162 67 0
+162 163 -67 0
+-139 263 314 0
+-67 139 263 314 0
+-231 263 67 314 139 0
+-51 263 67 314 231 139 0
+-263 314 0
+-314 263 67 231 139 51 0
+-13 125 335 231 0
+125 13 335 231 -173 0
+125 -335 231 0
+-125 231 0
+-219 125 173 13 335 231 0
+125 -231 173 13 335 219 0
+-330 -232 152 -139 143 0
+-330 -232 152 -126 143 139 0
+-139 -152 143 0
+139 -152 143 0
+152 232 -143 0
+126 139 152 -143 0
+152 330 -143 0
+160 192 71 335 -109 15 0
+-160 192 71 335 15 0
+160 192 109 71 335 -149 15 0
+-15 335 71 0
+15 -192 335 71 0
+-335 71 0
+-71 160 192 109 149 335 15 0
+181 -191 1 0
+-181 1 0
+181 191 -1 0
+183 -332 -328 198 0
+328 -198 0
+332 -198 0
+-183 -198 0
+324 -179 106 0
+-324 106 0
+324 179 -106 0
+224 -187 284 0
+-224 284 0
+224 187 -284 0
+147 -266 89 0
+-147 89 0
+147 266 -89 0
+-330 -41 126 0
+41 -126 0
+330 -126 0
+118 -341 296 0
+-71 339 296 118 341 0
+339 296 118 71 341 -92 0
+118 -339 341 296 0
+92 339 71 -296 341 0
+-118 -296 0
+324 188 -292 15 309 0
+15 -188 324 0
+15 188 -309 324 0
+-194 292 38 324 188 15 309 0
+292 324 188 -38 15 309 0
+-15 324 0
+284 -335 191 0
+284 335 -157 191 0
+-284 191 0
+284 335 157 -191 0
+-335 -75 221 0
+75 -221 0
+335 -221 0
+-221 -289 309 0
+289 -309 0
+221 -309 0
+-221 -289 283 292 0
+-221 -283 292 0
+289 283 -292 0
+221 -292 0
+-119 73 173 0
+-73 -173 0
+119 -173 0
+62 -51 229 0
+-62 229 0
+62 51 -229 0
+-92 -356 9 0
+356 -9 0
+92 -9 0
+-9 92 0
+9 300 51 -92 337 0
+231 -76 295 0
+-231 295 0
+231 76 -295 0
+-28 90 0
+28 -335 90 0
+-90 -271 355 0
+271 -355 0
+90 -355 0
+-355 -336 74 0
+-206 355 -336 74 0
+336 -74 0
+206 355 -74 0
+-229 148 4 0
+-148 -4 0
+229 -4 0
+-345 -193 320 0
+193 -320 0
+345 -320 0
+-345 12 199 0
+-12 -199 0
+345 -199 0
+332 -225 330 0
+225 -330 0
+-332 -330 0
+96 -128 167 0
+96 128 -122 167 0
+-96 167 0
+96 128 122 -167 0
+353 -335 346 0
+-353 346 0
+353 335 -346 0
+-167 -131 312 0
+131 -312 0
+167 -312 0
+-93 -25 55 0
+25 -55 0
+93 -55 0
+355 74 82 0
+-74 -82 0
+-355 -82 0
+-285 -168 84 0
+168 -84 0
+285 -84 0
+-17 -84 168 0
+84 -168 0
+17 -168 0
+-358 -355 336 0
+-206 -358 355 336 0
+206 355 -336 0
+358 -336 0
+97 -33 -81 316 0
+-97 -158 316 0
+-81 316 -33 158 -97 0
+81 158 -316 0
+33 158 -316 0
+97 81 -316 0
+97 33 -316 0
+-346 -330 225 0
+330 -225 0
+346 -225 0
+-54 -150 109 0
+150 -109 0
+54 -109 0
+335 -206 332 0
+335 206 -76 332 0
+206 -315 335 76 332 0
+-335 332 0
+206 -332 335 76 315 0
+219 -334 239 0
+-219 239 0
+219 334 -239 0
+-30 -314 27 0
+314 -27 0
+30 -27 0
+-206 -331 194 0
+-302 206 -293 194 0
+-206 194 -293 331 -302 0
+293 331 -194 0
+302 331 -194 0
+206 293 -194 0
+302 206 -194 0
+224 -106 329 0
+-224 329 0
+224 106 -329 0
+-113 70 -169 337 0
+-113 -70 337 0
+70 169 -337 0
+113 -337 0
+304 -79 158 0
+-304 -36 158 0
+-304 -79 36 158 0
+79 36 -158 0
+304 79 -158 0
+-158 -216 304 0
+216 -304 0
+158 -304 0
+274 -44 302 0
+274 44 -175 302 0
+302 44 274 -349 175 0
+-274 302 0
+349 44 274 175 -302 0
+101 -20 42 0
+-101 42 0
+101 20 -42 0
+227 -46 30 0
+-227 30 0
+227 46 -30 0
+50 -277 0
+102 -22 -201 100 0
+-102 -201 100 0
+201 -100 0
+102 22 -100 0
+-359 -342 172 219 -13 0
+-219 -342 -359 172 0
+157 -359 -342 -4 13 2 335 172 219 318 323 0
+-359 -342 13 2 335 172 219 323 -157 0
+-318 157 -359 -342 13 2 335 172 219 323 0
+-359 -342 13 172 219 323 -2 0
+-335 -359 -342 13 2 172 219 323 0
+-323 -359 -342 13 172 219 0
+157 -172 13 2 335 219 318 323 4 0
+342 -172 0
+359 -172 0
+322 -130 -98 299 0
+-322 -130 299 0
+322 98 -299 0
+130 -299 0
+-98 228 -258 130 322 0
+-299 -258 98 -228 130 322 0
+-299 -228 130 258 322 0
+-98 -258 -228 130 322 0
+-299 -322 -228 130 258 0
+-258 -322 130 0
+258 299 -130 0
+98 299 322 -130 0
+98 228 322 -130 0
+228 258 -130 0
+-255 -102 201 0
+102 -201 0
+255 -201 0
+-15 -40 5 0
+40 -5 0
+15 -5 0
+94 -306 150 0
+-94 150 0
+94 306 -150 0
+110 156 -262 204 335 223 162 82 242 47 354 0
+-204 335 223 47 354 0
+110 -162 -242 204 335 278 223 99 47 354 0
+110 -82 156 -47 204 335 223 162 242 354 0
+110 -82 156 204 335 223 162 242 47 354 0
+-47 -354 335 0
+110 204 335 223 162 -156 242 47 354 0
+110 -242 204 335 223 162 47 354 0
+110 -162 -82 156 204 335 278 223 99 242 47 354 0
+-47 204 335 223 -110 354 0
+110 -47 204 335 223 162 -156 242 354 0
+110 -242 -47 204 335 223 162 354 0
+204 335 223 -110 47 354 0
+110 -162 204 335 278 223 99 -156 242 47 354 0
+110 156 -262 -47 204 335 223 162 82 242 354 0
+110 -162 -99 204 335 223 47 354 0
+-204 -47 335 223 354 0
+47 -354 335 0
+110 -162 -278 204 335 223 99 47 354 0
+110 -162 -47 204 335 223 354 0
+110 -162 156 -262 204 335 278 223 99 82 242 47 354 0
+47 -223 354 335 0
+-47 -223 354 335 0
+-335 110 156 204 278 223 99 82 262 242 47 354 0
+-335 110 156 204 223 162 82 262 242 354 0
+-6 -316 -154 291 0
+154 -291 0
+316 -291 0
+6 -291 0
+-291 205 281 0
+-205 -281 0
+291 -281 0
+-281 -215 279 0
+215 -279 0
+281 -279 0
+-279 -57 116 0
+57 -116 0
+279 -116 0
+116 -320 345 0
+-116 -127 345 0
+-116 -320 127 345 0
+320 127 -345 0
+116 320 -345 0
+12 -199 256 0
+199 -256 0
+-12 -256 0
+-256 153 -107 140 0
+107 -140 0
+-153 -140 0
+256 -140 0
+272 -139 152 0
+272 -282 139 152 0
+152 -114 282 139 272 0
+-272 152 0
+282 -152 114 139 272 0
+86 -140 122 0
+140 -122 0
+-86 -122 0
+-335 43 -339 162 0
+-335 -43 162 0
+43 339 -162 0
+335 -162 0
+-136 89 306 246 51 19 0
+51 -246 19 0
+51 -89 246 19 0
+89 -332 306 246 51 19 136 0
+-51 19 0
+-306 89 246 51 19 0
+89 -19 306 246 51 136 332 0
+103 -163 99 0
+-103 99 0
+103 163 -99 0
+-322 -228 328 0
+228 -328 0
+322 -328 0
+-50 228 -328 183 322 0
+-27 24 228 78 -328 50 199 183 136 322 0
+228 -328 50 -24 183 322 0
+24 228 78 -199 -328 50 183 322 0
+24 228 78 -163 27 -328 50 199 183 136 322 0
+-183 322 -328 228 0
+-136 24 228 78 -328 50 199 183 322 0
+24 228 -328 -78 50 183 322 0
+328 -228 0
+24 78 27 -228 50 199 183 136 163 0
+-322 -228 0
+206 -231 24 0
+-206 24 0
+206 231 -24 0
+-177 -104 206 0
+104 -206 0
+177 -206 0
+-228 -167 198 98 0
+-198 -98 0
+167 -98 0
+228 -98 0
+181 -335 353 77 0
+-191 316 353 132 77 335 181 262 0
+353 77 335 181 -316 0
+316 353 132 77 -262 335 181 0
+-181 353 77 0
+-353 77 0
+316 353 77 -132 335 181 0
+316 353 132 191 335 181 262 -77 0
+-190 -77 224 0
+-106 -190 77 224 0
+106 77 -224 0
+190 -224 0
+-49 -65 -313 138 0
+313 -138 0
+65 -138 0
+49 -138 0
+-310 -49 326 0
+49 -326 0
+310 -326 0
+-53 -273 32 0
+273 -32 0
+53 -32 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.VmcHlsuvhb.cnf'
+c opening file to read '/tmp/tmp.VmcHlsuvhb.cnf'
+c found 'p cnf 359 526' header
+c parsed 526 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  526 257 72%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  526 257 72%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  526 257 72%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 -36 -37 -38 -39 -40
+v -41 -42 -43 -44 -45 -46 -47 -48 -49 -50 -51 -52 -53 -54 -55 -56 -57 -58 -59
+v -60 -61 -62 -63 -64 -65 -66 -67 -68 -69 -70 -71 -72 -73 -74 -75 -76 -77 -78
+v -79 -80 -81 -82 -83 -84 -85 -86 -87 -88 -89 90 -91 -92 -93 -94 -95 -96 -97
+v -98 -99 -100 -101 -102 -103 -104 -105 -106 -107 -108 -109 -110 -111 -112
+v -113 -114 -115 -116 -117 -118 -119 -120 -121 -122 -123 -124 -125 -126 -127
+v -128 -129 -130 -131 -132 -133 -134 -135 -136 -137 -138 -139 -140 -141 -142
+v -143 -144 -145 -146 -147 -148 -149 -150 -151 -152 -153 -154 -155 -156 -157
+v -158 -159 -160 -161 -162 -163 -164 -165 -166 -167 -168 -169 -170 -171 -172
+v -173 -174 -175 -176 -177 -178 -179 -180 -181 -182 -183 -184 -185 -186 -187
+v -188 -189 -190 -191 -192 -193 -194 -195 -196 -197 -198 -199 -200 -201 -202
+v -203 -204 -205 -206 -207 -208 -209 -210 -211 -212 -213 -214 -215 -216 -217
+v -218 -219 -220 -221 -222 -223 -224 -225 -226 -227 -228 -229 -230 -231 -232
+v -233 -234 -235 -236 -237 -238 -239 -240 -241 -242 -243 -244 -245 -246 -247
+v -248 -249 -250 -251 -252 -253 -254 -255 -256 -257 -258 -259 -260 -261 -262
+v 263 -264 -265 -266 -267 -268 -269 -270 271 -272 -273 -274 -275 -276 -277
+v -278 -279 -280 -281 -282 -283 -284 -285 -286 -287 -288 -289 -290 -291 -292
+v -293 -294 -295 -296 -297 -298 -299 -300 -301 -302 -303 -304 -305 -306 -307
+v -308 -309 -310 -311 -312 -313 314 -315 -316 -317 -318 -319 -320 -321 -322
+v -323 -324 -325 -326 -327 -328 -329 -330 -331 -332 -333 -334 -335 -336 -337
+v -338 -339 -340 -341 -342 -343 -344 -345 -346 -347 -348 -349 -350 -351 -352
+v -353 -354 355 -356 -357 -358 -359 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00  112.18% parse
+c         0.00   25.21% search
+c         0.00   24.79% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   34.69% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.00    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=269
++ wait 269
++ bdd_minisat_all_release /tmp/tmp.VmcHlsuvhb.cnf
+/app/solve.sh: line 76:   269 Killed                  $4 "$cnf_tmp"
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 Executable_file_for_Alzheimer_model_BCC.bnet"
+	User time (seconds): 63.37
+	System time (seconds): 9.71
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:13.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9418496
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2416021
+	Voluntary context switches: 3632
+	Involuntary context switches: 829
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 24
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 68.1s

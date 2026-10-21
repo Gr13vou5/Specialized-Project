@@ -1,0 +1,8 @@
+targets, factors
+v_CD45, v_CD45
+v_CD8, v_CD8
+v_Fyn, ((v_CD45 & v_Lck) | (v_TCRbind & v_CD45))
+v_Lck, (v_CD45 & v_CD8 & !v_Fyn)
+v_TCRbind, (v_TCRlig & !v_ZAP70)
+v_TCRlig, v_TCRlig
+v_ZAP70, (v_Fyn & v_Lck & !v_ZAP70)

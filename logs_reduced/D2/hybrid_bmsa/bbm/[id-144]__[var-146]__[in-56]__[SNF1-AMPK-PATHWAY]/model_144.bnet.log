@@ -1,0 +1,1435 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:20:03 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_144.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-246 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_144.bnet
+------------------------------------------------------------
+# ENCODE START
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_144.bnet --cnf /tmp/tmp.zkqBNJw4zI.cnf -h3
++ cmd_pid=11
++ wait 11
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_144.bnet, cnfFileName = /tmp/tmp.zkqBNJw4zI.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Snf1_P__Acc1)))
+Some(Vector())
+(Set(v_Snf1_P__Acc1),Set(-72))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Gal83, v_CKII, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Gal83, v_CKII, v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Gal83, v_CKII, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1), Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_CKII), Set(!v_Gal83)))
+(Set(v_Gal83_ppi_Snf1, v_Gal83, v_CKII, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -58, -93, -45, -88))
+(Set(v_Gal83, v_CKII, v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -104, -58, -45, -88))
+(Set(v_Gal83, v_CKII, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -8, -58, -45, -88))
+(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1),Set(8, 93, 104))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_CKII),Set(45))
+(Set(!v_Gal83),Set(88))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Snf1_P__Cat8_S562)))
+Some(Vector())
+(Set(v_Snf1_P__Cat8_S562),Set(-4))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Elm1, v_Snf1, !v_Snf1__SUMO_, !v_UnknownRegulation)))
+Some(Vector(Set(v_UnknownRegulation), Set(v_Snf1__SUMO_), Set(!v_Snf1), Set(!v_Elm1)))
+(Set(v_Elm1, v_Snf1, !v_Snf1__SUMO_, !v_UnknownRegulation),Set(-19, -56, 123, 62))
+(Set(v_UnknownRegulation),Set(-62))
+(Set(v_Snf1__SUMO_),Set(-123))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Elm1),Set(19))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_CKII_P__Gal83_CKIISite)))
+Some(Vector())
+(Set(v_CKII_P__Gal83_CKIISite),Set(-106))
+
+Some(Vector(Set(v_Snf1_P__Gal83_Snf1Site)))
+Some(Vector())
+(Set(v_Snf1_P__Gal83_Snf1Site),Set(-115))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Gal83, v_Sip4, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Gal83_ppi_Snf1), Set(!v_Gal83), Set(!v_Snf1__Nucleus_), Set(!v_Sip4)))
+(Set(v_Gal83_ppi_Snf1, v_Gal83, v_Sip4, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_),Set(-27, -128, -58, -143, -93, -88))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Gal83_ppi_Snf1),Set(93))
+(Set(!v_Gal83),Set(88))
+(Set(!v_Snf1__Nucleus_),Set(143))
+(Set(!v_Sip4),Set(128))
+
+Some(Vector(Set(v_Snf1, v_Gal83, !v_Sip2_ppi_Snf1, !v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4)))
+Some(Vector(Set(v_Sip1_ppi_Snf1), Set(!v_Snf1_ID_ppi_Snf4), Set(v_Sip2_ppi_Snf1), Set(!v_Snf1), Set(!v_Gal83)))
+(Set(v_Snf1, v_Gal83, !v_Sip2_ppi_Snf1, !v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4),Set(-58, 104, 8, -56, -88))
+(Set(v_Sip1_ppi_Snf1),Set(-8))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(v_Sip2_ppi_Snf1),Set(-104))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Gal83),Set(88))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Gcn5, v_Histone3, v_Gcn5_ppi_Snf1)))
+Some(Vector(Set(!v_Gcn5_ppi_Snf1), Set(!v_Histone3), Set(!v_Gcn5)))
+(Set(v_Gcn5, v_Histone3, v_Gcn5_ppi_Snf1),Set(-53, -139, -122))
+(Set(!v_Gcn5_ppi_Snf1),Set(122))
+(Set(!v_Histone3),Set(139))
+(Set(!v_Gcn5),Set(53))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Gcn5, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Gcn5), Set(!v_Gal83_ppi_Snf1), Set(!v_Snf1), Set(!v_Snf1__Nucleus_)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Gcn5, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_),Set(-27, -58, -143, -93, -53, -56))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Gcn5),Set(53))
+(Set(!v_Gal83_ppi_Snf1),Set(93))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Snf1__Nucleus_),Set(143))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Glc7, v_Hxk2, v_Hxk2__P_, v_Glc7_ppi_Shp1)))
+Some(Vector(Set(!v_Glc7_ppi_Shp1), Set(!v_Hxk2__P_), Set(!v_Hxk2), Set(!v_Glc7)))
+(Set(v_Glc7, v_Hxk2, v_Hxk2__P_, v_Glc7_ppi_Shp1),Set(-102, -134, -42, -103))
+(Set(!v_Glc7_ppi_Shp1),Set(103))
+(Set(!v_Hxk2__P_),Set(42))
+(Set(!v_Hxk2),Set(134))
+(Set(!v_Glc7),Set(102))
+
+Some(Vector(Set(v_Msn2, v_Msn2_PKASite__P_, v_Glc7_ppi_Reg2, v_Glc7), Set(v_Msn2, v_Msn2_PKASite__P_, v_Glc7_ppi_Reg1, v_Glc7)))
+Some(Vector(Set(!v_Glc7_ppi_Reg2, !v_Glc7_ppi_Reg1), Set(!v_Msn2_PKASite__P_), Set(!v_Msn2), Set(!v_Glc7)))
+(Set(v_Msn2, v_Msn2_PKASite__P_, v_Glc7_ppi_Reg2, v_Glc7),Set(-38, -49, -55, -102))
+(Set(v_Msn2, v_Msn2_PKASite__P_, v_Glc7_ppi_Reg1, v_Glc7),Set(-38, -49, -73, -102))
+(Set(!v_Glc7_ppi_Reg2, !v_Glc7_ppi_Reg1),Set(55, 73))
+(Set(!v_Msn2_PKASite__P_),Set(49))
+(Set(!v_Msn2),Set(38))
+(Set(!v_Glc7),Set(102))
+
+Some(Vector(Set(v_Rod1, v_Glc7_ppi_Reg2, v_Rod1__P_, v_Glc7), Set(v_Rod1, v_Glc7_ppi_Reg1, v_Rod1__P_, v_Glc7)))
+Some(Vector(Set(!v_Glc7_ppi_Reg2, !v_Glc7_ppi_Reg1), Set(!v_Rod1__P_), Set(!v_Rod1), Set(!v_Glc7)))
+(Set(v_Rod1, v_Glc7_ppi_Reg2, v_Rod1__P_, v_Glc7),Set(-17, -55, -75, -102))
+(Set(v_Rod1, v_Glc7_ppi_Reg1, v_Rod1__P_, v_Glc7),Set(-17, -73, -75, -102))
+(Set(!v_Glc7_ppi_Reg2, !v_Glc7_ppi_Reg1),Set(55, 73))
+(Set(!v_Rod1__P_),Set(75))
+(Set(!v_Rod1),Set(17))
+(Set(!v_Glc7),Set(102))
+
+Some(Vector(Set(v_Glc7, !v_alkalinepH, v_Snf1, !v_NaCl, v_Glc7_ppi_Shp1, !v_NitrogenStress, v_Glc7_ppi_Reg2, v_Snf1_T210__P_), Set(v_Glc7, !v_alkalinepH, v_Snf1, !v_NaCl, v_Glc7_ppi_Shp1, !v_NitrogenStress, v_Glc7_ppi_Reg1, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Glc7_ppi_Reg2, !v_Glc7_ppi_Reg1), Set(!v_Glc7_ppi_Shp1), Set(!v_Snf1_T210__P_), Set(v_NitrogenStress), Set(!v_Glc7), Set(v_alkalinepH), Set(v_NaCl), Set(!v_Snf1)))
+(Set(v_Glc7, !v_alkalinepH, v_Snf1, !v_NaCl, v_Glc7_ppi_Shp1, !v_NitrogenStress, v_Glc7_ppi_Reg2, v_Snf1_T210__P_),Set(-27, -103, -55, 86, 145, 18, -102, -56))
+(Set(v_Glc7, !v_alkalinepH, v_Snf1, !v_NaCl, v_Glc7_ppi_Shp1, !v_NitrogenStress, v_Glc7_ppi_Reg1, v_Snf1_T210__P_),Set(-27, -103, 86, 145, 18, -102, -56, -73))
+(Set(!v_Glc7_ppi_Reg2, !v_Glc7_ppi_Reg1),Set(55, 73))
+(Set(!v_Glc7_ppi_Shp1),Set(103))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(v_NitrogenStress),Set(-86))
+(Set(!v_Glc7),Set(102))
+(Set(v_alkalinepH),Set(-18))
+(Set(v_NaCl),Set(-145))
+(Set(!v_Snf1),Set(56))
+
+Some(Vector(Set(v_Glc7, v_Reg1, !v_Glc7_ppi_Reg2)))
+Some(Vector(Set(v_Glc7_ppi_Reg2), Set(!v_Reg1), Set(!v_Glc7)))
+(Set(v_Glc7, v_Reg1, !v_Glc7_ppi_Reg2),Set(-102, -21, 55))
+(Set(v_Glc7_ppi_Reg2),Set(-55))
+(Set(!v_Reg1),Set(21))
+(Set(!v_Glc7),Set(102))
+
+Some(Vector(Set(v_Glc7, v_Reg2, !v_Glc7_ppi_Reg1)))
+Some(Vector(Set(v_Glc7_ppi_Reg1), Set(!v_Reg2), Set(!v_Glc7)))
+(Set(v_Glc7, v_Reg2, !v_Glc7_ppi_Reg1),Set(-102, -130, 73))
+(Set(v_Glc7_ppi_Reg1),Set(-73))
+(Set(!v_Reg2),Set(130))
+(Set(!v_Glc7),Set(102))
+
+Some(Vector(Set(v_Glc7, v_Shp1)))
+Some(Vector(Set(!v_Shp1), Set(!v_Glc7)))
+(Set(v_Glc7, v_Shp1),Set(-102, -71))
+(Set(!v_Shp1),Set(71))
+(Set(!v_Glc7),Set(102))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_NPC_NEXP_Gln3)))
+Some(Vector(Set(!v_NPC_NEXP_Gln3, v_NPC_NIMP_Gln3)))
+(Set(v_NPC_NEXP_Gln3),Set(-40))
+(Set(!v_NPC_NEXP_Gln3, v_NPC_NIMP_Gln3),Set(40, -120))
+
+Some(Vector(Set(v_NPC_NIMP_Gln3)))
+Some(Vector(Set(!v_NPC_NIMP_Gln3, v_NPC_NEXP_Gln3)))
+(Set(v_NPC_NIMP_Gln3),Set(-120))
+(Set(!v_NPC_NIMP_Gln3, v_NPC_NEXP_Gln3),Set(120, -40))
+
+Some(Vector(Set(v_Snf1_P__Gln3)))
+Some(Vector())
+(Set(v_Snf1_P__Gln3),Set(-36))
+
+Some(Vector(Set(v_Gln3, v_Ure2, !v_NitrogenStress)))
+Some(Vector(Set(v_NitrogenStress), Set(!v_Ure2), Set(!v_Gln3)))
+(Set(v_Gln3, v_Ure2, !v_NitrogenStress),Set(-117, -127, 86))
+(Set(v_NitrogenStress),Set(-86))
+(Set(!v_Ure2),Set(127))
+(Set(!v_Gln3),Set(117))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Hxt_FDExtCyt_Glucose)))
+Some(Vector())
+(Set(v_Hxt_FDExtCyt_Glucose),Set(-91))
+
+Some(Vector())
+Some(Vector(Set(v_Hxt_FDExtCyt_Glucose)))
+(Set(v_Hxt_FDExtCyt_Glucose),Set(-91))
+
+Some(Vector(Set(v_Hxk2_P__Glucose)))
+Some(Vector())
+(Set(v_Hxk2_P__Glucose),Set(-114))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Snf1_P__Hcm1)))
+Some(Vector())
+(Set(v_Snf1_P__Hcm1),Set(-124))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Gcn5_Ace__Histone3)))
+Some(Vector())
+(Set(v_Gcn5_Ace__Histone3),Set(-7))
+
+Some(Vector(Set(v_Snf1_P__Histone3)))
+Some(Vector())
+(Set(v_Snf1_P__Histone3),Set(-153))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Snf1_P__Hsf1)))
+Some(Vector())
+(Set(v_Snf1_P__Hsf1),Set(-92))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Hxk2, v_Glucose, v_Glucose__Cytoplasm_)))
+Some(Vector(Set(!v_Glucose__Cytoplasm_), Set(!v_Glucose), Set(!v_Hxk2)))
+(Set(v_Hxk2, v_Glucose, v_Glucose__Cytoplasm_),Set(-134, -140, -105))
+(Set(!v_Glucose__Cytoplasm_),Set(105))
+(Set(!v_Glucose),Set(140))
+(Set(!v_Hxk2),Set(134))
+
+Some(Vector(Set(v_Tda1_P__Hxk2_S14), Set(v_Snf1_P__Hxk2_S14)))
+Some(Vector())
+(Set(v_Tda1_P__Hxk2_S14),Set(-141))
+(Set(v_Snf1_P__Hxk2_S14),Set(-74))
+
+Some(Vector(Set(v_NPC_NEXP_Hxk2)))
+Some(Vector(Set(!v_NPC_NEXP_Hxk2, v_NPC_NIMP_Hxk2)))
+(Set(v_NPC_NEXP_Hxk2),Set(-100))
+(Set(!v_NPC_NEXP_Hxk2, v_NPC_NIMP_Hxk2),Set(100, -78))
+
+Some(Vector(Set(v_NPC_NIMP_Hxk2)))
+Some(Vector(Set(!v_NPC_NIMP_Hxk2, v_NPC_NEXP_Hxk2)))
+(Set(v_NPC_NIMP_Hxk2),Set(-78))
+(Set(!v_NPC_NIMP_Hxk2, v_NPC_NEXP_Hxk2),Set(78, -100))
+
+Some(Vector())
+Some(Vector(Set(v_Glc7_P__Hxk2)))
+(Set(v_Glc7_P__Hxk2),Set(-89))
+
+Some(Vector(Set(v_Hxk2, v_Mig1, v_Hxk2__Nucleus_, v_Mig1__Nucleus_)))
+Some(Vector(Set(!v_Mig1__Nucleus_), Set(!v_Hxk2__Nucleus_), Set(!v_Mig1), Set(!v_Hxk2)))
+(Set(v_Hxk2, v_Mig1, v_Hxk2__Nucleus_, v_Mig1__Nucleus_),Set(-134, -70, -129, -22))
+(Set(!v_Mig1__Nucleus_),Set(22))
+(Set(!v_Hxk2__Nucleus_),Set(129))
+(Set(!v_Mig1),Set(70))
+(Set(!v_Hxk2),Set(134))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Hxt, v_Glucose, v_Glucose__Extracellular_)))
+Some(Vector(Set(!v_Glucose__Extracellular_), Set(!v_Glucose), Set(!v_Hxt)))
+(Set(v_Hxt, v_Glucose, v_Glucose__Extracellular_),Set(-16, -140, -39))
+(Set(!v_Glucose__Extracellular_),Set(39))
+(Set(!v_Glucose),Set(140))
+(Set(!v_Hxt),Set(16))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_NPC_NEXP_Mig1)))
+Some(Vector(Set(!v_NPC_NEXP_Mig1, v_NPC_NIMP_Mig1)))
+(Set(v_NPC_NEXP_Mig1),Set(-113))
+(Set(!v_NPC_NEXP_Mig1, v_NPC_NIMP_Mig1),Set(113, -57))
+
+Some(Vector(Set(v_NPC_NIMP_Mig1)))
+Some(Vector(Set(!v_NPC_NIMP_Mig1, v_NPC_NEXP_Mig1)))
+(Set(v_NPC_NIMP_Mig1),Set(-57))
+(Set(!v_NPC_NIMP_Mig1, v_NPC_NEXP_Mig1),Set(57, -113))
+
+Some(Vector(Set(v_Snf1_P__Mig1)))
+Some(Vector())
+(Set(v_Snf1_P__Mig1),Set(-149))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Mms21, v_Snf1, v_UnknownRegulation)))
+Some(Vector(Set(!v_UnknownRegulation), Set(!v_Snf1), Set(!v_Mms21)))
+(Set(v_Mms21, v_Snf1, v_UnknownRegulation),Set(-29, -56, -62))
+(Set(!v_UnknownRegulation),Set(62))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Mms21),Set(29))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Tpk_P__Msn2_PKASite)))
+Some(Vector(Set(!v_Tpk_P__Msn2_PKASite, v_Glc7_P__Msn2_PKASite)))
+(Set(v_Tpk_P__Msn2_PKASite),Set(-147))
+(Set(!v_Tpk_P__Msn2_PKASite, v_Glc7_P__Msn2_PKASite),Set(147, -47))
+
+Some(Vector(Set(v_Snf1_P__Msn2_S582)))
+Some(Vector())
+(Set(v_Snf1_P__Msn2_S582),Set(-154))
+
+Some(Vector(Set(v_NPC_NEXP_Msn2)))
+Some(Vector(Set(!v_NPC_NEXP_Msn2, v_NPC_NIMP_Msn2)))
+(Set(v_NPC_NEXP_Msn2),Set(-137))
+(Set(!v_NPC_NEXP_Msn2, v_NPC_NIMP_Msn2),Set(137, -26))
+
+Some(Vector(Set(v_NPC_NIMP_Msn2)))
+Some(Vector(Set(!v_NPC_NIMP_Msn2, v_NPC_NEXP_Msn2)))
+(Set(v_NPC_NIMP_Msn2),Set(-26))
+(Set(!v_NPC_NIMP_Msn2, v_NPC_NEXP_Msn2),Set(26, -137))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_NPC, v_Gln3, v_Gln3__Nucleus_, v_Gln3__P_)))
+Some(Vector(Set(!v_Gln3__P_), Set(!v_Gln3__Nucleus_), Set(!v_Gln3), Set(!v_NPC)))
+(Set(v_NPC, v_Gln3, v_Gln3__Nucleus_, v_Gln3__P_),Set(-66, -117, -12, -61))
+(Set(!v_Gln3__P_),Set(61))
+(Set(!v_Gln3__Nucleus_),Set(12))
+(Set(!v_Gln3),Set(117))
+(Set(!v_NPC),Set(66))
+
+Some(Vector(Set(v_NPC, v_Hxk2, v_Hxk2__Nucleus_, v_Hxk2_S14__P_)))
+Some(Vector(Set(!v_Hxk2_S14__P_), Set(!v_Hxk2__Nucleus_), Set(!v_Hxk2), Set(!v_NPC)))
+(Set(v_NPC, v_Hxk2, v_Hxk2__Nucleus_, v_Hxk2_S14__P_),Set(-66, -134, -129, -5))
+(Set(!v_Hxk2_S14__P_),Set(5))
+(Set(!v_Hxk2__Nucleus_),Set(129))
+(Set(!v_Hxk2),Set(134))
+(Set(!v_NPC),Set(66))
+
+Some(Vector(Set(v_NPC, v_Mig1, v_Mig1__Nucleus_, v_Mig1__P_)))
+Some(Vector(Set(!v_Mig1__P_), Set(!v_Mig1__Nucleus_), Set(!v_Mig1), Set(!v_NPC)))
+(Set(v_NPC, v_Mig1, v_Mig1__Nucleus_, v_Mig1__P_),Set(-66, -70, -22, -108))
+(Set(!v_Mig1__P_),Set(108))
+(Set(!v_Mig1__Nucleus_),Set(22))
+(Set(!v_Mig1),Set(70))
+(Set(!v_NPC),Set(66))
+
+Some(Vector(Set(v_NPC, v_Msn2, v_Msn2__Nucleus_, v_Msn2_PKASite__P_)))
+Some(Vector(Set(!v_Msn2_PKASite__P_), Set(!v_Msn2__Nucleus_), Set(!v_Msn2), Set(!v_NPC)))
+(Set(v_NPC, v_Msn2, v_Msn2__Nucleus_, v_Msn2_PKASite__P_),Set(-66, -38, -32, -49))
+(Set(!v_Msn2_PKASite__P_),Set(49))
+(Set(!v_Msn2__Nucleus_),Set(32))
+(Set(!v_Msn2),Set(38))
+(Set(!v_NPC),Set(66))
+
+Some(Vector(Set(v_Snf1, !v_Gal83_ppi_Snf1, v_NPC, !v_Snf1_T210__P_, v_Snf1__Nucleus_)))
+Some(Vector(Set(v_Snf1_T210__P_), Set(!v_NPC), Set(!v_Snf1), Set(!v_Snf1__Nucleus_), Set(v_Gal83_ppi_Snf1)))
+(Set(v_Snf1, !v_Gal83_ppi_Snf1, v_NPC, !v_Snf1_T210__P_, v_Snf1__Nucleus_),Set(-66, 93, -143, 27, -56))
+(Set(v_Snf1_T210__P_),Set(-27))
+(Set(!v_NPC),Set(66))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Snf1__Nucleus_),Set(143))
+(Set(v_Gal83_ppi_Snf1),Set(-93))
+
+Some(Vector(Set(v_Gln3__Cytoplasm_, !v_Gln3_ppi_Ure2, v_Gln3, !v_Gln3__P_, v_NPC)))
+Some(Vector(Set(!v_Gln3__Cytoplasm_), Set(!v_NPC), Set(v_Gln3_ppi_Ure2), Set(v_Gln3__P_), Set(!v_Gln3)))
+(Set(v_Gln3__Cytoplasm_, !v_Gln3_ppi_Ure2, v_Gln3, !v_Gln3__P_, v_NPC),Set(-66, -98, 61, 43, -117))
+(Set(!v_Gln3__Cytoplasm_),Set(98))
+(Set(!v_NPC),Set(66))
+(Set(v_Gln3_ppi_Ure2),Set(-43))
+(Set(v_Gln3__P_),Set(-61))
+(Set(!v_Gln3),Set(117))
+
+Some(Vector(Set(v_NPC, v_Hxk2, v_Hxk2__Cytoplasm_, !v_Hxk2_S14__P_)))
+Some(Vector(Set(v_Hxk2_S14__P_), Set(!v_Hxk2__Cytoplasm_), Set(!v_Hxk2), Set(!v_NPC)))
+(Set(v_NPC, v_Hxk2, v_Hxk2__Cytoplasm_, !v_Hxk2_S14__P_),Set(-66, -134, -111, 5))
+(Set(v_Hxk2_S14__P_),Set(-5))
+(Set(!v_Hxk2__Cytoplasm_),Set(111))
+(Set(!v_Hxk2),Set(134))
+(Set(!v_NPC),Set(66))
+
+Some(Vector(Set(v_NPC, v_Mig1, v_Mig1__Cytoplasm_, !v_Mig1__P_)))
+Some(Vector(Set(v_Mig1__P_), Set(!v_Mig1__Cytoplasm_), Set(!v_Mig1), Set(!v_NPC)))
+(Set(v_NPC, v_Mig1, v_Mig1__Cytoplasm_, !v_Mig1__P_),Set(-66, -70, -60, 108))
+(Set(v_Mig1__P_),Set(-108))
+(Set(!v_Mig1__Cytoplasm_),Set(60))
+(Set(!v_Mig1),Set(70))
+(Set(!v_NPC),Set(66))
+
+Some(Vector(Set(v_NPC, v_Msn2, v_Msn2__Cytoplasm_, !v_Msn2_PKASite__P_)))
+Some(Vector(Set(v_Msn2_PKASite__P_), Set(!v_Msn2__Cytoplasm_), Set(!v_Msn2), Set(!v_NPC)))
+(Set(v_NPC, v_Msn2, v_Msn2__Cytoplasm_, !v_Msn2_PKASite__P_),Set(-66, -38, -52, 49))
+(Set(v_Msn2_PKASite__P_),Set(-49))
+(Set(!v_Msn2__Cytoplasm_),Set(52))
+(Set(!v_Msn2),Set(38))
+(Set(!v_NPC),Set(66))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, !v_NaCl, v_Snf1__Cytoplasm_, v_NPC)))
+Some(Vector(Set(!v_Snf1__Cytoplasm_), Set(v_NaCl), Set(!v_NPC), Set(!v_Gal83_ppi_Snf1), Set(!v_Snf1)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, !v_NaCl, v_Snf1__Cytoplasm_, v_NPC),Set(-66, -54, -93, 145, -56))
+(Set(!v_Snf1__Cytoplasm_),Set(54))
+(Set(v_NaCl),Set(-145))
+(Set(!v_NPC),Set(66))
+(Set(!v_Gal83_ppi_Snf1),Set(93))
+(Set(!v_Snf1),Set(56))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Snf1_P__Pfk27)))
+Some(Vector())
+(Set(v_Snf1_P__Pfk27),Set(-84))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Snf1_P__Psk1)))
+Some(Vector())
+(Set(v_Snf1_P__Psk1),Set(-135))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Snf1_P__Rds2)))
+Some(Vector())
+(Set(v_Snf1_P__Rds2),Set(-85))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Snf1_P__Reg1)))
+Some(Vector())
+(Set(v_Snf1_P__Reg1),Set(-50))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Rsp5_Ub__Rod1_UbSite)))
+Some(Vector(Set(!v_Rsp5_Ub__Rod1_UbSite, v_UnknownProtease_Ub__Rod1_UbSite)))
+(Set(v_Rsp5_Ub__Rod1_UbSite),Set(-44))
+(Set(!v_Rsp5_Ub__Rod1_UbSite, v_UnknownProtease_Ub__Rod1_UbSite),Set(44, -30))
+
+Some(Vector(Set(v_Snf1_P__Rod1)))
+Some(Vector(Set(!v_Snf1_P__Rod1, v_Glc7_P__Rod1)))
+(Set(v_Snf1_P__Rod1),Set(-107))
+(Set(!v_Snf1_P__Rod1, v_Glc7_P__Rod1),Set(107, -31))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Rsp5, v_Rod1, !v_Rod1__P_)))
+Some(Vector(Set(v_Rod1__P_), Set(!v_Rod1), Set(!v_Rsp5)))
+(Set(v_Rsp5, v_Rod1, !v_Rod1__P_),Set(-146, -17, 75))
+(Set(v_Rod1__P_),Set(-75))
+(Set(!v_Rod1),Set(17))
+(Set(!v_Rsp5),Set(146))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Sak1, v_Snf1, !v_Snf1__SUMO_, !v_UnknownRegulation)))
+Some(Vector(Set(v_UnknownRegulation), Set(v_Snf1__SUMO_), Set(!v_Snf1), Set(!v_Sak1)))
+(Set(v_Sak1, v_Snf1, !v_Snf1__SUMO_, !v_UnknownRegulation),Set(-68, -56, 123, 62))
+(Set(v_UnknownRegulation),Set(-62))
+(Set(v_Snf1__SUMO_),Set(-123))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Sak1),Set(68))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Snf1_P__Sip1_Snf1Site)))
+Some(Vector())
+(Set(v_Snf1_P__Sip1_Snf1Site),Set(-20))
+
+Some(Vector(Set(v_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Sip1)))
+Some(Vector(Set(!v_Snf1_ID_ppi_Snf4), Set(v_Sip2_ppi_Snf1), Set(!v_Snf1), Set(!v_Sip1), Set(v_Gal83_ppi_Snf1)))
+(Set(v_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Sip1),Set(93, -58, -48, 104, -56))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(v_Sip2_ppi_Snf1),Set(-104))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Sip1),Set(48))
+(Set(v_Gal83_ppi_Snf1),Set(-93))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Snf1_P__Sip2_Snf1Site)))
+Some(Vector())
+(Set(v_Snf1_P__Sip2_Snf1Site),Set(-65))
+
+Some(Vector(Set(v_Snf1, v_Sip2, !v_Gal83_ppi_Snf1, !v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4)))
+Some(Vector(Set(v_Sip1_ppi_Snf1), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Snf1), Set(!v_Sip2), Set(v_Gal83_ppi_Snf1)))
+(Set(v_Snf1, v_Sip2, !v_Gal83_ppi_Snf1, !v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4),Set(-81, 93, -58, 8, -56))
+(Set(v_Sip1_ppi_Snf1),Set(-8))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Sip2),Set(81))
+(Set(v_Gal83_ppi_Snf1),Set(-93))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Snf1_P__Sip4)))
+Some(Vector())
+(Set(v_Snf1_P__Sip4),Set(-77))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Slx5, v_Snf1, v_Snf1__SUMO_)))
+Some(Vector(Set(!v_Snf1__SUMO_), Set(!v_Snf1), Set(!v_Slx5)))
+(Set(v_Slx5, v_Snf1, v_Snf1__SUMO_),Set(-79, -56, -123))
+(Set(!v_Snf1__SUMO_),Set(123))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Slx5),Set(79))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Snf1, v_Snf4, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Snf1_T210__P_), Set(!v_Snf4), Set(!v_Snf1)))
+(Set(v_Snf1, v_Snf4, v_Snf1_T210__P_),Set(-56, -150, -27))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf4),Set(150))
+(Set(!v_Snf1),Set(56))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Acc1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Snf1, v_Sip2_ppi_Snf1, v_Acc1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Snf1, v_Sip1_ppi_Snf1, v_Acc1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1), Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Snf1), Set(!v_Acc1)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Acc1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -67, -58, -93, -56))
+(Set(v_Snf1, v_Sip2_ppi_Snf1, v_Acc1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -104, -67, -58, -56))
+(Set(v_Snf1, v_Sip1_ppi_Snf1, v_Acc1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -8, -67, -58, -56))
+(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1),Set(8, 93, 104))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Acc1),Set(67))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Cat8, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Snf1_T210__P_), Set(!v_Cat8), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Gal83_ppi_Snf1), Set(!v_Snf1), Set(!v_Snf1__Nucleus_)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Cat8, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_),Set(-27, -58, -143, -93, -33, -56))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Cat8),Set(33))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Gal83_ppi_Snf1),Set(93))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Snf1__Nucleus_),Set(143))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Gal83, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Snf1, v_Gal83, v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Snf1, v_Gal83, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1), Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Snf1), Set(!v_Gal83)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Gal83, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -58, -93, -56, -88))
+(Set(v_Snf1, v_Gal83, v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -104, -58, -56, -88))
+(Set(v_Snf1, v_Gal83, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -8, -58, -56, -88))
+(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1),Set(8, 93, 104))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Gal83),Set(88))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Gln3, v_Snf1, v_Gln3_ppi_Ure2, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Gln3, v_Snf1, v_Sip2_ppi_Snf1, v_Gln3_ppi_Ure2, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Gln3, v_Snf1, v_Gln3_ppi_Ure2, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1), Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Snf1), Set(!v_Gln3), Set(!v_Gln3_ppi_Ure2)))
+(Set(v_Gal83_ppi_Snf1, v_Gln3, v_Snf1, v_Gln3_ppi_Ure2, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -58, -43, -93, -117, -56))
+(Set(v_Gln3, v_Snf1, v_Sip2_ppi_Snf1, v_Gln3_ppi_Ure2, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -104, -58, -43, -117, -56))
+(Set(v_Gln3, v_Snf1, v_Gln3_ppi_Ure2, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -8, -58, -43, -117, -56))
+(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1),Set(8, 93, 104))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Gln3),Set(117))
+(Set(!v_Gln3_ppi_Ure2),Set(43))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Hcm1, v_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Hcm1), Set(!v_Gal83_ppi_Snf1), Set(!v_Snf1), Set(!v_Snf1__Nucleus_)))
+(Set(v_Gal83_ppi_Snf1, v_Hcm1, v_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_),Set(-27, -58, -143, -142, -93, -56))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Hcm1),Set(142))
+(Set(!v_Gal83_ppi_Snf1),Set(93))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Snf1__Nucleus_),Set(143))
+
+Some(Vector(Set(v_Histone3, v_Gal83_ppi_Snf1, v_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Gal83_ppi_Snf1), Set(!v_Snf1), Set(!v_Histone3), Set(!v_Snf1__Nucleus_)))
+(Set(v_Histone3, v_Gal83_ppi_Snf1, v_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_),Set(-27, -58, -143, -139, -93, -56))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Gal83_ppi_Snf1),Set(93))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Histone3),Set(139))
+(Set(!v_Snf1__Nucleus_),Set(143))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_, v_Hsf1)))
+Some(Vector(Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Hsf1), Set(!v_Gal83_ppi_Snf1), Set(!v_Snf1), Set(!v_Snf1__Nucleus_)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_, v_Hsf1),Set(-27, -58, -143, -93, -9, -56))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Hsf1),Set(9))
+(Set(!v_Gal83_ppi_Snf1),Set(93))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Snf1__Nucleus_),Set(143))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_, v_Hxk2), Set(v_Snf1, v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_, v_Hxk2), Set(v_Snf1, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_, v_Hxk2)))
+Some(Vector(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1), Set(!v_Snf1_T210__P_), Set(!v_Hxk2), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Snf1)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_, v_Hxk2),Set(-27, -58, -93, -56, -134))
+(Set(v_Snf1, v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_, v_Hxk2),Set(-27, -104, -58, -56, -134))
+(Set(v_Snf1, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_, v_Hxk2),Set(-27, -8, -58, -56, -134))
+(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1),Set(8, 93, 104))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Hxk2),Set(134))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Snf1),Set(56))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Mig1, !v_Hxk2_ppi_Mig1_S311, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_)))
+Some(Vector(Set(v_Hxk2_ppi_Mig1_S311), Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Gal83_ppi_Snf1), Set(!v_Snf1), Set(!v_Mig1), Set(!v_Snf1__Nucleus_)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Mig1, !v_Hxk2_ppi_Mig1_S311, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_),Set(-27, -58, -143, -93, 3, -70, -56))
+(Set(v_Hxk2_ppi_Mig1_S311),Set(-3))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Gal83_ppi_Snf1),Set(93))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Mig1),Set(70))
+(Set(!v_Snf1__Nucleus_),Set(143))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Msn2, v_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Gal83_ppi_Snf1), Set(!v_Snf1), Set(!v_Msn2), Set(!v_Snf1__Nucleus_)))
+(Set(v_Gal83_ppi_Snf1, v_Msn2, v_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_),Set(-27, -58, -143, -93, -38, -56))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Gal83_ppi_Snf1),Set(93))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Msn2),Set(38))
+(Set(!v_Snf1__Nucleus_),Set(143))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Pfk27, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Snf1, v_Sip2_ppi_Snf1, v_Pfk27, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Snf1, v_Pfk27, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1), Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Pfk27), Set(!v_Snf1)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Pfk27, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -58, -93, -56, -28))
+(Set(v_Snf1, v_Sip2_ppi_Snf1, v_Pfk27, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -104, -58, -56, -28))
+(Set(v_Snf1, v_Pfk27, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -8, -58, -56, -28))
+(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1),Set(8, 93, 104))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Pfk27),Set(28))
+(Set(!v_Snf1),Set(56))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Psk1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Snf1, v_Sip2_ppi_Snf1, v_Psk1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Snf1, v_Psk1, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1), Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Snf1), Set(!v_Psk1)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Psk1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -58, -93, -1, -56))
+(Set(v_Snf1, v_Sip2_ppi_Snf1, v_Psk1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -104, -58, -1, -56))
+(Set(v_Snf1, v_Psk1, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -8, -58, -1, -56))
+(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1),Set(8, 93, 104))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Psk1),Set(1))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Rds2, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Gal83_ppi_Snf1), Set(!v_Snf1), Set(!v_Rds2), Set(!v_Snf1__Nucleus_)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Rds2, v_Snf1_ID_ppi_Snf4, v_Snf1__Nucleus_, v_Snf1_T210__P_),Set(-27, -59, -58, -143, -93, -56))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Gal83_ppi_Snf1),Set(93))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Rds2),Set(59))
+(Set(!v_Snf1__Nucleus_),Set(143))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Reg1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Snf1, v_Reg1, v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Snf1, v_Reg1, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1), Set(!v_Snf1_T210__P_), Set(!v_Reg1), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Snf1)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Reg1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -58, -93, -21, -56))
+(Set(v_Snf1, v_Reg1, v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -104, -58, -21, -56))
+(Set(v_Snf1, v_Reg1, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -8, -58, -21, -56))
+(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1),Set(8, 93, 104))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Reg1),Set(21))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Snf1),Set(56))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Rod1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Snf1, v_Sip2_ppi_Snf1, v_Rod1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Snf1, v_Rod1, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1), Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Snf1), Set(!v_Rod1)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Rod1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -58, -93, -56, -17))
+(Set(v_Snf1, v_Sip2_ppi_Snf1, v_Rod1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -104, -58, -56, -17))
+(Set(v_Snf1, v_Rod1, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -8, -58, -56, -17))
+(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1),Set(8, 93, 104))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Rod1),Set(17))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Snf1_ID_ppi_Snf4, v_Sip1, v_Snf1_T210__P_), Set(v_Snf1, v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Sip1, v_Snf1_T210__P_), Set(v_Snf1, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Sip1, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1), Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Snf1), Set(!v_Sip1)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Snf1_ID_ppi_Snf4, v_Sip1, v_Snf1_T210__P_),Set(-27, -58, -93, -48, -56))
+(Set(v_Snf1, v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Sip1, v_Snf1_T210__P_),Set(-27, -104, -58, -48, -56))
+(Set(v_Snf1, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Sip1, v_Snf1_T210__P_),Set(-27, -8, -58, -48, -56))
+(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1),Set(8, 93, 104))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Sip1),Set(48))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Sip2, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Snf1, v_Sip2, v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_), Set(v_Snf1, v_Sip2, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1), Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Snf1), Set(!v_Sip2)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Sip2, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -81, -58, -93, -56))
+(Set(v_Snf1, v_Sip2, v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -81, -104, -58, -56))
+(Set(v_Snf1, v_Sip2, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_),Set(-27, -81, -8, -58, -56))
+(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1),Set(8, 93, 104))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Sip2),Set(81))
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Sip4, v_Snf1_ID_ppi_Snf4, v_Gal83_ppi_Sip4, v_Snf1__Nucleus_, v_Snf1_T210__P_)))
+Some(Vector(Set(!v_Gal83_ppi_Sip4), Set(!v_Snf1_T210__P_), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Gal83_ppi_Snf1), Set(!v_Snf1), Set(!v_Snf1__Nucleus_), Set(!v_Sip4)))
+(Set(v_Gal83_ppi_Snf1, v_Snf1, v_Sip4, v_Snf1_ID_ppi_Snf4, v_Gal83_ppi_Sip4, v_Snf1__Nucleus_, v_Snf1_T210__P_),Set(-27, -128, -58, -143, -93, -24, -56))
+(Set(!v_Gal83_ppi_Sip4),Set(24))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Gal83_ppi_Snf1),Set(93))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Snf1__Nucleus_),Set(143))
+(Set(!v_Sip4),Set(128))
+
+Some(Vector(Set(v_Tos3_P__Snf1_T210), Set(v_Sak1_PD_P__Snf1_T210), Set(v_Elm1_P__Snf1_T210)))
+Some(Vector(Set(v_Glc7_P__Snf1_T210, !v_Sak1_PD_P__Snf1_T210, !v_Tos3_P__Snf1_T210, !v_Elm1_P__Snf1_T210)))
+(Set(v_Tos3_P__Snf1_T210),Set(-15))
+(Set(v_Sak1_PD_P__Snf1_T210),Set(-76))
+(Set(v_Elm1_P__Snf1_T210),Set(-126))
+(Set(v_Glc7_P__Snf1_T210, !v_Sak1_PD_P__Snf1_T210, !v_Tos3_P__Snf1_T210, !v_Elm1_P__Snf1_T210),Set(-10, 76, 126, 15))
+
+Some(Vector(Set(v_Slx5_Ub__Snf1_UbSite)))
+Some(Vector(Set(!v_Slx5_Ub__Snf1_UbSite, v_Ubp8_Ub__Snf1_UbSite)))
+(Set(v_Slx5_Ub__Snf1_UbSite),Set(-138))
+(Set(!v_Slx5_Ub__Snf1_UbSite, v_Ubp8_Ub__Snf1_UbSite),Set(138, -121))
+
+Some(Vector(Set(v_NPC_NEXP_Snf1)))
+Some(Vector(Set(!v_NPC_NEXP_Snf1, v_NPC_NIMP_Snf1)))
+(Set(v_NPC_NEXP_Snf1),Set(-101))
+(Set(!v_NPC_NEXP_Snf1, v_NPC_NIMP_Snf1),Set(101, -82))
+
+Some(Vector(Set(v_NPC_NIMP_Snf1)))
+Some(Vector(Set(!v_NPC_NIMP_Snf1, v_NPC_NEXP_Snf1)))
+(Set(v_NPC_NIMP_Snf1),Set(-82))
+(Set(!v_NPC_NIMP_Snf1, v_NPC_NEXP_Snf1),Set(82, -101))
+
+Some(Vector(Set(v_Mms21_SUM__Snf1)))
+Some(Vector(Set(!v_Mms21_SUM__Snf1, v_Ulp1_SUM__Snf1)))
+(Set(v_Mms21_SUM__Snf1),Set(-51))
+(Set(!v_Mms21_SUM__Snf1, v_Ulp1_SUM__Snf1),Set(51, -125))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Gal83_ppi_Snf1, v_Tda1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_, v_Hxk2), Set(v_Tda1, v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_, v_Hxk2), Set(v_Tda1, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_, v_Hxk2)))
+Some(Vector(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1), Set(!v_Snf1_T210__P_), Set(!v_Hxk2), Set(!v_Snf1_ID_ppi_Snf4), Set(!v_Tda1)))
+(Set(v_Gal83_ppi_Snf1, v_Tda1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_, v_Hxk2),Set(-27, -96, -58, -93, -134))
+(Set(v_Tda1, v_Sip2_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_, v_Hxk2),Set(-27, -96, -104, -58, -134))
+(Set(v_Tda1, v_Sip1_ppi_Snf1, v_Snf1_ID_ppi_Snf4, v_Snf1_T210__P_, v_Hxk2),Set(-27, -96, -8, -58, -134))
+(Set(!v_Sip1_ppi_Snf1, !v_Gal83_ppi_Snf1, !v_Sip2_ppi_Snf1),Set(8, 93, 104))
+(Set(!v_Snf1_T210__P_),Set(27))
+(Set(!v_Hxk2),Set(134))
+(Set(!v_Snf1_ID_ppi_Snf4),Set(58))
+(Set(!v_Tda1),Set(96))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Tos3, v_Snf1, !v_Snf1__SUMO_, !v_UnknownRegulation)))
+Some(Vector(Set(v_UnknownRegulation), Set(v_Snf1__SUMO_), Set(!v_Snf1), Set(!v_Tos3)))
+(Set(v_Tos3, v_Snf1, !v_Snf1__SUMO_, !v_UnknownRegulation),Set(-90, -56, 123, 62))
+(Set(v_UnknownRegulation),Set(-62))
+(Set(v_Snf1__SUMO_),Set(-123))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Tos3),Set(90))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Tpk, v_Msn2, v_UnknownRegulation)))
+Some(Vector(Set(!v_UnknownRegulation), Set(!v_Msn2), Set(!v_Tpk)))
+(Set(v_Tpk, v_Msn2, v_UnknownRegulation),Set(-87, -38, -62))
+(Set(!v_UnknownRegulation),Set(62))
+(Set(!v_Msn2),Set(38))
+(Set(!v_Tpk),Set(87))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Ubp8, v_Snf1, v_Snf1_UbSite__Ub_)))
+Some(Vector(Set(!v_Snf1_UbSite__Ub_), Set(!v_Snf1), Set(!v_Ubp8)))
+(Set(v_Ubp8, v_Snf1, v_Snf1_UbSite__Ub_),Set(-116, -56, -46))
+(Set(!v_Snf1_UbSite__Ub_),Set(46))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Ubp8),Set(116))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Ulp1, v_Snf1, v_Snf1__SUMO_)))
+Some(Vector(Set(!v_Snf1__SUMO_), Set(!v_Snf1), Set(!v_Ulp1)))
+(Set(v_Ulp1, v_Snf1, v_Snf1__SUMO_),Set(-99, -56, -123))
+(Set(!v_Snf1__SUMO_),Set(123))
+(Set(!v_Snf1),Set(56))
+(Set(!v_Ulp1),Set(99))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_UnknownProtease, v_Rod1, v_Rod1_UbSite__Ub_)))
+Some(Vector(Set(!v_Rod1_UbSite__Ub_), Set(!v_Rod1), Set(!v_UnknownProtease)))
+(Set(v_UnknownProtease, v_Rod1, v_Rod1_UbSite__Ub_),Set(-152, -17, -133))
+(Set(!v_Rod1_UbSite__Ub_),Set(133))
+(Set(!v_Rod1),Set(17))
+(Set(!v_UnknownProtease),Set(152))
+
+Some(Vector(Set(v_Glucose__Cytoplasm_, !v_alkalinepH, !v_NaCl, !v_NitrogenStress)))
+Some(Vector(Set(v_NitrogenStress), Set(v_NaCl), Set(v_alkalinepH), Set(!v_Glucose__Cytoplasm_)))
+(Set(v_Glucose__Cytoplasm_, !v_alkalinepH, !v_NaCl, !v_NitrogenStress),Set(-105, 18, 145, 86))
+(Set(v_NitrogenStress),Set(-86))
+(Set(v_NaCl),Set(-145))
+(Set(v_alkalinepH),Set(-18))
+(Set(!v_Glucose__Cytoplasm_),Set(105))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+Map(v_Psk1 -> 1, v_Sip1_Snf1Site__P_ -> 2, v_Hxk2_ppi_Mig1_S311 -> 3, v_Snf1_P__Cat8_S562 -> 4, v_Hxk2_S14__P_ -> 5, v_Hsf1__P_ -> 6, v_Gcn5_Ace__Histone3 -> 7, v_Sip1_ppi_Snf1 -> 8, v_Hsf1 -> 9, v_Glc7_P__Snf1_T210 -> 10, v_Nrg1Site -> 11, v_Gln3__Nucleus_ -> 12, v_Std1 -> 13, v_Histone3__P_ -> 14, v_Tos3_P__Snf1_T210 -> 15, v_Hxt -> 16, v_Rod1 -> 17, v_alkalinepH -> 18, v_Elm1 -> 19, v_Snf1_P__Sip1_Snf1Site -> 20, v_Reg1 -> 21, v_Mig1__Nucleus_ -> 22, v_Nrg2Site -> 23, v_Gal83_ppi_Sip4 -> 24, v_Acc1__P_ -> 25, v_NPC_NIMP_Msn2 -> 26, v_Snf1_T210__P_ -> 27, v_Pfk27 -> 28, v_Mms21 -> 29, v_UnknownProtease_Ub__Rod1_UbSite -> 30, v_Glc7_P__Rod1 -> 31, v_Msn2__Nucleus_ -> 32, v_Cat8 -> 33, v_GATASite -> 34, v_Sip3 -> 35, v_Snf1_P__Gln3 -> 36, v_CSRE -> 37, v_Msn2 -> 38, v_Glucose__Extracellular_ -> 39, v_NPC_NEXP_Gln3 -> 40, v_Pfk27__P_ -> 41, v_Hxk2__P_ -> 42, v_Gln3_ppi_Ure2 -> 43, v_Rsp5_Ub__Rod1_UbSite -> 44, v_CKII -> 45, v_Snf1_UbSite__Ub_ -> 46, v_Glc7_P__Msn2_PKASite -> 47, v_Sip1 -> 48, v_Msn2_PKASite__P_ -> 49, v_Snf1_P__Reg1 -> 50, v_Mms21_SUM__Snf1 -> 51, v_Msn2__Cytoplasm_ -> 52, v_Gcn5 -> 53, v_Snf1__Cytoplasm_ -> 54, v_Glc7_ppi_Reg2 -> 55, v_Snf1 -> 56, v_NPC_NIMP_Mig1 -> 57, v_Snf1_ID_ppi_Snf4 -> 58, v_Rds2 -> 59, v_Mig1__Cytoplasm_ -> 60, v_Gln3__P_ -> 61, v_UnknownRegulation -> 62, v_Glucose__P_ -> 63, v_Sip2_Snf1Site__P_ -> 64, v_Snf1_P__Sip2_Snf1Site -> 65, v_NPC -> 66, v_Acc1 -> 67, v_Sak1 -> 68, v_Msn2_S582__P_ -> 69, v_Mig1 -> 70, v_Shp1 -> 71, v_Snf1_P__Acc1 -> 72, v_Glc7_ppi_Reg1 -> 73, v_Snf1_P__Hxk2_S14 -> 74, v_Rod1__P_ -> 75, v_Sak1_PD_P__Snf1_T210 -> 76, v_Snf1_P__Sip4 -> 77, v_NPC_NIMP_Hxk2 -> 78, v_Slx5 -> 79, v_Nrg1 -> 80, v_Sip2 -> 81, v_NPC_NIMP_Snf1 -> 82, v_Cyc8 -> 83, v_Snf1_P__Pfk27 -> 84, v_Snf1_P__Rds2 -> 85, v_NitrogenStress -> 86, v_Tpk -> 87, v_Gal83 -> 88, v_Glc7_P__Hxk2 -> 89, v_Tos3 -> 90, v_Hxt_FDExtCyt_Glucose -> 91, v_Snf1_P__Hsf1 -> 92, v_Gal83_ppi_Snf1 -> 93, v_Mig1Site -> 94, v_STRE -> 95, v_Tda1 -> 96, v_Psk1__P_ -> 97, v_Gln3__Cytoplasm_ -> 98, v_Ulp1 -> 99, v_NPC_NEXP_Hxk2 -> 100, v_NPC_NEXP_Snf1 -> 101, v_Glc7 -> 102, v_Glc7_ppi_Shp1 -> 103, v_Sip2_ppi_Snf1 -> 104, v_Glucose__Cytoplasm_ -> 105, v_CKII_P__Gal83_CKIISite -> 106, v_Snf1_P__Rod1 -> 107, v_Mig1__P_ -> 108, v_Rds2Site -> 109, v_Rds2__P_ -> 110, v_Hxk2__Cytoplasm_ -> 111, v_Sip4__P_ -> 112, v_NPC_NEXP_Mig1 -> 113, v_Hxk2_P__Glucose -> 114, v_Snf1_P__Gal83_Snf1Site -> 115, v_Ubp8 -> 116, v_Gln3 -> 117, v_Nrg2 -> 118, v_Gal83_Snf1Site__P_ -> 119, v_NPC_NIMP_Gln3 -> 120, v_Ubp8_Ub__Snf1_UbSite -> 121, v_Gcn5_ppi_Snf1 -> 122, v_Snf1__SUMO_ -> 123, v_Snf1_P__Hcm1 -> 124, v_Ulp1_SUM__Snf1 -> 125, v_Elm1_P__Snf1_T210 -> 126, v_Ure2 -> 127, v_Sip4 -> 128, v_Hxk2__Nucleus_ -> 129, v_Reg2 -> 130, v_Gal83_CKIISite__P_ -> 131, v_Histone3__Ace_ -> 132, v_Rod1_UbSite__Ub_ -> 133, v_Hxk2 -> 134, v_Snf1_P__Psk1 -> 135, v_Cat8_S562__P_ -> 136, v_NPC_NEXP_Msn2 -> 137, v_Slx5_Ub__Snf1_UbSite -> 138, v_Histone3 -> 139, v_Glucose -> 140, v_Tda1_P__Hxk2_S14 -> 141, v_Hcm1 -> 142, v_Snf1__Nucleus_ -> 143, v_Reg1__P_ -> 144, v_NaCl -> 145, v_Rsp5 -> 146, v_Tpk_P__Msn2_PKASite -> 147, v_Ctk1 -> 148, v_Snf1_P__Mig1 -> 149, v_Snf4 -> 150, v_Hcm1__P_ -> 151, v_UnknownProtease -> 152, v_Snf1_P__Histone3 -> 153, v_Snf1_P__Msn2_S582 -> 154)
+p cnf 154 409
+-72 25 0
+-27 106 -58 -93 -45 -88 0
+-27 106 -104 -58 -45 -88 0
+-27 -8 106 -58 -45 -88 0
+8 93 104 -106 0
+27 -106 0
+58 -106 0
+45 -106 0
+88 -106 0
+-4 136 0
+-19 123 126 -56 62 0
+-62 -126 0
+-123 -126 0
+56 -126 0
+19 -126 0
+-106 131 0
+-115 119 0
+-27 -128 24 -58 -143 -93 -88 0
+27 -24 0
+58 -24 0
+93 -24 0
+88 -24 0
+143 -24 0
+128 -24 0
+93 -58 104 8 -56 -88 0
+-8 -93 0
+58 -93 0
+-104 -93 0
+56 -93 0
+88 -93 0
+-53 -139 -122 7 0
+122 -7 0
+139 -7 0
+53 -7 0
+-27 -58 -143 -93 -53 -56 122 0
+27 -122 0
+58 -122 0
+53 -122 0
+93 -122 0
+56 -122 0
+143 -122 0
+-103 89 -42 -102 -134 0
+103 -89 0
+42 -89 0
+134 -89 0
+102 -89 0
+-49 -55 -38 -102 47 0
+-49 -38 -102 47 -73 0
+55 73 -47 0
+49 -47 0
+38 -47 0
+102 -47 0
+-75 -55 31 -102 -17 0
+-75 31 -102 -17 -73 0
+55 73 -31 0
+75 -31 0
+17 -31 0
+102 -31 0
+-27 10 -103 -55 86 145 18 -102 -56 0
+-27 10 -103 86 145 18 -102 -56 -73 0
+55 73 -10 0
+103 -10 0
+27 -10 0
+-86 -10 0
+102 -10 0
+-18 -10 0
+-145 -10 0
+56 -10 0
+-102 -21 55 73 0
+-55 -73 0
+21 -73 0
+102 -73 0
+-102 -130 73 55 0
+-73 -55 0
+130 -55 0
+102 -55 0
+-102 -71 103 0
+71 -103 0
+102 -103 0
+-40 98 0
+40 -120 -98 0
+-120 12 0
+120 -40 -12 0
+-36 61 0
+-117 -127 86 43 0
+-86 -43 0
+127 -43 0
+117 -43 0
+-91 105 0
+-91 -39 0
+-114 63 0
+-124 151 0
+-7 132 0
+-153 14 0
+-92 6 0
+-134 -140 -105 114 0
+105 -114 0
+140 -114 0
+134 -114 0
+-141 5 0
+-74 5 0
+-100 111 0
+100 -78 -111 0
+-78 129 0
+78 -100 -129 0
+-89 -42 0
+-22 3 -70 -129 -134 0
+22 -3 0
+129 -3 0
+70 -3 0
+134 -3 0
+-16 -140 -39 91 0
+39 -91 0
+140 -91 0
+16 -91 0
+-113 60 0
+113 -57 -60 0
+-57 22 0
+57 -113 -22 0
+-149 108 0
+-29 -56 -62 51 0
+62 -51 0
+56 -51 0
+29 -51 0
+-147 49 0
+147 -47 -49 0
+-154 69 0
+-137 52 0
+137 -26 -52 0
+-26 32 0
+26 -137 -32 0
+-66 -12 -61 -117 40 0
+61 -40 0
+12 -40 0
+117 -40 0
+66 -40 0
+-66 -5 -129 -134 100 0
+5 -100 0
+129 -100 0
+134 -100 0
+66 -100 0
+-66 -22 -108 113 -70 0
+108 -113 0
+22 -113 0
+70 -113 0
+66 -113 0
+-32 -66 -49 137 -38 0
+49 -137 0
+32 -137 0
+38 -137 0
+66 -137 0
+101 -66 93 -143 27 -56 0
+-27 -101 0
+66 -101 0
+56 -101 0
+143 -101 0
+-93 -101 0
+-66 -98 120 61 43 -117 0
+98 -120 0
+66 -120 0
+-43 -120 0
+-61 -120 0
+117 -120 0
+-66 5 78 -111 -134 0
+-5 -78 0
+111 -78 0
+134 -78 0
+66 -78 0
+-66 57 108 -70 -60 0
+-108 -57 0
+60 -57 0
+70 -57 0
+66 -57 0
+-66 49 -52 -38 26 0
+-49 -26 0
+52 -26 0
+38 -26 0
+66 -26 0
+-66 -54 -93 145 82 -56 0
+54 -82 0
+-145 -82 0
+66 -82 0
+93 -82 0
+56 -82 0
+-84 41 0
+-135 97 0
+-85 110 0
+-50 144 0
+-44 133 0
+44 -30 -133 0
+-107 75 0
+107 -31 -75 0
+-146 -17 75 44 0
+-75 -44 0
+17 -44 0
+146 -44 0
+-68 76 123 -56 62 0
+-62 -76 0
+-123 -76 0
+56 -76 0
+68 -76 0
+-20 2 0
+93 -58 -48 104 8 -56 0
+58 -8 0
+-104 -8 0
+56 -8 0
+48 -8 0
+-93 -8 0
+-65 64 0
+-81 93 -58 104 8 -56 0
+-8 -104 0
+58 -104 0
+56 -104 0
+81 -104 0
+-93 -104 0
+-77 112 0
+-79 -56 -123 138 0
+123 -138 0
+56 -138 0
+79 -138 0
+-56 -150 -27 58 0
+27 -58 0
+150 -58 0
+56 -58 0
+-27 -67 -58 -93 72 -56 0
+-27 -104 -67 -58 72 -56 0
+-27 -8 -67 -58 72 -56 0
+8 93 104 -72 0
+27 -72 0
+58 -72 0
+56 -72 0
+67 -72 0
+-27 -58 -143 -93 -33 4 -56 0
+27 -4 0
+33 -4 0
+58 -4 0
+93 -4 0
+56 -4 0
+143 -4 0
+115 -27 -58 -93 -56 -88 0
+115 -27 -104 -58 -56 -88 0
+115 -27 -8 -58 -56 -88 0
+8 93 104 -115 0
+27 -115 0
+58 -115 0
+56 -115 0
+88 -115 0
+-27 -58 -43 -93 -117 36 -56 0
+-27 -104 -58 -43 -117 36 -56 0
+-27 -8 -58 -43 -117 36 -56 0
+8 93 104 -36 0
+27 -36 0
+58 -36 0
+56 -36 0
+117 -36 0
+43 -36 0
+-27 -58 -143 124 -142 -93 -56 0
+27 -124 0
+58 -124 0
+142 -124 0
+93 -124 0
+56 -124 0
+143 -124 0
+-27 153 -58 -143 -139 -93 -56 0
+27 -153 0
+58 -153 0
+93 -153 0
+56 -153 0
+139 -153 0
+143 -153 0
+-27 -58 -143 92 -93 -9 -56 0
+27 -92 0
+58 -92 0
+9 -92 0
+93 -92 0
+56 -92 0
+143 -92 0
+-27 74 -58 -93 -56 -134 0
+-27 -104 74 -58 -56 -134 0
+-27 -8 74 -58 -56 -134 0
+8 93 104 -74 0
+27 -74 0
+134 -74 0
+58 -74 0
+56 -74 0
+-27 -58 -143 149 -93 3 -70 -56 0
+-3 -149 0
+27 -149 0
+58 -149 0
+93 -149 0
+56 -149 0
+70 -149 0
+143 -149 0
+-27 -58 -143 -93 154 -38 -56 0
+27 -154 0
+58 -154 0
+93 -154 0
+56 -154 0
+38 -154 0
+143 -154 0
+-27 84 -58 -93 -56 -28 0
+-27 84 -104 -58 -56 -28 0
+-27 -8 84 -58 -56 -28 0
+8 93 104 -84 0
+27 -84 0
+58 -84 0
+28 -84 0
+56 -84 0
+-27 -58 -93 135 -1 -56 0
+-27 -104 -58 135 -1 -56 0
+-27 -8 -58 135 -1 -56 0
+8 93 104 -135 0
+27 -135 0
+58 -135 0
+56 -135 0
+1 -135 0
+-27 -59 -58 85 -143 -93 -56 0
+27 -85 0
+58 -85 0
+93 -85 0
+56 -85 0
+59 -85 0
+143 -85 0
+-27 -58 -93 50 -21 -56 0
+-27 -104 -58 50 -21 -56 0
+-27 -8 -58 50 -21 -56 0
+8 93 104 -50 0
+27 -50 0
+21 -50 0
+58 -50 0
+56 -50 0
+-27 -58 -93 107 -56 -17 0
+-27 -104 -58 107 -56 -17 0
+-27 -8 -58 107 -56 -17 0
+8 93 104 -107 0
+27 -107 0
+58 -107 0
+56 -107 0
+17 -107 0
+-27 20 -58 -93 -48 -56 0
+-27 20 -104 -58 -48 -56 0
+-27 -8 20 -58 -48 -56 0
+8 93 104 -20 0
+27 -20 0
+58 -20 0
+56 -20 0
+48 -20 0
+-27 -81 -58 65 -93 -56 0
+-27 -81 -104 -58 65 -56 0
+-27 -81 -8 -58 65 -56 0
+8 93 104 -65 0
+27 -65 0
+58 -65 0
+56 -65 0
+81 -65 0
+-27 -128 -58 -143 77 -93 -24 -56 0
+24 -77 0
+27 -77 0
+58 -77 0
+93 -77 0
+56 -77 0
+143 -77 0
+128 -77 0
+-15 27 0
+-76 27 0
+-126 27 0
+-27 -10 76 126 15 0
+-138 46 0
+138 -121 -46 0
+-101 54 0
+101 -82 -54 0
+-82 143 0
+82 -101 -143 0
+-51 123 0
+51 -125 -123 0
+-27 -96 -58 141 -93 -134 0
+-27 -96 -104 -58 141 -134 0
+-27 -96 -8 -58 141 -134 0
+8 93 104 -141 0
+27 -141 0
+134 -141 0
+58 -141 0
+96 -141 0
+-90 123 -56 15 62 0
+-62 -15 0
+-123 -15 0
+56 -15 0
+90 -15 0
+-87 -38 -62 147 0
+62 -147 0
+38 -147 0
+87 -147 0
+-116 -56 -46 121 0
+46 -121 0
+56 -121 0
+116 -121 0
+-99 -56 -123 125 0
+123 -125 0
+56 -125 0
+99 -125 0
+-152 -17 -133 30 0
+133 -30 0
+17 -30 0
+152 -30 0
+86 145 18 62 -105 0
+-86 -62 0
+-145 -62 0
+-18 -62 0
+105 -62 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.zkqBNJw4zI.cnf'
+c opening file to read '/tmp/tmp.zkqBNJw4zI.cnf'
+c found 'p cnf 154 409' header
+c parsed 409 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  409 141 92%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  409 141 92%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  409 141 92%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 -36 -37 -38 -39 -40
+v -41 -42 -43 -44 -45 -46 -47 -48 -49 -50 -51 -52 -53 -54 -55 -56 -57 -58 -59
+v -60 -61 -62 -63 -64 -65 -66 -67 -68 -69 -70 -71 -72 -73 -74 -75 -76 -77 -78
+v -79 -80 -81 -82 -83 -84 -85 -86 -87 -88 -89 -90 -91 -92 -93 -94 -95 -96 -97
+v -98 -99 -100 -101 -102 -103 -104 -105 -106 -107 -108 -109 -110 -111 -112
+v -113 -114 -115 -116 -117 -118 -119 -120 -121 -122 -123 -124 -125 -126 -127
+v -128 -129 -130 -131 -132 -133 -134 -135 -136 -137 -138 -139 -140 -141 -142
+v -143 -144 -145 -146 -147 -148 -149 -150 -151 -152 -153 -154 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00  202.22% parse
+c         0.00   37.03% search
+c         0.00   36.39% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   19.95% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.25    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=205
++ wait 205
++ bdd_minisat_all_release /tmp/tmp.zkqBNJw4zI.cnf
+/app/solve.sh: line 76:   205 Killed                  $4 "$cnf_tmp"
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_144.bnet"
+	User time (seconds): 1870.39
+	System time (seconds): 7.80
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 31:17.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5102080
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1320118
+	Voluntary context switches: 3336
+	Involuntary context switches: 3002
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1802.1s

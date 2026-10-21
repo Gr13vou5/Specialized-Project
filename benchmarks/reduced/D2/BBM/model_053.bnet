@@ -1,0 +1,11 @@
+targets, factors
+v_Bmp2, (v_exogen_BMP2_I & !v_exogen_CanWnt_I)
+v_Dkk1, ((v_exogen_CanWnt_I & !v_exogen_BMP2_I) | v_Mesp1_)
+v_Fgf8, (v_exogen_CanWnt_I & !v_Mesp1_)
+v_GATAs, (v_Mesp1_ | v_Nkx2_5_ | v_Tbx5)
+v_Isl1, (v_Mesp1_ | v_exogen_CanWnt_I | v_Fgf8)
+v_Mesp1_, (v_exogen_CanWnt_I & !v_exogen_BMP2_I)
+v_Nkx2_5_, (v_Tbx5 | (v_GATAs & v_Bmp2) | (v_Isl1 & v_GATAs) | v_exogen_CanWnt_I | (v_Mesp1_ & v_Dkk1))
+v_Tbx5, ((v_Tbx5 & !(v_exogen_CanWnt_I | (v_Dkk1 & !v_Tbx5 & !v_Mesp1_))) | (v_Mesp1_ & !(v_exogen_CanWnt_I | (v_Dkk1 & !v_Tbx5 & !v_Mesp1_))) | (v_Nkx2_5_ & !(v_exogen_CanWnt_I | (v_Dkk1 & !v_Tbx5 & !v_Mesp1_))))
+v_exogen_BMP2_I, v_exogen_BMP2_I
+v_exogen_CanWnt_I, v_exogen_CanWnt_I

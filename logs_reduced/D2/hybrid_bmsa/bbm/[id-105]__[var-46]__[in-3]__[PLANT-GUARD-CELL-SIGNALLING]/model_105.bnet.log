@@ -1,0 +1,490 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:09:54 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_105.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-174 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_105.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_105.bnet --cnf /tmp/tmp.3PeuDJKMA2.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_105.bnet, cnfFileName = /tmp/tmp.3PeuDJKMA2.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_ROP11_GEF1_4_10, !v_RBOH_RCN1_b__ROS_a, !v_PA_DAGK_PC, v_pHc), Set(!v_ABA, !v_RBOH_RCN1_b__ROS_a, !v_PA_DAGK_PC, v_pHc)))
+Some(Vector(Set(!v_pHc), Set(v_RBOH_RCN1_b__ROS_a), Set(v_ABA, !v_ROP11_GEF1_4_10), Set(v_PA_DAGK_PC)))
+(Set(v_ROP11_GEF1_4_10, !v_RBOH_RCN1_b__ROS_a, !v_PA_DAGK_PC, v_pHc),Set(-12, 24, 29, -30))
+(Set(!v_ABA, !v_RBOH_RCN1_b__ROS_a, !v_PA_DAGK_PC, v_pHc),Set(8, 24, 29, -30))
+(Set(!v_pHc),Set(30))
+(Set(v_RBOH_RCN1_b__ROS_a),Set(-24))
+(Set(v_ABA, !v_ROP11_GEF1_4_10),Set(-8, 12))
+(Set(v_PA_DAGK_PC),Set(-29))
+
+Some(Vector(Set(v_ROP11_GEF1_4_10, !v_RBOH_RCN1_b__ROS_a), Set(!v_ABA, !v_RBOH_RCN1_b__ROS_a)))
+Some(Vector(Set(v_RBOH_RCN1_b__ROS_a), Set(v_ABA, !v_ROP11_GEF1_4_10)))
+(Set(v_ROP11_GEF1_4_10, !v_RBOH_RCN1_b__ROS_a),Set(-12, 24))
+(Set(!v_ABA, !v_RBOH_RCN1_b__ROS_a),Set(8, 24))
+(Set(v_RBOH_RCN1_b__ROS_a),Set(-24))
+(Set(v_ABA, !v_ROP11_GEF1_4_10),Set(-8, 12))
+
+Some(Vector(Set(v_QUAC1, v_SLAH3), Set(v_SLAC1)))
+Some(Vector(Set(!v_SLAC1, !v_SLAH3), Set(!v_SLAC1, !v_QUAC1)))
+(Set(v_QUAC1, v_SLAH3),Set(-22, -26))
+(Set(v_SLAC1),Set(-7))
+(Set(!v_SLAC1, !v_SLAH3),Set(7, 26))
+(Set(!v_SLAC1, !v_QUAC1),Set(7, 22))
+
+Some(Vector(Set(v_ABI1), Set(!v_ABA)))
+Some(Vector(Set(v_ABA, !v_ABI1)))
+(Set(v_ABI1),Set(-16))
+(Set(!v_ABA),Set(8))
+(Set(v_ABA, !v_ABI1),Set(-8, 16))
+
+Some(Vector(Set(v_RBOH_RCN1_b__ROS_a), Set(v_Ca2_)))
+Some(Vector(Set(!v_Ca2_, !v_RBOH_RCN1_b__ROS_a)))
+(Set(v_RBOH_RCN1_b__ROS_a),Set(-24))
+(Set(v_Ca2_),Set(-14))
+(Set(!v_Ca2_, !v_RBOH_RCN1_b__ROS_a),Set(14, 24))
+
+Some(Vector(Set(v_Ca2_)))
+Some(Vector())
+(Set(v_Ca2_),Set(-14))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_CaIM__ABH1__ERA1_MRP5_NtSyp121), Set(v_CIS)))
+Some(Vector(Set(v_Ca2_)))
+(Set(v_CaIM__ABH1__ERA1_MRP5_NtSyp121),Set(-5))
+(Set(v_CIS),Set(-15))
+(Set(v_Ca2_),Set(-14))
+
+Some(Vector(Set(v_GHR1), Set(!v_AtRAC1)))
+Some(Vector(Set(v_AtRAC1, !v_GHR1)))
+(Set(v_GHR1),Set(-1))
+(Set(!v_AtRAC1),Set(31))
+(Set(v_AtRAC1, !v_GHR1),Set(-31, 1))
+
+Some(Vector(Set(!v_K__efflux, v_KEV), Set(!v_K__efflux, v_Ca2_), Set(!v_H__ATPase, v_KEV), Set(!v_H__ATPase, v_Ca2_), Set(!v_K__efflux, v_AnionEM), Set(!v_H__ATPase, v_AnionEM)))
+Some(Vector(Set(v_H__ATPase, v_K__efflux), Set(!v_Ca2_, !v_AnionEM, !v_KEV)))
+(Set(!v_K__efflux, v_KEV),Set(10, -19))
+(Set(!v_K__efflux, v_Ca2_),Set(10, -14))
+(Set(!v_H__ATPase, v_KEV),Set(2, -19))
+(Set(!v_H__ATPase, v_Ca2_),Set(2, -14))
+(Set(!v_K__efflux, v_AnionEM),Set(10, -18))
+(Set(!v_H__ATPase, v_AnionEM),Set(2, -18))
+(Set(v_H__ATPase, v_K__efflux),Set(-2, -10))
+(Set(!v_Ca2_, !v_AnionEM, !v_KEV),Set(14, 18, 19))
+
+Some(Vector(Set(!v_ABI2, v_RBOH_RCN1_b__ROS_a)))
+Some(Vector(Set(!v_RBOH_RCN1_b__ROS_a), Set(v_ABI2)))
+(Set(!v_ABI2, v_RBOH_RCN1_b__ROS_a),Set(4, -24))
+(Set(!v_RBOH_RCN1_b__ROS_a),Set(24))
+(Set(v_ABI2),Set(-4))
+
+Some(Vector(Set(!v_ABA, !v_RBOH_RCN1_b__ROS_a)))
+Some(Vector(Set(v_RBOH_RCN1_b__ROS_a), Set(v_ABA)))
+(Set(!v_ABA, !v_RBOH_RCN1_b__ROS_a),Set(8, 24))
+(Set(v_RBOH_RCN1_b__ROS_a),Set(-24))
+(Set(v_ABA),Set(-8))
+
+Some(Vector(Set(!v_pHc, !v_Ca2_, !v_RBOH_RCN1_b__ROS_a)))
+Some(Vector(Set(v_RBOH_RCN1_b__ROS_a), Set(v_Ca2_), Set(v_pHc)))
+(Set(!v_pHc, !v_Ca2_, !v_RBOH_RCN1_b__ROS_a),Set(30, 14, 24))
+(Set(v_RBOH_RCN1_b__ROS_a),Set(-24))
+(Set(v_Ca2_),Set(-14))
+(Set(v_pHc),Set(-30))
+
+Some(Vector(Set(v_Ca2_), Set(v_Vacuolar_Acidification)))
+Some(Vector(Set(!v_Vacuolar_Acidification, !v_Ca2_)))
+(Set(v_Ca2_),Set(-14))
+(Set(v_Vacuolar_Acidification),Set(-11))
+(Set(!v_Vacuolar_Acidification, !v_Ca2_),Set(11, 14))
+
+Some(Vector(Set(v_pHc, v_Depolarization), Set(!v_RBOH_RCN1_b__ROS_a, v_Depolarization)))
+Some(Vector(Set(!v_Depolarization), Set(v_RBOH_RCN1_b__ROS_a, !v_pHc)))
+(Set(v_pHc, v_Depolarization),Set(-30, -25))
+(Set(!v_RBOH_RCN1_b__ROS_a, v_Depolarization),Set(24, -25))
+(Set(!v_Depolarization),Set(25))
+(Set(v_RBOH_RCN1_b__ROS_a, !v_pHc),Set(-24, 30))
+
+Some(Vector(Set(v_KEV, v_KOUT)))
+Some(Vector(Set(!v_KOUT), Set(!v_KEV)))
+(Set(v_KEV, v_KOUT),Set(-19, -20))
+(Set(!v_KOUT),Set(20))
+(Set(!v_KEV),Set(19))
+
+Some(Vector(Set(v_Ca2_)))
+Some(Vector())
+(Set(v_Ca2_),Set(-14))
+
+Some(Vector(Set(v_Ca2_)))
+Some(Vector())
+(Set(v_Ca2_),Set(-14))
+
+Some(Vector(Set(!v_ABI1, !v_HAB1), Set(!v_ABI2, !v_ABI1), Set(!v_ABI2, !v_HAB1), Set(!v_PP2CA, !v_HAB1), Set(!v_PP2CA, !v_ABI1), Set(!v_PP2CA, !v_ABI2)))
+Some(Vector(Set(v_PP2CA, v_ABI1, v_ABI2), Set(v_HAB1, v_PP2CA, v_ABI2), Set(v_HAB1, v_ABI1, v_ABI2), Set(v_HAB1, v_PP2CA, v_ABI1)))
+(Set(!v_ABI1, !v_HAB1),Set(16, 28))
+(Set(!v_ABI2, !v_ABI1),Set(4, 16))
+(Set(!v_ABI2, !v_HAB1),Set(4, 28))
+(Set(!v_PP2CA, !v_HAB1),Set(3, 28))
+(Set(!v_PP2CA, !v_ABI1),Set(3, 16))
+(Set(!v_PP2CA, !v_ABI2),Set(3, 4))
+(Set(v_PP2CA, v_ABI1, v_ABI2),Set(-3, -16, -4))
+(Set(v_HAB1, v_PP2CA, v_ABI2),Set(-28, -3, -4))
+(Set(v_HAB1, v_ABI1, v_ABI2),Set(-28, -16, -4))
+(Set(v_HAB1, v_PP2CA, v_ABI1),Set(-28, -3, -16))
+
+Some(Vector(Set(v_Ca2_), Set(v_PLDa), Set(v_RBOH_RCN1_b__ROS_a)))
+Some(Vector(Set(!v_RBOH_RCN1_b__ROS_a, !v_PLDa, !v_Ca2_)))
+(Set(v_Ca2_),Set(-14))
+(Set(v_PLDa),Set(-21))
+(Set(v_RBOH_RCN1_b__ROS_a),Set(-24))
+(Set(!v_RBOH_RCN1_b__ROS_a, !v_PLDa, !v_Ca2_),Set(24, 21, 14))
+
+Some(Vector(Set(v_SPHK1_2__S1P__SPP1_Sph__GPA1__GCR1, v_Ca2_)))
+Some(Vector(Set(!v_Ca2_), Set(!v_SPHK1_2__S1P__SPP1_Sph__GPA1__GCR1)))
+(Set(v_SPHK1_2__S1P__SPP1_Sph__GPA1__GCR1, v_Ca2_),Set(-13, -14))
+(Set(!v_Ca2_),Set(14))
+(Set(!v_SPHK1_2__S1P__SPP1_Sph__GPA1__GCR1),Set(13))
+
+Some(Vector(Set(!v_ABA, !v_RBOH_RCN1_b__ROS_a)))
+Some(Vector(Set(v_RBOH_RCN1_b__ROS_a), Set(v_ABA)))
+(Set(!v_ABA, !v_RBOH_RCN1_b__ROS_a),Set(8, 24))
+(Set(v_RBOH_RCN1_b__ROS_a),Set(-24))
+(Set(v_ABA),Set(-8))
+
+Some(Vector(Set(v_OST1__PIP2_1, v_Ca2_)))
+Some(Vector(Set(!v_Ca2_), Set(!v_OST1__PIP2_1)))
+(Set(v_OST1__PIP2_1, v_Ca2_),Set(-6, -14))
+(Set(!v_Ca2_),Set(14))
+(Set(!v_OST1__PIP2_1),Set(6))
+
+Some(Vector(Set(v_PA_DAGK_PC, v_SPHK1_2__S1P__SPP1_Sph__GPA1__GCR1, v_OST1__PIP2_1, v_pHc, !v_ABI1)))
+Some(Vector(Set(!v_OST1__PIP2_1), Set(!v_PA_DAGK_PC), Set(!v_pHc), Set(v_ABI1), Set(!v_SPHK1_2__S1P__SPP1_Sph__GPA1__GCR1)))
+(Set(v_PA_DAGK_PC, v_SPHK1_2__S1P__SPP1_Sph__GPA1__GCR1, v_OST1__PIP2_1, v_pHc, !v_ABI1),Set(-30, -29, 16, -6, -13))
+(Set(!v_OST1__PIP2_1),Set(6))
+(Set(!v_PA_DAGK_PC),Set(29))
+(Set(!v_pHc),Set(30))
+(Set(v_ABI1),Set(-16))
+(Set(!v_SPHK1_2__S1P__SPP1_Sph__GPA1__GCR1),Set(13))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_CPK3_21, !v_ABI2, v_MPK9_12, !v_PP2CA, v_OST1__PIP2_1, v_pHc, !v_ABI1, v_GHR1), Set(v_CPK6_23, !v_ABI2, v_MPK9_12, !v_PP2CA, v_OST1__PIP2_1, v_pHc, !v_ABI1, v_GHR1)))
+Some(Vector(Set(v_PP2CA), Set(v_ABI2), Set(!v_OST1__PIP2_1), Set(!v_pHc), Set(v_ABI1), Set(!v_CPK3_21, !v_CPK6_23), Set(!v_MPK9_12), Set(!v_GHR1)))
+(Set(v_CPK3_21, !v_ABI2, v_MPK9_12, !v_PP2CA, v_OST1__PIP2_1, v_pHc, !v_ABI1, v_GHR1),Set(-30, 3, -1, 16, -9, -6, 4, -17))
+(Set(v_CPK6_23, !v_ABI2, v_MPK9_12, !v_PP2CA, v_OST1__PIP2_1, v_pHc, !v_ABI1, v_GHR1),Set(-27, -30, 3, -1, 16, -9, -6, 4))
+(Set(v_PP2CA),Set(-3))
+(Set(v_ABI2),Set(-4))
+(Set(!v_OST1__PIP2_1),Set(6))
+(Set(!v_pHc),Set(30))
+(Set(v_ABI1),Set(-16))
+(Set(!v_CPK3_21, !v_CPK6_23),Set(17, 27))
+(Set(!v_MPK9_12),Set(9))
+(Set(!v_GHR1),Set(1))
+
+Some(Vector(Set(v_CPK6_23, v_CPK3_21, !v_ABI1)))
+Some(Vector(Set(v_ABI1), Set(!v_CPK3_21), Set(!v_CPK6_23)))
+(Set(v_CPK6_23, v_CPK3_21, !v_ABI1),Set(-27, -17, 16))
+(Set(v_ABI1),Set(-16))
+(Set(!v_CPK3_21),Set(17))
+(Set(!v_CPK6_23),Set(27))
+
+Some(Vector(Set(v_ABA), Set(v_PA_DAGK_PC)))
+Some(Vector(Set(!v_PA_DAGK_PC, !v_ABA)))
+(Set(v_ABA),Set(-8))
+(Set(v_PA_DAGK_PC),Set(-29))
+(Set(!v_PA_DAGK_PC, !v_ABA),Set(29, 8))
+
+Some(Vector(Set(v_Ca2_), Set(v_ABA)))
+Some(Vector())
+(Set(v_Ca2_),Set(-14))
+(Set(v_ABA),Set(-8))
+
+Some(Vector(Set(v_Vacuolar_Acidification, v_Ca2_), Set(!v_ABI2, v_OST1__PIP2_1, v_Vacuolar_Acidification, !v_ABI1)))
+Some(Vector(Set(!v_Vacuolar_Acidification), Set(!v_Ca2_, v_ABI1), Set(v_ABI2, !v_Ca2_), Set(!v_OST1__PIP2_1, !v_Ca2_)))
+(Set(v_Vacuolar_Acidification, v_Ca2_),Set(-11, -14))
+(Set(!v_ABI2, v_OST1__PIP2_1, v_Vacuolar_Acidification, !v_ABI1),Set(4, -6, -11, 16))
+(Set(!v_Vacuolar_Acidification),Set(11))
+(Set(!v_Ca2_, v_ABI1),Set(14, -16))
+(Set(v_ABI2, !v_Ca2_),Set(-4, 14))
+(Set(!v_OST1__PIP2_1, !v_Ca2_),Set(6, 14))
+Map(v_GHR1 -> 1, v_H__ATPase -> 2, v_PP2CA -> 3, v_ABI2 -> 4, v_CaIM__ABH1__ERA1_MRP5_NtSyp121 -> 5, v_OST1__PIP2_1 -> 6, v_SLAC1 -> 7, v_ABA -> 8, v_MPK9_12 -> 9, v_K__efflux -> 10, v_Vacuolar_Acidification -> 11, v_ROP11_GEF1_4_10 -> 12, v_SPHK1_2__S1P__SPP1_Sph__GPA1__GCR1 -> 13, v_Ca2_ -> 14, v_CIS -> 15, v_ABI1 -> 16, v_CPK3_21 -> 17, v_AnionEM -> 18, v_KEV -> 19, v_KOUT -> 20, v_PLDa -> 21, v_QUAC1 -> 22, v_Microtubule_Depolymerization -> 23, v_RBOH_RCN1_b__ROS_a -> 24, v_Depolarization -> 25, v_SLAH3 -> 26, v_CPK6_23 -> 27, v_HAB1 -> 28, v_PA_DAGK_PC -> 29, v_pHc -> 30, v_AtRAC1 -> 31)
+p cnf 31 111
+24 29 -12 -30 16 0
+24 29 -30 16 8 0
+30 -16 0
+-24 -16 0
+-8 12 -16 0
+-29 -16 0
+-12 24 4 0
+8 24 4 0
+-24 -4 0
+-8 12 -4 0
+-22 -26 18 0
+-7 18 0
+7 26 -18 0
+7 22 -18 0
+-16 31 0
+8 31 0
+-8 16 -31 0
+-24 15 0
+-14 15 0
+14 24 -15 0
+-14 17 0
+-5 14 0
+-15 14 0
+-14 0
+-1 5 0
+31 5 0
+-31 1 -5 0
+10 -19 25 0
+10 -14 25 0
+2 -19 25 0
+2 -14 25 0
+10 -18 25 0
+2 -18 25 0
+-2 -10 -25 0
+14 18 19 -25 0
+4 -24 1 0
+24 -1 0
+-4 -1 0
+8 24 28 0
+-24 -28 0
+-8 -28 0
+30 14 24 2 0
+-24 -2 0
+-14 -2 0
+-30 -2 0
+-14 19 0
+-11 19 0
+11 14 -19 0
+-30 -25 20 0
+24 -25 20 0
+25 -20 0
+-24 30 -20 0
+-19 -20 10 0
+20 -10 0
+19 -10 0
+-14 9 0
+-14 23 0
+16 28 6 0
+4 16 6 0
+4 28 6 0
+3 28 6 0
+3 16 6 0
+3 4 6 0
+-3 -16 -4 -6 0
+-28 -3 -4 -6 0
+-28 -16 -4 -6 0
+-28 -3 -16 -6 0
+-14 29 0
+-21 29 0
+-24 29 0
+24 21 14 -29 0
+-13 -14 21 0
+14 -21 0
+13 -21 0
+8 24 3 0
+-24 -3 0
+-8 -3 0
+-6 -14 22 0
+14 -22 0
+6 -22 0
+24 -30 -29 16 -6 -13 0
+6 -24 0
+29 -24 0
+30 -24 0
+-16 -24 0
+13 -24 0
+-30 7 3 -1 16 -9 -6 4 -17 0
+-27 -30 7 3 -1 16 -9 -6 4 0
+-3 -7 0
+-4 -7 0
+6 -7 0
+30 -7 0
+-16 -7 0
+17 27 -7 0
+9 -7 0
+1 -7 0
+-27 -17 16 26 0
+-16 -26 0
+17 -26 0
+27 -26 0
+-8 13 0
+-29 13 0
+29 8 -13 0
+-14 11 0
+-8 11 0
+-11 -14 30 0
+-11 16 -6 30 4 0
+11 -30 0
+14 -16 -30 0
+-4 14 -30 0
+6 14 -30 0
++ exit_status=0
++ set +x
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.3PeuDJKMA2.cnf'
+c opening file to read '/tmp/tmp.3PeuDJKMA2.cnf'
+c found 'p cnf 31 111' header
+c parsed 111 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   74  20 65%
+c l  0.00  4  0 0   0  0    0    0 0.0 1 0 2 6 61%   74  11 35%
+c 1  0.00  4  0 0   0  0    0    0 0.0 1 0 2 6 61%   74  11 35%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 2 3 4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21 -22
+v -23 -24 -25 -26 -27 28 -29 -30 31 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   76.69% parse
+c         0.00   36.84% search
+c         0.00   35.34% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   32.84% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c fixed:                        20        64.52 %  of all variables
+c lucky:                         1       100.00 %  of tried
+c learned_lits:                  1       100.00 %  learned literals
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                 11         0.08 M  per second
+c ticks:                        46         4.18    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.00    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=83
++ wait 83
++ bdd_minisat_all_release /tmp/tmp.3PeuDJKMA2.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.3PeuDJKMA2.cnf
+variables         :           31
+cutwidth          :           36
+restarts          :            1
+conflicts         :            3           (      inf / sec      )
+decisions         :           28           (      inf / sec      )
+propagations      :           69           (      inf / sec      )
+inspects          :          111           (      inf / sec      )
+conflict literals :            4           (     0.00 % deleted  )
+cpu time (solve)  :         0.00 sec	
+refreshes         :            0
+|obdd|            :          108
+cache hits        :            5
+cache lookup      :           20
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :           32
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_105.bnet"
+	User time (seconds): 0.96
+	System time (seconds): 0.18
+	Percent of CPU this job got: 171%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.67
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 155624
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 36719
+	Voluntary context switches: 2731
+	Involuntary context switches: 24
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.0s

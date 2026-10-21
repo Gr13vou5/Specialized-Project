@@ -1,0 +1,15 @@
+targets, factors
+v_ARE, (v_Nrf2 & !(!v_Akt | v_Bach1 | v_ARE))
+v_ATM, v_ROS
+v_Akt, v_PIP3
+v_Bach1, !v_ROS
+v_Bcl2, !(v_p53 | !v_Akt)
+v_Keap1, ((v_Nrf2 & !v_Bach1) | (v_Keap1 & !v_Bach1))
+v_Mdm2, ((v_p53 & !v_ATM) | (v_Akt & !v_ATM))
+v_Nrf2, (v_PKC | v_Akt | !(v_Akt | v_Keap1 | v_PKC))
+v_PIP3, (v_Ras & v_ROS)
+v_PKC, (v_ROS & !v_ARE)
+v_ROS, (v_Stress & !v_ARE)
+v_Ras, v_ROS
+v_Stress, v_Stress
+v_p53, (v_ATM & !v_Mdm2)

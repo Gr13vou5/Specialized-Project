@@ -1,0 +1,9 @@
+targets, factors
+v_Acetoacetyl_CoA, (v_Acetyl_CoA & v_SREBP_SCAP)
+v_Acetyl_CoA, v_Acetyl_CoA
+v_Farnesyl_pyrophosphate, (v_Mevalonic_Acid & !v_SREBP_SCAP)
+v_HMG_CoA, (v_Acetoacetyl_CoA & v_SREBP_SCAP & v_Acetyl_CoA)
+v_HMG_CoA_Reductase, (v_SREBP_SCAP & !v_Statins)
+v_Mevalonic_Acid, (v_HMG_CoA & v_HMG_CoA_Reductase)
+v_SREBP_SCAP, (!v_Farnesyl_pyrophosphate & !v_Statins)
+v_Statins, v_Statins

@@ -1,0 +1,483 @@
+# Host: MSI
+# Start date: Wed Oct 21 05:11:42 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_125.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-959-212 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_125.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_125.bnet --cnf /tmp/tmp.SFon7Vd8Eu.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/model_125.bnet, cnfFileName = /tmp/tmp.SFon7Vd8Eu.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_csa15_Cul2_ubiquitin_ligase_substrate_complex_cell, v_E2_ubiquitinated)))
+Some(Vector(Set(!v_E2_ubiquitinated), Set(!v_csa15_Cul2_ubiquitin_ligase_substrate_complex_cell)))
+(Set(v_csa15_Cul2_ubiquitin_ligase_substrate_complex_cell, v_E2_ubiquitinated),Set(-4, -38))
+(Set(!v_E2_ubiquitinated),Set(38))
+(Set(!v_csa15_Cul2_ubiquitin_ligase_substrate_complex_cell),Set(4))
+
+Some(Vector(Set(v_csa15_Cul2_ubiquitin_ligase_substrate_complex_cell, v_E2)))
+Some(Vector(Set(!v_E2), Set(!v_csa15_Cul2_ubiquitin_ligase_substrate_complex_cell)))
+(Set(v_csa15_Cul2_ubiquitin_ligase_substrate_complex_cell, v_E2),Set(-4, -35))
+(Set(!v_E2),Set(35))
+(Set(!v_csa15_Cul2_ubiquitin_ligase_substrate_complex_cell),Set(4))
+
+Some(Vector(Set(v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_complex, v_E2)))
+Some(Vector(Set(!v_E2), Set(!v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_complex)))
+(Set(v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_complex, v_E2),Set(-28, -35))
+(Set(!v_E2),Set(35))
+(Set(!v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_complex),Set(28))
+
+Some(Vector(Set(v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_complex, v_E2_ubiquitinated)))
+Some(Vector(Set(!v_E2_ubiquitinated), Set(!v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_complex)))
+(Set(v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_complex, v_E2_ubiquitinated),Set(-28, -38))
+(Set(!v_E2_ubiquitinated),Set(38))
+(Set(!v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_complex),Set(28))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Cul2_ubiquitin_ligase_Orf10_substrate_complex, v_UBE2M_NEDD8_complex), Set(v_Cul2_ubiquitin_ligase_N8_Orf10_E2_Ub_substrate_complex), Set(v_Cul2_ubiquitin_ligase_N8_Orf10_0E2_substrate_complex)))
+Some(Vector(Set(!v_Cul2_ubiquitin_ligase_N8_Orf10_0E2_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_Orf10_E2_Ub_substrate_complex, !v_UBE2M_NEDD8_complex), Set(!v_Cul2_ubiquitin_ligase_N8_Orf10_0E2_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_Orf10_E2_Ub_substrate_complex, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex)))
+(Set(v_Cul2_ubiquitin_ligase_Orf10_substrate_complex, v_UBE2M_NEDD8_complex),Set(-32, -16))
+(Set(v_Cul2_ubiquitin_ligase_N8_Orf10_E2_Ub_substrate_complex),Set(-3))
+(Set(v_Cul2_ubiquitin_ligase_N8_Orf10_0E2_substrate_complex),Set(-37))
+(Set(!v_Cul2_ubiquitin_ligase_N8_Orf10_0E2_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_Orf10_E2_Ub_substrate_complex, !v_UBE2M_NEDD8_complex),Set(37, 3, 16))
+(Set(!v_Cul2_ubiquitin_ligase_N8_Orf10_0E2_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_Orf10_E2_Ub_substrate_complex, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex),Set(37, 3, 32))
+
+Some(Vector(Set(v_Orf10, v_Cul2_ubiquitin_ligase_complex), Set(v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_Ub_complex, v_CSN5_complex), Set(v_Cul2_ubiquitin_ligase_Orf10_substrate_complex)))
+Some(Vector(Set(!v_Orf10, !v_CSN5_complex, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex), Set(!v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_Ub_complex, !v_Orf10, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex), Set(!v_CSN5_complex, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex, !v_Cul2_ubiquitin_ligase_complex), Set(!v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_Ub_complex, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex, !v_Cul2_ubiquitin_ligase_complex)))
+(Set(v_Orf10, v_Cul2_ubiquitin_ligase_complex),Set(-22, -41))
+(Set(v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_Ub_complex, v_CSN5_complex),Set(-12, -23))
+(Set(v_Cul2_ubiquitin_ligase_Orf10_substrate_complex),Set(-32))
+(Set(!v_Orf10, !v_CSN5_complex, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex),Set(22, 23, 32))
+(Set(!v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_Ub_complex, !v_Orf10, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex),Set(12, 22, 32))
+(Set(!v_CSN5_complex, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex, !v_Cul2_ubiquitin_ligase_complex),Set(23, 32, 41))
+(Set(!v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_Ub_complex, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex, !v_Cul2_ubiquitin_ligase_complex),Set(12, 32, 41))
+
+Some(Vector(Set(v_Cul2_ubiquitin_ligase_Orf10_complex, v_ubit_traget)))
+Some(Vector(Set(!v_ubit_traget), Set(!v_Cul2_ubiquitin_ligase_Orf10_complex)))
+(Set(v_Cul2_ubiquitin_ligase_Orf10_complex, v_ubit_traget),Set(-20, -27))
+(Set(!v_ubit_traget),Set(27))
+(Set(!v_Cul2_ubiquitin_ligase_Orf10_complex),Set(20))
+
+Some(Vector(Set(v_Rbx1_Cul2_complex, v_Zyg11B_EloBC_complex), Set(v_CSN5_complex, v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex), Set(v_Cul2_ubiquitin_ligase_Orf10_complex), Set(v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell)))
+Some(Vector(Set(!v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Rbx1_Cul2_complex, !v_Cul2_ubiquitin_ligase_Orf10_complex, !v_CSN5_complex), Set(!v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Rbx1_Cul2_complex, !v_Cul2_ubiquitin_ligase_Orf10_complex, !v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex), Set(!v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Cul2_ubiquitin_ligase_Orf10_complex, !v_CSN5_complex, !v_Zyg11B_EloBC_complex), Set(!v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Cul2_ubiquitin_ligase_Orf10_complex, !v_Zyg11B_EloBC_complex, !v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex)))
+(Set(v_Rbx1_Cul2_complex, v_Zyg11B_EloBC_complex),Set(-9, -33))
+(Set(v_CSN5_complex, v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex),Set(-23, -40))
+(Set(v_Cul2_ubiquitin_ligase_Orf10_complex),Set(-20))
+(Set(v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell),Set(-1))
+(Set(!v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Rbx1_Cul2_complex, !v_Cul2_ubiquitin_ligase_Orf10_complex, !v_CSN5_complex),Set(1, 9, 20, 23))
+(Set(!v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Rbx1_Cul2_complex, !v_Cul2_ubiquitin_ligase_Orf10_complex, !v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex),Set(1, 9, 20, 40))
+(Set(!v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Cul2_ubiquitin_ligase_Orf10_complex, !v_CSN5_complex, !v_Zyg11B_EloBC_complex),Set(1, 20, 23, 33))
+(Set(!v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Cul2_ubiquitin_ligase_Orf10_complex, !v_Zyg11B_EloBC_complex, !v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex),Set(1, 20, 33, 40))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_E1_rna), Set(v_E2, v_E1_ubiquitinated)))
+Some(Vector(Set(!v_E1_ubiquitinated, !v_E1_rna), Set(!v_E2, !v_E1_rna)))
+(Set(v_E1_rna),Set(-17))
+(Set(v_E2, v_E1_ubiquitinated),Set(-35, -26))
+(Set(!v_E1_ubiquitinated, !v_E1_rna),Set(26, 17))
+(Set(!v_E2, !v_E1_rna),Set(35, 17))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_E1, v_Ub_simple_molecule, v_ATP_simple_molecule)))
+Some(Vector(Set(!v_ATP_simple_molecule), Set(!v_Ub_simple_molecule), Set(!v_E1)))
+(Set(v_E1, v_Ub_simple_molecule, v_ATP_simple_molecule),Set(-31, -8, -24))
+(Set(!v_ATP_simple_molecule),Set(24))
+(Set(!v_Ub_simple_molecule),Set(8))
+(Set(!v_E1),Set(31))
+
+Some(Vector(Set(v_Cul2_ubiquitin_ligase_N8_Orf10_0E2_substrate_complex), Set(v_Cul2_ubiquitin_ligase_N8_E2_substrate_complex), Set(v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex), Set(v_E2_rna)))
+Some(Vector(Set(!v_E2_rna, !v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_E2_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_Orf10_0E2_substrate_complex)))
+(Set(v_Cul2_ubiquitin_ligase_N8_Orf10_0E2_substrate_complex),Set(-37))
+(Set(v_Cul2_ubiquitin_ligase_N8_E2_substrate_complex),Set(-25))
+(Set(v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex),Set(-40))
+(Set(v_E2_rna),Set(-15))
+(Set(!v_E2_rna, !v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_E2_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_Orf10_0E2_substrate_complex),Set(15, 40, 25, 37))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Cul2_ubiquitin_ligase_N8_Orf10_E2_Ub_substrate_complex), Set(v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex), Set(v_E2, v_E1_ubiquitinated)))
+Some(Vector(Set(!v_E1_ubiquitinated, !v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_Orf10_E2_Ub_substrate_complex), Set(!v_E2, !v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_Orf10_E2_Ub_substrate_complex)))
+(Set(v_Cul2_ubiquitin_ligase_N8_Orf10_E2_Ub_substrate_complex),Set(-3))
+(Set(v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex),Set(-40))
+(Set(v_E2, v_E1_ubiquitinated),Set(-35, -26))
+(Set(!v_E1_ubiquitinated, !v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_Orf10_E2_Ub_substrate_complex),Set(26, 40, 3))
+(Set(!v_E2, !v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_Orf10_E2_Ub_substrate_complex),Set(35, 40, 3))
+
+Some(Vector(Set(v_ELOC_rna), Set(v_ELOB_rna), Set(v_Zyg11B_EloBC_complex)))
+Some(Vector())
+(Set(v_ELOC_rna),Set(-14))
+(Set(v_ELOB_rna),Set(-7))
+(Set(v_Zyg11B_EloBC_complex),Set(-33))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector(Set(!v_NAE_complex)))
+(Set(!v_NAE_complex),Set(39))
+
+Some(Vector(Set(v_UBA3_rna), Set(v_NAE1_rna), Set(v_NAE_Pevonedistat_complex)))
+Some(Vector())
+(Set(v_UBA3_rna),Set(-36))
+(Set(v_NAE1_rna),Set(-19))
+(Set(v_NAE_Pevonedistat_complex),Set(-11))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Cul2_ubiquitin_ligase_Orf10_complex), Set(v_Orf10____ss_sgmRNA_rna)))
+Some(Vector(Set(!v_Orf10____ss_sgmRNA_rna, !v_Cul2_ubiquitin_ligase_Orf10_complex)))
+(Set(v_Cul2_ubiquitin_ligase_Orf10_complex),Set(-20))
+(Set(v_Orf10____ss_sgmRNA_rna),Set(-21))
+(Set(!v_Orf10____ss_sgmRNA_rna, !v_Cul2_ubiquitin_ligase_Orf10_complex),Set(21, 20))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_CUL2_rna), Set(v_RBX1_rna), Set(v_Cul2_ubiquitin_ligase_complex)))
+Some(Vector())
+(Set(v_CUL2_rna),Set(-18))
+(Set(v_RBX1_rna),Set(-5))
+(Set(v_Cul2_ubiquitin_ligase_complex),Set(-41))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_NEDD8_rna, v_NAE_complex), Set(v_UBE2M_rna)))
+Some(Vector(Set(!v_NAE_complex, !v_UBE2M_rna, !v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex), Set(!v_NEDD8_rna, !v_UBE2M_rna, !v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex)))
+(Set(v_NEDD8_rna, v_NAE_complex),Set(-2, -39))
+(Set(v_UBE2M_rna),Set(-29))
+(Set(!v_NAE_complex, !v_UBE2M_rna, !v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex),Set(29, 1, 32, 39))
+(Set(!v_NEDD8_rna, !v_UBE2M_rna, !v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex),Set(29, 1, 2, 32))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Zyg11B_EloBC_complex), Set(v_ZYG11B_rna)))
+Some(Vector(Set(!v_ZYG11B_rna, !v_Zyg11B_EloBC_complex)))
+(Set(v_Zyg11B_EloBC_complex),Set(-33))
+(Set(v_ZYG11B_rna),Set(-6))
+(Set(!v_ZYG11B_rna, !v_Zyg11B_EloBC_complex),Set(6, 33))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_ELOB_ELOC_complex, v_ZYG11B), Set(v_Cul2_ubiquitin_ligase_complex)))
+Some(Vector(Set(!v_Cul2_ubiquitin_ligase_complex, !v_ZYG11B), Set(!v_Cul2_ubiquitin_ligase_complex, !v_ELOB_ELOC_complex)))
+(Set(v_ELOB_ELOC_complex, v_ZYG11B),Set(-30, -13))
+(Set(v_Cul2_ubiquitin_ligase_complex),Set(-41))
+(Set(!v_Cul2_ubiquitin_ligase_complex, !v_ZYG11B),Set(41, 13))
+(Set(!v_Cul2_ubiquitin_ligase_complex, !v_ELOB_ELOC_complex),Set(41, 30))
+
+Some(Vector(Set(v_UBE2M_NEDD8_complex, v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell), Set(v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex), Set(v_Cul2_ubiquitin_ligase_N8_E2_substrate_complex)))
+Some(Vector(Set(!v_Cul2_ubiquitin_ligase_N8_E2_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex, !v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell), Set(!v_Cul2_ubiquitin_ligase_N8_E2_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex, !v_UBE2M_NEDD8_complex)))
+(Set(v_UBE2M_NEDD8_complex, v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell),Set(-16, -1))
+(Set(v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex),Set(-40))
+(Set(v_Cul2_ubiquitin_ligase_N8_E2_substrate_complex),Set(-25))
+(Set(!v_Cul2_ubiquitin_ligase_N8_E2_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex, !v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell),Set(25, 40, 1))
+(Set(!v_Cul2_ubiquitin_ligase_N8_E2_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex, !v_UBE2M_NEDD8_complex),Set(25, 40, 16))
+
+Some(Vector(Set(v_ubit_traget, v_Cul2_ubiquitin_ligase_complex)))
+Some(Vector(Set(!v_Cul2_ubiquitin_ligase_complex), Set(!v_ubit_traget)))
+(Set(v_ubit_traget, v_Cul2_ubiquitin_ligase_complex),Set(-27, -41))
+(Set(!v_Cul2_ubiquitin_ligase_complex),Set(41))
+(Set(!v_ubit_traget),Set(27))
+
+Some(Vector(Set(v_ubit_traget_ubiquitinated, v_DUB_rna), Set(v_Cul2_ubiquitin_ligase_Orf10_substrate_complex), Set(v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell)))
+Some(Vector(Set(!v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex, !v_DUB_rna), Set(!v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex, !v_ubit_traget_ubiquitinated)))
+(Set(v_ubit_traget_ubiquitinated, v_DUB_rna),Set(-10, -34))
+(Set(v_Cul2_ubiquitin_ligase_Orf10_substrate_complex),Set(-32))
+(Set(v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell),Set(-1))
+(Set(!v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex, !v_DUB_rna),Set(1, 32, 34))
+(Set(!v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell, !v_Cul2_ubiquitin_ligase_Orf10_substrate_complex, !v_ubit_traget_ubiquitinated),Set(1, 32, 10))
+
+Some(Vector(Set(v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_Ub_complex), Set(v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex)))
+Some(Vector(Set(!v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_Ub_complex)))
+(Set(v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_Ub_complex),Set(-12))
+(Set(v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex),Set(-40))
+(Set(!v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex, !v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_Ub_complex),Set(40, 12))
+Map(v_csa4_Cul2_ubiquitin_ligase_substrate_complex_cell -> 1, v_NEDD8_rna -> 2, v_Cul2_ubiquitin_ligase_N8_Orf10_E2_Ub_substrate_complex -> 3, v_csa15_Cul2_ubiquitin_ligase_substrate_complex_cell -> 4, v_RBX1_rna -> 5, v_ZYG11B_rna -> 6, v_ELOB_rna -> 7, v_Ub_simple_molecule -> 8, v_Rbx1_Cul2_complex -> 9, v_ubit_traget_ubiquitinated -> 10, v_NAE_Pevonedistat_complex -> 11, v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_Ub_complex -> 12, v_ZYG11B -> 13, v_ELOC_rna -> 14, v_E2_rna -> 15, v_UBE2M_NEDD8_complex -> 16, v_E1_rna -> 17, v_CUL2_rna -> 18, v_NAE1_rna -> 19, v_Cul2_ubiquitin_ligase_Orf10_complex -> 20, v_Orf10____ss_sgmRNA_rna -> 21, v_Orf10 -> 22, v_CSN5_complex -> 23, v_ATP_simple_molecule -> 24, v_Cul2_ubiquitin_ligase_N8_E2_substrate_complex -> 25, v_E1_ubiquitinated -> 26, v_ubit_traget -> 27, v_Cul2_ubiquitin_ligase_N8_Orf10_substrate_complex -> 28, v_UBE2M_rna -> 29, v_ELOB_ELOC_complex -> 30, v_E1 -> 31, v_Cul2_ubiquitin_ligase_Orf10_substrate_complex -> 32, v_Zyg11B_EloBC_complex -> 33, v_DUB_rna -> 34, v_E2 -> 35, v_UBA3_rna -> 36, v_Cul2_ubiquitin_ligase_N8_Orf10_0E2_substrate_complex -> 37, v_E2_ubiquitinated -> 38, v_NAE_complex -> 39, v_Cul2_ubiquitin_ligase_N8_E2_Ub_substrate_complex -> 40, v_Cul2_ubiquitin_ligase_complex -> 41)
+p cnf 41 93
+-4 -38 40 0
+38 -40 0
+4 -40 0
+-4 -35 25 0
+35 -25 0
+4 -25 0
+-28 -35 37 0
+35 -37 0
+28 -37 0
+-28 -38 3 0
+38 -3 0
+28 -3 0
+-32 -16 28 0
+-3 28 0
+-37 28 0
+37 3 16 -28 0
+37 3 32 -28 0
+-22 -41 20 0
+-12 -23 20 0
+-32 20 0
+22 23 32 -20 0
+12 22 32 -20 0
+23 32 41 -20 0
+12 32 41 -20 0
+-20 -27 32 0
+27 -32 0
+20 -32 0
+-9 -33 41 0
+-23 -40 41 0
+-20 41 0
+-1 41 0
+20 1 9 23 -41 0
+20 1 9 40 -41 0
+20 1 33 23 -41 0
+20 1 33 40 -41 0
+-17 31 0
+-35 -26 31 0
+26 17 -31 0
+35 17 -31 0
+-31 -8 -24 26 0
+24 -26 0
+8 -26 0
+31 -26 0
+-37 35 0
+-25 35 0
+-40 35 0
+-15 35 0
+37 25 -35 40 15 0
+-3 38 0
+-40 38 0
+-35 -26 38 0
+26 40 3 -38 0
+35 40 3 -38 0
+-14 30 0
+-7 30 0
+-33 30 0
+39 -11 0
+-36 39 0
+-19 39 0
+-11 39 0
+-20 22 0
+-21 22 0
+21 20 -22 0
+-18 9 0
+-5 9 0
+-41 9 0
+-2 -39 16 0
+-29 16 0
+29 1 32 39 -16 0
+29 1 2 32 -16 0
+-33 13 0
+-6 13 0
+6 33 -13 0
+-30 -13 33 0
+-41 33 0
+41 13 -33 0
+41 30 -33 0
+-16 -1 4 0
+-40 4 0
+-25 4 0
+25 40 1 -4 0
+25 40 16 -4 0
+-27 -41 1 0
+41 -1 0
+27 -1 0
+-10 -34 27 0
+-32 27 0
+-1 27 0
+1 32 34 -27 0
+1 32 10 -27 0
+-12 10 0
+-40 10 0
+40 12 -10 0
++ exit_status=0
++ set +x
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.SFon7Vd8Eu.cnf'
+c opening file to read '/tmp/tmp.SFon7Vd8Eu.cnf'
+c found 'p cnf 41 93' header
+c parsed 93 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   93  41 100%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   93  41 100%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%   93  41 100%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 -36 -37 -38 -39 -40
+v -41 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   44.50% parse
+c         0.00   24.08% search
+c         0.00   23.56% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   45.58% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.00    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=75
++ wait 75
++ bdd_minisat_all_release /tmp/tmp.SFon7Vd8Eu.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.SFon7Vd8Eu.cnf
+variables         :           41
+cutwidth          :           67
+restarts          :            1
+conflicts         :           40           (       70 / sec      )
+decisions         :       662296           (  1164223 / sec      )
+propagations      :      1123619           (  1975163 / sec      )
+inspects          :      2824992           (  4965936 / sec      )
+conflict literals :          135           (     0.00 % deleted  )
+cpu time (solve)  :         0.57 sec	
+refreshes         :            0
+|obdd|            :      2384387
+cache hits        :       312616
+cache lookup      :       643882
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :      5996960
+# SAT SOLVE END
+
++ set +x
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_125.bnet"
+	User time (seconds): 1.46
+	System time (seconds): 0.28
+	Percent of CPU this job got: 139%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.25
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 162304
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 76306
+	Voluntary context switches: 2726
+	Involuntary context switches: 32
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.6s

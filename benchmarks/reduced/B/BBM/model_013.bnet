@@ -1,0 +1,17 @@
+targets, factors
+v_Acetoacetyl_CoA, (v_Acetyl_CoA & v_mSREBP)
+v_Acetyl_CoA, v_Acetyl_CoA
+v_Cholesterol, (v_Lanosterol | v_Septdehydrocholesterol)
+v_Cyp51, v_mSREBP
+v_Dimethyl_allyl_pyrophosphate, v_Isopentenyl_pyrophosphate
+v_Farnesyl_pyrophosphate, (v_Geranyl_pyrophosphate & !v_mSREBP)
+v_Geranyl_pyrophosphate, (v_Isopentenyl_pyrophosphate | v_Dimethyl_allyl_pyrophosphate)
+v_HMG_CoA, (v_Acetoacetyl_CoA & v_mSREBP & v_Acetyl_CoA)
+v_HMG_CoA_Reductase, (v_mSREBP & !v_Statins)
+v_Isopentenyl_pyrophosphate, v_Mevalonic_Acid
+v_Lanosterol, v_Farnesyl_pyrophosphate
+v_Mevalonic_Acid, (v_HMG_CoA & v_HMG_CoA_Reductase)
+v_SREBP_SCAP, (!v_Cholesterol & !v_Statins)
+v_Septdehydrocholesterol, v_Lanosterol
+v_Statins, v_Statins
+v_mSREBP, v_SREBP_SCAP

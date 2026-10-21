@@ -1,0 +1,7 @@
+targets, factors
+v_CLN3, (v_SFF & !(v_YOX1 | v_YHP1))
+v_HCM1, (v_CLN3 & v_SBF)
+v_SBF, (v_CLN3 & !(v_YHP1 | v_YOX1))
+v_SFF, (v_SBF & v_HCM1)
+v_YHP1, (v_SBF | v_CLN3)
+v_YOX1, (v_CLN3 & v_SBF)

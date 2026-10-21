@@ -1,0 +1,6 @@
+targets, factors
+v_Cactus, !(!v_Nec & v_Slmb)
+v_Dorsal, !v_Cactus
+v_Nec, v_Nec
+v_Slmb, v_Slmb
+v_Targets, (v_Dorsal | !v_Cactus)

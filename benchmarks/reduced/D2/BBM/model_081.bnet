@@ -1,0 +1,11 @@
+targets, factors
+v_CREB1, ((!v_RPS6KA2 & v_PDPK1 & v_RPS6KA5) | (v_RPS6KA2 & v_PDPK1))
+v_IKBKB, (v_TAK1c & v_IKBKG)
+v_IKBKG, (v_TLR5 & v_TAK1c)
+v_PDPK1, (v_TLR5 & v_TAK1c)
+v_RPS6KA2, ((!v_IKBKB & v_TAK1c) | v_IKBKB)
+v_RPS6KA5, ((!v_TAK1c & v_IKBKB) | v_TAK1c)
+v_SCFbTrCP, v_SCFbTrCP
+v_TAK1c, (v_TLR5 & v_SCFbTrCP)
+v_TLR5, v_TLR5
+v_ZFP36, (!v_TAK1c & v_CREB1 & !v_ZFP36)

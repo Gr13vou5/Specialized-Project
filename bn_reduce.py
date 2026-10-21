@@ -37,8 +37,12 @@ Usage (from the repository root):
 writes one statistics row per model to reduction.csv (rows of the same set
 and model are replaced when rerun) and the reduced networks of the variants
 in --variants (default B and D2) to benchmarks/reduced/<variant>/<set>/.
+
+time_<variant> is the CPU time in seconds to obtain that variant's network:
+reading the .bnet, reducing, and writing the reduced file when it is written
+(interpreter start-up excluded), to be added to the solving time of the tools.
 """
-import sys, re, os, csv, argparse
+import sys, re, os, csv, argparse, time
 from pathlib import Path
 import numpy as np
 
@@ -350,11 +354,14 @@ VARIANTS = [('A', None, False), ('B', 'strict', False), ('C', 'relaxed', False),
 
 
 FIELDS = ['set', 'model', 'n', 'sources', 'nonsource', 'const0', 'approx_funcs'] + [
-    f'{k}_{name}' for name, _, _ in VARIANTS for k in ('rm', 'src')]
+    f'{k}_{name}' for name, _, _ in VARIANTS for k in ('rm', 'src')] + [
+    f'time_{name}' for name, _, _ in VARIANTS]
 
 
 def run(path, outdir=None, set_name='', write_variants=('B', 'D2')):
+    start = time.process_time()
     funcs = read_bnet(path)
+    read_time = time.process_time() - start
     base = Network(funcs)
     n = len(base.f)
     sources = sum(base.is_source(v) for v in base.f)
@@ -362,29 +369,34 @@ def run(path, outdir=None, set_name='', write_variants=('B', 'D2')):
                const0=sum(base.const(v) is not None for v in base.f),
                approx_funcs=len(base.approx))
     for name, mode, leaves in VARIANTS:
+        start = time.process_time()
         net = Network(funcs).reduce(mode, leaves)
-        row[f'rm_{name}'] = n - len(net.f)
-        row[f'src_{name}'] = sum(net.is_source(v) for v in net.f)
         if outdir and name in write_variants:
             target = Path(outdir) / name / set_name
             target.mkdir(parents=True, exist_ok=True)
             net.write_bnet(str(target / os.path.basename(path)))
+        row[f'time_{name}'] = f'{read_time + time.process_time() - start:.4f}'
+        row[f'rm_{name}'] = n - len(net.f)
+        row[f'src_{name}'] = sum(net.is_source(v) for v in net.f)
     return row
 
 
 def save_rows(csv_path, rows):
-    """Write rows to csv_path, replacing earlier rows of the same set and model."""
+    """Write rows to csv_path, replacing earlier rows of the same set and model.
+
+    A file from an older version (without some columns, e.g. time_*) keeps its
+    other rows, with those columns left empty."""
     old = []
     if os.path.exists(csv_path):
         with open(csv_path, newline='') as fh:
             reader = csv.DictReader(fh)
-            if reader.fieldnames and reader.fieldnames != FIELDS:
+            if reader.fieldnames and not set(reader.fieldnames) <= set(FIELDS):
                 sys.exit(f'{csv_path} has different columns; write to a new file')
             new_keys = {(r['set'], r['model']) for r in rows}
             old = [r for r in reader if (r['set'], r['model']) not in new_keys]
     tmp = csv_path + '.tmp'
     with open(tmp, 'w', newline='') as fh:
-        w = csv.DictWriter(fh, fieldnames=FIELDS)
+        w = csv.DictWriter(fh, fieldnames=FIELDS, restval='')
         w.writeheader()
         w.writerows(old + rows)
     os.replace(tmp, csv_path)
@@ -419,7 +431,8 @@ if __name__ == '__main__':
             r = dict(set=set_name, model=os.path.basename(p)[:-5], **r)
             rows.append(r)
             print(r['model'], r['n'], r['sources'],
-                  *(r[f'rm_{v[0]}'] for v in VARIANTS), '| src', r['src_D2'], flush=True)
+                  *(r[f'rm_{v[0]}'] for v in VARIANTS), '| src', r['src_D2'],
+                  '| s', *(r[f'time_{v}'] for v in a.variants), flush=True)
     th = threading.Thread(target=main)
     th.start()
     th.join()

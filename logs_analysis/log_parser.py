@@ -30,7 +30,20 @@ class AbortType(Enum):
     OUT_OF_MEMORY = "OUT_OF_MEMORY"
     UNKNOWN_ERROR = "ERROR"
     NOT_RUN = "NOT_RUN"
+    OVERFLOW = "OVERFLOW"
 
+
+def bmsa_count(content: str, count: int) -> int:
+    """bdd_minisat_all counts only the variables up to the highest index used in a clause,
+    and returns 0 for a CNF without clauses; the variables it skips are unconstrained."""
+    cnf = re.search(r"^p cnf (\d+) (\d+)", content, flags=re.MULTILINE)
+    counted = re.search(r"^variables\s*:\s*(\d+)", content, flags=re.MULTILINE)
+    if not cnf or not counted:
+        return count
+    n_vars, n_clauses = int(cnf.group(1)), int(cnf.group(2))
+    if n_clauses == 0:
+        return 2**n_vars
+    return count * 2 ** (n_vars - int(counted.group(1)))
 
 @dataclass
 class Result:
@@ -176,8 +189,13 @@ def parse_proposed_bmsa_log(log_file: str) -> Result:
         cpu, _ = parse_time_command_output(content_raw)
         if re.search(r"^s UNSATISFIABLE", content_raw, flags=re.MULTILINE) and cpu <= TIMEOUT_SEC:
             return Result(0, cpu)
+    if re.search(r"SAT \(full\)\s*:\s*\d+\+", content_raw):
+        return Result(abort_type=AbortType.OVERFLOW)
 
-    return parse_log_default(log_file, fixed_points_patterns["bmsa"])
+    res = parse_log_default(log_file, fixed_points_patterns["bmsa"])
+    if res.num_fixed_points is not None:
+        res.num_fixed_points = bmsa_count(content_raw, res.num_fixed_points)
+    return res
 
 
 if not glob.glob(f"{LOGS_DIR}/**/*.log", recursive=True):

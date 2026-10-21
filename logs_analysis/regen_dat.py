@@ -20,7 +20,7 @@ SOLVERS = {
     "PFVS",           # PFVS
 }
 
-INVALID = {"", "TIMEOUT", "OUT_OF_MEMORY", "ERROR", "NOT_RUN", "REFUSED", "-"}
+INVALID = {"", "TIMEOUT", "OUT_OF_MEMORY", "ERROR", "NOT_RUN", "REFUSED", "OVERFLOW", "-"}
 
 
 def is_solved(val: str) -> bool:

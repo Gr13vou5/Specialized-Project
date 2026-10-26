@@ -10,7 +10,8 @@ The protocol follows the original SAC4BN runs whose logs are in logs/:
   (default 1800 = 30 minutes), and memory to --memory (no swap);
 * fASP-c / fASP-s run `fASP FILE -c -m 0 [-e source]`, H.E. runs
   `/app/solve-bmsa.sh HEAP 1g h3 FILE` (on the biodivine SBML files for BBM,
-  as in the original runs) and PFVS runs `java -jar FPCollector.jar FILE.bn -m`.
+  as in the original runs, and on SBML copies of reduced BBM networks written by
+  bnet_to_sbml.py) and PFVS runs `java -jar FPCollector.jar FILE.bn -m`.
 
 Every log starts with the machine, date and limits it was produced with.
 Finished logs are never rerun, so an interrupted run continues where it
@@ -22,6 +23,7 @@ Usage, from the repository root in Linux or WSL with Docker running:
     python3 run_benchmarks.py --sets selected --limit 2      # quick smoke test
     python3 run_benchmarks.py --sets adf          # the ICCMA 2019 ADF networks
     python3 run_benchmarks.py --reduced B D2      # networks reduced by bn_reduce.py
+                                                  # (for H.E. on BBM: bnet_to_sbml.py first)
 
 Logs are written to logs_rerun/ (the original logs/ stay untouched), or to
 logs_reduced/<variant>/ for reduced networks, in the same layout. See
@@ -137,9 +139,10 @@ def logs_root(cfg, inst):
 
 
 def solver_input(tool, inst):
-    """File the solver reads: the biodivine SBML for H.E. on the original BBM models, else the .bnet."""
-    if tool == "he" and inst.set == "bbm" and not inst.variant:
-        return inst.sbml_dir / "model.sbml"
+    """File the solver reads: SBML for H.E. on BBM, as in the original runs (the biodivine model,
+    or for a reduced network the .sbml that bnet_to_sbml.py writes next to it); else the .bnet."""
+    if tool == "he" and inst.set == "bbm":
+        return inst.bnet.with_suffix(".sbml") if inst.variant else inst.sbml_dir / "model.sbml"
     return inst.bnet
 
 
@@ -250,6 +253,12 @@ class Runner:
         if self.stopping.is_set():
             return "cancelled"
         log.parent.mkdir(parents=True, exist_ok=True)
+        superseded = None
+        if tool == "he" and inst.set == "bbm" and inst.variant:
+            # a log from before H.E. read reduced BBM networks as SBML: keep it out of the analysis
+            old = log.with_name(f"{inst.bnet.name}.log")
+            if old.exists():
+                superseded = old.rename(old.with_name(old.name + ".superseded"))
         if tool == "pfvs":
             prepare_pfvs(cfg, inst)
         container = f"bench-{os.getpid()}-{next(self.counter)}"
@@ -303,6 +312,8 @@ class Runner:
         with open(tmp, "a") as fh:
             fh.write("\n".join(notes) + "\n")
         tmp.replace(log)
+        if superseded:
+            status += f" (earlier .bnet run kept as {superseded.name})"
         return status
 
     def stop(self):
@@ -445,6 +456,10 @@ def main(argv=None):
                      if not args.only or fnmatch(i.name, args.only)]
             insts[v, s] = found[: args.limit] if args.limit else found
     jobs = [(t, i) for v in variants for s in args.sets for t in args.tools for i in insts[v, s]]
+    no_sbml = sorted({solver_input(t, i).parent for t, i in jobs if not solver_input(t, i).exists()})
+    if no_sbml and not args.dry_run:
+        sys.exit("H.E. reads BBM networks as SBML, like the original runs; write the reduced ones first:\n"
+                 f"  python3 bnet_to_sbml.py {' '.join(os.path.relpath(d) for d in no_sbml)}")
     todo = [(t, i) for t, i in jobs if cfg.force or not log_path(cfg, t, i).exists()]
 
     where = ", ".join(str(cfg.logs / v) for v in args.reduced) if args.reduced else cfg.logs

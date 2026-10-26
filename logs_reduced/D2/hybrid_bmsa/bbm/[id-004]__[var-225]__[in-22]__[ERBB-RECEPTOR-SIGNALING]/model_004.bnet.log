@@ -1,16 +1,16 @@
 # Host: MSI
-# Start date: Wed Oct 21 05:54:02 +07 2026
+# Start date: Wed Oct 21 18:13:07 +07 2026
 # Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
 # Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
 # Input: benchmarks/reduced/D2/BBM/model_004.bnet (bn_reduce.py variant D2)
-# Command: docker run --rm --name bench-959-254 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project-1/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_004.bnet
+# Command: docker run --rm --name bench-2539-1 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_004.bnet
 ------------------------------------------------------------
 # ENCODE START
 + cmd_pid=11
 + wait 11
-+ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_004.bnet --cnf /tmp/tmp.G9cvDmoAnX.cnf -h3
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/model_004.bnet --cnf /tmp/tmp.0tCHhs0Fs7.cnf -h3
 
-Config(sbmlFileName = , bnetFileName = /benchmark/model_004.bnet, cnfFileName = /tmp/tmp.G9cvDmoAnX.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+Config(sbmlFileName = , bnetFileName = /benchmark/model_004.bnet, cnfFileName = /tmp/tmp.0tCHhs0Fs7.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
 
 
 Some(Vector(Set(v_Integrins, v_ECM, v_Gas, v_Gbg_i)))
@@ -3104,8 +3104,8 @@ c setting conflict limit to 10000 conflicts (due to '10000')
 c 
 c --- [ parsing input ] ------------------------------------------------------
 c 
-c reading DIMACS file from '/tmp/tmp.G9cvDmoAnX.cnf'
-c opening file to read '/tmp/tmp.G9cvDmoAnX.cnf'
+c reading DIMACS file from '/tmp/tmp.0tCHhs0Fs7.cnf'
+c opening file to read '/tmp/tmp.0tCHhs0Fs7.cnf'
 c found 'p cnf 198 1237' header
 c parsed 1237 clauses in 0.00 seconds process time
 c 
@@ -3146,12 +3146,12 @@ c
 c process time taken by individual solving procedures
 c (percentage relative to process time for solving)
 c 
-c         0.00  160.80% parse
-c         0.00   33.87% search
-c         0.00   33.47% lucky
+c         0.00  263.20% parse
+c         0.00   35.50% search
+c         0.00   34.63% lucky
 c         0.00    0.00% simplify
 c   =================================
-c         0.00   28.09% solve
+c         0.00   21.77% solve
 c 
 c last line shows process time for solving
 c (percentage relative to total process time)
@@ -3163,7 +3163,7 @@ c lucky:                         1       100.00 %  of tried
 c minimized:                     0         0.00 %  learned literals
 c shrunken:                      0         0.00 %  learned literals
 c minishrunken:                  0         0.00 %  learned literals
-c propagations:                 15         0.02 M  per second
+c propagations:                 15         0.06 M  per second
 c ticks:                        77         5.13    propagation
 c 
 c seconds are measured in process time for solving
@@ -3187,25 +3187,25 @@ c --- [ resources ] ----------------------------------------------------------
 c 
 c total process time since initialization:         0.00    seconds
 c total real time since initialization:            0.00    seconds
-c maximum resident set size of process:            4.12    MB
+c maximum resident set size of process:            4.25    MB
 c 
 c --- [ shutting down ] ------------------------------------------------------
 c 
 c exit 10
 
 # SAT SOLVE START
-+ bdd_minisat_all_release /tmp/tmp.G9cvDmoAnX.cnf
-+ cmd_pid=384
-+ wait 384
-/app/solve.sh: line 76:   384 Killed                  $4 "$cnf_tmp"
++ cmd_pid=383
++ wait 383
++ bdd_minisat_all_release /tmp/tmp.0tCHhs0Fs7.cnf
+/app/solve.sh: line 76:   383 Killed                  $4 "$cnf_tmp"
 + set +x
 # SAT SOLVE END
 
 	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_004.bnet"
-	User time (seconds): 29.87
-	System time (seconds): 16.49
-	Percent of CPU this job got: 107%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:43.27
+	User time (seconds): 44.10
+	System time (seconds): 13.96
+	Percent of CPU this job got: 102%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:56.38
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
@@ -3213,15 +3213,15 @@ c exit 10
 	Maximum resident set size (kbytes): 9418624
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 2428744
-	Voluntary context switches: 4408
-	Involuntary context switches: 552
+	Minor (reclaiming a frame) page faults: 2424356
+	Voluntary context switches: 4019
+	Involuntary context switches: 559
 	Swaps: 0
-	File system inputs: 0
+	File system inputs: 272
 	File system outputs: 40
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 0
-# Runner: docker exit code 0, wall time 42.4s
+# Runner: docker exit code 0, wall time 53.6s

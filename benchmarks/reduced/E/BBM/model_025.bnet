@@ -1,0 +1,39 @@
+targets, factors
+v_Apoptosis, (v_Caspase | v_Apoptosis)
+v_BID, ((v_GZMB & !(v_BclxL | v_Apoptosis | v_MCL1)) | (v_Caspase & !(v_BclxL | v_Apoptosis | v_MCL1)))
+v_BclxL, ((v_STAT3 & !(v_BID | v_DISC | v_GZMB | v_Apoptosis)) | (v_NFKB & !(v_BID | v_DISC | v_GZMB | v_Apoptosis)))
+v_CD45, v_CD45
+v_CREB, (v_ERK & v_IFNG & !v_Apoptosis)
+v_Caspase, ((v_DISC & !v_Apoptosis) | (v_GZMB & v_BID & !v_Apoptosis))
+v_Ceramide, (v_Fas & !(v_Apoptosis | v_S1P))
+v_DISC, (v_FasT & (v_Ceramide | (v_IL2 & v_Fas) | (v_Fas & !((v_CREB & v_IFNG & !(v_DISC | v_Apoptosis)) | (v_NFKB & !(v_DISC | v_Apoptosis))))) & !v_Apoptosis)
+v_ERK, (v_RAS & !v_Apoptosis & v_PI3K)
+v_Fas, (v_FasT & ((v_NFAT & !v_Apoptosis) | (v_ERK & !v_Apoptosis) | (v_NFKB & !v_Apoptosis) | (v_STAT3 & !v_Apoptosis)) & !((v_FasT & v_S1P & !v_Apoptosis) | v_Apoptosis))
+v_FasT, (v_NFKB & !v_Apoptosis)
+v_GAP, ((v_PDGFR & v_GAP & !(v_Apoptosis | v_IL2 | v_IL15)) | (v_RAS & !(v_Apoptosis | v_IL2 | v_IL15)))
+v_GRB2, ((((v_CD45 & !v_Apoptosis) | (v_TCR & !v_Apoptosis) | (v_IL2RB & !v_Apoptosis)) & !(v_Apoptosis | (v_TCR & !v_Apoptosis) | (v_IL2RB & !v_Apoptosis)) & !v_Apoptosis) | (v_IL2RB & !v_Apoptosis))
+v_GZMB, ((v_CREB & v_IFNG & !v_Apoptosis) | (v_TBET & !v_Apoptosis))
+v_IFNG, ((v_Stimuli & v_IFNGT & !(v_SMAD | v_P2 | v_Apoptosis)) | (v_IL15 & v_IFNGT & !(v_SMAD | v_P2 | v_Apoptosis)) | (v_IL2 & v_IFNGT & !(v_SMAD | v_P2 | v_Apoptosis)))
+v_IFNGT, ((v_STAT3 & !v_Apoptosis) | (v_NFAT & !v_Apoptosis) | (v_TBET & !v_Apoptosis))
+v_IL15, v_IL15
+v_IL2, ((v_NFAT & !(v_TBET | v_Apoptosis)) | (v_STAT3 & !(v_TBET | v_Apoptosis)) | (v_NFKB & !(v_TBET | v_Apoptosis)))
+v_IL2RA, (v_IL2 & (v_NFKB | v_STAT3) & !v_Apoptosis & !(v_Apoptosis | v_IL2RA))
+v_IL2RB, (v_ERK & v_TBET & !v_Apoptosis & (v_IL2 | v_IL15))
+v_JAK, ((v_IFNG & !(v_Apoptosis | v_CD45 | v_SOCS)) | (v_IL2RB & !(v_Apoptosis | v_CD45 | v_SOCS)) | (v_NFKB & !v_Apoptosis & !(v_Apoptosis | v_CD45 | v_SOCS)) | (v_IL2RA & !(v_Apoptosis | v_CD45 | v_SOCS)))
+v_MCL1, (v_IL2RB & v_PI3K & v_NFKB & v_STAT3 & !(v_Apoptosis | v_DISC))
+v_NFAT, (v_PI3K & !v_Apoptosis)
+v_NFKB, ((v_PI3K & !v_Apoptosis) | (v_TAX & !v_Apoptosis))
+v_P2, ((v_P2 & !(v_Stimuli2 | v_Apoptosis)) | (v_IFNG & !(v_Stimuli2 | v_Apoptosis)))
+v_PDGF, v_PDGF
+v_PDGFR, ((v_PDGF & !v_Apoptosis) | (v_S1P & !v_Apoptosis))
+v_PI3K, ((v_PDGFR & !v_Apoptosis) | (v_RAS & !v_Apoptosis))
+v_RAS, ((((v_PDGFR & !v_Apoptosis) | (v_GRB2 & !v_Apoptosis)) & !(v_Apoptosis | v_GAP)) | (v_GRB2 & !(v_Apoptosis | v_GAP)))
+v_S1P, (v_PDGFR & !v_Apoptosis & !(v_Ceramide | v_Apoptosis))
+v_SMAD, (v_S1P & !v_Apoptosis)
+v_SOCS, (v_JAK & !(v_IL2 | v_Apoptosis | v_IL15))
+v_STAT3, (v_JAK & !v_Apoptosis)
+v_Stimuli, v_Stimuli
+v_Stimuli2, v_Stimuli2
+v_TAX, v_TAX
+v_TBET, ((v_JAK & !v_Apoptosis) | (v_TBET & !v_Apoptosis))
+v_TCR, (v_Stimuli & !(v_Apoptosis | (v_TCR & !v_Apoptosis)))

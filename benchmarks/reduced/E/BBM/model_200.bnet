@@ -1,0 +1,14 @@
+targets, factors
+v_ATM, ((v_DNA_Damage & !v_p53_A) | (v_DNA_Damage & v_p53_A & !v_E2F1 & !v_HDAC1) | (v_DNA_Damage & v_p53_A & v_E2F1))
+v_Cdc25A, ((!v_ATM & !v_p38MAPK) | (!v_ATM & v_p38MAPK) | (v_ATM & !v_p38MAPK))
+v_DNA_Damage, v_DNA_Damage
+v_E2F1, ((!v_ATM & !v_c_Myc & !v_RB) | (!v_ATM & v_c_Myc) | (v_ATM & !v_c_Myc & !v_Cdc25A & !v_RB & !v_Sirt_1) | (v_ATM & !v_c_Myc & v_Cdc25A & !v_RB) | (v_ATM & v_c_Myc))
+v_HDAC1, (!v_DNA_Damage | (v_DNA_Damage & !v_ATM & !v_Sirt_1))
+v_RB, !(!v_ATM & !v_p21 & v_Cdc25A)
+v_Sirt_1, ((!v_ATM & v_E2F1) | (v_ATM & v_E2F1 & !v_HDAC1))
+v_c_Myc, ((!v_p38MAPK & !v_ATM & !v_p21 & !v_RB) | (!v_p38MAPK & v_ATM & !v_p21 & !v_RB & v_E2F1) | (v_p38MAPK & !v_p21 & !v_RB))
+v_p21, ((!v_p38MAPK & v_p53_A) | (v_p38MAPK & !v_p53_A & !v_c_Myc & !v_p53_K) | (v_p38MAPK & !v_p53_A & v_c_Myc & !v_HDAC1 & !v_p53_K) | (v_p38MAPK & v_p53_A))
+v_p38MAPK, (v_ATM & !v_p53_A)
+v_p53, ((!v_ATM & v_p38MAPK & !((!v_ATM & !v_p53 & !v_p53_A) | (!v_ATM & v_p53))) | v_ATM)
+v_p53_A, ((!v_p53 & !v_p53_K & !((!v_p53_A & v_p53_K) | v_p53_A) & !v_Sirt_1) | (v_p53 & !v_p53_K & !v_Sirt_1))
+v_p53_K, (v_p53 & !v_p53_A)

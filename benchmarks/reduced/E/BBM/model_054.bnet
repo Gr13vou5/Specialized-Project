@@ -1,0 +1,3 @@
+targets, factors
+v_AP1, (v_NGF | v_AP1)
+v_NGF, v_NGF

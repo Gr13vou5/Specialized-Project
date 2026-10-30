@@ -1,0 +1,18 @@
+targets, factors
+v_AKT, (!v_NCOR2 & ((!v_JAK2 & v_CSF2) | v_JAK2) & !v_CSF2)
+v_AhR, ((!v_IRF4 & v_IL4 & v_USF1 & v_NCOR2) | (v_IRF4 & v_IL4 & !v_USF1 & !v_CSF2) | (v_IRF4 & v_IL4 & v_USF1 & !v_NCOR2 & !v_CSF2) | (v_IRF4 & v_IL4 & v_USF1 & v_NCOR2))
+v_CEBPa, (!(v_PU1_b1 & !v_AKT) & !v_IRF8 & v_PU1_b1 & !v_STAT5)
+v_CEBPb, ((!v_CEBPa & ((!v_AhR & !v_CEBPb & v_IRF8 & !v_PU1_b1) | (!v_AhR & !v_CEBPb & v_IRF8 & v_PU1_b1 & !v_PU1_b2) | (!v_AhR & v_CEBPb & !v_PU1_b1) | (!v_AhR & v_CEBPb & v_PU1_b1 & !v_PU1_b2)) & v_PU1_b1) | (v_CEBPa & v_PU1_b1))
+v_CSF2, v_CSF2
+v_IL4, v_IL4
+v_IRF4, ((!v_AhR & v_IRF4 & ((!v_CSF2 & v_AKT) | v_CSF2) & v_PU1_b1 & v_PU1_b2 & v_IL4) | v_AhR)
+v_IRF8, ((!v_KLF4 & v_PU1_b1 & !v_NCOR2) | (v_KLF4 & !v_NCOR2))
+v_JAK2, (v_CSF2 & !v_AhR)
+v_KLF4, ((!v_CSF2 & v_PU1_b1 & !v_STAT5) | (v_CSF2 & !v_IRF8 & v_PU1_b1 & !v_STAT5) | (v_CSF2 & v_IRF8 & !(v_IL4 & v_CSF2) & v_PU1_b1 & !v_STAT5) | (v_CSF2 & v_IRF8 & v_IL4))
+v_NCOR2, ((!v_AhR & !v_IRF4 & v_IL4) | (!v_AhR & v_IRF4) | v_AhR)
+v_PU1_b1, ((!v_PU1_b1 & !v_IL4 & v_CSF2) | (!v_PU1_b1 & v_IL4) | (v_PU1_b1 & !v_PU1_b2 & !v_IL4 & v_CSF2) | (v_PU1_b1 & !v_PU1_b2 & v_IL4) | (v_PU1_b1 & v_PU1_b2))
+v_PU1_b2, (v_PU1_b1 & v_IL4 & v_CSF2)
+v_STAT3_b1, ((!v_STAT3_b1 & v_IL4) | (v_STAT3_b1 & !v_STAT3_b2 & v_IL4) | (v_STAT3_b1 & v_STAT3_b2))
+v_STAT3_b2, (v_STAT3_b1 & v_IL4 & !(v_USF1 & !(v_IRF4 & v_PU1_b1 & v_STAT5)))
+v_STAT5, ((!v_JAK2 & ((!v_CSF2 & v_JAK2) | v_CSF2)) | v_JAK2)
+v_USF1, ((!v_KLF4 & v_PU1_b1) | v_KLF4)

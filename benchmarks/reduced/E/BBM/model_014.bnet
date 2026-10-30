@@ -1,0 +1,33 @@
+targets, factors
+v_Apoptosis, (v_Caspase | v_Apoptosis)
+v_BID, ((v_GZMB & !(v_BclxL | v_Apoptosis | v_MCL1)) | (v_Caspase & !(v_BclxL | v_Apoptosis | v_MCL1)))
+v_BclxL, ((v_NFKB & !(v_BID | v_Apoptosis | v_GZMB)) | (v_STAT3 & !(v_BID | v_Apoptosis | v_GZMB)))
+v_CD45, v_CD45
+v_Caspase, (v_GZMB & v_BID & !v_Apoptosis)
+v_ERK, (v_RAS & !v_Apoptosis & v_PI3K)
+v_GAP, ((v_PDGFR & v_GAP & !(v_IL2 | v_IL15 | v_Apoptosis)) | (v_RAS & !(v_IL2 | v_IL15 | v_Apoptosis)))
+v_GRB2, ((((v_IL2RB & !v_Apoptosis) | (v_TCR & !v_Apoptosis) | (v_CD45 & !v_Apoptosis)) & !(v_Apoptosis | (v_IL2RB & !v_Apoptosis) | (v_TCR & !v_Apoptosis)) & !v_Apoptosis) | (v_IL2RB & !v_Apoptosis))
+v_GZMB, ((v_TBET & !v_Apoptosis) | (v_ERK & v_IFN & !v_Apoptosis & v_IFNG))
+v_IFN, v_IFN
+v_IFNG, ((v_IL15 & v_IFNGT & !(v_SMAD | v_Apoptosis | v_P2)) | (v_Stimuli & v_IFNGT & !(v_SMAD | v_Apoptosis | v_P2)) | (v_IL2 & v_IFNGT & !(v_SMAD | v_Apoptosis | v_P2)))
+v_IFNGT, ((v_PI3K & !v_Apoptosis) | (v_TBET & !v_Apoptosis) | (v_STAT3 & !v_Apoptosis))
+v_IL15, v_IL15
+v_IL2, ((v_STAT3 & !(v_TBET | v_Apoptosis)) | (v_PI3K & !v_Apoptosis & !(v_TBET | v_Apoptosis)) | (v_NFKB & !(v_TBET | v_Apoptosis)))
+v_IL2RA, (v_IL2 & (v_NFKB | v_STAT3) & !v_Apoptosis & !(v_IL2RA | v_Apoptosis))
+v_IL2RB, (v_ERK & v_TBET & !v_Apoptosis & (v_IL2 | v_IL15))
+v_JAK, ((v_IL2RA & !(v_SOCS | v_Apoptosis | v_CD45)) | (v_IFNG & !(v_SOCS | v_Apoptosis | v_CD45)) | (v_IL2RB & !(v_SOCS | v_Apoptosis | v_CD45)) | (v_NFKB & !v_Apoptosis & !(v_SOCS | v_Apoptosis | v_CD45)))
+v_MCL1, (v_IL2RB & v_PI3K & v_NFKB & v_STAT3 & !v_Apoptosis)
+v_NFKB, ((v_TAX & !v_Apoptosis) | (v_PI3K & !v_Apoptosis))
+v_P2, ((v_IFNG & !(v_Stimuli2 | v_Apoptosis)) | (v_P2 & !(v_Stimuli2 | v_Apoptosis)))
+v_PDGF, v_PDGF
+v_PDGFR, ((v_PDGFR & !v_Apoptosis) | (v_PDGF & !v_Apoptosis))
+v_PI3K, ((v_PDGFR & !v_Apoptosis) | (v_RAS & !v_Apoptosis))
+v_RAS, ((((v_PDGFR & !v_Apoptosis) | (v_GRB2 & !v_Apoptosis)) & !(v_Apoptosis | v_GAP)) | (v_GRB2 & !(v_Apoptosis | v_GAP)))
+v_SMAD, (v_PDGFR & !v_Apoptosis)
+v_SOCS, (v_JAK & !(v_IL15 | v_IL2 | v_Apoptosis))
+v_STAT3, (v_JAK & !v_Apoptosis)
+v_Stimuli, v_Stimuli
+v_Stimuli2, v_Stimuli2
+v_TAX, v_TAX
+v_TBET, ((v_JAK & !v_Apoptosis) | (v_TBET & !v_Apoptosis))
+v_TCR, (v_Stimuli & !((v_TCR & !v_Apoptosis) | v_Apoptosis))

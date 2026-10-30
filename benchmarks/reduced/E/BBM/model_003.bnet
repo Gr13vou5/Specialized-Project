@@ -1,0 +1,3 @@
+targets, factors
+v_EGF, v_EGF
+v_IGF1R, ((v_EGF | v_IGF1R) & !v_EGF)

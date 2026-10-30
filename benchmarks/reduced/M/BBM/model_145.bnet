@@ -1,0 +1,17 @@
+targets, factors
+v_ASK1, (v_UVB & !v_PDK1 & !v_MITFprotein)
+v_ERK, (v_UVB & !v_MITFprotein & !v_ERK & !v_PDK1 & !v_ASK1)
+v_ERK_m, ((v_IL_1 | v_P53 | v_Ras_m) & v_PI3K_m)
+v_IL_1, (v_UVB & !v_MITFprotein)
+v_MITFprotein, (v_ERK_m & v_b_catenin_m & (v_cAMP | v_PI3K_m | v_MSK))
+v_MSK, (!v_PI3K_m | v_ERK_m)
+v_NFAT, v_PDK1
+v_P53, (!v_PDK1 & (v_ERK | v_ASK1))
+v_PDK1, (v_UVB & !v_MITFprotein & !v_PTEN)
+v_PI3K_m, ((v_IL_1 | v_P53 | v_Ras_m) & !v_cAMP)
+v_PTEN, ((v_MITFprotein & !v_PDK1 & !v_ERK) | (!v_MITFprotein & !v_UVB & !v_PDK1 & !v_ERK))
+v_Ras_m, (((v_IL_1 | v_P53) & !v_ERK_m) | v_cAMP)
+v_UVB, v_UVB
+v_b_catenin, v_PDK1
+v_b_catenin_m, v_PI3K_m
+v_cAMP, (!v_cAMP & ((v_PDK1 & (v_b_catenin | v_NFAT | v_ASK1)) | v_IL_1 | v_P53))

@@ -1,0 +1,16 @@
+targets, factors
+v_AbnormalTelomer, v_AbnormalTelomer
+v_AceticAcid, v_AceticAcid
+v_Adozelesin, v_Adozelesin
+v_CPR3, v_CPR3
+v_CU2, v_CU2
+v_H2O2, v_H2O2
+v_HK, v_HK
+v_HOG1, (v_Stress | !v_HOG1)
+v_Heat, v_Heat
+v_MG2, v_MG2
+v_MT_Frag, ((v_H2O2 & !v_HK) | v_Heat | v_RedActinDyn | v_Stress | v_MT_Frag | v_HK)
+v_Mating, v_Mating
+v_RedActinDyn, v_RedActinDyn
+v_Salt, v_Salt
+v_Stress, v_Stress

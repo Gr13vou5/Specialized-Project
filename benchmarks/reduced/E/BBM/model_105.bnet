@@ -1,0 +1,17 @@
+targets, factors
+v_ABA, v_ABA
+v_ABI1, (!(v_RBOH_RCN1_b__ROS_a | v_Ca2_) & (!v_ABA | v_ROP11_GEF1_4_10) & !v_RBOH_RCN1_b__ROS_a & v_pHc)
+v_ABI2, ((!v_ABA | v_ROP11_GEF1_4_10) & !v_RBOH_RCN1_b__ROS_a)
+v_CPK3_21, (v_Ca2_ | v_CPK3_21)
+v_CPK6_23, v_CPK6_23
+v_Ca2_, ((v_Ca2_ | v_RBOH_RCN1_b__ROS_a | !(!v_ABA | v_ABI1)) & !v_Ca2_)
+v_HAB1, (!v_ABA & !v_RBOH_RCN1_b__ROS_a)
+v_K__efflux, ((v_Vacuolar_Acidification | v_Ca2_) & (!v_RBOH_RCN1_b__ROS_a | v_pHc) & (v_Ca2_ | v_Vacuolar_Acidification) & (!(!v_pHc & !v_Ca2_ & !v_RBOH_RCN1_b__ROS_a) | !v_K__efflux))
+v_MPK9_12, (v_Ca2_ | v_MPK9_12)
+v_Microtubule_Depolymerization, (v_Ca2_ | v_Microtubule_Depolymerization)
+v_OST1__PIP2_1, ((!v_ABI1 & !v_HAB1) | (!v_PP2CA & !v_ABI2) | (!v_ABI1 & !v_ABI2) | (!v_HAB1 & !v_PP2CA) | (!v_HAB1 & !v_ABI2) | (!v_ABI1 & !v_PP2CA))
+v_PP2CA, (!v_ABA & !v_RBOH_RCN1_b__ROS_a)
+v_RBOH_RCN1_b__ROS_a, (v_pHc & !v_ABI1 & v_OST1__PIP2_1 & (v_RBOH_RCN1_b__ROS_a | v_Ca2_))
+v_ROP11_GEF1_4_10, v_ROP11_GEF1_4_10
+v_Vacuolar_Acidification, (v_ABA | v_Ca2_ | v_Vacuolar_Acidification)
+v_pHc, (((v_OST1__PIP2_1 & !v_ABI2 & !v_ABI1) | v_Ca2_) & v_Vacuolar_Acidification)

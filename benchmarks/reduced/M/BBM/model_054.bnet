@@ -1,0 +1,13 @@
+targets, factors
+v_AP1, (v_JUNB | v_Fosl1 | v_JUND | v_JNK | v_NGF | v_MEK)
+v_DAG, (v_NGF | v_AP1)
+v_Fosl1, (v_NGF | v_JNK | v_MEK)
+v_JNK, (v_MKK7 | v_SOS)
+v_JUNB, (v_NGF | v_MEK | v_JNK)
+v_JUND, (v_JNK | v_MEK)
+v_MEK, (v_RAF | v_SOS)
+v_MKK7, v_SOS
+v_NGF, v_NGF
+v_RAF, (v_SOS | v_DAG | v_NGF | v_AP1)
+v_RAP1, v_NGF
+v_SOS, (v_NGF | v_AP1 | v_RAP1)

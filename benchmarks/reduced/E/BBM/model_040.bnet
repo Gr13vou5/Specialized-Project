@@ -1,0 +1,9 @@
+targets, factors
+v_GATA3, ((v_STAT6 & !v_Tbet) | (v_GATA3 & !v_Tbet))
+v_IFNb, v_IFNb
+v_IL12, v_IL12
+v_IL18, v_IL18
+v_STAT1, ((((v_Tbet & !v_GATA3) | (v_IL12 & !v_GATA3) | (v_IL18 & !v_STAT6 & !v_GATA3) | (v_TCR & !v_GATA3)) & !(v_STAT1 | v_Tbet)) | v_IFNb)
+v_STAT6, (v_GATA3 & !v_STAT1 & !(v_STAT1 | v_Tbet))
+v_TCR, v_TCR
+v_Tbet, ((v_Tbet & !v_GATA3) | (v_STAT1 & !v_GATA3))

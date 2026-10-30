@@ -1,0 +1,24 @@
+targets, factors
+v_ATM, (v_Cas3 | v_DNAdam)
+v_BAX, ((v_p53 & !(v_Bclxl | v_BCL2)) | (((v_Fas & !(v_BCL2 | v_Bclxl)) | (v_STRESS & !(v_BCL2 | v_Bclxl))) & !(v_Bclxl | v_BCL2)))
+v_BCL2, ((v_pNFKB & !(!v_PIP3 | v_p53)) | (v_pSTAT3 & !(!v_PIP3 | v_p53)))
+v_Bclxl, ((v_pNFKB & !(v_p53 | !v_PIP3 | v_BAX)) | (v_pSTAT3 & !(v_p53 | !v_PIP3 | v_BAX)))
+v_Bort, v_Bort
+v_CDK4, ((v_RAS | v_MYC | v_PIP3) & !((v_p53 & !(v_PIP3 | v_CDK4 | v_MYC)) | (v_p53 & !(v_CDK4 | v_MYC | v_PIP3))))
+v_Cas3, ((v_BAX & !(v_XIAP | v_PIP3) & !v_XIAP) | (v_Fas & !v_pNFKB & !v_XIAP))
+v_DNAdam, (v_STRESS | v_Cas3)
+v_Fas, (v_p53 | (v_STRESS & v_Bort) | v_Fas)
+v_JAK2, (v_pNFKB & !v_Cas3 & !v_SHP1)
+v_MDM, ((v_PIP3 & !v_ATM) | (v_p53 & !v_ATM))
+v_MYC, (v_RAS | v_pSTAT3)
+v_PIP3, (v_PIP3 & !v_p53)
+v_RAS, (v_SHP1 | (v_pNFKB & !v_Cas3))
+v_SHP1, v_SHP1
+v_STRESS, (v_DNAdam | !(v_DNAdam | !v_Bort))
+v_TNFA, v_TNFA
+v_TNFAR, v_TNFAR
+v_X, v_X
+v_XIAP, ((v_pNFKB & !(v_BAX | v_p53)) | (v_pSTAT3 & !(v_BAX | v_p53)))
+v_p53, ((v_ATM & !(v_MDM & !v_Bort)) | (v_STRESS & v_Bort & !(v_MDM & !v_Bort)))
+v_pNFKB, (v_X | v_pSTAT3 | (((v_TNFAR & v_TNFA) | v_Bort) & v_TNFAR) | v_PIP3)
+v_pSTAT3, ((!v_Cas3 & v_pNFKB & v_JAK2) | (v_JAK2 & !v_Cas3 & v_pNFKB))

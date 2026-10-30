@@ -1,0 +1,13 @@
+targets, factors
+v_FOXO3, (!v_MAPK | (v_MAPK & !v_PIP3))
+v_GFs, v_GFs
+v_MAPK, ((!v_RAS & v_PIP3) | v_RAS)
+v_PIP3, ((!v_RTK & v_RAS) | v_RTK)
+v_Proliferation_b1, ((!v_cycE & !v_mTORC1 & v_Proliferation_b1 & v_Proliferation_b2) | (!v_cycE & v_mTORC1 & !v_S6K & v_Proliferation_b1 & v_Proliferation_b2) | (!v_cycE & v_mTORC1 & v_S6K) | v_cycE)
+v_Proliferation_b2, (v_cycE & v_mTORC1 & v_S6K & v_Proliferation_b1)
+v_RAS, v_RTK
+v_RTK, ((!v_MAPK & !v_FOXO3 & !v_S6K & v_GFs) | (!v_MAPK & v_FOXO3 & v_GFs) | (v_MAPK & v_FOXO3 & v_GFs))
+v_S6K, v_mTORC1
+v_TSC, (!v_MAPK & !v_PIP3)
+v_cycE, ((!v_FOXO3 & !v_PIP3 & v_cycE) | (!v_FOXO3 & v_PIP3) | (v_FOXO3 & v_cycE))
+v_mTORC1, (!v_TSC & v_PIP3)

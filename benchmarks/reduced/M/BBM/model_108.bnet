@@ -1,0 +1,18 @@
+targets, factors
+v_AKT, ((!(v_Insulin & !v_mTORC1_S6K1) & !(v_p53 & !v_AKT) & v_CDK2 & !v_PP2A) | (v_Insulin & !v_mTORC1_S6K1 & !(v_p53 & !v_AKT) & !v_PP2A))
+v_AMPK, (v_p53 & !v_Metabolism)
+v_CDK2, ((!v_p21 & v_mTORC1_S6K1 & !v_MYC & v_E2F1) | (!v_p21 & v_mTORC1_S6K1 & v_MYC))
+v_E2F1, ((!v_GF & v_MYC & v_CDK2 & v_E2F1) | (v_GF & v_CDK2 & v_E2F1))
+v_FOXO, ((!v_MAPK & !v_p16 & !v_AKT & !v_AMPK & v_Metabolism) | (!v_MAPK & !v_p16 & !v_AKT & v_AMPK) | (!v_MAPK & v_p16 & !v_AKT))
+v_GF, v_GF
+v_Insulin, v_Insulin
+v_MAPK, (v_GF & !v_PP2A)
+v_MYC, (v_MAPK & !v_p53 & v_mTORC1_S6K1 & v_E2F1)
+v_Metabolism, ((!v_MAPK & !v_AKT & v_mTORC1_S6K1 & v_PP1C) | (!v_MAPK & v_AKT & v_mTORC1_S6K1) | (v_MAPK & !v_AKT & v_PP1C) | (v_MAPK & v_AKT))
+v_PP1C, ((!v_MAPK & v_AKT) | v_MAPK)
+v_PP2A, !v_mTORC1_S6K1
+v_TSC, (!v_MAPK & !v_AKT & v_AMPK)
+v_mTORC1_S6K1, (!v_AMPK & !v_TSC)
+v_p16, (v_MAPK & !v_p53 & !v_E2F1 & !(!v_AKT & v_MYC))
+v_p21, ((!v_p53 & !v_AKT & !v_MYC & v_FOXO) | (v_p53 & !v_AKT & !v_MYC))
+v_p53, !((!v_p16 & !v_p53 & v_AKT & !v_mTORC1_S6K1 & !v_MYC & !v_E2F1) | (!v_p16 & v_p53 & !v_mTORC1_S6K1 & !v_MYC & !v_E2F1) | (v_p16 & !v_mTORC1_S6K1 & !v_MYC & !v_E2F1))

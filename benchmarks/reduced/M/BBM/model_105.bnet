@@ -1,0 +1,28 @@
+targets, factors
+v_ABA, v_ABA
+v_ABI1, (!v_PA_DAGK_PC & (!v_ABA | v_ROP11_GEF1_4_10) & !v_RBOH_RCN1_b__ROS_a & v_pHc)
+v_ABI2, ((!v_ABA | v_ROP11_GEF1_4_10) & !v_RBOH_RCN1_b__ROS_a)
+v_AnionEM, (v_SLAC1 | (v_OST1__PIP2_1 & v_Ca2_ & v_CPK6_23 & v_CPK3_21 & !v_ABI1))
+v_CPK3_21, (v_Ca2_ | v_CPK3_21)
+v_CPK6_23, v_CPK6_23
+v_Ca2_, ((v_PLC | (v_NOGC1__cGMP_GTP & v_RBOH_RCN1_b__ROS_a & v_NO_Nitrite_a) | !(!v_ABA | v_ABI1) | v_GHR1) & !v_Ca2_)
+v_GHR1, (!v_ABI2 & v_RBOH_RCN1_b__ROS_a)
+v_HAB1, (!v_ABA & !v_RBOH_RCN1_b__ROS_a)
+v_H__ATPase, (!v_pHc & !v_Ca2_ & !v_RBOH_RCN1_b__ROS_a)
+v_KEV, (v_Vacuolar_Acidification | v_Ca2_)
+v_KOUT, ((!v_NO_Nitrite_a | !v_RBOH_RCN1_b__ROS_a | v_pHc) & (v_AnionEM | v_Ca2_ | v_KEV) & (!v_H__ATPase | !v_K__efflux))
+v_K__efflux, (v_KEV & v_KOUT)
+v_MPK9_12, (v_Ca2_ | v_MPK9_12)
+v_Microtubule_Depolymerization, (v_Ca2_ | v_Microtubule_Depolymerization)
+v_NOGC1__cGMP_GTP, v_NO_Nitrite_a
+v_NO_Nitrite_a, v_RBOH_RCN1_b__ROS_a
+v_OST1__PIP2_1, ((!v_ABI1 & !v_HAB1) | (!v_PP2CA & !v_ABI2) | (!v_ABI1 & !v_ABI2) | (!v_HAB1 & !v_PP2CA) | (!v_HAB1 & !v_ABI2) | (!v_ABI1 & !v_PP2CA))
+v_PA_DAGK_PC, (v_NO_Nitrite_a | v_RBOH_RCN1_b__ROS_a | (v_SPHK1_2__S1P__SPP1_Sph__GPA1__GCR1 & v_Ca2_) | v_PLC)
+v_PLC, v_Ca2_
+v_PP2CA, (!v_ABA & !v_RBOH_RCN1_b__ROS_a)
+v_RBOH_RCN1_b__ROS_a, (v_pHc & !v_ABI1 & v_OST1__PIP2_1 & v_SPHK1_2__S1P__SPP1_Sph__GPA1__GCR1 & v_PA_DAGK_PC)
+v_ROP11_GEF1_4_10, v_ROP11_GEF1_4_10
+v_SLAC1, ((v_CPK6_23 | v_CPK3_21) & v_MPK9_12 & v_OST1__PIP2_1 & v_GHR1 & !v_ABI1 & !v_PP2CA & !v_ABI2 & v_pHc)
+v_SPHK1_2__S1P__SPP1_Sph__GPA1__GCR1, (v_PA_DAGK_PC | v_ABA)
+v_Vacuolar_Acidification, (v_ABA | v_Ca2_ | v_Vacuolar_Acidification)
+v_pHc, (((v_OST1__PIP2_1 & !v_ABI2 & !v_ABI1) | v_Ca2_) & v_Vacuolar_Acidification)

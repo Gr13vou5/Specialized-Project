@@ -1,0 +1,321 @@
+targets, factors
+csa1, (sa23 & sa74)
+csa10, ((!csa9 & sa89 & sa135) | (csa9 & sa89 & sa135 & !sa67 & !csa208 & !sa74) | (csa9 & !sa67 & !csa208 & sa74) | (csa9 & !sa67 & csa208) | (csa9 & sa67))
+csa11, (csa158 | (!csa158 & sa119))
+csa124, csa124
+csa126, csa126
+csa127, csa127
+csa131, csa131
+csa145, csa145
+csa158, (csa251 | (!csa251 & !sa70 & sa106 & (sa728 | (!sa728 & (csa226 | (!csa226 & sa1923 & sa2374))))) | (!csa251 & sa70 & sa106))
+csa173, csa173
+csa174, csa174
+csa176, ((!csa56 & csa174 & ((!sa1651 & !sa1319 & sa1825 & !csa173 & !sa212) | (!sa1651 & sa1319 & !csa173 & !sa212) | (!sa1651 & !csa173 & sa212) | (!sa1651 & csa173))) | (csa56 & csa174))
+csa179, csa179
+csa208, csa208
+csa226, csa226
+csa242, (sa1412 & csa91 & csa242 & sa2021)
+csa251, csa251
+csa254, csa254
+csa257, (sa32 & sa2201)
+csa259, (sa32 & sa2204)
+csa269, ((!csa174 & csa176) | (csa174 & !csa176 & !sa1526 & !sa1825 & sa2097 & sa2103) | (csa174 & !csa176 & !sa1526 & sa1825) | (csa174 & !csa176 & sa1526) | (csa174 & csa176))
+csa273, (!sa1837 & !sa1842 & sa2160)
+csa276, csa276
+csa282, csa282
+csa284, csa284
+csa286, csa286
+csa287, csa287
+csa288, csa288
+csa295, csa295
+csa296, csa296
+csa297, csa297
+csa298, csa298
+csa306, csa306
+csa31, (sa190 & sa196 & sa194)
+csa323, csa323
+csa33, csa33
+csa35, ((!sa130 & !sa830 & !sa2301) | (!sa130 & sa830) | (sa130 & !sa830 & !sa2301 & !sa219) | (sa130 & sa830 & !sa219) | (sa130 & sa219))
+csa4, csa4
+csa41, csa41
+csa53, csa53
+csa54, csa54
+csa56, ((sa2301 & csa53 & !csa58 & sa498 & !sa633) | (csa53 & !csa58 & sa498 & sa633) | (sa89 & !sa1319 & !sa2301 & !csa53 & csa58) | (!sa89 & sa2301 & csa53 & csa58 & sa498 & !sa633) | (!sa89 & csa53 & csa58 & sa498 & sa633) | (sa89 & !sa1319 & !sa2301 & csa53 & csa58 & !sa498) | (sa89 & !sa1319 & csa53 & csa58 & sa498 & !sa633) | (sa89 & sa1319 & sa2301 & csa53 & csa58 & sa498 & !sa633) | (sa89 & csa53 & csa58 & sa498 & sa633))
+csa58, ((csa56 & !sa1319 & !sa463 & !sa465 & !sa1448 & sa1590) | (csa56 & !sa1319 & !sa463 & !sa465 & sa1448) | (csa56 & sa1319 & !sa463 & !sa465) | (csa56 & !sa463 & sa465) | (csa56 & sa463))
+csa59, csa59
+csa64, (sa2246 & sa503)
+csa81, csa81
+csa88, (sa649 & sa2348)
+csa9, csa9
+csa91, csa91
+sa1000, sa1000
+sa1001, sa1001
+sa1003, sa1003
+sa1004, sa1004
+sa1010, (sa997 | (!sa997 & !sa1012 & !sa1015 & sa1038) | (!sa997 & !sa1012 & sa1015 & sa1038 & !sa1031) | (!sa997 & !sa1012 & sa1015 & sa1031) | (!sa997 & sa1012 & !sa1015 & sa1038) | (!sa997 & sa1012 & sa1015))
+sa1012, sa1012
+sa1015, ((!sa1010 & sa1018 & sa988 & sa1021 & sa1046) | (sa1010 & sa1018))
+sa1018, sa1018
+sa1021, sa1021
+sa1022, sa1022
+sa1031, sa1031
+sa1032, sa1032
+sa1038, (sa1021 & sa988 & sa983 & sa998)
+sa1041, (csa1 | (!csa1 & sa1042))
+sa1042, sa1042
+sa1046, sa1046
+sa106, sa106
+sa107, (sa106 & sa633 & !sa1856)
+sa1078, ((!csa127 & sa1856 & !sa2067) | (csa127 & !sa2067))
+sa1081, (sa1078 | (!sa1078 & sa2433))
+sa110, sa110
+sa1103, sa1103
+sa1130, sa1130
+sa1139, sa1139
+sa1142, sa1142
+sa1154, sa1154
+sa118, sa118
+sa119, sa119
+sa121, (sa83 | (sa119 & !sa83))
+sa1219, sa1219
+sa123, (csa35 | (!sa126 & !csa35 & !sa66 & !sa121 & sa856) | (sa126 & !csa35 & !sa66 & !sa121) | (!csa35 & !sa66 & sa121) | (!csa35 & sa66))
+sa126, (csa259 | (!sa74 & !csa259 & !sa622 & !(sa1081 & !(sa1081 & sa1651)) & sa728) | (!sa74 & !csa259 & !sa622 & sa1081 & !(sa1081 & sa1651)) | (!sa74 & !csa259 & sa622) | (sa74 & !csa259))
+sa1261, sa1261
+sa1285, sa1285
+sa1293, sa1293
+sa130, ((sa298 & !sa66 & !sa81 & !sa2301 & sa2223 & sa1432) | (!sa66 & sa81) | (sa298 & sa66 & !sa81 & !sa2301 & sa2223) | (sa66 & sa81))
+sa1302, sa1302
+sa131, sa131
+sa1319, (sa74 | (!sa74 & !sa1412 & sa2433 & !sa1631 & !sa1635 & !(csa158 & sa70)) | (!sa74 & !sa1412 & !sa1631 & !sa1635 & csa158 & sa70) | (!sa74 & !sa1412 & !sa1631 & sa1635) | (!sa74 & !sa1412 & sa1631) | (!sa74 & sa1412))
+sa1325, sa1325
+sa135, (csa269 | (!csa269 & sa1526))
+sa136, (sa150 | (!sa150 & sa956))
+sa137, sa137
+sa138, (sa97 | (!sa97 & sa137))
+sa1412, sa1412
+sa1416, sa1416
+sa1421, sa1421
+sa1425, (sa1421 | (!sa1421 & sa1426))
+sa1426, sa1426
+sa1432, sa1432
+sa1447, sa1447
+sa1448, sa1448
+sa15, sa15
+sa150, (sa1412 | (!csa124 & !sa1416 & !sa1412 & !sa150 & !sa160 & !sa164 & ((sa2546 & !sa89 & sa2614) | (sa2546 & sa89 & sa2614 & !sa2420) | (sa89 & sa2420))) | (!csa124 & sa1416 & !sa1412 & !sa150 & !sa160 & !sa164) | (!csa124 & !sa1412 & !sa150 & !sa160 & sa164) | (!csa124 & !sa1412 & !sa150 & sa160) | (!csa124 & !sa1412 & sa150) | (csa124 & !sa1412))
+sa1513, sa1513
+sa1526, (sa138 | (!sa138 & !sa74 & sa1598) | (!sa138 & sa74))
+sa153, sa153
+sa1539, sa1539
+sa1555, sa1555
+sa1556, sa1556
+sa1586, sa1586
+sa159, (sa74 & sa2446)
+sa1590, sa1590
+sa1598, sa1598
+sa160, (sa159 & sa153)
+sa1602, sa1602
+sa1606, sa1606
+sa1611, sa1611
+sa1615, sa1615
+sa1616, sa1616
+sa1631, sa1631
+sa1635, sa1635
+sa164, ((sa159 & sa153 & !sa2167) | (sa159 & sa2167))
+sa1651, sa1651
+sa1661, sa1661
+sa1664, sa1664
+sa1671, sa1671
+sa1824, (sa1825 & sa1826)
+sa1825, (sa1824 | (!sa1824 & !sa856 & sa1825 & !sa2474 & sa2479) | (!sa1824 & !sa856 & sa1825 & sa2474) | (!sa1824 & sa856 & sa1825))
+sa1826, sa1826
+sa1834, (sa126 | (!sa126 & sa107))
+sa1835, sa1835
+sa1836, (sa1835 | (!sa1836 & !sa1835 & sa74) | (sa1836 & !sa1835))
+sa1837, (sa1836 & sa1838)
+sa1838, sa1838
+sa1841, sa1841
+sa1842, ((sa89 & !sa1837 & sa2183) | (sa1837 & sa2183))
+sa1856, (((sa89 & csa33) | (!(sa89 & csa33) & sa856)) & !sa1858)
+sa1858, sa1858
+sa1861, sa1861
+sa1868, sa1868
+sa1870, sa1870
+sa1871, sa1871
+sa1872, (sa796 & !sa2280)
+sa1873, sa1873
+sa1874, sa1874
+sa1882, sa1882
+sa1892, sa1892
+sa1894, sa1894
+sa1896, sa1896
+sa1898, sa1898
+sa190, (csa282 | (!csa282 & !csa31 & !sa1868 & !sa2280 & sa1872 & !sa2295 & sa805) | (!csa282 & csa31))
+sa1901, sa1901
+sa1923, sa1923
+sa193, sa193
+sa194, sa194
+sa1943, sa1943
+sa1944, sa1944
+sa196, sa196
+sa2021, sa2021
+sa2066, sa2066
+sa2067, sa2067
+sa2071, sa2071
+sa2076, sa2076
+sa2086, sa2086
+sa2091, sa2091
+sa2097, sa2097
+sa2103, sa2103
+sa2109, sa2109
+sa212, sa212
+sa2126, sa2126
+sa2160, sa2160
+sa2161, (!sa1837 & !sa1842)
+sa2167, sa2167
+sa2174, sa2174
+sa2175, sa2175
+sa2177, (sa2175 & sa2178 & sa2177)
+sa2178, sa2178
+sa2183, ((sa89 & sa1841 & !sa1837) | (sa1841 & sa1837))
+sa219, sa219
+sa2195, sa2195
+sa220, ((!sa252 & sa266 & sa272) | (sa252 & sa266 & sa272 & !sa253) | (sa252 & sa253))
+sa2201, sa2201
+sa2204, sa2204
+sa2223, ((csa1 | (sa74 & !csa1)) & !sa2301 & sa2223)
+sa2229, sa2229
+sa2230, sa2230
+sa2240, sa2240
+sa2246, sa2246
+sa2247, sa2247
+sa2248, sa2248
+sa2256, sa2256
+sa2262, sa2262
+sa2267, sa2267
+sa2280, sa2280
+sa2284, sa2284
+sa2289, sa2289
+sa2295, sa2295
+sa23, sa23
+sa2301, (sa74 | (!sa74 & !sa89 & sa1325 & !sa107) | (!sa74 & !sa89 & sa107) | (!sa74 & sa89))
+sa2348, sa2348
+sa2349, sa2349
+sa2357, sa2357
+sa2363, sa2363
+sa2374, sa2374
+sa2378, sa2378
+sa2420, sa2420
+sa2433, sa2433
+sa2446, sa2446
+sa2472, sa2472
+sa2474, ((sa2472 & !sa2478 & sa2487) | (sa2472 & sa2478))
+sa2478, sa2478
+sa2479, sa2479
+sa2487, sa2487
+sa2493, sa2493
+sa2494, sa2494
+sa2516, sa2516
+sa252, sa252
+sa253, ((!sa254 & sa628) | (sa254 & sa628 & !sa255) | (sa254 & sa255))
+sa254, (sa253 & sa256)
+sa2545, sa2545
+sa2546, (csa296 | (!csa296 & !csa297 & !csa298 & csa306) | (!csa296 & !csa297 & csa298) | (!csa296 & csa297))
+sa255, sa255
+sa2559, sa2559
+sa256, sa256
+sa2560, sa2560
+sa2594, sa2594
+sa2595, sa2595
+sa2596, sa2596
+sa2597, sa2597
+sa2598, ((sa2240 | (!sa2240 & sa2609)) & sa2598)
+sa2601, sa2601
+sa2609, sa2609
+sa2614, sa2614
+sa2627, sa2627
+sa2629, sa2629
+sa2632, sa2632
+sa2643, sa2643
+sa2644, sa2644
+sa266, sa266
+sa272, sa272
+sa2763, sa2763
+sa2770, sa2770
+sa2771, sa2771
+sa2775, sa2775
+sa2776, sa2776
+sa278, sa278
+sa2799, sa2799
+sa2800, sa2800
+sa281, sa281
+sa2823, sa2823
+sa2824, sa2824
+sa2829, sa2829
+sa2830, sa2830
+sa2831, sa2831
+sa2832, sa2832
+sa2834, sa2834
+sa2839, sa2839
+sa284, sa284
+sa2840, sa2840
+sa2841, sa2841
+sa291, sa291
+sa295, sa295
+sa297, sa297
+sa298, sa298
+sa303, sa303
+sa32, (csa145 | (!csa145 & ((!csa269 & sa973 & !sa1834 & (sa97 | (!sa97 & sa136))) | (!csa269 & sa973 & sa1834) | (csa269 & sa973))))
+sa349, (csa10 & sa349)
+sa463, (csa54 & !sa1285)
+sa465, sa465
+sa498, sa498
+sa503, sa503
+sa506, sa506
+sa584, sa584
+sa603, (csa81 & ((!csa64 & sa603) | (csa64 & !sa603 & sa506) | (csa64 & sa603)))
+sa622, sa622
+sa628, sa628
+sa630, sa630
+sa633, ((!sa1671 & !sa1598 & !csa126 & !sa1078 & !sa622 & !sa74 & !sa728 & sa2799 & sa2800 & sa1856) | (sa1671 & !sa1598 & !csa126 & !sa1078 & !sa622 & !sa74 & !sa728 & sa2799 & sa2800) | (sa1598 & !csa126 & !sa1078 & !sa622 & !sa74 & !sa728 & sa2799 & sa2800) | (!csa126 & !sa1078 & !sa622 & !sa728 & sa2799 & sa2800 & sa74) | (!csa126 & sa1078 & !sa622 & !sa728 & sa2799 & sa2800) | (csa126 & !sa622 & !sa728 & sa2799 & sa2800) | (sa622 & !sa728 & sa2799 & sa2800) | (sa728 & sa2799 & sa2800))
+sa648, ((!csa58 & sa649 & sa91) | (csa58 & sa649))
+sa649, ((!csa58 & !csa88 & sa86 & sa648) | (!csa58 & sa91 & csa88 & !sa86) | (!csa58 & !sa91 & csa88 & sa86 & sa648) | (!csa58 & sa91 & csa88 & sa86) | (csa58 & !csa88 & sa86 & sa648) | (csa58 & csa88))
+sa656, sa656
+sa66, (sa67 & sa2248)
+sa67, sa67
+sa68, sa68
+sa70, (sa68 | (!sa68 & csa54 & !sa1285))
+sa712, sa712
+sa728, sa728
+sa74, ((!sa83 & !sa1896 & !sa2126 & sa2229 & !csa11 & !sa15 & !sa2357 & !csa273 & !csa179 & !sa2161) | (!sa83 & !sa1896 & !sa2126 & !csa11 & !sa15 & !sa2357 & !csa273 & !csa179 & sa2161) | (!sa83 & !sa1896 & sa2126 & !csa11 & !sa15 & !sa2357 & !csa273 & !csa179) | (!sa83 & sa1896 & !csa11 & !sa15 & !sa2357 & !csa273 & !csa179) | (sa83 & !sa1586 & !sa1896 & !sa2126 & sa2229 & !csa11 & !sa15 & !sa2357 & !csa273 & !csa179 & !sa2161 & !sa84) | (sa83 & !sa1586 & !sa1896 & !sa2126 & !csa11 & !sa15 & !sa2357 & !csa273 & !csa179 & sa2161 & !sa84) | (sa83 & !sa1586 & !sa1896 & sa2126 & !csa11 & !sa15 & !sa2357 & !csa273 & !csa179 & !sa84) | (sa83 & !sa1586 & sa1896 & !csa11 & !sa15 & !sa2357 & !csa273 & !csa179 & !sa84) | (sa83 & sa1586 & !csa11 & !sa15 & !sa2357 & !csa273 & !csa179 & !sa84) | (sa83 & !csa11 & !sa15 & !sa2357 & !csa273 & !csa179 & sa84) | (!csa11 & !sa15 & !sa2357 & !csa273 & csa179) | (!csa11 & !sa15 & !sa2357 & csa273) | (!csa11 & !sa15 & sa2357) | (!csa11 & sa15) | (!sa83 & !sa1896 & !sa2126 & sa2229 & csa11 & !sa15 & !sa2357 & !csa273 & !csa179 & !sa2161) | (!sa83 & !sa1896 & !sa2126 & csa11 & !sa15 & !sa2357 & !csa273 & !csa179 & sa2161) | (!sa83 & !sa1896 & sa2126 & csa11 & !sa15 & !sa2357 & !csa273 & !csa179) | (!sa83 & sa1896 & csa11 & !sa15 & !sa2357 & !csa273 & !csa179) | (sa83 & csa11 & !sa15 & !sa2357 & !csa273 & !csa179) | (csa11 & !sa15 & !sa2357 & !csa273 & csa179) | (csa11 & !sa15 & !sa2357 & csa273) | (csa11 & !sa15 & sa2357) | (csa11 & sa15))
+sa788, sa788
+sa793, sa793
+sa794, (sa1943 & sa220 & sa788 & !sa1861 & sa793 & sa795)
+sa795, sa795
+sa796, ((!sa794 & sa796 & sa799) | (sa794 & sa796 & sa799 & !sa797) | (sa794 & sa797))
+sa797, sa797
+sa799, sa799
+sa805, sa805
+sa807, sa807
+sa81, (csa4 | (sa1302 & !(sa97 & sa1836) & !sa66 & !csa4) | (sa97 & sa1836 & !sa66 & !csa4) | (sa66 & !csa4))
+sa83, ((sa74 & !sa118 & sa212) | (sa74 & sa118))
+sa830, (sa856 | (sa2301 & !sa463 & !sa856 & !sa2230 & !csa257 & !sa1425) | (!sa463 & !sa856 & sa2230 & !csa257 & !sa1425) | (sa463 & !sa856 & !csa257 & !sa1425) | (!sa856 & !csa257 & sa1425) | (!sa856 & csa257))
+sa832, sa832
+sa835, sa835
+sa84, (sa1892 | (sa119 & !sa1892))
+sa85, (csa58 & sa86)
+sa856, sa856
+sa86, ((sa119 & !csa56 & !sa110 & !csa58 & sa85 & !sa2230 & !csa10 & !sa1872 & !sa87 & !(sa32 & sa123)) | (!csa56 & !sa110 & !csa58 & sa85 & !sa2230 & !csa10 & !sa1872 & !sa87 & sa32 & sa123) | (!csa56 & !sa110 & !csa58 & sa85 & sa2230 & !csa10 & !sa1872 & !sa87) | (!csa56 & !sa110 & !csa58 & sa85 & !csa10 & sa1872 & !sa87) | (!csa56 & sa110 & !csa58 & sa85 & !csa10 & !sa87) | (!csa56 & !csa58 & sa85 & !csa10 & sa87) | (!csa56 & !csa58 & sa85 & csa10) | (csa56 & !csa58 & sa85))
+sa87, (sa89 | (!sa89 & sa126))
+sa89, (csa131 & sa1103)
+sa91, (sa86 & sa190 & !(!csa56 & sa2301 & sa85))
+sa95, (csa1 | (!sa74 & !csa269 & !csa1 & sa1526 & !sa1513 & !sa220 & !sa2229) | (!sa74 & !csa269 & !csa1 & !sa1513 & !sa220 & sa2229) | (!sa74 & !csa269 & !csa1 & sa1513 & !sa220) | (!sa74 & !csa269 & !csa1 & sa220) | (sa74 & !csa269 & !csa1) | (csa269 & !csa1))
+sa956, sa956
+sa96, sa96
+sa97, ((sa136 & sa96 & !sa95) | (sa96 & sa95))
+sa973, sa973
+sa983, sa983
+sa988, sa988
+sa989, (sa1000 & sa988)
+sa997, (sa1004 & ((sa1001 & !sa988 & sa989) | (!sa1003 & sa988 & !sa989 & sa1041) | (sa1003 & sa988 & !sa989) | (!sa1001 & !sa1003 & sa988 & sa989 & sa1041) | (!sa1001 & sa1003 & sa988 & sa989) | (sa1001 & sa988 & sa989)))
+sa998, sa998
+sa999, sa999

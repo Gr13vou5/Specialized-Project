@@ -1,0 +1,5 @@
+targets, factors
+v_Trp_b1, ((!v_Trpext_b1 & !v_Trp_b1 & !(v_Trp_b1 & v_Trp_b2)) | (!v_Trpext_b1 & v_Trp_b1 & v_Trp_b2) | v_Trpext_b1)
+v_Trp_b2, (v_Trpext_b1 & v_Trpext_b2 & v_Trp_b1)
+v_Trpext_b1, v_Trpext_b1
+v_Trpext_b2, (v_Trpext_b1 & v_Trpext_b2)

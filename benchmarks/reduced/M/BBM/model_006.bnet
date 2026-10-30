@@ -1,0 +1,20 @@
+targets, factors
+v_AKAP12, v_AKAP12
+v_Cdc42_Rac1, ((v_HGF | (v_EGFR & v_Fak)) & !v_PTEN & v_SOS & v_Shc)
+v_DUSP1, v_DUSP1
+v_EGF, v_EGF
+v_EGFR, (v_p38 | v_Mek | v_EGF)
+v_Fak, (v_Mek & (v_Cdc42_Rac1 | (v_Mekk1 & v_Mkk4)) & v_p38 & v_PAI_1 & v_Shc & !v_PTEN)
+v_HGF, v_HGF
+v_IP3, (v_HGF | v_EGFR)
+v_Mek, (v_Mekk1 | (v_SOS & v_Cdc42_Rac1 & (v_HGF | v_EGFR) & v_IP3 & !v_AKAP12))
+v_Mekk1, v_Cdc42_Rac1
+v_Mekk4, v_Cdc42_Rac1
+v_Mkk4, (v_Cdc42_Rac1 | v_Mekk1 | v_Mekk4)
+v_Mkk6, v_Cdc42_Rac1
+v_PAI_1, v_PAI_1
+v_PAK1, v_Cdc42_Rac1
+v_PTEN, v_PTEN
+v_SOS, v_Shc
+v_Shc, (v_HGF | v_Fak | v_EGFR)
+v_p38, ((v_Cdc42_Rac1 & v_Mkk6 & !v_DUSP1) | v_PAK1)

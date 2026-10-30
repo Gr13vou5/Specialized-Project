@@ -1,0 +1,11 @@
+targets, factors
+v_Ag, v_Ag
+v_Bach2, (v_Pax5 & !v_Blimp1)
+v_Bcl6, ((v_Bcl6 & v_Pax5 & !(v_Blimp1 | v_Ag | v_Irf4)) | (v_IL_2 & !(v_Blimp1 | v_Ag | v_Irf4)) | (v_IL_4 & !(v_Blimp1 | v_Ag | v_Irf4)))
+v_Blimp1, ((v_IL_21 & !(v_Bach2 | v_Pax5 | v_Bcl6)) | (v_Ag & !(v_Bach2 | v_Pax5 | v_Bcl6)) | (v_Irf4 & (!v_Bcl6 | !v_Pax5 | !v_Bach2) & !(v_Bach2 | v_Pax5 | v_Bcl6)))
+v_CD40L, v_CD40L
+v_IL_2, v_IL_2
+v_IL_21, v_IL_21
+v_IL_4, v_IL_4
+v_Irf4, ((v_Blimp1 & !v_Bcl6) | v_CD40L | (v_Irf4 & !v_Bcl6))
+v_Pax5, ((v_Pax5 & (!v_Irf4 | v_Pax5) & !(v_Ag | v_Blimp1)) | !(v_Ag | v_Irf4 | v_Blimp1 | v_Pax5))

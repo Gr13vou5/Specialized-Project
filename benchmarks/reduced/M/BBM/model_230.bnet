@@ -1,0 +1,9 @@
+targets, factors
+v_CagA, (v_c_SRC & v_FYN & v_H_pylori)
+v_FYN, !(!v_H_pylori | v_CagA)
+v_HGF, v_HGF
+v_H_pylori, v_H_pylori
+v_PIP2, v_PIP2
+v_PTEN, v_PTEN
+v_c_Met, v_c_Met
+v_c_SRC, !(!v_H_pylori | v_CagA)

@@ -1,0 +1,25 @@
+targets, factors
+v_AKT, ((v_INS & !v_STAT3 & !v_JNK & !v_TRAF2 & !v_AKT) | (v_IL_6 & !v_STAT3) | (!v_AKT & !v_TRAF2 & !v_CHOP))
+v_BAK, (v_BAX & !v_BCL2)
+v_BAX, (v_JNK | (v_P53 & !v_BCL2))
+v_BCL2, (!v_JNK & !v_CHOP & !v_P53)
+v_CASP12, v_CASP12
+v_CASP3, (v_CASP9 | (v_CASP8 & !v_XIAP))
+v_CASP7, (v_CASP9 | v_CASP8 | v_CASP3 | ((v_CASP7 | v_CASP3) & !v_XIAP))
+v_CASP8, (v_FasL | v_TNF_alpha | v_CASP3 | v_CASP7)
+v_CASP9, (v_FasL | v_TNF_alpha | v_CASP8 | v_CASP3 | v_BAX | v_BAK | v_P53 | (v_CASP12 & !v_XIAP & !v_AKT))
+v_CHOP, (v_GRP78 | v_CHOP)
+v_ER, v_ER
+v_FasL, v_FasL
+v_GADD45, v_GADD45
+v_GRP78, (v_GRP78 | v_IRE1 | (v_CHOP & !v_ER))
+v_IL_6, (v_IL_6 | v_TRAF2)
+v_INS, v_INS
+v_IRE1, (v_BAX | v_BAK | v_GRP78)
+v_JNK, (v_OS | v_TRAF2 | v_FasL | v_GADD45)
+v_OS, v_OS
+v_P53, v_P53
+v_STAT3, (v_IL_6 & !v_STAT3)
+v_TNF_alpha, (v_TNF_alpha | v_TRAF2)
+v_TRAF2, (v_IRE1 | v_TNF_alpha)
+v_XIAP, (!(v_BAX | v_BAK | (v_CASP8 & !v_BCL2)) & !v_CASP3)

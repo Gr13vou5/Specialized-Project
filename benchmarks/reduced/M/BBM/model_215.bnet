@@ -1,0 +1,34 @@
+targets, factors
+v_AKT1_phosphorylated, v_AKT1_phosphorylated
+v_ATP_simple_molecule, v_csa1840_AMPK_complex_neuron
+v_DDB1_CUL4A_complex, v_DDB1_CUL4A_complex
+v_DDIT4, v_DDIT4
+v_GATOR2_complex, v_GATOR2_complex
+v_GHRL, v_GHRL
+v_GSK3B, v_GSK3B
+v_MAPK1_phosphorylated_phosphorylated, v_MAPK1_phosphorylated_phosphorylated
+v_NAD____simple_molecule, ((v_nicotinamide_space_riboside_space__NR__simple_molecule & v_NMRK1) | (v_nicotinamide_simple_molecule & v_NAMPT))
+v_NAMPT, v_NAMPT
+v_NMRK1, v_NMRK1
+v_PARP1, ((v_ROS_simple_molecule | v_excitotoxicity_phenotype) & v_PARP1)
+v_ROS_simple_molecule, v_ROS_simple_molecule
+v_SESN2, (v_SESN2 & v_autophagy_lysosome_space_system_phenotype)
+v_SIRT1, (v_caloric_space_restriction_phenotype | v_resveratrol_drug | !v_nicotinamide_simple_molecule | v_NAD____simple_molecule)
+v_STK11_acetylated, v_STK11_acetylated
+v_UBE2N_UBE2V1_complex, v_UBE2N_UBE2V1_complex
+v_autophagy_lysosome_space_system_phenotype, v_autophagy_lysosome_space_system_phenotype
+v_caloric_space_restriction_phenotype, v_caloric_space_restriction_phenotype
+v_csa1840_AMPK_complex_neuron, (v_cytosolic_space_calcium_space_ion_space_homeostasis_phenotype | (v_STK11_acetylated & v_NAD____simple_molecule & v_SIRT1) | !v_csa1840_AMPK_complex_neuron | !v_ATP_simple_molecule | v_resveratrol_drug | v_GHRL | v_caloric_space_restriction_phenotype | v_energy_space_homeostasis_phenotype)
+v_cytosolic_space_calcium_space_ion_space_homeostasis_phenotype, v_cytosolic_space_calcium_space_ion_space_homeostasis_phenotype
+v_energy_space_homeostasis_phenotype, v_energy_space_homeostasis_phenotype
+v_excitotoxicity_phenotype, v_excitotoxicity_phenotype
+v_nicotinamide_simple_molecule, ((v_STK11_acetylated & v_NAD____simple_molecule & v_SIRT1) | (v_NAD____simple_molecule & v_PARP1))
+v_nicotinamide_space_riboside_space__NR__simple_molecule, v_nicotinamide_space_riboside_space__NR__simple_molecule
+v_resveratrol_drug, v_resveratrol_drug
+v_sa11464_PRKN_neuron, v_sa11464_PRKN_neuron
+v_sa11471_UCHL1_neuron, v_sa11471_UCHL1_neuron
+v_sa11476_PRKN_neuron, v_sa11476_PRKN_neuron
+v_sa11482_PRKN_neuron, v_sa11482_PRKN_neuron
+v_sa11484_PRKN_neuron, v_sa11484_PRKN_neuron
+v_sa11500_UCHL1_neuron, v_sa11500_UCHL1_neuron
+v_sa11503_RHEB_lysosome, v_sa11503_RHEB_lysosome

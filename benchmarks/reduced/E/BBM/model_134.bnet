@@ -1,0 +1,13 @@
+targets, factors
+v_FOS, ((!v_MAP2K1 & !v_MAPK8 & v_TAB1_TAB2_TAK1) | (!v_MAP2K1 & v_MAPK8) | v_MAP2K1)
+v_IKK, ((!v_JAK1 & v_TAB1_TAB2_TAK1) | v_JAK1)
+v_IL6, v_IL6
+v_JAK1, (!v_SOCS3 | (v_SOCS3 & v_IL6))
+v_JUN, ((!v_MAPK8 & !v_MAP2K1 & !v_TAB1_TAB2_TAK1 & ((!v_MAP2K3 & !v_MAP2K1 & ((!v_TAB1_TAB2_TAK1 & v_TGFB1) | v_TAB1_TAB2_TAK1)) | (!v_MAP2K3 & v_MAP2K1) | v_MAP2K3)) | (!v_MAPK8 & !v_MAP2K1 & v_TAB1_TAB2_TAK1) | (!v_MAPK8 & v_MAP2K1) | v_MAPK8)
+v_MAP2K1, ((!v_TAB1_TAB2_TAK1 & ((!v_IKK & v_JAK1) | v_IKK)) | v_TAB1_TAB2_TAK1)
+v_MAP2K3, ((!v_TAB1_TAB2_TAK1 & v_TGFB1) | v_TAB1_TAB2_TAK1)
+v_MAPK8, ((!v_MAP2K1 & !v_TAB1_TAB2_TAK1 & v_TGFB1) | (!v_MAP2K1 & v_TAB1_TAB2_TAK1) | v_MAP2K1)
+v_SOCS3, (!v_FOS | (v_FOS & !v_JUN) | (v_FOS & v_JUN & v_JAK1))
+v_TAB1_TAB2_TAK1, ((!v_TNF & v_TGFB1) | v_TNF)
+v_TGFB1, v_TGFB1
+v_TNF, v_TNF

@@ -55,17 +55,15 @@ ROOT = Path(__file__).resolve().parent
 DATASET = ROOT / "benchmarks" / "fASP" / "dataset"
 BBM_MODELS = ROOT / "benchmarks" / "biodivine-boolean-models" / "models"
 ADF_BNET = ROOT / "benchmarks" / "ADF" / "ICCMA2019" / "bnet"
-REDUCED = ROOT / "benchmarks" / "reduced"  # bn_reduce.py output: <variant>/<set>/<model>.bnet
+REDUCED = ROOT / "benchmarks" / "reduced"
 PFVS_DIR = ROOT / "PFVS"
 
 SETS = ("bbm", "selected", "random", "adf")
 DEFAULT_SETS = ("bbm", "selected", "random")
 TOOLS = ("fasp_c", "fasp_s", "he", "pfvs")
-VARIANTS = ("A", "B", "C", "D1", "D2")  # bn_reduce.py variants
-# folder of each set under benchmarks/reduced/<variant>/ (bn_reduce.py --set, or the input folder name)
+VARIANTS = ("A", "B", "C", "D1", "D2", "E", "M")  #variants
 REDUCED_SET_DIRS = {"bbm": ("BBM",), "random": ("Random",), "selected": ("Selected",), "adf": ("ADF", "bnet")}
 
-# directory layout expected by logs_analysis/log_parser.py
 SET_DIR = {"bbm": "bbm", "random": "fasp/Random", "selected": "fasp/Selected", "adf": "adf"}
 TOOL_DIR = {"fasp_c": "fasp_conj", "fasp_s": "fasp_src", "he": "hybrid_bmsa"}
 
@@ -79,10 +77,10 @@ TIME_FIELDS = {
 @dataclass(frozen=True)
 class Instance:
     set: str
-    name: str  # file stem: model_001, 100_4379_60916, Leishmania, ...
+    name: str  # file stem
     bnet: Path
-    sbml_dir: Path | None = None  # BBM only: biodivine model directory, the H.E. input
-    variant: str | None = None  # bn_reduce.py variant for reduced networks
+    sbml_dir: Path | None = None  # BBM only for he
+    variant: str | None = None  # bn_reduce.py
 
 
 @dataclass
@@ -152,7 +150,6 @@ def log_path(cfg, tool, inst):
         return root / "pfvs" / inst.set / f"{inst.name}.log"
     base = root / TOOL_DIR[tool] / SET_DIR[inst.set]
     if tool == "he" and inst.set == "bbm":
-        # log_parser.py finds BBM H.E. logs by the biodivine directory name
         return base / inst.sbml_dir.name / f"{solver_input(tool, inst).name}.log"
     return base / f"{inst.name}.bnet.log"
 
@@ -180,7 +177,6 @@ def command(cfg, tool, inst, container):
         f = solver_input(tool, inst)
         return docker_run(cfg, container, cfg.he_image, [(f.parent, "/benchmark", True)],
                           ["/app/solve-bmsa.sh", cfg.heap, "1g", "h3", f.name])
-    # PFVS has no image of its own; the H.E. image provides java and GNU time
     return docker_run(cfg, container, cfg.he_image,
                       [(pfvs_work(cfg, inst), "/benchmark", False), (PFVS_DIR, "/pfvs", True)],
                       ["java", f"-Xmx{cfg.heap}", "-jar", "/pfvs/FPCollector.jar", f"{inst.name}.bn", "-m"])
@@ -255,7 +251,6 @@ class Runner:
         log.parent.mkdir(parents=True, exist_ok=True)
         superseded = None
         if tool == "he" and inst.set == "bbm" and inst.variant:
-            # a log from before H.E. read reduced BBM networks as SBML: keep it out of the analysis
             old = log.with_name(f"{inst.bnet.name}.log")
             if old.exists():
                 superseded = old.rename(old.with_name(old.name + ".superseded"))
@@ -272,13 +267,11 @@ class Runner:
             with self.lock:
                 self.active.add(container)
             try:
-                # own session: Ctrl-C reaches only this script, which then stops the containers
                 proc = subprocess.Popen(cmd, stdout=fh, stderr=subprocess.STDOUT, start_new_session=True)
                 try:
                     proc.wait(timeout=cfg.wall_limit)
                 except subprocess.TimeoutExpired:
                     wall_hit = True
-                    # kill the solver but not PID 1 (`time`), so time -v still reports
                     subprocess.run(["docker", "exec", container, "sh", "-c", "kill -9 -1"],
                                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
                     try:
@@ -307,7 +300,7 @@ class Runner:
                     n = sum(1 for line in f if line.strip())
                 notes.append(f"# Runner: fixed points = {n}")
                 status += f", {n} fixed points"
-            fp.unlink(missing_ok=True)  # can be large; the count is kept in the log
+            fp.unlink(missing_ok=True)
         notes.append(f"# Runner: docker exit code {proc.returncode}, wall time {wall:.1f}s")
         with open(tmp, "a") as fh:
             fh.write("\n".join(notes) + "\n")
@@ -336,11 +329,12 @@ def pfvs_result(text, cfg):
     m = re.search(r"^# Runner: fixed points = (\d+)$", text, re.M)
     if m and cpu is not None and cpu <= cfg.time_limit:
         return "solved", cpu, m.group(1)
-    if "No fixed points will be calculated" in text:  # positive feedback vertex set > 30
+    if "No fixed points will be calculated" in text:
         return "refused", cpu, "NA"
     if "# Runner: wall-clock limit" in text or (cpu is not None and cpu > cfg.time_limit - 3):
         return "timeout", cpu, "NA"
-    if "OutOfMemoryError" in text or (rss is not None and rss > 0.75 * cfg.memory_kb):
+    if ("OutOfMemoryError" in text or (rss is not None and rss > 0.75 * cfg.memory_kb)
+            or "Command terminated by signal 9" in text):
         return "out_of_memory", cpu, "NA"
     return "error", cpu, "NA"
 
@@ -398,7 +392,7 @@ def main(argv=None):
     ap.add_argument("--tools", nargs="+", choices=TOOLS, default=list(TOOLS),
                     help="solvers (default: all)")
     ap.add_argument("--reduced", nargs="+", choices=VARIANTS, metavar="VARIANT",
-                    help="run the networks reduced by bn_reduce.py with these variants (A B C D1 D2) "
+                    help="run the networks reduced by bn_reduce.py with these variants (A B C D1 D2 E M) "
                          "instead of the original ones")
     ap.add_argument("--reduced-dir", type=Path, default=REDUCED,
                     help="where bn_reduce.py wrote the reduced networks (default: benchmarks/reduced)")
@@ -483,7 +477,7 @@ def main(argv=None):
             done += 1
             try:
                 status = fut.result()
-            except Exception as e:  # keep going; the failed run has no log and is retried next time
+            except Exception as e:
                 status = f"FAILED: {e}"
             elapsed = time.monotonic() - started
             eta = elapsed / done * (len(todo) - done)

@@ -1,0 +1,45 @@
+targets, factors
+v_CBP, v_CBP
+v_CD14, v_CD14
+v_IFNb_medium, ((v_hk_medium & v_LPS) | (v_TLR4RC & v_TRAM & v_TRIF & !v_TRIAD3A & v_p38 & v_NFkB & v_p300 & v_CBP))
+v_IL10_syn_Stat3, v_IL10_syn_Stat3
+v_IL13, v_IL13
+v_IL4, v_IL4
+v_IL4Ra_IL13Ra1, (v_IL13 | v_IL4)
+v_IL_10R, v_IL_10R
+v_IRAK2c, v_IRAK2c
+v_IRAK2d, v_IRAK2d
+v_IRAKM, v_IRAKM
+v_Jak1, v_Jak1
+v_Jak2, v_Jak2
+v_Jak3, v_Jak3
+v_LBP, v_LBP
+v_LPS, v_LPS
+v_MD2, v_MD2
+v_Mal, v_Mal
+v_MyD88, v_MyD88
+v_MyD88s, v_MyD88s
+v_NFkB, (v_TRAF6 & !((v_hk_inh & v_LPS) | v_NFkB) & v_p38 & (!(v_PIP3 & !v_PTEN) | (v_PIP3 & !v_PTEN & v_TLR4RC)))
+v_PIP3, ((v_IL4 & v_Jak1 & !v_dum_Socs1_inh) | (v_IL4 & v_Jak3 & !v_dum_Socs1_inh) | v_TLR4RC)
+v_PP2A, v_PP2A
+v_PTEN, v_PTEN
+v_RIP1, v_RIP1
+v_RIP3, v_RIP3
+v_SHP1, v_SHP1
+v_SIGIRR, v_SIGIRR
+v_ST2, v_ST2
+v_Src, v_Src
+v_Stat3, ((v_IFNb_medium & v_Jak1 & !v_dum_Socs3_inh) | (v_IFNb_medium & v_Tyk2 & !v_dum_Socs3_inh) | (v_Jak1 & v_IL_10R))
+v_TLR4, v_TLR4
+v_TLR4RC, (v_LBP & v_CD14 & v_TLR4 & v_MD2 & !v_SIGIRR & !v_ST2 & v_LPS)
+v_TRAF6, ((v_TLR4RC & v_Mal & v_MyD88 & !v_MyD88s & !v_IRAKM & !v_IRAK2c & !v_IRAK2d) | (v_TLR4RC & v_TRAM & v_TRIF & !v_TRIAD3A))
+v_TRAM, v_TRAM
+v_TRIAD3A, v_TRIAD3A
+v_TRIF, v_TRIF
+v_Tyk2, v_Tyk2
+v_dum_Socs1_inh, ((v_hk_inh & v_IL4) | (v_hk_inh & v_LPS) | (v_IFNb_medium & v_Jak1 & !v_dum_Socs1_inh) | (v_IFNb_medium & v_Tyk2 & !v_dum_Socs1_inh) | v_Stat3 | (v_IL4Ra_IL13Ra1 & !v_PP2A & !v_SHP1 & v_Jak2 & !v_dum_Socs1_inh) | (v_IL4Ra_IL13Ra1 & v_Jak1 & !v_PP2A & !v_SHP1 & !v_dum_Socs1_inh) | (v_IL4Ra_IL13Ra1 & v_Tyk2 & !v_PP2A & !v_SHP1 & !v_dum_Socs1_inh) | (v_IL4 & v_Jak1 & !v_PP2A & !v_SHP1 & !v_dum_Socs1_inh) | (v_IL4 & v_Jak3 & !v_PP2A & !v_SHP1 & !v_dum_Socs1_inh))
+v_dum_Socs3_inh, ((v_hk_inh & v_LPS) | v_p38 | (v_Stat3 & v_Src))
+v_hk_inh, v_hk_inh
+v_hk_medium, v_hk_medium
+v_p300, v_p300
+v_p38, (v_TRAF6 & !(v_NFkB | v_Stat3 | (v_hk_inh & v_LPS)))

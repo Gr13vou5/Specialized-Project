@@ -1,0 +1,72 @@
+targets, factors
+v_Bacterium_Mtb, v_Bacterium_Mtb
+v_Cell_B_HIV, (v_Cell_B_Healthy & v_Cell_CD4_Naive & v_Cell_Dendritic_HIV & !v_Cell_CD4_HIV_infected)
+v_Cell_B_Healthy, (v_HealthyState | (v_Cell_B_Healthy & v_Merozoites_PF))
+v_Cell_B_Helminth, (v_Cell_B_Healthy & (v_Cell_Th2_IAV | v_Cell_ILC2_Helminth | v_Cell_Th2_Helminth) & v_IL4)
+v_Cell_B_IAV, ((v_Cell_B_Healthy & v_Cell_Dendritic_IAV) | v_Cell_Th2_IAV)
+v_Cell_B_PF, (v_Cell_B_Healthy & (v_Merozoites_PF | v_Cell_Th1_PF | v_Cell_B_PF))
+v_Cell_CD4_HIV_infected, (v_Cell_CD4_Naive & (v_PV_HIV | v_Virus_HIV) & !v_IFNg)
+v_Cell_CD4_Naive, ((v_HealthyState & !v_Cell_CD4_HIV_infected) | (v_Cell_CD4_Naive & !v_Cell_CD4_HIV_infected))
+v_Cell_CD8_EBOV, (v_Cell_CD8_Naive & v_Cell_Dendritic_EBOV & !v_IL10)
+v_Cell_CD8_HIV, (v_Cell_CD4_Naive & v_Cell_Dendritic_HIV & !(v_Cell_CD4_Naive & v_Cell_pDendritic_HIV))
+v_Cell_CD8_IAV, (v_Cell_Th1_IAV | (v_Cell_CD8_Naive & v_Cell_Dendritic_IAV))
+v_Cell_CD8_Mtb, (v_Cell_Neutrophil_Mtb | v_Cell_Dendritic_Mtb | v_Cell_Macrophage_Mtb)
+v_Cell_CD8_Naive, (v_HealthyState & !v_PV_HIV)
+v_Cell_Dendritic_EBOV, (v_Cell_Dendritic_Healthy & (v_PV_EBOV | v_Virus_EBOV) & !v_IgG)
+v_Cell_Dendritic_HIV, (v_Cell_Dendritic_Healthy & v_Virus_HIV)
+v_Cell_Dendritic_Healthy, (v_HealthyState | v_Cell_Dendritic_PF | v_Cell_Dendritic_Leishmania | (v_Cell_Dendritic_Healthy & v_DaughterCells_CandidaAlbicans))
+v_Cell_Dendritic_IAV, (v_Cell_Dendritic_Healthy & (v_PV_IAV | v_Cell_Epithelial_IAV | v_Virus_IAV))
+v_Cell_Dendritic_Leishmania, ((v_Cell_Dendritic_Healthy & v_Promastigotes_Leishmania) | (v_HealthyState & v_Promastigotes_Leishmania))
+v_Cell_Dendritic_Mtb, ((v_Rep_Mtb & v_Cell_Dendritic_Healthy) | (v_Cell_Dendritic_Healthy & v_TNFa & v_Cell_Macrophage_Mtb))
+v_Cell_Dendritic_PF, ((v_IFNg & ((v_Cell_Th1_PF & v_Cell_Dendritic_Healthy) | (v_Cell_NK_PF & v_Cell_Dendritic_Healthy))) | (v_Cell_Dendritic_Healthy & v_Cell_Erythrocyte_PF))
+v_Cell_Endothelial_Helminth, (!v_HealthyState & v_Larvae_Helminth & !(v_IgG | v_Cell_B_Helminth | v_Cell_Th2_Helminth))
+v_Cell_Epithelial_CandidaAlbicans, (v_Cell_Epithelial_Healthy & v_DaughterCells_CandidaAlbicans & !(v_Cell_Th17_CandidaAlbicans | v_Cell_Th1_PF | (v_HealthyState & (v_Cell_Epithelial_CandidaAlbicans | v_Cell_Th17_CandidaAlbicans))))
+v_Cell_Epithelial_Healthy, (v_epithelial_set & !v_Cell_Epithelial_helminth)
+v_Cell_Epithelial_IAV, (v_Cell_Epithelial_Healthy & (v_PV_IAV | v_Virus_IAV) & !(v_Cell_Macrophage_IAV | v_Cell_CD8_IAV | (v_HealthyState & v_Cell_Epithelial_IAV)))
+v_Cell_Epithelial_helminth, (v_Cell_Epithelial_Healthy & v_Larvae_Helminth & !(v_Cell_Th2_Helminth | v_Cell_B_Helminth | v_IgG))
+v_Cell_Erythrocyte_PF, (v_erythrocyte_set & !v_Merozoites_PF & (v_Merozoites_PF | (v_Sporozoites_PF & !v_Merozoites_PF)))
+v_Cell_ILC2_Helminth, (v_HealthyState & (v_Cell_Epithelial_helminth | v_Cell_Endothelial_Helminth) & (v_Cell_Endothelial_Helminth | v_Cell_Epithelial_helminth))
+v_Cell_Keratinocytes_HPV, ((v_epithelial_set & v_Virus_HPV) | (v_IL10 & v_Cell_Keratinocytes_HPV))
+v_Cell_Macrophage_EBOV, (v_Cell_Macrophage_Healthy & (v_PV_EBOV | v_Virus_EBOV) & !(v_Cell_CD8_EBOV | v_IgG))
+v_Cell_Macrophage_Healthy, (v_HealthyState | v_Cell_Macrophage_PF | (v_Cell_Macrophage_Healthy & !(v_Rep_Mtb | v_Promastigotes_Leishmania | v_PV_HIV)))
+v_Cell_Macrophage_IAV, (v_Cell_Macrophage_Healthy & v_Cell_Epithelial_IAV & !v_Cell_CD8_IAV)
+v_Cell_Macrophage_Leishmania, (v_Cell_Macrophage_Healthy & (v_Promastigotes_Leishmania | (v_Cell_Macrophage_Leishmania & !v_IFNg) | (v_Cell_Dendritic_Leishmania & !v_IFNg)) & !((v_IFNg & v_Cell_Macrophage_Leishmania) | v_Cell_Macrophage_Leishmania | (v_HealthyState & v_Promastigotes_Leishmania) | v_IFNg | v_IL10))
+v_Cell_Macrophage_Mtb, (v_Cell_Macrophage_Healthy & (v_Rep_Mtb | v_Bacterium_Mtb))
+v_Cell_Macrophage_PF, (v_Cell_Macrophage_Healthy & v_Cell_Erythrocyte_PF)
+v_Cell_Monocytes_EBOV, (v_HealthyState & (v_PV_EBOV | v_Virus_EBOV))
+v_Cell_NK_PF, ((v_Cell_Th1_PF & !(v_IL10 & v_Cell_Treg_PF)) | (v_HealthyState & v_IL12 & v_Cell_Dendritic_PF & !(v_IL10 & v_Cell_Treg_PF)))
+v_Cell_Neutrophil_Mtb, ((v_Bacterium_Mtb & v_HealthyState) | (v_Rep_Mtb & v_HealthyState))
+v_Cell_Th17_CandidaAlbicans, (v_Cell_CD4_Naive & v_Cell_Dendritic_Healthy & v_Cell_Epithelial_CandidaAlbicans)
+v_Cell_Th1_IAV, (v_Cell_CD4_Naive & v_IL12 & v_Cell_Dendritic_IAV)
+v_Cell_Th1_Mtb, (v_Cell_CD4_Naive & v_IL12 & (v_Cell_Macrophage_Mtb | (v_HealthyState & v_Cell_CD8_HIV & !v_IL10)) & (v_Cell_Macrophage_Mtb | v_Cell_Th1_PF) & v_Cell_Dendritic_Mtb & !v_IL10)
+v_Cell_Th1_PF, ((v_IL12 & ((v_Cell_CD4_Naive & v_Cell_Dendritic_PF) | (v_Cell_Macrophage_PF & v_Cell_CD4_Naive)) & !((v_IL10 & v_Cell_Th1_PF) | (v_TGFB & v_Cell_Th1_PF))) | (v_IFNg & (v_Cell_Th1_PF | v_Cell_NK_PF) & !((v_IL10 & v_Cell_Th1_PF) | (v_TGFB & v_Cell_Th1_PF))))
+v_Cell_Th2_Helminth, (v_IL4 & (v_Cell_Epithelial_helminth | v_Cell_Endothelial_Helminth) & v_Cell_CD4_Naive & !(v_TGFB | v_IFNg | v_Cell_Macrophage_Mtb | v_Cell_Th1_PF | v_IL10))
+v_Cell_Th2_IAV, (v_Cell_CD4_Naive & v_Cell_Dendritic_IAV & !v_IL10)
+v_Cell_Treg_PF, (v_Cell_CD4_Naive & v_Cell_Th1_PF)
+v_Cell_pDendritic_HIV, (v_HealthyState & v_PV_HIV)
+v_DaughterCells_CandidaAlbicans, (v_Fungi_CandidaAlbicans & !(v_Cell_Th17_CandidaAlbicans | v_Cell_Th1_PF))
+v_Fungi_CandidaAlbicans, v_Fungi_CandidaAlbicans
+v_HealthyState, v_HealthyState
+v_IFNg, ((v_Cell_CD8_Naive & !v_HealthyState & v_Cell_Keratinocytes_HPV & !v_IL10) | (v_Cell_CD8_EBOV & !v_IL10) | (v_Cell_CD4_Naive & v_IL12 & v_Cell_Dendritic_Leishmania) | (v_HealthyState & v_Cell_Keratinocytes_HPV & !v_IL10) | (v_Cell_Th17_CandidaAlbicans & v_Fungi_CandidaAlbicans) | v_Cell_Th1_PF | (v_Cell_CD8_Naive & v_Cell_Dendritic_PF) | (v_Cell_Macrophage_EBOV & !v_IL10) | v_Cell_NK_PF | (v_Cell_Monocytes_EBOV & !v_IL10) | (v_HealthyState & v_Promastigotes_Leishmania) | (v_Cell_CD4_Naive & v_Cell_Dendritic_HIV) | (v_Cell_CD4_Naive & !v_HealthyState & v_Cell_Keratinocytes_HPV & !v_IL10) | v_Cell_CD8_HIV | (v_Cell_CD4_Naive & v_IL12 & v_Cell_Dendritic_EBOV & !v_IL10) | (v_Cell_CD8_Mtb & !v_IL10) | (v_Cell_Th1_Mtb & !v_IL10) | v_Cell_Th1_IAV)
+v_IL10, ((v_Cell_CD4_Naive & v_Cell_pDendritic_HIV) | (v_Cell_Treg_PF & v_Cell_Th1_PF) | v_Cell_Monocytes_EBOV | (v_Cell_Dendritic_Mtb & v_Cell_CD8_Mtb) | v_Cell_Macrophage_Leishmania | v_Cell_Macrophage_EBOV | (v_Cell_Macrophage_Mtb & v_Cell_Th1_Mtb) | v_Cell_Th2_Helminth | (v_Cell_CD4_Naive & (v_Cell_Th2_IAV | v_Cell_Th1_IAV)) | v_Cell_Keratinocytes_HPV)
+v_IL12, (v_Cell_Dendritic_PF | (v_HealthyState & v_Cell_CD8_HIV & !v_IL10) | v_Cell_Dendritic_Leishmania | v_Cell_Macrophage_EBOV | v_Cell_Macrophage_IAV | v_Cell_Monocytes_EBOV | v_Cell_Macrophage_PF | v_Cell_Macrophage_Mtb | v_Cell_Dendritic_EBOV | v_Cell_Dendritic_Mtb)
+v_IL4, ((v_HealthyState & (v_Cell_Th2_Helminth | v_Cell_ILC2_Helminth | v_Cell_Th2_IAV)) | (v_HealthyState & v_Larvae_Helminth) | v_Cell_Th2_IAV | v_Cell_Th2_Helminth | (!v_HealthyState & v_Cell_Endothelial_Helminth) | (!v_HealthyState & v_Cell_Epithelial_helminth))
+v_IgA, (v_Cell_B_HIV | v_Cell_B_IAV)
+v_IgG, (v_Cell_B_PF | (v_Cell_B_Healthy & v_Cell_Dendritic_EBOV & !(v_TNFa | v_IL10)) | v_Cell_B_HIV | v_Cell_B_IAV | v_Cell_B_Helminth)
+v_Larvae_Helminth, v_Larvae_Helminth
+v_Merozoites_PF, ((v_Cell_Erythrocyte_PF & !(v_Cell_Dendritic_PF | v_Cell_Macrophage_PF)) | (v_Merozoites_PF & !((v_IgG & v_Cell_B_PF) | v_Cell_Dendritic_PF | v_Cell_Macrophage_PF)))
+v_PV_EBOV, ((v_HealthyState & v_PV_EBOV & !(v_TNFa | v_IgG)) | (v_Cell_Monocytes_EBOV & !(v_TNFa | v_IgG)) | (v_Cell_Dendritic_EBOV & !(v_TNFa | v_IgG)) | (v_Cell_Macrophage_EBOV & !(v_TNFa | v_IgG)))
+v_PV_HIV, ((v_Cell_CD4_HIV_infected & !(v_Cell_CD8_HIV & v_Cell_CD4_Naive)) | (v_Cell_Macrophage_Healthy & (v_PV_HIV | v_Virus_HIV) & !(v_Cell_CD8_HIV & v_Cell_CD4_Naive)) | (v_PV_HIV & !(v_IgA | v_Cell_pDendritic_HIV | (v_HealthyState & v_Cell_CD8_HIV) | (v_Cell_CD8_HIV & v_Cell_CD4_Naive) | v_IgG)) | (v_paramPV & !v_PV_HIV))
+v_PV_IAV, ((v_PV_IAV & !(v_IgA | v_Cell_Macrophage_IAV | v_IgG)) | (v_Cell_Epithelial_IAV & !(v_IgA | v_Cell_Macrophage_IAV | v_IgG)))
+v_Promastigotes_Leishmania, v_Promastigotes_Leishmania
+v_Rep_Mtb, ((v_Cell_Dendritic_Mtb & !((v_TNFa & (v_Cell_CD8_Mtb | v_Cell_Th1_Mtb)) | (v_IFNg & (v_Cell_CD8_Mtb | v_Cell_Th1_Mtb)))) | (v_Rep_Mtb & !((v_TNFa & (v_Cell_CD8_Mtb | v_Cell_Th1_Mtb)) | (v_IFNg & (v_Cell_CD8_Mtb | v_Cell_Th1_Mtb)))) | (v_Cell_Neutrophil_Mtb & !((v_TNFa & (v_Cell_CD8_Mtb | v_Cell_Th1_Mtb)) | (v_IFNg & (v_Cell_CD8_Mtb | v_Cell_Th1_Mtb)))) | (v_Cell_Macrophage_Mtb & !((v_TNFa & (v_Cell_CD8_Mtb | v_Cell_Th1_Mtb)) | (v_IFNg & (v_Cell_CD8_Mtb | v_Cell_Th1_Mtb)))))
+v_Sporozoites_PF, v_Sporozoites_PF
+v_TGFB, ((v_Cell_Treg_PF & v_Cell_Th1_PF) | v_Cell_Epithelial_CandidaAlbicans | v_Cell_Keratinocytes_HPV)
+v_TNFa, (v_Cell_Monocytes_EBOV | v_Cell_Macrophage_PF | (v_Cell_Macrophage_Mtb & !v_IL10) | v_Cell_Macrophage_Leishmania | v_Cell_Macrophage_IAV | v_Cell_Macrophage_EBOV)
+v_Virus_EBOV, v_Virus_EBOV
+v_Virus_HIV, v_Virus_HIV
+v_Virus_HPV, v_Virus_HPV
+v_Virus_IAV, v_Virus_IAV
+v_epithelial_set, v_epithelial_set
+v_erythrocyte_set, v_erythrocyte_set
+v_paramPV, v_paramPV

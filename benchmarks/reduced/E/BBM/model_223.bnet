@@ -1,0 +1,56 @@
+targets, factors
+v_ACVR2A, v_ACVR2A
+v_ADAM10, v_ADAM10
+v_ALK1, ((v_TGFB1 | v_BMP9 | v_BMP10) & (v_ACVR2A | v_BMPRII | v_TGFBRII))
+v_AMPATP, v_AMPATP
+v_AMPK, ((v_AMPATP | !v_Oxygen) & !v_PIP3)
+v_ANG1, v_ANG1
+v_ANG2, (!v_ShearStress & (v_HIF1 | ((v_WNT5a | (v_FZD6 & v_DSH)) & v_DSH) | v_ETS | v_FOXO1))
+v_BMP10, v_BMP10
+v_BMP9, v_BMP9
+v_BMPRII, v_BMPRII
+v_BTrCP, v_BTrCP
+v_Calcium, (v_PLCg | v_ShearStress)
+v_DKK1, v_DKK1
+v_DLL4p, v_DLL4p
+v_DSH, (v_WNT5a | v_FZD6 | (v_WNT7a & !v_DKK1))
+v_ETS, ((((v_PLCg & v_Calcium) | v_PECAM1 | v_ALK1 | v_ShearStress) & !v_PIP3) | v_FGF | v_VEGFR33)
+v_FGF, v_FGF
+v_FOXO1, (v_SIRT1 & !v_PIP3)
+v_FZD6, (v_WNT11 | v_WNT5a)
+v_HIF1, (!v_Oxygen & v_SIRT1)
+v_IGF, v_IGF
+v_Integrin, ((v_ShearStress | v_TIE2) & v_ETS)
+v_JAGp, v_JAGp
+v_LEF1, (!(!v_DSH & !(v_WNT7a & !v_DKK1)) & !v_BTrCP & (v_NICD | v_LEF1))
+v_NICD, (v_ETS & v_gSecretase & v_ADAM10 & v_DLL4p & !v_JAGp & !v_NICD)
+v_NRP1, ((v_VEGFAxxx | v_VEGFCDp) & (!v_NICD | v_ETS))
+v_Oxygen, v_Oxygen
+v_PECAM1, (v_VEGFR22 | v_VEGFR23 | v_ShearStress | v_V_Ecadherin)
+v_PIP3, ((v_SRC | v_ShearStress | v_V_Ecadherin | v_TIE2) & !(v_NICD | v_FZD6 | v_DSH | v_NRP1))
+v_PLCg, (v_VEGFR22 | v_VEGFR33 | v_DSH | v_WNT5a)
+v_PlGF, v_PlGF
+v_SIRT1, ((v_SIRT1 | !v_Oxygen | v_HIF1 | v_FOXO1) & v_AMPK)
+v_SMAD4, v_SMAD4
+v_SRC, (v_SRC | v_Integrin | v_VEGFR22 | v_VEGFR23 | v_ShearStress)
+v_ShearStress, v_ShearStress
+v_TGFB1, v_TGFB1
+v_TGFBRII, v_TGFBRII
+v_TIE2, ((v_ANG1 | v_ANG2) & v_ANG1 & !v_ANG2 & (!v_VEPTP | v_ShearStress | v_ETS))
+v_VEGFAxxx, ((!(v_NICD | ((v_HIF1 | v_ETS) & !v_Calcium)) & v_VegfA & !v_AMPK & v_IGF) | v_VEGFAxxxP)
+v_VEGFAxxxP, v_VEGFAxxxP
+v_VEGFCD, v_VEGFCD
+v_VEGFCDp, v_VEGFCDp
+v_VEGFR22, (v_Vegfr2 & (v_PECAM1 | ((v_VEGFCDp | v_VEGFAxxx) & !((v_VegfA & (v_ALK1 | v_SRC | v_PLCg)) | v_VEPTP))))
+v_VEGFR23, (v_Vegfr2 & v_NICD & (v_PECAM1 | v_VEGFAxxx | v_VEGFCDp))
+v_VEGFR33, (v_NICD & (v_PECAM1 | v_VEGFCDp | v_VEGFCD))
+v_VEPTP, (v_SIRT1 | !v_Oxygen)
+v_V_Ecadherin, (v_ETS & (v_SRC | v_Integrin | v_ShearStress | v_VEPTP))
+v_VegfA, (v_VEGFR22 | v_Calcium | v_HIF1 | !v_Oxygen | v_FOXO1 | v_ShearStress)
+v_Vegfr2, ((v_ETS & !(v_NICD | (((!v_NICD & !v_NRP1 & v_ALK1 & (v_TGFB1 | v_BMP9 | v_BMP10) & v_SMAD4) | (!v_NICD & !v_NRP1 & v_BMP9 & v_TGFBRII & v_SMAD4)) & !v_SIRT1 & !(v_SIRT1 & !v_NICD)))) | !v_Oxygen)
+v_WNT11, v_WNT11
+v_WNT5a, v_WNT5a
+v_WNT7a, (v_WNT7a & !v_sFRP1)
+v_gSecretase, v_gSecretase
+v_sFRP1, v_sFRP1
+v_sGC, v_sGC

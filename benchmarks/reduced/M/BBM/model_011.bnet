@@ -1,0 +1,18 @@
+targets, factors
+v_ABA, v_ABA
+v_ABH1, v_ABH1
+v_ABI1, (v_pH & !(v_GPA1 | v_ROS))
+v_AnionEM, ((v_Ca2_c & (!v_ABI1 | v_pH)) | (v_pH & (!v_ABI1 | v_Ca2_c)))
+v_Ca2_c, ((((v_PLC & v_ABA) | (v_cGMP & v_NO)) & !v_Ca2_c) | (((v_ABH1 & !v_ERA1 & !v_Depolar) | (v_ERA1 & !v_ABH1 & !v_Depolar) | (v_ROS & !v_Depolar) | !(v_Depolar | v_ERA1 | v_ROS | v_ABH1)) & !v_Ca2_c))
+v_Depolar, (v_AnionEM | (v_KOUT & !v_HTPase & !v_AnionEM & !v_Ca2_c & !v_KEV) | (v_HTPase & !v_AnionEM & !v_KOUT & !v_Ca2_c & !v_KEV) | v_KEV | v_Ca2_c | !(v_HTPase | v_AnionEM | v_KOUT | v_Ca2_c | v_KEV))
+v_ERA1, v_ERA1
+v_GCR1, v_GCR1
+v_GPA1, ((v_ABA & v_GPA1) | (v_GPA1 & !v_GCR1))
+v_HTPase, !(v_pH | v_Ca2_c | v_ROS)
+v_KEV, v_Ca2_c
+v_KOUT, ((v_pH & v_Depolar) | (v_Depolar & !(v_ROS & v_NO)))
+v_NO, (v_Ca2_c & v_ABA)
+v_PLC, (v_ABA & v_Ca2_c)
+v_ROS, (v_ABA & v_pH & v_GPA1 & !v_ABI1)
+v_cGMP, v_NO
+v_pH, v_ABA

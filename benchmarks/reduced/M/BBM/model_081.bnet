@@ -1,0 +1,15 @@
+targets, factors
+v_IKBKG, (v_TRAF6 & v_TAK1c)
+v_IRAK4, ((!v_TLR5 & v_TICAM1) | v_TLR5)
+v_MAP3K8, (v_TAK1c & v_IKBKG & !v_NFKB1)
+v_NFKB1, !(v_TAK1c & v_IKBKG)
+v_PDPK1, (v_TLR5 & v_TAK1c)
+v_RPS6KA2, ((!v_MAP3K8 & v_TAK1c) | v_MAP3K8)
+v_RPS6KA5, ((!v_TAK1c & v_MAP3K8) | v_TAK1c)
+v_SCFbTrCP, v_SCFbTrCP
+v_TAB, v_TRAF6
+v_TAK1c, (v_TRAF6 & v_TAB & v_SCFbTrCP)
+v_TICAM1, v_TLR5
+v_TLR5, v_TLR5
+v_TRAF6, ((!v_TLR5 & v_TICAM1 & v_IRAK4) | (v_TLR5 & v_IRAK4))
+v_ZFP36, (!v_TAK1c & ((!v_RPS6KA2 & v_PDPK1 & v_RPS6KA5) | (v_RPS6KA2 & v_PDPK1)) & !v_ZFP36)

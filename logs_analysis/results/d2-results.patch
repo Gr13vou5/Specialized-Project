@@ -1,0 +1,137 @@
+From e8437fd92e8832f1d80fec3a2a06f10c24620e49 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Fri, 30 Oct 2026 14:34:38 +0000
+Subject: [PATCH] Summarize the logs of reduced networks in their own results
+ folder
+
+fps_and_cpu.py and the other analysis scripts write to results/, so
+running them on logs_reduced/<variant> overwrote the results of the
+original networks. LOGS_DIR=../logs_reduced/<variant> now writes to
+results_reduced/<variant>/ (RESULTS_DIR overrides it), and every CPU
+time of a solved reduced network includes the network's reduction
+time from bn_reduce.py's reduction.csv (time_<variant>); a run whose
+total passes the 1800 s limit counts as a timeout. Logs that do not
+exist yet stay NOT_RUN, so the tables can be regenerated as runs finish.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_013SsRhASNAkZUiX2xuLVAZY
+---
+ logs_analysis/common.py      | 10 ++++++++-
+ logs_analysis/fps_and_cpu.py |  3 +++
+ logs_analysis/log_parser.py  | 41 ++++++++++++++++++++++++++++++++++--
+ 3 files changed, 51 insertions(+), 3 deletions(-)
+
+diff --git a/logs_analysis/common.py b/logs_analysis/common.py
+index 8ac38e5..065f15d 100644
+--- a/logs_analysis/common.py
++++ b/logs_analysis/common.py
+@@ -4,7 +4,15 @@ import os
+ from enum import Enum, unique
+ 
+ LOGS_DIR = os.environ.get("LOGS_DIR", "../logs")
+-RESULTS_DIRNAME = "results"
++# logs of reduced networks (run_benchmarks.py --reduced writes ../logs_reduced/<variant>) get their
++# own results folder, so the results of the original networks are not overwritten
++_logs = os.path.normpath(LOGS_DIR)
++REDUCED_VARIANT = os.path.basename(_logs) if os.path.basename(os.path.dirname(_logs)) == "logs_reduced" else None
++RESULTS_DIRNAME = os.environ.get("RESULTS_DIR") or (
++    f"results_reduced/{REDUCED_VARIANT}" if REDUCED_VARIANT else "results")
++# bn_reduce.py's statistics: its time_<variant> column is added to the CPU times of reduced
++# networks (set REDUCTION_CSV= to leave it out)
++REDUCTION_CSV = os.environ.get("REDUCTION_CSV", "../reduction.csv")
+ 
+ 
+ BBM_INSTANCE_IDS = tuple(f"{i:03d}" for i in range(1, 231))
+diff --git a/logs_analysis/fps_and_cpu.py b/logs_analysis/fps_and_cpu.py
+index e58aa1e..733071e 100644
+--- a/logs_analysis/fps_and_cpu.py
++++ b/logs_analysis/fps_and_cpu.py
+@@ -132,3 +132,6 @@ with open(f"{RESULTS_DIRNAME}/cpu_selected.csv", "w") as f:
+                 r[solver.value] = format_time(res.cpu)
+ 
+         writer.writerow(r)
++
++
++print(f"results written to {RESULTS_DIRNAME}/")
+diff --git a/logs_analysis/log_parser.py b/logs_analysis/log_parser.py
+index 65bf654..b589de7 100644
+--- a/logs_analysis/log_parser.py
++++ b/logs_analysis/log_parser.py
+@@ -1,5 +1,6 @@
+ from __future__ import annotations
+ 
++import csv
+ import glob
+ import re
+ import sys
+@@ -8,7 +9,8 @@ from enum import Enum, unique
+ from typing import Optional
+ from pathlib import Path
+ 
+-from common import BBM_INSTANCE_IDS, FASP_INSTANCE_IDS, LOGS_DIR, Solver
++from common import (BBM_INSTANCE_IDS, FASP_INSTANCE_IDS, LOGS_DIR, REDUCED_VARIANT,
++                    REDUCTION_CSV, Solver)
+ 
+ TIMEOUT_SEC = 1800
+ TIMEOUT_SEC_MARGIN = 3
+@@ -203,6 +205,40 @@ if not glob.glob(f"{LOGS_DIR}/**/*.log", recursive=True):
+           "(the original logs are .log.7z archives and must be extracted first)", file=sys.stderr)
+ 
+ 
++def reduction_times() -> dict[str, float]:
++    """bn_reduce.py's time (read, reduce, write) per model for the variant of LOGS_DIR; empty for
++    the logs of the original networks."""
++    if not REDUCED_VARIANT or not REDUCTION_CSV:
++        return {}
++    col = f"time_{REDUCED_VARIANT}"
++    try:
++        with open(REDUCTION_CSV, newline="") as f:
++            return {r["model"]: float(r[col]) for r in csv.DictReader(f) if r.get(col)}
++    except FileNotFoundError:
++        sys.exit(f"{REDUCTION_CSV} not found: run bn_reduce.py first, point REDUCTION_CSV at its "
++                 "statistics, or set REDUCTION_CSV= to leave the reduction time out")
++
++
++REDUCTION_TIMES = reduction_times()
++
++
++def add_reduction_time(results: dict[Solver, Result], model: str) -> None:
++    """The CPU time of a solved reduced network includes its reduction; past the limit, a timeout."""
++    if not REDUCTION_TIMES:
++        return
++    t = REDUCTION_TIMES.get(model)
++    if t is None:
++        print(f"warning: no time_{REDUCED_VARIANT} for {model} in {REDUCTION_CSV}; "
++              "its CPU times leave the reduction out", file=sys.stderr)
++        return
++    for solver, res in results.items():
++        if res.cpu is not None:
++            if res.cpu + t > TIMEOUT_SEC:
++                results[solver] = Result(abort_type=AbortType.TIMEOUT)
++            else:
++                res.cpu += t
++
++
+ def parse_or_not_run(pattern: str, parse, *args) -> Result:
+     log_file = find_log(pattern)
+     return parse(log_file, *args) if log_file else Result(abort_type=AbortType.NOT_RUN)
+@@ -225,6 +261,7 @@ def parse_bbm_instances() -> dict[str, dict[Solver, Result]]:
+         # Proposed BMSA
+         d[Solver.HYBRID_BMSA] = parse_or_not_run(f"{LOGS_DIR}/hybrid_bmsa/bbm/*id-{id_}*/*.log", parse_proposed_bmsa_log)
+ 
++        add_reduction_time(d, f"model_{id_}")
+         res_all[id_] = d
+ 
+     return res_all
+@@ -249,7 +286,7 @@ def parse_fasp_instances() -> dict[str, dict[Solver, Result]]:
+             f"{LOGS_DIR}/hybrid_bmsa/fasp/**/{id_}.bnet.log", parse_proposed_bmsa_log
+         )
+ 
+-
++        add_reduction_time(d, id_)
+         res_all[id_] = d
+ 
+     return res_all
+-- 
+2.43.0
+

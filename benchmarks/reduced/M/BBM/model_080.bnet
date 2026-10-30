@@ -1,0 +1,55 @@
+targets, factors
+v_ABL, ((!v_LCK & v_FYN) | v_LCK)
+v_ADAPT78_or_calcipressin, v_ADAPT78_or_calcipressin
+v_ASH, ((!v_CD28_with_phosphorylated_ITAMs & v_LAT) | v_CD28_with_phosphorylated_ITAMs)
+v_Activated_CCBL, (v_FYN & v_CBL)
+v_Akap79, v_Akap79
+v_Akt1_2, ((!v_PDK1 & v_Phosphatidylinositol_3_phosphate & ((!v_STD & !v_MEKK1 & v_RAC1p1_Phosphorylated_RAC1) | (!v_STD & v_MEKK1) | (v_STD & !v_GADD45A) | (v_STD & v_GADD45A & !v_MEKK1 & v_RAC1p1_Phosphorylated_RAC1) | (v_STD & v_GADD45A & v_MEKK1))) | (v_PDK1 & v_Phosphatidylinositol_3_phosphate))
+v_CBL, v_CBL
+v_CD28, v_CD28
+v_CD28_with_phosphorylated_ITAMs, ((v_CD28 & !v_LCK & v_FYN) | (v_CD28 & v_LCK))
+v_CD4, v_CD4
+v_CD6, v_CD6
+v_CHUK_IKBKB, ((!v_PRKCQ & v_NEMO & !v_P65_p50_dimer & !v_IP3 & v_Akt1_2) | (!v_PRKCQ & v_NEMO & !v_P65_p50_dimer & v_IP3) | (v_PRKCQ & v_NEMO & !v_P65_p50_dimer) | (v_PRKCQ & v_NEMO & v_P65_p50_dimer & v_IP3 & v_Akt1_2))
+v_CIPER, v_CIPER
+v_CRBM__3BP2, (v_STD & v_LAT)
+v_ERK1_2_or_MAPK1_3, ((!v_MAP2K1_2_or_MEK1_2 & v_Akt1_2) | v_MAP2K1_2_or_MEK1_2)
+v_FYN, (v_TCR_complex & v_LCK & !v_Shp_1)
+v_GADD45A, v_GADD45A
+v_GADS, v_LAT
+v_GAP, v_GAP
+v_Glk, (v_LCK & v_PDK1)
+v_IP3, v_PLC_gamma_1
+v_IkBa, !v_CHUK_IKBKB
+v_JNKK1_or_MEK4_or_MKK4, ((!v_MEKK1 & ((!v_LAT & v_RAC1p1_Phosphorylated_RAC1) | v_LAT)) | v_MEKK1)
+v_Kinases, v_Kinases
+v_LAT, ((!v_LCK & v_STD) | v_LCK)
+v_LCK, (v_TCR_complex & v_CD4 & v_LCK_reservoir)
+v_LCK_reservoir, ((!v_PTPRC & v_LCK_reservoir) | v_PTPRC)
+v_LYK, (v_LCK & v_STD & v_SLP_76 & v_Phosphatidylinositol_3_phosphate)
+v_LYP_or_PEP, v_LYP_or_PEP
+v_MAP2K1_2_or_MEK1_2, ((!v_MEKK1 & !v_VAV1 & !v_RAC1p2_Phosphorylated_RAC1 & ((!v_GAP & !v_ASH & v_RASGRP) | (!v_GAP & v_ASH) | (v_GAP & v_ASH & v_RASGRP))) | (!v_MEKK1 & !v_VAV1 & v_RAC1p2_Phosphorylated_RAC1) | (!v_MEKK1 & v_VAV1) | v_MEKK1)
+v_MEKK1, ((!v_LAT & !v_VAV1 & v_RAC1p2_Phosphorylated_RAC1) | (!v_LAT & v_VAV1) | v_LAT)
+v_Malt1, v_Malt1
+v_NEMO, (v_Malt1 & v_PRKCQ & v_CIPER)
+v_P65_p50_dimer, ((!v_IkBa & !v_CHUK_IKBKB & !v_Akt1_2 & v_IP3 & !v_p105) | (!v_IkBa & !v_CHUK_IKBKB & v_Akt1_2 & !v_p105) | (!v_IkBa & v_CHUK_IKBKB & !v_p105))
+v_PDK1, v_Phosphatidylinositol_3_phosphate
+v_PLC_gamma_1, ((!v_STD & v_LAT & v_SLP_76 & !v_LYK & v_LCK) | (!v_STD & v_LAT & v_SLP_76 & v_LYK) | (v_STD & v_LAT & v_SLP_76))
+v_PRKCQ, ((!v_LCK & v_PLC_gamma_1 & !v_Glk & v_VAV1 & !v_PDK1 & v_Akt1_2) | (!v_LCK & v_PLC_gamma_1 & !v_Glk & v_VAV1 & v_PDK1) | (!v_LCK & v_PLC_gamma_1 & v_Glk & v_VAV1) | (v_LCK & v_PLC_gamma_1 & v_VAV1))
+v_PTPRC, v_PTPRC
+v_Phosphatidylinositol_3_phosphate, (!v_TEP1 & v_LCK & v_CD28_with_phosphorylated_ITAMs & v_SLP_76)
+v_RAC1p1_Phosphorylated_RAC1, (v_VAV1 & v_p21_RAC1_or_TC25)
+v_RAC1p2_Phosphorylated_RAC1, (v_Phosphatidylinositol_3_phosphate & v_CRBM__3BP2 & v_p21_RAC1_or_TC25)
+v_RASGRP, (v_PLC_gamma_1 & v_PRKCQ & v_IP3)
+v_SLP_76, ((!v_Tp120 & v_STD & v_LAT & !v_GADS & !v_Shp_1) | (!v_Tp120 & v_STD & v_LAT & v_GADS & !v_VAV1 & !v_Shp_1) | (!v_Tp120 & v_STD & v_LAT & v_GADS & v_VAV1) | (v_Tp120 & v_STD & !v_GADS & !v_Shp_1) | (v_Tp120 & v_STD & v_GADS & !v_VAV1 & !v_Shp_1) | (v_Tp120 & v_STD & v_GADS & v_VAV1))
+v_SRF, ((!v_ERK1_2_or_MAPK1_3 & !v_VAV1 & v_RAC1p2_Phosphorylated_RAC1) | (!v_ERK1_2_or_MAPK1_3 & v_VAV1) | v_ERK1_2_or_MAPK1_3)
+v_STD, ((v_TCR_with_phosphorylated_ITAMs & !v_LCK & !v_FYN & v_ABL) | (v_TCR_with_phosphorylated_ITAMs & !v_LCK & v_FYN) | (v_TCR_with_phosphorylated_ITAMs & v_LCK))
+v_Shp_1, ((!v_LCK & v_FYN & !v_ERK1_2_or_MAPK1_3) | (v_LCK & !v_ERK1_2_or_MAPK1_3))
+v_TCR_complex, v_TCR_complex
+v_TCR_with_phosphorylated_ITAMs, ((v_TCR_complex & !v_LCK & v_FYN & !v_Activated_CCBL & !v_LYP_or_PEP) | (v_TCR_complex & v_LCK & !v_FYN & !v_Activated_CCBL & !v_LYP_or_PEP) | (v_TCR_complex & v_LCK & v_FYN))
+v_TEP1, (!v_LCK & !v_Akt1_2)
+v_Tp120, (v_CD6 & v_STD)
+v_VAV1, (v_STD & v_Phosphatidylinositol_3_phosphate & v_CRBM__3BP2)
+v_c_JUN, (((!v_MEKK1 & v_JNKK1_or_MEK4_or_MKK4 & !(v_ERK1_2_or_MAPK1_3 & v_SRF & v_c_JUN)) | (v_MEKK1 & !v_JNKK1_or_MEK4_or_MKK4 & !(v_ERK1_2_or_MAPK1_3 & v_SRF & v_c_JUN)) | (v_MEKK1 & v_JNKK1_or_MEK4_or_MKK4)) & v_Akt1_2)
+v_p105, !v_Akt1_2
+v_p21_RAC1_or_TC25, v_p21_RAC1_or_TC25

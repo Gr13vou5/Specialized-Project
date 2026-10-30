@@ -1,0 +1,27 @@
+targets, factors
+v_ASC, v_ASC
+v_CTSG, v_CTSG
+v_DAMPs_phenotype, v_DAMPs_phenotype
+v_E_Golgi_apparatus, v_E_Golgi_apparatus
+v_E_endoplasmic_reticulum_Golgi_intermediate_compartment, v_E_endoplasmic_reticulum_Golgi_intermediate_compartment
+v_HMOX1, v_HMOX1
+v_Heme_simple_molecule, v_Heme_simple_molecule
+v_IKBA_phosphorylated_phosphorylated, v_IKBA_phosphorylated_phosphorylated
+v_NADPH_simple_molecule, v_NADPH_simple_molecule
+v_NLRP3, v_NLRP3
+v_NLRP3_Elicitor_Proteins, v_NLRP3_Elicitor_Proteins
+v_NLRP3_Elicitor_Small_Molecules_simple_molecule, v_NLRP3_Elicitor_Small_Molecules_simple_molecule
+v_NLRP3_oligomer_ASC_proCaspase1_complex, ((v_NLRP3_oligomer_ASC_proCaspase1_complex & v_CTSG) | v_csa27_ASC_MAVS_TRAF3_complex_cell | ((v_DAMPs_phenotype | v_PAMPs_phenotype | v_NLRP3_Elicitor_Small_Molecules_simple_molecule | v_NLRP3_Elicitor_Proteins | v_Reactive_Oxygen_Species_simple_molecule | v_TXNIP_NLRP3_complex | v_E_Golgi_apparatus | v_E_endoplasmic_reticulum_Golgi_intermediate_compartment) & v_NLRP3 & v_SUGT1_HSP90AB1_complex))
+v_O2_simple_molecule, v_O2_simple_molecule
+v_Orf3a, v_Orf3a
+v_PAMPs_phenotype, v_PAMPs_phenotype
+v_Reactive_Oxygen_Species_simple_molecule, !(v_Heme_simple_molecule & v_O2_simple_molecule & v_NADPH_simple_molecule & v_HMOX1)
+v_SUGT1_HSP90AB1_complex, ((v_DAMPs_phenotype | v_PAMPs_phenotype | v_NLRP3_Elicitor_Small_Molecules_simple_molecule | v_NLRP3_Elicitor_Proteins | v_Reactive_Oxygen_Species_simple_molecule | v_TXNIP_NLRP3_complex | v_E_Golgi_apparatus | v_E_endoplasmic_reticulum_Golgi_intermediate_compartment) & v_NLRP3 & v_SUGT1_HSP90AB1_complex)
+v_TRAF3, v_csa27_ASC_MAVS_TRAF3_complex_cell
+v_TXNIP_NLRP3_complex, (v_NLRP3 & v_Thioredoxin_TXNIP_complex)
+v_Thioredoxin_TXNIP_complex, (v_Thioredoxin_TXNIP_complex & v_sa7_TXN_cell)
+v_csa27_ASC_MAVS_TRAF3_complex_cell, (v_csa29_ASC_MAVS_TRAF3_complex_cell & v_Orf3a & v_TRAF3)
+v_csa29_ASC_MAVS_TRAF3_complex_cell, (v_ASC & v_csa27_ASC_MAVS_TRAF3_complex_cell & v_TRAF3)
+v_csa30_TRAF3_SARS_Orf3a_complex_cell, v_csa30_TRAF3_SARS_Orf3a_complex_cell
+v_p65, v_p65
+v_sa7_TXN_cell, v_sa7_TXN_cell

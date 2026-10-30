@@ -33,18 +33,6 @@ class AbortType(Enum):
     OVERFLOW = "OVERFLOW"
 
 
-def bmsa_count(content: str, count: int) -> int:
-    """bdd_minisat_all counts only the variables up to the highest index used in a clause,
-    and returns 0 for a CNF without clauses; the variables it skips are unconstrained."""
-    cnf = re.search(r"^p cnf (\d+) (\d+)", content, flags=re.MULTILINE)
-    counted = re.search(r"^variables\s*:\s*(\d+)", content, flags=re.MULTILINE)
-    if not cnf or not counted:
-        return count
-    n_vars, n_clauses = int(cnf.group(1)), int(cnf.group(2))
-    if n_clauses == 0:
-        return 2**n_vars
-    return count * 2 ** (n_vars - int(counted.group(1)))
-
 @dataclass
 class Result:
     num_fixed_points: Optional[int] = None
@@ -53,7 +41,6 @@ class Result:
 
 
 def parse_time_command_output(output: str) -> tuple[float, int]:
-    # verbose
     user_time_m = re.search(r"^\s+User time \(seconds\): (\d+\.\d+)", output, flags=re.MULTILINE)
     sys_time_m = re.search(r"^\s+System time \(seconds\): (\d+\.\d+)", output, flags=re.MULTILINE)
     assert user_time_m and sys_time_m
@@ -66,9 +53,23 @@ def parse_time_command_output(output: str) -> tuple[float, int]:
     return cpu, mem
 
 
+def time_limit(content: str) -> int:
+    """CPU limit of the run: recorded by run_benchmarks.py, else the 30 minutes of the original runs."""
+    m = re.search(r"^# Limits: cpu_time_s=(\d+)", content, flags=re.MULTILINE)
+    return int(m.group(1)) if m else TIMEOUT_SEC
+
+
 def memory_threshold(content: str) -> float:
     m = re.search(r"^# Limits: .*memory_kb=(\d+)", content, flags=re.MULTILINE)
     return 0.75 * int(m.group(1)) if m else MEMORY_THRESHOLD
+
+
+def killed_by_memory_limit(content: str) -> bool:
+    """SIGKILL in a run_benchmarks.py run that the wall-clock watchdog did not cause: Docker's
+    memory limit. time -v reports only the largest process, so a solver made of several
+    processes (fASP's Python and its clingo child) can be killed below memory_threshold."""
+    return ("Command terminated by signal 9" in content
+            and re.search(r"^# Limits: .*memory_kb=", content, flags=re.MULTILINE) is not None)
 
 
 def parse_log_default(log_file: str, p: re.Pattern[str]) -> Result:
@@ -84,12 +85,14 @@ def parse_log_default(log_file: str, p: re.Pattern[str]) -> Result:
 
     fixed_points_m = p.search(content_raw)
     cpu, mem = parse_time_command_output(content_raw)
-    if fixed_points_m and cpu <= TIMEOUT_SEC:
+    limit = time_limit(content_raw)
+    if fixed_points_m and cpu <= limit:
         res.num_fixed_points = int(fixed_points_m.group(1))
         res.cpu = cpu
-    elif cpu > TIMEOUT_SEC - TIMEOUT_SEC_MARGIN:
+    elif cpu > limit - TIMEOUT_SEC_MARGIN:
         res.abort_type = AbortType.TIMEOUT
-    elif mem > memory_threshold(content_raw) or "OutOfMemoryError" in content_raw:
+    elif (mem > memory_threshold(content_raw) or "OutOfMemoryError" in content_raw
+          or killed_by_memory_limit(content_raw)):
         res.abort_type = AbortType.OUT_OF_MEMORY
     else:
         res.abort_type = AbortType.UNKNOWN_ERROR
@@ -181,13 +184,26 @@ def parse_saf_sstd_logs(biolqm_log_file: str, log_file: Optional[str]) -> Result
     return res
 
 
+def bmsa_count(content: str, count: int) -> int:
+    """bdd_minisat_all counts only the variables up to the highest index used in a clause,
+    and returns 0 for a CNF without clauses; the variables it skips are unconstrained."""
+    cnf = re.search(r"^p cnf (\d+) (\d+)", content, flags=re.MULTILINE)
+    counted = re.search(r"^variables\s*:\s*(\d+)", content, flags=re.MULTILINE)
+    if not cnf or not counted:
+        return count
+    n_vars, n_clauses = int(cnf.group(1)), int(cnf.group(2))
+    if n_clauses == 0:
+        return 2**n_vars
+    return count * 2 ** (n_vars - int(counted.group(1)))
+
+
 def parse_proposed_bmsa_log(log_file: str) -> Result:
     with open(log_file, "r") as f:
         content_raw = f.read()
 
     if re.search(r"^\s+User time \(seconds\):", content_raw, flags=re.MULTILINE):
         cpu, _ = parse_time_command_output(content_raw)
-        if re.search(r"^s UNSATISFIABLE", content_raw, flags=re.MULTILINE) and cpu <= TIMEOUT_SEC:
+        if re.search(r"^s UNSATISFIABLE", content_raw, flags=re.MULTILINE) and cpu <= time_limit(content_raw):
             return Result(0, cpu)
     if re.search(r"SAT \(full\)\s*:\s*\d+\+", content_raw):
         return Result(abort_type=AbortType.OVERFLOW)
@@ -261,7 +277,6 @@ def count_vars_bnet(path: Path) -> int:
             ln for ln in f
             if ln.strip() and not ln.strip().startswith("#")
         ]
-    # subtract header: "targets,factors"
     return len(lines) - 1
 
 

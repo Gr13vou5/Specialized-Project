@@ -1,0 +1,4 @@
+targets, factors
+v_GFs, v_GFs
+v_RTK, (!v_RTK & v_GFs)
+v_cycE, (v_RTK | (!v_RTK & v_cycE))

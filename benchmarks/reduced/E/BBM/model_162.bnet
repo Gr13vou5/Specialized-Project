@@ -1,0 +1,16 @@
+targets, factors
+v_Dad, (v_MadMed_b1 & v_MadMed_b2)
+v_Dpp_b1, v_Dpp_b1
+v_Dpp_b2, (v_Dpp_b1 & v_Dpp_b2)
+v_Gbb, v_Gbb
+v_MadMed_b1, ((!v_Tkv_b1 & !v_Sax & v_MadMed_b1 & v_MadMed_b2) | (!v_Tkv_b1 & v_Sax & !v_Dad) | (!v_Tkv_b1 & v_Sax & v_Dad & v_MadMed_b1 & v_MadMed_b2) | (v_Tkv_b1 & !v_Tkv_b2 & !v_Dad) | (v_Tkv_b1 & !v_Tkv_b2 & v_Dad & v_MadMed_b1 & v_MadMed_b2) | (v_Tkv_b1 & v_Tkv_b2))
+v_MadMed_b2, (v_Tkv_b1 & v_Tkv_b2 & !v_Dad & v_MadMed_b1)
+v_Nej, v_Nej
+v_Punt, v_Punt
+v_Sax, ((!v_Scw & !v_Gbb & v_Tld & v_Dpp_b1 & v_Punt) | (!v_Scw & v_Gbb & v_Tld & v_Punt) | (v_Scw & v_Tld & v_Punt))
+v_Scw, v_Scw
+v_Shn, v_Shn
+v_Tkv_b1, ((!v_Scw & !v_Gbb & v_Tld & !v_Dpp_b1 & v_Tkv_b1 & v_Tkv_b2) | (!v_Scw & !v_Gbb & v_Tld & v_Dpp_b1 & !v_Tsg & !v_Tkv_b1 & v_Punt) | (!v_Scw & !v_Gbb & v_Tld & v_Dpp_b1 & !v_Tsg & v_Tkv_b1 & !v_Tkv_b2 & v_Punt) | (!v_Scw & !v_Gbb & v_Tld & v_Dpp_b1 & !v_Tsg & v_Tkv_b1 & v_Tkv_b2) | (!v_Scw & !v_Gbb & v_Tld & v_Dpp_b1 & v_Tsg & v_Tkv_b1 & v_Tkv_b2) | (!v_Scw & !v_Gbb & !v_Tld & v_Tkv_b1 & v_Tkv_b2) | (!v_Scw & v_Gbb & v_Tld & !v_Tsg & !v_Tkv_b1 & v_Punt) | (!v_Scw & v_Gbb & v_Tld & !v_Tsg & v_Tkv_b1 & !v_Tkv_b2 & v_Punt) | (!v_Scw & v_Gbb & v_Tld & !v_Tsg & v_Tkv_b1 & v_Tkv_b2) | (!v_Scw & v_Gbb & v_Tld & v_Tsg & v_Tkv_b1 & v_Tkv_b2) | (!v_Scw & v_Gbb & !v_Tld & v_Tkv_b1 & v_Tkv_b2) | (v_Scw & v_Tld & !v_Tsg & !v_Tkv_b1 & v_Punt) | (v_Scw & v_Tld & !v_Tsg & v_Tkv_b1 & !v_Tkv_b2 & v_Punt) | (v_Scw & v_Tld & !v_Tsg & v_Tkv_b1 & v_Tkv_b2) | (v_Scw & v_Tld & v_Tsg & v_Tkv_b1 & v_Tkv_b2) | (v_Scw & !v_Tld & v_Tkv_b1 & v_Tkv_b2))
+v_Tkv_b2, (v_Tld & v_Dpp_b1 & v_Dpp_b2 & !v_Tsg & v_Tkv_b1 & v_Punt)
+v_Tld, v_Tld
+v_Tsg, v_Tsg

@@ -1,0 +1,10 @@
+targets, factors
+v_Clb2_b1, ((!v_Clb2_b1 & v_MASS_b1) | (v_Clb2_b1 & !v_Clb2_b2 & v_MASS_b1) | (v_Clb2_b1 & v_Clb2_b2))
+v_Clb2_b2, ((!v_Swe1_b1 & v_Clb2_b1 & v_MASS_b1) | (v_Swe1_b1 & !v_Swe1_b2 & !v_Mih1_b1 & v_Clb2_b1 & v_MASS_b1 & v_MASS_b2) | (v_Swe1_b1 & !v_Swe1_b2 & v_Mih1_b1 & !v_Mih1_b2 & v_Clb2_b1 & v_MASS_b1 & v_MASS_b2) | (v_Swe1_b1 & !v_Swe1_b2 & v_Mih1_b1 & v_Mih1_b2 & v_Clb2_b1 & v_MASS_b1) | (v_Swe1_b1 & v_Swe1_b2 & v_Mih1_b1 & !v_Mih1_b2 & v_Clb2_b1 & v_MASS_b1 & v_MASS_b2) | (v_Swe1_b1 & v_Swe1_b2 & v_Mih1_b1 & v_Mih1_b2 & v_Clb2_b1 & v_MASS_b1))
+v_MASS_b1, v_MASS_b1
+v_MASS_b2, (v_MASS_b1 & v_MASS_b2)
+v_Mih1_b1, ((!v_Mih1_b1 & !v_Clb2_b1 & v_MASS_b1) | (!v_Mih1_b1 & v_Clb2_b1) | (v_Mih1_b1 & !v_Mih1_b2 & !v_Clb2_b1 & v_MASS_b1) | (v_Mih1_b1 & !v_Mih1_b2 & v_Clb2_b1) | (v_Mih1_b1 & v_Mih1_b2))
+v_Mih1_b2, (v_Mih1_b1 & v_Clb2_b1 & v_MASS_b1)
+v_SBF, ((!v_Clb2_b1 & v_MASS_b1) | (v_Clb2_b1 & !v_Clb2_b2 & v_MASS_b1))
+v_Swe1_b1, ((!v_SBF & v_Swe1_b1 & v_Swe1_b2) | (v_SBF & !v_Swe1_b1 & !v_Clb2_b1) | (v_SBF & !v_Swe1_b1 & v_Clb2_b1 & !v_Clb2_b2) | (v_SBF & !v_Swe1_b1 & v_Clb2_b1 & v_Clb2_b2 & !v_MASS_b1) | (v_SBF & v_Swe1_b1 & !v_Swe1_b2 & !v_Clb2_b1) | (v_SBF & v_Swe1_b1 & !v_Swe1_b2 & v_Clb2_b1 & !v_Clb2_b2) | (v_SBF & v_Swe1_b1 & !v_Swe1_b2 & v_Clb2_b1 & v_Clb2_b2 & !v_MASS_b1) | (v_SBF & v_Swe1_b1 & v_Swe1_b2))
+v_Swe1_b2, ((v_SBF & v_Swe1_b1 & !v_Clb2_b1 & !v_MASS_b1) | (v_SBF & v_Swe1_b1 & v_Clb2_b1 & !v_Clb2_b2 & !v_MASS_b1))

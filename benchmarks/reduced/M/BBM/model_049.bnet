@@ -1,0 +1,10 @@
+targets, factors
+v_ARE, (v_Nrf2 & !(!v_PIP3 | !v_ROS | v_ARE))
+v_Keap1, ((v_Nrf2 & v_ROS) | (v_Keap1 & v_ROS))
+v_Mdm2, ((v_p53 & !v_ROS) | (v_PIP3 & !v_ROS))
+v_Nrf2, ((v_ROS & !v_ARE) | v_PIP3 | !(v_PIP3 | v_Keap1 | (v_ROS & !v_ARE)))
+v_PIP3, (v_Ras & v_ROS)
+v_ROS, (v_Stress & !v_ARE)
+v_Ras, v_ROS
+v_Stress, v_Stress
+v_p53, (v_ROS & !v_Mdm2)

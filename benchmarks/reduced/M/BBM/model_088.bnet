@@ -1,0 +1,5 @@
+targets, factors
+v_elavl3_HuC, (!v_miR_9 & !((!v_her6 & v_zic5) | v_her6))
+v_her6, (!v_miR_9 & !v_elavl3_HuC)
+v_miR_9, (!v_her6 & !v_elavl3_HuC)
+v_zic5, (!v_miR_9 & !v_elavl3_HuC)

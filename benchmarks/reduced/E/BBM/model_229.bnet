@@ -1,0 +1,12 @@
+targets, factors
+v_ABA, v_ABA
+v_ABH1, v_ABH1
+v_AHA1, (!v_PA & !v_CA & !(v_ABA & !v_AHA1))
+v_CA, (((v_ROS & v_ABA) | (v_ROS & v_CA) | ((!v_ABH1 | !v_ERA1 | v_MRP5) & v_ROS & !v_DEPOLAR)) & !v_CA)
+v_DEPOLAR, (v_CA | !v_AHA1 | (v_ABA & v_ROS & (!v_ERA1 | v_MRP5 | !v_ABH1) & !v_MALATE) | (v_ABA & v_DEPOLAR))
+v_ERA1, v_ERA1
+v_MALATE, (!v_MALATE & !v_ABA & !v_CA)
+v_MRP5, v_MRP5
+v_PA, (v_ABA | v_PA | v_CA)
+v_RBOH, (v_ABA & v_PA & !v_AHA1)
+v_ROS, (((v_ABA | v_RBOH) & !v_ROS) | (v_ABA & v_RBOH))

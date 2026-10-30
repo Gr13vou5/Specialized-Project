@@ -1,0 +1,6 @@
+targets, factors
+v_egf, v_egf
+v_nfkb, !(v_nfkb | !v_tnfa)
+v_ph, (v_ph | v_sos)
+v_sos, (v_egf & !v_ph)
+v_tnfa, v_tnfa

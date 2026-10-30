@@ -1,0 +1,32 @@
+targets, factors
+v_Bap_b1, ((!v_En & !v_Med & !v_Bap_b1 & v_Bin_b1 & !v_Bin_b2 & !v_Wg & v_Tin_b1) | (!v_En & !v_Med & !v_Bap_b1 & v_Bin_b1 & v_Bin_b2) | (!v_En & !v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & !v_Bin_b2 & !v_Wg & v_Tin_b1) | (!v_En & !v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & v_Bin_b2) | (!v_En & !v_Med & v_Bap_b1 & v_Bap_b2) | (!v_En & v_Med & !v_Bap_b1 & !v_Bin_b1 & !v_Hh & v_Dpp & !v_Wg & v_Tin_b1) | (!v_En & v_Med & !v_Bap_b1 & !v_Bin_b1 & v_Hh & v_Dpp & v_Tin_b1) | (!v_En & v_Med & !v_Bap_b1 & v_Bin_b1 & !v_Bin_b2 & !v_Hh & !v_Wg & v_Tin_b1) | (!v_En & v_Med & !v_Bap_b1 & v_Bin_b1 & !v_Bin_b2 & v_Hh & !v_Dpp & !v_Wg & v_Tin_b1) | (!v_En & v_Med & !v_Bap_b1 & v_Bin_b1 & !v_Bin_b2 & v_Hh & v_Dpp & v_Tin_b1) | (!v_En & v_Med & !v_Bap_b1 & v_Bin_b1 & v_Bin_b2) | (!v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & !v_Bin_b1 & !v_Hh & v_Dpp & !v_Wg & v_Tin_b1) | (!v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & !v_Bin_b1 & v_Hh & v_Dpp & v_Tin_b1) | (!v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & !v_Bin_b2 & !v_Hh & !v_Wg & v_Tin_b1) | (!v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & !v_Bin_b2 & v_Hh & !v_Dpp & !v_Wg & v_Tin_b1) | (!v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & !v_Bin_b2 & v_Hh & v_Dpp & v_Tin_b1) | (!v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & v_Bin_b2) | (!v_En & v_Med & v_Bap_b1 & v_Bap_b2) | (v_En & !v_Med & !v_Bap_b1 & !v_Bin_b1 & v_Hh & v_Tin_b1) | (v_En & !v_Med & !v_Bap_b1 & v_Bin_b1 & !v_Bin_b2 & !v_Hh & !v_Wg & v_Tin_b1) | (v_En & !v_Med & !v_Bap_b1 & v_Bin_b1 & !v_Bin_b2 & v_Hh & v_Tin_b1) | (v_En & !v_Med & !v_Bap_b1 & v_Bin_b1 & v_Bin_b2) | (v_En & !v_Med & v_Bap_b1 & !v_Bap_b2 & !v_Bin_b1 & v_Hh & v_Tin_b1) | (v_En & !v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & !v_Bin_b2 & !v_Hh & !v_Wg & v_Tin_b1) | (v_En & !v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & !v_Bin_b2 & v_Hh & v_Tin_b1) | (v_En & !v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & v_Bin_b2) | (v_En & !v_Med & v_Bap_b1 & v_Bap_b2) | (v_En & v_Med & !v_Bap_b1 & !v_Bin_b1 & !v_Hh & v_Dpp & !v_Wg & v_Tin_b1) | (v_En & v_Med & !v_Bap_b1 & !v_Bin_b1 & v_Hh & v_Tin_b1) | (v_En & v_Med & !v_Bap_b1 & v_Bin_b1 & !v_Bin_b2 & !v_Hh & !v_Wg & v_Tin_b1) | (v_En & v_Med & !v_Bap_b1 & v_Bin_b1 & !v_Bin_b2 & v_Hh & v_Tin_b1) | (v_En & v_Med & !v_Bap_b1 & v_Bin_b1 & v_Bin_b2) | (v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & !v_Bin_b1 & !v_Hh & v_Dpp & !v_Wg & v_Tin_b1) | (v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & !v_Bin_b1 & v_Hh & v_Tin_b1) | (v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & !v_Bin_b2 & !v_Hh & !v_Wg & v_Tin_b1) | (v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & !v_Bin_b2 & v_Hh & v_Tin_b1) | (v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & v_Bin_b2) | (v_En & v_Med & v_Bap_b1 & v_Bap_b2))
+v_Bap_b2, ((!v_En & !v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & v_Bin_b2) | (!v_En & !v_Med & v_Bap_b1 & v_Bap_b2 & !v_Bap_b3 & v_Bin_b1 & v_Bin_b2) | (!v_En & !v_Med & v_Bap_b1 & v_Bap_b2 & v_Bap_b3) | (!v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & !v_Bin_b2 & v_Hh & v_Dpp & !v_Wg & v_Tin_b1) | (!v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & v_Bin_b2) | (!v_En & v_Med & v_Bap_b1 & v_Bap_b2 & !v_Bap_b3 & v_Bin_b1 & !v_Bin_b2 & v_Hh & v_Dpp & !v_Wg & v_Tin_b1) | (!v_En & v_Med & v_Bap_b1 & v_Bap_b2 & !v_Bap_b3 & v_Bin_b1 & v_Bin_b2) | (!v_En & v_Med & v_Bap_b1 & v_Bap_b2 & v_Bap_b3) | (v_En & !v_Med & v_Bap_b1 & !v_Bap_b2 & !v_Bin_b1 & v_Hh & !v_Wg & v_Tin_b1) | (v_En & !v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & !v_Bin_b2 & v_Hh & !v_Wg & v_Tin_b1) | (v_En & !v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & v_Bin_b2) | (v_En & !v_Med & v_Bap_b1 & v_Bap_b2 & !v_Bap_b3 & !v_Bin_b1 & v_Hh & !v_Wg & v_Tin_b1) | (v_En & !v_Med & v_Bap_b1 & v_Bap_b2 & !v_Bap_b3 & v_Bin_b1 & !v_Bin_b2 & v_Hh & !v_Wg & v_Tin_b1) | (v_En & !v_Med & v_Bap_b1 & v_Bap_b2 & !v_Bap_b3 & v_Bin_b1 & v_Bin_b2) | (v_En & !v_Med & v_Bap_b1 & v_Bap_b2 & v_Bap_b3) | (v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & !v_Bin_b1 & v_Hh & !v_Wg & v_Tin_b1) | (v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & !v_Bin_b2 & !v_Hh & v_Dpp & !v_Wg & v_Tin_b1) | (v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & !v_Bin_b2 & v_Hh & !v_Wg & v_Tin_b1) | (v_En & v_Med & v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & v_Bin_b2) | (v_En & v_Med & v_Bap_b1 & v_Bap_b2 & !v_Bap_b3 & !v_Bin_b1 & v_Hh & !v_Wg & v_Tin_b1) | (v_En & v_Med & v_Bap_b1 & v_Bap_b2 & !v_Bap_b3 & v_Bin_b1 & !v_Bin_b2 & !v_Hh & v_Dpp & !v_Wg & v_Tin_b1) | (v_En & v_Med & v_Bap_b1 & v_Bap_b2 & !v_Bap_b3 & v_Bin_b1 & !v_Bin_b2 & v_Hh & !v_Wg & v_Tin_b1) | (v_En & v_Med & v_Bap_b1 & v_Bap_b2 & !v_Bap_b3 & v_Bin_b1 & v_Bin_b2) | (v_En & v_Med & v_Bap_b1 & v_Bap_b2 & v_Bap_b3))
+v_Bap_b3, ((!v_En & v_Bap_b1 & v_Bap_b2 & v_Bin_b1 & v_Bin_b2) | (v_En & !v_Med & v_Bap_b1 & v_Bap_b2 & v_Bin_b1 & v_Bin_b2) | (v_En & v_Med & v_Bap_b1 & v_Bap_b2 & !v_Bin_b1 & v_Hh & v_Dpp & !v_Wg & v_Tin_b1) | (v_En & v_Med & v_Bap_b1 & v_Bap_b2 & v_Bin_b1 & !v_Bin_b2 & v_Hh & v_Dpp & !v_Wg & v_Tin_b1) | (v_En & v_Med & v_Bap_b1 & v_Bap_b2 & v_Bin_b1 & v_Bin_b2))
+v_Bin_b1, ((!v_Bap_b1 & v_Bin_b1 & v_Bin_b2) | (v_Bap_b1 & !v_Bap_b2 & v_Bin_b1 & v_Bin_b2) | (v_Bap_b1 & v_Bap_b2))
+v_Bin_b2, v_Bin_b2
+v_Delta, v_Delta
+v_Dpp, v_Dpp
+v_E_S, (v_SuH & v_Delta & v_Stat92E)
+v_En, v_En
+v_Hh, v_Hh
+v_Med, v_Med
+v_Pnt_b1, ((!v_Pnt_b1 & v_Rl_b1) | (v_Pnt_b1 & !v_Pnt_b2 & v_Rl_b1) | (v_Pnt_b1 & v_Pnt_b2))
+v_Pnt_b2, v_Pnt_b2
+v_Pyr, v_Pyr
+v_Ras_b1, ((!v_Spi & v_Ras_b1 & v_Ras_b2) | v_Spi)
+v_Ras_b2, v_Ras_b2
+v_Rl_b1, ((!v_Ras_b1 & v_Rl_b1 & v_Rl_b2) | v_Ras_b1)
+v_Rl_b2, v_Rl_b2
+v_Shn, v_Shn
+v_Spi, v_Spi
+v_Srp_b1, ((!v_Med & !v_Hh & v_Srp_b1 & v_Srp_b2) | (!v_Med & v_Hh) | (v_Med & !v_Hh & v_Srp_b1 & v_Srp_b2) | (v_Med & v_Hh & !v_Dpp) | (v_Med & v_Hh & v_Dpp & v_Srp_b1 & v_Srp_b2))
+v_Srp_b2, ((v_En & !v_Med & v_Hh & v_Srp_b1) | (v_En & v_Med & v_Hh & !v_Dpp & v_Srp_b1))
+v_Stat92E, ((!v_Upd & v_Tin_b1 & v_Tin_b2) | v_Upd)
+v_SuH, v_SuH
+v_Ths, v_Ths
+v_Tin_b1, ((!v_Med & !v_Dpp & v_Tin_b1 & v_Tin_b2) | (!v_Med & v_Dpp & !v_Tin_b1 & v_Twi_b1) | (!v_Med & v_Dpp & v_Tin_b1) | (v_Med & !v_Dpp & v_Tin_b1 & v_Tin_b2) | (v_Med & v_Dpp))
+v_Tin_b2, (v_Med & v_Dpp & v_Wg & v_Stat92E & v_Tin_b1)
+v_Twi_b1, ((v_Delta & !v_Wg & v_Twi_b1 & v_Twi_b2) | (v_Delta & v_Wg & v_Twi_b1) | (!v_Delta & !v_E_S & v_Twi_b1) | (!v_Delta & v_E_S & !v_Wg & v_Twi_b1 & v_Twi_b2) | (!v_Delta & v_E_S & v_Wg & v_Twi_b1))
+v_Twi_b2, (!v_Delta & !v_E_S & v_Wg & v_Twi_b1)
+v_Upd, v_Upd
+v_Wg, v_Wg

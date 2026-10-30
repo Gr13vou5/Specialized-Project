@@ -1,0 +1,33 @@
+targets, factors
+v_ATM, (v_DNAdam | v_Cas3)
+v_BAD, (v_JNK | !(v_PI3K | v_RAS | v_mTORC1))
+v_BAX, ((v_p53 | ((v_FasR | !v_pNFkB | v_STRESS | v_Fas) & !(((v_pNFkB | v_pSTAT3) & !(v_BAD | v_p53)) | v_BclxL))) & !(v_BclxL | v_pSTAT3))
+v_BclxL, ((v_pNFkB | v_pSTAT3) & !(v_BAX | v_BAD | v_p53))
+v_Bort, v_Bort
+v_CAS3, v_CAS3
+v_CDK4, (!v_GSK3b & !v_ATM & !((v_p53 & (!v_MYC | !v_MDM | !v_PI3K | !v_CDK4 | !v_pSTAT3)) | (v_p53 & (!v_MYC | !v_CDK4 | !v_PI3K | !v_pSTAT3))))
+v_Cas3, ((v_FasR | !v_pNFkB | (v_MITO & !v_XIAP)) & !v_XIAP)
+v_DNAdam, (v_Cas3 | v_STRESS | v_ROS)
+v_Fas, v_Fas
+v_FasR, (v_FasR | v_JNK | v_p53)
+v_GSK3b, !(v_mTORC1 | v_PI3K | v_RAS)
+v_IGF1, v_IGF1
+v_IGF1R, v_IGF1R
+v_IRF4, (v_IRF4 | v_MYC | v_pNFkB)
+v_IRS, ((v_IGF1R & v_IGF1) | (v_IGF1R & v_pNFkB & !v_Cas3) | !(v_mTORC1 | v_JNK))
+v_JNK, (v_STRESS & v_Bort)
+v_MDM, ((v_p53 | v_PI3K) & !(v_ATM | v_DNAdam))
+v_MITO, (v_BAX | v_ROS)
+v_MYC, ((v_pSTAT3 | v_RAS | v_IRF4) & !(v_IRF4 & !v_pSTAT3))
+v_PI3K, ((v_pNFkB & !v_Cas3) | v_IRS)
+v_RAS, ((v_pNFkB & !v_Cas3) | v_SHP1 | v_IRS)
+v_ROS, (!(v_pNFkB & v_ROS) & (v_MITO | v_STRESS))
+v_SHP1, v_SHP1
+v_STRESS, (v_DNAdam | v_Bort | v_ROS)
+v_TNFa, v_TNFa
+v_TNFaR, v_TNFaR
+v_XIAP, ((v_pNFkB | v_pSTAT3) & !(v_MITO | v_p53))
+v_mTORC1, !(!(v_PI3K | v_RAS) & (v_GSK3b | v_STRESS))
+v_p53, ((v_ATM | v_DNAdam | v_JNK) & (!(v_MDM & !v_Bort & v_pSTAT3) | !(v_MDM & !v_Bort)))
+v_pNFkB, ((((v_TNFa & v_TNFaR) | v_Bort) & v_TNFaR) | v_PI3K | (v_ROS & v_ATM & v_DNAdam) | v_pSTAT3 | !v_GSK3b)
+v_pSTAT3, (v_pNFkB & !v_Cas3 & !v_SHP1 & !v_CAS3 & !v_JNK)

@@ -1,0 +1,11 @@
+targets, factors
+v_CK1, v_CK1
+v_cdc42, v_cdc42
+v_cdc7, ((v_cdc7 | v_ppc89 | !v_cdk_H) & !(v_cdk_L & !v_cdc42 & !v_cdk_H))
+v_cdk_0, v_cdk_0
+v_cdk_H, v_cdk_H
+v_cdk_L, v_cdk_L
+v_etd1, v_etd1
+v_ppc89, v_ppc89
+v_ras1, v_ras1
+v_sid2_mob1, v_sid2_mob1

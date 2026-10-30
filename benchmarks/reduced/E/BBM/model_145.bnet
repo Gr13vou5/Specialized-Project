@@ -1,0 +1,8 @@
+targets, factors
+v_ASK1, (v_UVB & !v_PDK1 & !v_MITFprotein)
+v_ERK, (v_UVB & !v_MITFprotein & !v_ERK & !v_PDK1 & !v_ASK1)
+v_MITFprotein, (((v_UVB & !v_MITFprotein) | v_P53 | v_cAMP) & !v_cAMP)
+v_P53, (!v_PDK1 & (v_ERK | v_ASK1))
+v_PDK1, (v_UVB & !v_MITFprotein & !(v_MITFprotein | (!v_MITFprotein & !v_UVB)))
+v_UVB, v_UVB
+v_cAMP, (!v_cAMP & (v_PDK1 | (v_UVB & !v_MITFprotein) | v_P53))

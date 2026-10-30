@@ -1,0 +1,26 @@
+targets, factors
+v_Foxp3, ((v_STAT5 & !(v_GATA3 | v_IL21R | (v_IL6R & v_STAT3))) | (v_TGFb & v_NFAT & !(v_GATA3 | v_IL21R | (v_IL6R & v_STAT3))))
+v_GATA3, ((v_GATA3 & !v_Tbet) | (v_STAT6 & v_NFAT & !(v_RORgt | v_Tbet | v_Foxp3 | v_TGFb)) | (v_STAT5 & !(v_RORgt | v_Tbet | v_Foxp3 | v_TGFb)))
+v_IFNg, ((v_Tbet & !v_STAT3) | v_NFkB)
+v_IFNg_e, v_IFNg_e
+v_IL12, v_IL12
+v_IL17, ((v_RORgt & !v_STAT1) | (v_STAT3 & v_IL17 & !(v_STAT5 | v_STAT1)))
+v_IL18, v_IL18
+v_IL21R, (v_STAT3 & v_NFAT)
+v_IL23, v_IL23
+v_IL27, v_IL27
+v_IL4_e, v_IL4_e
+v_IL6R, (v_IL6_e | v_RORgt)
+v_IL6_e, v_IL6_e
+v_NFAT, (v_TCR & !v_Foxp3)
+v_NFkB, (v_IL18 & v_IL12 & !v_STAT6 & !v_Foxp3)
+v_RORgt, (v_TGFb & v_NFAT & ((v_STAT3 & v_IL21R) | (v_STAT3 & v_IL6R)) & !(v_Foxp3 | v_Tbet | v_GATA3))
+v_SOCS1, (v_Tbet | v_STAT1)
+v_STAT1, ((((v_IFNg_e & v_NFAT) | (v_IFNg & v_NFAT)) & !v_SOCS1) | (v_IL27 & v_NFAT))
+v_STAT3, (v_STAT3 | v_IL21R | v_IL6R)
+v_STAT4, (((v_STAT4 & !v_GATA3) | (v_IL12 & v_NFAT) | (v_TCR & !v_GATA3) | v_Tbet) & v_IL12 & !v_GATA3)
+v_STAT5, (v_NFAT & v_NFkB & !v_Tbet)
+v_STAT6, ((v_IL4_e | (v_GATA3 & v_NFAT & !v_STAT1 & !v_SOCS1)) & !(v_SOCS1 | v_IFNg))
+v_TCR, v_TCR
+v_TGFb, v_TGFb
+v_Tbet, ((v_STAT4 & !(v_RORgt | v_Foxp3)) | (v_Tbet & !v_IFNg & !v_IL12 & !(v_RORgt | v_Foxp3)) | (v_STAT1 & !(v_RORgt | v_Foxp3)))

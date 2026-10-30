@@ -1,0 +1,12 @@
+targets, factors
+v_HER2p, v_HER2p
+v_IFNg, v_IFNg
+v_P53p, !(!(!(!v_HER2p & (v_TGFb | v_P53p)) & v_PIP3p) & (v_PIP3p | v_P53p))
+v_P53s, (!(v_PIP3s | v_P53s) & (v_RASs | v_P53s))
+v_PIP3p, (!v_P53p & (v_RASp | v_HER2p))
+v_PIP3s, (!v_P53s & (v_TGFb | v_RASs))
+v_RASp, (v_RASp | v_HER2p | v_TGFb | v_RASs)
+v_RASs, (v_TNFa | v_PIP3s | v_HER2p | v_PIP3p | v_RASp | v_TGFb | v_RASs)
+v_TGFb, v_TGFb
+v_TNFa, v_TNFa
+v_Thiazolidinedione, v_Thiazolidinedione

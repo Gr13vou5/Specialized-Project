@@ -1,0 +1,58 @@
+targets, factors
+v_APC, v_APC
+v_B7, v_B7
+v_CAV1_ACTIVATOR, v_CAV1_ACTIVATOR
+v_CD28, (v_B7 | v_APC)
+v_CGC, v_CGC
+v_ECM, v_ECM
+v_FOXP3, ((v_NFAT & v_STAT5 & v_FOXP3) | (v_TGFBR & v_STAT5 & v_NFAT & !((v_STAT3 & v_RORGT) | v_STAT1)))
+v_GATA3, ((v_IL4R & !v_TBET) | v_GATA3)
+v_GP130, v_GP130
+v_GalphaS_L, v_GalphaS_L
+v_Galpha_QL, v_Galpha_QL
+v_Galpha_iL, v_Galpha_iL
+v_IFNB_e, v_IFNB_e
+v_IFNGR1, v_IFNGR1
+v_IFNGR2, v_IFNGR2
+v_IFNG_e, v_IFNG_e
+v_IL10RA, v_IL10RA
+v_IL10RB, v_IL10RB
+v_IL10_e, v_IL10_e
+v_IL12RB1, (v_STAT1 | v_IL12_e)
+v_IL12_e, v_IL12_e
+v_IL15RA, v_IL15RA
+v_IL15_e, v_IL15_e
+v_IL18_e, v_IL18_e
+v_IL2, ((v_NFKB & !((v_STAT5 & v_IL4R) | (v_TBET & v_NFKB))) | (v_NFAT & !v_FOXP3 & !((v_STAT5 & v_IL4R) | (v_TBET & v_NFKB))))
+v_IL21_e, v_IL21_e
+v_IL22_e, v_IL22_e
+v_IL23_e, v_IL23_e
+v_IL27R, (v_GP130 & v_IL27_e & v_IL27RA)
+v_IL27RA, v_IL27RA
+v_IL27_e, v_IL27_e
+v_IL2R, ((v_IL2 & v_CGC & v_IL2RB & !v_IL2RA) | (v_IL2_e & v_CGC & v_IL2RB & !v_IL2RA))
+v_IL2RA, ((v_NFKB & v_NFAT) | (v_FOXP3 & v_NFAT) | (v_STAT5 & v_NFAT) | (v_TGFBR & v_NFAT))
+v_IL2RB, v_IL2RB
+v_IL2_e, v_IL2_e
+v_IL4R, ((v_GATA3 & v_CGC & !v_STAT5_HIGH) | (v_IL4_e & v_CGC & !v_STAT5_HIGH))
+v_IL4_e, v_IL4_e
+v_IL6RA, v_IL6RA
+v_IL6_e, v_IL6_e
+v_IL9_e, v_IL9_e
+v_Lck, ((v_IL2R & v_IL2RB) | (v_TCR & v_MHC_II) | v_CD28)
+v_MHC_II, v_MHC_II
+v_NFAT, ((v_CD28 & v_TCR) | (v_TCR & v_CD28) | (v_Lck & v_TCR & v_P38))
+v_NFKB, !(!(v_IL18_e | v_Galpha_QL | v_CAV1_ACTIVATOR | v_TCR | v_ECM) | v_FOXP3)
+v_P38, (v_IL12_e & v_TCR & (v_IL12_e | v_TCR))
+v_RORGT, ((v_TGFBR & v_STAT3) | (v_RORGT & (v_TGFBR | v_STAT3)))
+v_SOCS1, (v_IL4R | v_STAT3)
+v_STAT1, ((((v_IFNG_e & v_IFNGR2 & v_IFNGR1) | (((v_IL12RB1 & v_IL12_e & !v_GATA3 & !(v_FOXP3 | v_STAT3)) | (v_TBET & !(v_FOXP3 | v_STAT3)) | (v_P38 & !(v_FOXP3 | v_STAT3))) & v_IFNGR2 & v_IFNGR1)) & !v_SOCS1) | (v_IL27R & !v_SOCS1) | (v_IFNB_e & !v_SOCS1))
+v_STAT3, ((v_NFAT & (v_STAT3 | v_GATA3) & v_proliferation & v_IL10RB & v_IL10RA) | (v_IL10_e & v_IL10RB & v_IL10RA) | v_IL27R | (v_GP130 & v_IL6RA & v_IL6_e) | (v_NFAT & v_STAT3 & v_proliferation & v_CGC & v_GP130) | (v_IL21_e & v_CGC & v_GP130) | (v_NFAT & v_STAT3 & v_proliferation & v_IL12RB1 & v_RORGT & v_GP130) | (v_IL23_e & v_IL12RB1 & v_STAT3 & v_RORGT & v_GP130))
+v_STAT5, (v_IL4R | v_IL2R | (v_IL22_e & !v_STAT3) | (v_IL2R & !v_STAT3) | ((v_IL9_e | v_IL2R) & !v_STAT3) | (v_CGC & v_IL2RB & v_IL15RA & v_IL15_e) | v_Lck)
+v_STAT5_HIGH, ((v_IL4_e & v_CGC & v_STAT5_HIGH) | (v_GATA3 & v_CGC & v_STAT5_HIGH) | (v_IL2 & v_CGC & v_IL2RB & v_IL2RA) | (v_IL2_e & v_CGC & v_IL2RB & v_IL2RA))
+v_TBET, ((v_TBET & !v_GATA3) | (v_STAT1 & !v_GATA3))
+v_TCR, (v_APC & v_CD28)
+v_TGFBR, ((v_FOXP3 & v_NFAT & v_proliferation) | v_TGFB_e)
+v_TGFB_e, v_TGFB_e
+v_alpha_13L, v_alpha_13L
+v_proliferation, (v_STAT5_HIGH | v_proliferation)

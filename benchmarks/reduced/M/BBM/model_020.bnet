@@ -1,0 +1,21 @@
+targets, factors
+v_APC, (v_Cas9 & v_p53 & v_BID & !v_BclX & !v_IAP)
+v_BAD, (v_p53 & !v_PIP3)
+v_BID, ((v_Cas8 & v_p53 & !v_BclX) | (v_TRADD & !v_PIP3 & v_p53 & !v_BclX))
+v_BclX, (v_NFkB & !(v_BAD | v_p53))
+v_Cas3, ((v_Cas6 & !v_IAP) | (v_Cas8 & !v_IAP) | (v_APC & !v_IAP))
+v_Cas6, (v_Cas3 & !v_IAP)
+v_Cas7, ((v_APC & !v_IAP) | (v_Cas8 & !v_IAP))
+v_Cas8, ((v_TRADD & !v_cFLIP) | (v_Cas6 & !v_cFLIP))
+v_Cas9, ((v_Cas3 & !(v_PIP3 | v_IAP)) | (v_Cas7 & !(v_PIP3 | v_IAP)))
+v_GF, v_GF
+v_IAP, (v_NFkB & !((v_BID & !v_BclX) | (v_Cas3 & v_Cas6)))
+v_IKK, ((v_PIP3 & !v_NFkB) | ((v_TNF | v_TRADD) & !v_NFkB))
+v_Mdm2, (v_PIP3 | v_p53)
+v_NFkB, !(v_NFkB & !v_IKK)
+v_PIP2, v_GF
+v_PIP3, (v_GF & v_PIP2 & !v_p53)
+v_TNF, v_TNF
+v_TRADD, v_TNF
+v_cFLIP, v_TRADD
+v_p53, ((v_Cas3 & !v_Mdm2) | (v_TRADD & !v_PIP3 & !v_Mdm2))

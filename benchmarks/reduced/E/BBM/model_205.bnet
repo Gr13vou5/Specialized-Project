@@ -1,0 +1,6 @@
+targets, factors
+v_cdh1, !(!v_cdh1 | v_cxcr1 | v_tgfbr)
+v_cxcr1, v_cxcr1
+v_mir_200_3p, v_mir_200_3p
+v_ppp2r2b, v_ppp2r2b
+v_tgfbr, v_tgfbr

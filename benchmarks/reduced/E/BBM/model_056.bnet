@@ -1,0 +1,29 @@
+targets, factors
+v_ANXA2, v_ANXA2
+v_BMI1, v_BMI1
+v_CD74, v_CD74
+v_CD81, v_CD81
+v_CHST2, v_CHST2
+v_CNR1, v_CNR1
+v_CREM, v_CREM
+v_CSDA, v_CSDA
+v_CSNK2A2, v_CSNK2A2
+v_CUL5, v_CUL5
+v_EED, v_EED
+v_EGR1, (v_CNR1 & v_TGFBR3 & !((v_TNF & !v_SKI) | v_EGR1))
+v_FGFR1, v_FGFR1
+v_FOS, (v_HSP90AA1 & v_LMNA & v_TNF & !v_FOS & !(v_TNF & v_IL10RA & !(v_TNF & !v_SKI)))
+v_FRK, v_FRK
+v_FYN, v_FYN
+v_GSK3B, v_GSK3B
+v_HSP90AA1, v_HSP90AA1
+v_IL10RA, v_IL10RA
+v_LMNA, v_LMNA
+v_RFC5, v_RFC5
+v_RRM1, v_RRM1
+v_SIAH1, v_SIAH1
+v_SKI, v_SKI
+v_TCF3, v_TCF3
+v_TGFBR3, v_TGFBR3
+v_TNF, (v_FOS & !v_TNF)
+v_TNFRSF1B, v_TNFRSF1B

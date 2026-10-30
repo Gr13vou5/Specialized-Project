@@ -1,0 +1,51 @@
+targets, factors
+v_ABA, v_ABA
+v_ABH1, v_ABH1
+v_ABI1, ((!v_PA & v_pHc & !v_ROS & !v_ABA) | (!v_PA & v_pHc & !v_ROS & v_GEF1410))
+v_ABI2, ((!v_ROS & v_GEF1410) | (!v_ROS & !v_ABA))
+v_ARP23, v_ARP23
+v_AnionEM, (v_SLAC1 | (((v_CPK213 & !v_ABI1 & v_CPK6) | (v_CPK213 & !v_ABI1 & v_CPK23)) & v_OST1 & v_Ca2c))
+v_CO2, v_CO2
+v_CPK213, (v_CPK213 | v_Ca2c)
+v_CPK23, v_CPK23
+v_CPK6, v_CPK6
+v_Ca2c, ((!v_Ca2c & ((v_PLC & v_PIP2) | v_InsP6 | (v_NAD & v_cGMP & v_ROS & v_NO))) | (!v_Ca2c & ((!v_ABH1 & v_NtSyp121) | (!v_ABH1 & v_GHR1) | (!v_ABH1 & v_MRP5) | !v_ERA1 | (!(!v_ABA | v_ABI1) & v_ARP23 & v_SCAB1 & v_PtdInsP4) | (!(!v_ABA | v_ABI1) & v_ARP23 & v_SCAB1 & v_PtdInsP3))))
+v_DAGK, v_DAGK
+v_Depolar, ((v_AnionEM & !v_HATPase) | (v_AnionEM & !v_KEfflux) | (v_Ca2c & !v_HATPase) | (v_Ca2c & !v_KEfflux) | (v_KEV & !v_HATPase) | (v_KEV & !v_KEfflux))
+v_ERA1, v_ERA1
+v_GAPC, v_GAPC
+v_GCR1, v_GCR1
+v_GEF1410, v_GEF1410
+v_GHR1, (!v_ABI2 & v_ROS & v_CO2)
+v_GTP, v_GTP
+v_HAB1, (!v_ABA & !v_ROS)
+v_HATPase, (!v_pHc & !v_Ca2c & !v_ROS)
+v_InsP6, (v_PLC & v_PIP2)
+v_KEV, (v_Vacidification | v_Ca2c)
+v_KEfflux, (((v_Depolar & !v_NO) | (v_Depolar & !v_ROS) | (v_Depolar & v_pHc)) & v_KEV)
+v_MAPK912, (v_Ca2c | v_MAPK912)
+v_MRP5, v_MRP5
+v_Microtubule, (v_Ca2c | v_Microtubule)
+v_NAD, v_NAD
+v_NADPH, v_NADPH
+v_NO, (v_Nitrite & v_ROS & v_NADPH)
+v_Nitrite, v_Nitrite
+v_NtSyp121, v_NtSyp121
+v_OST1, ((!v_ABI1 & !v_HAB1) | (!v_PP2CA & !v_ABI2) | (!v_ABI1 & !v_PP2CA) | (!v_ABI1 & !v_ABI2) | (!v_HAB1 & !v_PP2CA) | (!v_HAB1 & !v_ABI2))
+v_PA, ((v_PC & (v_NO | (v_ROS & v_GAPC))) | (v_PC & (v_S1P | !v_GCR1) & v_Ca2c) | (v_PIP2 & v_PLC & v_DAGK))
+v_PC, v_PC
+v_PIP2, v_PtdInsP4
+v_PLC, v_Ca2c
+v_PP2CA, (!v_ABA & !v_ROS)
+v_PtdInsP3, v_PtdInsP3
+v_PtdInsP4, v_PtdInsP4
+v_RCN1, v_RCN1
+v_ROS, (v_NADPH & v_pHc & !v_ABI1 & v_PtdInsP3 & v_OST1 & (v_S1P | !v_GCR1) & v_PA & v_RCN1)
+v_S1P, ((v_PA | v_ABA) & v_Sph & !v_SPP1)
+v_SCAB1, v_SCAB1
+v_SLAC1, ((v_MAPK912 & v_OST1 & v_GHR1 & !v_ABI1 & !v_PP2CA & !v_ABI2 & v_pHc & v_CPK6) | (v_MAPK912 & v_OST1 & v_GHR1 & !v_ABI1 & !v_PP2CA & !v_ABI2 & v_pHc & v_CPK23) | (v_MAPK912 & v_OST1 & v_GHR1 & !v_ABI1 & !v_PP2CA & !v_ABI2 & v_pHc & v_CPK213))
+v_SPP1, v_SPP1
+v_Sph, v_Sph
+v_Vacidification, (v_ABA | v_Ca2c | v_Vacidification)
+v_cGMP, (v_NO & v_GTP)
+v_pHc, ((v_Vacidification & v_Ca2c) | (v_Vacidification & v_OST1 & !v_ABI2 & !v_ABI1))

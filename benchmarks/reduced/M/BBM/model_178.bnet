@@ -1,0 +1,15 @@
+targets, factors
+v_Ag_b1, v_Ag_b1
+v_Ag_b2, (v_Ag_b1 & v_Ag_b2)
+v_Btk, (v_Lyn & v_Syk)
+v_FceRI_IgE_P, (v_Ag_b1 & v_Lyn)
+v_GRB2_SOS, (v_Syk & !v_Raf & v_LAT & !v_SHIP_1)
+v_LAT, v_Syk
+v_LAT2, (v_Lyn & v_Syk)
+v_Lyn, (!v_cCbl & v_Lyn)
+v_PIP2, v_PIP2
+v_PLCG1, ((v_Btk & !v_LAT & !v_Lyn & v_LAT2 & v_PIP2 & !v_SHIP_1 & v_Syk) | (v_Btk & v_LAT & v_Syk))
+v_Raf, ((!v_GRB2_SOS & v_PIP2 & v_PLCG1) | v_GRB2_SOS)
+v_SHIP_1, (v_Ag_b1 & v_Ag_b2 & v_Lyn)
+v_Syk, ((!v_cCbl & !v_Raf & v_FceRI_IgE_P & v_Lyn) | (!v_cCbl & v_Raf & !v_FceRI_IgE_P & v_Syk) | (!v_cCbl & v_Raf & v_FceRI_IgE_P & !v_Lyn & v_Syk) | (!v_cCbl & v_Raf & v_FceRI_IgE_P & v_Lyn))
+v_cCbl, v_cCbl

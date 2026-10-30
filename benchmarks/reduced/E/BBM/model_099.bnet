@@ -1,0 +1,11 @@
+targets, factors
+v_Efg1, (!v_Efg1_active | (v_Efg1_active & !v_Nrg1_HAGs))
+v_Efg1_active, ((!v_pH & v_cAMP_PKA & v_Efg1) | (v_pH & v_Efg1))
+v_Farnesol, v_Farnesol
+v_HATs, (v_Efg1_active & v_Nrg1_HAGs)
+v_NRG1_T, ((!v_pH & !v_cAMP_PKA & v_Nrg1_HAGs) | (!v_pH & !v_cAMP_PKA & !v_Nrg1_HAGs & v_hyphal_initiation) | (!v_pH & v_cAMP_PKA & !v_Efg1_active & v_Nrg1_HAGs) | (!v_pH & v_cAMP_PKA & !v_Efg1_active & !v_Nrg1_HAGs & v_hyphal_initiation) | (!v_pH & v_cAMP_PKA & v_Efg1_active & v_hyphal_initiation) | (v_pH & !v_Efg1_active & v_Nrg1_HAGs) | (v_pH & !v_Efg1_active & !v_Nrg1_HAGs & v_hyphal_initiation) | (v_pH & v_Efg1_active & v_hyphal_initiation))
+v_Nrg1_HAGs, ((v_NRG1_T & v_Nrg1_HAGs) | (v_NRG1_T & !v_Nrg1_HAGs & v_HATs))
+v_Temperature, v_Temperature
+v_cAMP_PKA, (!v_Farnesol & v_Temperature)
+v_hyphal_initiation, ((!v_Nrg1_HAGs & !v_HATs & v_hyphal_initiation) | (!v_Nrg1_HAGs & v_HATs) | (v_Nrg1_HAGs & v_hyphal_initiation))
+v_pH, v_pH

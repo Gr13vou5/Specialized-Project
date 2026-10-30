@@ -1,0 +1,10 @@
+targets, factors
+v_AKAP12, v_AKAP12
+v_Cdc42_Rac1, ((v_HGF | ((v_Cdc42_Rac1 | v_EGF) & v_Fak)) & !v_PTEN & v_Shc)
+v_DUSP1, v_DUSP1
+v_EGF, v_EGF
+v_Fak, (v_Cdc42_Rac1 & v_PAI_1 & v_Shc & !v_PTEN)
+v_HGF, v_HGF
+v_PAI_1, v_PAI_1
+v_PTEN, v_PTEN
+v_Shc, (v_HGF | v_Fak | v_Cdc42_Rac1 | v_EGF)

@@ -1,0 +1,5 @@
+targets, factors
+v_AUXIN, v_AUXIN
+v_CLEX, (v_SHR & v_CLEX)
+v_SCR, (v_SHR & v_SCR)
+v_SHR, v_SHR

@@ -1,0 +1,11 @@
+targets, factors
+v_AD, ((v_IS & !(v_BC & v_NE)) | (v_AD & !(v_BC & v_NE)))
+v_BC, (v_PIC | v_BC)
+v_EL2, ((((v_IL13 & v_BC) | (v_IL4II & v_BC)) & (v_EL2 | v_Th2II)) | (v_IL13 & (v_EL2 | v_Th2II)))
+v_IL12II, (v_PIC & !v_IL4II)
+v_IL13, ((v_IS & !v_EL2) | v_EL2 | v_Th2II)
+v_IL4II, ((v_Th2II & !v_IL12II) | v_EL2 | (v_PIC & !v_IL12II))
+v_IS, v_IS
+v_NE, (v_PIC & !(v_IL4II | v_Th2II))
+v_PIC, ((v_AD | v_IS) & !(v_Th2II | (v_BC & v_IS)))
+v_Th2II, (v_PIC & !v_IL12II)

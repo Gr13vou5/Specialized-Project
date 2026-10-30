@@ -1,0 +1,10 @@
+targets, factors
+v_CASP8, ((v_MOMP & !v_MPT & !v_NFkB) | (v_FASL & v_FADD & !v_NFkB) | (v_TNF & v_FADD & !v_NFkB))
+v_FADD, v_FADD
+v_FASL, v_FASL
+v_MOMP, ((v_CASP8 & !v_NFkB) | v_MPT)
+v_MPT, (((v_RIP1 & !v_NFkB) | (v_MPT & !v_NFkB)) & !v_NFkB)
+v_NFkB, (v_cIAP & v_RIP1 & !(v_MOMP & !v_MPT))
+v_RIP1, ((v_TNF & !v_CASP8) | (v_FASL & v_FADD & !v_CASP8))
+v_TNF, v_TNF
+v_cIAP, ((v_NFkB & !v_MOMP) | (v_cIAP & !v_MOMP))

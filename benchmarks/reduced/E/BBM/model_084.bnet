@@ -1,0 +1,40 @@
+targets, factors
+v_ABA, v_ABA
+v_ABH1, v_ABH1
+v_ABI1, (!v_PA & (!v_ABA | v_GEF1_4_10) & !v_ROS & v_pHc)
+v_ABI2, ((!v_ABA | v_GEF1_4_10) & !v_ROS)
+v_ARP_Complex, v_ARP_Complex
+v_CPK23, v_CPK23
+v_CPK3_21, (v_Ca2_c | v_CPK3_21)
+v_CPK6, v_CPK6
+v_Ca2_c, (((v_NAD_ & v_NO & v_GTP & v_ROS) | ((v_PtdInsP4 | v_PtdInsP3) & !(!v_ABA | v_ABI1) & v_ARP_Complex & v_SCAB1) | (v_NtSyp121 & !v_ABI2 & v_ROS & v_MRP5) | !v_ABH1 | !v_ERA1) & !v_Ca2_c)
+v_DAGK, v_DAGK
+v_ERA1, v_ERA1
+v_GAPC1_2, v_GAPC1_2
+v_GCR1, v_GCR1
+v_GEF1_4_10, v_GEF1_4_10
+v_GTP, v_GTP
+v_HAB1, (!v_ABA & !v_ROS)
+v_K_efflux, ((v_Vacuolar_Acidification | v_Ca2_c) & (!v_NO | !v_ROS | v_pHc) & (v_Ca2_c | v_Vacuolar_Acidification) & (!(!v_pHc & !v_Ca2_c & !v_ROS) | !v_K_efflux))
+v_MPK9_12, (v_Ca2_c | v_MPK9_12)
+v_MRP5, v_MRP5
+v_Microtubule_Depolymerization, (v_Ca2_c | v_Microtubule_Depolymerization)
+v_NADPH, v_NADPH
+v_NAD_, v_NAD_
+v_NO, (v_Nitrite & v_ROS & v_NADPH)
+v_Nitrite, v_Nitrite
+v_NtSyp121, v_NtSyp121
+v_OST1, ((!v_ABI1 & !v_HAB1) | (!v_PP2CA & !v_ABI2) | (!v_ABI1 & !v_ABI2) | (!v_HAB1 & !v_PP2CA) | (!v_HAB1 & !v_ABI2) | (!v_ABI1 & !v_PP2CA))
+v_PA, ((v_PC & (v_NO | (v_ROS & v_GAPC1_2) | ((v_S1P_PhytoS1P | !v_GCR1) & v_Ca2_c))) | (v_PtdInsP4 & v_Ca2_c & v_DAGK))
+v_PC, v_PC
+v_PP2CA, (!v_ABA & !v_ROS)
+v_PtdInsP3, v_PtdInsP3
+v_PtdInsP4, v_PtdInsP4
+v_RCN1, v_RCN1
+v_ROS, (v_NADPH & v_pHc & !v_ABI1 & v_PtdInsP3 & v_OST1 & (v_S1P_PhytoS1P | !v_GCR1) & v_PA & v_RCN1)
+v_S1P_PhytoS1P, ((v_PA | v_ABA) & v_Sph & !v_SPP1)
+v_SCAB1, v_SCAB1
+v_SPP1, v_SPP1
+v_Sph, v_Sph
+v_Vacuolar_Acidification, (v_ABA | v_Ca2_c | v_Vacuolar_Acidification)
+v_pHc, (((v_OST1 & !v_ABI2 & !v_ABI1) | v_Ca2_c) & v_Vacuolar_Acidification)

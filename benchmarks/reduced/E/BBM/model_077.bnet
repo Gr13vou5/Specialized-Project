@@ -1,0 +1,26 @@
+targets, factors
+v_NADH, v_NADH
+v_NAD_P_H, v_NAD_P_H
+v_PTS, v_PTS
+v_Rnf, v_Rnf
+v_acetoacetyl_CoA, (v_acetyl_CoA | !(v_sporulation | v_spo0A_p) | v_spo0A_p)
+v_acetone, ((v_spo0A_p & !v_sporulation) | ((v_acetoacetyl_CoA | v_spo0A_p) & !v_sporulation))
+v_acetyl_CoA, (v_spo0A_p | v_fba | v_pgi | v_glucose___PTS | v_pfk | v_gap_pgk_tpi_pgm__X276_23705_eno | (!(v_spo0A_p | v_sporulation) & v_acetoacetyl_CoA) | v_pfo)
+v_ald, (v_sigF | v_spo0A_p)
+v_butyrate, ((!(v_spo0A_p | v_sporulation) & !v_butyrate) | (!(v_sporulation | v_spo0A_p) & !v_butyrate) | (v_glucose___PTS & !v_butyrate))
+v_cell_membrane, ((v_butyrate & !(v_acetone | v_ethanol)) | (v_glucose & !(!v_sporulation | v_acetone | v_ethanol)))
+v_ethanol, ((v_spo0A_p & !(v_ald | v_sporulation)) | ((v_ald | v_acetyl_CoA) & !(v_ald | v_sporulation)))
+v_fba, v_fba
+v_gap_pgk_tpi_pgm__X276_23705_eno, v_gap_pgk_tpi_pgm__X276_23705_eno
+v_glucose, v_glucose
+v_glucose___PTS, ((v_PTS & v_cell_membrane & v_glucose) | (v_glucose & v_cell_membrane & v_PTS))
+v_pfk, v_pfk
+v_pfo, v_pfo
+v_pgi, v_pgi
+v_phosphorylation, v_phosphorylation
+v_sigA, v_sigA
+v_sigF, ((v_spoIIE & !(v_spoIIAB & !v_spoIIE)) | (v_sigA & !(v_spoIIAB & !v_spoIIE)))
+v_spo0A_p, (((v_sigF | v_spo0A_p) & v_phosphorylation & !v_sporulation) | (v_phosphorylation & (v_sigF | v_spo0A_p) & !v_sporulation))
+v_spoIIAB, (v_spo0A_p & v_sigA & !((v_spoIIE | (v_spo0A_p & v_sigA)) & v_spoIIE))
+v_spoIIE, v_spoIIE
+v_sporulation, ((v_spo0A_p & !v_cell_membrane) | (v_spo0A_p & v_sigA & !v_cell_membrane) | (v_sigA & !v_cell_membrane))

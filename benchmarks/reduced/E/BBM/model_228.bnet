@@ -1,0 +1,19 @@
+targets, factors
+v_akt, (v_pdk1 & !v_x5p & !(v_ppara & !v_akt & v_pgc1a_g))
+v_basal_act, v_basal_act
+v_basal_exp, v_basal_exp
+v_f26p2, v_f26p2
+v_g6p, v_g6p
+v_gcg, v_gcg
+v_gluc_in, v_gluc_in
+v_ins, v_ins
+v_irs1_py, (v_ins & !((v_ins & v_pdk1) | v_irs1_py))
+v_lxra, ((v_basal_exp | v_ppara) & (v_gluc_in | v_g6p))
+v_nsrebp1c, (!(!v_akt & !v_pka & v_basal_act) & !(!v_ins & (v_lxra | v_basal_exp)) & ((v_lxra & v_ins & v_pdk1 & !v_ppara) | v_nsrebp1c))
+v_pdk1, (v_ins & v_irs1_py)
+v_pgc1a_g, ((v_ins | v_pka) & (!v_pdk1 | v_torc2))
+v_pka, (v_gcg & !v_akt)
+v_ppara, (v_irs1_py & ((!v_pka & v_basal_act) | v_ppara) & !v_akt & v_pgc1a_g)
+v_pyruvate, v_pyruvate
+v_torc2, (v_gcg & !((v_ins | v_pka) & v_torc2))
+v_x5p, v_x5p

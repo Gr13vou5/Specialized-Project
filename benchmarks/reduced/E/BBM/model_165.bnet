@@ -1,0 +1,6 @@
+targets, factors
+v_BMP, v_BMP
+v_EGF_b1, v_EGF_b1
+v_EGF_b2, (v_EGF_b1 & v_EGF_b2)
+v_Roof_adj, v_Roof_adj
+v_anterior, v_anterior

@@ -1,0 +1,19 @@
+targets, factors
+v_CDK5, v_CDK5
+v_ESRRA, v_ESRRA
+v_GABPA, v_GABPA
+v_KAT2A, v_KAT2A
+v_NAD_space_depletion_phenotype, v_NAD_space_depletion_phenotype
+v_NO_simple_molecule, v_NO_simple_molecule
+v_NRF1, v_NRF1
+v_PPARA, v_PPARA
+v_PPARGC1A_phosphorylated_phosphorylated, ((v_PPARGC1A_phosphorylated_phosphorylated & v_acetyl_CoA_simple_molecule & v_KAT2A & !v_NAD_space_depletion_phenotype & v_SIRT1) | !v_ESRRA)
+v_RNS_simple_molecule, v_RNS_simple_molecule
+v_ROS_simple_molecule, v_ROS_simple_molecule
+v_SIRT1, v_SIRT1
+v_SNCA, v_SNCA
+v_YY1, v_YY1
+v_acetyl_CoA_simple_molecule, v_acetyl_CoA_simple_molecule
+v_autophagy_phenotype, v_autophagy_phenotype
+v_mTORC1_complex, v_mTORC1_complex
+v_sa5803_MEF2C_nucleus, v_sa5803_MEF2C_nucleus

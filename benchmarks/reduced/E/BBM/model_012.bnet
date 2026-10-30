@@ -1,0 +1,12 @@
+targets, factors
+v_cd28_input, v_cd28_input
+v_cd4, v_cd4
+v_fyn, ((v_tcrb & v_lckr_input) | (v_lckp1 & v_unknown_input))
+v_lckp1, (v_unknown_input & v_cd4 & v_lckr_input & !(v_fyn & !v_tcrb) & !v_lckp1)
+v_lckr_input, v_lckr_input
+v_tcrb, (v_tcrlig_input & !(v_unknown_input & v_zap70))
+v_tcrlig_input, v_tcrlig_input
+v_unknown_input, v_unknown_input
+v_unknown_input2, v_unknown_input2
+v_unknown_input3, v_unknown_input3
+v_zap70, (v_tcrb & (v_lckp1 | v_fyn) & !(v_unknown_input & v_zap70))

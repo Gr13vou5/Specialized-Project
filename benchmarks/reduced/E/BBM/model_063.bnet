@@ -1,0 +1,7 @@
+targets, factors
+v_Ge, v_Ge
+v_L, (v_Le & v_P & !v_Ge)
+v_Le, v_Le
+v_Lem, v_Lem
+v_Lm, ((v_Lem & v_P & !v_Ge) | (v_Le & !v_Ge))
+v_P, (!v_Ge & !(!(v_Lm | v_L) | !(!(v_Lm | v_L) | v_Lm | v_L)))

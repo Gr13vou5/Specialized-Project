@@ -1,0 +1,8 @@
+targets, factors
+v_Cdc25, ((!v_Cdc2_Cdc13 & v_Cdc25 & !v_Cdc2_Cdc13_A) | (v_Cdc2_Cdc13 & !v_Cdc25 & !v_Cdc2_Cdc13_A) | (v_Cdc2_Cdc13 & v_Cdc25))
+v_Cdc2_Cdc13, (!v_Ste9 & !v_Rum1 & !v_Cdc2_Cdc13_A)
+v_Cdc2_Cdc13_A, (!v_Ste9 & !v_Rum1 & !v_Cdc2_Cdc13_A & !v_Wee1_Mik1 & v_Cdc25)
+v_Rum1, (!v_Start & !v_Cdc2_Cdc13 & v_Rum1)
+v_Start, v_Start
+v_Ste9, (!v_Start & !v_Cdc2_Cdc13 & v_Ste9)
+v_Wee1_Mik1, ((!v_Cdc2_Cdc13 & !v_Wee1_Mik1 & v_Cdc2_Cdc13_A) | (!v_Cdc2_Cdc13 & v_Wee1_Mik1) | (v_Cdc2_Cdc13 & v_Wee1_Mik1 & v_Cdc2_Cdc13_A))

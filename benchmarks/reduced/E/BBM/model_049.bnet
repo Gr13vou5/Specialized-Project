@@ -1,0 +1,6 @@
+targets, factors
+v_ARE, (v_Nrf2 & !(!v_ROS | v_ARE))
+v_Keap1, ((v_Nrf2 & v_ROS) | (v_Keap1 & v_ROS))
+v_Nrf2, (v_ROS | !(v_ROS | v_Keap1))
+v_ROS, (v_Stress & !v_ARE)
+v_Stress, v_Stress

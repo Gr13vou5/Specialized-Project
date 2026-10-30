@@ -1,0 +1,23 @@
+targets, factors
+v_Bacteria, v_Bacteria
+v_CASP3_Activator, v_CASP3_Activator
+v_CASP6_Activator, v_CASP6_Activator
+v_CASP7_Activator, v_CASP7_Activator
+v_CASP8, (v_External_Activator & ((v_TNFSF10 & v_External_Activator) | (v_FASLG & v_External_Activator)))
+v_CD40LG, v_CD40LG
+v_External_Activator, v_External_Activator
+v_FASLG, v_FASLG
+v_IFNA, v_IFNA
+v_IFNB1, v_IFNB1
+v_IFNG, v_IFNG
+v_ILIB, v_ILIB
+v_IRF1_IRF1_Activator, v_IRF1_IRF1_Activator
+v_IRF2_Activator, v_IRF2_Activator
+v_IRF5, ((v_External_Activator & v_Virus & !v_IRF5) | v_Virus | (v_External_Activator & (v_Virus | v_Bacteria) & !v_IRF5))
+v_Mitochondrial_Activator, v_Mitochondrial_Activator
+v_RELA_NFKB1_Activator, v_RELA_NFKB1_Activator
+v_TNF, v_TNF
+v_TNFSF10, v_TNFSF10
+v_TNFSF13B, v_TNFSF13B
+v_Virus, v_Virus
+v_tBID, (v_External_Activator & (v_CASP8 | (v_External_Activator & ((v_External_Activator & v_tBID & v_Mitochondrial_Activator) | (v_External_Activator & v_CASP3_Activator & (v_CASP8 | v_External_Activator))))))

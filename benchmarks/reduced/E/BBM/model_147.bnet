@@ -1,0 +1,11 @@
+targets, factors
+v_Bub2_Bfa1, ((!v_PP2ACdc55_b1 & v_Cdh1) | (v_PP2ACdc55_b1 & !v_PP2ACdc55_b2 & v_Cdh1) | (v_PP2ACdc55_b1 & v_PP2ACdc55_b2))
+v_Cdc14, v_Cdc14
+v_Cdh1, ((v_Cdh1 & !v_Net1_b1 & !v_Cdc14) | (v_Cdh1 & !v_Net1_b1 & v_Cdc14) | (v_Cdh1 & v_Net1_b1) | (!v_Cdh1 & !v_Net1_b1 & v_Cdc14))
+v_Net1_b1, ((v_Cdh1 & !v_PP2ACdc55_b1 & !v_Bub2_Bfa1 & !v_Tem1 & !v_Net1_b1 & v_Cdc14) | (v_Cdh1 & !v_PP2ACdc55_b1 & !v_Bub2_Bfa1 & !v_Tem1 & v_Net1_b1 & !v_Net1_b2 & v_Cdc14) | (v_Cdh1 & !v_PP2ACdc55_b1 & !v_Bub2_Bfa1 & !v_Tem1 & v_Net1_b1 & v_Net1_b2) | (v_Cdh1 & !v_PP2ACdc55_b1 & !v_Bub2_Bfa1 & v_Tem1 & v_Net1_b1 & v_Net1_b2) | (v_Cdh1 & !v_PP2ACdc55_b1 & v_Bub2_Bfa1 & !v_Net1_b1 & v_Cdc14) | (v_Cdh1 & !v_PP2ACdc55_b1 & v_Bub2_Bfa1 & v_Net1_b1 & !v_Net1_b2 & v_Cdc14) | (v_Cdh1 & !v_PP2ACdc55_b1 & v_Bub2_Bfa1 & v_Net1_b1 & v_Net1_b2) | (v_Cdh1 & v_PP2ACdc55_b1 & !v_Bub2_Bfa1 & !v_Tem1) | (v_Cdh1 & v_PP2ACdc55_b1 & !v_Bub2_Bfa1 & v_Tem1 & v_Net1_b1 & v_Net1_b2) | (v_Cdh1 & v_PP2ACdc55_b1 & v_Bub2_Bfa1) | (!v_Cdh1 & !v_PP2ACdc55_b1 & v_Net1_b1 & v_Net1_b2) | (!v_Cdh1 & v_PP2ACdc55_b1 & !v_Bub2_Bfa1 & !v_Tem1) | (!v_Cdh1 & v_PP2ACdc55_b1 & !v_Bub2_Bfa1 & v_Tem1 & v_Net1_b1 & v_Net1_b2) | (!v_Cdh1 & v_PP2ACdc55_b1 & v_Bub2_Bfa1))
+v_Net1_b2, ((v_Cdh1 & v_PP2ACdc55_b1 & !v_Bub2_Bfa1 & !v_Tem1 & v_Net1_b1) | (v_Cdh1 & v_PP2ACdc55_b1 & v_Bub2_Bfa1 & v_Net1_b1) | (!v_Cdh1 & v_PP2ACdc55_b1 & v_PP2ACdc55_b2 & !v_Bub2_Bfa1 & !v_Tem1 & v_Net1_b1) | (!v_Cdh1 & v_PP2ACdc55_b1 & v_PP2ACdc55_b2 & v_Bub2_Bfa1 & v_Net1_b1))
+v_PP2ACdc55_b1, v_PP2ACdc55_b1
+v_PP2ACdc55_b2, ((!v_Cdh1 & !v_SeparaseEsp1_b1 & v_PP2ACdc55_b1) | (v_Cdh1 & !v_SeparaseEsp1_b1 & v_PP2ACdc55_b1) | (v_Cdh1 & v_SeparaseEsp1_b1 & !v_SeparaseEsp1_b2 & v_PP2ACdc55_b1))
+v_SeparaseEsp1_b1, v_SeparaseEsp1_b1
+v_SeparaseEsp1_b2, v_SeparaseEsp1_b2
+v_Tem1, v_Tem1

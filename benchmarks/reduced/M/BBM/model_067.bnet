@@ -1,0 +1,7 @@
+targets, factors
+v_Ae, v_Ae
+v_Aem, v_Aem
+v_Am, ((v_Aem & v_T) | v_Ae)
+v_Ge, v_Ge
+v_S_2_Ara_, v_S_2_Ara_
+v_T, (v_S_2_Ara_ & ((v_Ae & v_T) | v_Am) & !v_Ge)

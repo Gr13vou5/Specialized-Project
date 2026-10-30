@@ -1,0 +1,8 @@
+targets, factors
+v_Dopamine, (v_Tryosine_hydroxylase & !v_Dopamine)
+v_Dopamine_Receptor_2, v_Dopamine
+v_Glutamate, v_Glutamate
+v_Glutamate_Receptor, (v_Protein_Kinase_A & v_Glutamate & !v_Protein_Phosphatase_1)
+v_Protein_Kinase_A, (v_Dopamine & !v_Dopamine_Receptor_2)
+v_Protein_Phosphatase_1, !(v_Protein_Kinase_A & !(v_Dopamine_Receptor_2 | v_Glutamate_Receptor))
+v_Tryosine_hydroxylase, v_Tryosine_hydroxylase

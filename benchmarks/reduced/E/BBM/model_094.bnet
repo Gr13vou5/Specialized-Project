@@ -1,0 +1,15 @@
+targets, factors
+v_ERK, (v_FcgR | v_ERK)
+v_FcgR, (v_IC_e & v_LPS_e)
+v_GM_CSF_e, v_GM_CSF_e
+v_IC_e, v_IC_e
+v_IFNg_e, v_IFNg_e
+v_IL10_e, v_IL10_e
+v_IL1b_e, v_IL1b_e
+v_IL4_e, v_IL4_e
+v_JMJD3, (v_JMJD3 | v_IL4_e)
+v_LPS_e, v_LPS_e
+v_NF_kB, ((v_IL1b_e | v_NF_kB | (v_LPS_e & !v_FcgR)) & !(v_STAT3 | v_FcgR | v_PPARg | v_STAT6))
+v_PPARg, (v_PPARg | v_IL4_e)
+v_STAT3, ((v_IL10_e | v_ERK | v_PPARg | v_STAT6 | v_JMJD3 | v_STAT3) & !(v_PPARg | v_FcgR))
+v_STAT6, (v_STAT6 | v_IL4_e)

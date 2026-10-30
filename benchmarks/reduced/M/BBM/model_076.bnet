@@ -1,0 +1,33 @@
+targets, factors
+v_CDK4, !(v_p21 | v_IL6 | v_CEBPbeta | v_NFkB | (v_cJun & v_cFos) | v_DNAD)
+v_CEBPbeta, v_ERK1_2
+v_CHK1, v_DNAD
+v_CHK2, v_DNAD
+v_DNAD, v_DNAD
+v_E2F, ((v_pRB & !v_RB_) | (v_E2F & !v_RB_))
+v_ERK1_2, (v_MEK1_2 & v_IL6)
+v_GP130, v_IL6
+v_HIF1, (v_Hypoxia & !v_p53)
+v_Hypoxia, v_Hypoxia
+v_IKK, ((v_IL6 & !v_STAT3) | v_TAK1 | v_DNAD)
+v_IL6, (v_NFkB | v_CEBPbeta | v_ERK1_2)
+v_IRAK, (v_IRAK | v_MyD88 | v_NFkB)
+v_IkB, ((v_NFkB & !(v_IKK & v_DNAD)) | (v_IkB & !(v_IKK & v_DNAD)))
+v_MDM2, (v_p53 & !v_DNAD)
+v_MEK1_2, (v_GP130 & v_IL6)
+v_MKK, (v_TAK1 | v_TRAF6)
+v_MKP1, (v_cJun & v_cFos)
+v_MyD88, v_NFkB
+v_NFkB, (v_IKK & !v_IkB)
+v_RB_, !((v_E2F & !v_p21) | v_CDK4 | v_pRB)
+v_STAT3, (v_mTOR | (v_IL6 & !v_STAT3) | (v_cFos & v_cJun))
+v_TAB, (v_TRAF6 | v_IRAK)
+v_TAK1, (v_TRAF6 | v_TAB)
+v_TRAF6, v_IRAK
+v_cFos, (v_STAT3 | v_ERK1_2 | v_p38 | (v_MKK & !v_MKP1) | v_CEBPbeta)
+v_cJun, (v_cFos & (v_CEBPbeta | v_p38 | v_ERK1_2 | (v_MKK & !v_MKP1)))
+v_mTOR, (v_IL6 & !v_STAT3)
+v_p21, (v_HIF1 | v_p53)
+v_p38, (v_MKK & !v_MKP1)
+v_p53, ((v_CHK1 & !v_MDM2) | (v_DNAD & !v_MDM2) | (v_CHK2 & !v_MDM2))
+v_pRB, ((v_E2F & !v_p21) | v_CDK4)

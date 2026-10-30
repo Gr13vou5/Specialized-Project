@@ -1,0 +1,9 @@
+targets, factors
+v_cdh1, (!v_ctnnb1 | !v_cdh1)
+v_ctnnb1, (!v_cdh1 | v_ctnnb1)
+v_hmmr, v_hmmr
+v_il1r1, v_il1r1
+v_sani2, v_sani2
+v_tgfbr, v_tgfbr
+v_thrb, v_thrb
+v_traf1, (v_traf1 | v_il1r1)

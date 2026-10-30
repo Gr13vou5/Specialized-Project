@@ -1,0 +1,22 @@
+targets, factors
+v_BCLXLp, (!v_P53p & (v_NFkBp | v_HER2p | v_PIP3p | v_JNKp))
+v_Beclin1p, (!v_BCLXLp & !v_CASPp)
+v_CASPp, (!v_NFkBp & (v_P53p | v_Beclin1p | !v_BCLXLp))
+v_ERKs, (v_TGFRs | v_TGFb | v_RASs)
+v_HER2p, v_HER2p
+v_IFNg, v_IFNg
+v_JNKp, v_RASp
+v_NFkBp, v_PIP3p
+v_P21p, (!v_HER2p & (v_TGFb | v_P53p))
+v_P38s, (v_RASs | v_P53s)
+v_P53p, !(!(!v_P21p & v_NFkBp) & (v_PIP3p | v_P53p))
+v_P53s, (!(v_PIP3s | v_P53s) & v_P38s)
+v_PIP3p, (!v_P53p & (v_cJUNp | v_HER2p | v_RASp))
+v_PIP3s, (!v_P53s & (v_TGFRs | v_TGFb | v_RASs))
+v_RASp, (v_cJUNp | v_HER2p | v_ERKs | v_RASp)
+v_RASs, (v_TNFa | v_PIP3s | v_HER2p | v_NFkBp | v_cJUNp | v_ERKs | v_RASp)
+v_TGFRs, v_TGFb
+v_TGFb, (v_TGFRs | v_TGFb)
+v_TNFa, v_TNFa
+v_Thiazolidinedione, v_Thiazolidinedione
+v_cJUNp, (v_RASp | v_JNKp)

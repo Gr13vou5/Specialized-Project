@@ -1,0 +1,26 @@
+targets, factors
+v_AKT, (v_PI3K & !v_p53)
+v_AP1, (v_JUN & (v_JNK | v_p38 | (v_MEK1_2 & v_RSK & (v_MSK | v_ELK1))))
+v_DNA_damage, v_DNA_damage
+v_EGFR, ((v_EGFR_stimulus & !(v_PLCG | v_GRB2)) | (v_MEK1_2 & !(v_PLCG | v_GRB2)))
+v_EGFR_stimulus, v_EGFR_stimulus
+v_ELK1, (v_JNK | v_MEK1_2 | v_p38)
+v_FGFR3, (v_FGFR3_stimulus & !(v_PLCG | v_GRB2))
+v_FGFR3_stimulus, v_FGFR3_stimulus
+v_GRB2, (v_EGFR | v_TGFBR_stimulus | (v_FGFR3 & !(v_GRB2 | v_MEK1_2)))
+v_JNK, ((v_DNA_damage & v_RAS) | (v_TGFBR_stimulus & !v_MSK) | (v_RAS & v_MTK1) | (v_TGFBR_stimulus & v_RAS) | (v_RAS & !v_MSK) | (v_TGFBR_stimulus & v_MTK1) | (v_TGFBR_stimulus & v_DNA_damage) | (v_DNA_damage & v_MTK1) | (v_MTK1 & !v_MSK) | (v_DNA_damage & !v_MSK))
+v_JUN, v_JNK
+v_MDM2, ((v_AKT & !v_MYC) | (v_p53 & !v_MYC))
+v_MEK1_2, ((v_RAF & !(v_p38 | v_AP1)) | (v_RAS & !(v_p38 | v_AP1)))
+v_MSK, (v_p38 | v_MEK1_2)
+v_MTK1, (v_p53 | v_TGFBR_stimulus)
+v_MYC, ((v_MSK & v_AKT) | (v_MSK & v_p38))
+v_PI3K, (v_PI3K | v_GRB2 | (v_RAS & v_SOS))
+v_PLCG, (v_EGFR | v_FGFR3)
+v_RAF, ((v_PLCG & !(v_MEK1_2 | v_AKT)) | (v_RAS & !(v_MEK1_2 | v_AKT)))
+v_RAS, (v_SOS | v_PLCG)
+v_RSK, v_MEK1_2
+v_SOS, (v_GRB2 & !v_RSK)
+v_TGFBR_stimulus, v_TGFBR_stimulus
+v_p38, ((v_RAS & v_MTK1) | (v_TGFBR_stimulus & !v_MSK) | (v_DNA_damage & v_RAS) | (v_RAS & !v_MSK) | (v_TGFBR_stimulus & v_RAS) | (v_DNA_damage & !v_MSK) | (v_TGFBR_stimulus & v_MTK1) | (v_TGFBR_stimulus & v_DNA_damage) | (v_MTK1 & !v_MSK) | (v_DNA_damage & v_MTK1))
+v_p53, ((v_p38 & !v_MDM2) | (v_DNA_damage & !v_MDM2) | (v_DNA_damage & v_p38))

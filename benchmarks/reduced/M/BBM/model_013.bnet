@@ -1,0 +1,10 @@
+targets, factors
+v_Acetoacetyl_CoA, (v_Acetyl_CoA & v_pSREBP)
+v_Acetyl_CoA, v_Acetyl_CoA
+v_Dimethyl_allyl_pyrophosphate, v_Mevalonyl_pyrophosphate
+v_HMG_CoA_Synthase_gene, v_pSREBP
+v_Mevalonyl_pyrophosphate, (v_Acetoacetyl_CoA & v_HMG_CoA_Synthase_gene & v_Acetyl_CoA & v_pSREBP & !v_Statins)
+v_Septdehydrocholesterol, v_Squaline
+v_Squaline, ((v_Mevalonyl_pyrophosphate | v_Dimethyl_allyl_pyrophosphate) & !v_pSREBP)
+v_Statins, v_Statins
+v_pSREBP, (!(v_Squaline | v_Septdehydrocholesterol) & !v_Statins)

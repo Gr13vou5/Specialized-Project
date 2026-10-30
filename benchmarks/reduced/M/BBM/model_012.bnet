@@ -1,0 +1,24 @@
+targets, factors
+v_cd28_input, v_cd28_input
+v_cd4, v_cd4
+v_fyn, ((v_tcrb & v_lckr_input) | (v_lckp1 & v_unknown_input))
+v_gab2, ((v_grb2 & v_zap70 & v_lat) | (v_gads & v_zap70 & v_lat))
+v_gads, v_lat
+v_grb2, v_lat
+v_itk, (((v_lckr_input & v_tcrb & v_cd28_input) | (v_xx & v_cd28_input)) & !(v_ship1 | v_unknown_input2) & v_zap70 & v_slp76)
+v_lat, v_zap70
+v_lckp1, (v_unknown_input & v_cd4 & v_lckr_input & !(v_fyn & !v_tcrb) & !(v_lckp1 & !v_ras))
+v_lckr_input, v_lckr_input
+v_ras, (v_grb2 & v_lat & v_zap70 & v_vav1 & v_itk & v_slp76 & !(v_unknown_input & v_fyn) & !v_tcrb & !v_unknown_input3)
+v_sh3bp2, (v_zap70 & v_lat)
+v_ship1, v_unknown_input2
+v_slp76, (v_zap70 & v_gads & !v_gab2)
+v_tcrb, (v_tcrlig_input & !(v_unknown_input & v_zap70))
+v_tcrlig_input, v_tcrlig_input
+v_tcrp, (v_tcrb & (v_lckp1 | v_fyn))
+v_unknown_input, v_unknown_input
+v_unknown_input2, v_unknown_input2
+v_unknown_input3, v_unknown_input3
+v_vav1, (v_xx | (v_zap70 & v_sh3bp2))
+v_xx, v_cd28_input
+v_zap70, (v_tcrp & (v_lckp1 | v_fyn) & !(v_unknown_input & v_zap70))

@@ -1,0 +1,7 @@
+targets, factors
+v_Apoptosis_, ((!(!(v_Apoptosis_ | v_DISC_) | v_Apoptosis_) & !(!(!(!(v_Apoptosis_ | v_DISC_) | v_Apoptosis_) | v_Apoptosis_) | v_Apoptosis_)) | (v_DISC_ & !v_Apoptosis_) | v_Apoptosis_)
+v_Ceramide_, (!(v_Apoptosis_ | (v_S1P & !v_Apoptosis_)) & !(v_Apoptosis_ | v_S1P))
+v_DISC_, ((!(v_Apoptosis_ | (v_S1P & !v_Apoptosis_)) & !(!(v_Apoptosis_ | v_DISC_) | v_Apoptosis_)) | (v_Ceramide_ & !v_Apoptosis_))
+v_P2, ((!(v_P2 | v_Apoptosis_ | (v_S1P & !v_Apoptosis_)) & !v_Apoptosis_) | (v_P2 & !v_Apoptosis_))
+v_S1P, !(v_Apoptosis_ | v_Ceramide_)
+v_TCR, !(v_Apoptosis_ | (v_TCR & !v_Apoptosis_))

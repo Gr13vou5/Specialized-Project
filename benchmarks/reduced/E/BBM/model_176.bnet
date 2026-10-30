@@ -1,0 +1,26 @@
+targets, factors
+v_CXCR4_H, ((!v_TGFb_MK | (v_TGFb_MK & !v_PI3KAkt_M)) & !v_lTLR)
+v_ERK_H, ((!v_CXCR4_H & !v_FoxO3a_H & !v_GSK3B_H & !v_ROS_H & v_lTLR) | (!v_CXCR4_H & !v_FoxO3a_H & !v_GSK3B_H & v_ROS_H) | (v_CXCR4_H & !v_FoxO3a_H & !v_GSK3B_H))
+v_ERK_M, ((!v_lTLR & !v_FoxO3a_M & v_ROS_M) | (v_lTLR & !v_FoxO3a_M))
+v_FoxO3a_H, ((!v_PI3KAkt_H_b1 & !v_ROS_H & !v_GSK3B_H) | (!v_PI3KAkt_H_b1 & v_ROS_H))
+v_FoxO3a_M, (!v_PI3KAkt_M & v_ROS_M)
+v_GSK3B_H, (!v_PI3KAkt_H_b1 | (v_PI3KAkt_H_b1 & !v_PI3KAkt_H_b2))
+v_HSC_proliferation_b1, ((!v_HSC_proliferation_b1 & v_PI3KAkt_H_b1) | (v_HSC_proliferation_b1 & !v_HSC_proliferation_b2 & v_PI3KAkt_H_b1) | (v_HSC_proliferation_b1 & v_HSC_proliferation_b2))
+v_HSC_proliferation_b2, (v_HSC_proliferation_b1 & v_PI3KAkt_H_b1 & v_PI3KAkt_H_b2)
+v_IL1, ((!v_NfkB_M & !v_ROS_M & !v_NfkB_H_b1 & v_ROS_H) | (!v_NfkB_M & !v_ROS_M & v_NfkB_H_b1 & !v_NfkB_H_b2 & v_ROS_H) | (!v_NfkB_M & !v_ROS_M & v_NfkB_H_b1 & v_NfkB_H_b2) | (!v_NfkB_M & v_ROS_M) | v_NfkB_M)
+v_JAK_H_b1, ((!v_JAK_H_b1 & !v_STAT_H_b1) | (v_JAK_H_b1 & !v_JAK_H_b2 & !v_STAT_H_b1) | (v_JAK_H_b1 & v_JAK_H_b2))
+v_JAK_H_b2, (v_TPO & v_JAK_H_b1 & !v_STAT_H_b1)
+v_JAK_MK_b1, !v_JAK_MK_b1
+v_NfkB_H_b1, ((!v_PI3KAkt_H_b1 & !v_NfkB_H_b1 & !v_ROS_H & !v_ERK_H & v_lTLR) | (!v_PI3KAkt_H_b1 & !v_NfkB_H_b1 & !v_ROS_H & v_ERK_H) | (!v_PI3KAkt_H_b1 & !v_NfkB_H_b1 & v_ROS_H) | (!v_PI3KAkt_H_b1 & v_NfkB_H_b1 & !v_NfkB_H_b2 & !v_ROS_H & !v_ERK_H & v_lTLR) | (!v_PI3KAkt_H_b1 & v_NfkB_H_b1 & !v_NfkB_H_b2 & !v_ROS_H & v_ERK_H) | (!v_PI3KAkt_H_b1 & v_NfkB_H_b1 & !v_NfkB_H_b2 & v_ROS_H) | (!v_PI3KAkt_H_b1 & v_NfkB_H_b1 & v_NfkB_H_b2) | (v_PI3KAkt_H_b1 & !v_PI3KAkt_H_b2 & !v_NfkB_H_b1 & !v_ROS_H & !v_ERK_H & v_lTLR) | (v_PI3KAkt_H_b1 & !v_PI3KAkt_H_b2 & !v_NfkB_H_b1 & !v_ROS_H & v_ERK_H) | (v_PI3KAkt_H_b1 & !v_PI3KAkt_H_b2 & !v_NfkB_H_b1 & v_ROS_H) | (v_PI3KAkt_H_b1 & !v_PI3KAkt_H_b2 & v_NfkB_H_b1 & !v_NfkB_H_b2 & !v_ROS_H & !v_ERK_H & v_lTLR) | (v_PI3KAkt_H_b1 & !v_PI3KAkt_H_b2 & v_NfkB_H_b1 & !v_NfkB_H_b2 & !v_ROS_H & v_ERK_H) | (v_PI3KAkt_H_b1 & !v_PI3KAkt_H_b2 & v_NfkB_H_b1 & !v_NfkB_H_b2 & v_ROS_H) | (v_PI3KAkt_H_b1 & !v_PI3KAkt_H_b2 & v_NfkB_H_b1 & v_NfkB_H_b2) | (v_PI3KAkt_H_b1 & v_PI3KAkt_H_b2))
+v_NfkB_H_b2, (v_PI3KAkt_H_b1 & v_PI3KAkt_H_b2 & v_NfkB_H_b1)
+v_NfkB_M, ((!v_lTLR & !v_ERK_M & !v_PI3KAkt_M & v_ROS_M) | (!v_lTLR & !v_ERK_M & v_PI3KAkt_M) | (!v_lTLR & v_ERK_M) | v_lTLR)
+v_PI3KAkt_H_b1, ((!v_TGFb_MK & !v_CXCR4_H & !v_PI3KAkt_H_b1 & !v_ROS_H & v_lTLR & v_STAT_H_b1) | (!v_TGFb_MK & !v_CXCR4_H & !v_PI3KAkt_H_b1 & v_ROS_H & v_STAT_H_b1) | (!v_TGFb_MK & !v_CXCR4_H & v_PI3KAkt_H_b1 & !v_PI3KAkt_H_b2 & !v_ROS_H & v_lTLR & v_STAT_H_b1) | (!v_TGFb_MK & !v_CXCR4_H & v_PI3KAkt_H_b1 & !v_PI3KAkt_H_b2 & v_ROS_H & v_STAT_H_b1) | (!v_TGFb_MK & !v_CXCR4_H & v_PI3KAkt_H_b1 & v_PI3KAkt_H_b2) | (!v_TGFb_MK & v_CXCR4_H & !v_PI3KAkt_H_b1 & v_STAT_H_b1) | (!v_TGFb_MK & v_CXCR4_H & v_PI3KAkt_H_b1 & !v_PI3KAkt_H_b2 & v_STAT_H_b1) | (!v_TGFb_MK & v_CXCR4_H & v_PI3KAkt_H_b1 & v_PI3KAkt_H_b2) | (v_TGFb_MK & !v_PI3KAkt_H_b1 & v_STAT_H_b1) | (v_TGFb_MK & v_PI3KAkt_H_b1 & !v_PI3KAkt_H_b2 & v_STAT_H_b1) | (v_TGFb_MK & v_PI3KAkt_H_b1 & v_PI3KAkt_H_b2))
+v_PI3KAkt_H_b2, ((!v_TGFb_MK & !v_CXCR4_H & v_PI3KAkt_H_b1 & !v_ROS_H & v_lTLR & v_STAT_H_b1 & v_STAT_H_b2) | (!v_TGFb_MK & !v_CXCR4_H & v_PI3KAkt_H_b1 & v_ROS_H & v_STAT_H_b1 & v_STAT_H_b2) | (!v_TGFb_MK & v_CXCR4_H & v_PI3KAkt_H_b1 & v_STAT_H_b1 & v_STAT_H_b2) | (v_TGFb_MK & v_PI3KAkt_H_b1 & v_STAT_H_b1 & v_STAT_H_b2))
+v_PI3KAkt_M, ((!v_lTLR & !v_TGFb_MK & v_ROS_M) | (!v_lTLR & v_TGFb_MK) | v_lTLR)
+v_ROS_H, (!v_FoxO3a_H | (v_FoxO3a_H & !v_lTLR & v_IL1) | (v_FoxO3a_H & v_lTLR))
+v_ROS_M, ((!v_lTLR & !v_FoxO3a_M) | (!v_lTLR & v_FoxO3a_M & v_IL1) | v_lTLR)
+v_STAT_H_b1, ((!v_JAK_H_b1 & v_STAT_H_b1 & v_STAT_H_b2) | v_JAK_H_b1)
+v_STAT_H_b2, (v_JAK_H_b1 & v_JAK_H_b2 & v_STAT_H_b1)
+v_TGFb_MK, (v_lTLR & v_JAK_MK_b1)
+v_TPO, v_TPO
+v_lTLR, v_lTLR

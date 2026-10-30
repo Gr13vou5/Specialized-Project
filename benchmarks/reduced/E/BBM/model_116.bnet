@@ -1,0 +1,67 @@
+targets, factors
+v_ABCG2, v_ABCG2
+v_ALAD_Zn2__complex, v_ALAD_Zn2__complex
+v_ALAS1_ALAS2_complex, v_ALAS1_ALAS2_complex
+v_ASC, v_ASC
+v_ATP_simple_molecule, v_ATP_simple_molecule
+v_CAND1, v_CAND1
+v_CK2, v_CK2
+v_CPOX, v_CPOX
+v_CTSG, v_CTSG
+v_CUL3_RBX1_complex, v_CUL3_RBX1_complex
+v_CYBRD1_Heme_complex, v_CYBRD1_Heme_complex
+v_DAMPs_phenotype, v_DAMPs_phenotype
+v_Dimethly_fumarate_drug, v_Dimethly_fumarate_drug
+v_FLVCR1_1, v_FLVCR1_1
+v_FLVCR1_2, v_FLVCR1_2
+v_Fe2__ion_cell, ((v_Heme_simple_molecule_mitochondrial_matrix & v_FLVCR1_2 & v_O2_simple_molecule_cell & v_NADPH_simple_molecule & v_HMOX1_cell_active) | (v_Fe2__ion_default_compartment & v_SLC11A2) | v_Fe2__ion_cell | (v_TFRC_holoTF_complex_endosome & v_e__ion_endosome & v_STEAP3 & v_MCOLN1))
+v_Fe2__ion_default_compartment, ((v_Fe2__ion_cell & v_NRF2_phosphorylated_nucleus) | (v_Fe2__ion_cell & v_SLC40A1_HEPH_Cu2__complex) | (((v_Fe2__ion_default_compartment & v_O2_simple_molecule_default_compartment & v_H__ion_default_compartment & v_NRF2_phosphorylated_nucleus) | (v_Fe2__ion_default_compartment & v_H__ion_default_compartment & v_O2_simple_molecule_default_compartment & v_SLC40A1_HEPH_Cu2__complex)) & v_e__ion_default_compartment & v_CYBRD1_Heme_complex))
+v_Fe2__ion_mitochondrial_matrix, v_Fe2__ion_mitochondrial_matrix
+v_GPX4, v_GPX4
+v_Gly_simple_molecule, v_Gly_simple_molecule
+v_HMBS_DIPY_complex, v_HMBS_DIPY_complex
+v_HMOX1_cell_active, (v_NRF2_phosphorylated_nucleus & v_MAF & !(v_MAF & !v_miRNA_155_rna) & v_ORF3a)
+v_H__ion_default_compartment, v_H__ion_default_compartment
+v_Heme_simple_molecule_mitochondrial_matrix, (v_PRIN9_simple_molecule_mitochondrion & v_Fe2__ion_mitochondrial_matrix & v_NRF2_phosphorylated_nucleus & !v_Pb2__ion)
+v_KEAP1, v_KEAP1
+v_MAF, v_MAF
+v_MCOLN1, v_MCOLN1
+v_NADPH_simple_molecule, v_NADPH_simple_molecule
+v_NLRP3_Elicitor_Proteins, v_NLRP3_Elicitor_Proteins
+v_NLRP3_Elicitor_Small_Molecules_simple_molecule, v_NLRP3_Elicitor_Small_Molecules_simple_molecule
+v_NLRP3_SUGT1_HSP90_complex, (v_NLRP3_SUGT1_HSP90_complex | v_Nf_KB_Complex_complex)
+v_NLRP3_oligomer_ASC_Caspase1_complex, (((v_SARS_E | v_PAMPs_phenotype | v_DAMPs_phenotype | v_SARS_Orf3a | v_NLRP3_Elicitor_Small_Molecules_simple_molecule | v_NLRP3_Elicitor_Proteins | v_Reactive_Oxygen_Species_simple_molecule) & v_NLRP3_SUGT1_HSP90_complex & v_ASC) | (v_NLRP3_oligomer_ASC_Caspase1_complex & v_CTSG))
+v_NRF2_empty, v_NRF2_empty
+v_NRF2_phosphorylated_nucleus, ((v_PKC | v_CK2) & v_NRF2_empty)
+v_Nf_KB_Complex_complex, v_Nf_KB_Complex_complex
+v_O2_simple_molecule_cell, v_O2_simple_molecule_cell
+v_O2_simple_molecule_default_compartment, v_O2_simple_molecule_default_compartment
+v_O2_simple_molecule_mitochondrion, v_O2_simple_molecule_mitochondrion
+v_ORF3a, v_ORF3a
+v_ORF9c, v_ORF9c
+v_PAMPs_phenotype, v_PAMPs_phenotype
+v_PKC, v_PKC
+v_PPO_FAD_complex, v_PPO_FAD_complex
+v_PRIN9_simple_molecule_mitochondrion, (v_SUCC_CoA_simple_molecule & v_Gly_simple_molecule & v_PRIN9_simple_molecule_mitochondrion & v_Fe2__ion_mitochondrial_matrix & v_NRF2_phosphorylated_nucleus & !v_Pb2__ion & v_ALAS1_ALAS2_complex & !v_Heme_simple_molecule_mitochondrial_matrix & !v_Panhematin_drug & v_ALAD_Zn2__complex & v_HMBS_DIPY_complex & v_UROS & v_UROD & v_O2_simple_molecule_mitochondrion & v_CPOX & v_PPO_FAD_complex)
+v_PSTPIP1, v_PSTPIP1
+v_Panhematin_drug, v_Panhematin_drug
+v_Pb2__ion, v_Pb2__ion
+v_Poly_unsaturated_fatty_acid_simple_molecule, v_Poly_unsaturated_fatty_acid_simple_molecule
+v_Pyrin_trimer_complex, v_Pyrin_trimer_complex
+v_Reactive_Oxygen_Species_simple_molecule, (v_Fe2__ion_cell | !(v_Heme_simple_molecule_mitochondrial_matrix & v_FLVCR1_2 & v_O2_simple_molecule_cell & v_NADPH_simple_molecule & v_HMOX1_cell_active))
+v_SARS_E, v_SARS_E
+v_SARS_Orf3a, v_SARS_Orf3a
+v_SLC11A2, v_SLC11A2
+v_SLC40A1_HEPH_Cu2__complex, v_SLC40A1_HEPH_Cu2__complex
+v_STEAP3, v_STEAP3
+v_SUCC_CoA_simple_molecule, v_SUCC_CoA_simple_molecule
+v_TFRC_holoTF_complex_endosome, v_TFRC_holoTF_complex_endosome
+v_Thioredoxin_TXNIP_complex, (v_Thioredoxin_TXNIP_complex & v_Reactive_Oxygen_Species_simple_molecule & v_sa364_TXN_cell)
+v_UROD, v_UROD
+v_UROS, v_UROS
+v_e__ion_default_compartment, v_e__ion_default_compartment
+v_e__ion_endosome, v_e__ion_endosome
+v_miRNA_155_rna, v_miRNA_155_rna
+v_sa364_TXN_cell, v_sa364_TXN_cell
+v_sa462_proIL_1B_cell, v_sa462_proIL_1B_cell
+v_sa463_proIL_18_cell, v_sa463_proIL_18_cell

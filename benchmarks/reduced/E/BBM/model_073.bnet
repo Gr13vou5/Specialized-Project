@@ -1,0 +1,16 @@
+targets, factors
+v_Cebpa, (v_Cebpa | (v_Spi1 & !v_E2A_gene))
+v_Cebpb, (v_Spi1_2 & (v_Cebpb | v_Cebpa))
+v_Csf1, v_Csf1
+v_Csf1r_activated, (v_Spi1 & !v_Pax5_protein_active & v_Csf1)
+v_E2A_gene, ((v_Ikzf1 & v_Spi1) | (v_Ikzf1 & v_Ebf1_gene & v_Pax5_protein_active))
+v_Ebf1_gene, ((v_E2A_gene & !v_Id2 & v_Ebf1_gene & v_Pax5_protein_active & (!v_Cebpb | !v_Cebpa)) | (v_E2A_gene & !v_Id2 & v_Spi1 & v_IL7 & ((v_Ebf1_gene & v_E2A_gene & (!v_Cebpb | !v_Cebpa)) | (v_Spi1 & v_Mef2c & (!v_Cebpb | !v_Cebpa))) & (!v_Cebpb | !v_Cebpa)))
+v_Egr1, (v_Pax5_protein_active | (v_Spi1 & !v_Gfi1) | v_Spi1_2)
+v_Gfi1, ((v_Cebpa & !v_Egr1) | v_Pax5_protein_active | (v_Ikzf1 & !v_Egr1))
+v_IL7, v_IL7
+v_Id2, (v_Cebpb & !v_Gfi1 & !v_Ebf1_gene & v_Spi1 & v_Cebpa)
+v_Ikzf1, (v_Mef2c | v_Pax5_protein_active)
+v_Mef2c, (v_Spi1 & (!v_Cebpb | !v_Cebpa))
+v_Pax5_protein_active, (v_Ebf1_gene & (!v_Cebpb | !v_Cebpa) & !v_Id2)
+v_Spi1, ((v_E2A_gene & v_Ikzf1 & v_Ebf1_gene & !v_Spi1) | (v_Spi1 & ((!v_Cebpa & !v_Csf1r_activated) | (!v_Cebpb & !v_Csf1r_activated) | v_Gfi1)) | (v_Spi1 & v_Ikzf1 & !v_E2A_gene))
+v_Spi1_2, ((v_Spi1 & ((!v_Ikzf1 & !v_E2A_gene) | !v_Gfi1)) | (v_Spi1 & v_Csf1r_activated & (v_Cebpb | v_Cebpa)))

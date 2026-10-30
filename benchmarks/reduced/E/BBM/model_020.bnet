@@ -1,0 +1,13 @@
+targets, factors
+v_APC, (((v_Cas3 & !(v_PIP3 | v_IAP)) | (((v_APC & !v_IAP) | (v_Cas8 & !v_IAP)) & !(v_PIP3 | v_IAP))) & v_p53 & v_Mito & !v_IAP)
+v_BclX, (v_NFkB & !v_p53)
+v_Cas3, ((v_Cas6 & !v_IAP) | (v_Cas8 & !v_IAP) | (v_APC & !v_IAP))
+v_Cas6, (v_Cas3 & !v_IAP)
+v_Cas8, (v_Cas6 & !v_TNF)
+v_GF, v_GF
+v_IAP, (v_NFkB & !(v_Mito | (v_Cas3 & v_Cas6)))
+v_Mito, (((v_Cas8 & v_p53 & !v_BclX) | (v_TNF & !v_PIP3 & v_p53 & !v_BclX)) & !v_BclX)
+v_NFkB, !v_NFkB
+v_PIP3, (v_GF & !v_p53)
+v_TNF, v_TNF
+v_p53, ((v_Cas3 & !(v_PIP3 | v_p53)) | (v_TNF & !v_PIP3 & !(v_PIP3 | v_p53)))

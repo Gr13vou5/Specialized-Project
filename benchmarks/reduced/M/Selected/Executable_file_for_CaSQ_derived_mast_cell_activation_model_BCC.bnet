@@ -1,0 +1,29 @@
+targets, factors
+csa11, ((sa69 & sa88 & !sa72 & sa164 & !sa354) | (sa69 & sa88 & sa72))
+csa17, (((!csa11 & !csa4 & sa67 & sa40) | (csa11 & !csa4 & sa67 & sa40 & !sa31 & !sa94) | (csa11 & !csa4 & !sa31 & sa94) | (csa11 & !csa4 & sa31) | (!csa11 & csa4 & sa67) | (csa11 & csa4 & sa67 & !sa31 & !sa94) | (csa11 & csa4 & !sa31 & sa94) | (csa11 & csa4 & sa31)) & !(csa39 & sa298 & sa72) & sa124 & sa125)
+csa39, csa39
+csa4, (!csa39 | (!sa72 & !sa164 & sa355 & csa39 & !csa11) | (sa72 & !sa164 & !sa355 & csa39 & !csa11 & sa27) | (sa72 & !sa164 & sa355 & csa39 & !csa11) | (sa72 & sa164 & csa39 & !csa11 & sa27) | (!sa164 & !sa355 & csa39 & csa11 & sa27) | (!sa164 & sa355 & csa39 & csa11) | (sa164 & csa39 & csa11 & sa27))
+sa103, sa103
+sa105, sa105
+sa124, sa124
+sa125, sa125
+sa153, sa153
+sa162, csa17
+sa164, (sa162 & csa17)
+sa178, sa178
+sa235, sa235
+sa238, sa238
+sa242, sa242
+sa27, sa27
+sa298, sa72
+sa31, sa31
+sa321, sa321
+sa354, sa354
+sa355, sa355
+sa40, sa40
+sa67, csa11
+sa69, sa72
+sa72, !sa354
+sa88, sa88
+sa89, sa89
+sa94, sa94

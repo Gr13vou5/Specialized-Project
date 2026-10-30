@@ -1,0 +1,16 @@
+targets, factors
+v_DNAD, v_DNAD
+v_E2F, ((v_pRB & !v_RB_) | (v_E2F & !v_RB_))
+v_Hypoxia, v_Hypoxia
+v_IKK, ((v_IL6 & !v_STAT3) | v_IRAK | v_DNAD)
+v_IL6, (v_NFkB | v_IL6)
+v_IRAK, (v_IRAK | v_NFkB)
+v_IkB, ((v_NFkB & !(v_IKK & v_DNAD)) | (v_IkB & !(v_IKK & v_DNAD)))
+v_NFkB, (v_IKK & !v_IkB)
+v_RB_, !((v_E2F & !v_p21) | !(v_p21 | v_p16INK4) | v_pRB)
+v_STAT3, ((v_IL6 & !v_STAT3) | (v_cFos & v_cJun))
+v_cFos, (v_STAT3 | v_IL6 | (v_IRAK & !(v_cJun & v_cFos)))
+v_cJun, (v_cFos & (v_IL6 | (v_IRAK & !(v_cJun & v_cFos))))
+v_p16INK4, (v_IL6 | v_NFkB | (v_cJun & v_cFos) | v_DNAD)
+v_p21, ((v_Hypoxia & !v_DNAD) | v_DNAD)
+v_pRB, ((v_E2F & !v_p21) | !(v_p21 | v_p16INK4))

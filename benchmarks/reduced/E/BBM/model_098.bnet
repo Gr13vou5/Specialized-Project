@@ -1,0 +1,20 @@
+targets, factors
+v_FcgR, (v_IC | v_LPS | v_IL1b_e)
+v_GM_CSF, v_GM_CSF
+v_HMGB1, v_HMGB1
+v_IC, v_IC
+v_IFNG, v_IFNG
+v_IL10_e, v_IL10_e
+v_IL10s, v_IL10s
+v_IL13, v_IL13
+v_IL1b_e, v_IL1b_e
+v_IL4, v_IL4
+v_IL4Ra, (v_IL4 & v_IL13)
+v_LPS, v_LPS
+v_MCSF, v_MCSF
+v_NF_kB, ((v_STAT1 | v_TNFA | (v_LPS & !v_FcgR) | v_IL1b_e | v_NF_kB | (v_GM_CSF & !(v_STAT3 | v_IL4Ra | v_MCSF) & !(v_IL4Ra | v_MCSF) & !v_IL10s)) & !(v_STAT6 | v_FcgR | v_PPARg))
+v_PPARg, ((v_IL4Ra | v_MCSF | v_FcgR) & !v_STAT6)
+v_STAT1, ((((v_IFNG | (v_LPS & !v_FcgR)) & !(v_STAT6 | v_STAT1)) | v_STAT1) & !v_STAT6)
+v_STAT3, ((v_IL10_e | v_PPARg | v_STAT3 | v_FcgR) & !(v_FcgR | v_PPARg))
+v_STAT6, (v_IL4Ra | v_MCSF)
+v_TNFA, v_TNFA

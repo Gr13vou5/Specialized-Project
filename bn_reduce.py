@@ -22,10 +22,19 @@ Variants (each includes the previous constant propagation step):
       function is a literal, so substitution never grows formulas.
   D2  D1 + iteratively remove non-source "leaf" nodes (out-degree 0, no
       self-loop); their fixed-point value is determined by the rest.
+  E   D2 + general elimination (Algorithm R of Veliz-Cuba 2011): substitute
+      the whole function of a non-source node without a self-loop into the
+      nodes that read it, whenever that does not grow the total formula size.
+  M   A + leaves + general elimination of mediators only: no input of the
+      node reads one of its targets (Tonello & Pauleve 2024). Every step of M
+      is such an elimination (constants have no inputs, leaves no targets),
+      so M also preserves the minimal trap spaces (their Theorem 3.3), which
+      C, D1, D2 and E do not guarantee.
 
 All variants preserve fixed points one-to-one (Veliz-Cuba 2011: eliminating a
 node without a self-loop by substitution keeps the fixed points), so any of
-them is a valid pre-processing step for fixed-point enumeration.
+them is a valid pre-processing step for fixed-point enumeration. No step makes
+the total formula size grow.
 
 Dependencies are computed semantically: read-once formulas exactly from
 syntax, other formulas with <= MAX_TT variables by truth table, the rest
@@ -129,7 +138,7 @@ def simp(e):
         if a[0] == '!':
             return a[1]
         return ('!', a)
-    absorb = (t == '|')            # True absorbs OR, False absorbs AND
+    absorb = (t == '|')
     kids = []
     for k in e[1]:
         k = simp(k)
@@ -146,7 +155,7 @@ def simp(e):
         if k not in seen:
             seen.add(k)
             uniq.append(k)
-    for k in uniq:                 # x op !x
+    for k in uniq:
         if ('!', k) in seen:
             return ('c', absorb)
     if not uniq:
@@ -205,7 +214,7 @@ def analyze(e):
         return e, set(), e[1], True
     occ = var_occurrences(e, {})
     if all(c == 1 for c in occ.values()):
-        return e, set(occ), None, True          # read-once, no constants
+        return e, set(occ), None, True
     order = sorted(occ)
     if len(order) > MAX_TT:
         return e, set(occ), None, False
@@ -233,7 +242,7 @@ def literal_of(e, u):
     T = truth_table(e, order)
     i = order.index(u)
     R = T.reshape(-1, 2, 1 << i)
-    pos = bool(R[0, 1, 0])   # value with u = 1 (others 0; irrelevant)
+    pos = bool(R[0, 1, 0])
     return ('v', u) if pos else ('!', ('v', u))
 
 
@@ -256,7 +265,7 @@ class Network:
         names = set(funcs)
         for v, e in funcs.items():
             for x in var_occurrences(e, {}):
-                if x not in names:          # undeclared input -> free input
+                if x not in names:
                     names.add(x)
         for v in names:
             e = funcs.get(v, ('v', v))
@@ -265,7 +274,7 @@ class Network:
         for v, d in self.dep.items():
             for u in d:
                 self.succ[u].add(v)
-        self.removed = {}                   # v -> how it was removed
+        self.removed = {}
 
     def _set(self, v, e):
         e, sup, const, exact = analyze(e)
@@ -303,7 +312,21 @@ class Network:
         self.approx.discard(v)
         self.removed[v] = how
 
-    def reduce(self, mode=None, leaves=False):
+    def substitutable(self, v, general):
+        """v can be eliminated by substituting its whole function into the nodes that read it
+        (Veliz-Cuba's Algorithm R): no self-loop, read by another node, and the total formula
+        size does not grow. general='mediator': also no input of v reads a target of v."""
+        d = self.dep[v]
+        outs = self.succ[v] - {v}
+        if v in d or not outs:
+            return False
+        if general == 'mediator' and any(u in self.dep[w] for u in d for w in outs):
+            return False
+        occ = sum(var_occurrences(self.f[w], {}).get(v, 0) for w in outs)
+        size = sum(var_occurrences(self.f[v], {}).values())
+        return (occ - 1) * size <= occ 
+
+    def reduce(self, mode=None, leaves=False, general=None):
         changed = True
         while changed:
             changed = False
@@ -337,6 +360,10 @@ class Network:
                         and not (self.succ[v] - {v})):
                     self.eliminate(v, None, 'leaf')
                     changed = True
+                    continue
+                if general and self.substitutable(v, general):
+                    self.eliminate(v, self.f[v], 'general')
+                    changed = True
         return self
 
     def write_bnet(self, path):
@@ -349,13 +376,14 @@ class Network:
 
 
 # ------------------------------------------------------------------ main
-VARIANTS = [('A', None, False), ('B', 'strict', False), ('C', 'relaxed', False),
-            ('D1', 'indeg1', False), ('D2', 'indeg1', True)]
+VARIANTS = [('A', None, False, None), ('B', 'strict', False, None), ('C', 'relaxed', False, None),
+            ('D1', 'indeg1', False, None), ('D2', 'indeg1', True, None),
+            ('E', 'indeg1', True, 'any'), ('M', None, True, 'mediator')]
 
 
 FIELDS = ['set', 'model', 'n', 'sources', 'nonsource', 'const0', 'approx_funcs'] + [
-    f'{k}_{name}' for name, _, _ in VARIANTS for k in ('rm', 'src')] + [
-    f'time_{name}' for name, _, _ in VARIANTS]
+    f'{k}_{name}' for name, *_ in VARIANTS for k in ('rm', 'src')] + [
+    f'time_{name}' for name, *_ in VARIANTS]
 
 
 def run(path, outdir=None, set_name='', write_variants=('B', 'D2')):
@@ -368,9 +396,9 @@ def run(path, outdir=None, set_name='', write_variants=('B', 'D2')):
     row = dict(n=n, sources=sources, nonsource=n - sources,
                const0=sum(base.const(v) is not None for v in base.f),
                approx_funcs=len(base.approx))
-    for name, mode, leaves in VARIANTS:
+    for name, mode, leaves, general in VARIANTS:
         start = time.process_time()
-        net = Network(funcs).reduce(mode, leaves)
+        net = Network(funcs).reduce(mode, leaves, general)
         if outdir and name in write_variants:
             target = Path(outdir) / name / set_name
             target.mkdir(parents=True, exist_ok=True)
@@ -412,7 +440,7 @@ if __name__ == '__main__':
                     help='root folder for reduced .bnet files (default: benchmarks/reduced)')
     ap.add_argument('--no-write', action='store_true', help='only write the statistics CSV')
     ap.add_argument('--variants', nargs='+', default=['B', 'D2'],
-                    choices=[name for name, _, _ in VARIANTS],
+                    choices=[name for name, *_ in VARIANTS],
                     help='variants whose reduced networks are written (default: B D2)')
     a = ap.parse_args()
     import threading

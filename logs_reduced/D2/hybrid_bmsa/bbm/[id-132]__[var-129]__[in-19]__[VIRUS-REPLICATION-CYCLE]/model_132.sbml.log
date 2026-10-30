@@ -1,0 +1,857 @@
+# Host: MSI
+# Start date: Tue Oct 27 06:42:55 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_132.sbml (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-2819-207 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_132.sbml
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --sbml /benchmark/model_132.sbml --cnf /tmp/tmp.4ghaXH85Qe.cnf -h3
+
+Config(sbmlFileName = /benchmark/model_132.sbml, bnetFileName = , cnfFileName = /tmp/tmp.4ghaXH85Qe.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+2026-10-26 23:42:59,186 main ERROR Could not determine local host name java.net.UnknownHostException: ab138f570f07: ab138f570f07: Temporary failure in name resolution
+	at java.base/java.net.InetAddress.getLocalHost(InetAddress.java:1670)
+	at org.apache.logging.log4j.core.util.NetUtils.getLocalHostname(NetUtils.java:54)
+	at org.apache.logging.log4j.core.LoggerContext.lambda$setConfiguration$0(LoggerContext.java:620)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:620)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:699)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:716)
+	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:270)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:309)
+	at org.apache.log4j.Logger$PrivateManager.getContext(Logger.java:59)
+	at org.apache.log4j.Logger.getLogger(Logger.java:41)
+	at org.sbml.jsbml.JSBML.loadClasses(JSBML.java:294)
+	at org.sbml.jsbml.xml.stax.SBMLReader.<clinit>(SBMLReader.java:110)
+	at org.sbml.jsbml.SBMLReader.readSBMLFromFile(SBMLReader.java:235)
+	at jp.kobe_u.bsaf.sbml.SbmlQualModel$.fromFile(SbmlQualModel.scala:15)
+	at jp.kobe_u.bsaf.Main$.main(Main.scala:25)
+	at jp.kobe_u.bsaf.Main.main(Main.scala)
+Caused by: java.net.UnknownHostException: ab138f570f07: Temporary failure in name resolution
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getLocalHost(InetAddress.java:1665)
+	... 18 more
+
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v____ss_gRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory)))
+Some(Vector(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(!v____ss_gRNA_rna_epithelial_cell)))
+(Set(v____ss_gRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(-43, -48))
+(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(48))
+(Set(!v____ss_gRNA_rna_epithelial_cell),Set(43))
+
+Some(Vector(Set(v_E____ss_sgmRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory)))
+Some(Vector(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(!v_E____ss_sgmRNA_rna_epithelial_cell)))
+(Set(v_E____ss_sgmRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(-5, -48))
+(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(48))
+(Set(!v_E____ss_sgmRNA_rna_epithelial_cell),Set(5))
+
+Some(Vector(Set(v_E_ds_sgmRNA_rna, v_Host_translation_complex_complex_rough_endoplasmic_reticulum)))
+Some(Vector(Set(!v_Host_translation_complex_complex_rough_endoplasmic_reticulum), Set(!v_E_ds_sgmRNA_rna)))
+(Set(v_E_ds_sgmRNA_rna, v_Host_translation_complex_complex_rough_endoplasmic_reticulum),Set(-6, -11))
+(Set(!v_Host_translation_complex_complex_rough_endoplasmic_reticulum),Set(11))
+(Set(!v_E_ds_sgmRNA_rna),Set(6))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v____ss_gRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory)))
+Some(Vector(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(!v____ss_gRNA_rna_epithelial_cell)))
+(Set(v____ss_gRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(-43, -48))
+(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(48))
+(Set(!v____ss_gRNA_rna_epithelial_cell),Set(43))
+
+Some(Vector(Set(v_M____ss_sgmRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory)))
+Some(Vector(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(!v_M____ss_sgmRNA_rna_epithelial_cell)))
+(Set(v_M____ss_sgmRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(-12, -48))
+(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(48))
+(Set(!v_M____ss_sgmRNA_rna_epithelial_cell),Set(12))
+
+Some(Vector(Set(v_M_ds_sgmRNA_rna, v_Host_translation_complex_complex_rough_endoplasmic_reticulum)))
+Some(Vector(Set(!v_Host_translation_complex_complex_rough_endoplasmic_reticulum), Set(!v_M_ds_sgmRNA_rna)))
+(Set(v_M_ds_sgmRNA_rna, v_Host_translation_complex_complex_rough_endoplasmic_reticulum),Set(-13, -11))
+(Set(!v_Host_translation_complex_complex_rough_endoplasmic_reticulum),Set(11))
+(Set(!v_M_ds_sgmRNA_rna),Set(13))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v____ss_gRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory)))
+Some(Vector(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(!v____ss_gRNA_rna_epithelial_cell)))
+(Set(v____ss_gRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(-43, -48))
+(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(48))
+(Set(!v____ss_gRNA_rna_epithelial_cell),Set(43))
+
+Some(Vector(Set(v_N_____ss_sgmRNA_rna, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory)))
+Some(Vector(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(!v_N_____ss_sgmRNA_rna)))
+(Set(v_N_____ss_sgmRNA_rna, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(-16, -48))
+(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(48))
+(Set(!v_N_____ss_sgmRNA_rna),Set(16))
+
+Some(Vector(Set(v_Nsp5, v_pp1a), Set(v_pp1ab, v_Nsp5)))
+Some(Vector(Set(!v_pp1ab, !v_pp1a), Set(!v_Nsp5)))
+(Set(v_Nsp5, v_pp1a),Set(-26, -53))
+(Set(v_pp1ab, v_Nsp5),Set(-54, -26))
+(Set(!v_pp1ab, !v_pp1a),Set(54, 53))
+(Set(!v_Nsp5),Set(26))
+
+Some(Vector(Set(v_pp1ab, v_Nsp5)))
+Some(Vector(Set(!v_Nsp5), Set(!v_pp1ab)))
+(Set(v_pp1ab, v_Nsp5),Set(-54, -26))
+(Set(!v_Nsp5),Set(26))
+(Set(!v_pp1ab),Set(54))
+
+Some(Vector(Set(v_pp1ab, v_Nsp5)))
+Some(Vector(Set(!v_Nsp5), Set(!v_pp1ab)))
+(Set(v_pp1ab, v_Nsp5),Set(-54, -26))
+(Set(!v_Nsp5),Set(26))
+(Set(!v_pp1ab),Set(54))
+
+Some(Vector(Set(v_pp1ab, v_Nsp5)))
+Some(Vector(Set(!v_Nsp5), Set(!v_pp1ab)))
+(Set(v_pp1ab, v_Nsp5),Set(-54, -26))
+(Set(!v_Nsp5),Set(26))
+(Set(!v_pp1ab),Set(54))
+
+Some(Vector(Set(v_pp1ab, v_Nsp5)))
+Some(Vector(Set(!v_Nsp5), Set(!v_pp1ab)))
+(Set(v_pp1ab, v_Nsp5),Set(-54, -26))
+(Set(!v_Nsp5),Set(26))
+(Set(!v_pp1ab),Set(54))
+
+Some(Vector(Set(v_pp1ab, v_Nsp5)))
+Some(Vector(Set(!v_Nsp5), Set(!v_pp1ab)))
+(Set(v_pp1ab, v_Nsp5),Set(-54, -26))
+(Set(!v_Nsp5),Set(26))
+(Set(!v_pp1ab),Set(54))
+
+Some(Vector(Set(v_pp1a), Set(v_pp1ab)))
+Some(Vector(Set(!v_pp1ab, !v_pp1a)))
+(Set(v_pp1a),Set(-53))
+(Set(v_pp1ab),Set(-54))
+(Set(!v_pp1ab, !v_pp1a),Set(54, 53))
+
+Some(Vector(Set(v_pp1a), Set(v_pp1ab)))
+Some(Vector(Set(!v_pp1ab, !v_pp1a)))
+(Set(v_pp1a),Set(-53))
+(Set(v_pp1ab),Set(-54))
+(Set(!v_pp1ab, !v_pp1a),Set(54, 53))
+
+Some(Vector(Set(v_pp1a), Set(v_pp1ab)))
+Some(Vector(Set(!v_pp1ab, !v_pp1a)))
+(Set(v_pp1a),Set(-53))
+(Set(v_pp1ab),Set(-54))
+(Set(!v_pp1ab, !v_pp1a),Set(54, 53))
+
+Some(Vector(Set(v_Nsp5, v_pp1a), Set(v_pp1ab, v_Nsp5)))
+Some(Vector(Set(!v_pp1ab, !v_pp1a), Set(!v_Nsp5)))
+(Set(v_Nsp5, v_pp1a),Set(-26, -53))
+(Set(v_pp1ab, v_Nsp5),Set(-54, -26))
+(Set(!v_pp1ab, !v_pp1a),Set(54, 53))
+(Set(!v_Nsp5),Set(26))
+
+Some(Vector(Set(v_Nsp5, v_pp1a), Set(v_pp1ab, v_Nsp5)))
+Some(Vector(Set(!v_pp1ab, !v_pp1a), Set(!v_Nsp5)))
+(Set(v_Nsp5, v_pp1a),Set(-26, -53))
+(Set(v_pp1ab, v_Nsp5),Set(-54, -26))
+(Set(!v_pp1ab, !v_pp1a),Set(54, 53))
+(Set(!v_Nsp5),Set(26))
+
+Some(Vector(Set(v_Nsp5, v_pp1a), Set(v_pp1ab, v_Nsp5)))
+Some(Vector(Set(!v_pp1ab, !v_pp1a), Set(!v_Nsp5)))
+(Set(v_Nsp5, v_pp1a),Set(-26, -53))
+(Set(v_pp1ab, v_Nsp5),Set(-54, -26))
+(Set(!v_pp1ab, !v_pp1a),Set(54, 53))
+(Set(!v_Nsp5),Set(26))
+
+Some(Vector(Set(v_Nsp5, v_pp1a), Set(v_pp1ab, v_Nsp5)))
+Some(Vector(Set(!v_pp1ab, !v_pp1a), Set(!v_Nsp5)))
+(Set(v_Nsp5, v_pp1a),Set(-26, -53))
+(Set(v_pp1ab, v_Nsp5),Set(-54, -26))
+(Set(!v_pp1ab, !v_pp1a),Set(54, 53))
+(Set(!v_Nsp5),Set(26))
+
+Some(Vector(Set(v_csa365_Nucleocapsid_complex_SARS_CoV_2_virion, v_M_rough_endoplasmic_reticulum, v_Orf7a_rough_endoplasmic_reticulum, v_E_rough_endoplasmic_reticulum, v_sa2188_S2_SARS_CoV_2_virion), Set(v_csa374_Nucleocapsid_complex_SARS_CoV_2_virion, v_M_rough_endoplasmic_reticulum, v_S1_NRP1_complex_complex, v_sa2025_Orf7a_SARS_CoV_2_virion, v_sa2023_E_SARS_CoV_2_virion), Set(v_csa374_Nucleocapsid_complex_SARS_CoV_2_virion, v_M_rough_endoplasmic_reticulum, v_cholesterol_simple_molecule, v_sa2025_Orf7a_SARS_CoV_2_virion, v_sa2023_E_SARS_CoV_2_virion), Set(v_sa2063_S2_epithelial_cell, v_csa374_Nucleocapsid_complex_SARS_CoV_2_virion, v_M_rough_endoplasmic_reticulum, v_sa2025_Orf7a_SARS_CoV_2_virion, v_sa2023_E_SARS_CoV_2_virion)))
+Some(Vector(Set(!v_sa2188_S2_SARS_CoV_2_virion, !v_sa2025_Orf7a_SARS_CoV_2_virion), Set(!v_sa2063_S2_epithelial_cell, !v_cholesterol_simple_molecule, !v_S1_NRP1_complex_complex, !v_sa2188_S2_SARS_CoV_2_virion), Set(!v_csa374_Nucleocapsid_complex_SARS_CoV_2_virion, !v_sa2188_S2_SARS_CoV_2_virion), Set(!v_sa2023_E_SARS_CoV_2_virion, !v_sa2188_S2_SARS_CoV_2_virion), Set(!v_E_rough_endoplasmic_reticulum, !v_sa2025_Orf7a_SARS_CoV_2_virion), Set(!v_sa2063_S2_epithelial_cell, !v_cholesterol_simple_molecule, !v_S1_NRP1_complex_complex, !v_E_rough_endoplasmic_reticulum), Set(!v_csa374_Nucleocapsid_complex_SARS_CoV_2_virion, !v_E_rough_endoplasmic_reticulum), Set(!v_sa2023_E_SARS_CoV_2_virion, !v_E_rough_endoplasmic_reticulum), Set(!v_Orf7a_rough_endoplasmic_reticulum, !v_sa2025_Orf7a_SARS_CoV_2_virion), Set(!v_sa2063_S2_epithelial_cell, !v_cholesterol_simple_molecule, !v_S1_NRP1_complex_complex, !v_Orf7a_rough_endoplasmic_reticulum), Set(!v_csa374_Nucleocapsid_complex_SARS_CoV_2_virion, !v_Orf7a_rough_endoplasmic_reticulum), Set(!v_sa2023_E_SARS_CoV_2_virion, !v_Orf7a_rough_endoplasmic_reticulum), Set(!v_csa365_Nucleocapsid_complex_SARS_CoV_2_virion, !v_sa2025_Orf7a_SARS_CoV_2_virion), Set(!v_sa2063_S2_epithelial_cell, !v_cholesterol_simple_molecule, !v_csa365_Nucleocapsid_complex_SARS_CoV_2_virion, !v_S1_NRP1_complex_complex), Set(!v_csa374_Nucleocapsid_complex_SARS_CoV_2_virion, !v_csa365_Nucleocapsid_complex_SARS_CoV_2_virion), Set(!v_sa2023_E_SARS_CoV_2_virion, !v_csa365_Nucleocapsid_complex_SARS_CoV_2_virion), Set(!v_M_rough_endoplasmic_reticulum)))
+(Set(v_csa365_Nucleocapsid_complex_SARS_CoV_2_virion, v_M_rough_endoplasmic_reticulum, v_Orf7a_rough_endoplasmic_reticulum, v_E_rough_endoplasmic_reticulum, v_sa2188_S2_SARS_CoV_2_virion),Set(-7, -61, -14, -34, -45))
+(Set(v_csa374_Nucleocapsid_complex_SARS_CoV_2_virion, v_M_rough_endoplasmic_reticulum, v_S1_NRP1_complex_complex, v_sa2025_Orf7a_SARS_CoV_2_virion, v_sa2023_E_SARS_CoV_2_virion),Set(-59, -58, -36, -47, -14))
+(Set(v_csa374_Nucleocapsid_complex_SARS_CoV_2_virion, v_M_rough_endoplasmic_reticulum, v_cholesterol_simple_molecule, v_sa2025_Orf7a_SARS_CoV_2_virion, v_sa2023_E_SARS_CoV_2_virion),Set(-59, -44, -58, -47, -14))
+(Set(v_sa2063_S2_epithelial_cell, v_csa374_Nucleocapsid_complex_SARS_CoV_2_virion, v_M_rough_endoplasmic_reticulum, v_sa2025_Orf7a_SARS_CoV_2_virion, v_sa2023_E_SARS_CoV_2_virion),Set(-59, -58, -47, -14, -60))
+(Set(!v_sa2188_S2_SARS_CoV_2_virion, !v_sa2025_Orf7a_SARS_CoV_2_virion),Set(61, 59))
+(Set(!v_sa2063_S2_epithelial_cell, !v_cholesterol_simple_molecule, !v_S1_NRP1_complex_complex, !v_sa2188_S2_SARS_CoV_2_virion),Set(60, 44, 36, 61))
+(Set(!v_csa374_Nucleocapsid_complex_SARS_CoV_2_virion, !v_sa2188_S2_SARS_CoV_2_virion),Set(47, 61))
+(Set(!v_sa2023_E_SARS_CoV_2_virion, !v_sa2188_S2_SARS_CoV_2_virion),Set(58, 61))
+(Set(!v_E_rough_endoplasmic_reticulum, !v_sa2025_Orf7a_SARS_CoV_2_virion),Set(7, 59))
+(Set(!v_sa2063_S2_epithelial_cell, !v_cholesterol_simple_molecule, !v_S1_NRP1_complex_complex, !v_E_rough_endoplasmic_reticulum),Set(60, 44, 36, 7))
+(Set(!v_csa374_Nucleocapsid_complex_SARS_CoV_2_virion, !v_E_rough_endoplasmic_reticulum),Set(47, 7))
+(Set(!v_sa2023_E_SARS_CoV_2_virion, !v_E_rough_endoplasmic_reticulum),Set(58, 7))
+(Set(!v_Orf7a_rough_endoplasmic_reticulum, !v_sa2025_Orf7a_SARS_CoV_2_virion),Set(34, 59))
+(Set(!v_sa2063_S2_epithelial_cell, !v_cholesterol_simple_molecule, !v_S1_NRP1_complex_complex, !v_Orf7a_rough_endoplasmic_reticulum),Set(60, 44, 36, 34))
+(Set(!v_csa374_Nucleocapsid_complex_SARS_CoV_2_virion, !v_Orf7a_rough_endoplasmic_reticulum),Set(47, 34))
+(Set(!v_sa2023_E_SARS_CoV_2_virion, !v_Orf7a_rough_endoplasmic_reticulum),Set(58, 34))
+(Set(!v_csa365_Nucleocapsid_complex_SARS_CoV_2_virion, !v_sa2025_Orf7a_SARS_CoV_2_virion),Set(45, 59))
+(Set(!v_sa2063_S2_epithelial_cell, !v_cholesterol_simple_molecule, !v_csa365_Nucleocapsid_complex_SARS_CoV_2_virion, !v_S1_NRP1_complex_complex),Set(60, 44, 45, 36))
+(Set(!v_csa374_Nucleocapsid_complex_SARS_CoV_2_virion, !v_csa365_Nucleocapsid_complex_SARS_CoV_2_virion),Set(47, 45))
+(Set(!v_sa2023_E_SARS_CoV_2_virion, !v_csa365_Nucleocapsid_complex_SARS_CoV_2_virion),Set(58, 45))
+(Set(!v_M_rough_endoplasmic_reticulum),Set(14))
+
+Some(Vector(Set(v____ss_gRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory)))
+Some(Vector(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(!v____ss_gRNA_rna_epithelial_cell)))
+(Set(v____ss_gRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(-43, -48))
+(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(48))
+(Set(!v____ss_gRNA_rna_epithelial_cell),Set(43))
+
+Some(Vector(Set(v_Orf7a____ss_sgmRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory)))
+Some(Vector(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(!v_Orf7a____ss_sgmRNA_rna_epithelial_cell)))
+(Set(v_Orf7a____ss_sgmRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(-32, -48))
+(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(48))
+(Set(!v_Orf7a____ss_sgmRNA_rna_epithelial_cell),Set(32))
+
+Some(Vector(Set(v_Orf7a_ds_sgmRNA_rna, v_Host_translation_complex_complex_rough_endoplasmic_reticulum)))
+Some(Vector(Set(!v_Host_translation_complex_complex_rough_endoplasmic_reticulum), Set(!v_Orf7a_ds_sgmRNA_rna)))
+(Set(v_Orf7a_ds_sgmRNA_rna, v_Host_translation_complex_complex_rough_endoplasmic_reticulum),Set(-33, -11))
+(Set(!v_Host_translation_complex_complex_rough_endoplasmic_reticulum),Set(11))
+(Set(!v_Orf7a_ds_sgmRNA_rna),Set(33))
+
+Some(Vector(Set(v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(v_sa1685_N_epithelial_cell)))
+Some(Vector(Set(!v_sa1685_N_epithelial_cell, !v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory)))
+(Set(v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(-48))
+(Set(v_sa1685_N_epithelial_cell),Set(-57))
+(Set(!v_sa1685_N_epithelial_cell, !v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(57, 48))
+
+Some(Vector(Set(v_S1_default_compartment, v_NRP1)))
+Some(Vector(Set(!v_NRP1), Set(!v_S1_default_compartment)))
+(Set(v_S1_default_compartment, v_NRP1),Set(-37, -15))
+(Set(!v_NRP1),Set(15))
+(Set(!v_S1_default_compartment),Set(37))
+
+Some(Vector(Set(v_TMPRSS2, v_csa368_ACE2_SPIKE_complex_complex_epithelial_cell, !v_Camostat_mesylate_drug), Set(v_FURIN, v_csa368_ACE2_SPIKE_complex_complex_epithelial_cell, !v_Camostat_mesylate_drug)))
+Some(Vector(Set(v_Camostat_mesylate_drug), Set(!v_csa368_ACE2_SPIKE_complex_complex_epithelial_cell), Set(!v_FURIN, !v_TMPRSS2)))
+(Set(v_TMPRSS2, v_csa368_ACE2_SPIKE_complex_complex_epithelial_cell, !v_Camostat_mesylate_drug),Set(-41, -46, 4))
+(Set(v_FURIN, v_csa368_ACE2_SPIKE_complex_complex_epithelial_cell, !v_Camostat_mesylate_drug),Set(-9, -46, 4))
+(Set(v_Camostat_mesylate_drug),Set(-4))
+(Set(!v_csa368_ACE2_SPIKE_complex_complex_epithelial_cell),Set(46))
+(Set(!v_FURIN, !v_TMPRSS2),Set(9, 41))
+
+Some(Vector(Set(v____ss_gRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory)))
+Some(Vector(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(!v____ss_gRNA_rna_epithelial_cell)))
+(Set(v____ss_gRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(-43, -48))
+(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(48))
+(Set(!v____ss_gRNA_rna_epithelial_cell),Set(43))
+
+Some(Vector(Set(v_S____ss_sgmRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory)))
+Some(Vector(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(!v_S____ss_sgmRNA_rna_epithelial_cell)))
+(Set(v_S____ss_sgmRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(-38, -48))
+(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(48))
+(Set(!v_S____ss_sgmRNA_rna_epithelial_cell),Set(38))
+
+Some(Vector(Set(v_S_ds_sgmRNA_rna, v_Host_translation_complex_complex_rough_endoplasmic_reticulum)))
+Some(Vector(Set(!v_Host_translation_complex_complex_rough_endoplasmic_reticulum), Set(!v_S_ds_sgmRNA_rna)))
+(Set(v_S_ds_sgmRNA_rna, v_Host_translation_complex_complex_rough_endoplasmic_reticulum),Set(-39, -11))
+(Set(!v_Host_translation_complex_complex_rough_endoplasmic_reticulum),Set(11))
+(Set(!v_S_ds_sgmRNA_rna),Set(39))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_ds_gRNA_rna), Set(v_Nucleocapsid_complex_epithelial_cell)))
+Some(Vector(Set(!v_Nucleocapsid_complex_epithelial_cell, !v_ds_gRNA_rna)))
+(Set(v_ds_gRNA_rna),Set(-52))
+(Set(v_Nucleocapsid_complex_epithelial_cell),Set(-31))
+(Set(!v_Nucleocapsid_complex_epithelial_cell, !v_ds_gRNA_rna),Set(31, 52))
+
+Some(Vector(Set(v____ss_gRNA_rna, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory)))
+Some(Vector(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(!v____ss_gRNA_rna)))
+(Set(v____ss_gRNA_rna, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(-42, -48))
+(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(48))
+(Set(!v____ss_gRNA_rna),Set(42))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_sa1545_ACE2_epithelial_cell, v_S_rough_endoplasmic_reticulum, v_Heparan_sulfate_simple_molecule)))
+Some(Vector(Set(!v_Heparan_sulfate_simple_molecule), Set(!v_S_rough_endoplasmic_reticulum), Set(!v_sa1545_ACE2_epithelial_cell)))
+(Set(v_sa1545_ACE2_epithelial_cell, v_S_rough_endoplasmic_reticulum, v_Heparan_sulfate_simple_molecule),Set(-56, -40, -10))
+(Set(!v_Heparan_sulfate_simple_molecule),Set(10))
+(Set(!v_S_rough_endoplasmic_reticulum),Set(40))
+(Set(!v_sa1545_ACE2_epithelial_cell),Set(56))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(v_Nsp7, v_Nsp10, v_Nsp9, v_Nsp8, v_Nsp14, v_Nsp13, v_Nsp16, v_Nsp15, v_Nsp6, v_Nsp12, v_Nsp2, v_Nsp3_4)))
+Some(Vector(Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp3_4), Set(!v_Nsp9, !v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp10), Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp6), Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp16), Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp8), Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp12), Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp15), Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp7), Set(!v_Nsp13, !v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp14), Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp2)))
+(Set(v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(-51))
+(Set(v_Nsp7, v_Nsp10, v_Nsp9, v_Nsp8, v_Nsp14, v_Nsp13, v_Nsp16, v_Nsp15, v_Nsp6, v_Nsp12, v_Nsp2, v_Nsp3_4),Set(-27, -22, -18, -23, -19, -30, -25, -20, -29, -21, -24, -28))
+(Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp3_4),Set(51, 25))
+(Set(!v_Nsp9, !v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(30, 51))
+(Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp10),Set(51, 18))
+(Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp6),Set(51, 27))
+(Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp16),Set(51, 23))
+(Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp8),Set(51, 29))
+(Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp12),Set(51, 19))
+(Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp15),Set(51, 22))
+(Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp7),Set(51, 28))
+(Set(!v_Nsp13, !v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(20, 51))
+(Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp14),Set(51, 21))
+(Set(!v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory, !v_Nsp2),Set(51, 24))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Replication_transcription_complex_N_oligomer_complex, v____ss_gRNA_rna)))
+Some(Vector(Set(!v____ss_gRNA_rna), Set(!v_Replication_transcription_complex_N_oligomer_complex)))
+(Set(v_Replication_transcription_complex_N_oligomer_complex, v____ss_gRNA_rna),Set(-35, -42))
+(Set(!v____ss_gRNA_rna),Set(42))
+(Set(!v_Replication_transcription_complex_N_oligomer_complex),Set(35))
+
+Some(Vector(Set(v____ss_gRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory)))
+Some(Vector(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory), Set(!v____ss_gRNA_rna_epithelial_cell)))
+(Set(v____ss_gRNA_rna_epithelial_cell, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(-43, -48))
+(Set(!v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory),Set(48))
+(Set(!v____ss_gRNA_rna_epithelial_cell),Set(43))
+
+Some(Vector(Set(v____ss_gRNA_rna, v_csa427_Host_translation_complex_complex_epithelial_cell)))
+Some(Vector(Set(!v_csa427_Host_translation_complex_complex_epithelial_cell), Set(!v____ss_gRNA_rna)))
+(Set(v____ss_gRNA_rna, v_csa427_Host_translation_complex_complex_epithelial_cell),Set(-42, -49))
+(Set(!v_csa427_Host_translation_complex_complex_epithelial_cell),Set(49))
+(Set(!v____ss_gRNA_rna),Set(42))
+
+Some(Vector(Set(v____ss_gRNA_rna, v_csa427_Host_translation_complex_complex_epithelial_cell)))
+Some(Vector(Set(!v_csa427_Host_translation_complex_complex_epithelial_cell), Set(!v____ss_gRNA_rna)))
+(Set(v____ss_gRNA_rna, v_csa427_Host_translation_complex_complex_epithelial_cell),Set(-42, -49))
+(Set(!v_csa427_Host_translation_complex_complex_epithelial_cell),Set(49))
+(Set(!v____ss_gRNA_rna),Set(42))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Nucleocapsid_complex_epithelial_cell), Set(v_N_ds_sgmRNA_rna, v_csa429_Host_translation_complex_complex_epithelial_cell)))
+Some(Vector(Set(!v_csa429_Host_translation_complex_complex_epithelial_cell, !v_Nucleocapsid_complex_epithelial_cell), Set(!v_N_ds_sgmRNA_rna, !v_Nucleocapsid_complex_epithelial_cell)))
+(Set(v_Nucleocapsid_complex_epithelial_cell),Set(-31))
+(Set(v_N_ds_sgmRNA_rna, v_csa429_Host_translation_complex_complex_epithelial_cell),Set(-17, -50))
+(Set(!v_csa429_Host_translation_complex_complex_epithelial_cell, !v_Nucleocapsid_complex_epithelial_cell),Set(50, 31))
+(Set(!v_N_ds_sgmRNA_rna, !v_Nucleocapsid_complex_epithelial_cell),Set(17, 31))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_TMPRSS2, v_csa368_ACE2_SPIKE_complex_complex_epithelial_cell, !v_Camostat_mesylate_drug), Set(v_FURIN, v_csa368_ACE2_SPIKE_complex_complex_epithelial_cell, !v_Camostat_mesylate_drug)))
+Some(Vector(Set(v_Camostat_mesylate_drug), Set(!v_csa368_ACE2_SPIKE_complex_complex_epithelial_cell), Set(!v_FURIN, !v_TMPRSS2)))
+(Set(v_TMPRSS2, v_csa368_ACE2_SPIKE_complex_complex_epithelial_cell, !v_Camostat_mesylate_drug),Set(-41, -46, 4))
+(Set(v_FURIN, v_csa368_ACE2_SPIKE_complex_complex_epithelial_cell, !v_Camostat_mesylate_drug),Set(-9, -46, 4))
+(Set(v_Camostat_mesylate_drug),Set(-4))
+(Set(!v_csa368_ACE2_SPIKE_complex_complex_epithelial_cell),Set(46))
+(Set(!v_FURIN, !v_TMPRSS2),Set(9, 41))
+
+Some(Vector(Set(v_CTSL, v_ACE2_SPIKE_complex_complex_SARS_CoV_2_virion), Set(v_CTSB, v_ACE2_SPIKE_complex_complex_SARS_CoV_2_virion)))
+Some(Vector(Set(!v_ACE2_SPIKE_complex_complex_SARS_CoV_2_virion), Set(!v_CTSB, !v_CTSL)))
+(Set(v_CTSL, v_ACE2_SPIKE_complex_complex_SARS_CoV_2_virion),Set(-3, -1))
+(Set(v_CTSB, v_ACE2_SPIKE_complex_complex_SARS_CoV_2_virion),Set(-2, -1))
+(Set(!v_ACE2_SPIKE_complex_complex_SARS_CoV_2_virion),Set(1))
+(Set(!v_CTSB, !v_CTSL),Set(2, 3))
+Map(v_Nsp9 -> 30, v_Nsp5 -> 26, v_Host_translation_complex_complex_rough_endoplasmic_reticulum -> 11, v____ss_gRNA_rna -> 42, v_S____ss_sgmRNA_rna_epithelial_cell -> 38, v_sa2063_S2_epithelial_cell -> 60, v_sa1462_ACE2_epithelial_cell -> 55, v_CTSB -> 2, v____ss_gRNA_rna_epithelial_cell -> 43, v_S_ds_sgmRNA_rna -> 39, v_sa1685_N_epithelial_cell -> 57, v_Nsp13 -> 20, v_csa374_Nucleocapsid_complex_SARS_CoV_2_virion -> 47, v_M____ss_sgmRNA_rna_epithelial_cell -> 12, v_Heparan_sulfate_simple_molecule -> 10, v_E____ss_sgmRNA_rna_epithelial_cell -> 5, v_CTSL -> 3, v_csa440_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory -> 51, v_ds_gRNA_rna -> 52, v_M_ds_sgmRNA_rna -> 13, v_Nsp14 -> 21, v_csa410_Replication_transcription_complex_complex_double_membrane_vesicle_viral_factory -> 48, v_Orf7a_ds_sgmRNA_rna -> 33, v_NRP1 -> 15, v_Nsp2 -> 24, v_Nucleocapsid_complex_epithelial_cell -> 31, v_pp1a -> 53, v_sa2023_E_SARS_CoV_2_virion -> 58, v_Nsp16 -> 23, v_ACE2_SPIKE_complex_complex_SARS_CoV_2_virion -> 1, v_pp1ab -> 54, v_Nsp8 -> 29, v_cholesterol_simple_molecule -> 44, v_csa365_Nucleocapsid_complex_SARS_CoV_2_virion -> 45, v_Replication_transcription_complex_N_oligomer_complex -> 35, v_Nsp10 -> 18, v_N_____ss_sgmRNA_rna -> 16, v_sa1545_ACE2_epithelial_cell -> 56, v_S1_NRP1_complex_complex -> 36, v_sa2188_S2_SARS_CoV_2_virion -> 61, v_csa368_ACE2_SPIKE_complex_complex_epithelial_cell -> 46, v_Nsp15 -> 22, v_S1_default_compartment -> 37, v_N_ds_sgmRNA_rna -> 17, v_Nsp7 -> 28, v_E_rough_endoplasmic_reticulum -> 7, v_M_rough_endoplasmic_reticulum -> 14, v_Endoplasmic_reticulum_complex -> 8, v_csa427_Host_translation_complex_complex_epithelial_cell -> 49, v_S_rough_endoplasmic_reticulum -> 40, v_Nsp6 -> 27, v_FURIN -> 9, v_csa429_Host_translation_complex_complex_epithelial_cell -> 50, v_Camostat_mesylate_drug -> 4, v_Orf7a_rough_endoplasmic_reticulum -> 34, v_TMPRSS2 -> 41, v_Nsp3_4 -> 25, v_sa2025_Orf7a_SARS_CoV_2_virion -> 59, v_Orf7a____ss_sgmRNA_rna_epithelial_cell -> 32, v_E_ds_sgmRNA_rna -> 6, v_Nsp12 -> 19)
+p cnf 61 167
+-43 -48 5 0
+48 -5 0
+43 -5 0
+-5 -48 6 0
+48 -6 0
+5 -6 0
+-6 -11 7 0
+11 -7 0
+6 -7 0
+-43 -48 12 0
+48 -12 0
+43 -12 0
+-12 -48 13 0
+48 -13 0
+12 -13 0
+-13 -11 14 0
+11 -14 0
+13 -14 0
+-43 -48 16 0
+48 -16 0
+43 -16 0
+-16 -48 17 0
+48 -17 0
+16 -17 0
+-26 -53 18 0
+-54 -26 18 0
+54 53 -18 0
+26 -18 0
+-54 -26 19 0
+26 -19 0
+54 -19 0
+-54 -26 20 0
+26 -20 0
+54 -20 0
+-54 -26 21 0
+26 -21 0
+54 -21 0
+-54 -26 22 0
+26 -22 0
+54 -22 0
+-54 -26 23 0
+26 -23 0
+54 -23 0
+-53 24 0
+-54 24 0
+54 53 -24 0
+-53 25 0
+-54 25 0
+54 53 -25 0
+-53 26 0
+-54 26 0
+54 53 -26 0
+-26 -53 27 0
+-54 -26 27 0
+54 53 -27 0
+26 -27 0
+-26 -53 28 0
+-54 -26 28 0
+54 53 -28 0
+26 -28 0
+-26 -53 29 0
+-54 -26 29 0
+54 53 -29 0
+26 -29 0
+-26 -53 30 0
+-54 -26 30 0
+54 53 -30 0
+26 -30 0
+-7 -61 -14 31 -34 -45 0
+-59 -58 -36 -47 -14 31 0
+-59 -44 -58 -47 -14 31 0
+-59 -58 -47 -14 31 -60 0
+61 59 -31 0
+-31 61 60 44 36 0
+47 61 -31 0
+58 61 -31 0
+7 59 -31 0
+-31 60 44 7 36 0
+47 7 -31 0
+58 7 -31 0
+34 59 -31 0
+-31 60 34 44 36 0
+47 34 -31 0
+58 34 -31 0
+45 59 -31 0
+-31 60 45 44 36 0
+47 45 -31 0
+58 45 -31 0
+14 -31 0
+-43 -48 32 0
+48 -32 0
+43 -32 0
+-32 -48 33 0
+48 -33 0
+32 -33 0
+-33 -11 34 0
+11 -34 0
+33 -34 0
+-48 35 0
+-57 35 0
+57 48 -35 0
+-37 -15 36 0
+15 -36 0
+37 -36 0
+-41 -46 4 37 0
+-9 -46 4 37 0
+-4 -37 0
+46 -37 0
+9 41 -37 0
+-43 -48 38 0
+48 -38 0
+43 -38 0
+-38 -48 39 0
+48 -39 0
+38 -39 0
+-39 -11 40 0
+11 -40 0
+39 -40 0
+-52 42 0
+-31 42 0
+31 52 -42 0
+-42 -48 43 0
+48 -43 0
+42 -43 0
+-56 -40 -10 46 0
+10 -46 0
+40 -46 0
+56 -46 0
+-51 48 0
+-27 -22 -18 -23 -19 -30 -25 -20 -29 48 -21 -24 -28 0
+51 25 -48 0
+30 51 -48 0
+51 18 -48 0
+51 27 -48 0
+51 23 -48 0
+51 29 -48 0
+51 19 -48 0
+51 22 -48 0
+51 28 -48 0
+20 51 -48 0
+51 21 -48 0
+51 24 -48 0
+-35 -42 51 0
+42 -51 0
+35 -51 0
+-43 -48 52 0
+48 -52 0
+43 -52 0
+-42 -49 53 0
+49 -53 0
+42 -53 0
+-42 -49 54 0
+49 -54 0
+42 -54 0
+-31 57 0
+-17 -50 57 0
+50 31 -57 0
+17 31 -57 0
+-41 -46 4 60 0
+-9 -46 4 60 0
+-4 -60 0
+46 -60 0
+9 41 -60 0
+-3 -1 61 0
+-2 -1 61 0
+1 -61 0
+2 3 -61 0
++ exit_status=0
++ set +x
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.4ghaXH85Qe.cnf'
+c opening file to read '/tmp/tmp.4ghaXH85Qe.cnf'
+c found 'p cnf 61 167' header
+c parsed 167 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  167  59 97%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  167  59 97%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  167  59 97%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 -36 -37 -38 -39 -40
+v -41 -42 -43 -44 -45 -46 -47 -48 -49 -50 -51 -52 -53 -54 -55 -56 -57 -58 -59
+v -60 -61 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00   58.74% parse
+c         0.00   33.01% search
+c         0.00   32.04% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   47.69% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.12    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=123
++ wait 123
++ bdd_minisat_all_release /tmp/tmp.4ghaXH85Qe.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.4ghaXH85Qe.cnf
+variables         :           61
+cutwidth          :          124
+restarts          :            1
+conflicts         :           16           (      945 / sec      )
+decisions         :        15937           (   940958 / sec      )
+propagations      :        26826           (  1583870 / sec      )
+inspects          :        55014           (  3248155 / sec      )
+conflict literals :           36           (     0.00 % deleted  )
+cpu time (solve)  :         0.02 sec	
+refreshes         :            0
+|obdd|            :        54337
+cache hits        :         6392
+cache lookup      :        14367
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :      1048576
+# SAT SOLVE END
+
++ set +x
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_132.sbml"
+	User time (seconds): 2.55
+	System time (seconds): 0.32
+	Percent of CPU this job got: 71%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.05
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 324280
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 80725
+	Voluntary context switches: 4633
+	Involuntary context switches: 170
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.6s

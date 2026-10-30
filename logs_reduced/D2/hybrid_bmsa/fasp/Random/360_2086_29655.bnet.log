@@ -1,0 +1,4269 @@
+# Host: MSI
+# Start date: Tue Oct 27 07:09:00 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/Random/360_2086_29655.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-2819-231 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project/benchmarks/reduced/D2/Random:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 360_2086_29655.bnet
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --bnet /benchmark/360_2086_29655.bnet --cnf /tmp/tmp.Mhdlz5OGTN.cnf -h3
+
+Config(sbmlFileName = , bnetFileName = /benchmark/360_2086_29655.bnet, cnfFileName = /tmp/tmp.Mhdlz5OGTN.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1986), Set(x1958)))
+Some(Vector(Set(!x1958, !x1986)))
+(Set(x1986),Set(-344))
+(Set(x1958),Set(-19))
+(Set(!x1958, !x1986),Set(19, 344))
+
+Some(Vector(Set(!x832, x1810)))
+Some(Vector(Set(!x1810), Set(x832)))
+(Set(!x832, x1810),Set(126, -313))
+(Set(!x1810),Set(313))
+(Set(x832),Set(-126))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2017), Set(x1876, !x1950)))
+Some(Vector(Set(x1950, !x2017), Set(!x1876, !x2017)))
+(Set(x2017),Set(-311))
+(Set(x1876, !x1950),Set(-66, 69))
+(Set(x1950, !x2017),Set(-69, 311))
+(Set(!x1876, !x2017),Set(66, 311))
+
+Some(Vector(Set(x1817)))
+Some(Vector(Set(!x1839, !x1817), Set(!x1551, !x1817)))
+(Set(x1817),Set(-290))
+(Set(!x1839, !x1817),Set(189, 290))
+(Set(!x1551, !x1817),Set(244, 290))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1838, x1979, x1848), Set(x2063, x1541, x1848, x1814, x1979)))
+Some(Vector(Set(!x1979), Set(!x1848), Set(!x1814, !x1838), Set(!x1541, !x1838), Set(!x1838, !x2063)))
+(Set(x1838, x1979, x1848),Set(-196, -232, -352))
+(Set(x2063, x1541, x1848, x1814, x1979),Set(-232, -274, -352, -30, -61))
+(Set(!x1979),Set(232))
+(Set(!x1848),Set(352))
+(Set(!x1814, !x1838),Set(30, 196))
+(Set(!x1541, !x1838),Set(61, 196))
+(Set(!x1838, !x2063),Set(196, 274))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1074), Set(!x2062)))
+Some(Vector(Set(x2062, !x1074)))
+(Set(x1074),Set(-408))
+(Set(!x2062),Set(164))
+(Set(x2062, !x1074),Set(-164, 408))
+
+Some(Vector(Set(x1824), Set(!x1722)))
+Some(Vector(Set(x1722, !x1824)))
+(Set(x1824),Set(-55))
+(Set(!x1722),Set(320))
+(Set(x1722, !x1824),Set(-320, 55))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1315, !x1932, !x1792)))
+Some(Vector(Set(x1792), Set(x1932), Set(!x1315)))
+(Set(x1315, !x1932, !x1792),Set(-158, 1, 220))
+(Set(x1792),Set(-220))
+(Set(x1932),Set(-1))
+(Set(!x1315),Set(158))
+
+Some(Vector(Set(x1822), Set(x1474)))
+Some(Vector(Set(!x1474, !x1822)))
+(Set(x1822),Set(-183))
+(Set(x1474),Set(-2))
+(Set(!x1474, !x1822),Set(2, 183))
+
+Some(Vector(Set(x1910, !x1980), Set(x1895, !x1980), Set(x1814, !x1980)))
+Some(Vector(Set(x1980), Set(!x1814, !x1895, !x1910)))
+(Set(x1910, !x1980),Set(-8, 170))
+(Set(x1895, !x1980),Set(-119, 170))
+(Set(x1814, !x1980),Set(-30, 170))
+(Set(x1980),Set(-170))
+(Set(!x1814, !x1895, !x1910),Set(30, 119, 8))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x455), Set(x1958)))
+Some(Vector(Set(!x1958, !x455)))
+(Set(x455),Set(-342))
+(Set(x1958),Set(-19))
+(Set(!x1958, !x455),Set(19, 342))
+
+Some(Vector(Set(x1148, x1901)))
+Some(Vector(Set(!x1901), Set(!x1148)))
+(Set(x1148, x1901),Set(-5, -304))
+(Set(!x1901),Set(304))
+(Set(!x1148),Set(5))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1518, !x1814)))
+Some(Vector(Set(x1814), Set(!x1518)))
+(Set(x1518, !x1814),Set(-447, 30))
+(Set(x1814),Set(-30))
+(Set(!x1518),Set(447))
+
+Some(Vector(Set(x1756), Set(x1374), Set(x2016), Set(x1052), Set(x1239)))
+Some(Vector(Set(!x1239, !x1052, !x1756, !x2016, !x1374)))
+(Set(x1756),Set(-472))
+(Set(x1374),Set(-416))
+(Set(x2016),Set(-294))
+(Set(x1052),Set(-396))
+(Set(x1239),Set(-108))
+(Set(!x1239, !x1052, !x1756, !x2016, !x1374),Set(472, 416, 396, 108, 294))
+
+Some(Vector(Set(x2075), Set(!x646)))
+Some(Vector(Set(x646, !x2075)))
+(Set(x2075),Set(-33))
+(Set(!x646),Set(357))
+(Set(x646, !x2075),Set(-357, 33))
+
+Some(Vector(Set(x1709), Set(!x791), Set(x535)))
+Some(Vector(Set(!x535, x791, !x1709)))
+(Set(x1709),Set(-13))
+(Set(!x791),Set(384))
+(Set(x535),Set(-451))
+(Set(!x535, x791, !x1709),Set(451, -384, 13))
+
+Some(Vector(Set(!x2076, x2094)))
+Some(Vector(Set(!x2094), Set(x2076)))
+(Set(!x2076, x2094),Set(182, -75))
+(Set(!x2094),Set(75))
+(Set(x2076),Set(-182))
+
+Some(Vector(Set(x355, x1212, x899, x1706)))
+Some(Vector(Set(!x1706), Set(!x899), Set(!x1212), Set(!x355)))
+(Set(x355, x1212, x899, x1706),Set(-300, -22, -376, -463))
+(Set(!x1706),Set(463))
+(Set(!x899),Set(376))
+(Set(!x1212),Set(22))
+(Set(!x355),Set(300))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x438, x741, x1724)))
+Some(Vector(Set(!x1724), Set(!x741), Set(!x438)))
+(Set(x438, x741, x1724),Set(-250, -356, -434))
+(Set(!x1724),Set(434))
+(Set(!x741),Set(356))
+(Set(!x438),Set(250))
+
+Some(Vector(Set(x1571, x1822), Set(x1571, x1268), Set(x1571, x824), Set(x1571, x703)))
+Some(Vector(Set(!x1571), Set(!x1822, !x824, !x1268, !x703)))
+(Set(x1571, x1822),Set(-38, -183))
+(Set(x1571, x1268),Set(-38, -390))
+(Set(x1571, x824),Set(-38, -241))
+(Set(x1571, x703),Set(-38, -433))
+(Set(!x1571),Set(38))
+(Set(!x1822, !x824, !x1268, !x703),Set(183, 241, 390, 433))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1942), Set(x1814, !x1936)))
+Some(Vector(Set(x1936, !x1942), Set(!x1814, !x1942)))
+(Set(x1942),Set(-252))
+(Set(x1814, !x1936),Set(-30, 454))
+(Set(x1936, !x1942),Set(-454, 252))
+(Set(!x1814, !x1942),Set(30, 252))
+
+Some(Vector(Set(x1975), Set(x1877), Set(x1469), Set(!x939, !x1159, x799)))
+Some(Vector(Set(!x1469, x1159, !x1877, !x1975), Set(!x1469, x939, !x1877, !x1975), Set(!x1469, !x799, !x1877, !x1975)))
+(Set(x1975),Set(-321))
+(Set(x1877),Set(-242))
+(Set(x1469),Set(-18))
+(Set(!x939, !x1159, x799),Set(82, 85, -194))
+(Set(!x1469, x1159, !x1877, !x1975),Set(18, -85, 242, 321))
+(Set(!x1469, x939, !x1877, !x1975),Set(18, -82, 242, 321))
+(Set(!x1469, !x799, !x1877, !x1975),Set(18, 194, 242, 321))
+
+Some(Vector(Set(x1910, x1893), Set(x1910, x1876), Set(x1910, x1873, x1839), Set(x1910, !x1814, x1564, x1873)))
+Some(Vector(Set(!x1910), Set(!x1876, !x1873, !x1893), Set(!x1876, !x1564, !x1839, !x1893), Set(x1814, !x1876, !x1839, !x1893)))
+(Set(x1910, x1893),Set(-8, -462))
+(Set(x1910, x1876),Set(-8, -66))
+(Set(x1910, x1873, x1839),Set(-8, -147, -189))
+(Set(x1910, !x1814, x1564, x1873),Set(-8, 30, -128, -147))
+(Set(!x1910),Set(8))
+(Set(!x1876, !x1873, !x1893),Set(66, 147, 462))
+(Set(!x1876, !x1564, !x1839, !x1893),Set(66, 128, 189, 462))
+(Set(x1814, !x1876, !x1839, !x1893),Set(-30, 66, 189, 462))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1265, !x1895)))
+Some(Vector(Set(x1895), Set(!x1265)))
+(Set(x1265, !x1895),Set(-397, 119))
+(Set(x1895),Set(-119))
+(Set(!x1265),Set(397))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1212, !x1528), Set(!x1528, x1507), Set(!x1528, !x703), Set(!x1528, x1106), Set(!x1070, !x1528)))
+Some(Vector(Set(x1528), Set(x1070, !x1106, x703, !x1212, !x1507)))
+(Set(x1212, !x1528),Set(-22, 348))
+(Set(!x1528, x1507),Set(348, -431))
+(Set(!x1528, !x703),Set(348, 433))
+(Set(!x1528, x1106),Set(348, -359))
+(Set(!x1070, !x1528),Set(197, 348))
+(Set(x1528),Set(-348))
+(Set(x1070, !x1106, x703, !x1212, !x1507),Set(-433, 22, 431, 359, -197))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1824), Set(x548)))
+Some(Vector(Set(!x548, !x1824)))
+(Set(x1824),Set(-55))
+(Set(x548),Set(-42))
+(Set(!x548, !x1824),Set(42, 55))
+
+Some(Vector(Set(x1955, !x1822, !x455), Set(x1955, !x1808, x1760, !x455), Set(x1690, x1955, !x1808, !x455), Set(!x455, x1955, x1508, x1518, !x1808), Set(!x1389, !x455, x1955, x1518, !x1808), Set(x922, x901, !x455, x1955, x216, x657, x1518, !x1808)))
+Some(Vector(Set(!x1955), Set(x455), Set(x1808, x1822), Set(!x1690, x1822, !x1760, !x1518), Set(x1389, x1822, !x922, !x1760, !x1508, !x1690), Set(!x901, x1389, x1822, !x1760, !x1508, !x1690), Set(!x216, x1389, x1822, !x1760, !x1508, !x1690), Set(!x657, x1389, x1822, !x1760, !x1508, !x1690)))
+(Set(x1955, !x1822, !x455),Set(-95, 183, 342))
+(Set(x1955, !x1808, x1760, !x455),Set(-95, 171, -224, 342))
+(Set(x1690, x1955, !x1808, !x455),Set(-46, -95, 171, 342))
+(Set(!x455, x1955, x1508, x1518, !x1808),Set(-3, -95, -447, 342, 171))
+(Set(!x1389, !x455, x1955, x1518, !x1808),Set(-95, 201, -447, 342, 171))
+(Set(x922, x901, !x455, x1955, x216, x657, x1518, !x1808),Set(-263, -95, -447, -395, 342, 171, -317, -361))
+(Set(!x1955),Set(95))
+(Set(x455),Set(-342))
+(Set(x1808, x1822),Set(-171, -183))
+(Set(!x1690, x1822, !x1760, !x1518),Set(46, -183, 224, 447))
+(Set(x1389, x1822, !x922, !x1760, !x1508, !x1690),Set(46, 224, -183, 3, 263, -201))
+(Set(!x901, x1389, x1822, !x1760, !x1508, !x1690),Set(46, 224, 317, -183, 3, -201))
+(Set(!x216, x1389, x1822, !x1760, !x1508, !x1690),Set(46, 224, -183, 3, -201, 395))
+(Set(!x657, x1389, x1822, !x1760, !x1508, !x1690),Set(46, 361, 224, -183, 3, -201))
+
+Some(Vector(Set(x962, x1599, x2031, !x2049)))
+Some(Vector(Set(x2049), Set(!x2031), Set(!x1599), Set(!x962)))
+(Set(x962, x1599, x2031, !x2049),Set(-153, -430, -436, 247))
+(Set(x2049),Set(-247))
+(Set(!x2031),Set(436))
+(Set(!x1599),Set(430))
+(Set(!x962),Set(153))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1609, x1921)))
+Some(Vector(Set(!x1921), Set(!x1609)))
+(Set(x1609, x1921),Set(-54, -47))
+(Set(!x1921),Set(47))
+(Set(!x1609),Set(54))
+
+Some(Vector(Set(x1958, !x508), Set(x2039, !x508)))
+Some(Vector(Set(x508), Set(!x2039, !x1958)))
+(Set(x1958, !x508),Set(-19, 198))
+(Set(x2039, !x508),Set(-145, 198))
+(Set(x508),Set(-198))
+(Set(!x2039, !x1958),Set(145, 19))
+
+Some(Vector(Set(x2053), Set(x2017), Set(x1958), Set(x1950, x1810), Set(x1950, x425, !x1797), Set(x1950, x1703, !x1797)))
+Some(Vector(Set(!x1958, !x1950, !x2017, !x2053), Set(!x2017, !x1810, x1797, !x1958, !x2053), Set(!x2017, !x1810, !x1703, !x1958, !x2053, !x425)))
+(Set(x2053),Set(-399))
+(Set(x2017),Set(-311))
+(Set(x1958),Set(-19))
+(Set(x1950, x1810),Set(-69, -313))
+(Set(x1950, x425, !x1797),Set(-69, -116, 437))
+(Set(x1950, x1703, !x1797),Set(-69, -360, 437))
+(Set(!x1958, !x1950, !x2017, !x2053),Set(19, 69, 311, 399))
+(Set(!x2017, !x1810, x1797, !x1958, !x2053),Set(-437, 311, 313, 399, 19))
+(Set(!x2017, !x1810, !x1703, !x1958, !x2053, !x425),Set(116, 360, 311, 313, 399, 19))
+
+Some(Vector(Set(x1402, !x425, !x1822), Set(x862, !x425, !x1822), Set(x1950, !x425, x854, !x1822)))
+Some(Vector(Set(x1822), Set(x425), Set(!x1402, !x862, !x854), Set(!x1402, !x1950, !x862)))
+(Set(x1402, !x425, !x1822),Set(-23, 116, 183))
+(Set(x862, !x425, !x1822),Set(-97, 116, 183))
+(Set(x1950, !x425, x854, !x1822),Set(-69, 116, -122, 183))
+(Set(x1822),Set(-183))
+(Set(x425),Set(-116))
+(Set(!x1402, !x862, !x854),Set(23, 97, 122))
+(Set(!x1402, !x1950, !x862),Set(23, 69, 97))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1945, !x1986, !x2088), Set(!x1910, !x1986, !x2088)))
+Some(Vector(Set(x2088), Set(x1986), Set(x1910, !x1945)))
+(Set(x1945, !x1986, !x2088),Set(-287, 344, 372))
+(Set(!x1910, !x1986, !x2088),Set(8, 344, 372))
+(Set(x2088),Set(-372))
+(Set(x1986),Set(-344))
+(Set(x1910, !x1945),Set(-8, 287))
+
+Some(Vector(Set(!x2063), Set(x548, x1808), Set(x1469, x1808)))
+Some(Vector(Set(!x1808, x2063), Set(!x1469, !x548, x2063)))
+(Set(!x2063),Set(274))
+(Set(x548, x1808),Set(-42, -171))
+(Set(x1469, x1808),Set(-18, -171))
+(Set(!x1808, x2063),Set(171, -274))
+(Set(!x1469, !x548, x2063),Set(18, 42, -274))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1709, x1394), Set(!x548, x1394), Set(x1760, x1394), Set(x1770, x1394), Set(x1921, x1564, x1394), Set(x1564, x1822, x1394), Set(x1653, x1394)))
+Some(Vector(Set(!x1394), Set(!x1709, !x1653, !x1770, !x1760, !x1564, x548), Set(!x1921, !x1709, !x1653, !x1770, !x1760, !x1822, x548)))
+(Set(x1709, x1394),Set(-13, -325))
+(Set(!x548, x1394),Set(42, -325))
+(Set(x1760, x1394),Set(-224, -325))
+(Set(x1770, x1394),Set(-276, -325))
+(Set(x1921, x1564, x1394),Set(-47, -128, -325))
+(Set(x1564, x1822, x1394),Set(-128, -183, -325))
+(Set(x1653, x1394),Set(-136, -325))
+(Set(!x1394),Set(325))
+(Set(!x1709, !x1653, !x1770, !x1760, !x1564, x548),Set(276, 224, 13, 128, -42, 136))
+(Set(!x1921, !x1709, !x1653, !x1770, !x1760, !x1822, x548),Set(276, 224, 13, -42, 183, 136, 47))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1856), Set(!x450, x810)))
+Some(Vector(Set(!x810, !x1856), Set(x450, !x1856)))
+(Set(x1856),Set(-322))
+(Set(!x450, x810),Set(150, -212))
+(Set(!x810, !x1856),Set(212, 322))
+(Set(x450, !x1856),Set(-150, 322))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x1746, x1824)))
+Some(Vector(Set(!x1824), Set(x1746)))
+(Set(!x1746, x1824),Set(404, -55))
+(Set(!x1824),Set(55))
+(Set(x1746),Set(-404))
+
+Some(Vector(Set(x1910, x2088), Set(x1822, x2088, !x703), Set(x1814, x1628, x2088, !x703), Set(x1564, x2088, !x703, x1814, x1476), Set(x1564, x2088, !x703, x1814, x1469), Set(x1564, x1361, x2088, !x703, x1814)))
+Some(Vector(Set(!x2088), Set(!x1910, x703), Set(!x1910, !x1814, !x1822), Set(!x1910, !x1564, !x1822, !x1628), Set(!x1476, !x1628, !x1469, !x1361, !x1822, !x1910)))
+(Set(x1910, x2088),Set(-8, -372))
+(Set(x1822, x2088, !x703),Set(-183, -372, 433))
+(Set(x1814, x1628, x2088, !x703),Set(-30, -278, -372, 433))
+(Set(x1564, x2088, !x703, x1814, x1476),Set(-128, -30, -372, -461, 433))
+(Set(x1564, x2088, !x703, x1814, x1469),Set(-128, -18, -30, -372, 433))
+(Set(x1564, x1361, x2088, !x703, x1814),Set(-128, -30, -372, -117, 433))
+(Set(!x2088),Set(372))
+(Set(!x1910, x703),Set(8, -433))
+(Set(!x1910, !x1814, !x1822),Set(8, 30, 183))
+(Set(!x1910, !x1564, !x1822, !x1628),Set(8, 128, 183, 278))
+(Set(!x1476, !x1628, !x1469, !x1361, !x1822, !x1910),Set(117, 461, 278, 18, 8, 183))
+
+Some(Vector(Set(x922, x1822)))
+Some(Vector(Set(!x1822), Set(!x922)))
+(Set(x922, x1822),Set(-263, -183))
+(Set(!x1822),Set(183))
+(Set(!x922),Set(263))
+
+Some(Vector(Set(x2051), Set(!x548)))
+Some(Vector(Set(x548, !x2051)))
+(Set(x2051),Set(-168))
+(Set(!x548),Set(42))
+(Set(x548, !x2051),Set(-42, 168))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1979), Set(x804)))
+Some(Vector(Set(!x804, !x1979)))
+(Set(x1979),Set(-232))
+(Set(x804),Set(-377))
+(Set(!x804, !x1979),Set(377, 232))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1709), Set(x197)))
+Some(Vector(Set(!x197, !x1709)))
+(Set(x1709),Set(-13))
+(Set(x197),Set(-326))
+(Set(!x197, !x1709),Set(326, 13))
+
+Some(Vector(Set(x962), Set(x1401)))
+Some(Vector(Set(!x1401, !x962)))
+(Set(x962),Set(-153))
+(Set(x1401),Set(-204))
+(Set(!x1401, !x962),Set(204, 153))
+
+Some(Vector(Set(x1760), Set(x1541)))
+Some(Vector(Set(!x1541, !x1760)))
+(Set(x1760),Set(-224))
+(Set(x1541),Set(-61))
+(Set(!x1541, !x1760),Set(61, 224))
+
+Some(Vector(Set(!x1774, x455, x1950)))
+Some(Vector(Set(!x1950), Set(!x455), Set(x1774)))
+(Set(!x1774, x455, x1950),Set(401, -342, -69))
+(Set(!x1950),Set(69))
+(Set(!x455),Set(342))
+(Set(x1774),Set(-401))
+
+Some(Vector(Set(x1822, x1877)))
+Some(Vector(Set(!x1877), Set(!x1822)))
+(Set(x1822, x1877),Set(-183, -242))
+(Set(!x1877),Set(242))
+(Set(!x1822),Set(183))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1824), Set(x2017), Set(x1817, !x455), Set(x2094, !x455), Set(x1958, !x455, x1330)))
+Some(Vector(Set(!x1824, !x2017, x455), Set(!x2094, !x2017, !x1330, !x1817, !x1824), Set(!x2094, !x2017, !x1958, !x1817, !x1824)))
+(Set(x1824),Set(-55))
+(Set(x2017),Set(-311))
+(Set(x1817, !x455),Set(-290, 342))
+(Set(x2094, !x455),Set(-75, 342))
+(Set(x1958, !x455, x1330),Set(-19, 342, -371))
+(Set(!x1824, !x2017, x455),Set(55, 311, -342))
+(Set(!x2094, !x2017, !x1330, !x1817, !x1824),Set(371, 311, 55, 75, 290))
+(Set(!x2094, !x2017, !x1958, !x1817, !x1824),Set(311, 55, 75, 290, 19))
+
+Some(Vector(Set(x1386, !x1132, x1265), Set(!x1939), Set(!x1876), Set(!x1743), Set(x1401), Set(x1513)))
+Some(Vector(Set(x1876, x1743, !x1513, x1939, !x1401, !x1386), Set(x1876, x1743, !x1513, x1939, !x1265, !x1401), Set(x1876, x1743, !x1513, x1939, !x1401, x1132)))
+(Set(x1386, !x1132, x1265),Set(-226, 298, -397))
+(Set(!x1939),Set(161))
+(Set(!x1876),Set(66))
+(Set(!x1743),Set(162))
+(Set(x1401),Set(-204))
+(Set(x1513),Set(-180))
+(Set(x1876, x1743, !x1513, x1939, !x1401, !x1386),Set(-66, -162, 180, 204, 226, -161))
+(Set(x1876, x1743, !x1513, x1939, !x1265, !x1401),Set(-66, -162, 397, 180, 204, -161))
+(Set(x1876, x1743, !x1513, x1939, !x1401, x1132),Set(-66, -162, 180, 204, -298, -161))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1932, x1945, x2030)))
+Some(Vector(Set(!x2030), Set(!x1945), Set(!x1932)))
+(Set(x1932, x1945, x2030),Set(-1, -287, -314))
+(Set(!x2030),Set(314))
+(Set(!x1945),Set(287))
+(Set(!x1932),Set(1))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2004), Set(x1958)))
+Some(Vector(Set(!x1958, !x2004)))
+(Set(x2004),Set(-15))
+(Set(x1958),Set(-19))
+(Set(!x1958, !x2004),Set(19, 15))
+
+Some(Vector(Set(x1817), Set(!x1774), Set(x1017)))
+Some(Vector(Set(!x1017, x1774, !x1817)))
+(Set(x1817),Set(-290))
+(Set(!x1774),Set(401))
+(Set(x1017),Set(-443))
+(Set(!x1017, x1774, !x1817),Set(443, -401, 290))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x703, x897), Set(x1760, x897), Set(x1239, x897)))
+Some(Vector(Set(!x897), Set(!x1239, !x1760, x703)))
+(Set(!x703, x897),Set(433, -230))
+(Set(x1760, x897),Set(-224, -230))
+(Set(x1239, x897),Set(-108, -230))
+(Set(!x897),Set(230))
+(Set(!x1239, !x1760, x703),Set(108, 224, -433))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2086, !x2057)))
+Some(Vector(Set(x2057), Set(!x2086)))
+(Set(x2086, !x2057),Set(-50, 424))
+(Set(x2057),Set(-424))
+(Set(!x2086),Set(50))
+
+Some(Vector(Set(!x455, !x2012)))
+Some(Vector(Set(x2012), Set(x455)))
+(Set(!x455, !x2012),Set(342, 296))
+(Set(x2012),Set(-296))
+(Set(x455),Set(-342))
+
+Some(Vector(Set(!x1997), Set(x1955), Set(!x455, x1563, x1300, x1792, x1808), Set(x1139, !x455, x1563, x1792, x1808), Set(!x455, x1563, x1541, x1792, x1808, x962), Set(!x455, x1563, x1541, x1106, x1792, x1808), Set(!x455, x1563, x1541, !x798, x1792, x1808), Set(!x455, x1890, x1563, x703, x1541, x1792, x1808), Set(!x455, x1563, x703, x1541, x2030, x1792, x1808), Set(x901, !x455, x1563, x1541, x1792, x1808)))
+Some(Vector(Set(!x1955, !x1808, x1997), Set(!x1955, !x1792, x1997), Set(!x1563, !x1955, x1997), Set(!x1955, x1997, x455), Set(!x1300, !x1955, !x1541, x1997, !x1139), Set(!x1300, x798, !x1955, x1997, !x901, !x1106, !x962, !x703, !x1139), Set(!x1300, x798, !x1890, !x1955, !x2030, x1997, !x901, !x1106, !x962, !x1139)))
+(Set(!x1997),Set(339))
+(Set(x1955),Set(-95))
+(Set(!x455, x1563, x1300, x1792, x1808),Set(-271, -171, 342, -21, -220))
+(Set(x1139, !x455, x1563, x1792, x1808),Set(-338, -171, 342, -21, -220))
+(Set(!x455, x1563, x1541, x1792, x1808, x962),Set(-171, -153, 342, -61, -21, -220))
+(Set(!x455, x1563, x1541, x1106, x1792, x1808),Set(-359, -171, 342, -61, -21, -220))
+(Set(!x455, x1563, x1541, !x798, x1792, x1808),Set(-171, 130, 342, -61, -21, -220))
+(Set(!x455, x1890, x1563, x703, x1541, x1792, x1808),Set(-433, -171, 342, -61, -21, -65, -220))
+(Set(!x455, x1563, x703, x1541, x2030, x1792, x1808),Set(-433, -314, -171, 342, -61, -21, -220))
+(Set(x901, !x455, x1563, x1541, x1792, x1808),Set(-171, 342, -61, -21, -317, -220))
+(Set(!x1955, !x1808, x1997),Set(95, 171, -339))
+(Set(!x1955, !x1792, x1997),Set(95, 220, -339))
+(Set(!x1563, !x1955, x1997),Set(21, 95, -339))
+(Set(!x1955, x1997, x455),Set(95, -339, -342))
+(Set(!x1300, !x1955, !x1541, x1997, !x1139),Set(61, 271, 95, 338, -339))
+(Set(!x1300, x798, !x1955, x1997, !x901, !x1106, !x962, !x703, !x1139),Set(153, -130, 317, 271, 95, 338, 359, 433, -339))
+(Set(!x1300, x798, !x1890, !x1955, !x2030, x1997, !x901, !x1106, !x962, !x1139),Set(153, -130, 65, 317, 271, 95, 338, 359, 314, -339))
+
+Some(Vector(Set(x548, !x455, !x703), Set(x1564, x1809, !x455, x1577, x1760, x548), Set(x1564, x1809, !x455, x1760, x1709, x548)))
+Some(Vector(Set(!x548), Set(x455), Set(!x1564, x703), Set(!x1809, x703), Set(!x1760, x703), Set(!x1709, !x1577, x703)))
+(Set(x548, !x455, !x703),Set(-42, 342, 433))
+(Set(x1564, x1809, !x455, x1577, x1760, x548),Set(-128, -224, -42, 342, -411, -293))
+(Set(x1564, x1809, !x455, x1760, x1709, x548),Set(-128, -224, -42, 342, -293, -13))
+(Set(!x548),Set(42))
+(Set(x455),Set(-342))
+(Set(!x1564, x703),Set(128, -433))
+(Set(!x1809, x703),Set(293, -433))
+(Set(!x1760, x703),Set(224, -433))
+(Set(!x1709, !x1577, x703),Set(13, 411, -433))
+
+Some(Vector(Set(x197), Set(x413)))
+Some(Vector(Set(!x413, !x197)))
+(Set(x197),Set(-326))
+(Set(x413),Set(-315))
+(Set(!x413, !x197),Set(315, 326))
+
+Some(Vector(Set(x2047, x2052), Set(x2047, x1404, x586, x804)))
+Some(Vector(Set(!x2047), Set(!x1404, !x2052), Set(!x2052, !x804), Set(!x2052, !x586)))
+(Set(x2047, x2052),Set(-16, -260))
+(Set(x2047, x1404, x586, x804),Set(-16, -256, -265, -377))
+(Set(!x2047),Set(16))
+(Set(!x1404, !x2052),Set(256, 260))
+(Set(!x2052, !x804),Set(260, 377))
+(Set(!x2052, !x586),Set(260, 265))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x438, x849, !x703)))
+Some(Vector(Set(x703), Set(!x849), Set(!x438)))
+(Set(x438, x849, !x703),Set(-250, -60, 433))
+(Set(x703),Set(-433))
+(Set(!x849),Set(60))
+(Set(!x438),Set(250))
+
+Some(Vector(Set(x1808), Set(x1289, x1300), Set(x1300, x1052), Set(!x1219, x1300, x10, x1017)))
+Some(Vector(Set(!x1808, !x1300), Set(!x1289, !x1808, !x1052, !x1017), Set(!x1289, x1219, !x1808, !x1052), Set(!x1289, !x1808, !x1052, !x10)))
+(Set(x1808),Set(-171))
+(Set(x1289, x1300),Set(-72, -271))
+(Set(x1300, x1052),Set(-271, -396))
+(Set(!x1219, x1300, x10, x1017),Set(104, -271, -427, -443))
+(Set(!x1808, !x1300),Set(171, 271))
+(Set(!x1289, !x1808, !x1052, !x1017),Set(72, 171, 396, 443))
+(Set(!x1289, x1219, !x1808, !x1052),Set(72, -104, 171, 396))
+(Set(!x1289, !x1808, !x1052, !x10),Set(72, 171, 396, 427))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1979, x1722), Set(x1979, x1518), Set(!x666, x1979, x518, !x1746)))
+Some(Vector(Set(!x1979), Set(!x1722, x1746, !x1518), Set(x666, !x1722, !x1518), Set(!x1722, !x518, !x1518)))
+(Set(x1979, x1722),Set(-232, -320))
+(Set(x1979, x1518),Set(-232, -447))
+(Set(!x666, x1979, x518, !x1746),Set(149, -232, -349, 404))
+(Set(!x1979),Set(232))
+(Set(!x1722, x1746, !x1518),Set(320, -404, 447))
+(Set(x666, !x1722, !x1518),Set(-149, 320, 447))
+(Set(!x1722, !x518, !x1518),Set(320, 349, 447))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x1052), Set(!x1017)))
+Some(Vector(Set(x1017, x1052)))
+(Set(!x1052),Set(396))
+(Set(!x1017),Set(443))
+(Set(x1017, x1052),Set(-443, -396))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x455), Set(x698, x1033, x535), Set(x698, x133, x1033, x518)))
+Some(Vector(Set(!x1033, x455), Set(!x698, x455), Set(x455, !x518, !x535), Set(!x133, x455, !x535)))
+(Set(!x455),Set(342))
+(Set(x698, x1033, x535),Set(-127, -341, -451))
+(Set(x698, x133, x1033, x518),Set(-127, -225, -341, -349))
+(Set(!x1033, x455),Set(341, -342))
+(Set(!x698, x455),Set(127, -342))
+(Set(x455, !x518, !x535),Set(-342, 349, 451))
+(Set(!x133, x455, !x535),Set(225, -342, 451))
+
+Some(Vector(Set(!x2027), Set(x1967), Set(!x1890)))
+Some(Vector(Set(x1890, !x1967, x2027)))
+(Set(!x2027),Set(302))
+(Set(x1967),Set(-305))
+(Set(!x1890),Set(65))
+(Set(x1890, !x1967, x2027),Set(-65, 305, -302))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1784, x2049), Set(x630, x639, x2049)))
+Some(Vector(Set(!x2049), Set(!x639, !x1784), Set(!x630, !x1784)))
+(Set(x1784, x2049),Set(-211, -247))
+(Set(x630, x639, x2049),Set(-109, -340, -247))
+(Set(!x2049),Set(247))
+(Set(!x639, !x1784),Set(340, 211))
+(Set(!x630, !x1784),Set(109, 211))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1876), Set(x1838)))
+Some(Vector(Set(!x1838, !x1876)))
+(Set(x1876),Set(-66))
+(Set(x1838),Set(-196))
+(Set(!x1838, !x1876),Set(196, 66))
+
+Some(Vector(Set(x548, !x455, !x703, x1017), Set(!x1807, x548, !x455, x1017)))
+Some(Vector(Set(!x548), Set(!x1017), Set(x455), Set(x1807, x703)))
+(Set(x548, !x455, !x703, x1017),Set(-42, 342, 433, -443))
+(Set(!x1807, x548, !x455, x1017),Set(28, -42, 342, -443))
+(Set(!x548),Set(42))
+(Set(!x1017),Set(443))
+(Set(x455),Set(-342))
+(Set(x1807, x703),Set(-28, -433))
+
+Some(Vector(Set(x1950, x1979, x2049), Set(x1921, x1979, x2049)))
+Some(Vector(Set(!x2049), Set(!x1979), Set(!x1921, !x1950)))
+(Set(x1950, x1979, x2049),Set(-69, -232, -247))
+(Set(x1921, x1979, x2049),Set(-47, -232, -247))
+(Set(!x2049),Set(247))
+(Set(!x1979),Set(232))
+(Set(!x1921, !x1950),Set(47, 69))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1582, x2029), Set(x1512, x2029), Set(x1169, x1009, x2029)))
+Some(Vector(Set(!x2029), Set(!x1582, !x1169, !x1512), Set(!x1582, !x1512, !x1009)))
+(Set(x1582, x2029),Set(-79, -329))
+(Set(x1512, x2029),Set(-291, -329))
+(Set(x1169, x1009, x2029),Set(-190, -306, -329))
+(Set(!x2029),Set(329))
+(Set(!x1582, !x1169, !x1512),Set(79, 190, 291))
+(Set(!x1582, !x1512, !x1009),Set(79, 291, 306))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x1738, x1808, !x1809)))
+Some(Vector(Set(x1809), Set(!x1808), Set(x1738)))
+(Set(!x1738, x1808, !x1809),Set(176, -171, 293))
+(Set(x1809),Set(-293))
+(Set(!x1808),Set(171))
+(Set(x1738),Set(-176))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1709, x1820, !x2017)))
+Some(Vector(Set(x2017), Set(!x1820), Set(!x1709)))
+(Set(x1709, x1820, !x2017),Set(-13, -381, 311))
+(Set(x2017),Set(-311))
+(Set(!x1820),Set(381))
+(Set(!x1709),Set(13))
+
+Some(Vector(Set(x1983), Set(x1910), Set(x1908)))
+Some(Vector(Set(!x1908, !x1910, !x1983)))
+(Set(x1983),Set(-468))
+(Set(x1910),Set(-8))
+(Set(x1908),Set(-6))
+(Set(!x1908, !x1910, !x1983),Set(6, 8, 468))
+
+Some(Vector(Set(x998, x1333, x2079), Set(x729, x1333, x2079)))
+Some(Vector(Set(!x2079), Set(!x1333), Set(!x729, !x998)))
+(Set(x998, x1333, x2079),Set(-319, -297, -118))
+(Set(x729, x1333, x2079),Set(-251, -297, -118))
+(Set(!x2079),Set(118))
+(Set(!x1333),Set(297))
+(Set(!x729, !x998),Set(251, 319))
+
+Some(Vector(Set(!x194, x1718), Set(x149, x1718)))
+Some(Vector(Set(!x1718), Set(!x149, x194)))
+(Set(!x194, x1718),Set(205, -299))
+(Set(x149, x1718),Set(-415, -299))
+(Set(!x1718),Set(299))
+(Set(!x149, x194),Set(415, -205))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x1866, !x1950, x2031)))
+Some(Vector(Set(!x2031), Set(x1950), Set(x1866)))
+(Set(!x1866, !x1950, x2031),Set(202, 69, -436))
+(Set(!x2031),Set(436))
+(Set(x1950),Set(-69))
+(Set(x1866),Set(-202))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1939, x2049), Set(x2049, x1813), Set(x2060, x2049, x1052), Set(x2060, x1866, x2049, !x1518), Set(x2060, x832, x1866, x2049), Set(x2063, x2060, x1866, x757, x2049)))
+Some(Vector(Set(!x2049), Set(!x2060, !x1939, !x1813), Set(!x1939, !x1866, !x1052, !x1813), Set(!x1813, !x757, !x1052, !x832, !x1939, x1518), Set(!x1813, !x1052, !x2063, !x832, !x1939, x1518)))
+(Set(x1939, x2049),Set(-161, -247))
+(Set(x2049, x1813),Set(-247, -425))
+(Set(x2060, x2049, x1052),Set(-31, -247, -396))
+(Set(x2060, x1866, x2049, !x1518),Set(-31, -202, -247, 447))
+(Set(x2060, x832, x1866, x2049),Set(-31, -126, -202, -247))
+(Set(x2063, x2060, x1866, x757, x2049),Set(-274, -31, -247, -202, -253))
+(Set(!x2049),Set(247))
+(Set(!x2060, !x1939, !x1813),Set(31, 161, 425))
+(Set(!x1939, !x1866, !x1052, !x1813),Set(161, 202, 396, 425))
+(Set(!x1813, !x757, !x1052, !x832, !x1939, x1518),Set(253, 396, -447, 425, 161, 126))
+(Set(!x1813, !x1052, !x2063, !x832, !x1939, x1518),Set(396, -447, 425, 161, 274, 126))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1822, x2055), Set(!x1266, x1276, x2055)))
+Some(Vector(Set(!x2055), Set(!x1276, !x1822), Set(x1266, !x1822)))
+(Set(x1822, x2055),Set(-183, -272))
+(Set(!x1266, x1276, x2055),Set(219, -392, -272))
+(Set(!x2055),Set(272))
+(Set(!x1276, !x1822),Set(392, 183))
+(Set(x1266, !x1822),Set(-219, 183))
+
+Some(Vector(Set(!x1709, !x1838, !x1945), Set(!x548, !x1838, !x1945), Set(!x1838, !x1945, x1599), Set(!x1838, !x1945, !x1598)))
+Some(Vector(Set(x1945), Set(x1838), Set(x1709, x548, x1598, !x1599)))
+(Set(!x1709, !x1838, !x1945),Set(13, 196, 287))
+(Set(!x548, !x1838, !x1945),Set(42, 196, 287))
+(Set(!x1838, !x1945, x1599),Set(196, 287, -430))
+(Set(!x1838, !x1945, !x1598),Set(196, 287, 323))
+(Set(x1945),Set(-287))
+(Set(x1838),Set(-196))
+(Set(x1709, x548, x1598, !x1599),Set(-13, -42, -323, 430))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2060, x1824), Set(x2060, x1811), Set(x2060, x1859), Set(x2060, x1939), Set(x2060, !x2017), Set(x2060, x2012)))
+Some(Vector(Set(!x2060), Set(x2017, !x2012, !x1859, !x1811, !x1939, !x1824)))
+(Set(x2060, x1824),Set(-31, -55))
+(Set(x2060, x1811),Set(-31, -203))
+(Set(x2060, x1859),Set(-31, -418))
+(Set(x2060, x1939),Set(-31, -161))
+(Set(x2060, !x2017),Set(-31, 311))
+(Set(x2060, x2012),Set(-31, -296))
+(Set(!x2060),Set(31))
+(Set(x2017, !x2012, !x1859, !x1811, !x1939, !x1824),Set(161, 296, 203, 55, 418, -311))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x547), Set(x438), Set(x1950)))
+Some(Vector(Set(!x1950, !x438, x547)))
+(Set(!x547),Set(334))
+(Set(x438),Set(-250))
+(Set(x1950),Set(-69))
+(Set(!x1950, !x438, x547),Set(69, 250, -334))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1890), Set(x1628), Set(x1052)))
+Some(Vector(Set(!x1052, !x1628, !x1890)))
+(Set(x1890),Set(-65))
+(Set(x1628),Set(-278))
+(Set(x1052),Set(-396))
+(Set(!x1052, !x1628, !x1890),Set(396, 278, 65))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2075), Set(!x122, !x897, x1528)))
+Some(Vector(Set(!x1528, !x2075), Set(x897, !x2075), Set(x122, !x2075)))
+(Set(x2075),Set(-33))
+(Set(!x122, !x897, x1528),Set(228, 230, -348))
+(Set(!x1528, !x2075),Set(348, 33))
+(Set(x897, !x2075),Set(-230, 33))
+(Set(x122, !x2075),Set(-228, 33))
+
+Some(Vector(Set(x1809, x1932)))
+Some(Vector(Set(!x1932), Set(!x1809)))
+(Set(x1809, x1932),Set(-293, -1))
+(Set(!x1932),Set(1))
+(Set(!x1809),Set(293))
+
+Some(Vector(Set(x2027), Set(x1921, x1979), Set(x1979, !x455), Set(x1979, x1849)))
+Some(Vector(Set(!x1979, !x2027), Set(!x1921, !x1849, !x2027, x455)))
+(Set(x2027),Set(-302))
+(Set(x1921, x1979),Set(-47, -232))
+(Set(x1979, !x455),Set(-232, 342))
+(Set(x1979, x1849),Set(-232, -269))
+(Set(!x1979, !x2027),Set(232, 302))
+(Set(!x1921, !x1849, !x2027, x455),Set(47, 269, 302, -342))
+
+Some(Vector(Set(x727), Set(x132, x137, x548)))
+Some(Vector(Set(!x548, !x727), Set(!x137, !x727), Set(!x132, !x727)))
+(Set(x727),Set(-135))
+(Set(x132, x137, x548),Set(-132, -318, -42))
+(Set(!x548, !x727),Set(42, 135))
+(Set(!x137, !x727),Set(318, 135))
+(Set(!x132, !x727),Set(132, 135))
+
+Some(Vector(Set(x1096, x2086)))
+Some(Vector(Set(!x2086), Set(!x1096)))
+(Set(x1096, x2086),Set(-373, -50))
+(Set(!x2086),Set(50))
+(Set(!x1096),Set(373))
+
+Some(Vector(Set(x2017, x2047, x2063, x1910, x2055), Set(x2017, x2047, x2063, x1942, x1881, x2055)))
+Some(Vector(Set(!x2063), Set(!x2047), Set(!x1910, !x1942), Set(!x1910, !x1881), Set(!x2017), Set(!x2055)))
+(Set(x2017, x2047, x2063, x1910, x2055),Set(-274, -8, -272, -16, -311))
+(Set(x2017, x2047, x2063, x1942, x1881, x2055),Set(-274, -272, -336, -16, -252, -311))
+(Set(!x2063),Set(274))
+(Set(!x2047),Set(16))
+(Set(!x1910, !x1942),Set(8, 252))
+(Set(!x1910, !x1881),Set(8, 336))
+(Set(!x2017),Set(311))
+(Set(!x2055),Set(272))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2051), Set(!x1315)))
+Some(Vector(Set(x1315, !x2051)))
+(Set(x2051),Set(-168))
+(Set(!x1315),Set(158))
+(Set(x1315, !x2051),Set(-158, 168))
+
+Some(Vector(Set(!x2047), Set(x1567, x1599)))
+Some(Vector(Set(!x1599, x2047), Set(!x1567, x2047)))
+(Set(!x2047),Set(16))
+(Set(x1567, x1599),Set(-231, -430))
+(Set(!x1599, x2047),Set(430, -16))
+(Set(!x1567, x2047),Set(231, -16))
+
+Some(Vector(Set(x1511, x1591, x1639), Set(!x2007, x1591, x1639)))
+Some(Vector(Set(!x1639), Set(!x1591), Set(x2007, !x1511)))
+(Set(x1511, x1591, x1639),Set(-439, -370, -466))
+(Set(!x2007, x1591, x1639),Set(337, -370, -466))
+(Set(!x1639),Set(466))
+(Set(!x1591),Set(370))
+(Set(x2007, !x1511),Set(-337, 439))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x2076), Set(x1822, x2063, x2007), Set(x1814, !x1760, x2063, x2007), Set(x1814, x2063, x2007, !x455)))
+Some(Vector(Set(x2076, !x2063), Set(x2076, !x2007), Set(!x1814, x2076, !x1822), Set(x2076, !x1822, x1760, x455)))
+(Set(!x2076),Set(182))
+(Set(x1822, x2063, x2007),Set(-183, -274, -337))
+(Set(x1814, !x1760, x2063, x2007),Set(-30, 224, -274, -337))
+(Set(x1814, x2063, x2007, !x455),Set(-30, -274, -337, 342))
+(Set(x2076, !x2063),Set(-182, 274))
+(Set(x2076, !x2007),Set(-182, 337))
+(Set(!x1814, x2076, !x1822),Set(30, -182, 183))
+(Set(x2076, !x1822, x1760, x455),Set(-182, 183, -224, -342))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1956), Set(!x1792), Set(x132, x433)))
+Some(Vector(Set(!x433, x1792, !x1956), Set(!x132, x1792, !x1956)))
+(Set(x1956),Set(-249))
+(Set(!x1792),Set(220))
+(Set(x132, x433),Set(-132, -261))
+(Set(!x433, x1792, !x1956),Set(261, -220, 249))
+(Set(!x132, x1792, !x1956),Set(132, -220, 249))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x2047, x1541, x1458, x1132), Set(!x2047, x1541, x1458, x297)))
+Some(Vector(Set(x2047), Set(!x1541), Set(!x1458), Set(!x1132, !x297)))
+(Set(!x2047, x1541, x1458, x1132),Set(16, -61, -70, -298))
+(Set(!x2047, x1541, x1458, x297),Set(16, -61, -70, -457))
+(Set(x2047),Set(-16))
+(Set(!x1541),Set(61))
+(Set(!x1458),Set(70))
+(Set(!x1132, !x297),Set(298, 457))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1824, x2075)))
+Some(Vector(Set(!x2075), Set(!x1824)))
+(Set(x1824, x2075),Set(-55, -33))
+(Set(!x2075),Set(33))
+(Set(!x1824),Set(55))
+
+Some(Vector(Set(x1822), Set(!x2012, x1476)))
+Some(Vector(Set(!x1476, !x1822), Set(x2012, !x1822)))
+(Set(x1822),Set(-183))
+(Set(!x2012, x1476),Set(296, -461))
+(Set(!x1476, !x1822),Set(461, 183))
+(Set(x2012, !x1822),Set(-296, 183))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1824, !x455, !x2057), Set(x1824, x1808, !x2057), Set(x1824, x1792, !x2057)))
+Some(Vector(Set(!x1824), Set(x2057), Set(!x1808, !x1792, x455)))
+(Set(x1824, !x455, !x2057),Set(-55, 342, 424))
+(Set(x1824, x1808, !x2057),Set(-55, -171, 424))
+(Set(x1824, x1792, !x2057),Set(-55, -220, 424))
+(Set(!x1824),Set(55))
+(Set(x2057),Set(-424))
+(Set(!x1808, !x1792, x455),Set(171, 220, -342))
+
+Some(Vector(Set(x2030, x2042), Set(x854, x1241, x2042), Set(x1241, x470, x168, x2042)))
+Some(Vector(Set(!x2042), Set(!x1241, !x2030), Set(!x854, !x2030, !x470), Set(!x854, !x2030, !x168)))
+(Set(x2030, x2042),Set(-314, -426))
+(Set(x854, x1241, x2042),Set(-122, -280, -426))
+(Set(x1241, x470, x168, x2042),Set(-280, -386, -398, -426))
+(Set(!x2042),Set(426))
+(Set(!x1241, !x2030),Set(280, 314))
+(Set(!x854, !x2030, !x470),Set(122, 314, 386))
+(Set(!x854, !x2030, !x168),Set(122, 314, 398))
+
+Some(Vector(Set(x2047, x2084), Set(x1564, x1528, x2084, x1910, x1932, x703), Set(x1528, x2084, x1910, x1655, x1690, x1932, x703), Set(x2094, x1528, x2084, x1910, x1690, x1932, x703, x1598), Set(x1528, x2084, x1910, x1690, x1932, x703, x1401, x1598, x1469)))
+Some(Vector(Set(!x2084), Set(!x1910, !x2047), Set(!x2047, !x703), Set(!x2047, !x1690, !x1564), Set(!x2047, !x1564, !x1598, !x1655), Set(!x2094, !x1655, !x1469, !x2047, !x1564), Set(!x2094, !x1655, !x2047, !x1401, !x1564), Set(!x1932, !x2047), Set(!x2047, !x1528)))
+(Set(x2047, x2084),Set(-16, -448))
+(Set(x1564, x1528, x2084, x1910, x1932, x703),Set(-128, -8, -433, -448, -348, -1))
+(Set(x1528, x2084, x1910, x1655, x1690, x1932, x703),Set(-8, -433, -448, -348, -46, -1, -452))
+(Set(x2094, x1528, x2084, x1910, x1690, x1932, x703, x1598),Set(-323, -8, -433, -75, -448, -348, -46, -1))
+(Set(x1528, x2084, x1910, x1690, x1932, x703, x1401, x1598, x1469),Set(-323, -8, -18, -204, -433, -448, -348, -46, -1))
+(Set(!x2084),Set(448))
+(Set(!x1910, !x2047),Set(8, 16))
+(Set(!x2047, !x703),Set(16, 433))
+(Set(!x2047, !x1690, !x1564),Set(16, 46, 128))
+(Set(!x2047, !x1564, !x1598, !x1655),Set(16, 128, 323, 452))
+(Set(!x2094, !x1655, !x1469, !x2047, !x1564),Set(452, 128, 18, 16, 75))
+(Set(!x2094, !x1655, !x2047, !x1401, !x1564),Set(452, 128, 204, 16, 75))
+(Set(!x1932, !x2047),Set(1, 16))
+(Set(!x2047, !x1528),Set(16, 348))
+
+Some(Vector(Set(!x2017), Set(x962, !x1052, x1857)))
+Some(Vector(Set(!x1857, x2017), Set(x1052, x2017), Set(!x962, x2017)))
+(Set(!x2017),Set(311))
+(Set(x962, !x1052, x1857),Set(-153, 396, -93))
+(Set(!x1857, x2017),Set(93, -311))
+(Set(x1052, x2017),Set(-396, -311))
+(Set(!x962, x2017),Set(153, -311))
+
+Some(Vector(Set(!x1822, !x703), Set(x626, !x703), Set(!x2029, !x703)))
+Some(Vector(Set(x703), Set(x2029, !x626, x1822)))
+(Set(!x1822, !x703),Set(183, 433))
+(Set(x626, !x703),Set(-112, 433))
+(Set(!x2029, !x703),Set(329, 433))
+(Set(x703),Set(-433))
+(Set(x2029, !x626, x1822),Set(-329, 112, -183))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x2051), Set(!x2017), Set(x1979), Set(x1950, !x1901, !x966)))
+Some(Vector(Set(!x1950, x2051, !x1979, x2017), Set(x2051, !x1979, x1901, x2017), Set(x2051, !x1979, x2017, x966)))
+(Set(!x2051),Set(168))
+(Set(!x2017),Set(311))
+(Set(x1979),Set(-232))
+(Set(x1950, !x1901, !x966),Set(-69, 304, 350))
+(Set(!x1950, x2051, !x1979, x2017),Set(69, -168, 232, -311))
+(Set(x2051, !x1979, x1901, x2017),Set(-168, 232, -304, -311))
+(Set(x2051, !x1979, x2017, x966),Set(-168, 232, -311, -350))
+
+Some(Vector(Set(x1932), Set(x1848, !x455)))
+Some(Vector(Set(x455, !x1932), Set(!x1848, !x1932)))
+(Set(x1932),Set(-1))
+(Set(x1848, !x455),Set(-352, 342))
+(Set(x455, !x1932),Set(-342, 1))
+(Set(!x1848, !x1932),Set(352, 1))
+
+Some(Vector(Set(x2027, x2053), Set(!x1979, x1394, x2053), Set(!x1958, x1394, x2053), Set(x1564, x1910, x1814, x2053, x1394), Set(x1564, x1910, x1551, x2053, x1394), Set(x1564, x1910, x1760, x2053, x1394), Set(x1564, x1866, x1910, x1722, x1739, x1654, x2053, x1394)))
+Some(Vector(Set(!x2053), Set(!x2027, !x1394), Set(!x1910, x1958, x1979, !x2027), Set(x1958, !x1564, x1979, !x2027), Set(!x1551, !x2027, !x1814, !x1739, !x1760, x1979, x1958), Set(!x1551, !x2027, !x1814, !x1866, !x1760, x1979, x1958), Set(!x1551, !x2027, !x1814, !x1760, x1979, x1958, !x1722), Set(!x1551, !x2027, !x1814, !x1760, !x1654, x1979, x1958)))
+(Set(x2027, x2053),Set(-302, -399))
+(Set(!x1979, x1394, x2053),Set(232, -325, -399))
+(Set(!x1958, x1394, x2053),Set(19, -325, -399))
+(Set(x1564, x1910, x1814, x2053, x1394),Set(-128, -8, -399, -30, -325))
+(Set(x1564, x1910, x1551, x2053, x1394),Set(-128, -8, -399, -325, -244))
+(Set(x1564, x1910, x1760, x2053, x1394),Set(-128, -8, -399, -224, -325))
+(Set(x1564, x1866, x1910, x1722, x1739, x1654, x2053, x1394),Set(-128, -8, -282, -399, -320, -202, -325, -471))
+(Set(!x2053),Set(399))
+(Set(!x2027, !x1394),Set(302, 325))
+(Set(!x1910, x1958, x1979, !x2027),Set(8, -19, -232, 302))
+(Set(x1958, !x1564, x1979, !x2027),Set(-19, 128, -232, 302))
+(Set(!x1551, !x2027, !x1814, !x1739, !x1760, x1979, x1958),Set(-232, 302, 224, 471, -19, 244, 30))
+(Set(!x1551, !x2027, !x1814, !x1866, !x1760, x1979, x1958),Set(-232, 202, 302, 224, -19, 244, 30))
+(Set(!x1551, !x2027, !x1814, !x1760, x1979, x1958, !x1722),Set(-232, 320, 302, 224, -19, 244, 30))
+(Set(!x1551, !x2027, !x1814, !x1760, !x1654, x1979, x1958),Set(-232, 302, 224, -19, 244, 282, 30))
+
+Some(Vector(Set(x1822, x1628), Set(x1709, x1822), Set(!x1958, x1822), Set(!x2086, x1822)))
+Some(Vector(Set(!x1822), Set(!x1709, x1958, x2086, !x1628)))
+(Set(x1822, x1628),Set(-183, -278))
+(Set(x1709, x1822),Set(-13, -183))
+(Set(!x1958, x1822),Set(19, -183))
+(Set(!x2086, x1822),Set(50, -183))
+(Set(!x1822),Set(183))
+(Set(!x1709, x1958, x2086, !x1628),Set(13, -19, -50, 278))
+
+Some(Vector(Set(x1564, x2063), Set(!x854, x1564, x420), Set(!x195, !x854, x1564), Set(!x854, x1564, x155, !x2012)))
+Some(Vector(Set(!x1564), Set(x854, !x2063), Set(x195, !x155, !x2063, !x420), Set(x195, !x2063, x2012, !x420)))
+(Set(x1564, x2063),Set(-128, -274))
+(Set(!x854, x1564, x420),Set(122, -128, -446))
+(Set(!x195, !x854, x1564),Set(43, 122, -128))
+(Set(!x854, x1564, x155, !x2012),Set(122, -128, -157, 296))
+(Set(!x1564),Set(128))
+(Set(x854, !x2063),Set(-122, 274))
+(Set(x195, !x155, !x2063, !x420),Set(-43, 157, 274, 446))
+(Set(x195, !x2063, x2012, !x420),Set(-43, 274, -296, 446))
+
+Some(Vector(Set(x1809, x2042)))
+Some(Vector(Set(!x2042), Set(!x1809)))
+(Set(x1809, x2042),Set(-293, -426))
+(Set(!x2042),Set(426))
+(Set(!x1809),Set(293))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2075), Set(x2030)))
+Some(Vector(Set(!x2030, !x2075)))
+(Set(x2075),Set(-33))
+(Set(x2030),Set(-314))
+(Set(!x2030, !x2075),Set(314, 33))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2047), Set(x2031)))
+Some(Vector(Set(!x2031, !x2047)))
+(Set(x2047),Set(-16))
+(Set(x2031),Set(-436))
+(Set(!x2031, !x2047),Set(436, 16))
+
+Some(Vector(Set(x1551), Set(x811)))
+Some(Vector(Set(!x811, !x1551)))
+(Set(x1551),Set(-244))
+(Set(x811),Set(-62))
+(Set(!x811, !x1551),Set(62, 244))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x1996, !x2012), Set(!x1654, !x2012), Set(x9, x1822, !x2012), Set(x1563, !x2012), Set(!x1571, !x2012)))
+Some(Vector(Set(x2012), Set(x1996, !x1563, x1654, x1571, !x1822), Set(x1996, !x1563, x1654, x1571, !x9)))
+(Set(!x1996, !x2012),Set(237, 296))
+(Set(!x1654, !x2012),Set(282, 296))
+(Set(x9, x1822, !x2012),Set(-52, -183, 296))
+(Set(x1563, !x2012),Set(-21, 296))
+(Set(!x1571, !x2012),Set(38, 296))
+(Set(x2012),Set(-296))
+(Set(x1996, !x1563, x1654, x1571, !x1822),Set(-282, 21, -38, 183, -237))
+(Set(x1996, !x1563, x1654, x1571, !x9),Set(52, -282, 21, -38, -237))
+
+Some(Vector(Set(x1932, x1824, x1838), Set(x1932, x118, x1838), Set(x1932, x1838, x1002)))
+Some(Vector(Set(!x1932), Set(!x1838), Set(!x1824, !x118, !x1002)))
+(Set(x1932, x1824, x1838),Set(-1, -55, -196))
+(Set(x1932, x118, x1838),Set(-1, -64, -196))
+(Set(x1932, x1838, x1002),Set(-1, -196, -268))
+(Set(!x1932),Set(1))
+(Set(!x1838),Set(196))
+(Set(!x1824, !x118, !x1002),Set(55, 64, 268))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1814, x2030), Set(x840, x2030)))
+Some(Vector(Set(!x2030), Set(!x840, !x1814)))
+(Set(x1814, x2030),Set(-30, -314))
+(Set(x840, x2030),Set(-71, -314))
+(Set(!x2030),Set(314))
+(Set(!x840, !x1814),Set(71, 30))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1709, x1564, x2017, x2031)))
+Some(Vector(Set(!x2031), Set(!x2017), Set(!x1564), Set(!x1709)))
+(Set(x1709, x1564, x2017, x2031),Set(-13, -128, -311, -436))
+(Set(!x2031),Set(436))
+(Set(!x2017),Set(311))
+(Set(!x1564),Set(128))
+(Set(!x1709),Set(13))
+
+Some(Vector(Set(x1885), Set(x1335), Set(x1945)))
+Some(Vector(Set(!x1945, !x1335, !x1885)))
+(Set(x1885),Set(-245))
+(Set(x1335),Set(-34))
+(Set(x1945),Set(-287))
+(Set(!x1945, !x1335, !x1885),Set(287, 34, 245))
+
+Some(Vector(Set(x1876, x1932), Set(x1564, x1932)))
+Some(Vector(Set(!x1932), Set(!x1564, !x1876)))
+(Set(x1876, x1932),Set(-66, -1))
+(Set(x1564, x1932),Set(-128, -1))
+(Set(!x1932),Set(1))
+(Set(!x1564, !x1876),Set(128, 66))
+
+Some(Vector(Set(x1219), Set(x1106), Set(x900), Set(!x2052)))
+Some(Vector(Set(x2052, !x900, !x1106, !x1219)))
+(Set(x1219),Set(-104))
+(Set(x1106),Set(-359))
+(Set(x900),Set(-421))
+(Set(!x2052),Set(260))
+(Set(x2052, !x900, !x1106, !x1219),Set(-260, 421, 359, 104))
+
+Some(Vector(Set(!x1665, !x1824)))
+Some(Vector(Set(x1824), Set(x1665)))
+(Set(!x1665, !x1824),Set(227, 55))
+(Set(x1824),Set(-55))
+(Set(x1665),Set(-227))
+
+Some(Vector(Set(x2027), Set(x923)))
+Some(Vector(Set(!x923, !x2027)))
+(Set(x2027),Set(-302))
+(Set(x923),Set(-413))
+(Set(!x923, !x2027),Set(413, 302))
+
+Some(Vector(Set(x276, x1760), Set(x1300, x1760), Set(!x2096, x1760)))
+Some(Vector(Set(!x1760), Set(x2096, !x1300, !x276)))
+(Set(x276, x1760),Set(-378, -224))
+(Set(x1300, x1760),Set(-271, -224))
+(Set(!x2096, x1760),Set(154, -224))
+(Set(!x1760),Set(224))
+(Set(x2096, !x1300, !x276),Set(-154, 271, 378))
+
+Some(Vector(Set(x2030, !x1017)))
+Some(Vector(Set(x1017), Set(!x2030)))
+(Set(x2030, !x1017),Set(-314, 443))
+(Set(x1017),Set(-443))
+(Set(!x2030),Set(314))
+
+Some(Vector(Set(x65, x132, !x900)))
+Some(Vector(Set(x900), Set(!x132), Set(!x65)))
+(Set(x65, x132, !x900),Set(-236, -132, 421))
+(Set(x900),Set(-421))
+(Set(!x132),Set(132))
+(Set(!x65),Set(236))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x1709, x1810), Set(x1401, x1810)))
+Some(Vector(Set(!x1810), Set(!x1401, x1709)))
+(Set(!x1709, x1810),Set(13, -313))
+(Set(x1401, x1810),Set(-204, -313))
+(Set(!x1810),Set(313))
+(Set(!x1401, x1709),Set(204, -13))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x2086, !x1394)))
+Some(Vector(Set(x1394), Set(x2086)))
+(Set(!x2086, !x1394),Set(50, 325))
+(Set(x1394),Set(-325))
+(Set(x2086),Set(-50))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x1910), Set(x1480)))
+Some(Vector(Set(!x1480, x1910)))
+(Set(!x1910),Set(8))
+(Set(x1480),Set(-213))
+(Set(!x1480, x1910),Set(213, -8))
+
+Some(Vector(Set(x2012, x156)))
+Some(Vector(Set(!x156), Set(!x2012)))
+(Set(x2012, x156),Set(-296, -355))
+(Set(!x156),Set(355))
+(Set(!x2012),Set(296))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1665), Set(x753, x1052), Set(x515, x1052)))
+Some(Vector(Set(!x1052, !x1665), Set(!x515, !x753, !x1665)))
+(Set(x1665),Set(-227))
+(Set(x753, x1052),Set(-184, -396))
+(Set(x515, x1052),Set(-174, -396))
+(Set(!x1052, !x1665),Set(396, 227))
+(Set(!x515, !x753, !x1665),Set(174, 184, 227))
+
+Some(Vector(Set(!x2012), Set(x1876)))
+Some(Vector(Set(!x1876, x2012)))
+(Set(!x2012),Set(296))
+(Set(x1876),Set(-66))
+(Set(!x1876, x2012),Set(66, -296))
+
+Some(Vector(Set(x1824, !x455), Set(x1564, !x455), Set(x1188, !x455), Set(!x455, !x1518)))
+Some(Vector(Set(x455), Set(!x1824, !x1188, !x1564, x1518)))
+(Set(x1824, !x455),Set(-55, 342))
+(Set(x1564, !x455),Set(-128, 342))
+(Set(x1188, !x455),Set(-121, 342))
+(Set(!x455, !x1518),Set(342, 447))
+(Set(x455),Set(-342))
+(Set(!x1824, !x1188, !x1564, x1518),Set(55, 121, 128, -447))
+
+Some(Vector(Set(x1890), Set(x1361)))
+Some(Vector(Set(!x1361, !x1890)))
+(Set(x1890),Set(-65))
+(Set(x1361),Set(-117))
+(Set(!x1361, !x1890),Set(117, 65))
+
+Some(Vector(Set(x548, x508, x1333), Set(x548, x1333, !x156, x297)))
+Some(Vector(Set(!x548), Set(!x1333), Set(!x508, !x297), Set(!x508, x156)))
+(Set(x548, x508, x1333),Set(-42, -198, -297))
+(Set(x548, x1333, !x156, x297),Set(-42, -297, 355, -457))
+(Set(!x548),Set(42))
+(Set(!x1333),Set(297))
+(Set(!x508, !x297),Set(198, 457))
+(Set(!x508, x156),Set(198, -355))
+
+Some(Vector(Set(x1932), Set(!x164), Set(x132, x1019)))
+Some(Vector(Set(!x1019, x164, !x1932), Set(!x132, x164, !x1932)))
+(Set(x1932),Set(-1))
+(Set(!x164),Set(243))
+(Set(x132, x1019),Set(-132, -156))
+(Set(!x1019, x164, !x1932),Set(156, -243, 1))
+(Set(!x132, x164, !x1932),Set(132, -243, 1))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1958), Set(x164, x736), Set(!x10, x736)))
+Some(Vector(Set(!x736, !x1958), Set(x10, !x164, !x1958)))
+(Set(x1958),Set(-19))
+(Set(x164, x736),Set(-243, -414))
+(Set(!x10, x736),Set(427, -414))
+(Set(!x736, !x1958),Set(414, 19))
+(Set(x10, !x164, !x1958),Set(-427, 243, 19))
+
+Some(Vector(Set(x2012, x2017), Set(x1541, x1075, x2017), Set(x1541, x832, x2017), Set(x1541, x2017, !x2007)))
+Some(Vector(Set(!x2017), Set(!x1541, !x2012), Set(!x1075, !x832, !x2012, x2007)))
+(Set(x2012, x2017),Set(-296, -311))
+(Set(x1541, x1075, x2017),Set(-61, -96, -311))
+(Set(x1541, x832, x2017),Set(-61, -126, -311))
+(Set(x1541, x2017, !x2007),Set(-61, -311, 337))
+(Set(!x2017),Set(311))
+(Set(!x1541, !x2012),Set(61, 296))
+(Set(!x1075, !x832, !x2012, x2007),Set(96, 126, 296, -337))
+
+Some(Vector(Set(x1910, x2050), Set(x832, x2050)))
+Some(Vector(Set(!x2050), Set(!x832, !x1910)))
+(Set(x1910, x2050),Set(-8, -58))
+(Set(x832, x2050),Set(-126, -58))
+(Set(!x2050),Set(58))
+(Set(!x832, !x1910),Set(126, 8))
+
+Some(Vector(Set(x2030), Set(x2012)))
+Some(Vector(Set(!x2012, !x2030)))
+(Set(x2030),Set(-314))
+(Set(x2012),Set(-296))
+(Set(!x2012, !x2030),Set(296, 314))
+
+Some(Vector(Set(!x2063, !x1212, !x703)))
+Some(Vector(Set(x703), Set(x1212), Set(x2063)))
+(Set(!x2063, !x1212, !x703),Set(274, 22, 433))
+(Set(x703),Set(-433))
+(Set(x1212),Set(-22))
+(Set(x2063),Set(-274))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2030), Set(x1910, x2012)))
+Some(Vector(Set(!x2012, !x2030), Set(!x1910, !x2030)))
+(Set(x2030),Set(-314))
+(Set(x1910, x2012),Set(-8, -296))
+(Set(!x2012, !x2030),Set(296, 314))
+(Set(!x1910, !x2030),Set(8, 314))
+
+Some(Vector(Set(x1824), Set(x1876), Set(!x703)))
+Some(Vector(Set(x703, !x1876, !x1824)))
+(Set(x1824),Set(-55))
+(Set(x1876),Set(-66))
+(Set(!x703),Set(433))
+(Set(x703, !x1876, !x1824),Set(-433, 66, 55))
+
+Some(Vector(Set(x1979), Set(x1628, x1577), Set(!x1885, x2052, x1628), Set(x2052, x1628, x1017, x1114)))
+Some(Vector(Set(!x1979, !x1628), Set(!x1979, !x2052, !x1577), Set(!x1979, x1885, !x1577, !x1114), Set(!x1979, x1885, !x1577, !x1017)))
+(Set(x1979),Set(-232))
+(Set(x1628, x1577),Set(-278, -411))
+(Set(!x1885, x2052, x1628),Set(245, -260, -278))
+(Set(x2052, x1628, x1017, x1114),Set(-260, -278, -443, -460))
+(Set(!x1979, !x1628),Set(232, 278))
+(Set(!x1979, !x2052, !x1577),Set(232, 260, 411))
+(Set(!x1979, x1885, !x1577, !x1114),Set(232, -245, 411, 460))
+(Set(!x1979, x1885, !x1577, !x1017),Set(232, -245, 411, 443))
+
+Some(Vector(Set(x2096, x1632, x1599), Set(x1404, x1632, x1599), Set(x1076, x1632, x1599)))
+Some(Vector(Set(!x1632), Set(!x1599), Set(!x2096, !x1076, !x1404)))
+(Set(x2096, x1632, x1599),Set(-154, -288, -430))
+(Set(x1404, x1632, x1599),Set(-256, -288, -430))
+(Set(x1076, x1632, x1599),Set(-221, -288, -430))
+(Set(!x1632),Set(288))
+(Set(!x1599),Set(430))
+(Set(!x2096, !x1076, !x1404),Set(154, 221, 256))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x975), Set(x2086)))
+Some(Vector(Set(!x2086, !x975)))
+(Set(x975),Set(-403))
+(Set(x2086),Set(-50))
+(Set(!x2086, !x975),Set(50, 403))
+
+Some(Vector(Set(x1943), Set(x1824)))
+Some(Vector(Set(!x1824, !x1943)))
+(Set(x1943),Set(-407))
+(Set(x1824),Set(-55))
+(Set(!x1824, !x1943),Set(55, 407))
+
+Some(Vector(Set(x2047), Set(!x2030)))
+Some(Vector(Set(x2030, !x2047)))
+(Set(x2047),Set(-16))
+(Set(!x2030),Set(314))
+(Set(x2030, !x2047),Set(-314, 16))
+
+Some(Vector(Set(x1790), Set(!x438), Set(x277)))
+Some(Vector(Set(!x277, x438, !x1790)))
+(Set(x1790),Set(-444))
+(Set(!x438),Set(250))
+(Set(x277),Set(-4))
+(Set(!x277, x438, !x1790),Set(4, -250, 444))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2012, x1822)))
+Some(Vector(Set(!x1822), Set(!x2012)))
+(Set(x2012, x1822),Set(-296, -183))
+(Set(!x1822),Set(183))
+(Set(!x2012),Set(296))
+
+Some(Vector(Set(x2031), Set(x1769)))
+Some(Vector(Set(!x1769, !x2031)))
+(Set(x2031),Set(-436))
+(Set(x1769),Set(-422))
+(Set(!x1769, !x2031),Set(422, 436))
+
+Some(Vector(Set(x1919, x1113), Set(x1919, !x2007), Set(x1919, x1160), Set(x1919, x959), Set(x1919, !x2096, !x2052)))
+Some(Vector(Set(!x1919), Set(x2007, !x1160, x2052, !x1113, !x959), Set(x2007, !x1160, x2096, !x1113, !x959)))
+(Set(x1919, x1113),Set(-12, -165))
+(Set(x1919, !x2007),Set(-12, 337))
+(Set(x1919, x1160),Set(-12, -316))
+(Set(x1919, x959),Set(-12, -275))
+(Set(x1919, !x2096, !x2052),Set(-12, 154, 260))
+(Set(!x1919),Set(12))
+(Set(x2007, !x1160, x2052, !x1113, !x959),Set(316, 275, 165, -337, -260))
+(Set(x2007, !x1160, x2096, !x1113, !x959),Set(316, 275, 165, -154, -337))
+
+Some(Vector(Set(x1909, x1881), Set(x1877, !x1280, x1695, x703, x1909), Set(x1877, x1139, x1013, x1695, x703, x956, x1909), Set(x1877, x1139, x1013, x1695, x703, !x952, x1909)))
+Some(Vector(Set(!x1909), Set(!x1877, !x1881), Set(!x1881, !x703), Set(!x1695, !x1881), Set(x1280, !x1881, !x1139), Set(x1280, !x1881, !x1013), Set(x1280, x952, !x1881, !x956)))
+(Set(x1909, x1881),Set(-106, -336))
+(Set(x1877, !x1280, x1695, x703, x1909),Set(-433, -242, 17, -163, -106))
+(Set(x1877, x1139, x1013, x1695, x703, x956, x1909),Set(-338, -433, -242, -459, -163, -106, -467))
+(Set(x1877, x1139, x1013, x1695, x703, !x952, x1909),Set(-338, -433, -242, -163, 80, -106, -467))
+(Set(!x1909),Set(106))
+(Set(!x1877, !x1881),Set(242, 336))
+(Set(!x1881, !x703),Set(336, 433))
+(Set(!x1695, !x1881),Set(163, 336))
+(Set(x1280, !x1881, !x1139),Set(-17, 336, 338))
+(Set(x1280, !x1881, !x1013),Set(-17, 336, 467))
+(Set(x1280, x952, !x1881, !x956),Set(-17, -80, 336, 459))
+
+Some(Vector(Set(x1881), Set(!x1654), Set(x1856, x1009)))
+Some(Vector(Set(!x1009, x1654, !x1881), Set(!x1856, x1654, !x1881)))
+(Set(x1881),Set(-336))
+(Set(!x1654),Set(282))
+(Set(x1856, x1009),Set(-322, -306))
+(Set(!x1009, x1654, !x1881),Set(306, -282, 336))
+(Set(!x1856, x1654, !x1881),Set(322, -282, 336))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x1942), Set(x1814, x703, x1885)))
+Some(Vector(Set(!x1885, x1942), Set(!x703, x1942), Set(!x1814, x1942)))
+(Set(!x1942),Set(252))
+(Set(x1814, x703, x1885),Set(-30, -433, -245))
+(Set(!x1885, x1942),Set(245, -252))
+(Set(!x703, x1942),Set(433, -252))
+(Set(!x1814, x1942),Set(30, -252))
+
+Some(Vector(Set(x1185, x1942, x1265)))
+Some(Vector(Set(!x1265), Set(!x1942), Set(!x1185)))
+(Set(x1185, x1942, x1265),Set(-286, -252, -397))
+(Set(!x1265),Set(397))
+(Set(!x1942),Set(252))
+(Set(!x1185),Set(286))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1690, x1792, x2053), Set(x1792, x2053, x1679), Set(!x1921, !x1822, x1792, x2053)))
+Some(Vector(Set(!x2053), Set(!x1792), Set(!x1690, x1921, !x1679), Set(!x1690, x1822, !x1679)))
+(Set(x1690, x1792, x2053),Set(-46, -220, -399))
+(Set(x1792, x2053, x1679),Set(-220, -399, -442))
+(Set(!x1921, !x1822, x1792, x2053),Set(47, 183, -220, -399))
+(Set(!x2053),Set(399))
+(Set(!x1792),Set(220))
+(Set(!x1690, x1921, !x1679),Set(46, -47, 442))
+(Set(!x1690, x1822, !x1679),Set(46, -183, 442))
+
+Some(Vector(Set(!x1890, x1929, !x2057)))
+Some(Vector(Set(x2057), Set(!x1929), Set(x1890)))
+(Set(!x1890, x1929, !x2057),Set(65, -432, 424))
+(Set(x2057),Set(-424))
+(Set(!x1929),Set(432))
+(Set(x1890),Set(-65))
+
+Some(Vector(Set(x832, x1813, !x1876, x1884)))
+Some(Vector(Set(!x1884), Set(x1876), Set(!x1813), Set(!x832)))
+(Set(x832, x1813, !x1876, x1884),Set(-126, -425, 66, -138))
+(Set(!x1884),Set(138))
+(Set(x1876),Set(-66))
+(Set(!x1813),Set(425))
+(Set(!x832),Set(126))
+
+Some(Vector(Set(!x2058), Set(x1337)))
+Some(Vector(Set(!x1337, x2058)))
+(Set(!x2058),Set(102))
+(Set(x1337),Set(-140))
+(Set(!x1337, x2058),Set(140, -102))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2028), Set(x2012), Set(x1910)))
+Some(Vector(Set(!x1910, !x2012, !x2028)))
+(Set(x2028),Set(-151))
+(Set(x2012),Set(-296))
+(Set(x1910),Set(-8))
+(Set(!x1910, !x2012, !x2028),Set(8, 296, 151))
+
+Some(Vector(Set(!x1873, x1017), Set(x1564, x1866, x1017, !x1980, x548), Set(x1564, x1866, x5, x1017, !x1980, !x1824), Set(x1564, x164, x1017), Set(x1564, x1300, x1017), Set(x1564, x969, x1017), Set(!x1876, x1564, x1017), Set(x1564, x1965, x1017)))
+Some(Vector(Set(!x1017), Set(!x1564, x1873), Set(!x1300, x1876, !x969, !x164, x1873, !x1866, !x1965), Set(!x1300, x1876, !x969, !x164, x1873, !x1965, x1980), Set(!x1300, x1876, !x969, !x164, x1873, !x1965, !x548, x1824), Set(!x5, !x1300, x1876, !x969, !x164, x1873, !x1965, !x548)))
+(Set(!x1873, x1017),Set(147, -443))
+(Set(x1564, x1866, x1017, !x1980, x548),Set(170, -128, -42, -202, -443))
+(Set(x1564, x1866, x5, x1017, !x1980, !x1824),Set(170, -128, -262, -202, -443, 55))
+(Set(x1564, x164, x1017),Set(-128, -243, -443))
+(Set(x1564, x1300, x1017),Set(-128, -271, -443))
+(Set(x1564, x969, x1017),Set(-128, -181, -443))
+(Set(!x1876, x1564, x1017),Set(66, -128, -443))
+(Set(x1564, x1965, x1017),Set(-128, -374, -443))
+(Set(!x1017),Set(443))
+(Set(!x1564, x1873),Set(128, -147))
+(Set(!x1300, x1876, !x969, !x164, x1873, !x1866, !x1965),Set(-66, 202, 243, 181, 271, 374, -147))
+(Set(!x1300, x1876, !x969, !x164, x1873, !x1965, x1980),Set(-66, 243, 181, -170, 271, 374, -147))
+(Set(!x1300, x1876, !x969, !x164, x1873, !x1965, !x548, x1824),Set(-66, 42, 243, -55, 181, 271, 374, -147))
+(Set(!x5, !x1300, x1876, !x969, !x164, x1873, !x1965, !x548),Set(-66, 42, 243, 181, 271, 374, -147, 262))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x1876), Set(x1609, x1516, x1792, x1628), Set(!x455), Set(x2044), Set(!x2094)))
+Some(Vector(Set(x2094, x1876, !x2044, !x1628, x455), Set(x2094, x1876, !x2044, x455, !x1792), Set(x2094, x1876, !x2044, x455, !x1609), Set(x2094, x1876, !x2044, x455, !x1516)))
+(Set(!x1876),Set(66))
+(Set(x1609, x1516, x1792, x1628),Set(-54, -187, -220, -278))
+(Set(!x455),Set(342))
+(Set(x2044),Set(-343))
+(Set(!x2094),Set(75))
+(Set(x2094, x1876, !x2044, !x1628, x455),Set(-66, -342, -75, 343, 278))
+(Set(x2094, x1876, !x2044, x455, !x1792),Set(-66, -342, 220, -75, 343))
+(Set(x2094, x1876, !x2044, x455, !x1609),Set(-66, -342, -75, 343, 54))
+(Set(x2094, x1876, !x2044, x455, !x1516),Set(-66, -342, -75, 343, 187))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x811)))
+Some(Vector(Set(!x811), Set(!x2039)))
+(Set(x811),Set(-62))
+(Set(!x811),Set(62))
+(Set(!x2039),Set(145))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1950, x1808, !x2044, x1758), Set(!x2044, x1706, x1950, x1808, x1709), Set(x1702, !x2044, x1950, x1808, x1709)))
+Some(Vector(Set(x2044), Set(!x1950), Set(!x1808), Set(!x1709, !x1758), Set(!x1702, !x1706, !x1758)))
+(Set(x1950, x1808, !x2044, x1758),Set(-69, -171, 343, -469))
+(Set(!x2044, x1706, x1950, x1808, x1709),Set(-463, -171, 343, -69, -13))
+(Set(x1702, !x2044, x1950, x1808, x1709),Set(-11, -171, 343, -69, -13))
+(Set(x2044),Set(-343))
+(Set(!x1950),Set(69))
+(Set(!x1808),Set(171))
+(Set(!x1709, !x1758),Set(13, 469))
+(Set(!x1702, !x1706, !x1758),Set(11, 463, 469))
+
+Some(Vector(Set(!x2030, x1690, x1692)))
+Some(Vector(Set(!x1692), Set(!x1690), Set(x2030)))
+(Set(!x2030, x1690, x1692),Set(314, -46, -333))
+(Set(!x1692),Set(333))
+(Set(!x1690),Set(46))
+(Set(x2030),Set(-314))
+
+Some(Vector(Set(x1909, x2075)))
+Some(Vector(Set(!x2075), Set(!x1909)))
+(Set(x1909, x2075),Set(-106, -33))
+(Set(!x2075),Set(33))
+(Set(!x1909),Set(106))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x5, x1794)))
+Some(Vector(Set(!x1794), Set(!x5)))
+(Set(x5, x1794),Set(-262, -363))
+(Set(!x1794),Set(363))
+(Set(!x5),Set(262))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1518, x1824)))
+Some(Vector(Set(!x1824), Set(!x1518)))
+(Set(x1518, x1824),Set(-447, -55))
+(Set(!x1824),Set(55))
+(Set(!x1518),Set(447))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1838, x1942, x2052, !x1300), Set(x1838, x1942, x2052, !x1241), Set(x1838, x879, x2052, x1942, x1083)))
+Some(Vector(Set(!x1942), Set(!x1838), Set(!x2052), Set(!x1083, x1300, x1241), Set(!x879, x1300, x1241)))
+(Set(x1838, x1942, x2052, !x1300),Set(-196, -252, -260, 271))
+(Set(x1838, x1942, x2052, !x1241),Set(-196, -252, -260, 280))
+(Set(x1838, x879, x2052, x1942, x1083),Set(-107, -196, -238, -252, -260))
+(Set(!x1942),Set(252))
+(Set(!x1838),Set(196))
+(Set(!x2052),Set(260))
+(Set(!x1083, x1300, x1241),Set(238, -271, -280))
+(Set(!x879, x1300, x1241),Set(107, -271, -280))
+
+Some(Vector(Set(!x1817), Set(x164, x1095, !x546, x297), Set(x164, x1095, !x137, !x546)))
+Some(Vector(Set(!x164, x1817), Set(!x1095, x1817), Set(x1817, x546), Set(x1817, x137, !x297)))
+(Set(!x1817),Set(290))
+(Set(x164, x1095, !x546, x297),Set(-243, -279, 423, -457))
+(Set(x164, x1095, !x137, !x546),Set(-243, -279, 318, 423))
+(Set(!x164, x1817),Set(243, -290))
+(Set(!x1095, x1817),Set(279, -290))
+(Set(x1817, x546),Set(-290, -423))
+(Set(x1817, x137, !x297),Set(-290, -318, 457))
+
+Some(Vector(Set(!x2096), Set(x2030, x2036)))
+Some(Vector(Set(!x2036, x2096), Set(!x2030, x2096)))
+(Set(!x2096),Set(154))
+(Set(x2030, x2036),Set(-314, -7))
+(Set(!x2036, x2096),Set(7, -154))
+(Set(!x2030, x2096),Set(314, -154))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1932), Set(x1551)))
+Some(Vector(Set(!x1551, !x1932)))
+(Set(x1932),Set(-1))
+(Set(x1551),Set(-244))
+(Set(!x1551, !x1932),Set(244, 1))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2086), Set(!x2017, !x2030)))
+Some(Vector(Set(x2030, !x2086), Set(x2017, !x2086)))
+(Set(x2086),Set(-50))
+(Set(!x2017, !x2030),Set(311, 314))
+(Set(x2030, !x2086),Set(-314, 50))
+(Set(x2017, !x2086),Set(-311, 50))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x703), Set(!x1703), Set(!x1678)))
+Some(Vector(Set(x1678, x1703, x703)))
+(Set(!x703),Set(433))
+(Set(!x1703),Set(360))
+(Set(!x1678),Set(394))
+(Set(x1678, x1703, x703),Set(-394, -360, -433))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1808, x1939), Set(x1743, x1939)))
+Some(Vector(Set(!x1939), Set(!x1743, !x1808)))
+(Set(x1808, x1939),Set(-171, -161))
+(Set(x1743, x1939),Set(-162, -161))
+(Set(!x1939),Set(161))
+(Set(!x1743, !x1808),Set(162, 171))
+
+Some(Vector(Set(x1910), Set(x1402, x2063, x1901, !x2007, x1212), Set(x1402, x2063, x1901, x854, !x2007)))
+Some(Vector(Set(!x1910, !x2063), Set(!x1910, !x1212, !x854), Set(!x1910, !x1901), Set(!x1910, !x1402), Set(!x1910, x2007)))
+(Set(x1910),Set(-8))
+(Set(x1402, x2063, x1901, !x2007, x1212),Set(-274, -22, -23, -304, 337))
+(Set(x1402, x2063, x1901, x854, !x2007),Set(-274, -23, -122, -304, 337))
+(Set(!x1910, !x2063),Set(8, 274))
+(Set(!x1910, !x1212, !x854),Set(8, 22, 122))
+(Set(!x1910, !x1901),Set(8, 304))
+(Set(!x1910, !x1402),Set(8, 23))
+(Set(!x1910, x2007),Set(8, -337))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1979), Set(x1641, x1159, x753, x1265), Set(x1641, x1159, x2030, x1265), Set(x1265, x1641, !x110, x425, x337, x1159)))
+Some(Vector(Set(!x1641, !x1979), Set(!x1979, !x1265), Set(!x1159, !x1979), Set(!x337, !x753, !x1979, !x2030), Set(!x425, !x753, !x1979, !x2030), Set(x110, !x753, !x1979, !x2030)))
+(Set(x1979),Set(-232))
+(Set(x1641, x1159, x753, x1265),Set(-63, -85, -184, -397))
+(Set(x1641, x1159, x2030, x1265),Set(-63, -85, -314, -397))
+(Set(x1265, x1641, !x110, x425, x337, x1159),Set(-63, 124, -116, -397, -110, -85))
+(Set(!x1641, !x1979),Set(63, 232))
+(Set(!x1979, !x1265),Set(232, 397))
+(Set(!x1159, !x1979),Set(85, 232))
+(Set(!x337, !x753, !x1979, !x2030),Set(110, 184, 232, 314))
+(Set(!x425, !x753, !x1979, !x2030),Set(116, 184, 232, 314))
+(Set(x110, !x753, !x1979, !x2030),Set(-124, 184, 232, 314))
+
+Some(Vector(Set(x1967), Set(x1808), Set(x1396, !x2084), Set(x1396, x962, x994)))
+Some(Vector(Set(!x1396, !x1808, !x1967), Set(!x1808, !x1967, !x994, x2084), Set(!x962, !x1808, !x1967, x2084)))
+(Set(x1967),Set(-305))
+(Set(x1808),Set(-171))
+(Set(x1396, !x2084),Set(-89, 448))
+(Set(x1396, x962, x994),Set(-89, -153, -347))
+(Set(!x1396, !x1808, !x1967),Set(89, 171, 305))
+(Set(!x1808, !x1967, !x994, x2084),Set(171, 305, 347, -448))
+(Set(!x962, !x1808, !x1967, x2084),Set(153, 171, 305, -448))
+
+Some(Vector(Set(x1655), Set(x2077)))
+Some(Vector(Set(!x2077, !x1655)))
+(Set(x1655),Set(-452))
+(Set(x2077),Set(-387))
+(Set(!x2077, !x1655),Set(387, 452))
+
+Some(Vector(Set(!x1810, x1979), Set(!x1626, x1711, x1979)))
+Some(Vector(Set(!x1979), Set(!x1711, x1810), Set(x1626, x1810)))
+(Set(!x1810, x1979),Set(313, -232))
+(Set(!x1626, x1711, x1979),Set(222, -328, -232))
+(Set(!x1979),Set(232))
+(Set(!x1711, x1810),Set(328, -313))
+(Set(x1626, x1810),Set(-222, -313))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x1401), Set(!x832)))
+Some(Vector(Set(x832, x1401)))
+(Set(!x1401),Set(204))
+(Set(!x832),Set(126))
+(Set(x832, x1401),Set(-126, -204))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x862, x894)))
+Some(Vector(Set(!x894), Set(x862)))
+(Set(!x862, x894),Set(97, -257))
+(Set(!x894),Set(257))
+(Set(x862),Set(-97))
+
+Some(Vector(Set(x548), Set(x286), Set(x1824)))
+Some(Vector(Set(!x1824, !x286, !x548)))
+(Set(x548),Set(-42))
+(Set(x286),Set(-474))
+(Set(x1824),Set(-55))
+(Set(!x1824, !x286, !x548),Set(55, 474, 42))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x646, !x2084, x1808, x1979)))
+Some(Vector(Set(!x1979), Set(!x1808), Set(x2084), Set(x646)))
+(Set(!x646, !x2084, x1808, x1979),Set(357, 448, -171, -232))
+(Set(!x1979),Set(232))
+(Set(!x1808),Set(171))
+(Set(x2084),Set(-448))
+(Set(x646),Set(-357))
+
+Some(Vector(Set(!x2069, x816, !x1319, x2017), Set(!x2069, !x1319, x2017, !x2007), Set(!x2069, !x1319, !x1002, x2017), Set(!x2069, !x626, !x1319, x2017), Set(x2017, x2012, !x1319, !x2069, x53, x9, x275), Set(!x2069, x1217, !x1319, x2017)))
+Some(Vector(Set(x2069), Set(!x2017), Set(x1319), Set(x626, x2007, x1002, !x1217, !x275, !x816), Set(x626, !x2012, x2007, x1002, !x1217, !x816), Set(x626, x2007, x1002, !x1217, !x816, !x53), Set(x626, x2007, x1002, !x1217, !x816, !x9)))
+(Set(!x2069, x816, !x1319, x2017),Set(87, -101, 217, -311))
+(Set(!x2069, !x1319, x2017, !x2007),Set(87, 217, -311, 337))
+(Set(!x2069, !x1319, !x1002, x2017),Set(87, 217, 268, -311))
+(Set(!x2069, !x626, !x1319, x2017),Set(87, 112, 217, -311))
+(Set(x2017, x2012, !x1319, !x2069, x53, x9, x275),Set(217, -345, -296, -464, -52, 87, -311))
+(Set(!x2069, x1217, !x1319, x2017),Set(87, -166, 217, -311))
+(Set(x2069),Set(-87))
+(Set(!x2017),Set(311))
+(Set(x1319),Set(-217))
+(Set(x626, x2007, x1002, !x1217, !x275, !x816),Set(101, -268, -337, 166, -112, 464))
+(Set(x626, !x2012, x2007, x1002, !x1217, !x816),Set(101, -268, -337, 166, 296, -112))
+(Set(x626, x2007, x1002, !x1217, !x816, !x53),Set(101, -268, -337, 166, 345, -112))
+(Set(x626, x2007, x1002, !x1217, !x816, !x9),Set(101, 52, -268, -337, 166, -112))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1665, x1824), Set(!x1052, x1824), Set(x90, x1824)))
+Some(Vector(Set(!x1824), Set(!x90, x1052, !x1665)))
+(Set(x1665, x1824),Set(-227, -55))
+(Set(!x1052, x1824),Set(396, -55))
+(Set(x90, x1824),Set(-169, -55))
+(Set(!x1824),Set(55))
+(Set(!x90, x1052, !x1665),Set(169, -396, 227))
+
+Some(Vector(Set(x1824, x2031)))
+Some(Vector(Set(!x2031), Set(!x1824)))
+(Set(x1824, x2031),Set(-55, -436))
+(Set(!x2031),Set(436))
+(Set(!x1824),Set(55))
+
+Some(Vector(Set(x1758), Set(x1609, x1628), Set(x1469, x1628)))
+Some(Vector(Set(!x1628, !x1758), Set(!x1469, !x1609, !x1758)))
+(Set(x1758),Set(-469))
+(Set(x1609, x1628),Set(-54, -278))
+(Set(x1469, x1628),Set(-18, -278))
+(Set(!x1628, !x1758),Set(278, 469))
+(Set(!x1469, !x1609, !x1758),Set(18, 54, 469))
+
+Some(Vector(Set(x1394), Set(!x1760), Set(x1626, x1276, x1273), Set(x1626, x1022, x1276)))
+Some(Vector(Set(!x1626, x1760, !x1394), Set(x1760, !x1394, !x1276), Set(x1760, !x1022, !x1394, !x1273)))
+(Set(x1394),Set(-325))
+(Set(!x1760),Set(224))
+(Set(x1626, x1276, x1273),Set(-222, -392, -400))
+(Set(x1626, x1022, x1276),Set(-222, -309, -392))
+(Set(!x1626, x1760, !x1394),Set(222, -224, 325))
+(Set(x1760, !x1394, !x1276),Set(-224, 325, 392))
+(Set(x1760, !x1022, !x1394, !x1273),Set(-224, 309, 325, 400))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1958, !x1876, x832), Set(x1469, x1958, x832), Set(x1958, x832, !x1019), Set(x1958, x594, x754, x832)))
+Some(Vector(Set(!x1958), Set(!x832), Set(!x1469, x1876, !x754, x1019), Set(!x1469, !x594, x1876, x1019)))
+(Set(x1958, !x1876, x832),Set(-19, 66, -126))
+(Set(x1469, x1958, x832),Set(-18, -19, -126))
+(Set(x1958, x832, !x1019),Set(-19, -126, 156))
+(Set(x1958, x594, x754, x832),Set(-19, -48, -68, -126))
+(Set(!x1958),Set(19))
+(Set(!x832),Set(126))
+(Set(!x1469, x1876, !x754, x1019),Set(18, -66, 68, -156))
+(Set(!x1469, !x594, x1876, x1019),Set(18, 48, -66, -156))
+
+Some(Vector(Set(!x1950, !x703), Set(!x1950, x1810, !x1797), Set(!x1950, x1810, x2077, x1679)))
+Some(Vector(Set(x1950), Set(!x1810, x703), Set(x703, x1797, !x1679), Set(!x2077, x703, x1797)))
+(Set(!x1950, !x703),Set(69, 433))
+(Set(!x1950, x1810, !x1797),Set(69, -313, 437))
+(Set(!x1950, x1810, x2077, x1679),Set(69, -313, -387, -442))
+(Set(x1950),Set(-69))
+(Set(!x1810, x703),Set(313, -433))
+(Set(x703, x1797, !x1679),Set(-433, -437, 442))
+(Set(!x2077, x703, x1797),Set(387, -433, -437))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x548), Set(x1758), Set(x2047)))
+Some(Vector(Set(!x2047, !x1758, !x548)))
+(Set(x548),Set(-42))
+(Set(x1758),Set(-469))
+(Set(x2047),Set(-16))
+(Set(!x2047, !x1758, !x548),Set(16, 469, 42))
+
+Some(Vector(Set(x2017, x1921), Set(x1838, x1921)))
+Some(Vector(Set(!x1921), Set(!x1838, !x2017)))
+(Set(x2017, x1921),Set(-311, -47))
+(Set(x1838, x1921),Set(-196, -47))
+(Set(!x1921),Set(47))
+(Set(!x1838, !x2017),Set(196, 311))
+
+Some(Vector(Set(x548, x1480)))
+Some(Vector(Set(!x1480), Set(!x548)))
+(Set(x548, x1480),Set(-42, -213))
+(Set(!x1480),Set(213))
+(Set(!x548),Set(42))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2075, x2030), Set(x2075, x1979), Set(x2075, x1950), Set(x2075, x1876, !x703), Set(x2075, x1876, !x1564)))
+Some(Vector(Set(!x2075), Set(!x1876, !x1950, !x1979, !x2030), Set(x1564, !x1950, !x1979, !x2030, x703)))
+(Set(x2075, x2030),Set(-33, -314))
+(Set(x2075, x1979),Set(-33, -232))
+(Set(x2075, x1950),Set(-33, -69))
+(Set(x2075, x1876, !x703),Set(-33, -66, 433))
+(Set(x2075, x1876, !x1564),Set(-33, -66, 128))
+(Set(!x2075),Set(33))
+(Set(!x1876, !x1950, !x1979, !x2030),Set(66, 69, 232, 314))
+(Set(x1564, !x1950, !x1979, !x2030, x703),Set(69, -128, -433, 314, 232))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1404, !x1507, !x1820), Set(x992, !x1507, !x1820)))
+Some(Vector(Set(x1820), Set(x1507), Set(!x992, !x1404)))
+(Set(x1404, !x1507, !x1820),Set(-256, 431, 381))
+(Set(x992, !x1507, !x1820),Set(-83, 431, 381))
+(Set(x1820),Set(-381))
+(Set(x1507),Set(-431))
+(Set(!x992, !x1404),Set(83, 256))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1824), Set(x840, !x1813)))
+Some(Vector(Set(x1813, !x1824), Set(!x840, !x1824)))
+(Set(x1824),Set(-55))
+(Set(x840, !x1813),Set(-71, 425))
+(Set(x1813, !x1824),Set(-425, 55))
+(Set(!x840, !x1824),Set(71, 55))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2029, !x2086, x1932), Set(x125, !x2086, x1932)))
+Some(Vector(Set(!x1932), Set(x2086), Set(!x125, !x2029)))
+(Set(x2029, !x2086, x1932),Set(-329, 50, -1))
+(Set(x125, !x2086, x1932),Set(-129, 50, -1))
+(Set(!x1932),Set(1))
+(Set(x2086),Set(-50))
+(Set(!x125, !x2029),Set(129, 329))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x2030, !x455, x1996)))
+Some(Vector(Set(!x1996), Set(x455), Set(x2030)))
+(Set(!x2030, !x455, x1996),Set(314, 342, -237))
+(Set(!x1996),Set(237))
+(Set(x455),Set(-342))
+(Set(x2030),Set(-314))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1402, !x1494)))
+Some(Vector(Set(x1494), Set(!x1402)))
+(Set(x1402, !x1494),Set(-23, 264))
+(Set(x1494),Set(-264))
+(Set(!x1402),Set(23))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x728, x1052)))
+Some(Vector(Set(!x1052), Set(!x728)))
+(Set(x728, x1052),Set(-125, -396))
+(Set(!x1052),Set(396))
+(Set(!x728),Set(125))
+
+Some(Vector(Set(x2036, x2017), Set(x2036, x1979), Set(x2036, x1895, x1808), Set(x2036, x1895, x1650), Set(x2036, !x1857, x1895), Set(x2036, x1895, x1822), Set(x2036, x1895, x1873), Set(x2036, x1895, !x1715), Set(x2036, x1895, x1711)))
+Some(Vector(Set(!x2036), Set(!x1895, !x1979, !x2017), Set(x1857, !x1979, !x2017, !x1650, x1715, !x1822, !x1711, !x1873, !x1808)))
+(Set(x2036, x2017),Set(-7, -311))
+(Set(x2036, x1979),Set(-7, -232))
+(Set(x2036, x1895, x1808),Set(-7, -119, -171))
+(Set(x2036, x1895, x1650),Set(-7, -119, -449))
+(Set(x2036, !x1857, x1895),Set(-7, 93, -119))
+(Set(x2036, x1895, x1822),Set(-7, -119, -183))
+(Set(x2036, x1895, x1873),Set(-7, -119, -147))
+(Set(x2036, x1895, !x1715),Set(-7, -119, 284))
+(Set(x2036, x1895, x1711),Set(-7, -119, -328))
+(Set(!x2036),Set(7))
+(Set(!x1895, !x1979, !x2017),Set(119, 232, 311))
+(Set(x1857, !x1979, !x2017, !x1650, x1715, !x1822, !x1711, !x1873, !x1808),Set(449, 147, 328, 311, -284, -93, 171, 183, 232))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1110), Set(x842)))
+Some(Vector(Set(!x842, !x1110)))
+(Set(x1110),Set(-259))
+(Set(x842),Set(-303))
+(Set(!x842, !x1110),Set(303, 259))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1809, x1814)))
+Some(Vector(Set(!x1814), Set(!x1809)))
+(Set(x1809, x1814),Set(-293, -30))
+(Set(!x1814),Set(30))
+(Set(!x1809),Set(293))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1942), Set(x267)))
+Some(Vector(Set(!x267, !x1942)))
+(Set(x1942),Set(-252))
+(Set(x267),Set(-200))
+(Set(!x267, !x1942),Set(200, 252))
+
+Some(Vector(Set(x1104, x1623, x1860), Set(x959, x1623, x1860, !x1476), Set(x959, x1623, x1860, x714)))
+Some(Vector(Set(!x1860), Set(!x1623), Set(!x1104, !x959), Set(!x1104, x1476, !x714)))
+(Set(x1104, x1623, x1860),Set(-88, -389, -438))
+(Set(x959, x1623, x1860, !x1476),Set(-275, -389, -438, 461))
+(Set(x959, x1623, x1860, x714),Set(-275, -389, -438, -473))
+(Set(!x1860),Set(438))
+(Set(!x1623),Set(389))
+(Set(!x1104, !x959),Set(88, 275))
+(Set(!x1104, x1476, !x714),Set(88, -461, 473))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2049, x2017, x2007), Set(x1876, x2049, x2017, x1848), Set(x2017, x1876, x2057, x2049, x1822)))
+Some(Vector(Set(!x2049), Set(!x2017), Set(!x1876, !x2007), Set(!x1822, !x2007, !x1848), Set(!x2007, !x1848, !x2057)))
+(Set(x2049, x2017, x2007),Set(-247, -311, -337))
+(Set(x1876, x2049, x2017, x1848),Set(-66, -247, -311, -352))
+(Set(x2017, x1876, x2057, x2049, x1822),Set(-66, -183, -247, -424, -311))
+(Set(!x2049),Set(247))
+(Set(!x2017),Set(311))
+(Set(!x1876, !x2007),Set(66, 337))
+(Set(!x1822, !x2007, !x1848),Set(183, 337, 352))
+(Set(!x2007, !x1848, !x2057),Set(337, 352, 424))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1665), Set(x216, x1148)))
+Some(Vector(Set(!x1148, !x1665), Set(!x216, !x1665)))
+(Set(x1665),Set(-227))
+(Set(x216, x1148),Set(-395, -5))
+(Set(!x1148, !x1665),Set(5, 227))
+(Set(!x216, !x1665),Set(395, 227))
+
+Some(Vector(Set(x1945), Set(x1760, !x703, x1910)))
+Some(Vector(Set(!x1910, !x1945), Set(x703, !x1945), Set(!x1760, !x1945)))
+(Set(x1945),Set(-287))
+(Set(x1760, !x703, x1910),Set(-224, 433, -8))
+(Set(!x1910, !x1945),Set(8, 287))
+(Set(x703, !x1945),Set(-433, 287))
+(Set(!x1760, !x1945),Set(224, 287))
+
+Some(Vector(Set(x1824), Set(x1979)))
+Some(Vector(Set(!x1979, !x1824)))
+(Set(x1824),Set(-55))
+(Set(x1979),Set(-232))
+(Set(!x1979, !x1824),Set(232, 55))
+
+Some(Vector(Set(!x517)))
+Some(Vector(Set(!x1288)))
+(Set(!x517),Set(455))
+(Set(!x1288),Set(191))
+
+Some(Vector(Set(!x1654, !x1564)))
+Some(Vector(Set(x1564), Set(x1654)))
+(Set(!x1654, !x1564),Set(282, 128))
+(Set(x1564),Set(-128))
+(Set(x1654),Set(-282))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1814), Set(x1598)))
+Some(Vector(Set(!x1598, !x1814)))
+(Set(x1814),Set(-30))
+(Set(x1598),Set(-323))
+(Set(!x1598, !x1814),Set(323, 30))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x2057, x2031), Set(!x962, !x2057), Set(x1895, !x2057), Set(x1877, !x2057)))
+Some(Vector(Set(x2057), Set(!x1895, x962, !x1877, !x2031)))
+(Set(!x2057, x2031),Set(424, -436))
+(Set(!x962, !x2057),Set(153, 424))
+(Set(x1895, !x2057),Set(-119, 424))
+(Set(x1877, !x2057),Set(-242, 424))
+(Set(x2057),Set(-424))
+(Set(!x1895, x962, !x1877, !x2031),Set(119, -153, 242, 436))
+
+Some(Vector(Set(!x1921), Set(!x215, x1979)))
+Some(Vector(Set(!x1979, x1921), Set(x215, x1921)))
+(Set(!x1921),Set(47))
+(Set(!x215, x1979),Set(41, -232))
+(Set(!x1979, x1921),Set(232, -47))
+(Set(x215, x1921),Set(-41, -47))
+
+Some(Vector(Set(x2050, !x2032), Set(x1728, !x164, x2050, x1848, x1942), Set(!x164, x2050, x1848, x1942, !x1876, x1518), Set(!x164, x1276, x2050, x1848, x1942, !x1876, x1330), Set(!x164, x2050, x1848, x1942, !x1876, x1330, x1824)))
+Some(Vector(Set(!x2050), Set(x2032, !x1942), Set(x2032, !x1848), Set(x2032, x164), Set(x1876, x2032, !x1728), Set(x2032, !x1330, !x1728, !x1518), Set(x2032, !x1518, !x1728, !x1276, !x1824)))
+(Set(x2050, !x2032),Set(-58, 209))
+(Set(x1728, !x164, x2050, x1848, x1942),Set(243, -58, -352, -429, -252))
+(Set(!x164, x2050, x1848, x1942, !x1876, x1518),Set(243, -58, -352, -447, 66, -252))
+(Set(!x164, x1276, x2050, x1848, x1942, !x1876, x1330),Set(243, -58, -352, 66, -392, -371, -252))
+(Set(!x164, x2050, x1848, x1942, !x1876, x1330, x1824),Set(243, -58, -55, -352, 66, -371, -252))
+(Set(!x2050),Set(58))
+(Set(x2032, !x1942),Set(-209, 252))
+(Set(x2032, !x1848),Set(-209, 352))
+(Set(x2032, x164),Set(-209, -243))
+(Set(x1876, x2032, !x1728),Set(-66, -209, 429))
+(Set(x2032, !x1330, !x1728, !x1518),Set(-209, 371, 429, 447))
+(Set(x2032, !x1518, !x1728, !x1276, !x1824),Set(-209, 392, 429, 55, 447))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1958), Set(x1009), Set(!x269)))
+Some(Vector(Set(x269, !x1009, !x1958)))
+(Set(x1958),Set(-19))
+(Set(x1009),Set(-306))
+(Set(!x269),Set(91))
+(Set(x269, !x1009, !x1958),Set(-91, 306, 19))
+
+Some(Vector(Set(x1910), Set(!x1800)))
+Some(Vector(Set(x1800, !x1910)))
+(Set(x1910),Set(-8))
+(Set(!x1800),Set(218))
+(Set(x1800, !x1910),Set(-218, 8))
+
+Some(Vector(Set(x1824, !x2047)))
+Some(Vector(Set(x2047), Set(!x1824)))
+(Set(x1824, !x2047),Set(-55, 16))
+(Set(x2047),Set(-16))
+(Set(!x1824),Set(55))
+
+Some(Vector(Set(x1551, x1639, x2012), Set(x590, x1639, x2012)))
+Some(Vector(Set(!x2012), Set(!x1639), Set(!x590, !x1551)))
+(Set(x1551, x1639, x2012),Set(-244, -466, -296))
+(Set(x590, x1639, x2012),Set(-73, -466, -296))
+(Set(!x2012),Set(296))
+(Set(!x1639),Set(466))
+(Set(!x590, !x1551),Set(73, 244))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1958, x1620)))
+Some(Vector(Set(!x1620), Set(!x1958)))
+(Set(x1958, x1620),Set(-19, -185))
+(Set(!x1620),Set(185))
+(Set(!x1958),Set(19))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1979), Set(!x1809), Set(!x1070, !x1265), Set(x939, x239, !x1265), Set(x1534), Set(x2047)))
+Some(Vector(Set(!x1534, x1809, !x1979, x1265, !x2047), Set(!x1534, x1809, !x1979, x1070, !x2047, !x939), Set(!x1534, !x239, x1809, !x1979, x1070, !x2047)))
+(Set(x1979),Set(-232))
+(Set(!x1809),Set(293))
+(Set(!x1070, !x1265),Set(197, 397))
+(Set(x939, x239, !x1265),Set(-82, -277, 397))
+(Set(x1534),Set(-267))
+(Set(x2047),Set(-16))
+(Set(!x1534, x1809, !x1979, x1265, !x2047),Set(267, -397, -293, 16, 232))
+(Set(!x1534, x1809, !x1979, x1070, !x2047, !x939),Set(267, -293, 16, -197, 82, 232))
+(Set(!x1534, !x239, x1809, !x1979, x1070, !x2047),Set(267, -293, 16, -197, 277, 232))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1822, x1824), Set(x1822, x2086), Set(!x1518, x1822)))
+Some(Vector(Set(!x1822), Set(x1518, !x2086, !x1824)))
+(Set(x1822, x1824),Set(-183, -55))
+(Set(x1822, x2086),Set(-183, -50))
+(Set(!x1518, x1822),Set(447, -183))
+(Set(!x1822),Set(183))
+(Set(x1518, !x2086, !x1824),Set(-447, 50, 55))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x548, x2049)))
+Some(Vector(Set(!x2049), Set(!x548)))
+(Set(x548, x2049),Set(-42, -247))
+(Set(!x2049),Set(247))
+(Set(!x548),Set(42))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1942), Set(!x1848), Set(x1814, x1808), Set(x1814, x1743, x1401, x1654), Set(!x1319, x1743, x1234, x1654, x1814)))
+Some(Vector(Set(!x1814, !x1942, x1848), Set(!x1743, !x1808, !x1942, x1848), Set(!x1808, !x1942, !x1654, x1848), Set(x1848, !x1942, !x1401, x1319, !x1808), Set(x1848, !x1942, !x1401, !x1234, !x1808)))
+(Set(x1942),Set(-252))
+(Set(!x1848),Set(352))
+(Set(x1814, x1808),Set(-30, -171))
+(Set(x1814, x1743, x1401, x1654),Set(-30, -162, -204, -282))
+(Set(!x1319, x1743, x1234, x1654, x1814),Set(217, -282, -162, -30, -412))
+(Set(!x1814, !x1942, x1848),Set(30, 252, -352))
+(Set(!x1743, !x1808, !x1942, x1848),Set(162, 171, 252, -352))
+(Set(!x1808, !x1942, !x1654, x1848),Set(171, 252, 282, -352))
+(Set(x1848, !x1942, !x1401, x1319, !x1808),Set(252, -352, -217, 204, 171))
+(Set(x1848, !x1942, !x1401, !x1234, !x1808),Set(252, -352, 412, 204, 171))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x1895), Set(!x1824), Set(x1564), Set(x1876, x1808, x2077)))
+Some(Vector(Set(x1824, x1895, !x1564, !x1808), Set(x1824, !x1876, x1895, !x1564), Set(x1824, x1895, !x1564, !x2077)))
+(Set(!x1895),Set(119))
+(Set(!x1824),Set(55))
+(Set(x1564),Set(-128))
+(Set(x1876, x1808, x2077),Set(-66, -171, -387))
+(Set(x1824, x1895, !x1564, !x1808),Set(-55, -119, 128, 171))
+(Set(x1824, !x1876, x1895, !x1564),Set(-55, 66, -119, 128))
+(Set(x1824, x1895, !x1564, !x2077),Set(-55, -119, 128, 387))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x1838, x2030, !x1234, x1017), Set(!x1838, x1088, x2030, x1017), Set(x1148, !x1838, x2030, x1017), Set(!x1838, x2030, x2077, x1017), Set(!x1876, !x1838, x2030, x1017), Set(x820, !x2012, !x552, !x1838, x1017, x525, x765, x2030), Set(x820, !x438, !x2012, !x552, !x1838, x1017, x514, x765, !x379, x2030), Set(!x1541, !x1838, x2030, x1017), Set(!x1620, !x1838, x2030, x1017), Set(!x1838, x2017, x2030, x1017)))
+Some(Vector(Set(!x2030), Set(!x1017), Set(x1838), Set(!x514, x1876, !x1148, !x525, x1620, !x2017, x1234, x1541, !x1088, !x2077), Set(x1876, !x1148, !x525, x1620, !x2017, x1234, x1541, !x1088, x438, !x2077), Set(x1876, !x1148, !x525, x1620, !x2017, x1234, x1541, !x1088, x379, !x2077), Set(x1876, !x1148, x1620, !x2017, x1234, x1541, !x1088, !x765, !x2077), Set(x1876, !x1148, x1620, !x2017, !x820, x1234, x1541, !x1088, !x2077), Set(x1876, !x1148, x552, x1620, !x2017, x1234, x1541, !x1088, !x2077), Set(x2012, x1876, !x1148, x1620, !x2017, x1234, x1541, !x1088, !x2077)))
+(Set(!x1838, x2030, !x1234, x1017),Set(196, -314, 412, -443))
+(Set(!x1838, x1088, x2030, x1017),Set(196, -301, -314, -443))
+(Set(x1148, !x1838, x2030, x1017),Set(-5, 196, -314, -443))
+(Set(!x1838, x2030, x2077, x1017),Set(196, -314, -387, -443))
+(Set(!x1876, !x1838, x2030, x1017),Set(66, 196, -314, -443))
+(Set(x820, !x2012, !x552, !x1838, x1017, x525, x765, x2030),Set(-335, 440, 196, -114, -314, -410, 296, -443))
+(Set(x820, !x438, !x2012, !x552, !x1838, x1017, x514, x765, !x379, x2030),Set(440, 196, -114, -314, -146, -410, 296, -443, 250, 111))
+(Set(!x1541, !x1838, x2030, x1017),Set(61, 196, -314, -443))
+(Set(!x1620, !x1838, x2030, x1017),Set(185, 196, -314, -443))
+(Set(!x1838, x2017, x2030, x1017),Set(196, -311, -314, -443))
+(Set(!x2030),Set(314))
+(Set(!x1017),Set(443))
+(Set(x1838),Set(-196))
+(Set(!x514, x1876, !x1148, !x525, x1620, !x2017, x1234, x1541, !x1088, !x2077),Set(-66, 5, 301, 311, 335, -185, 387, -61, -412, 146))
+(Set(x1876, !x1148, !x525, x1620, !x2017, x1234, x1541, !x1088, x438, !x2077),Set(-66, 5, 301, -250, 311, 335, -185, 387, -61, -412))
+(Set(x1876, !x1148, !x525, x1620, !x2017, x1234, x1541, !x1088, x379, !x2077),Set(-66, 5, 301, -111, 311, 335, -185, 387, -61, -412))
+(Set(x1876, !x1148, x1620, !x2017, x1234, x1541, !x1088, !x765, !x2077),Set(-66, 5, 301, 311, -185, 387, -61, -412, 410))
+(Set(x1876, !x1148, x1620, !x2017, !x820, x1234, x1541, !x1088, !x2077),Set(-66, 5, 301, 311, -185, 387, -61, -412, 114))
+(Set(x1876, !x1148, x552, x1620, !x2017, x1234, x1541, !x1088, !x2077),Set(-66, 5, 301, 311, -185, 387, -61, -412, -440))
+(Set(x2012, x1876, !x1148, x1620, !x2017, x1234, x1541, !x1088, !x2077),Set(-66, 5, 301, 311, -296, -185, 387, -61, -412))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2058, x2096), Set(x2027, x2096)))
+Some(Vector(Set(!x2096), Set(!x2027, !x2058)))
+(Set(x2058, x2096),Set(-102, -154))
+(Set(x2027, x2096),Set(-302, -154))
+(Set(!x2096),Set(154))
+(Set(!x2027, !x2058),Set(302, 102))
+
+Some(Vector(Set(x1873), Set(x1722), Set(x1703)))
+Some(Vector(Set(!x1703, !x1722, !x1873)))
+(Set(x1873),Set(-147))
+(Set(x1722),Set(-320))
+(Set(x1703),Set(-360))
+(Set(!x1703, !x1722, !x1873),Set(360, 320, 147))
+
+Some(Vector(Set(x1893, !x2063), Set(x235, x1881, !x2063)))
+Some(Vector(Set(x2063), Set(!x1881, !x1893), Set(!x235, !x1893)))
+(Set(x1893, !x2063),Set(-462, 274))
+(Set(x235, x1881, !x2063),Set(-417, -336, 274))
+(Set(x2063),Set(-274))
+(Set(!x1881, !x1893),Set(336, 462))
+(Set(!x235, !x1893),Set(417, 462))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2032), Set(!x1876, x1551, x2030, !x703)))
+Some(Vector(Set(!x2032, !x2030), Set(!x2032, x703), Set(!x2032, !x1551), Set(x1876, !x2032)))
+(Set(x2032),Set(-209))
+(Set(!x1876, x1551, x2030, !x703),Set(66, -244, -314, 433))
+(Set(!x2032, !x2030),Set(209, 314))
+(Set(!x2032, x703),Set(209, -433))
+(Set(!x2032, !x1551),Set(209, 244))
+(Set(x1876, !x2032),Set(-66, 209))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1709), Set(x2049), Set(x1695), Set(x1895), Set(x1702), Set(x1564)))
+Some(Vector(Set(!x2049, !x1709, !x1702, !x1895, !x1564, !x1695)))
+(Set(x1709),Set(-13))
+(Set(x2049),Set(-247))
+(Set(x1695),Set(-163))
+(Set(x1895),Set(-119))
+(Set(x1702),Set(-11))
+(Set(x1564),Set(-128))
+(Set(!x2049, !x1709, !x1702, !x1895, !x1564, !x1695),Set(247, 13, 128, 11, 119, 163))
+
+Some(Vector(Set(x1808, x1809)))
+Some(Vector(Set(!x1809), Set(!x1808)))
+(Set(x1808, x1809),Set(-171, -293))
+(Set(!x1809),Set(293))
+(Set(!x1808),Set(171))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1866, x1518), Set(x1866, x1265, x1507), Set(x1866, !x1003, x1507), Set(x1866, x1002, x1507)))
+Some(Vector(Set(!x1866), Set(!x1507, !x1518), Set(!x1002, x1003, !x1265, !x1518)))
+(Set(x1866, x1518),Set(-202, -447))
+(Set(x1866, x1265, x1507),Set(-202, -397, -431))
+(Set(x1866, !x1003, x1507),Set(-202, 379, -431))
+(Set(x1866, x1002, x1507),Set(-202, -268, -431))
+(Set(!x1866),Set(202))
+(Set(!x1507, !x1518),Set(431, 447))
+(Set(!x1002, x1003, !x1265, !x1518),Set(268, -379, 397, 447))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x548, x2088), Set(!x1814, x2088), Set(x1598, x2088)))
+Some(Vector(Set(!x2088), Set(!x1598, x1814, !x548)))
+(Set(x548, x2088),Set(-42, -372))
+(Set(!x1814, x2088),Set(30, -372))
+(Set(x1598, x2088),Set(-323, -372))
+(Set(!x2088),Set(372))
+(Set(!x1598, x1814, !x548),Set(323, -30, 42))
+
+Some(Vector(Set(x1746, x1654)))
+Some(Vector(Set(!x1654), Set(!x1746)))
+(Set(x1746, x1654),Set(-404, -282))
+(Set(!x1654),Set(282))
+(Set(!x1746),Set(404))
+
+Some(Vector(Set(x1480, !x1551, !x990), Set(x1096, !x1551, x1095, !x508, !x990)))
+Some(Vector(Set(x1551), Set(x990), Set(x508, !x1480), Set(!x1480, !x1096), Set(!x1480, !x1095)))
+(Set(x1480, !x1551, !x990),Set(-213, 244, 380))
+(Set(x1096, !x1551, x1095, !x508, !x990),Set(380, -373, 244, 198, -279))
+(Set(x1551),Set(-244))
+(Set(x990),Set(-380))
+(Set(x508, !x1480),Set(-198, 213))
+(Set(!x1480, !x1096),Set(213, 373))
+(Set(!x1480, !x1095),Set(213, 279))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x1824, x1876), Set(x1392, x1876)))
+Some(Vector(Set(!x1876), Set(!x1392, x1824)))
+(Set(!x1824, x1876),Set(55, -66))
+(Set(x1392, x1876),Set(-10, -66))
+(Set(!x1876),Set(66))
+(Set(!x1392, x1824),Set(10, -55))
+
+Some(Vector(Set(x1792, x1680)))
+Some(Vector(Set(!x1680), Set(!x1792)))
+(Set(x1792, x1680),Set(-220, -177))
+(Set(!x1680),Set(177))
+(Set(!x1792),Set(220))
+
+Some(Vector(Set(x1536), Set(x1257), Set(x514)))
+Some(Vector(Set(!x514, !x1257, !x1536)))
+(Set(x1536),Set(-35))
+(Set(x1257),Set(-56))
+(Set(x514),Set(-146))
+(Set(!x514, !x1257, !x1536),Set(146, 56, 35))
+
+Some(Vector(Set(!x1996), Set(x828, x1822)))
+Some(Vector(Set(!x1822, x1996), Set(!x828, x1996)))
+(Set(!x1996),Set(237))
+(Set(x828, x1822),Set(-148, -183))
+(Set(!x1822, x1996),Set(183, -237))
+(Set(!x828, x1996),Set(148, -237))
+
+Some(Vector(Set(x1950), Set(x1942), Set(x1597, x1809)))
+Some(Vector(Set(!x1809, !x1942, !x1950), Set(!x1597, !x1942, !x1950)))
+(Set(x1950),Set(-69))
+(Set(x1942),Set(-252))
+(Set(x1597, x1809),Set(-193, -293))
+(Set(!x1809, !x1942, !x1950),Set(293, 252, 69))
+(Set(!x1597, !x1942, !x1950),Set(193, 252, 69))
+
+Some(Vector(Set(x1824), Set(x1890), Set(!x455), Set(!x1814, x1564, !x703), Set(x1807, x1564, !x703), Set(x1910), Set(!x2027), Set(x2047)))
+Some(Vector(Set(!x1890, x455, x2027, x703, !x2047, !x1910, !x1824), Set(!x1890, x455, x2027, !x2047, !x1564, !x1910, !x1824), Set(!x1890, x455, x2027, !x2047, x1814, !x1807, !x1910, !x1824)))
+(Set(x1824),Set(-55))
+(Set(x1890),Set(-65))
+(Set(!x455),Set(342))
+(Set(!x1814, x1564, !x703),Set(30, -128, 433))
+(Set(x1807, x1564, !x703),Set(-28, -128, 433))
+(Set(x1910),Set(-8))
+(Set(!x2027),Set(302))
+(Set(x2047),Set(-16))
+(Set(!x1890, x455, x2027, x703, !x2047, !x1910, !x1824),Set(-342, 65, -433, 16, -302, 55, 8))
+(Set(!x1890, x455, x2027, !x2047, !x1564, !x1910, !x1824),Set(-342, 65, 128, 16, -302, 55, 8))
+(Set(!x1890, x455, x2027, !x2047, x1814, !x1807, !x1910, !x1824),Set(-342, 28, 65, -30, 16, -302, 55, 8))
+
+Some(Vector(Set(!x1824, x548), Set(x153, x548)))
+Some(Vector(Set(!x548), Set(!x153, x1824)))
+(Set(!x1824, x548),Set(55, -42))
+(Set(x153, x548),Set(-364, -42))
+(Set(!x548),Set(42))
+(Set(!x153, x1824),Set(364, -55))
+
+Some(Vector(Set(x1876), Set(!x2077)))
+Some(Vector(Set(x2077, !x1876)))
+(Set(x1876),Set(-66))
+(Set(!x2077),Set(387))
+(Set(x2077, !x1876),Set(-387, 66))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1921, x1945), Set(x508, !x1774, x1945)))
+Some(Vector(Set(!x1945), Set(x1774, !x1921), Set(!x508, !x1921)))
+(Set(x1921, x1945),Set(-47, -287))
+(Set(x508, !x1774, x1945),Set(-198, 401, -287))
+(Set(!x1945),Set(287))
+(Set(x1774, !x1921),Set(-401, 47))
+(Set(!x508, !x1921),Set(198, 47))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x548, x1932, x1942), Set(x548, x1833, x1942)))
+Some(Vector(Set(!x1942), Set(!x1833, !x1932), Set(!x548)))
+(Set(x548, x1932, x1942),Set(-42, -1, -252))
+(Set(x548, x1833, x1942),Set(-42, -199, -252))
+(Set(!x1942),Set(252))
+(Set(!x1833, !x1932),Set(199, 1))
+(Set(!x548),Set(42))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2047, x2063)))
+Some(Vector(Set(!x2063), Set(!x2047)))
+(Set(x2047, x2063),Set(-16, -274))
+(Set(!x2063),Set(274))
+(Set(!x2047),Set(16))
+
+Some(Vector(Set(x355, x832)))
+Some(Vector(Set(!x832), Set(!x355)))
+(Set(x355, x832),Set(-300, -126))
+(Set(!x832),Set(126))
+(Set(!x355),Set(300))
+
+Some(Vector(Set(x1637, x1950), Set(x709, x1950)))
+Some(Vector(Set(!x1950), Set(!x709, !x1637)))
+(Set(x1637, x1950),Set(-207, -69))
+(Set(x709, x1950),Set(-160, -69))
+(Set(!x1950),Set(69))
+(Set(!x709, !x1637),Set(160, 207))
+
+Some(Vector(Set(x2012, !x425)))
+Some(Vector(Set(x425), Set(!x2012)))
+(Set(x2012, !x425),Set(-296, 116))
+(Set(x425),Set(-116))
+(Set(!x2012),Set(296))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1480, !x1792, x1809), Set(!x2012, !x1792, x1809)))
+Some(Vector(Set(!x1809), Set(x1792), Set(x2012, !x1480)))
+(Set(x1480, !x1792, x1809),Set(-213, 220, -293))
+(Set(!x2012, !x1792, x1809),Set(296, 220, -293))
+(Set(!x1809),Set(293))
+(Set(x1792),Set(-220))
+(Set(x2012, !x1480),Set(-296, 213))
+
+Some(Vector(Set(x2032, x2017), Set(x1950, x832, x2032, x1956)))
+Some(Vector(Set(!x2032), Set(!x1956, !x2017), Set(!x1950, !x2017), Set(!x832, !x2017)))
+(Set(x2032, x2017),Set(-209, -311))
+(Set(x1950, x832, x2032, x1956),Set(-69, -126, -209, -249))
+(Set(!x2032),Set(209))
+(Set(!x1956, !x2017),Set(249, 311))
+(Set(!x1950, !x2017),Set(69, 311))
+(Set(!x832, !x2017),Set(126, 311))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x1942), Set(x1476), Set(x1654)))
+Some(Vector(Set(!x1654, !x1476, x1942)))
+(Set(!x1942),Set(252))
+(Set(x1476),Set(-461))
+(Set(x1654),Set(-282))
+(Set(!x1654, !x1476, x1942),Set(282, 461, -252))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!x1932), Set(x1849), Set(!x703), Set(x1810)))
+Some(Vector(Set(!x1810, x703, !x1849, x1932)))
+(Set(!x1932),Set(1))
+(Set(x1849),Set(-269))
+(Set(!x703),Set(433))
+(Set(x1810),Set(-313))
+(Set(!x1810, x703, !x1849, x1932),Set(313, -433, 269, -1))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1876), Set(x1760, !x1820)))
+Some(Vector(Set(x1820, !x1876), Set(!x1760, !x1876)))
+(Set(x1876),Set(-66))
+(Set(x1760, !x1820),Set(-224, 381))
+(Set(x1820, !x1876),Set(-381, 66))
+(Set(!x1760, !x1876),Set(224, 66))
+
+Some(Vector(Set(x1401), Set(x1824), Set(x1153), Set(x939)))
+Some(Vector(Set(!x939, !x1153, !x1824, !x1401)))
+(Set(x1401),Set(-204))
+(Set(x1824),Set(-55))
+(Set(x1153),Set(-382))
+(Set(x939),Set(-82))
+(Set(!x939, !x1153, !x1824, !x1401),Set(82, 382, 55, 204))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1824), Set(x897)))
+Some(Vector(Set(!x897, !x1824)))
+(Set(x1824),Set(-55))
+(Set(x897),Set(-230))
+(Set(!x897, !x1824),Set(230, 55))
+
+Some(Vector(Set(x1798), Set(x1822), Set(x1185, x1265, x900)))
+Some(Vector(Set(!x1822, !x1798, !x1265), Set(!x1822, !x1798, !x1185), Set(!x1822, !x1798, !x900)))
+(Set(x1798),Set(-270))
+(Set(x1822),Set(-183))
+(Set(x1185, x1265, x900),Set(-286, -397, -421))
+(Set(!x1822, !x1798, !x1265),Set(183, 270, 397))
+(Set(!x1822, !x1798, !x1185),Set(183, 270, 286))
+(Set(!x1822, !x1798, !x900),Set(183, 270, 421))
+
+Some(Vector(Set(x1822, x2044), Set(x854, x2044)))
+Some(Vector(Set(!x2044), Set(!x854, !x1822)))
+(Set(x1822, x2044),Set(-183, -343))
+(Set(x854, x2044),Set(-122, -343))
+(Set(!x2044),Set(343))
+(Set(!x854, !x1822),Set(122, 183))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x2096, x1921)))
+Some(Vector(Set(!x1921), Set(!x2096)))
+(Set(x2096, x1921),Set(-154, -47))
+(Set(!x1921),Set(47))
+(Set(!x2096),Set(154))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(x1881, x1848, x2088), Set(x1810, x1881, x2088), Set(x1807, x1881, x2088)))
+Some(Vector(Set(!x2088), Set(!x1881), Set(!x1807, !x1810, !x1848)))
+(Set(x1881, x1848, x2088),Set(-336, -352, -372))
+(Set(x1810, x1881, x2088),Set(-313, -336, -372))
+(Set(x1807, x1881, x2088),Set(-28, -336, -372))
+(Set(!x2088),Set(372))
+(Set(!x1881),Set(336))
+(Set(!x1807, !x1810, !x1848),Set(28, 313, 352))
+
+Some(Vector(Set(x1950, x2053, x2057), Set(x1890, x2053, x2057), Set(x1848, x2053, x2057), Set(x1564, x2057, x1822, x2053, !x1808)))
+Some(Vector(Set(!x2057), Set(!x2053), Set(!x1890, !x1950, !x1822, !x1848), Set(!x1890, !x1950, !x1564, !x1848), Set(!x1890, !x1950, x1808, !x1848)))
+(Set(x1950, x2053, x2057),Set(-69, -399, -424))
+(Set(x1890, x2053, x2057),Set(-65, -399, -424))
+(Set(x1848, x2053, x2057),Set(-352, -399, -424))
+(Set(x1564, x2057, x1822, x2053, !x1808),Set(-128, -399, -183, -424, 171))
+(Set(!x2057),Set(424))
+(Set(!x2053),Set(399))
+(Set(!x1890, !x1950, !x1822, !x1848),Set(65, 69, 183, 352))
+(Set(!x1890, !x1950, !x1564, !x1848),Set(65, 69, 128, 352))
+(Set(!x1890, !x1950, x1808, !x1848),Set(65, 69, -171, 352))
+
+Some(Vector(Set(x2027), Set(x122), Set(!x2007), Set(x1973, !x1979)))
+Some(Vector(Set(!x122, x1979, !x2027, x2007), Set(!x1973, !x122, !x2027, x2007)))
+(Set(x2027),Set(-302))
+(Set(x122),Set(-228))
+(Set(!x2007),Set(337))
+(Set(x1973, !x1979),Set(-36, 232))
+(Set(!x122, x1979, !x2027, x2007),Set(228, -232, 302, -337))
+(Set(!x1973, !x122, !x2027, x2007),Set(36, 228, 302, -337))
+
+Some(Vector(Set(x2017), Set(x1709, x1950, x1653, !x455)))
+Some(Vector(Set(!x1950, !x2017), Set(!x2017, x455), Set(!x1709, !x2017), Set(!x1653, !x2017)))
+(Set(x2017),Set(-311))
+(Set(x1709, x1950, x1653, !x455),Set(-13, -69, -136, 342))
+(Set(!x1950, !x2017),Set(69, 311))
+(Set(!x2017, x455),Set(311, -342))
+(Set(!x1709, !x2017),Set(13, 311))
+(Set(!x1653, !x2017),Set(136, 311))
+Map(x1932 -> 1, x1474 -> 2, x1508 -> 3, x277 -> 4, x1148 -> 5, x1908 -> 6, x2036 -> 7, x1910 -> 8, x181 -> 9, x1392 -> 10, x1702 -> 11, x1919 -> 12, x1709 -> 13, x1161 -> 14, x2004 -> 15, x2047 -> 16, x1280 -> 17, x1469 -> 18, x1958 -> 19, x1246 -> 20, x1563 -> 21, x1212 -> 22, x1402 -> 23, x1951 -> 24, x777 -> 25, x1381 -> 26, x1926 -> 27, x1807 -> 28, x671 -> 29, x1814 -> 30, x2060 -> 31, x1235 -> 32, x2075 -> 33, x1335 -> 34, x1536 -> 35, x1973 -> 36, x1552 -> 37, x1571 -> 38, x710 -> 39, x708 -> 40, x215 -> 41, x548 -> 42, x195 -> 43, x436 -> 44, x1488 -> 45, x1690 -> 46, x1921 -> 47, x594 -> 48, x650 -> 49, x2086 -> 50, x1354 -> 51, x9 -> 52, x1058 -> 53, x1609 -> 54, x1824 -> 55, x1257 -> 56, x1343 -> 57, x2050 -> 58, x970 -> 59, x849 -> 60, x1541 -> 61, x811 -> 62, x1641 -> 63, x118 -> 64, x1890 -> 65, x1876 -> 66, x1596 -> 67, x754 -> 68, x1950 -> 69, x1458 -> 70, x840 -> 71, x1289 -> 72, x590 -> 73, x244 -> 74, x2094 -> 75, x1347 -> 76, x209 -> 77, x866 -> 78, x1582 -> 79, x952 -> 80, x274 -> 81, x939 -> 82, x992 -> 83, x1126 -> 84, x1159 -> 85, x1115 -> 86, x2069 -> 87, x1104 -> 88, x1396 -> 89, x1014 -> 90, x269 -> 91, x1447 -> 92, x1857 -> 93, x1093 -> 94, x1955 -> 95, x1075 -> 96, x862 -> 97, x1198 -> 98, x44 -> 99, x299 -> 100, x816 -> 101, x2058 -> 102, x494 -> 103, x1219 -> 104, x1843 -> 105, x1909 -> 106, x879 -> 107, x1239 -> 108, x630 -> 109, x337 -> 110, x379 -> 111, x626 -> 112, x281 -> 113, x820 -> 114, x381 -> 115, x425 -> 116, x1361 -> 117, x2079 -> 118, x1895 -> 119, x1484 -> 120, x1188 -> 121, x854 -> 122, x151 -> 123, x110 -> 124, x728 -> 125, x832 -> 126, x698 -> 127, x1564 -> 128, x125 -> 129, x798 -> 130, x1382 -> 131, x132 -> 132, x1162 -> 133, x872 -> 134, x727 -> 135, x1653 -> 136, x529 -> 137, x1884 -> 138, x1021 -> 139, x1337 -> 140, x1478 -> 141, x393 -> 142, x739 -> 143, x295 -> 144, x2039 -> 145, x514 -> 146, x1873 -> 147, x828 -> 148, x666 -> 149, x450 -> 150, x2028 -> 151, x749 -> 152, x962 -> 153, x2096 -> 154, x925 -> 155, x1019 -> 156, x155 -> 157, x1315 -> 158, x1416 -> 159, x709 -> 160, x1939 -> 161, x1743 -> 162, x1695 -> 163, x2062 -> 164, x1113 -> 165, x1217 -> 166, x1027 -> 167, x2051 -> 168, x90 -> 169, x1980 -> 170, x1808 -> 171, x720 -> 172, x1177 -> 173, x515 -> 174, x504 -> 175, x1738 -> 176, x1680 -> 177, x913 -> 178, x414 -> 179, x1513 -> 180, x969 -> 181, x2076 -> 182, x1822 -> 183, x753 -> 184, x1620 -> 185, x396 -> 186, x1516 -> 187, x1263 -> 188, x1839 -> 189, x1169 -> 190, x1288 -> 191, x1648 -> 192, x1597 -> 193, x799 -> 194, x1112 -> 195, x1838 -> 196, x1070 -> 197, x508 -> 198, x1833 -> 199, x267 -> 200, x1389 -> 201, x1866 -> 202, x1811 -> 203, x1401 -> 204, x194 -> 205, x333 -> 206, x1637 -> 207, x1011 -> 208, x2032 -> 209, x1065 -> 210, x1784 -> 211, x810 -> 212, x1480 -> 213, x1607 -> 214, x188 -> 215, x1765 -> 216, x1319 -> 217, x1800 -> 218, x1266 -> 219, x1792 -> 220, x1076 -> 221, x1626 -> 222, x645 -> 223, x1760 -> 224, x133 -> 225, x1386 -> 226, x1665 -> 227, x122 -> 228, x843 -> 229, x897 -> 230, x1567 -> 231, x1979 -> 232, x1127 -> 233, x98 -> 234, x1556 -> 235, x65 -> 236, x1996 -> 237, x1083 -> 238, x662 -> 239, x638 -> 240, x824 -> 241, x1877 -> 242, x164 -> 243, x1551 -> 244, x1885 -> 245, x649 -> 246, x2049 -> 247, x448 -> 248, x1956 -> 249, x438 -> 250, x729 -> 251, x1942 -> 252, x757 -> 253, x1523 -> 254, x971 -> 255, x1404 -> 256, x894 -> 257, x1168 -> 258, x1110 -> 259, x2052 -> 260, x433 -> 261, x5 -> 262, x922 -> 263, x1494 -> 264, x586 -> 265, x948 -> 266, x1534 -> 267, x1002 -> 268, x1849 -> 269, x1798 -> 270, x1300 -> 271, x2055 -> 272, x1252 -> 273, x2063 -> 274, x959 -> 275, x1770 -> 276, x239 -> 277, x1628 -> 278, x1095 -> 279, x1241 -> 280, x1322 -> 281, x1654 -> 282, x167 -> 283, x1715 -> 284, x2045 -> 285, x1185 -> 286, x1945 -> 287, x1632 -> 288, x1196 -> 289, x1817 -> 290, x1512 -> 291, x358 -> 292, x1809 -> 293, x2016 -> 294, x369 -> 295, x2012 -> 296, x1333 -> 297, x1132 -> 298, x1718 -> 299, x355 -> 300, x1088 -> 301, x2027 -> 302, x842 -> 303, x1901 -> 304, x1967 -> 305, x1009 -> 306, x1531 -> 307, x492 -> 308, x1022 -> 309, x1388 -> 310, x2017 -> 311, x97 -> 312, x1810 -> 313, x2030 -> 314, x413 -> 315, x1160 -> 316, x901 -> 317, x137 -> 318, x998 -> 319, x1722 -> 320, x1975 -> 321, x1856 -> 322, x1598 -> 323, x449 -> 324, x1394 -> 325, x197 -> 326, x430 -> 327, x1711 -> 328, x2029 -> 329, x466 -> 330, x1261 -> 331, x20 -> 332, x1692 -> 333, x547 -> 334, x525 -> 335, x1881 -> 336, x2007 -> 337, x1139 -> 338, x1997 -> 339, x639 -> 340, x1033 -> 341, x455 -> 342, x2044 -> 343, x1986 -> 344, x53 -> 345, x1928 -> 346, x994 -> 347, x1528 -> 348, x518 -> 349, x966 -> 350, x1906 -> 351, x1848 -> 352, x747 -> 353, x437 -> 354, x156 -> 355, x741 -> 356, x646 -> 357, x702 -> 358, x1106 -> 359, x1703 -> 360, x657 -> 361, x955 -> 362, x1794 -> 363, x153 -> 364, x1 -> 365, x101 -> 366, x1251 -> 367, x354 -> 368, x171 -> 369, x1591 -> 370, x1330 -> 371, x2088 -> 372, x1096 -> 373, x1965 -> 374, x1279 -> 375, x899 -> 376, x804 -> 377, x276 -> 378, x1003 -> 379, x990 -> 380, x1820 -> 381, x1153 -> 382, x298 -> 383, x791 -> 384, x1454 -> 385, x470 -> 386, x2077 -> 387, x33 -> 388, x1623 -> 389, x1268 -> 390, x96 -> 391, x1276 -> 392, x1645 -> 393, x1678 -> 394, x216 -> 395, x1052 -> 396, x1265 -> 397, x168 -> 398, x2053 -> 399, x1273 -> 400, x1774 -> 401, x808 -> 402, x975 -> 403, x1746 -> 404, x174 -> 405, x2056 -> 406, x1943 -> 407, x1074 -> 408, x1829 -> 409, x765 -> 410, x1577 -> 411, x1234 -> 412, x923 -> 413, x736 -> 414, x149 -> 415, x1374 -> 416, x235 -> 417, x1859 -> 418, x1189 -> 419, x1338 -> 420, x900 -> 421, x1769 -> 422, x546 -> 423, x2057 -> 424, x1813 -> 425, x2042 -> 426, x10 -> 427, x1907 -> 428, x1728 -> 429, x1599 -> 430, x1507 -> 431, x1929 -> 432, x703 -> 433, x1724 -> 434, x152 -> 435, x2031 -> 436, x1797 -> 437, x1860 -> 438, x1511 -> 439, x552 -> 440, x1529 -> 441, x1679 -> 442, x1017 -> 443, x1790 -> 444, x740 -> 445, x420 -> 446, x1518 -> 447, x2084 -> 448, x1650 -> 449, x560 -> 450, x535 -> 451, x1655 -> 452, x1167 -> 453, x1936 -> 454, x517 -> 455, x1210 -> 456, x297 -> 457, x340 -> 458, x956 -> 459, x1114 -> 460, x1476 -> 461, x1893 -> 462, x1706 -> 463, x275 -> 464, x1178 -> 465, x1639 -> 466, x1013 -> 467, x1983 -> 468, x1758 -> 469, x21 -> 470, x1739 -> 471, x1756 -> 472, x714 -> 473, x286 -> 474)
+p cnf 474 1337
+-344 268 0
+-19 268 0
+19 344 -268 0
+126 -313 379 0
+313 -379 0
+-126 -379 0
+-311 443 0
+-66 69 443 0
+-69 311 -443 0
+66 311 -443 0
+-290 156 0
+189 290 -156 0
+244 290 -156 0
+-196 -232 -352 309 0
+-232 -274 -352 -30 -61 309 0
+232 -309 0
+352 -309 0
+30 196 -309 0
+61 196 -309 0
+196 274 -309 0
+-408 341 0
+164 341 0
+-164 408 -341 0
+-55 396 0
+320 396 0
+-320 55 -396 0
+-158 1 220 197 0
+-220 -197 0
+-1 -197 0
+158 -197 0
+-183 408 0
+-2 408 0
+2 183 -408 0
+-8 170 96 0
+-119 170 96 0
+-30 170 96 0
+-170 -96 0
+30 119 8 -96 0
+-342 238 0
+-19 238 0
+19 342 -238 0
+-5 -304 301 0
+304 -301 0
+5 -301 0
+-447 30 279 0
+-30 -279 0
+447 -279 0
+-472 373 0
+-416 373 0
+-294 373 0
+-396 373 0
+-108 373 0
+472 416 396 -373 108 294 0
+-33 124 0
+357 124 0
+-357 33 -124 0
+-13 88 0
+384 88 0
+-451 88 0
+451 -384 13 -88 0
+182 -75 359 0
+75 -359 0
+-182 -359 0
+-22 -463 -300 259 -376 0
+463 -259 0
+376 -259 0
+22 -259 0
+300 -259 0
+-250 -356 -434 165 0
+434 -165 0
+356 -165 0
+250 -165 0
+-38 -183 460 0
+-38 -390 460 0
+-38 -241 460 0
+-38 -433 460 0
+38 -460 0
+-460 241 390 433 183 0
+-252 338 0
+-30 454 338 0
+-454 252 -338 0
+30 252 -338 0
+-321 5 0
+-242 5 0
+-18 5 0
+82 85 -194 5 0
+321 -5 18 -85 242 0
+321 -82 -5 18 242 0
+321 -5 194 18 242 0
+-8 -462 382 0
+-8 -66 382 0
+-8 -147 -189 382 0
+-128 -8 382 -147 30 0
+8 -382 0
+66 147 462 -382 0
+-382 189 128 66 462 0
+-382 189 -30 66 462 0
+-397 119 316 0
+-119 -316 0
+397 -316 0
+-22 348 190 0
+348 -431 190 0
+348 433 190 0
+348 -359 190 0
+197 348 190 0
+-348 -190 0
+-433 -190 22 431 359 -197 0
+-55 64 0
+-42 64 0
+42 55 -64 0
+-95 183 342 286 0
+-224 -95 286 342 171 0
+-95 286 342 -46 171 0
+-3 -95 -447 286 342 171 0
+-95 201 -447 286 342 171 0
+-263 -95 -447 -395 286 342 171 -317 -361 0
+95 -286 0
+-342 -286 0
+-171 -183 -286 0
+-286 46 224 -183 447 0
+-286 46 224 -183 3 263 -201 0
+-286 46 224 317 -183 3 -201 0
+-286 46 224 -183 3 -201 395 0
+-286 46 361 224 -183 3 -201 0
+247 121 -153 -436 -430 0
+-247 -121 0
+436 -121 0
+430 -121 0
+153 -121 0
+-54 -47 22 0
+47 -22 0
+54 -22 0
+-19 198 166 0
+-145 198 166 0
+-198 -166 0
+145 19 -166 0
+-399 104 0
+-311 104 0
+-19 104 0
+-69 -313 104 0
+-69 -116 437 104 0
+-69 -360 437 104 0
+69 -104 311 399 19 0
+-104 -437 311 313 399 19 0
+-104 116 360 311 313 399 19 0
+-23 116 183 228 0
+-97 116 183 228 0
+228 116 -122 -69 183 0
+-183 -228 0
+-116 -228 0
+23 97 122 -228 0
+23 69 97 -228 0
+-287 344 372 108 0
+8 344 372 108 0
+-372 -108 0
+-344 -108 0
+-8 287 -108 0
+274 280 0
+-42 -171 280 0
+-18 -171 280 0
+171 -274 -280 0
+18 42 -274 -280 0
+-13 -325 129 0
+42 -325 129 0
+-224 -325 129 0
+-276 -325 129 0
+-47 -128 -325 129 0
+-128 -183 -325 129 0
+-136 -325 129 0
+325 -129 0
+276 224 13 128 -42 -129 136 0
+276 224 13 -42 -129 183 136 47 0
+-322 56 0
+150 -212 56 0
+212 322 -56 0
+-150 322 -56 0
+404 -55 219 0
+55 -219 0
+-404 -219 0
+-8 -372 390 0
+-183 -372 433 390 0
+-278 -30 -372 390 433 0
+-128 -30 -372 -461 390 433 0
+-128 -18 -30 -372 390 433 0
+-128 -30 -372 -117 390 433 0
+372 -390 0
+8 -433 -390 0
+8 30 183 -390 0
+-390 128 278 8 183 0
+117 -390 461 278 18 8 183 0
+-263 -183 400 0
+183 -400 0
+263 -400 0
+-168 392 0
+42 392 0
+-42 168 -392 0
+-232 17 0
+-377 17 0
+377 232 -17 0
+-13 72 0
+-326 72 0
+326 13 -72 0
+-153 271 0
+-204 271 0
+204 153 -271 0
+-224 158 0
+-61 158 0
+61 224 -158 0
+401 -342 -69 217 0
+69 -217 0
+342 -217 0
+-401 -217 0
+-183 -242 132 0
+242 -132 0
+183 -132 0
+-55 225 0
+-311 225 0
+-290 342 225 0
+-75 342 225 0
+-19 342 -371 225 0
+55 311 -342 -225 0
+371 311 55 75 290 -225 0
+311 55 75 290 19 -225 0
+-226 298 -397 371 0
+161 371 0
+66 371 0
+162 371 0
+-204 371 0
+-180 371 0
+-66 -162 180 204 226 -371 -161 0
+-66 -162 397 180 204 -371 -161 0
+-66 -162 180 204 -371 -298 -161 0
+-1 -287 -314 34 0
+314 -34 0
+287 -34 0
+1 -34 0
+-15 318 0
+-19 318 0
+19 15 -318 0
+-290 416 0
+401 416 0
+-443 416 0
+443 -401 290 -416 0
+433 -230 226 0
+-224 -230 226 0
+-108 -230 226 0
+230 -226 0
+108 224 -433 -226 0
+-50 424 201 0
+-424 -201 0
+50 -201 0
+342 296 10 0
+-296 -10 0
+-342 -10 0
+339 325 0
+-95 325 0
+-271 325 -171 342 -21 -220 0
+-338 325 -171 342 -21 -220 0
+325 -171 -153 342 -61 -21 -220 0
+325 -359 -171 342 -61 -21 -220 0
+325 -171 130 342 -61 -21 -220 0
+325 -433 -171 342 -61 -21 -65 -220 0
+325 -433 -314 -171 342 -61 -21 -220 0
+325 -171 342 -61 -21 -317 -220 0
+95 171 -339 -325 0
+95 220 -339 -325 0
+21 95 -339 -325 0
+95 -339 -342 -325 0
+61 271 -325 95 338 -339 0
+153 -130 317 271 -325 95 338 359 433 -339 0
+153 -130 65 317 271 -325 95 338 359 314 -339 0
+-42 342 433 89 0
+-128 -224 89 -42 342 -411 -293 0
+-128 -224 89 -42 342 -293 -13 0
+42 -89 0
+-342 -89 0
+128 -433 -89 0
+293 -433 -89 0
+224 -433 -89 0
+13 411 -433 -89 0
+-326 204 0
+-315 204 0
+315 326 -204 0
+-16 -260 23 0
+-377 -256 -265 -16 23 0
+16 -23 0
+256 260 -23 0
+260 377 -23 0
+260 265 -23 0
+-250 -60 433 70 0
+-433 -70 0
+60 -70 0
+250 -70 0
+-171 18 0
+-72 -271 18 0
+-271 -396 18 0
+-271 -427 18 -443 104 0
+171 271 -18 0
+-18 443 396 72 171 0
+-18 -104 396 72 171 0
+-18 396 72 171 427 0
+-232 -320 461 0
+-232 -447 461 0
+-232 404 461 149 -349 0
+232 -461 0
+320 -404 447 -461 0
+-149 320 447 -461 0
+320 349 447 -461 0
+396 213 0
+443 213 0
+-443 -396 -213 0
+342 415 0
+-127 -341 -451 415 0
+-127 -341 -349 -225 415 0
+341 -342 -415 0
+127 -342 -415 0
+-342 349 451 -415 0
+225 -342 451 -415 0
+302 264 0
+-305 264 0
+65 264 0
+-65 305 -302 -264 0
+-211 -247 3 0
+-109 -340 -247 3 0
+247 -3 0
+340 211 -3 0
+109 211 -3 0
+-66 180 0
+-196 180 0
+196 66 -180 0
+-42 187 342 -443 433 0
+28 -42 187 342 -443 0
+42 -187 0
+443 -187 0
+-342 -187 0
+-28 -433 -187 0
+-69 -232 -247 447 0
+-47 -232 -247 447 0
+247 -447 0
+232 -447 0
+47 69 -447 0
+-79 -329 348 0
+-291 -329 348 0
+-190 -306 -329 348 0
+329 -348 0
+79 190 291 -348 0
+79 291 306 -348 0
+176 -171 293 364 0
+-293 -364 0
+171 -364 0
+-176 -364 0
+-13 -381 311 267 0
+-311 -267 0
+381 -267 0
+13 -267 0
+-468 35 0
+-8 35 0
+-6 35 0
+6 8 468 -35 0
+-319 -297 -118 61 0
+-251 -297 -118 61 0
+118 -61 0
+297 -61 0
+251 319 -61 0
+205 -299 157 0
+-415 -299 157 0
+299 -157 0
+415 -205 -157 0
+202 69 -436 355 0
+436 -355 0
+-69 -355 0
+-202 -355 0
+-161 -247 128 0
+-247 -425 128 0
+-31 -247 -396 128 0
+-31 128 -247 -202 447 0
+-31 128 -126 -247 -202 0
+-274 -31 128 -247 -202 -253 0
+247 -128 0
+31 161 425 -128 0
+-128 202 396 425 161 0
+-128 253 396 -447 425 161 126 0
+-128 396 -447 425 161 274 126 0
+-183 -272 38 0
+219 -392 -272 38 0
+272 -38 0
+392 183 -38 0
+-219 183 -38 0
+13 196 287 411 0
+42 196 287 411 0
+196 287 -430 411 0
+196 287 323 411 0
+-287 -411 0
+-196 -411 0
+-323 430 -42 -411 -13 0
+-31 -55 370 0
+-31 -203 370 0
+-31 -418 370 0
+-31 -161 370 0
+-31 311 370 0
+-31 -296 370 0
+31 -370 0
+-370 161 296 203 55 418 -311 0
+334 193 0
+-250 193 0
+-69 193 0
+69 250 -334 -193 0
+-65 430 0
+-278 430 0
+-396 430 0
+396 278 65 -430 0
+-33 54 0
+228 230 -348 54 0
+348 33 -54 0
+-230 33 -54 0
+-228 33 -54 0
+-293 -1 185 0
+1 -185 0
+293 -185 0
+-302 389 0
+-47 -232 389 0
+-232 342 389 0
+-232 -269 389 0
+232 302 -389 0
+269 -342 302 -389 47 0
+-135 222 0
+-132 -318 -42 222 0
+42 135 -222 0
+318 135 -222 0
+132 135 -222 0
+-373 -50 278 0
+50 -278 0
+373 -278 0
+-274 288 -8 -272 -16 -311 0
+-274 288 -272 -336 -16 -252 -311 0
+274 -288 0
+16 -288 0
+8 252 -288 0
+8 336 -288 0
+311 -288 0
+272 -288 0
+-168 466 0
+158 466 0
+-158 168 -466 0
+16 243 0
+-231 -430 243 0
+430 -16 -243 0
+231 -16 -243 0
+-439 -370 -466 63 0
+337 -370 -466 63 0
+466 -63 0
+370 -63 0
+-337 439 -63 0
+182 449 0
+-183 -274 -337 449 0
+-274 449 224 -337 -30 0
+-274 449 -337 -30 342 0
+-182 274 -449 0
+-182 337 -449 0
+30 -182 183 -449 0
+-182 -224 -342 -449 183 0
+-249 452 0
+220 452 0
+-132 -261 452 0
+261 -220 249 -452 0
+132 -220 249 -452 0
+394 -61 16 -70 -298 0
+394 -61 16 -70 -457 0
+-16 -394 0
+61 -394 0
+70 -394 0
+298 457 -394 0
+-55 -33 398 0
+33 -398 0
+55 -398 0
+-183 177 0
+296 -461 177 0
+461 183 -177 0
+-296 183 -177 0
+-55 342 424 333 0
+-55 -171 424 333 0
+-55 -220 424 333 0
+55 -333 0
+-424 -333 0
+171 220 -342 -333 0
+-314 -426 163 0
+-122 -280 -426 163 0
+-426 -386 -280 -398 163 0
+426 -163 0
+280 314 -163 0
+122 314 386 -163 0
+122 314 398 -163 0
+-16 -448 11 0
+-128 -8 -433 -448 -348 -1 11 0
+-8 -433 -448 -348 -46 -1 11 -452 0
+-323 -8 -433 -75 -448 -348 -46 -1 11 0
+-323 -8 -18 -204 -433 -448 -348 -46 -1 11 0
+448 -11 0
+8 16 -11 0
+16 433 -11 0
+16 46 128 -11 0
+452 -11 128 323 16 0
+452 -11 128 18 16 75 0
+452 -11 128 204 16 75 0
+1 16 -11 0
+16 348 -11 0
+311 360 0
+-153 396 -93 360 0
+93 -311 -360 0
+-396 -311 -360 0
+153 -311 -360 0
+183 433 463 0
+-112 433 463 0
+329 433 463 0
+-433 -463 0
+-329 112 -183 -463 0
+168 328 0
+311 328 0
+-232 328 0
+-69 304 350 328 0
+69 -168 -328 -311 232 0
+-168 -328 -304 -311 232 0
+-350 -168 -328 -311 232 0
+-1 284 0
+-352 342 284 0
+-342 1 -284 0
+352 1 -284 0
+-302 -399 299 0
+232 -325 -399 299 0
+19 -325 -399 299 0
+-128 -8 -399 -30 -325 299 0
+-128 -8 -399 -325 299 -244 0
+-128 -8 -399 -224 -325 299 0
+-128 -8 -282 -399 -320 -202 -325 299 -471 0
+399 -299 0
+302 325 -299 0
+-232 -299 302 -19 8 0
+-232 -299 302 -19 128 0
+-232 -299 302 224 471 -19 244 30 0
+-232 202 -299 302 224 -19 244 30 0
+-232 320 -299 302 224 -19 244 30 0
+-232 -299 302 224 -19 244 282 30 0
+-183 -278 320 0
+-13 -183 320 0
+19 -183 320 0
+50 -183 320 0
+183 -320 0
+-50 -320 -19 13 278 0
+-128 -274 434 0
+122 -128 -446 434 0
+43 122 -128 434 0
+-128 296 434 -157 122 0
+128 -434 0
+-122 274 -434 0
+-434 157 -43 274 446 0
+-434 -43 -296 274 446 0
+-293 -426 429 0
+426 -429 0
+293 -429 0
+-33 471 0
+-314 471 0
+314 33 -471 0
+-16 162 0
+-436 162 0
+436 16 -162 0
+-244 404 0
+-62 404 0
+62 244 -404 0
+237 296 469 0
+282 296 469 0
+-52 -183 296 469 0
+-21 296 469 0
+38 296 469 0
+-296 -469 0
+-282 21 -469 -38 183 -237 0
+52 -282 21 -469 -38 -237 0
+-1 -55 -196 224 0
+-1 -64 -196 224 0
+-1 -196 -268 224 0
+1 -224 0
+196 -224 0
+55 64 268 -224 0
+-30 -314 276 0
+-71 -314 276 0
+314 -276 0
+71 30 -276 0
+-128 444 -436 -13 -311 0
+436 -444 0
+311 -444 0
+128 -444 0
+13 -444 0
+-245 220 0
+-34 220 0
+-287 220 0
+287 34 245 -220 0
+-66 -1 363 0
+-128 -1 363 0
+1 -363 0
+128 66 -363 0
+-104 437 0
+-359 437 0
+-421 437 0
+260 437 0
+421 -437 359 104 -260 0
+227 55 270 0
+-55 -270 0
+-227 -270 0
+-302 218 0
+-413 218 0
+413 302 -218 0
+-378 -224 28 0
+-271 -224 28 0
+154 -224 28 0
+224 -28 0
+-154 271 378 -28 0
+-314 443 171 0
+-443 -171 0
+314 -171 0
+-236 -132 421 293 0
+-421 -293 0
+132 -293 0
+236 -293 0
+13 -313 290 0
+-204 -313 290 0
+313 -290 0
+204 -13 -290 0
+50 325 55 0
+-325 -55 0
+-50 -55 0
+8 352 0
+-213 352 0
+213 -8 -352 0
+-296 -355 269 0
+355 -269 0
+296 -269 0
+-227 418 0
+-184 -396 418 0
+-174 -396 418 0
+396 227 -418 0
+174 184 227 -418 0
+296 438 0
+-66 438 0
+66 -296 -438 0
+-55 342 202 0
+-128 342 202 0
+-121 342 202 0
+342 447 202 0
+-342 -202 0
+121 -447 128 -202 55 0
+-65 147 0
+-117 147 0
+117 65 -147 0
+-42 -198 -297 66 0
+-42 66 355 -297 -457 0
+42 -66 0
+297 -66 0
+198 457 -66 0
+198 -355 -66 0
+-1 242 0
+243 242 0
+-132 -156 242 0
+156 -243 1 -242 0
+132 -243 1 -242 0
+-19 336 0
+-243 -414 336 0
+427 -414 336 0
+414 19 -336 0
+-427 243 19 -336 0
+-296 -311 138 0
+-61 -96 -311 138 0
+-61 -126 -311 138 0
+-61 -311 337 138 0
+311 -138 0
+61 296 -138 0
+96 -337 296 -138 126 0
+-8 -58 245 0
+-126 -58 245 0
+58 -245 0
+126 8 -245 0
+-314 65 0
+-296 65 0
+296 314 -65 0
+274 22 433 462 0
+-433 -462 0
+-22 -462 0
+-274 -462 0
+-314 6 0
+-8 -296 6 0
+296 314 -6 0
+8 314 -6 0
+-55 106 0
+-66 106 0
+433 106 0
+-433 66 55 -106 0
+-232 8 0
+-278 -411 8 0
+245 -260 -278 8 0
+-278 -460 -443 8 -260 0
+232 278 -8 0
+232 260 411 -8 0
+-245 -8 460 411 232 0
+-245 -8 443 411 232 0
+-154 -288 -430 12 0
+-256 -288 -430 12 0
+-221 -288 -430 12 0
+288 -12 0
+430 -12 0
+154 221 256 -12 0
+-403 432 0
+-50 432 0
+50 403 -432 0
+-407 1 0
+-55 1 0
+55 407 -1 0
+-16 454 0
+314 454 0
+-314 16 -454 0
+-444 161 0
+250 161 0
+-4 161 0
+4 -250 444 -161 0
+-296 -183 252 0
+183 -252 0
+296 -252 0
+-436 407 0
+-422 407 0
+422 436 -407 0
+-12 -165 287 0
+-12 337 287 0
+-12 -316 287 0
+-12 -275 287 0
+-12 154 260 287 0
+12 -287 0
+316 275 165 -287 -337 -260 0
+316 275 165 -287 -154 -337 0
+-106 -336 43 0
+-433 -242 17 -163 -106 43 0
+-338 -433 -242 -459 -163 -106 43 -467 0
+-338 -433 -242 -163 80 -106 43 -467 0
+106 -43 0
+242 336 -43 0
+336 433 -43 0
+163 336 -43 0
+-17 336 338 -43 0
+-17 336 467 -43 0
+-43 336 -80 -17 459 0
+-336 69 0
+282 69 0
+-322 -306 69 0
+306 -282 336 -69 0
+322 -282 336 -69 0
+252 95 0
+-30 -433 -245 95 0
+245 -252 -95 0
+433 -252 -95 0
+30 -252 -95 0
+-286 -252 -397 249 0
+397 -249 0
+252 -249 0
+286 -249 0
+-46 -220 -399 305 0
+-220 -399 -442 305 0
+-399 183 305 47 -220 0
+399 -305 0
+220 -305 0
+46 -47 442 -305 0
+46 -183 442 -305 0
+65 -432 424 326 0
+-424 -326 0
+432 -326 0
+-65 -326 0
+-126 -138 66 36 -425 0
+138 -36 0
+-66 -36 0
+425 -36 0
+126 -36 0
+102 321 0
+-140 321 0
+140 -102 -321 0
+-151 170 0
+-296 170 0
+-8 170 0
+8 296 151 -170 0
+147 -443 468 0
+468 170 -128 -42 -202 -443 0
+468 170 -128 -262 -202 -443 55 0
+-128 -243 -443 468 0
+-128 -271 -443 468 0
+-128 -181 -443 468 0
+66 -128 -443 468 0
+-128 -374 -443 468 0
+443 -468 0
+128 -147 -468 0
+-66 202 243 181 271 374 -147 -468 0
+-66 243 181 -170 271 374 -147 -468 0
+-66 42 243 -55 181 271 374 -147 -468 0
+-66 42 243 181 271 374 -147 -468 262 0
+66 237 0
+-54 -187 -278 237 -220 0
+342 237 0
+-343 237 0
+75 237 0
+-66 -342 -75 343 278 -237 0
+-66 -342 220 -75 343 -237 0
+-66 -342 -75 343 54 -237 0
+-66 -342 -75 343 187 -237 0
+-62 296 0
+62 -296 0
+145 -296 0
+-171 343 311 -469 -69 0
+-463 -171 343 311 -69 -13 0
+-11 -171 343 311 -69 -13 0
+-343 -311 0
+69 -311 0
+171 -311 0
+13 469 -311 0
+11 463 469 -311 0
+314 -46 -333 302 0
+333 -302 0
+46 -302 0
+-314 -302 0
+-106 -33 151 0
+33 -151 0
+106 -151 0
+-262 -363 314 0
+363 -314 0
+262 -314 0
+-447 -55 209 0
+55 -209 0
+447 -209 0
+271 -196 145 -252 -260 0
+280 -196 145 -252 -260 0
+-107 -196 -238 145 -252 -260 0
+252 -145 0
+196 -145 0
+260 -145 0
+238 -271 -280 -145 0
+107 -271 -280 -145 0
+290 426 0
+423 426 -243 -457 -279 0
+423 318 426 -243 -279 0
+243 -290 -426 0
+279 -290 -426 0
+-290 -423 -426 0
+-290 -318 457 -426 0
+154 343 0
+-314 -7 343 0
+7 -154 -343 0
+314 -154 -343 0
+-1 16 0
+-244 16 0
+244 1 -16 0
+-50 168 0
+311 314 168 0
+-314 50 -168 0
+-311 50 -168 0
+433 399 0
+360 399 0
+394 399 0
+-394 -360 -433 -399 0
+-171 -161 424 0
+-162 -161 424 0
+161 -424 0
+162 171 -424 0
+-8 102 0
+-274 -22 102 -23 -304 337 0
+-274 102 -23 -122 -304 337 0
+8 274 -102 0
+8 22 122 -102 0
+8 304 -102 0
+8 23 -102 0
+8 -337 -102 0
+-232 164 0
+164 -63 -397 -85 -184 0
+164 -63 -314 -397 -85 0
+164 -63 124 -116 -397 -110 -85 0
+63 232 -164 0
+232 397 -164 0
+85 232 -164 0
+184 110 -164 314 232 0
+184 116 -164 314 232 0
+184 -164 314 -124 232 0
+-305 274 0
+-171 274 0
+-89 448 274 0
+-89 -153 -347 274 0
+89 171 305 -274 0
+347 -274 -448 171 305 0
+-274 153 -448 171 305 0
+-452 87 0
+-387 87 0
+387 452 -87 0
+313 -232 33 0
+222 -328 -232 33 0
+232 -33 0
+328 -313 -33 0
+-222 -313 -33 0
+204 387 0
+126 387 0
+-126 -204 -387 0
+97 -257 448 0
+257 -448 0
+-97 -448 0
+-42 50 0
+-474 50 0
+-55 50 0
+55 474 42 -50 0
+-232 357 448 -171 75 0
+232 -75 0
+171 -75 0
+-448 -75 0
+-357 -75 0
+217 -101 154 87 -311 0
+217 154 87 337 -311 0
+217 154 87 268 -311 0
+217 112 154 87 -311 0
+217 -345 -296 -464 -52 154 87 -311 0
+217 154 87 -166 -311 0
+-87 -154 0
+311 -154 0
+-217 -154 0
+101 -268 -154 -337 166 -112 464 0
+101 -268 -154 -337 166 296 -112 0
+101 -268 -154 -337 166 345 -112 0
+101 52 -268 -154 -337 166 -112 0
+-227 -55 41 0
+396 -55 41 0
+-169 -55 41 0
+55 -41 0
+169 -396 227 -41 0
+-55 -436 395 0
+436 -395 0
+55 -395 0
+-469 417 0
+-54 -278 417 0
+-18 -278 417 0
+278 469 -417 0
+18 54 469 -417 0
+-325 277 0
+224 277 0
+-222 -392 -400 277 0
+-222 -309 -392 277 0
+222 -224 325 -277 0
+-224 325 392 -277 0
+325 -224 -277 400 309 0
+-19 66 -126 200 0
+-18 -19 -126 200 0
+-19 -126 156 200 0
+-68 -19 -126 -48 200 0
+19 -200 0
+126 -200 0
+-66 -200 18 -156 68 0
+-66 -200 48 18 -156 0
+69 433 91 0
+69 -313 437 91 0
+69 -313 -387 -442 91 0
+-69 -91 0
+313 -433 -91 0
+-433 -437 442 -91 0
+387 -433 -437 -91 0
+-42 464 0
+-469 464 0
+-16 464 0
+16 469 42 -464 0
+-311 -47 378 0
+-196 -47 378 0
+47 -378 0
+196 311 -378 0
+-42 -213 4 0
+213 -4 0
+42 -4 0
+-33 -314 474 0
+-33 -232 474 0
+-33 -69 474 0
+-33 -66 433 474 0
+-33 -66 128 474 0
+33 -474 0
+69 -474 66 314 232 0
+69 -128 -433 -474 314 232 0
+-256 431 381 457 0
+-83 431 381 457 0
+-381 -457 0
+-431 -457 0
+83 256 -457 0
+-55 110 0
+-71 425 110 0
+-425 55 -110 0
+71 55 -110 0
+-329 50 -1 300 0
+-129 50 -1 300 0
+1 -300 0
+-50 -300 0
+129 329 -300 0
+314 342 -237 111 0
+237 -111 0
+-342 -111 0
+-314 -111 0
+-23 264 315 0
+-264 -315 0
+23 -315 0
+-125 -396 446 0
+396 -446 0
+125 -446 0
+-7 -311 116 0
+-7 -232 116 0
+-7 -119 -171 116 0
+-7 -119 -449 116 0
+-7 93 -119 116 0
+-7 -119 -183 116 0
+-7 -119 -147 116 0
+-7 -119 284 116 0
+-7 -119 -328 116 0
+7 -116 0
+119 232 311 -116 0
+449 147 328 311 -116 -284 -93 171 183 232 0
+-259 261 0
+-303 261 0
+303 259 -261 0
+-293 -30 250 0
+30 -250 0
+293 -250 0
+-252 150 0
+-200 150 0
+200 252 -150 0
+-88 -389 -438 342 0
+-438 461 342 -389 -275 0
+-473 -438 342 -389 -275 0
+438 -342 0
+389 -342 0
+88 275 -342 0
+88 -461 473 -342 0
+-247 -311 -337 262 0
+-66 -352 -247 262 -311 0
+-66 -183 -247 -424 262 -311 0
+247 -262 0
+311 -262 0
+66 337 -262 0
+183 337 352 -262 0
+337 352 424 -262 0
+-227 198 0
+-395 -5 198 0
+5 227 -198 0
+395 227 -198 0
+-287 146 0
+-224 433 -8 146 0
+8 287 -146 0
+-433 287 -146 0
+224 287 -146 0
+-55 174 0
+-232 174 0
+232 55 -174 0
+455 0
+191 -455 0
+282 128 349 0
+-128 -349 0
+-282 -349 0
+-30 345 0
+-323 345 0
+323 30 -345 0
+424 -436 423 0
+153 424 423 0
+-119 424 423 0
+-242 424 423 0
+-424 -423 0
+-423 436 -153 119 242 0
+47 334 0
+41 -232 334 0
+232 -47 -334 0
+-41 -47 -334 0
+-58 209 42 0
+42 243 -58 -352 -429 -252 0
+42 243 -58 -352 -447 66 -252 0
+42 243 -58 -352 66 -392 -371 -252 0
+42 243 -58 -55 -352 66 -371 -252 0
+58 -42 0
+-209 252 -42 0
+-209 352 -42 0
+-209 -243 -42 0
+-66 -209 429 -42 0
+-209 429 371 -42 447 0
+-209 392 429 -42 55 447 0
+-19 265 0
+-306 265 0
+91 265 0
+-91 306 19 -265 0
+-8 73 0
+218 73 0
+-218 8 -73 0
+-55 16 48 0
+-16 -48 0
+55 -48 0
+-244 -466 -296 112 0
+-73 -466 -296 112 0
+296 -112 0
+466 -112 0
+73 244 -112 0
+-19 -185 340 0
+185 -340 0
+19 -340 0
+-232 357 0
+293 357 0
+197 397 357 0
+-82 -277 397 357 0
+-267 357 0
+-16 357 0
+267 -357 -397 -293 16 232 0
+267 -357 -293 16 -197 82 232 0
+267 -357 -293 16 -197 277 232 0
+-183 -55 236 0
+-183 -50 236 0
+447 -183 236 0
+183 -236 0
+-447 50 55 -236 0
+-42 -247 361 0
+247 -361 0
+42 -361 0
+-252 149 0
+352 149 0
+-30 -171 149 0
+-282 -162 -204 -30 149 0
+217 -282 -162 -30 149 -412 0
+30 252 -352 -149 0
+252 -352 162 171 -149 0
+252 -352 282 171 -149 0
+252 -352 -217 204 171 -149 0
+252 -352 412 204 171 -149 0
+119 160 0
+55 160 0
+-128 160 0
+-66 -171 -387 160 0
+-160 -119 -55 128 171 0
+-160 -119 -55 128 66 0
+-160 -119 -55 128 387 0
+196 -314 412 473 -443 0
+196 -314 -301 473 -443 0
+196 -314 -5 473 -443 0
+-387 196 -314 473 -443 0
+196 -314 66 473 -443 0
+-335 440 196 -114 -314 -410 296 473 -443 0
+440 196 -114 -314 -146 -410 296 473 -443 250 111 0
+196 61 -314 473 -443 0
+185 196 -314 473 -443 0
+196 -314 473 -443 -311 0
+314 -473 0
+443 -473 0
+-196 -473 0
+-66 5 301 -473 311 335 -185 387 -61 -412 146 0
+-66 5 301 -473 -250 311 335 -185 387 -61 -412 0
+-66 5 301 -473 -111 311 335 -185 387 -61 -412 0
+-66 5 301 -473 311 -185 387 -61 -412 410 0
+-66 5 301 -473 311 -185 387 -61 -412 114 0
+-66 5 301 -473 311 -185 387 -61 -412 -440 0
+-66 5 301 -473 311 -296 -185 387 -61 -412 0
+-102 -154 135 0
+-302 -154 135 0
+154 -135 0
+302 102 -135 0
+-147 125 0
+-320 125 0
+-360 125 0
+360 320 147 -125 0
+-462 274 251 0
+-417 -336 274 251 0
+-274 -251 0
+336 462 -251 0
+417 462 -251 0
+-209 356 0
+-314 356 66 -244 433 0
+209 314 -356 0
+209 -433 -356 0
+209 244 -356 0
+-66 209 -356 0
+-13 184 0
+-247 184 0
+-163 184 0
+-119 184 0
+-11 184 0
+-128 184 0
+247 13 128 11 -184 119 163 0
+-171 -293 68 0
+293 -68 0
+171 -68 0
+-202 -447 410 0
+-202 -397 -431 410 0
+-202 379 -431 410 0
+-202 -268 -431 410 0
+202 -410 0
+431 447 -410 0
+397 -410 -379 447 268 0
+-42 -372 130 0
+30 -372 130 0
+-323 -372 130 0
+372 -130 0
+323 -30 42 -130 0
+-404 -282 194 0
+282 -194 0
+404 -194 0
+-213 244 380 377 0
+380 -373 244 377 198 -279 0
+-244 -377 0
+-380 -377 0
+-198 213 -377 0
+213 373 -377 0
+213 279 -377 0
+55 -66 62 0
+-10 -66 62 0
+66 -62 0
+10 -55 -62 0
+-220 -177 101 0
+177 -101 0
+220 -101 0
+-35 114 0
+-56 114 0
+-146 114 0
+146 56 35 -114 0
+237 241 0
+-148 -183 241 0
+183 -237 -241 0
+148 -237 -241 0
+-69 148 0
+-252 148 0
+-193 -293 148 0
+293 252 69 -148 0
+193 252 69 -148 0
+-55 126 0
+-65 126 0
+342 126 0
+30 -128 433 126 0
+-28 -128 433 126 0
+-8 126 0
+302 126 0
+-16 126 0
+-342 65 -433 -126 16 -302 55 8 0
+-342 65 128 -126 16 -302 55 8 0
+-342 28 65 -126 -30 16 -302 55 8 0
+55 -42 71 0
+-364 -42 71 0
+42 -71 0
+364 -55 -71 0
+-66 303 0
+387 303 0
+-387 66 -303 0
+-47 -287 97 0
+-198 401 -287 97 0
+287 -97 0
+-401 47 -97 0
+198 47 -97 0
+-42 -1 -252 257 0
+-42 -199 -252 257 0
+252 -257 0
+199 1 -257 0
+42 -257 0
+-16 -274 52 0
+274 -52 0
+16 -52 0
+-300 -126 169 0
+126 -169 0
+300 -169 0
+-207 -69 421 0
+-160 -69 421 0
+69 -421 0
+160 207 -421 0
+-296 116 317 0
+-116 -317 0
+296 -317 0
+-213 220 -293 263 0
+296 220 -293 263 0
+293 -263 0
+-220 -263 0
+-296 213 -263 0
+-209 -311 413 0
+-209 -126 413 -249 -69 0
+209 -413 0
+249 311 -413 0
+69 311 -413 0
+126 311 -413 0
+252 82 0
+-461 82 0
+-282 82 0
+282 461 -252 -82 0
+1 80 0
+-269 80 0
+433 80 0
+-313 80 0
+269 -433 313 -1 -80 0
+-66 459 0
+-224 381 459 0
+-381 66 -459 0
+224 66 -459 0
+-204 275 0
+-55 275 0
+-382 275 0
+-82 275 0
+204 382 -275 55 82 0
+-55 153 0
+-230 153 0
+230 55 -153 0
+-270 350 0
+-183 350 0
+-286 -397 -421 350 0
+183 270 397 -350 0
+183 270 286 -350 0
+183 270 421 -350 0
+-183 -343 181 0
+-122 -343 181 0
+343 -181 0
+122 183 -181 0
+-154 -47 403 0
+47 -403 0
+154 -403 0
+-336 -352 -372 380 0
+-313 -336 -372 380 0
+-28 -336 -372 380 0
+372 -380 0
+336 -380 0
+28 313 352 -380 0
+-69 -399 -424 83 0
+-65 -399 -424 83 0
+-352 -399 -424 83 0
+-128 -399 -183 -424 171 83 0
+424 -83 0
+399 -83 0
+69 352 65 -83 183 0
+69 352 65 128 -83 0
+69 352 65 -171 -83 0
+-302 347 0
+-228 347 0
+337 347 0
+-36 232 347 0
+-232 228 302 -337 -347 0
+228 302 -337 -347 36 0
+-311 319 0
+-136 -69 342 319 -13 0
+69 311 -319 0
+311 -342 -319 0
+13 311 -319 0
+136 311 -319 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.Mhdlz5OGTN.cnf'
+c opening file to read '/tmp/tmp.Mhdlz5OGTN.cnf'
+c found 'p cnf 474 1337' header
+c parsed 1337 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0% 1335 343 72%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0% 1335 343 72%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0% 1335 343 72%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v 1 2 3 4 5 6 7 8 9 -10 11 -12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+v 29 30 31 32 33 -34 35 -36 37 38 39 40 -41 42 43 44 45 46 47 -48 49 50 51 52
+v 53 54 -55 56 57 58 59 60 -61 62 63 64 65 66 67 -68 69 -70 71 72 73 74 -75 76
+v 77 78 79 80 81 82 83 84 85 86 87 88 -89 90 -91 92 93 94 -95 -96 -97 98 99
+v 100 101 102 103 104 105 106 107 -108 109 110 -111 112 113 114 115 116 117
+v 118 119 120 -121 122 123 124 125 126 127 128 129 130 131 132 133 134 -135
+v 136 137 -138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153
+v -154 155 156 157 158 159 160 161 162 -163 164 -165 166 167 168 -169 170 -171
+v 172 173 174 175 176 177 178 179 180 181 182 183 184 -185 186 -187 188 189
+v 190 191 192 193 194 195 196 -197 -198 199 200 -201 -202 203 -204 205 206 207
+v 208 -209 210 211 212 213 214 215 216 217 -218 -219 220 221 222 223 224 -225
+v 226 -227 -228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243
+v 244 245 246 247 248 -249 -250 -251 252 253 254 255 256 257 258 -259 260 261
+v -262 -263 264 265 266 -267 268 -269 270 271 272 273 274 275 -276 277 278
+v -279 -280 281 282 283 284 285 -286 -287 -288 289 -290 291 292 -293 294 295
+v 296 297 298 299 -300 301 -302 303 304 305 306 307 308 309 310 -311 312 -313
+v -314 -315 -316 -317 318 -319 320 321 322 323 324 325 -326 327 328 -329 330
+v 331 332 -333 334 335 336 337 338 -339 -340 341 342 343 344 345 346 -347 -348
+v -349 350 351 352 353 354 -355 -356 357 358 -359 360 361 362 363 -364 365 366
+v 367 368 369 370 371 372 373 374 375 376 -377 378 -379 380 -381 382 383 384
+v 385 386 387 388 389 390 391 392 393 -394 -395 -396 397 -398 399 -400 -401
+v 402 -403 404 405 406 407 408 409 -410 -411 412 -413 414 415 416 417 -418 419
+v 420 421 422 -423 424 -425 426 427 428 -429 430 -431 432 -433 434 435 436 437
+v 438 439 440 441 442 -443 -444 445 -446 447 448 449 450 451 452 453 454 455
+v 456 457 458 459 460 461 -462 463 464 465 466 467 -468 -469 470 471 472 -473
+v 474 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00  174.76% parse
+c         0.00   43.44% search
+c         0.00   43.05% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   29.15% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c fixed:                         2         0.42 %  of all variables
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  2         0.00 M  per second
+c ticks:                         2         1.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.25    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=554
++ wait 554
++ bdd_minisat_all_release /tmp/tmp.Mhdlz5OGTN.cnf
+/app/solve.sh: line 76:   554 Killed                  $4 "$cnf_tmp"
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 360_2086_29655.bnet"
+	User time (seconds): 74.45
+	System time (seconds): 19.36
+	Percent of CPU this job got: 102%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:31.64
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9418496
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3
+	Minor (reclaiming a frame) page faults: 2423166
+	Voluntary context switches: 4671
+	Involuntary context switches: 1795
+	Swaps: 0
+	File system inputs: 480
+	File system outputs: 48
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 82.3s

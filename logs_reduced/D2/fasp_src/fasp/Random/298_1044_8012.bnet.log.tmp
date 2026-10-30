@@ -1,0 +1,7 @@
+# Host: MSI
+# Start date: Fri Oct 30 15:28:58 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/Random/298_1044_8012.bnet (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-1478-1 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project/benchmarks/reduced/D2/Random:/benchmark:ro fasp 298_1044_8012.bnet -c -m 0 -e source
+------------------------------------------------------------

@@ -1,0 +1,695 @@
+# Host: MSI
+# Start date: Tue Oct 27 06:37:19 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_077.sbml (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-2819-156 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_077.sbml
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --sbml /benchmark/model_077.sbml --cnf /tmp/tmp.rtnVa3CyVM.cnf -h3
+
+Config(sbmlFileName = /benchmark/model_077.sbml, bnetFileName = , cnfFileName = /tmp/tmp.rtnVa3CyVM.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+2026-10-26 23:37:20,398 main ERROR Could not determine local host name java.net.UnknownHostException: 94f05d3a4c90: 94f05d3a4c90: Temporary failure in name resolution
+	at java.base/java.net.InetAddress.getLocalHost(InetAddress.java:1670)
+	at org.apache.logging.log4j.core.util.NetUtils.getLocalHostname(NetUtils.java:54)
+	at org.apache.logging.log4j.core.LoggerContext.lambda$setConfiguration$0(LoggerContext.java:620)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:620)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:699)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:716)
+	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:270)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:309)
+	at org.apache.log4j.Logger$PrivateManager.getContext(Logger.java:59)
+	at org.apache.log4j.Logger.getLogger(Logger.java:41)
+	at org.sbml.jsbml.JSBML.loadClasses(JSBML.java:294)
+	at org.sbml.jsbml.xml.stax.SBMLReader.<clinit>(SBMLReader.java:110)
+	at org.sbml.jsbml.SBMLReader.readSBMLFromFile(SBMLReader.java:235)
+	at jp.kobe_u.bsaf.sbml.SbmlQualModel$.fromFile(SbmlQualModel.scala:15)
+	at jp.kobe_u.bsaf.Main$.main(Main.scala:25)
+	at jp.kobe_u.bsaf.Main.main(Main.scala)
+Caused by: java.net.UnknownHostException: 94f05d3a4c90: Temporary failure in name resolution
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getLocalHost(InetAddress.java:1665)
+	... 18 more
+
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+
+Some(Vector(Set(v_crt), Set(v_acetoacetyl_CoA), Set(v_hbd)))
+Some(Vector(Set(!v_hbd, !v_acetoacetyl_CoA, !v_crt)))
+(Set(v_crt),Set(-22))
+(Set(v_acetoacetyl_CoA),Set(-9))
+(Set(v_hbd),Set(-28))
+(Set(!v_hbd, !v_acetoacetyl_CoA, !v_crt),Set(28, 9, 22))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_acetyl_CoA), Set(v_ald)))
+Some(Vector(Set(!v_ald, !v_acetyl_CoA)))
+(Set(v_acetyl_CoA),Set(-11))
+(Set(v_ald),Set(-13))
+(Set(!v_ald, !v_acetyl_CoA),Set(13, 11))
+
+Some(Vector(Set(v_acetone, v_pta), Set(v_glucose___PTS, v_acetone), Set(v_ack)))
+Some(Vector(Set(!v_ack, !v_glucose___PTS, !v_pta), Set(!v_ack, !v_acetone)))
+(Set(v_acetone, v_pta),Set(-10, -33))
+(Set(v_glucose___PTS, v_acetone),Set(-27, -10))
+(Set(v_ack),Set(-12))
+(Set(!v_ack, !v_glucose___PTS, !v_pta),Set(12, 27, 33))
+(Set(!v_ack, !v_acetone),Set(12, 10))
+
+Some(Vector(Set(v_spo0A_p), Set(v_acetoacetyl_CoA)))
+Some(Vector(Set(!v_acetoacetyl_CoA, !v_spo0A_p)))
+(Set(v_spo0A_p),Set(-40))
+(Set(v_acetoacetyl_CoA),Set(-9))
+(Set(!v_acetoacetyl_CoA, !v_spo0A_p),Set(9, 40))
+
+Some(Vector(Set(v_spo0A_p), Set(v_hbd), Set(v_acetyl_CoA)))
+Some(Vector(Set(!v_acetyl_CoA, !v_hbd, !v_spo0A_p)))
+(Set(v_spo0A_p),Set(-40))
+(Set(v_hbd),Set(-28))
+(Set(v_acetyl_CoA),Set(-11))
+(Set(!v_acetyl_CoA, !v_hbd, !v_spo0A_p),Set(11, 28, 40))
+
+Some(Vector(Set(!v_sporulation, v_acetoacetate), Set(v_spo0A_p, !v_sporulation)))
+Some(Vector(Set(!v_spo0A_p, !v_acetoacetate), Set(v_sporulation)))
+(Set(!v_sporulation, v_acetoacetate),Set(44, -8))
+(Set(v_spo0A_p, !v_sporulation),Set(-40, 44))
+(Set(!v_spo0A_p, !v_acetoacetate),Set(40, 8))
+(Set(v_sporulation),Set(-44))
+
+Some(Vector(Set(v_pfo), Set(v_acetate, v_acetoacetyl_CoA), Set(v_pyruvate), Set(v_spo0A_p)))
+Some(Vector(Set(!v_pfo, !v_pyruvate, !v_acetoacetyl_CoA, !v_spo0A_p), Set(!v_acetate, !v_pfo, !v_pyruvate, !v_spo0A_p)))
+(Set(v_pfo),Set(-30))
+(Set(v_acetate, v_acetoacetyl_CoA),Set(-7, -9))
+(Set(v_pyruvate),Set(-35))
+(Set(v_spo0A_p),Set(-40))
+(Set(!v_pfo, !v_pyruvate, !v_acetoacetyl_CoA, !v_spo0A_p),Set(30, 35, 9, 40))
+(Set(!v_acetate, !v_pfo, !v_pyruvate, !v_spo0A_p),Set(7, 30, 35, 40))
+
+Some(Vector(Set(!v_spo0A_p, !v_sporulation)))
+Some(Vector(Set(v_sporulation), Set(v_spo0A_p)))
+(Set(!v_spo0A_p, !v_sporulation),Set(40, 44))
+(Set(v_sporulation),Set(-44))
+(Set(v_spo0A_p),Set(-40))
+
+Some(Vector(Set(v_spo0A_p), Set(v_sigE)))
+Some(Vector(Set(!v_sigE, !v_spo0A_p)))
+(Set(v_spo0A_p),Set(-40))
+(Set(v_sigE),Set(-37))
+(Set(!v_sigE, !v_spo0A_p),Set(37, 40))
+
+Some(Vector(Set(!v_spo0A_p, !v_sporulation)))
+Some(Vector(Set(v_sporulation), Set(v_spo0A_p)))
+(Set(!v_spo0A_p, !v_sporulation),Set(40, 44))
+(Set(v_sporulation),Set(-44))
+(Set(v_spo0A_p),Set(-40))
+
+Some(Vector(Set(!v_spo0A_p, !v_sporulation)))
+Some(Vector(Set(v_sporulation), Set(v_spo0A_p)))
+(Set(!v_spo0A_p, !v_sporulation),Set(40, 44))
+(Set(v_sporulation),Set(-44))
+(Set(v_spo0A_p),Set(-40))
+
+Some(Vector(Set(v_ald), Set(v_spo0A_p), Set(v_butyryl_CoA)))
+Some(Vector(Set(!v_butyryl_CoA, !v_spo0A_p, !v_ald)))
+(Set(v_ald),Set(-13))
+(Set(v_spo0A_p),Set(-40))
+(Set(v_butyryl_CoA),Set(-19))
+(Set(!v_butyryl_CoA, !v_spo0A_p, !v_ald),Set(19, 40, 13))
+
+Some(Vector(Set(!v_sporulation, v_butanal), Set(!v_sporulation, v_NAD_P_H), Set(v_spo0A_p, !v_sporulation)))
+Some(Vector(Set(!v_spo0A_p, !v_NAD_P_H, !v_butanal), Set(v_sporulation)))
+(Set(!v_sporulation, v_butanal),Set(44, -16))
+(Set(!v_sporulation, v_NAD_P_H),Set(44, -3))
+(Set(v_spo0A_p, !v_sporulation),Set(-40, 44))
+(Set(!v_spo0A_p, !v_NAD_P_H, !v_butanal),Set(40, 3, 16))
+(Set(v_sporulation),Set(-44))
+
+Some(Vector(Set(v_glucose___PTS), Set(v_ptb), Set(v_buk1)))
+Some(Vector(Set(v_butyrate)))
+(Set(v_glucose___PTS),Set(-27))
+(Set(v_ptb),Set(-34))
+(Set(v_buk1),Set(-15))
+(Set(v_butyrate),Set(-18))
+
+Some(Vector(Set(v_crotonoyl_CoA), Set(v_acetoacetyl_CoA, v_butyrate), Set(v_NADH), Set(v_bcd), Set(v_ald)))
+Some(Vector(Set(!v_ald, !v_acetoacetyl_CoA, !v_crotonoyl_CoA, !v_NADH, !v_bcd), Set(!v_butyrate, !v_ald, !v_crotonoyl_CoA, !v_NADH, !v_bcd)))
+(Set(v_crotonoyl_CoA),Set(-21))
+(Set(v_acetoacetyl_CoA, v_butyrate),Set(-9, -18))
+(Set(v_NADH),Set(-2))
+(Set(v_bcd),Set(-14))
+(Set(v_ald),Set(-13))
+(Set(!v_ald, !v_acetoacetyl_CoA, !v_crotonoyl_CoA, !v_NADH, !v_bcd),Set(14, 21, 9, 13, 2))
+(Set(!v_butyrate, !v_ald, !v_crotonoyl_CoA, !v_NADH, !v_bcd),Set(14, 21, 13, 2, 18))
+
+Some(Vector(Set(!v_butanol, !v_acetone, !v_ethanol, v_glucose), Set(!v_acetone, !v_ethanol, v_butyrate)))
+Some(Vector(Set(v_butanol, !v_butyrate), Set(!v_butyrate, !v_glucose), Set(v_ethanol), Set(v_acetone)))
+(Set(!v_butanol, !v_acetone, !v_ethanol, v_glucose),Set(17, 10, 23, -26))
+(Set(!v_acetone, !v_ethanol, v_butyrate),Set(10, 23, -18))
+(Set(v_butanol, !v_butyrate),Set(-17, 18))
+(Set(!v_butyrate, !v_glucose),Set(18, 26))
+(Set(v_ethanol),Set(-23))
+(Set(v_acetone),Set(-10))
+
+Some(Vector(Set(v_3_hydroxybutyryl_CoA), Set(v_Rnf), Set(v_crt)))
+Some(Vector(Set(!v_crt, !v_Rnf, !v_3_hydroxybutyryl_CoA)))
+(Set(v_3_hydroxybutyryl_CoA),Set(-1))
+(Set(v_Rnf),Set(-5))
+(Set(v_crt),Set(-22))
+(Set(!v_crt, !v_Rnf, !v_3_hydroxybutyryl_CoA),Set(22, 5, 1))
+
+Some(Vector(Set(!v_sporulation, !v_spo0A_p)))
+Some(Vector(Set(v_spo0A_p), Set(v_sporulation)))
+(Set(!v_sporulation, !v_spo0A_p),Set(44, 40))
+(Set(v_spo0A_p),Set(-40))
+(Set(v_sporulation),Set(-44))
+
+Some(Vector(Set(!v_ald, !v_sporulation, v_acetaldehyde), Set(v_spo0A_p, !v_ald, !v_sporulation)))
+Some(Vector(Set(!v_spo0A_p, !v_acetaldehyde), Set(v_sporulation), Set(v_ald)))
+(Set(!v_ald, !v_sporulation, v_acetaldehyde),Set(13, 44, -6))
+(Set(v_spo0A_p, !v_ald, !v_sporulation),Set(-40, 13, 44))
+(Set(!v_spo0A_p, !v_acetaldehyde),Set(40, 6))
+(Set(v_sporulation),Set(-44))
+(Set(v_ald),Set(-13))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_PTS, v_cell_membrane, v_glucose)))
+Some(Vector(Set(!v_glucose), Set(!v_cell_membrane), Set(!v_PTS)))
+(Set(v_PTS, v_cell_membrane, v_glucose),Set(-4, -20, -26))
+(Set(!v_glucose),Set(26))
+(Set(!v_cell_membrane),Set(20))
+(Set(!v_PTS),Set(4))
+
+Some(Vector(Set(!v_sporulation, !v_spo0A_p)))
+Some(Vector(Set(v_spo0A_p), Set(v_sporulation)))
+(Set(!v_sporulation, !v_spo0A_p),Set(44, 40))
+(Set(v_spo0A_p),Set(-40))
+(Set(v_sporulation),Set(-44))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_spo0A_p, !v_sporulation)))
+Some(Vector(Set(v_sporulation), Set(v_spo0A_p)))
+(Set(!v_spo0A_p, !v_sporulation),Set(40, 44))
+(Set(v_sporulation),Set(-44))
+(Set(v_spo0A_p),Set(-40))
+
+Some(Vector(Set(!v_sporulation, !v_spo0A_p)))
+Some(Vector(Set(v_spo0A_p), Set(v_sporulation)))
+(Set(!v_sporulation, !v_spo0A_p),Set(44, 40))
+(Set(v_spo0A_p),Set(-40))
+(Set(v_sporulation),Set(-44))
+
+Some(Vector(Set(v_pfk), Set(v_fba), Set(v_pgi), Set(v_gap_pgk_tpi_pgm__X276_23705_eno), Set(v_glucose___PTS)))
+Some(Vector(Set(!v_pfk, !v_gap_pgk_tpi_pgm__X276_23705_eno, !v_fba, !v_pgi, !v_glucose___PTS)))
+(Set(v_pfk),Set(-29))
+(Set(v_fba),Set(-24))
+(Set(v_pgi),Set(-31))
+(Set(v_gap_pgk_tpi_pgm__X276_23705_eno),Set(-25))
+(Set(v_glucose___PTS),Set(-27))
+(Set(!v_pfk, !v_gap_pgk_tpi_pgm__X276_23705_eno, !v_fba, !v_pgi, !v_glucose___PTS),Set(24, 25, 29, 27, 31))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_spo0A_p), Set(v_sigF)))
+Some(Vector(Set(!v_sigF, !v_spo0A_p)))
+(Set(v_spo0A_p),Set(-40))
+(Set(v_sigF),Set(-38))
+(Set(!v_sigF, !v_spo0A_p),Set(38, 40))
+
+Some(Vector(Set(!v_spoIIAB, v_sigA), Set(v_spoIIE)))
+Some(Vector(Set(!v_spoIIE, v_spoIIAB), Set(!v_spoIIE, !v_sigA)))
+(Set(!v_spoIIAB, v_sigA),Set(42, -36))
+(Set(v_spoIIE),Set(-43))
+(Set(!v_spoIIE, v_spoIIAB),Set(43, -42))
+(Set(!v_spoIIE, !v_sigA),Set(43, 36))
+
+Some(Vector(Set(v_spo0A_p), Set(v_sigE)))
+Some(Vector(Set(!v_sigE, !v_spo0A_p)))
+(Set(v_spo0A_p),Set(-40))
+(Set(v_sigE),Set(-37))
+(Set(!v_sigE, !v_spo0A_p),Set(37, 40))
+
+Some(Vector(Set(v_spo0A, v_phosphorylation, !v_sporulation)))
+Some(Vector(Set(v_sporulation), Set(!v_phosphorylation), Set(!v_spo0A)))
+(Set(v_spo0A, v_phosphorylation, !v_sporulation),Set(-39, -32, 44))
+(Set(v_sporulation),Set(-44))
+(Set(!v_phosphorylation),Set(32))
+(Set(!v_spo0A),Set(39))
+
+Some(Vector(Set(v_spo0A_p, v_sigA), Set(v_spoIIE)))
+Some(Vector(Set(!v_spoIIE, !v_sigA), Set(!v_spoIIE, !v_spo0A_p)))
+(Set(v_spo0A_p, v_sigA),Set(-40, -36))
+(Set(v_spoIIE),Set(-43))
+(Set(!v_spoIIE, !v_sigA),Set(43, 36))
+(Set(!v_spoIIE, !v_spo0A_p),Set(43, 40))
+
+Some(Vector(Set(v_spo0A_p, v_sigA, !v_spoIIE), Set(v_spo0A_p, v_sigA, !v_spoIIAA)))
+Some(Vector(Set(v_spoIIAA, v_spoIIE), Set(!v_sigA), Set(!v_spo0A_p)))
+(Set(v_spo0A_p, v_sigA, !v_spoIIE),Set(-40, -36, 43))
+(Set(v_spo0A_p, v_sigA, !v_spoIIAA),Set(-40, -36, 41))
+(Set(v_spoIIAA, v_spoIIE),Set(-41, -43))
+(Set(!v_sigA),Set(36))
+(Set(!v_spo0A_p),Set(40))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_cell_membrane, v_sigA), Set(v_spo0A_p, !v_cell_membrane)))
+Some(Vector(Set(!v_spo0A_p, !v_sigA), Set(v_cell_membrane)))
+(Set(!v_cell_membrane, v_sigA),Set(20, -36))
+(Set(v_spo0A_p, !v_cell_membrane),Set(-40, 20))
+(Set(!v_spo0A_p, !v_sigA),Set(40, 36))
+(Set(v_cell_membrane),Set(-20))
+Map(v_3_hydroxybutyryl_CoA -> 1, v_spoIIAA -> 41, v_butyryl_CoA -> 19, v_butanol -> 17, v_acetone -> 10, v_acetate -> 7, v_glucose___PTS -> 27, v_acetaldehyde -> 6, v_ald -> 13, v_pfk -> 29, v_sigA -> 36, v_cell_membrane -> 20, v_crotonoyl_CoA -> 21, v_spoIIE -> 43, v_pta -> 33, v_ethanol -> 23, v_NAD_P_H -> 3, v_pfo -> 30, v_sigE -> 37, v_pyruvate -> 35, v_acetyl_CoA -> 11, v_acetoacetyl_CoA -> 9, v_acetoacetate -> 8, v_fba -> 24, v_sigF -> 38, v_ptb -> 34, v_butanal -> 16, v_phosphorylation -> 32, v_spo0A -> 39, v_sporulation -> 44, v_bcd -> 14, v_spoIIAB -> 42, v_Rnf -> 5, v_buk1 -> 15, v_PTS -> 4, v_ack -> 12, v_pgi -> 31, v_NADH -> 2, v_crt -> 22, v_gap_pgk_tpi_pgm__X276_23705_eno -> 25, v_hbd -> 28, v_butyrate -> 18, v_spo0A_p -> 40, v_glucose -> 26)
+p cnf 44 125
+-22 1 0
+-9 1 0
+-28 1 0
+28 9 22 -1 0
+-11 6 0
+-13 6 0
+13 11 -6 0
+-10 -33 7 0
+-27 -10 7 0
+-12 7 0
+12 27 33 -7 0
+12 10 -7 0
+-40 8 0
+-9 8 0
+9 40 -8 0
+-40 9 0
+-28 9 0
+-11 9 0
+11 28 40 -9 0
+44 -8 10 0
+-40 44 10 0
+40 8 -10 0
+-44 -10 0
+-30 11 0
+-7 -9 11 0
+-35 11 0
+-40 11 0
+-11 9 35 40 30 0
+-11 7 35 40 30 0
+40 44 12 0
+-44 -12 0
+-40 -12 0
+-40 13 0
+-37 13 0
+37 40 -13 0
+40 44 14 0
+-44 -14 0
+-40 -14 0
+40 44 15 0
+-44 -15 0
+-40 -15 0
+-13 16 0
+-40 16 0
+-19 16 0
+19 40 13 -16 0
+44 -16 17 0
+44 -3 17 0
+-40 44 17 0
+40 3 16 -17 0
+-44 -17 0
+-27 18 0
+-34 18 0
+-15 18 0
+-18 0
+-21 19 0
+-9 -18 19 0
+-2 19 0
+-14 19 0
+-13 19 0
+14 21 9 -19 13 2 0
+14 21 -19 13 2 18 0
+10 20 -26 17 23 0
+10 23 -18 20 0
+-17 18 -20 0
+18 26 -20 0
+-23 -20 0
+-10 -20 0
+-1 21 0
+-5 21 0
+-22 21 0
+22 5 1 -21 0
+44 40 22 0
+-40 -22 0
+-44 -22 0
+13 44 -6 23 0
+-40 13 44 23 0
+40 6 -23 0
+-44 -23 0
+-13 -23 0
+-4 -20 -26 27 0
+26 -27 0
+20 -27 0
+4 -27 0
+44 40 28 0
+-40 -28 0
+-44 -28 0
+40 44 33 0
+-44 -33 0
+-40 -33 0
+44 40 34 0
+-40 -34 0
+-44 -34 0
+-29 35 0
+-24 35 0
+-31 35 0
+-25 35 0
+-27 35 0
+24 25 -35 29 27 31 0
+-40 37 0
+-38 37 0
+38 40 -37 0
+42 -36 38 0
+-43 38 0
+43 -42 -38 0
+43 36 -38 0
+-40 39 0
+-37 39 0
+37 40 -39 0
+-39 -32 44 40 0
+-44 -40 0
+32 -40 0
+39 -40 0
+-40 -36 41 0
+-43 41 0
+43 36 -41 0
+43 40 -41 0
+-40 -36 43 42 0
+-40 -36 41 42 0
+-41 -43 -42 0
+36 -42 0
+40 -42 0
+20 -36 44 0
+-40 20 44 0
+40 36 -44 0
+-20 -44 0
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
++ exit_status=0
++ set +x
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.rtnVa3CyVM.cnf'
+c opening file to read '/tmp/tmp.rtnVa3CyVM.cnf'
+c found 'p cnf 44 125' header
+c parsed 125 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  116  40 91%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  116  40 91%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  116  40 91%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 6 -7 -8 -9 -10 -11 -12 13 -14 -15 16 -17 -18 19 -20 -21 -22
+v -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 36 37 38 39 -40 -41 -42
+v -43 44 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00  114.05% parse
+c         0.00   26.45% search
+c         0.00   25.62% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   29.51% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c fixed:                         4         9.09 %  of all variables
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  4         0.03 M  per second
+c ticks:                        11         2.75    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            3.88    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=101
++ wait 101
++ bdd_minisat_all_release /tmp/tmp.rtnVa3CyVM.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.rtnVa3CyVM.cnf
+variables         :           44
+cutwidth          :           61
+restarts          :            1
+conflicts         :           35           (      inf / sec      )
+decisions         :          376           (      inf / sec      )
+propagations      :          855           (      inf / sec      )
+inspects          :         1892           (      inf / sec      )
+conflict literals :           49           (     0.00 % deleted  )
+cpu time (solve)  :         0.00 sec	
+refreshes         :            0
+|obdd|            :         1965
+cache hits        :          148
+cache lookup      :          356
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :         2048
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_077.sbml"
+	User time (seconds): 2.51
+	System time (seconds): 0.40
+	Percent of CPU this job got: 224%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 320876
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 80862
+	Voluntary context switches: 4499
+	Involuntary context switches: 123
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 56
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 1.6s

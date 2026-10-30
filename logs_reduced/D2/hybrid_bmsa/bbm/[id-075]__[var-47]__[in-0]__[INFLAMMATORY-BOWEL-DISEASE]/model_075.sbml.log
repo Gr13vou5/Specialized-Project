@@ -1,0 +1,1319 @@
+# Host: MSI
+# Start date: Tue Oct 27 06:41:55 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_075.sbml (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-2819-194 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_075.sbml
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --sbml /benchmark/model_075.sbml --cnf /tmp/tmp.tFQ3onl80K.cnf -h3
+
+Config(sbmlFileName = /benchmark/model_075.sbml, bnetFileName = , cnfFileName = /tmp/tmp.tFQ3onl80K.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+2026-10-26 23:41:56,315 main ERROR Could not determine local host name java.net.UnknownHostException: 79ce9102f18b: 79ce9102f18b: Temporary failure in name resolution
+	at java.base/java.net.InetAddress.getLocalHost(InetAddress.java:1670)
+	at org.apache.logging.log4j.core.util.NetUtils.getLocalHostname(NetUtils.java:54)
+	at org.apache.logging.log4j.core.LoggerContext.lambda$setConfiguration$0(LoggerContext.java:620)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:620)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:699)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:716)
+	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:270)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:309)
+	at org.apache.log4j.Logger$PrivateManager.getContext(Logger.java:59)
+	at org.apache.log4j.Logger.getLogger(Logger.java:41)
+	at org.sbml.jsbml.JSBML.loadClasses(JSBML.java:294)
+	at org.sbml.jsbml.xml.stax.SBMLReader.<clinit>(SBMLReader.java:110)
+	at org.sbml.jsbml.SBMLReader.readSBMLFromFile(SBMLReader.java:235)
+	at jp.kobe_u.bsaf.sbml.SbmlQualModel$.fromFile(SbmlQualModel.scala:15)
+	at jp.kobe_u.bsaf.Main$.main(Main.scala:25)
+	at jp.kobe_u.bsaf.Main.main(Main.scala)
+Caused by: java.net.UnknownHostException: 79ce9102f18b: Temporary failure in name resolution
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getLocalHost(InetAddress.java:1665)
+	... 18 more
+
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+
+Some(Vector(Set(v_LPS), Set(v_PGN), Set(v_MDP)))
+Some(Vector(Set(v_IL10), Set(v_IEC_ULPB1_6), Set(v_IEC_MICA_B), Set(!v_MDP, !v_LPS, !v_IL15, !v_PGN, !v_TNFa), Set(!v_MDP, !v_LPS, v_CD4_NKG2Dupregulation, !v_PGN)))
+(Set(v_LPS),Set(-24))
+(Set(v_PGN),Set(-31))
+(Set(v_MDP),Set(-26))
+(Set(v_IL10),Set(-12))
+(Set(v_IEC_ULPB1_6),Set(-10))
+(Set(v_IEC_MICA_B),Set(-8))
+(Set(!v_MDP, !v_LPS, !v_IL15, !v_PGN, !v_TNFa),Set(24, 14, 33, 31, 26))
+(Set(!v_MDP, !v_LPS, v_CD4_NKG2Dupregulation, !v_PGN),Set(24, 31, 26, -2))
+
+Some(Vector(Set(v_CD4_NKG2D, v_IL15), Set(v_CD4_NKG2D, v_TNFa)))
+Some(Vector(Set(!v_TNFa, !v_IL15), Set(!v_CD4_NKG2D)))
+(Set(v_CD4_NKG2D, v_IL15),Set(-1, -14))
+(Set(v_CD4_NKG2D, v_TNFa),Set(-1, -33))
+(Set(!v_TNFa, !v_IL15),Set(33, 14))
+(Set(!v_CD4_NKG2D),Set(1))
+
+Some(Vector(Set(v_LPS), Set(v_PGN), Set(v_MDP)))
+Some(Vector(Set(v_IL21, v_IL2), Set(v_IEC_MICA_B), Set(v_IEC_ULPB1_6), Set(!v_LPS, !v_PGN, !v_MDP)))
+(Set(v_LPS),Set(-24))
+(Set(v_PGN),Set(-31))
+(Set(v_MDP),Set(-26))
+(Set(v_IL21, v_IL2),Set(-19, -18))
+(Set(v_IEC_MICA_B),Set(-8))
+(Set(v_IEC_ULPB1_6),Set(-10))
+(Set(!v_LPS, !v_PGN, !v_MDP),Set(24, 31, 26))
+
+Some(Vector(Set(v_MDP), Set(v_LPS), Set(v_PGN)))
+Some(Vector(Set(v_IL10), Set(!v_LPS, !v_PGN, !v_MDP)))
+(Set(v_MDP),Set(-26))
+(Set(v_LPS),Set(-24))
+(Set(v_PGN),Set(-31))
+(Set(v_IL10),Set(-12))
+(Set(!v_LPS, !v_PGN, !v_MDP),Set(24, 31, 26))
+
+Some(Vector(Set(v_MDP), Set(v_IL17), Set(v_IL22)))
+Some(Vector(Set(!v_IL22, !v_IL17, !v_MDP)))
+(Set(v_MDP),Set(-26))
+(Set(v_IL17),Set(-15))
+(Set(v_IL22),Set(-20))
+(Set(!v_IL22, !v_IL17, !v_MDP),Set(20, 15, 26))
+
+Some(Vector(Set(v_Th2, v_MACR), Set(v_TGFb, v_MACR), Set(v_IL2)))
+Some(Vector(Set(v_IFNg), Set(v_IL12), Set(!v_TGFb, !v_Th2, !v_IL2), Set(!v_MACR, !v_IL2)))
+(Set(v_Th2, v_MACR),Set(-39, -25))
+(Set(v_TGFb, v_MACR),Set(-32, -25))
+(Set(v_IL2),Set(-18))
+(Set(v_IFNg),Set(-11))
+(Set(v_IL12),Set(-13))
+(Set(!v_TGFb, !v_Th2, !v_IL2),Set(32, 39, 18))
+(Set(!v_MACR, !v_IL2),Set(25, 18))
+
+Some(Vector(Set(!v_LPS, v_DC), Set(!v_PGN, v_DC), Set(v_NK), Set(v_CD8_NKG2D), Set(v_NK_NKG2D)))
+Some(Vector(Set(!v_NK, v_LPS, !v_NK_NKG2D, !v_CD8_NKG2D, v_PGN), Set(!v_NK_NKG2D, !v_NK, !v_DC, !v_CD8_NKG2D)))
+(Set(!v_LPS, v_DC),Set(24, -4))
+(Set(!v_PGN, v_DC),Set(31, -4))
+(Set(v_NK),Set(-28))
+(Set(v_CD8_NKG2D),Set(-3))
+(Set(v_NK_NKG2D),Set(-29))
+(Set(!v_NK, v_LPS, !v_NK_NKG2D, !v_CD8_NKG2D, v_PGN),Set(29, -31, 28, 3, -24))
+(Set(!v_NK_NKG2D, !v_NK, !v_DC, !v_CD8_NKG2D),Set(29, 28, 4, 3))
+
+Some(Vector(Set(!v_TGFb, v_MDP), Set(!v_TGFb, v_PGN), Set(v_LPS, !v_TGFb)))
+Some(Vector(Set(!v_MDP, !v_LPS, v_IEC_MICA_Bupregulation, !v_PGN), Set(!v_MDP, !v_LPS, !v_PGN, !v_TNFa), Set(v_TGFb)))
+(Set(!v_TGFb, v_MDP),Set(32, -26))
+(Set(!v_TGFb, v_PGN),Set(32, -31))
+(Set(v_LPS, !v_TGFb),Set(-24, 32))
+(Set(!v_MDP, !v_LPS, v_IEC_MICA_Bupregulation, !v_PGN),Set(24, 31, -9, 26))
+(Set(!v_MDP, !v_LPS, !v_PGN, !v_TNFa),Set(24, 33, 31, 26))
+(Set(v_TGFb),Set(-32))
+
+Some(Vector(Set(v_IEC_MICA_B, v_TNFa)))
+Some(Vector(Set(!v_TNFa), Set(!v_IEC_MICA_B)))
+(Set(v_IEC_MICA_B, v_TNFa),Set(-8, -33))
+(Set(!v_TNFa),Set(33))
+(Set(!v_IEC_MICA_B),Set(8))
+
+Some(Vector(Set(v_CD8_NKG2D, v_MDP), Set(v_CD8_NKG2D, v_LPS), Set(v_CD8_NKG2D, v_PGN)))
+Some(Vector(Set(!v_PGN, !v_LPS, !v_MDP), Set(!v_CD8_NKG2D)))
+(Set(v_CD8_NKG2D, v_MDP),Set(-3, -26))
+(Set(v_CD8_NKG2D, v_LPS),Set(-3, -24))
+(Set(v_CD8_NKG2D, v_PGN),Set(-3, -31))
+(Set(!v_PGN, !v_LPS, !v_MDP),Set(31, 24, 26))
+(Set(!v_CD8_NKG2D),Set(3))
+
+Some(Vector(Set(v_Th1, !v_Th2), Set(!v_Th2, v_MDP, v_Th17), Set(v_LPS, !v_Th2, v_Th17), Set(v_PGN, !v_Th2, v_Th17), Set(v_MDP, v_NK, !v_Th2, v_IL23), Set(v_LPS, v_NK, !v_Th2, v_IL23), Set(v_PGN, v_NK, !v_Th2, v_IL23), Set(!v_Th2, v_IEC_MICA_B, v_CD8_NKG2D), Set(!v_Th2, v_CD8_NKG2D, v_IEC_ULPB1_6), Set(v_NK_NKG2D, !v_Th2, v_IEC_MICA_B), Set(v_NK_NKG2D, !v_Th2, v_IEC_ULPB1_6), Set(v_IL18, v_MACR, !v_Th2, v_IL12), Set(v_Th0, v_IL18, !v_Th2, v_IL12)))
+None
+
+# Use TseitinTransitionEncoder
+
+# Formula
+Or(And(v_Th17, And(Or(v_PGN, Or(v_LPS, v_MDP)), And(Neg(And(v_IFNg, Or(v_TGFb, v_IL10))), Neg(v_Th2)))), Or(And(v_Th1, And(Neg(And(v_IFNg, Or(v_TGFb, v_IL10))), Neg(v_Th2))), Or(And(v_IL18, And(v_IL12, And(Or(v_Th0, v_MACR), And(Neg(And(v_IFNg, Or(v_TGFb, v_IL10))), Neg(v_Th2))))), Or(And(v_IL23, And(Or(v_PGN, Or(v_LPS, v_MDP)), And(v_NK, And(Neg(And(v_IFNg, Or(v_TGFb, v_IL10))), Neg(v_Th2))))), Or(And(v_NK_NKG2D, And(Or(v_IEC_ULPB1_6, v_IEC_MICA_B), And(Neg(And(v_IFNg, Or(v_TGFb, v_IL10))), Neg(v_Th2)))), And(v_CD8_NKG2D, And(Or(v_IEC_ULPB1_6, v_IEC_MICA_B), And(Neg(And(v_IFNg, Or(v_TGFb, v_IL10))), Neg(v_Th2)))))))))
+Or(And(v_IL18, Or(!v_IFNg, And(!v_TGFb, !v_IL10)), Or(v_Th0, v_MACR), !v_Th2, v_IL12), And(v_NK_NKG2D, Or(v_IEC_ULPB1_6, v_IEC_MICA_B), Or(!v_IFNg, And(!v_TGFb, !v_IL10)), !v_Th2), And(v_CD8_NKG2D, Or(v_IEC_ULPB1_6, v_IEC_MICA_B), Or(!v_IFNg, And(!v_TGFb, !v_IL10)), !v_Th2), And(Or(!v_IFNg, And(!v_TGFb, !v_IL10)), Or(v_PGN, v_LPS, v_MDP), v_NK, !v_Th2, v_IL23), And(v_Th17, Or(v_PGN, v_LPS, v_MDP), Or(!v_IFNg, And(!v_TGFb, !v_IL10)), !v_Th2), And(v_Th1, Or(!v_IFNg, And(!v_TGFb, !v_IL10)), !v_Th2))
+# Output lit: 11, x lit: 64
+
+Some(Vector(Set(v_Treg), Set(v_Th2, !v_IL23), Set(v_LPS, !v_Th2, v_MACR), Set(v_NFkB, v_PGN, !v_IFNg, !v_MACR), Set(v_LPS, v_DC)))
+Some(Vector(Set(!v_Treg, v_IFNg, v_IL23, !v_DC, v_Th2), Set(!v_Treg, v_MACR, v_IL23, !v_DC, v_Th2), Set(!v_Treg, !v_NFkB, v_IL23, !v_DC, v_Th2), Set(!v_Treg, v_IL23, !v_DC, !v_PGN, v_Th2), Set(!v_Treg, v_IFNg, !v_MACR, v_IL23, !v_DC), Set(!v_Treg, !v_NFkB, !v_MACR, v_IL23, !v_DC), Set(!v_Treg, !v_MACR, v_IL23, !v_DC, !v_PGN), Set(!v_Treg, v_IFNg, !v_MACR, !v_Th2, !v_DC), Set(!v_Treg, !v_NFkB, !v_MACR, !v_Th2, !v_DC), Set(!v_Treg, !v_MACR, !v_Th2, !v_DC, !v_PGN), Set(!v_LPS, !v_Th2, v_MACR, !v_Treg), Set(!v_LPS, v_IFNg, v_IL23, !v_Treg), Set(!v_NFkB, !v_LPS, v_IL23, !v_Treg), Set(!v_LPS, v_MACR, v_IL23, !v_Treg), Set(!v_LPS, !v_PGN, v_IL23, !v_Treg), Set(!v_NFkB, !v_LPS, !v_Th2, !v_Treg), Set(!v_LPS, !v_Th2, v_IFNg, !v_Treg), Set(!v_LPS, !v_PGN, !v_Th2, !v_Treg)))
+(Set(v_Treg),Set(-40))
+(Set(v_Th2, !v_IL23),Set(-39, 22))
+(Set(v_LPS, !v_Th2, v_MACR),Set(-24, 39, -25))
+(Set(v_NFkB, v_PGN, !v_IFNg, !v_MACR),Set(-27, -31, 11, 25))
+(Set(v_LPS, v_DC),Set(-24, -4))
+(Set(!v_Treg, v_IFNg, v_IL23, !v_DC, v_Th2),Set(-39, -22, -11, 40, 4))
+(Set(!v_Treg, v_MACR, v_IL23, !v_DC, v_Th2),Set(-39, -22, -25, 40, 4))
+(Set(!v_Treg, !v_NFkB, v_IL23, !v_DC, v_Th2),Set(-39, -22, 27, 40, 4))
+(Set(!v_Treg, v_IL23, !v_DC, !v_PGN, v_Th2),Set(-39, -22, 31, 40, 4))
+(Set(!v_Treg, v_IFNg, !v_MACR, v_IL23, !v_DC),Set(-22, 25, -11, 40, 4))
+(Set(!v_Treg, !v_NFkB, !v_MACR, v_IL23, !v_DC),Set(-22, 25, 27, 40, 4))
+(Set(!v_Treg, !v_MACR, v_IL23, !v_DC, !v_PGN),Set(-22, 25, 31, 40, 4))
+(Set(!v_Treg, v_IFNg, !v_MACR, !v_Th2, !v_DC),Set(25, -11, 39, 40, 4))
+(Set(!v_Treg, !v_NFkB, !v_MACR, !v_Th2, !v_DC),Set(25, 27, 39, 40, 4))
+(Set(!v_Treg, !v_MACR, !v_Th2, !v_DC, !v_PGN),Set(25, 39, 31, 40, 4))
+(Set(!v_LPS, !v_Th2, v_MACR, !v_Treg),Set(24, 39, -25, 40))
+(Set(!v_LPS, v_IFNg, v_IL23, !v_Treg),Set(24, -11, -22, 40))
+(Set(!v_NFkB, !v_LPS, v_IL23, !v_Treg),Set(27, 24, -22, 40))
+(Set(!v_LPS, v_MACR, v_IL23, !v_Treg),Set(24, -25, -22, 40))
+(Set(!v_LPS, !v_PGN, v_IL23, !v_Treg),Set(24, 31, -22, 40))
+(Set(!v_NFkB, !v_LPS, !v_Th2, !v_Treg),Set(27, 24, 39, 40))
+(Set(!v_LPS, !v_Th2, v_IFNg, !v_Treg),Set(24, 39, -11, 40))
+(Set(!v_LPS, !v_PGN, !v_Th2, !v_Treg),Set(24, 31, 39, 40))
+
+Some(Vector(Set(v_NFkB, v_PGN, v_DC), Set(v_NFkB, v_PGN, v_MACR), Set(v_LPS, v_IFNg, v_DC), Set(v_LPS, v_PGN, v_IFNg, v_MACR)))
+Some(Vector(Set(!v_MACR, !v_DC), Set(!v_NFkB, !v_IFNg), Set(!v_NFkB, !v_LPS), Set(!v_PGN, !v_DC), Set(!v_PGN, !v_IFNg), Set(!v_LPS, !v_PGN)))
+(Set(v_NFkB, v_PGN, v_DC),Set(-27, -31, -4))
+(Set(v_NFkB, v_PGN, v_MACR),Set(-27, -31, -25))
+(Set(v_LPS, v_IFNg, v_DC),Set(-24, -11, -4))
+(Set(v_LPS, v_PGN, v_IFNg, v_MACR),Set(-24, -31, -11, -25))
+(Set(!v_MACR, !v_DC),Set(25, 4))
+(Set(!v_NFkB, !v_IFNg),Set(27, 11))
+(Set(!v_NFkB, !v_LPS),Set(27, 24))
+(Set(!v_PGN, !v_DC),Set(31, 4))
+(Set(!v_PGN, !v_IFNg),Set(31, 11))
+(Set(!v_LPS, !v_PGN),Set(24, 31))
+
+Some(Vector(Set(v_IFNg, v_MACR), Set(v_LPS, v_MACR), Set(v_FIBROBLAST, v_MDP), Set(v_LPS, v_FIBROBLAST), Set(v_FIBROBLAST, v_PGN)))
+Some(Vector(Set(!v_LPS, !v_PGN, !v_IFNg, !v_MDP), Set(!v_LPS, !v_FIBROBLAST, !v_IFNg), Set(!v_LPS, !v_PGN, !v_MACR, !v_MDP), Set(!v_FIBROBLAST, !v_MACR)))
+(Set(v_IFNg, v_MACR),Set(-11, -25))
+(Set(v_LPS, v_MACR),Set(-24, -25))
+(Set(v_FIBROBLAST, v_MDP),Set(-6, -26))
+(Set(v_LPS, v_FIBROBLAST),Set(-24, -6))
+(Set(v_FIBROBLAST, v_PGN),Set(-6, -31))
+(Set(!v_LPS, !v_PGN, !v_IFNg, !v_MDP),Set(24, 31, 11, 26))
+(Set(!v_LPS, !v_FIBROBLAST, !v_IFNg),Set(24, 6, 11))
+(Set(!v_LPS, !v_PGN, !v_MACR, !v_MDP),Set(24, 31, 25, 26))
+(Set(!v_FIBROBLAST, !v_MACR),Set(6, 25))
+
+Some(Vector(Set(v_Th17), Set(v_IEC_MICA_B, v_CD4_NKG2D), Set(v_CD4_NKG2D, v_IEC_ULPB1_6), Set(v_MDP, v_Th17_M), Set(v_LPS, v_Th17_M), Set(v_PGN, v_Th17_M)))
+Some(Vector(Set(v_Th2), Set(v_TGFb), Set(!v_MDP, !v_IEC_MICA_B, !v_LPS, !v_IEC_ULPB1_6, !v_Th17, !v_PGN), Set(!v_IEC_MICA_B, !v_Th17_M, !v_IEC_ULPB1_6, !v_Th17), Set(!v_MDP, !v_LPS, !v_CD4_NKG2D, !v_Th17, !v_PGN), Set(!v_CD4_NKG2D, !v_Th17_M, !v_Th17)))
+(Set(v_Th17),Set(-37))
+(Set(v_IEC_MICA_B, v_CD4_NKG2D),Set(-8, -1))
+(Set(v_CD4_NKG2D, v_IEC_ULPB1_6),Set(-1, -10))
+(Set(v_MDP, v_Th17_M),Set(-26, -38))
+(Set(v_LPS, v_Th17_M),Set(-24, -38))
+(Set(v_PGN, v_Th17_M),Set(-31, -38))
+(Set(v_Th2),Set(-39))
+(Set(v_TGFb),Set(-32))
+(Set(!v_MDP, !v_IEC_MICA_B, !v_LPS, !v_IEC_ULPB1_6, !v_Th17, !v_PGN),Set(10, 24, 37, 31, 26, 8))
+(Set(!v_IEC_MICA_B, !v_Th17_M, !v_IEC_ULPB1_6, !v_Th17),Set(10, 37, 38, 8))
+(Set(!v_MDP, !v_LPS, !v_CD4_NKG2D, !v_Th17, !v_PGN),Set(24, 37, 1, 31, 26))
+(Set(!v_CD4_NKG2D, !v_Th17_M, !v_Th17),Set(1, 38, 37))
+
+Some(Vector(Set(v_LPS, v_NFkB, v_MACR), Set(v_LPS, v_NFkB, v_DC)))
+Some(Vector(Set(!v_DC, !v_MACR), Set(!v_NFkB), Set(!v_LPS)))
+(Set(v_LPS, v_NFkB, v_MACR),Set(-24, -27, -25))
+(Set(v_LPS, v_NFkB, v_DC),Set(-24, -27, -4))
+(Set(!v_DC, !v_MACR),Set(4, 25))
+(Set(!v_NFkB),Set(27))
+(Set(!v_LPS),Set(24))
+
+Some(Vector(Set(v_NFkB, v_LPS, v_DC), Set(v_NFkB, v_LPS, v_MACR)))
+Some(Vector(Set(v_IL10), Set(!v_MACR, !v_DC), Set(!v_NFkB), Set(!v_LPS)))
+(Set(v_NFkB, v_LPS, v_DC),Set(-27, -24, -4))
+(Set(v_NFkB, v_LPS, v_MACR),Set(-27, -24, -25))
+(Set(v_IL10),Set(-12))
+(Set(!v_MACR, !v_DC),Set(25, 4))
+(Set(!v_NFkB),Set(27))
+(Set(!v_LPS),Set(24))
+
+Some(Vector(Set(v_DC), Set(v_Th0), Set(v_Th0_M, v_MDP), Set(v_Th0_M, v_LPS), Set(v_Th0_M, v_PGN)))
+Some(Vector(Set(!v_MDP, !v_LPS, !v_Th0, !v_DC, !v_PGN), Set(!v_Th0_M, !v_Th0, !v_DC)))
+(Set(v_DC),Set(-4))
+(Set(v_Th0),Set(-34))
+(Set(v_Th0_M, v_MDP),Set(-35, -26))
+(Set(v_Th0_M, v_LPS),Set(-35, -24))
+(Set(v_Th0_M, v_PGN),Set(-35, -31))
+(Set(!v_MDP, !v_LPS, !v_Th0, !v_DC, !v_PGN),Set(24, 34, 31, 26, 4))
+(Set(!v_Th0_M, !v_Th0, !v_DC),Set(35, 34, 4))
+
+Some(Vector(Set(v_Th17), Set(v_Th0, v_IL6, !v_IFNg, !v_TGFb, !v_Th2)))
+Some(Vector(Set(v_Th2, !v_Th17), Set(!v_Th17, !v_IL6), Set(v_TGFb, !v_Th17), Set(!v_Th0, !v_Th17), Set(v_IFNg, !v_Th17)))
+(Set(v_Th17),Set(-37))
+(Set(v_Th0, v_IL6, !v_IFNg, !v_TGFb, !v_Th2),Set(-23, 32, 39, 11, -34))
+(Set(v_Th2, !v_Th17),Set(-39, 37))
+(Set(!v_Th17, !v_IL6),Set(37, 23))
+(Set(v_TGFb, !v_Th17),Set(-32, 37))
+(Set(!v_Th0, !v_Th17),Set(34, 37))
+(Set(v_IFNg, !v_Th17),Set(-11, 37))
+
+Some(Vector(Set(v_IL18, v_IL12, v_NK), Set(v_CD4_NKG2D), Set(v_Th17), Set(v_NK, v_IL23)))
+Some(Vector(Set(!v_CD4_NKG2D, !v_IL23, !v_Th17, !v_IL12, !v_IL21), Set(!v_CD4_NKG2D, !v_IL23, !v_IL18, !v_Th17, !v_IL21), Set(!v_NK, !v_CD4_NKG2D, !v_Th17, !v_IL21), Set(!v_CD4_NKG2D, !v_IL23, !v_Th17, !v_IL12, v_IL22upregulation), Set(!v_CD4_NKG2D, !v_IL23, !v_IL18, !v_Th17, v_IL22upregulation), Set(!v_NK, !v_CD4_NKG2D, !v_Th17, v_IL22upregulation), Set(!v_CD4_NKG2D, !v_IL23, !v_Th17, v_TGFb, !v_IL12), Set(!v_CD4_NKG2D, !v_IL23, !v_IL18, !v_Th17, v_TGFb), Set(!v_NK, !v_CD4_NKG2D, !v_Th17, v_TGFb), Set(!v_CD4_NKG2D, !v_IL23, !v_Th17, !v_Th0, !v_IL12), Set(!v_CD4_NKG2D, !v_IL23, !v_IL18, !v_Th17, !v_Th0), Set(!v_NK, !v_CD4_NKG2D, !v_Th17, !v_Th0)))
+(Set(v_IL18, v_IL12, v_NK),Set(-16, -13, -28))
+(Set(v_CD4_NKG2D),Set(-1))
+(Set(v_Th17),Set(-37))
+(Set(v_NK, v_IL23),Set(-28, -22))
+(Set(!v_CD4_NKG2D, !v_IL23, !v_Th17, !v_IL12, !v_IL21),Set(37, 1, 13, 22, 19))
+(Set(!v_CD4_NKG2D, !v_IL23, !v_IL18, !v_Th17, !v_IL21),Set(37, 1, 22, 16, 19))
+(Set(!v_NK, !v_CD4_NKG2D, !v_Th17, !v_IL21),Set(37, 1, 28, 19))
+(Set(!v_CD4_NKG2D, !v_IL23, !v_Th17, !v_IL12, v_IL22upregulation),Set(37, 1, 13, 22, -21))
+(Set(!v_CD4_NKG2D, !v_IL23, !v_IL18, !v_Th17, v_IL22upregulation),Set(37, 1, 22, 16, -21))
+(Set(!v_NK, !v_CD4_NKG2D, !v_Th17, v_IL22upregulation),Set(37, 1, 28, -21))
+(Set(!v_CD4_NKG2D, !v_IL23, !v_Th17, v_TGFb, !v_IL12),Set(-32, 37, 1, 13, 22))
+(Set(!v_CD4_NKG2D, !v_IL23, !v_IL18, !v_Th17, v_TGFb),Set(-32, 37, 1, 22, 16))
+(Set(!v_NK, !v_CD4_NKG2D, !v_Th17, v_TGFb),Set(-32, 37, 1, 28))
+(Set(!v_CD4_NKG2D, !v_IL23, !v_Th17, !v_Th0, !v_IL12),Set(37, 1, 13, 34, 22))
+(Set(!v_CD4_NKG2D, !v_IL23, !v_IL18, !v_Th17, !v_Th0),Set(37, 1, 34, 22, 16))
+(Set(!v_NK, !v_CD4_NKG2D, !v_Th17, !v_Th0),Set(37, 1, 28, 34))
+
+Some(Vector(Set(v_Th0, v_IL21, v_IL22)))
+Some(Vector(Set(!v_IL22), Set(!v_IL21), Set(!v_Th0)))
+(Set(v_Th0, v_IL21, v_IL22),Set(-34, -19, -20))
+(Set(!v_IL22),Set(20))
+(Set(!v_IL21),Set(19))
+(Set(!v_Th0),Set(34))
+
+Some(Vector(Set(v_DC), Set(v_MACR, v_IL1b)))
+Some(Vector(Set(!v_IL1b, !v_DC), Set(!v_MACR, !v_DC)))
+(Set(v_DC),Set(-4))
+(Set(v_MACR, v_IL1b),Set(-25, -17))
+(Set(!v_IL1b, !v_DC),Set(17, 4))
+(Set(!v_MACR, !v_DC),Set(25, 4))
+
+Some(Vector(Set(v_NFkB, !v_Th2), Set(v_NFkB, !v_IL10), Set(v_IL23, v_Th17), Set(v_PGN, v_MACR), Set(v_LPS, v_DC), Set(v_PGN, v_DC)))
+Some(Vector(Set(!v_IL23, !v_MACR, !v_DC, v_Th2, v_IL10), Set(!v_LPS, !v_IL23, !v_PGN, v_Th2, v_IL10), Set(!v_IL23, !v_DC, !v_PGN, v_Th2, v_IL10), Set(!v_Th17, !v_MACR, !v_DC, v_Th2, v_IL10), Set(!v_LPS, !v_Th17, !v_PGN, v_Th2, v_IL10), Set(!v_Th17, !v_DC, !v_PGN, v_Th2, v_IL10), Set(!v_NFkB, !v_MACR, !v_IL23, !v_DC), Set(!v_NFkB, !v_LPS, !v_PGN, !v_IL23), Set(!v_NFkB, !v_PGN, !v_IL23, !v_DC), Set(!v_NFkB, !v_MACR, !v_DC, !v_Th17), Set(!v_NFkB, !v_LPS, !v_PGN, !v_Th17), Set(!v_NFkB, !v_PGN, !v_DC, !v_Th17)))
+(Set(v_NFkB, !v_Th2),Set(-27, 39))
+(Set(v_NFkB, !v_IL10),Set(-27, 12))
+(Set(v_IL23, v_Th17),Set(-22, -37))
+(Set(v_PGN, v_MACR),Set(-31, -25))
+(Set(v_LPS, v_DC),Set(-24, -4))
+(Set(v_PGN, v_DC),Set(-31, -4))
+(Set(!v_IL23, !v_MACR, !v_DC, v_Th2, v_IL10),Set(-39, 25, -12, 22, 4))
+(Set(!v_LPS, !v_IL23, !v_PGN, v_Th2, v_IL10),Set(24, -39, -12, 22, 31))
+(Set(!v_IL23, !v_DC, !v_PGN, v_Th2, v_IL10),Set(-39, -12, 22, 31, 4))
+(Set(!v_Th17, !v_MACR, !v_DC, v_Th2, v_IL10),Set(-39, 37, 25, -12, 4))
+(Set(!v_LPS, !v_Th17, !v_PGN, v_Th2, v_IL10),Set(24, -39, 37, -12, 31))
+(Set(!v_Th17, !v_DC, !v_PGN, v_Th2, v_IL10),Set(-39, 37, -12, 31, 4))
+(Set(!v_NFkB, !v_MACR, !v_IL23, !v_DC),Set(27, 25, 22, 4))
+(Set(!v_NFkB, !v_LPS, !v_PGN, !v_IL23),Set(27, 24, 31, 22))
+(Set(!v_NFkB, !v_PGN, !v_IL23, !v_DC),Set(27, 31, 22, 4))
+(Set(!v_NFkB, !v_MACR, !v_DC, !v_Th17),Set(27, 25, 4, 37))
+(Set(!v_NFkB, !v_LPS, !v_PGN, !v_Th17),Set(27, 24, 31, 37))
+(Set(!v_NFkB, !v_PGN, !v_DC, !v_Th17),Set(27, 31, 4, 37))
+
+Some(Vector(Set(!v_GRANZB, !v_DEF, !v_PERFOR)))
+Some(Vector(Set(v_PERFOR), Set(v_DEF), Set(v_GRANZB)))
+(Set(!v_GRANZB, !v_DEF, !v_PERFOR),Set(7, 5, 30))
+(Set(v_PERFOR),Set(-30))
+(Set(v_DEF),Set(-5))
+(Set(v_GRANZB),Set(-7))
+
+Some(Vector(Set(v_MDP), Set(v_LPS), Set(v_IFNg), Set(v_PGN), Set(v_IL15)))
+Some(Vector(Set(v_IL10), Set(!v_MDP, !v_LPS, !v_IFNg, !v_IL15, !v_PGN)))
+(Set(v_MDP),Set(-26))
+(Set(v_LPS),Set(-24))
+(Set(v_IFNg),Set(-11))
+(Set(v_PGN),Set(-31))
+(Set(v_IL15),Set(-14))
+(Set(v_IL10),Set(-12))
+(Set(!v_MDP, !v_LPS, !v_IFNg, !v_IL15, !v_PGN),Set(24, 14, 31, 11, 26))
+
+Some(Vector(Set(!v_PERFOR, !v_DEF, !v_GRANZB)))
+Some(Vector(Set(v_GRANZB), Set(v_DEF), Set(v_PERFOR)))
+(Set(!v_PERFOR, !v_DEF, !v_GRANZB),Set(30, 5, 7))
+(Set(v_GRANZB),Set(-7))
+(Set(v_DEF),Set(-5))
+(Set(v_PERFOR),Set(-30))
+
+Some(Vector(Set(v_PGN), Set(v_LPS), Set(v_MDP)))
+Some(Vector(Set(!v_MDP, !v_LPS, !v_PGN)))
+(Set(v_PGN),Set(-31))
+(Set(v_LPS),Set(-24))
+(Set(v_MDP),Set(-26))
+(Set(!v_MDP, !v_LPS, !v_PGN),Set(26, 24, 31))
+
+Some(Vector(Set(v_IL10, v_IL18), Set(v_IL23), Set(v_DC, v_IL15)))
+Some(Vector(Set(v_Treg), Set(!v_IL10, !v_IL23, !v_IL15), Set(!v_IL10, !v_IL23, !v_DC), Set(!v_IL18, !v_IL23, !v_IL15), Set(!v_IL18, !v_IL23, !v_DC)))
+(Set(v_IL10, v_IL18),Set(-12, -16))
+(Set(v_IL23),Set(-22))
+(Set(v_DC, v_IL15),Set(-4, -14))
+(Set(v_Treg),Set(-40))
+(Set(!v_IL10, !v_IL23, !v_IL15),Set(12, 22, 14))
+(Set(!v_IL10, !v_IL23, !v_DC),Set(12, 22, 4))
+(Set(!v_IL18, !v_IL23, !v_IL15),Set(16, 22, 14))
+(Set(!v_IL18, !v_IL23, !v_DC),Set(16, 22, 4))
+
+Some(Vector(Set(v_LPS), Set(v_PGN), Set(v_MDP)))
+Some(Vector(Set(v_IEC_ULPB1_6, v_IEC_MICA_B, v_IL21, v_TGFb, v_IL12), Set(!v_LPS, !v_PGN, !v_MDP)))
+(Set(v_LPS),Set(-24))
+(Set(v_PGN),Set(-31))
+(Set(v_MDP),Set(-26))
+(Set(v_IEC_ULPB1_6, v_IEC_MICA_B, v_IL21, v_TGFb, v_IL12),Set(-32, -8, -19, -10, -13))
+(Set(!v_LPS, !v_PGN, !v_MDP),Set(24, 31, 26))
+
+Some(Vector(Set(v_NK), Set(v_NK_NKG2D)))
+Some(Vector(Set(!v_NK_NKG2D, !v_NK)))
+(Set(v_NK),Set(-28))
+(Set(v_NK_NKG2D),Set(-29))
+(Set(!v_NK_NKG2D, !v_NK),Set(29, 28))
+
+Some(Vector(Set(!v_GRANZB, !v_DEF, !v_PERFOR)))
+Some(Vector(Set(v_PERFOR), Set(v_DEF), Set(v_GRANZB)))
+(Set(!v_GRANZB, !v_DEF, !v_PERFOR),Set(7, 5, 30))
+(Set(v_PERFOR),Set(-30))
+(Set(v_DEF),Set(-5))
+(Set(v_GRANZB),Set(-7))
+
+Some(Vector(Set(v_MACR), Set(v_Treg)))
+Some(Vector(Set(!v_Treg, !v_MACR)))
+(Set(v_MACR),Set(-25))
+(Set(v_Treg),Set(-40))
+(Set(!v_Treg, !v_MACR),Set(40, 25))
+
+Some(Vector(Set(v_IEC_MICA_B, v_CD4_NKG2D), Set(v_CD4_NKG2D, v_IEC_ULPB1_6), Set(v_NFkB, v_LPS), Set(v_FIBROBLAST, v_IFNg), Set(v_NK, v_MDP, v_IL15), Set(v_PGN, v_NK, v_IL15), Set(v_LPS, v_NK, v_IL15), Set(v_NK, v_MDP, v_IL23), Set(v_PGN, v_NK, v_IL23), Set(v_LPS, v_NK, v_IL23), Set(v_NK, v_MDP, v_IL2), Set(v_PGN, v_NK, v_IL2), Set(v_LPS, v_NK, v_IL2), Set(v_NK_NKG2D, v_IEC_MICA_B), Set(v_NK_NKG2D, v_IEC_ULPB1_6), Set(v_LPS, v_IFNg, v_MACR), Set(v_MACR, v_IL2), Set(v_PGN, v_MACR), Set(v_IEC_MICA_B, v_CD8_NKG2D), Set(v_CD8_NKG2D, v_IEC_ULPB1_6)))
+None
+
+# Use TseitinTransitionEncoder
+
+# Formula
+Or(And(v_MACR, And(Or(v_IL2, Or(v_PGN, And(v_IFNg, v_LPS))), Neg(And(v_IL10, And(v_TNFa, Or(v_LPS, v_PGN)))))), Or(And(v_CD8_NKG2D, And(Or(v_IEC_ULPB1_6, v_IEC_MICA_B), Neg(And(v_IL10, And(v_TNFa, Or(v_LPS, v_PGN)))))), Or(And(v_FIBROBLAST, And(v_IFNg, Neg(And(v_IL10, And(v_TNFa, Or(v_LPS, v_PGN)))))), Or(And(v_NFkB, And(v_LPS, Neg(And(v_IL10, And(v_TNFa, Or(v_LPS, v_PGN)))))), Or(And(v_CD4_NKG2D, And(Or(v_IEC_ULPB1_6, v_IEC_MICA_B), Neg(And(v_IL10, And(v_TNFa, Or(v_LPS, v_PGN)))))), Or(And(v_NK, And(Or(v_PGN, Or(v_LPS, v_MDP)), And(Or(v_IL23, Or(v_IL15, v_IL2)), Neg(And(v_IL10, And(v_TNFa, Or(v_LPS, v_PGN))))))), And(v_NK_NKG2D, And(Or(v_IEC_ULPB1_6, v_IEC_MICA_B), Neg(And(v_IL10, And(v_TNFa, Or(v_LPS, v_PGN))))))))))))
+Or(And(v_CD8_NKG2D, Or(v_IEC_ULPB1_6, v_IEC_MICA_B), Or(!v_IL10, !v_TNFa, And(!v_LPS, !v_PGN))), And(v_MACR, Or(v_IL2, v_PGN, And(v_IFNg, v_LPS)), Or(!v_IL10, !v_TNFa, And(!v_LPS, !v_PGN))), And(v_NK_NKG2D, Or(v_IEC_ULPB1_6, v_IEC_MICA_B), Or(!v_IL10, !v_TNFa, And(!v_LPS, !v_PGN))), And(v_NK, Or(v_PGN, v_LPS, v_MDP), Or(v_IL23, v_IL15, v_IL2), Or(!v_IL10, !v_TNFa, And(!v_LPS, !v_PGN))), And(v_FIBROBLAST, v_IFNg, Or(!v_IL10, !v_TNFa, And(!v_LPS, !v_PGN))), And(v_NFkB, v_LPS, Or(!v_IL10, !v_TNFa, And(!v_LPS, !v_PGN))), And(v_CD4_NKG2D, Or(v_IEC_ULPB1_6, v_IEC_MICA_B), Or(!v_IL10, !v_TNFa, And(!v_LPS, !v_PGN))))
+# Output lit: 33, x lit: 93
+
+Some(Vector(Set(v_LPS), Set(v_PGN), Set(v_MDP)))
+Some(Vector(Set(!v_MDP, !v_PGN, !v_LPS)))
+(Set(v_LPS),Set(-24))
+(Set(v_PGN),Set(-31))
+(Set(v_MDP),Set(-26))
+(Set(!v_MDP, !v_PGN, !v_LPS),Set(26, 31, 24))
+
+Some(Vector(Set(v_Th0, v_IL12), Set(v_Th0, v_IL23)))
+Some(Vector())
+(Set(v_Th0, v_IL12),Set(-34, -13))
+(Set(v_Th0, v_IL23),Set(-34, -22))
+
+Some(Vector(Set(v_Th0, v_IFNg), Set(v_Th0, v_IL12), Set(v_Th0, v_IL18)))
+Some(Vector(Set(v_IL10), Set(v_Th2), Set(v_Treg), Set(v_TGFb), Set(v_IL12, v_IL17), Set(v_IL12, v_IL23), Set(!v_IL18, !v_IL12, !v_IFNg), Set(!v_Th0)))
+(Set(v_Th0, v_IFNg),Set(-34, -11))
+(Set(v_Th0, v_IL12),Set(-34, -13))
+(Set(v_Th0, v_IL18),Set(-34, -16))
+(Set(v_IL10),Set(-12))
+(Set(v_Th2),Set(-39))
+(Set(v_Treg),Set(-40))
+(Set(v_TGFb),Set(-32))
+(Set(v_IL12, v_IL17),Set(-13, -15))
+(Set(v_IL12, v_IL23),Set(-13, -22))
+(Set(!v_IL18, !v_IL12, !v_IFNg),Set(16, 13, 11))
+(Set(!v_Th0),Set(34))
+
+Some(Vector(Set(v_Th0, v_IL1b), Set(v_Th0, v_IL6), Set(v_Th0, v_IL23)))
+Some(Vector(Set(v_Th2), Set(v_IL12), Set(v_Treg), Set(v_TGFb), Set(v_IFNg), Set(!v_IL23, !v_IL1b, !v_IL6), Set(!v_Th0)))
+(Set(v_Th0, v_IL1b),Set(-34, -17))
+(Set(v_Th0, v_IL6),Set(-34, -23))
+(Set(v_Th0, v_IL23),Set(-34, -22))
+(Set(v_Th2),Set(-39))
+(Set(v_IL12),Set(-13))
+(Set(v_Treg),Set(-40))
+(Set(v_TGFb),Set(-32))
+(Set(v_IFNg),Set(-11))
+(Set(!v_IL23, !v_IL1b, !v_IL6),Set(22, 17, 23))
+(Set(!v_Th0),Set(34))
+
+Some(Vector(Set(v_Th0_M, v_MDP, v_IL2), Set(v_Th0_M, v_LPS, v_IL2), Set(v_Th0_M, v_PGN, v_IL2), Set(v_Th0_M, v_MDP, v_IL23), Set(v_Th0_M, v_LPS, v_IL23), Set(v_Th0_M, v_PGN, v_IL23), Set(v_Th0_M, v_IL6, v_IL1b, v_MDP), Set(v_Th0_M, v_LPS, v_IL6, v_IL1b), Set(v_Th0_M, v_IL6, v_PGN, v_IL1b)))
+Some(Vector())
+(Set(v_Th0_M, v_MDP, v_IL2),Set(-35, -26, -18))
+(Set(v_Th0_M, v_LPS, v_IL2),Set(-35, -24, -18))
+(Set(v_Th0_M, v_PGN, v_IL2),Set(-35, -31, -18))
+(Set(v_Th0_M, v_MDP, v_IL23),Set(-35, -26, -22))
+(Set(v_Th0_M, v_LPS, v_IL23),Set(-35, -24, -22))
+(Set(v_Th0_M, v_PGN, v_IL23),Set(-35, -31, -22))
+(Set(v_Th0_M, v_IL6, v_IL1b, v_MDP),Set(-35, -26, -23, -17))
+(Set(v_Th0_M, v_LPS, v_IL6, v_IL1b),Set(-35, -23, -24, -17))
+(Set(v_Th0_M, v_IL6, v_PGN, v_IL1b),Set(-35, -31, -23, -17))
+
+Some(Vector(Set(v_Th0, v_IL10)))
+Some(Vector(Set(v_IFNg), Set(v_Treg), Set(v_TGFb), Set(!v_IL10, v_IL12), Set(!v_IL10, !v_IL18), Set(!v_Th0)))
+(Set(v_Th0, v_IL10),Set(-34, -12))
+(Set(v_IFNg),Set(-11))
+(Set(v_Treg),Set(-40))
+(Set(v_TGFb),Set(-32))
+(Set(!v_IL10, v_IL12),Set(12, -13))
+(Set(!v_IL10, !v_IL18),Set(12, 16))
+(Set(!v_Th0),Set(34))
+
+Some(Vector(Set(v_Th0, v_PGN), Set(v_Th0, v_TGFb)))
+Some(Vector(Set(v_TNFa), Set(v_IL23), Set(v_IL21), Set(v_IL6), Set(v_Th17), Set(v_IL22), Set(!v_TGFb, !v_PGN), Set(!v_Th0)))
+(Set(v_Th0, v_PGN),Set(-34, -31))
+(Set(v_Th0, v_TGFb),Set(-34, -32))
+(Set(v_TNFa),Set(-33))
+(Set(v_IL23),Set(-22))
+(Set(v_IL21),Set(-19))
+(Set(v_IL6),Set(-23))
+(Set(v_Th17),Set(-37))
+(Set(v_IL22),Set(-20))
+(Set(!v_TGFb, !v_PGN),Set(32, 31))
+(Set(!v_Th0),Set(34))
+Map(v_Th0_M -> 35, v_IL21 -> 19, v_NFkB -> 27, v_LPS -> 24, v_FIBROBLAST -> 6, v_CD4_NKG2Dupregulation -> 2, v_Th0 -> 34, v_IL10 -> 12, v_IL18 -> 16, v_NK_NKG2D -> 29, v_TGFb -> 32, v_PGN -> 31, v_IL22upregulation -> 21, v_Th1 -> 36, v_IL12 -> 13, v_Th2 -> 39, v_IFNg -> 11, v_MACR -> 25, v_NK -> 28, v_GRANZB -> 7, v_MDP -> 26, v_IL2 -> 18, v_IEC_MICA_B -> 8, v_IL23 -> 22, v_CD4_NKG2D -> 1, v_Th17_M -> 38, v_DC -> 4, v_TNFa -> 33, v_IL17 -> 15, v_CD8_NKG2D -> 3, v_IEC_ULPB1_6 -> 10, v_Th17 -> 37, v_Treg -> 40, v_PERFOR -> 30, v_IEC_MICA_Bupregulation -> 9, v_IL22 -> 20, v_IL1b -> 17, v_IL6 -> 23, v_IL15 -> 14, v_DEF -> 5)
+p cnf 93 477
+-24 1 0
+-31 1 0
+-26 1 0
+-12 -1 0
+-10 -1 0
+-8 -1 0
+24 14 33 -1 31 26 0
+24 -1 31 26 -2 0
+-1 -14 2 0
+-1 -33 2 0
+33 14 -2 0
+1 -2 0
+-24 3 0
+-31 3 0
+-26 3 0
+-19 -18 -3 0
+-8 -3 0
+-10 -3 0
+24 31 26 -3 0
+-26 4 0
+-24 4 0
+-31 4 0
+-12 -4 0
+24 31 26 -4 0
+-26 5 0
+-15 5 0
+-20 5 0
+20 15 26 -5 0
+-39 -25 6 0
+-32 -25 6 0
+-18 6 0
+-11 -6 0
+-13 -6 0
+32 39 18 -6 0
+25 18 -6 0
+24 -4 7 0
+31 -4 7 0
+-28 7 0
+-3 7 0
+-29 7 0
+-7 29 -31 28 3 -24 0
+-7 29 28 3 4 0
+32 -26 8 0
+32 -31 8 0
+-24 32 8 0
+24 -8 31 -9 26 0
+24 -8 33 31 26 0
+-32 -8 0
+-8 -33 9 0
+33 -9 0
+8 -9 0
+-3 -26 10 0
+-3 -24 10 0
+-3 -31 10 0
+31 24 26 -10 0
+3 -10 0
+-41 -32 0
+-41 -12 0
+32 12 41 0
+-11 41 -42 0
+11 42 0
+-41 42 0
+34 25 -43 0
+-34 43 0
+-25 43 0
+-44 42 0
+-44 -39 0
+-44 13 0
+-44 16 0
+-44 43 0
+-43 -42 44 39 -16 -13 0
+10 8 -45 0
+-10 45 0
+-8 45 0
+-46 -32 0
+-46 -12 0
+32 12 46 0
+-11 46 -47 0
+11 47 0
+-46 47 0
+-48 29 0
+-48 45 0
+-48 47 0
+-48 -39 0
+-47 39 -29 48 -45 0
+10 8 -49 0
+-10 49 0
+-8 49 0
+-50 -32 0
+-50 -12 0
+32 12 50 0
+-11 50 -51 0
+11 51 0
+-50 51 0
+-52 3 0
+-52 49 0
+-52 51 0
+-52 -39 0
+-49 52 -3 -51 39 0
+-53 -32 0
+-53 -12 0
+32 12 53 0
+-11 53 -54 0
+11 54 0
+-53 54 0
+31 24 26 -55 0
+-31 55 0
+-24 55 0
+-26 55 0
+-56 -39 0
+-56 28 0
+-56 22 0
+-56 54 0
+-56 55 0
+56 -54 -22 -55 39 -28 0
+31 24 26 -57 0
+-31 57 0
+-24 57 0
+-26 57 0
+-58 -32 0
+-58 -12 0
+32 12 58 0
+-11 58 -59 0
+11 59 0
+-58 59 0
+-60 37 0
+-60 57 0
+-60 59 0
+-60 -39 0
+-59 60 -37 39 -57 0
+-61 -32 0
+-61 -12 0
+32 12 61 0
+-11 61 -62 0
+11 62 0
+-61 62 0
+-63 36 0
+-63 62 0
+-63 -39 0
+-36 -62 39 63 0
+-64 56 52 60 44 48 63 0
+-56 64 0
+-52 64 0
+-60 64 0
+-44 64 0
+-48 64 0
+-63 64 0
+11 -64 0
+-11 64 0
+-40 12 0
+-39 22 12 0
+-24 39 -25 12 0
+-27 25 -31 12 11 0
+-24 -4 12 0
+-39 -22 -12 -11 40 4 0
+-39 -22 -12 -25 40 4 0
+-39 -22 -12 27 40 4 0
+-39 -22 -12 31 40 4 0
+-22 25 -12 -11 40 4 0
+-22 25 -12 27 40 4 0
+-22 25 -12 31 40 4 0
+25 -12 -11 39 40 4 0
+25 -12 27 39 40 4 0
+25 -12 39 31 40 4 0
+24 -12 -25 39 40 0
+24 -22 -12 -11 40 0
+24 -22 -12 27 40 0
+24 -22 -12 -25 40 0
+24 -22 -12 31 40 0
+24 -12 27 39 40 0
+24 -12 -11 39 40 0
+24 -12 39 31 40 0
+-27 -31 -4 13 0
+-27 -31 -25 13 0
+-24 -11 -4 13 0
+-31 -11 13 -25 -24 0
+25 4 -13 0
+27 11 -13 0
+27 24 -13 0
+31 4 -13 0
+31 11 -13 0
+24 31 -13 0
+-11 -25 14 0
+-24 -25 14 0
+-6 -26 14 0
+-24 -6 14 0
+-6 -31 14 0
+24 -14 31 11 26 0
+24 6 11 -14 0
+24 25 -14 31 26 0
+6 25 -14 0
+-37 15 0
+-8 -1 15 0
+-1 -10 15 0
+-26 -38 15 0
+-24 -38 15 0
+-31 -38 15 0
+-39 -15 0
+-32 -15 0
+10 24 37 -15 31 26 8 0
+10 37 38 -15 8 0
+24 37 1 -15 31 26 0
+1 38 37 -15 0
+-24 -27 -25 16 0
+-24 -27 -4 16 0
+4 25 -16 0
+27 -16 0
+24 -16 0
+-27 -24 -4 17 0
+-27 -24 -25 17 0
+-12 -17 0
+25 4 -17 0
+27 -17 0
+24 -17 0
+-4 18 0
+-34 18 0
+-35 -26 18 0
+-35 -24 18 0
+-35 -31 18 0
+24 -18 34 31 26 4 0
+35 34 4 -18 0
+-37 19 0
+-23 32 39 11 -34 19 0
+-39 37 -19 0
+37 23 -19 0
+-32 37 -19 0
+34 37 -19 0
+-11 37 -19 0
+-16 -13 -28 20 0
+-1 20 0
+-37 20 0
+-28 -22 20 0
+37 1 13 22 -20 19 0
+37 1 22 -20 16 19 0
+37 1 28 -20 19 0
+37 1 13 22 -20 -21 0
+37 1 22 -20 16 -21 0
+37 1 28 -20 -21 0
+-32 37 1 13 22 -20 0
+-32 37 1 22 -20 16 0
+-32 37 1 28 -20 0
+37 1 13 34 22 -20 0
+37 1 34 22 -20 16 0
+37 1 28 34 -20 0
+-34 -19 -20 21 0
+20 -21 0
+19 -21 0
+34 -21 0
+-4 22 0
+-25 -17 22 0
+17 4 -22 0
+25 4 -22 0
+-27 39 23 0
+-27 12 23 0
+-22 -37 23 0
+-31 -25 23 0
+-24 -4 23 0
+-31 -4 23 0
+-39 25 -12 -23 22 4 0
+24 -39 -12 -23 22 31 0
+-39 -12 -23 22 31 4 0
+-39 37 25 -12 -23 4 0
+24 -39 37 -12 -23 31 0
+-39 37 -12 -23 31 4 0
+25 -23 22 27 4 0
+24 -23 22 27 31 0
+-23 22 27 31 4 0
+37 25 -23 27 4 0
+24 37 -23 27 31 0
+37 -23 27 31 4 0
+7 5 30 24 0
+-30 -24 0
+-5 -24 0
+-7 -24 0
+-26 25 0
+-24 25 0
+-11 25 0
+-31 25 0
+-14 25 0
+-12 -25 0
+24 14 -25 31 11 26 0
+30 5 7 26 0
+-7 -26 0
+-5 -26 0
+-30 -26 0
+-31 27 0
+-24 27 0
+-26 27 0
+26 24 31 -27 0
+-12 -16 28 0
+-22 28 0
+-4 -14 28 0
+-40 -28 0
+12 22 14 -28 0
+12 22 4 -28 0
+16 22 14 -28 0
+16 22 4 -28 0
+-24 29 0
+-31 29 0
+-26 29 0
+-32 -8 -19 -10 -29 -13 0
+24 31 26 -29 0
+-28 30 0
+-29 30 0
+29 28 -30 0
+7 5 30 31 0
+-30 -31 0
+-5 -31 0
+-7 -31 0
+-25 32 0
+-40 32 0
+40 25 -32 0
+10 8 -65 0
+-10 65 0
+-8 65 0
+-66 -24 0
+-66 -31 0
+24 31 66 0
+-12 -33 66 -67 0
+12 67 0
+33 67 0
+-66 67 0
+-68 3 0
+-68 65 0
+-68 67 0
+-3 -65 -67 68 0
+-69 11 0
+-69 24 0
+-11 -24 69 0
+18 31 69 -70 0
+-18 70 0
+-31 70 0
+-69 70 0
+-71 -24 0
+-71 -31 0
+24 31 71 0
+-12 -33 71 -72 0
+12 72 0
+33 72 0
+-71 72 0
+-73 25 0
+-73 70 0
+-73 72 0
+-25 -70 -72 73 0
+10 8 -74 0
+-10 74 0
+-8 74 0
+-75 -24 0
+-75 -31 0
+24 31 75 0
+-12 -33 75 -76 0
+12 76 0
+33 76 0
+-75 76 0
+-77 29 0
+-77 74 0
+-77 76 0
+-29 -74 -76 77 0
+31 24 26 -78 0
+-31 78 0
+-24 78 0
+-26 78 0
+22 14 18 -79 0
+-22 79 0
+-14 79 0
+-18 79 0
+-80 -24 0
+-80 -31 0
+24 31 80 0
+-12 -33 80 -81 0
+12 81 0
+33 81 0
+-80 81 0
+-82 28 0
+-82 78 0
+-82 79 0
+-82 81 0
+-81 -79 -78 82 -28 0
+-83 -24 0
+-83 -31 0
+24 31 83 0
+-12 -33 83 -84 0
+12 84 0
+33 84 0
+-83 84 0
+-85 6 0
+-85 11 0
+-85 84 0
+-6 -11 -84 85 0
+-86 -24 0
+-86 -31 0
+24 31 86 0
+-12 -33 86 -87 0
+12 87 0
+33 87 0
+-86 87 0
+-88 27 0
+-88 24 0
+-88 87 0
+-27 -24 -87 88 0
+10 8 -89 0
+-10 89 0
+-8 89 0
+-90 -24 0
+-90 -31 0
+24 31 90 0
+-12 -33 90 -91 0
+12 91 0
+33 91 0
+-90 91 0
+-92 1 0
+-92 89 0
+-92 91 0
+-1 -89 -91 92 0
+88 85 92 77 73 -93 82 68 0
+-88 93 0
+-85 93 0
+-92 93 0
+-77 93 0
+-73 93 0
+-82 93 0
+-68 93 0
+33 -93 0
+-33 93 0
+-24 34 0
+-31 34 0
+-26 34 0
+26 31 24 -34 0
+-34 -13 35 0
+-34 -22 35 0
+-34 -11 36 0
+-34 -13 36 0
+-34 -16 36 0
+-12 -36 0
+-39 -36 0
+-40 -36 0
+-32 -36 0
+-13 -15 -36 0
+-13 -22 -36 0
+16 13 11 -36 0
+34 -36 0
+-34 -17 37 0
+-34 -23 37 0
+-34 -22 37 0
+-39 -37 0
+-13 -37 0
+-40 -37 0
+-32 -37 0
+-11 -37 0
+22 17 23 -37 0
+34 -37 0
+-35 -26 -18 38 0
+-35 -24 -18 38 0
+-35 -31 -18 38 0
+-35 -26 -22 38 0
+-35 -24 -22 38 0
+-35 -31 -22 38 0
+-35 38 -26 -23 -17 0
+-35 38 -23 -24 -17 0
+-35 -31 38 -23 -17 0
+-34 -12 39 0
+-11 -39 0
+-40 -39 0
+-32 -39 0
+12 -13 -39 0
+12 16 -39 0
+34 -39 0
+-34 -31 40 0
+-34 -32 40 0
+-33 -40 0
+-22 -40 0
+-19 -40 0
+-23 -40 0
+-37 -40 0
+-20 -40 0
+32 31 -40 0
+34 -40 0
++ exit_status=0
++ set +x
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.tFQ3onl80K.cnf'
+c opening file to read '/tmp/tmp.tFQ3onl80K.cnf'
+c found 'p cnf 93 477' header
+c parsed 477 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  477  93 100%
+c l  0.00  4  0 0   0  0    0    0 0.0 1 0 2 6 69%  477  26 28%
+c 0  0.00  4  0 0   0  0    0    0 0.0 1 0 2 6 69%  477  26 28%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s UNSATISFIABLE
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00  114.93% parse
+c         0.00   58.21% search
+c         0.00   57.21% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   35.08% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c fixed:                        67        72.04 %  of all variables
+c learned_lits:                  1       100.00 %  learned literals
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.12    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 20
+
+# UNSAT detected
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_075.sbml"
+	User time (seconds): 3.79
+	System time (seconds): 0.41
+	Percent of CPU this job got: 265%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 329752
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 82980
+	Voluntary context switches: 4723
+	Involuntary context switches: 444
+	Swaps: 0
+	File system inputs: 24
+	File system outputs: 128
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 2.0s

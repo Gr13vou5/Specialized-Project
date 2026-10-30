@@ -1,0 +1,882 @@
+# Host: MSI
+# Start date: Tue Oct 27 06:36:45 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_227.sbml (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-2819-139 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_227.sbml
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --sbml /benchmark/model_227.sbml --cnf /tmp/tmp.BNn5Femkyp.cnf -h3
+
+Config(sbmlFileName = /benchmark/model_227.sbml, bnetFileName = , cnfFileName = /tmp/tmp.BNn5Femkyp.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+2026-10-26 23:36:46,788 main ERROR Could not determine local host name java.net.UnknownHostException: 6bf5ef8c1d1e: 6bf5ef8c1d1e: Temporary failure in name resolution
+	at java.base/java.net.InetAddress.getLocalHost(InetAddress.java:1670)
+	at org.apache.logging.log4j.core.util.NetUtils.getLocalHostname(NetUtils.java:54)
+	at org.apache.logging.log4j.core.LoggerContext.lambda$setConfiguration$0(LoggerContext.java:620)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:620)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:699)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:716)
+	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:270)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:309)
+	at org.apache.log4j.Logger$PrivateManager.getContext(Logger.java:59)
+	at org.apache.log4j.Logger.getLogger(Logger.java:41)
+	at org.sbml.jsbml.JSBML.loadClasses(JSBML.java:294)
+	at org.sbml.jsbml.xml.stax.SBMLReader.<clinit>(SBMLReader.java:110)
+	at org.sbml.jsbml.SBMLReader.readSBMLFromFile(SBMLReader.java:235)
+	at jp.kobe_u.bsaf.sbml.SbmlQualModel$.fromFile(SbmlQualModel.scala:15)
+	at jp.kobe_u.bsaf.Main$.main(Main.scala:25)
+	at jp.kobe_u.bsaf.Main.main(Main.scala)
+Caused by: java.net.UnknownHostException: 6bf5ef8c1d1e: Temporary failure in name resolution
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getLocalHost(InetAddress.java:1665)
+	... 18 more
+
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_DISPATCHED, v_HHAT, !v_HHIP)))
+Some(Vector(Set(v_HHIP), Set(!v_HHAT), Set(!v_DISPATCHED)))
+(Set(v_DISPATCHED, v_HHAT, !v_HHIP),Set(-7, -17, 18))
+(Set(v_HHIP),Set(-18))
+(Set(!v_HHAT),Set(17))
+(Set(!v_DISPATCHED),Set(7))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_CKI_A, !v_SUFU, !v_BTRCP, !v_PKA_A, !v_GSK3, v_ULK3), Set(!v_CKI_A, v_GLI2, !v_SUFU, !v_BTRCP, !v_PKA_A, !v_GSK3), Set(!v_CKI_A, !v_SUFU, !v_BTRCP, v_TWIST, !v_PKA_A, !v_GSK3), Set(v_ERK12, !v_CKI_A, !v_SUFU, !v_BTRCP, !v_PKA_A, !v_GSK3), Set(!v_CKI_A, !v_SUFU, !v_BTRCP, v_RAS, !v_PKA_A, !v_GSK3), Set(v_HFU, !v_CKI_A, !v_SUFU, !v_BTRCP, !v_PKA_A, !v_GSK3), Set(!v_HDAC, !v_NCOR, v_GLI3_A, !v_SKI, !v_SNO, !v_SIN3A), Set(v_SMO, !v_CKI_A, !v_SUFU, !v_BTRCP, !v_PKA_A, !v_GSK3)))
+Some(Vector(Set(!v_HFU, !v_RAS, !v_TWIST, !v_ERK12, !v_NUC_STK36, !v_GLI2, !v_ULK3, v_SKI, !v_SMO), Set(!v_HFU, !v_RAS, !v_TWIST, v_ITCH, !v_ERK12, !v_GLI2, !v_ULK3, v_SKI, !v_SMO), Set(!v_HFU, !v_RAS, !v_TWIST, v_NUC_SUFU, !v_ERK12, !v_GLI2, !v_ULK3, v_SKI, !v_SMO), Set(!v_HFU, !v_DYRK1, !v_RAS, !v_TWIST, !v_ERK12, !v_GLI2, !v_ULK3, v_SKI, !v_SMO), Set(!v_HFU, v_NUMB, !v_RAS, !v_TWIST, !v_ERK12, !v_GLI2, !v_ULK3, v_SKI, !v_SMO), Set(!v_HFU, !v_RAS, !v_TWIST, v_ITCH, v_HDAC, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, !v_RAS, !v_TWIST, v_HDAC, !v_ERK12, !v_NUC_STK36, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, !v_RAS, !v_TWIST, v_NUC_SUFU, v_HDAC, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, !v_DYRK1, !v_RAS, !v_TWIST, v_HDAC, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, v_NUMB, !v_RAS, !v_TWIST, v_HDAC, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, v_NCOR, !v_RAS, !v_TWIST, v_ITCH, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, !v_RAS, !v_TWIST, v_SIN3A, !v_ERK12, !v_NUC_STK36, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, !v_RAS, !v_TWIST, v_NUC_SUFU, v_SIN3A, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, !v_RAS, !v_TWIST, v_ITCH, v_SIN3A, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, !v_DYRK1, !v_RAS, !v_TWIST, v_SIN3A, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, v_NUMB, !v_RAS, !v_TWIST, v_SIN3A, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, !v_RAS, !v_TWIST, v_SNO, !v_ERK12, !v_NUC_STK36, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, !v_RAS, !v_TWIST, v_SNO, v_NUC_SUFU, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, !v_RAS, !v_TWIST, v_ITCH, v_SNO, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, !v_DYRK1, !v_RAS, !v_TWIST, v_SNO, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, v_NUMB, !v_RAS, !v_TWIST, v_SNO, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, !v_GLI3_A, !v_RAS, !v_TWIST, !v_ERK12, !v_NUC_STK36, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, !v_GLI3_A, !v_RAS, !v_TWIST, v_NUC_SUFU, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, !v_GLI3_A, !v_RAS, !v_TWIST, v_ITCH, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, !v_DYRK1, !v_GLI3_A, !v_RAS, !v_TWIST, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, v_NUMB, !v_GLI3_A, !v_RAS, !v_TWIST, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, v_NCOR, !v_RAS, !v_TWIST, !v_ERK12, !v_NUC_STK36, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, v_NCOR, !v_RAS, !v_TWIST, v_NUC_SUFU, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, v_NCOR, !v_DYRK1, !v_RAS, !v_TWIST, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(!v_HFU, v_NCOR, v_NUMB, !v_RAS, !v_TWIST, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO), Set(v_HDAC, v_NUC_SUFU, v_GSK3), Set(v_GSK3, !v_NUC_STK36, v_SKI), Set(!v_NUC_STK36, v_BTRCP, v_SKI), Set(!v_NUC_STK36, v_SUFU, v_SKI), Set(v_CKI_A, !v_NUC_STK36, v_SKI), Set(!v_DYRK1, v_GSK3, v_SKI), Set(v_NUC_SUFU, v_GSK3, v_SKI), Set(v_NUC_SUFU, v_SUFU, v_SKI), Set(v_NUC_SUFU, v_BTRCP, v_SKI), Set(v_NUC_SUFU, v_CKI_A, v_SKI), Set(v_GSK3, v_SKI, v_ITCH), Set(v_SUFU, v_SKI, v_ITCH), Set(v_CKI_A, v_SKI, v_ITCH), Set(v_BTRCP, v_SKI, v_ITCH), Set(!v_DYRK1, v_BTRCP, v_SKI), Set(!v_DYRK1, v_CKI_A, v_SKI), Set(!v_DYRK1, v_SUFU, v_SKI), Set(v_GSK3, v_NUMB, v_SKI), Set(v_BTRCP, v_NUMB, v_SKI), Set(v_CKI_A, v_NUMB, v_SKI), Set(v_SUFU, v_NUMB, v_SKI), Set(v_BTRCP, v_SIN3A, v_NUMB), Set(v_HDAC, v_CKI_A, !v_NUC_STK36), Set(v_HDAC, !v_NUC_STK36, v_SUFU), Set(v_HDAC, !v_NUC_STK36, v_BTRCP), Set(v_HDAC, v_GSK3, !v_NUC_STK36), Set(v_HDAC, v_BTRCP, v_ITCH), Set(v_HDAC, v_NUC_SUFU, v_CKI_A), Set(v_HDAC, v_NUC_SUFU, v_SUFU), Set(v_HDAC, v_NUC_SUFU, v_BTRCP), Set(v_HDAC, v_GSK3, v_NUMB), Set(v_HDAC, v_CKI_A, v_ITCH), Set(v_HDAC, v_GSK3, v_ITCH), Set(v_HDAC, v_SUFU, v_ITCH), Set(v_HDAC, v_BTRCP, v_NUMB), Set(v_HDAC, !v_DYRK1, v_CKI_A), Set(v_HDAC, !v_DYRK1, v_GSK3), Set(v_HDAC, !v_DYRK1, v_SUFU), Set(v_HDAC, !v_DYRK1, v_BTRCP), Set(v_HDAC, v_SUFU, v_NUMB), Set(v_HDAC, v_CKI_A, v_NUMB), Set(v_NCOR, v_SUFU, v_NUMB), Set(v_CKI_A, !v_NUC_STK36, v_SIN3A), Set(v_GSK3, !v_NUC_STK36, v_SIN3A), Set(!v_NUC_STK36, v_SUFU, v_SIN3A), Set(!v_NUC_STK36, v_BTRCP, v_SIN3A), Set(!v_DYRK1, v_SUFU, v_SIN3A), Set(v_NUC_SUFU, v_CKI_A, v_SIN3A), Set(v_NUC_SUFU, v_GSK3, v_SIN3A), Set(v_NUC_SUFU, v_SUFU, v_SIN3A), Set(v_NUC_SUFU, v_BTRCP, v_SIN3A), Set(v_SUFU, v_SIN3A, v_NUMB), Set(v_CKI_A, v_SIN3A, v_ITCH), Set(v_GSK3, v_SIN3A, v_ITCH), Set(v_SUFU, v_SIN3A, v_ITCH), Set(v_BTRCP, v_SIN3A, v_ITCH), Set(!v_DYRK1, v_BTRCP, v_SIN3A), Set(!v_DYRK1, v_CKI_A, v_SIN3A), Set(!v_DYRK1, v_GSK3, v_SIN3A), Set(v_GSK3, v_SIN3A, v_NUMB), Set(v_CKI_A, v_SIN3A, v_NUMB), Set(v_GSK3, v_SNO, v_NUMB), Set(v_CKI_A, v_SNO, !v_NUC_STK36), Set(v_GSK3, v_SNO, !v_NUC_STK36), Set(v_SNO, !v_NUC_STK36, v_SUFU), Set(v_SNO, !v_NUC_STK36, v_BTRCP), Set(!v_DYRK1, v_SNO, v_SUFU), Set(v_NUC_SUFU, v_CKI_A, v_SNO), Set(v_NUC_SUFU, v_GSK3, v_SNO), Set(v_NUC_SUFU, v_SNO, v_SUFU), Set(v_NUC_SUFU, v_SNO, v_BTRCP), Set(v_SNO, v_SUFU, v_NUMB), Set(v_CKI_A, v_SNO, v_ITCH), Set(v_GSK3, v_SNO, v_ITCH), Set(v_SNO, v_SUFU, v_ITCH), Set(v_SNO, v_BTRCP, v_ITCH), Set(v_SNO, v_BTRCP, v_NUMB), Set(!v_DYRK1, v_CKI_A, v_SNO), Set(!v_DYRK1, v_GSK3, v_SNO), Set(!v_DYRK1, v_SNO, v_BTRCP), Set(v_CKI_A, v_SNO, v_NUMB), Set(v_CKI_A, v_NCOR, v_NUMB), Set(v_CKI_A, !v_NUC_STK36, !v_GLI3_A), Set(v_GSK3, !v_NUC_STK36, !v_GLI3_A), Set(!v_NUC_STK36, v_SUFU, !v_GLI3_A), Set(!v_NUC_STK36, !v_GLI3_A, v_BTRCP), Set(!v_DYRK1, v_SUFU, !v_GLI3_A), Set(v_NUC_SUFU, v_CKI_A, !v_GLI3_A), Set(v_NUC_SUFU, v_GSK3, !v_GLI3_A), Set(v_NUC_SUFU, v_SUFU, !v_GLI3_A), Set(v_NUC_SUFU, !v_GLI3_A, v_BTRCP), Set(v_SUFU, !v_GLI3_A, v_NUMB), Set(v_CKI_A, !v_GLI3_A, v_ITCH), Set(v_GSK3, !v_GLI3_A, v_ITCH), Set(v_SUFU, !v_GLI3_A, v_ITCH), Set(!v_GLI3_A, v_BTRCP, v_ITCH), Set(!v_GLI3_A, v_BTRCP, v_NUMB), Set(!v_DYRK1, v_CKI_A, !v_GLI3_A), Set(!v_DYRK1, v_GSK3, !v_GLI3_A), Set(!v_DYRK1, !v_GLI3_A, v_BTRCP), Set(v_GSK3, !v_GLI3_A, v_NUMB), Set(v_CKI_A, !v_GLI3_A, v_NUMB), Set(v_GSK3, v_NCOR, v_NUMB), Set(v_CKI_A, !v_NUC_STK36, v_NCOR), Set(v_GSK3, !v_NUC_STK36, v_NCOR), Set(!v_NUC_STK36, v_NCOR, v_SUFU), Set(!v_NUC_STK36, v_NCOR, v_BTRCP), Set(!v_DYRK1, v_NCOR, v_SUFU), Set(v_NUC_SUFU, v_CKI_A, v_NCOR), Set(v_NUC_SUFU, v_GSK3, v_NCOR), Set(v_NUC_SUFU, v_NCOR, v_SUFU), Set(v_NUC_SUFU, v_NCOR, v_BTRCP), Set(v_NCOR, v_SUFU, v_ITCH), Set(v_CKI_A, v_NCOR, v_ITCH), Set(v_GSK3, v_NCOR, v_ITCH), Set(v_NCOR, v_BTRCP, v_ITCH), Set(v_NCOR, v_BTRCP, v_NUMB), Set(!v_DYRK1, v_CKI_A, v_NCOR), Set(!v_DYRK1, v_GSK3, v_NCOR), Set(!v_DYRK1, v_NCOR, v_BTRCP), Set(v_PKA_A, v_NCOR, v_NUMB), Set(!v_NUC_STK36, v_PKA_A, v_SKI), Set(v_NUC_SUFU, v_PKA_A, v_SKI), Set(v_PKA_A, v_SKI, v_ITCH), Set(!v_DYRK1, v_PKA_A, v_SKI), Set(v_PKA_A, v_NUMB, v_SKI), Set(v_HDAC, !v_NUC_STK36, v_PKA_A), Set(v_HDAC, v_NUC_SUFU, v_PKA_A), Set(v_HDAC, v_PKA_A, v_ITCH), Set(v_HDAC, !v_DYRK1, v_PKA_A), Set(v_HDAC, v_PKA_A, v_NUMB), Set(!v_NUC_STK36, v_PKA_A, v_SIN3A), Set(v_NUC_SUFU, v_PKA_A, v_SIN3A), Set(v_PKA_A, v_SIN3A, v_ITCH), Set(!v_DYRK1, v_PKA_A, v_SIN3A), Set(v_PKA_A, v_SIN3A, v_NUMB), Set(v_SNO, !v_NUC_STK36, v_PKA_A), Set(v_NUC_SUFU, v_SNO, v_PKA_A), Set(v_SNO, v_PKA_A, v_ITCH), Set(!v_DYRK1, v_SNO, v_PKA_A), Set(v_SNO, v_PKA_A, v_NUMB), Set(!v_NUC_STK36, v_PKA_A, !v_GLI3_A), Set(v_NUC_SUFU, v_PKA_A, !v_GLI3_A), Set(v_PKA_A, !v_GLI3_A, v_ITCH), Set(!v_DYRK1, v_PKA_A, !v_GLI3_A), Set(v_PKA_A, !v_GLI3_A, v_NUMB), Set(!v_NUC_STK36, v_PKA_A, v_NCOR), Set(v_NUC_SUFU, v_PKA_A, v_NCOR), Set(v_PKA_A, v_NCOR, v_ITCH), Set(!v_DYRK1, v_PKA_A, v_NCOR)))
+(Set(!v_CKI_A, !v_SUFU, !v_BTRCP, !v_PKA_A, !v_GSK3, v_ULK3),Set(5, 14, -37, 3, 35, 26))
+(Set(!v_CKI_A, v_GLI2, !v_SUFU, !v_BTRCP, !v_PKA_A, !v_GSK3),Set(5, 14, -12, 3, 35, 26))
+(Set(!v_CKI_A, !v_SUFU, !v_BTRCP, v_TWIST, !v_PKA_A, !v_GSK3),Set(5, 14, -36, 3, 35, 26))
+(Set(v_ERK12, !v_CKI_A, !v_SUFU, !v_BTRCP, !v_PKA_A, !v_GSK3),Set(5, 14, 3, 35, -9, 26))
+(Set(!v_CKI_A, !v_SUFU, !v_BTRCP, v_RAS, !v_PKA_A, !v_GSK3),Set(5, 14, -29, 3, 35, 26))
+(Set(v_HFU, !v_CKI_A, !v_SUFU, !v_BTRCP, !v_PKA_A, !v_GSK3),Set(5, 14, 3, 35, -16, 26))
+(Set(!v_HDAC, !v_NCOR, v_GLI3_A, !v_SKI, !v_SNO, !v_SIN3A),Set(21, 32, 34, 31, -13, 15))
+(Set(v_SMO, !v_CKI_A, !v_SUFU, !v_BTRCP, !v_PKA_A, !v_GSK3),Set(5, 14, 3, 35, -33, 26))
+(Set(!v_HFU, !v_RAS, !v_TWIST, !v_ERK12, !v_NUC_STK36, !v_GLI2, !v_ULK3, v_SKI, !v_SMO),Set(-32, 37, 29, 33, 9, 12, 16, 23, 36))
+(Set(!v_HFU, !v_RAS, !v_TWIST, v_ITCH, !v_ERK12, !v_GLI2, !v_ULK3, v_SKI, !v_SMO),Set(-32, 37, 29, 33, 9, 12, -20, 16, 36))
+(Set(!v_HFU, !v_RAS, !v_TWIST, v_NUC_SUFU, !v_ERK12, !v_GLI2, !v_ULK3, v_SKI, !v_SMO),Set(-32, 37, 29, 33, 9, 12, 16, 36, -24))
+(Set(!v_HFU, !v_DYRK1, !v_RAS, !v_TWIST, !v_ERK12, !v_GLI2, !v_ULK3, v_SKI, !v_SMO),Set(-32, 37, 29, 33, 9, 12, 16, 8, 36))
+(Set(!v_HFU, v_NUMB, !v_RAS, !v_TWIST, !v_ERK12, !v_GLI2, !v_ULK3, v_SKI, !v_SMO),Set(-32, 37, 29, 33, 9, 12, -25, 16, 36))
+(Set(!v_HFU, !v_RAS, !v_TWIST, v_ITCH, v_HDAC, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, -15, 12, -20, 16, 36))
+(Set(!v_HFU, !v_RAS, !v_TWIST, v_HDAC, !v_ERK12, !v_NUC_STK36, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, -15, 12, 16, 23, 36))
+(Set(!v_HFU, !v_RAS, !v_TWIST, v_NUC_SUFU, v_HDAC, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, -15, 12, 16, 36, -24))
+(Set(!v_HFU, !v_DYRK1, !v_RAS, !v_TWIST, v_HDAC, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, -15, 12, 16, 8, 36))
+(Set(!v_HFU, v_NUMB, !v_RAS, !v_TWIST, v_HDAC, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, -15, 12, -25, 16, 36))
+(Set(!v_HFU, v_NCOR, !v_RAS, !v_TWIST, v_ITCH, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, 12, -20, 16, -21, 36))
+(Set(!v_HFU, !v_RAS, !v_TWIST, v_SIN3A, !v_ERK12, !v_NUC_STK36, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, -31, 33, 9, 12, 16, 23, 36))
+(Set(!v_HFU, !v_RAS, !v_TWIST, v_NUC_SUFU, v_SIN3A, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, -31, 33, 9, 12, 16, 36, -24))
+(Set(!v_HFU, !v_RAS, !v_TWIST, v_ITCH, v_SIN3A, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, -31, 33, 9, 12, -20, 16, 36))
+(Set(!v_HFU, !v_DYRK1, !v_RAS, !v_TWIST, v_SIN3A, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, -31, 33, 9, 12, 16, 8, 36))
+(Set(!v_HFU, v_NUMB, !v_RAS, !v_TWIST, v_SIN3A, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, -31, 33, 9, 12, -25, 16, 36))
+(Set(!v_HFU, !v_RAS, !v_TWIST, v_SNO, !v_ERK12, !v_NUC_STK36, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, 12, 16, 23, -34, 36))
+(Set(!v_HFU, !v_RAS, !v_TWIST, v_SNO, v_NUC_SUFU, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, 12, 16, -34, 36, -24))
+(Set(!v_HFU, !v_RAS, !v_TWIST, v_ITCH, v_SNO, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, 12, -20, 16, -34, 36))
+(Set(!v_HFU, !v_DYRK1, !v_RAS, !v_TWIST, v_SNO, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, 12, 16, 8, -34, 36))
+(Set(!v_HFU, v_NUMB, !v_RAS, !v_TWIST, v_SNO, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, 12, -25, 16, -34, 36))
+(Set(!v_HFU, !v_GLI3_A, !v_RAS, !v_TWIST, !v_ERK12, !v_NUC_STK36, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, 13, 12, 16, 23, 36))
+(Set(!v_HFU, !v_GLI3_A, !v_RAS, !v_TWIST, v_NUC_SUFU, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, 13, 12, 16, 36, -24))
+(Set(!v_HFU, !v_GLI3_A, !v_RAS, !v_TWIST, v_ITCH, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, 13, 12, -20, 16, 36))
+(Set(!v_HFU, !v_DYRK1, !v_GLI3_A, !v_RAS, !v_TWIST, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, 13, 12, 16, 8, 36))
+(Set(!v_HFU, v_NUMB, !v_GLI3_A, !v_RAS, !v_TWIST, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, 13, 12, -25, 16, 36))
+(Set(!v_HFU, v_NCOR, !v_RAS, !v_TWIST, !v_ERK12, !v_NUC_STK36, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, 12, 16, -21, 23, 36))
+(Set(!v_HFU, v_NCOR, !v_RAS, !v_TWIST, v_NUC_SUFU, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, 12, 16, -21, 36, -24))
+(Set(!v_HFU, v_NCOR, !v_DYRK1, !v_RAS, !v_TWIST, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, 12, 16, -21, 8, 36))
+(Set(!v_HFU, v_NCOR, v_NUMB, !v_RAS, !v_TWIST, !v_ERK12, !v_GLI2, !v_ULK3, !v_SMO),Set(37, 29, 33, 9, 12, -25, 16, -21, 36))
+(Set(v_HDAC, v_NUC_SUFU, v_GSK3),Set(-15, -24, -14))
+(Set(v_GSK3, !v_NUC_STK36, v_SKI),Set(-14, 23, -32))
+(Set(!v_NUC_STK36, v_BTRCP, v_SKI),Set(23, -3, -32))
+(Set(!v_NUC_STK36, v_SUFU, v_SKI),Set(23, -35, -32))
+(Set(v_CKI_A, !v_NUC_STK36, v_SKI),Set(-5, 23, -32))
+(Set(!v_DYRK1, v_GSK3, v_SKI),Set(8, -14, -32))
+(Set(v_NUC_SUFU, v_GSK3, v_SKI),Set(-24, -14, -32))
+(Set(v_NUC_SUFU, v_SUFU, v_SKI),Set(-24, -35, -32))
+(Set(v_NUC_SUFU, v_BTRCP, v_SKI),Set(-24, -3, -32))
+(Set(v_NUC_SUFU, v_CKI_A, v_SKI),Set(-24, -5, -32))
+(Set(v_GSK3, v_SKI, v_ITCH),Set(-14, -32, -20))
+(Set(v_SUFU, v_SKI, v_ITCH),Set(-35, -32, -20))
+(Set(v_CKI_A, v_SKI, v_ITCH),Set(-5, -32, -20))
+(Set(v_BTRCP, v_SKI, v_ITCH),Set(-3, -32, -20))
+(Set(!v_DYRK1, v_BTRCP, v_SKI),Set(8, -3, -32))
+(Set(!v_DYRK1, v_CKI_A, v_SKI),Set(8, -5, -32))
+(Set(!v_DYRK1, v_SUFU, v_SKI),Set(8, -35, -32))
+(Set(v_GSK3, v_NUMB, v_SKI),Set(-14, -25, -32))
+(Set(v_BTRCP, v_NUMB, v_SKI),Set(-3, -25, -32))
+(Set(v_CKI_A, v_NUMB, v_SKI),Set(-5, -25, -32))
+(Set(v_SUFU, v_NUMB, v_SKI),Set(-35, -25, -32))
+(Set(v_BTRCP, v_SIN3A, v_NUMB),Set(-3, -31, -25))
+(Set(v_HDAC, v_CKI_A, !v_NUC_STK36),Set(-15, -5, 23))
+(Set(v_HDAC, !v_NUC_STK36, v_SUFU),Set(-15, 23, -35))
+(Set(v_HDAC, !v_NUC_STK36, v_BTRCP),Set(-15, 23, -3))
+(Set(v_HDAC, v_GSK3, !v_NUC_STK36),Set(-15, -14, 23))
+(Set(v_HDAC, v_BTRCP, v_ITCH),Set(-15, -3, -20))
+(Set(v_HDAC, v_NUC_SUFU, v_CKI_A),Set(-15, -24, -5))
+(Set(v_HDAC, v_NUC_SUFU, v_SUFU),Set(-15, -24, -35))
+(Set(v_HDAC, v_NUC_SUFU, v_BTRCP),Set(-15, -24, -3))
+(Set(v_HDAC, v_GSK3, v_NUMB),Set(-15, -14, -25))
+(Set(v_HDAC, v_CKI_A, v_ITCH),Set(-15, -5, -20))
+(Set(v_HDAC, v_GSK3, v_ITCH),Set(-15, -14, -20))
+(Set(v_HDAC, v_SUFU, v_ITCH),Set(-15, -35, -20))
+(Set(v_HDAC, v_BTRCP, v_NUMB),Set(-15, -3, -25))
+(Set(v_HDAC, !v_DYRK1, v_CKI_A),Set(-15, 8, -5))
+(Set(v_HDAC, !v_DYRK1, v_GSK3),Set(-15, 8, -14))
+(Set(v_HDAC, !v_DYRK1, v_SUFU),Set(-15, 8, -35))
+(Set(v_HDAC, !v_DYRK1, v_BTRCP),Set(-15, 8, -3))
+(Set(v_HDAC, v_SUFU, v_NUMB),Set(-15, -35, -25))
+(Set(v_HDAC, v_CKI_A, v_NUMB),Set(-15, -5, -25))
+(Set(v_NCOR, v_SUFU, v_NUMB),Set(-21, -35, -25))
+(Set(v_CKI_A, !v_NUC_STK36, v_SIN3A),Set(-5, 23, -31))
+(Set(v_GSK3, !v_NUC_STK36, v_SIN3A),Set(-14, 23, -31))
+(Set(!v_NUC_STK36, v_SUFU, v_SIN3A),Set(23, -35, -31))
+(Set(!v_NUC_STK36, v_BTRCP, v_SIN3A),Set(23, -3, -31))
+(Set(!v_DYRK1, v_SUFU, v_SIN3A),Set(8, -35, -31))
+(Set(v_NUC_SUFU, v_CKI_A, v_SIN3A),Set(-24, -5, -31))
+(Set(v_NUC_SUFU, v_GSK3, v_SIN3A),Set(-24, -14, -31))
+(Set(v_NUC_SUFU, v_SUFU, v_SIN3A),Set(-24, -35, -31))
+(Set(v_NUC_SUFU, v_BTRCP, v_SIN3A),Set(-24, -3, -31))
+(Set(v_SUFU, v_SIN3A, v_NUMB),Set(-35, -31, -25))
+(Set(v_CKI_A, v_SIN3A, v_ITCH),Set(-5, -31, -20))
+(Set(v_GSK3, v_SIN3A, v_ITCH),Set(-14, -31, -20))
+(Set(v_SUFU, v_SIN3A, v_ITCH),Set(-35, -31, -20))
+(Set(v_BTRCP, v_SIN3A, v_ITCH),Set(-3, -31, -20))
+(Set(!v_DYRK1, v_BTRCP, v_SIN3A),Set(8, -3, -31))
+(Set(!v_DYRK1, v_CKI_A, v_SIN3A),Set(8, -5, -31))
+(Set(!v_DYRK1, v_GSK3, v_SIN3A),Set(8, -14, -31))
+(Set(v_GSK3, v_SIN3A, v_NUMB),Set(-14, -31, -25))
+(Set(v_CKI_A, v_SIN3A, v_NUMB),Set(-5, -31, -25))
+(Set(v_GSK3, v_SNO, v_NUMB),Set(-14, -34, -25))
+(Set(v_CKI_A, v_SNO, !v_NUC_STK36),Set(-5, -34, 23))
+(Set(v_GSK3, v_SNO, !v_NUC_STK36),Set(-14, -34, 23))
+(Set(v_SNO, !v_NUC_STK36, v_SUFU),Set(-34, 23, -35))
+(Set(v_SNO, !v_NUC_STK36, v_BTRCP),Set(-34, 23, -3))
+(Set(!v_DYRK1, v_SNO, v_SUFU),Set(8, -34, -35))
+(Set(v_NUC_SUFU, v_CKI_A, v_SNO),Set(-24, -5, -34))
+(Set(v_NUC_SUFU, v_GSK3, v_SNO),Set(-24, -14, -34))
+(Set(v_NUC_SUFU, v_SNO, v_SUFU),Set(-24, -34, -35))
+(Set(v_NUC_SUFU, v_SNO, v_BTRCP),Set(-24, -34, -3))
+(Set(v_SNO, v_SUFU, v_NUMB),Set(-34, -35, -25))
+(Set(v_CKI_A, v_SNO, v_ITCH),Set(-5, -34, -20))
+(Set(v_GSK3, v_SNO, v_ITCH),Set(-14, -34, -20))
+(Set(v_SNO, v_SUFU, v_ITCH),Set(-34, -35, -20))
+(Set(v_SNO, v_BTRCP, v_ITCH),Set(-34, -3, -20))
+(Set(v_SNO, v_BTRCP, v_NUMB),Set(-34, -3, -25))
+(Set(!v_DYRK1, v_CKI_A, v_SNO),Set(8, -5, -34))
+(Set(!v_DYRK1, v_GSK3, v_SNO),Set(8, -14, -34))
+(Set(!v_DYRK1, v_SNO, v_BTRCP),Set(8, -34, -3))
+(Set(v_CKI_A, v_SNO, v_NUMB),Set(-5, -34, -25))
+(Set(v_CKI_A, v_NCOR, v_NUMB),Set(-5, -21, -25))
+(Set(v_CKI_A, !v_NUC_STK36, !v_GLI3_A),Set(-5, 23, 13))
+(Set(v_GSK3, !v_NUC_STK36, !v_GLI3_A),Set(-14, 23, 13))
+(Set(!v_NUC_STK36, v_SUFU, !v_GLI3_A),Set(23, -35, 13))
+(Set(!v_NUC_STK36, !v_GLI3_A, v_BTRCP),Set(23, 13, -3))
+(Set(!v_DYRK1, v_SUFU, !v_GLI3_A),Set(8, -35, 13))
+(Set(v_NUC_SUFU, v_CKI_A, !v_GLI3_A),Set(-24, -5, 13))
+(Set(v_NUC_SUFU, v_GSK3, !v_GLI3_A),Set(-24, -14, 13))
+(Set(v_NUC_SUFU, v_SUFU, !v_GLI3_A),Set(-24, -35, 13))
+(Set(v_NUC_SUFU, !v_GLI3_A, v_BTRCP),Set(-24, 13, -3))
+(Set(v_SUFU, !v_GLI3_A, v_NUMB),Set(-35, 13, -25))
+(Set(v_CKI_A, !v_GLI3_A, v_ITCH),Set(-5, 13, -20))
+(Set(v_GSK3, !v_GLI3_A, v_ITCH),Set(-14, 13, -20))
+(Set(v_SUFU, !v_GLI3_A, v_ITCH),Set(-35, 13, -20))
+(Set(!v_GLI3_A, v_BTRCP, v_ITCH),Set(13, -3, -20))
+(Set(!v_GLI3_A, v_BTRCP, v_NUMB),Set(13, -3, -25))
+(Set(!v_DYRK1, v_CKI_A, !v_GLI3_A),Set(8, -5, 13))
+(Set(!v_DYRK1, v_GSK3, !v_GLI3_A),Set(8, -14, 13))
+(Set(!v_DYRK1, !v_GLI3_A, v_BTRCP),Set(8, 13, -3))
+(Set(v_GSK3, !v_GLI3_A, v_NUMB),Set(-14, 13, -25))
+(Set(v_CKI_A, !v_GLI3_A, v_NUMB),Set(-5, 13, -25))
+(Set(v_GSK3, v_NCOR, v_NUMB),Set(-14, -21, -25))
+(Set(v_CKI_A, !v_NUC_STK36, v_NCOR),Set(-5, 23, -21))
+(Set(v_GSK3, !v_NUC_STK36, v_NCOR),Set(-14, 23, -21))
+(Set(!v_NUC_STK36, v_NCOR, v_SUFU),Set(23, -21, -35))
+(Set(!v_NUC_STK36, v_NCOR, v_BTRCP),Set(23, -21, -3))
+(Set(!v_DYRK1, v_NCOR, v_SUFU),Set(8, -21, -35))
+(Set(v_NUC_SUFU, v_CKI_A, v_NCOR),Set(-24, -5, -21))
+(Set(v_NUC_SUFU, v_GSK3, v_NCOR),Set(-24, -14, -21))
+(Set(v_NUC_SUFU, v_NCOR, v_SUFU),Set(-24, -21, -35))
+(Set(v_NUC_SUFU, v_NCOR, v_BTRCP),Set(-24, -21, -3))
+(Set(v_NCOR, v_SUFU, v_ITCH),Set(-21, -35, -20))
+(Set(v_CKI_A, v_NCOR, v_ITCH),Set(-5, -21, -20))
+(Set(v_GSK3, v_NCOR, v_ITCH),Set(-14, -21, -20))
+(Set(v_NCOR, v_BTRCP, v_ITCH),Set(-21, -3, -20))
+(Set(v_NCOR, v_BTRCP, v_NUMB),Set(-21, -3, -25))
+(Set(!v_DYRK1, v_CKI_A, v_NCOR),Set(8, -5, -21))
+(Set(!v_DYRK1, v_GSK3, v_NCOR),Set(8, -14, -21))
+(Set(!v_DYRK1, v_NCOR, v_BTRCP),Set(8, -21, -3))
+(Set(v_PKA_A, v_NCOR, v_NUMB),Set(-26, -21, -25))
+(Set(!v_NUC_STK36, v_PKA_A, v_SKI),Set(23, -26, -32))
+(Set(v_NUC_SUFU, v_PKA_A, v_SKI),Set(-24, -26, -32))
+(Set(v_PKA_A, v_SKI, v_ITCH),Set(-26, -32, -20))
+(Set(!v_DYRK1, v_PKA_A, v_SKI),Set(8, -26, -32))
+(Set(v_PKA_A, v_NUMB, v_SKI),Set(-26, -25, -32))
+(Set(v_HDAC, !v_NUC_STK36, v_PKA_A),Set(-15, 23, -26))
+(Set(v_HDAC, v_NUC_SUFU, v_PKA_A),Set(-15, -24, -26))
+(Set(v_HDAC, v_PKA_A, v_ITCH),Set(-15, -26, -20))
+(Set(v_HDAC, !v_DYRK1, v_PKA_A),Set(-15, 8, -26))
+(Set(v_HDAC, v_PKA_A, v_NUMB),Set(-15, -26, -25))
+(Set(!v_NUC_STK36, v_PKA_A, v_SIN3A),Set(23, -26, -31))
+(Set(v_NUC_SUFU, v_PKA_A, v_SIN3A),Set(-24, -26, -31))
+(Set(v_PKA_A, v_SIN3A, v_ITCH),Set(-26, -31, -20))
+(Set(!v_DYRK1, v_PKA_A, v_SIN3A),Set(8, -26, -31))
+(Set(v_PKA_A, v_SIN3A, v_NUMB),Set(-26, -31, -25))
+(Set(v_SNO, !v_NUC_STK36, v_PKA_A),Set(-34, 23, -26))
+(Set(v_NUC_SUFU, v_SNO, v_PKA_A),Set(-24, -34, -26))
+(Set(v_SNO, v_PKA_A, v_ITCH),Set(-34, -26, -20))
+(Set(!v_DYRK1, v_SNO, v_PKA_A),Set(8, -34, -26))
+(Set(v_SNO, v_PKA_A, v_NUMB),Set(-34, -26, -25))
+(Set(!v_NUC_STK36, v_PKA_A, !v_GLI3_A),Set(23, -26, 13))
+(Set(v_NUC_SUFU, v_PKA_A, !v_GLI3_A),Set(-24, -26, 13))
+(Set(v_PKA_A, !v_GLI3_A, v_ITCH),Set(-26, 13, -20))
+(Set(!v_DYRK1, v_PKA_A, !v_GLI3_A),Set(8, -26, 13))
+(Set(v_PKA_A, !v_GLI3_A, v_NUMB),Set(-26, 13, -25))
+(Set(!v_NUC_STK36, v_PKA_A, v_NCOR),Set(23, -26, -21))
+(Set(v_NUC_SUFU, v_PKA_A, v_NCOR),Set(-24, -26, -21))
+(Set(v_PKA_A, v_NCOR, v_ITCH),Set(-26, -21, -20))
+(Set(!v_DYRK1, v_PKA_A, v_NCOR),Set(8, -26, -21))
+
+Some(Vector(Set(!v_NOTCH1, v_SMO), Set(v_SMO, !v_CKI_A, !v_SUFU, !v_BTRCP, !v_PKA_A, !v_GSK3), Set(v_HFU, !v_CKI_A, !v_SUFU, !v_BTRCP, !v_PKA_A, !v_GSK3), Set(!v_NOTCH1, v_HFU)))
+Some(Vector(Set(v_NOTCH1, v_SUFU), Set(v_NOTCH1, v_CKI_A), Set(v_NOTCH1, v_PKA_A), Set(v_NOTCH1, v_GSK3), Set(v_NOTCH1, v_BTRCP), Set(!v_HFU, !v_SMO)))
+(Set(!v_NOTCH1, v_SMO),Set(22, -33))
+(Set(v_SMO, !v_CKI_A, !v_SUFU, !v_BTRCP, !v_PKA_A, !v_GSK3),Set(5, 14, 3, 35, -33, 26))
+(Set(v_HFU, !v_CKI_A, !v_SUFU, !v_BTRCP, !v_PKA_A, !v_GSK3),Set(5, 14, 3, 35, -16, 26))
+(Set(!v_NOTCH1, v_HFU),Set(22, -16))
+(Set(v_NOTCH1, v_SUFU),Set(-22, -35))
+(Set(v_NOTCH1, v_CKI_A),Set(-22, -5))
+(Set(v_NOTCH1, v_PKA_A),Set(-22, -26))
+(Set(v_NOTCH1, v_GSK3),Set(-22, -14))
+(Set(v_NOTCH1, v_BTRCP),Set(-22, -3))
+(Set(!v_HFU, !v_SMO),Set(16, 33))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_NUMB, !v_NUC_SUFU, !v_ITCH, v_NUC_STK36, v_DYRK1, v_GLI1)))
+Some(Vector(Set(!v_NUC_STK36), Set(!v_GLI1), Set(v_NUC_SUFU), Set(v_ITCH), Set(!v_DYRK1), Set(v_NUMB)))
+(Set(!v_NUMB, !v_NUC_SUFU, !v_ITCH, v_NUC_STK36, v_DYRK1, v_GLI1),Set(24, 25, -8, 20, -11, -23))
+(Set(!v_NUC_STK36),Set(23))
+(Set(!v_GLI1),Set(11))
+(Set(v_NUC_SUFU),Set(-24))
+(Set(v_ITCH),Set(-20))
+(Set(!v_DYRK1),Set(8))
+(Set(v_NUMB),Set(-25))
+
+Some(Vector(Set(v_DISPATCHED, v_HHAT, !v_HHIP), Set(v_BMP_RUNX3)))
+Some(Vector(Set(!v_BMP_RUNX3, v_HHIP), Set(!v_BMP_RUNX3, !v_HHAT), Set(!v_BMP_RUNX3, !v_DISPATCHED)))
+(Set(v_DISPATCHED, v_HHAT, !v_HHIP),Set(-7, -17, 18))
+(Set(v_BMP_RUNX3),Set(-1))
+(Set(!v_BMP_RUNX3, v_HHIP),Set(1, -18))
+(Set(!v_BMP_RUNX3, !v_HHAT),Set(1, 17))
+(Set(!v_BMP_RUNX3, !v_DISPATCHED),Set(1, 7))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_DHH, !v_IHH, !v_SHH)))
+Some(Vector(Set(v_SHH), Set(v_IHH), Set(v_DHH)))
+(Set(!v_DHH, !v_IHH, !v_SHH),Set(6, 19, 30))
+(Set(v_SHH),Set(-30))
+(Set(v_IHH),Set(-19))
+(Set(v_DHH),Set(-6))
+
+Some(Vector(Set(!v_DHH, !v_IHH, !v_SHH)))
+Some(Vector(Set(v_SHH), Set(v_IHH), Set(v_DHH)))
+(Set(!v_DHH, !v_IHH, !v_SHH),Set(6, 19, 30))
+(Set(v_SHH),Set(-30))
+(Set(v_IHH),Set(-19))
+(Set(v_DHH),Set(-6))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_HHAT, !v_HHIP, !v_GAS1, v_DISPATCHED), Set(v_BOC, v_CDO)))
+Some(Vector(Set(!v_BOC, v_GAS1), Set(!v_CDO, v_GAS1), Set(!v_BOC, v_HHIP), Set(v_HHIP, !v_CDO), Set(!v_BOC, !v_HHAT), Set(!v_HHAT, !v_CDO), Set(!v_BOC, !v_DISPATCHED), Set(!v_CDO, !v_DISPATCHED)))
+(Set(v_HHAT, !v_HHIP, !v_GAS1, v_DISPATCHED),Set(-17, 18, 10, -7))
+(Set(v_BOC, v_CDO),Set(-2, -4))
+(Set(!v_BOC, v_GAS1),Set(2, -10))
+(Set(!v_CDO, v_GAS1),Set(4, -10))
+(Set(!v_BOC, v_HHIP),Set(2, -18))
+(Set(v_HHIP, !v_CDO),Set(-18, 4))
+(Set(!v_BOC, !v_HHAT),Set(2, 17))
+(Set(!v_HHAT, !v_CDO),Set(17, 4))
+(Set(!v_BOC, !v_DISPATCHED),Set(2, 7))
+(Set(!v_CDO, !v_DISPATCHED),Set(4, 7))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(!v_PTCH2_Free, v_SHH), Set(!v_PTCH1_Free, v_SHH), Set(v_IHH, !v_PTCH1_Free), Set(!v_PTCH1_Free, v_DHH)))
+Some(Vector(Set(v_PTCH2_Free, v_PTCH1_Free), Set(!v_IHH, !v_DHH, !v_SHH), Set(v_PTCH1_Free, !v_SHH)))
+(Set(!v_PTCH2_Free, v_SHH),Set(28, -30))
+(Set(!v_PTCH1_Free, v_SHH),Set(27, -30))
+(Set(v_IHH, !v_PTCH1_Free),Set(-19, 27))
+(Set(!v_PTCH1_Free, v_DHH),Set(27, -6))
+(Set(v_PTCH2_Free, v_PTCH1_Free),Set(-28, -27))
+(Set(!v_IHH, !v_DHH, !v_SHH),Set(19, 6, 30))
+(Set(v_PTCH1_Free, !v_SHH),Set(-27, 30))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+Map(v_HDAC -> 15, v_NOTCH1 -> 22, v_BOC -> 2, v_DYRK1 -> 8, v_ULK3 -> 37, v_NUC_SUFU -> 24, v_HHAT -> 17, v_GSK3 -> 14, v_RAS -> 29, v_HFU -> 16, v_CKI_A -> 5, v_SNO -> 34, v_HHIP -> 18, v_ERK12 -> 9, v_NUC_STK36 -> 23, v_IHH -> 19, v_PKA_A -> 26, v_BMP_RUNX3 -> 1, v_CDO -> 4, v_TWIST -> 36, v_NCOR -> 21, v_SUFU -> 35, v_GLI3_A -> 13, v_GAS1 -> 10, v_PTCH2_Free -> 28, v_BTRCP -> 3, v_PTCH1_Free -> 27, v_GLI1 -> 11, v_DHH -> 6, v_SMO -> 33, v_SIN3A -> 31, v_SHH -> 30, v_NUMB -> 25, v_DISPATCHED -> 7, v_GLI2 -> 12, v_SKI -> 32, v_ITCH -> 20)
+p cnf 37 239
+-7 -17 18 6 0
+-18 -6 0
+17 -6 0
+7 -6 0
+5 14 -37 3 35 11 26 0
+5 14 -12 3 35 11 26 0
+5 14 -36 3 35 11 26 0
+5 14 3 35 11 -9 26 0
+5 14 -29 3 35 11 26 0
+5 14 3 35 11 -16 26 0
+21 32 34 31 11 -13 15 0
+5 14 3 35 11 -33 26 0
+-32 37 29 -11 33 9 12 16 23 36 0
+-32 37 29 -11 33 9 12 -20 16 36 0
+-32 37 29 -11 33 9 12 16 36 -24 0
+-32 37 29 -11 33 9 12 16 8 36 0
+-32 37 29 -11 33 9 12 -25 16 36 0
+37 29 -11 33 9 -15 12 -20 16 36 0
+37 29 -11 33 9 -15 12 16 23 36 0
+37 29 -11 33 9 -15 12 16 36 -24 0
+37 29 -11 33 9 -15 12 16 8 36 0
+37 29 -11 33 9 -15 12 -25 16 36 0
+37 29 -11 33 9 12 -20 16 -21 36 0
+37 29 -31 -11 33 9 12 16 23 36 0
+37 29 -31 -11 33 9 12 16 36 -24 0
+37 29 -31 -11 33 9 12 -20 16 36 0
+37 29 -31 -11 33 9 12 16 8 36 0
+37 29 -31 -11 33 9 12 -25 16 36 0
+37 29 -11 33 9 12 16 23 -34 36 0
+37 29 -11 33 9 12 16 -34 36 -24 0
+37 29 -11 33 9 12 -20 16 -34 36 0
+37 29 -11 33 9 12 16 8 -34 36 0
+37 29 -11 33 9 12 -25 16 -34 36 0
+37 29 -11 33 9 13 12 16 23 36 0
+37 29 -11 33 9 13 12 16 36 -24 0
+37 29 -11 33 9 13 12 -20 16 36 0
+37 29 -11 33 9 13 12 16 8 36 0
+37 29 -11 33 9 13 12 -25 16 36 0
+37 29 -11 33 9 12 16 -21 23 36 0
+37 29 -11 33 9 12 16 -21 36 -24 0
+37 29 -11 33 9 12 16 -21 8 36 0
+37 29 -11 33 9 12 -25 16 -21 36 0
+-15 -24 -14 -11 0
+-14 23 -32 -11 0
+23 -3 -32 -11 0
+23 -35 -32 -11 0
+-5 23 -32 -11 0
+8 -14 -32 -11 0
+-24 -14 -32 -11 0
+-24 -35 -32 -11 0
+-24 -3 -32 -11 0
+-24 -5 -32 -11 0
+-14 -32 -20 -11 0
+-35 -32 -20 -11 0
+-5 -32 -20 -11 0
+-3 -32 -20 -11 0
+8 -3 -32 -11 0
+8 -5 -32 -11 0
+8 -35 -32 -11 0
+-14 -25 -32 -11 0
+-3 -25 -32 -11 0
+-5 -25 -32 -11 0
+-35 -25 -32 -11 0
+-3 -31 -25 -11 0
+-15 -5 23 -11 0
+-15 23 -35 -11 0
+-15 23 -3 -11 0
+-15 -14 23 -11 0
+-15 -3 -20 -11 0
+-15 -24 -5 -11 0
+-15 -24 -35 -11 0
+-15 -24 -3 -11 0
+-15 -14 -25 -11 0
+-15 -5 -20 -11 0
+-15 -14 -20 -11 0
+-15 -35 -20 -11 0
+-15 -3 -25 -11 0
+-15 8 -5 -11 0
+-15 8 -14 -11 0
+-15 8 -35 -11 0
+-15 8 -3 -11 0
+-15 -35 -25 -11 0
+-15 -5 -25 -11 0
+-21 -35 -25 -11 0
+-5 23 -31 -11 0
+-14 23 -31 -11 0
+23 -35 -31 -11 0
+23 -3 -31 -11 0
+8 -35 -31 -11 0
+-24 -5 -31 -11 0
+-24 -14 -31 -11 0
+-24 -35 -31 -11 0
+-24 -3 -31 -11 0
+-35 -31 -25 -11 0
+-5 -31 -20 -11 0
+-14 -31 -20 -11 0
+-35 -31 -20 -11 0
+-3 -31 -20 -11 0
+8 -3 -31 -11 0
+8 -5 -31 -11 0
+8 -14 -31 -11 0
+-14 -31 -25 -11 0
+-5 -31 -25 -11 0
+-14 -34 -25 -11 0
+-5 -34 23 -11 0
+-14 -34 23 -11 0
+-34 23 -35 -11 0
+-34 23 -3 -11 0
+8 -34 -35 -11 0
+-24 -5 -34 -11 0
+-24 -14 -34 -11 0
+-24 -34 -35 -11 0
+-24 -34 -3 -11 0
+-34 -35 -25 -11 0
+-5 -34 -20 -11 0
+-14 -34 -20 -11 0
+-34 -35 -20 -11 0
+-34 -3 -20 -11 0
+-34 -3 -25 -11 0
+8 -5 -34 -11 0
+8 -14 -34 -11 0
+8 -34 -3 -11 0
+-5 -34 -25 -11 0
+-5 -21 -25 -11 0
+-5 23 13 -11 0
+-14 23 13 -11 0
+23 -35 13 -11 0
+23 13 -3 -11 0
+8 -35 13 -11 0
+-24 -5 13 -11 0
+-24 -14 13 -11 0
+-24 -35 13 -11 0
+-24 13 -3 -11 0
+-35 13 -25 -11 0
+-5 13 -20 -11 0
+-14 13 -20 -11 0
+-35 13 -20 -11 0
+13 -3 -20 -11 0
+13 -3 -25 -11 0
+8 -5 13 -11 0
+8 -14 13 -11 0
+8 13 -3 -11 0
+-14 13 -25 -11 0
+-5 13 -25 -11 0
+-14 -21 -25 -11 0
+-5 23 -21 -11 0
+-14 23 -21 -11 0
+23 -21 -35 -11 0
+23 -21 -3 -11 0
+8 -21 -35 -11 0
+-24 -5 -21 -11 0
+-24 -14 -21 -11 0
+-24 -21 -35 -11 0
+-24 -21 -3 -11 0
+-21 -35 -20 -11 0
+-5 -21 -20 -11 0
+-14 -21 -20 -11 0
+-21 -3 -20 -11 0
+-21 -3 -25 -11 0
+8 -5 -21 -11 0
+8 -14 -21 -11 0
+8 -21 -3 -11 0
+-26 -21 -25 -11 0
+23 -26 -32 -11 0
+-24 -26 -32 -11 0
+-26 -32 -20 -11 0
+8 -26 -32 -11 0
+-26 -25 -32 -11 0
+-15 23 -26 -11 0
+-15 -24 -26 -11 0
+-15 -26 -20 -11 0
+-15 8 -26 -11 0
+-15 -26 -25 -11 0
+23 -26 -31 -11 0
+-24 -26 -31 -11 0
+-26 -31 -20 -11 0
+8 -26 -31 -11 0
+-26 -31 -25 -11 0
+-34 23 -26 -11 0
+-24 -34 -26 -11 0
+-34 -26 -20 -11 0
+8 -34 -26 -11 0
+-34 -26 -25 -11 0
+23 -26 13 -11 0
+-24 -26 13 -11 0
+-26 13 -20 -11 0
+8 -26 13 -11 0
+-26 13 -25 -11 0
+23 -26 -21 -11 0
+-24 -26 -21 -11 0
+-26 -21 -20 -11 0
+8 -26 -21 -11 0
+22 -33 12 0
+5 14 12 3 35 -33 26 0
+5 14 12 3 35 -16 26 0
+22 -16 12 0
+-22 -35 -12 0
+-22 -5 -12 0
+-22 -26 -12 0
+-22 -14 -12 0
+-22 -3 -12 0
+16 33 -12 0
+24 25 -8 20 -11 -23 18 0
+23 -18 0
+11 -18 0
+-24 -18 0
+-20 -18 0
+8 -18 0
+-25 -18 0
+-7 -17 18 19 0
+-1 19 0
+1 -18 -19 0
+1 17 -19 0
+1 7 -19 0
+6 19 30 27 0
+-30 -27 0
+-19 -27 0
+-6 -27 0
+6 19 30 28 0
+-30 -28 0
+-19 -28 0
+-6 -28 0
+10 -7 18 30 -17 0
+-2 -4 30 0
+2 -10 -30 0
+4 -10 -30 0
+2 -18 -30 0
+-18 4 -30 0
+2 17 -30 0
+17 4 -30 0
+2 7 -30 0
+4 7 -30 0
+28 -30 33 0
+27 -30 33 0
+-19 27 33 0
+27 -6 33 0
+-28 -27 -33 0
+19 6 30 -33 0
+-27 30 -33 0
++ exit_status=0
++ set +x
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.BNn5Femkyp.cnf'
+c opening file to read '/tmp/tmp.BNn5Femkyp.cnf'
+c found 'p cnf 37 239' header
+c parsed 239 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  239  37 100%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  239  37 100%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  239  37 100%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 27 28 -29 -30 -31 -32 -33 -34 -35 -36 -37 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00  101.74% parse
+c         0.00   25.58% search
+c         0.00   24.42% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   35.68% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.12    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=57
++ wait 57
++ bdd_minisat_all_release /tmp/tmp.BNn5Femkyp.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.BNn5Femkyp.cnf
+variables         :           37
+cutwidth          :          225
+restarts          :            1
+conflicts         :           50           (       40 / sec      )
+decisions         :       641246           (   515662 / sec      )
+propagations      :       736642           (   592375 / sec      )
+inspects          :      3868880           (  3111183 / sec      )
+conflict literals :          353           (     0.00 % deleted  )
+cpu time (solve)  :         1.24 sec	
+refreshes         :            0
+|obdd|            :      1642232
+cache hits        :       318618
+cache lookup      :       639271
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        :    276437212
+# SAT SOLVE END
+
++ set +x
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_227.sbml"
+	User time (seconds): 4.33
+	System time (seconds): 0.39
+	Percent of CPU this job got: 180%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 323672
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 109373
+	Voluntary context switches: 3779
+	Involuntary context switches: 232
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 56
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 2.9s

@@ -1,0 +1,1039 @@
+# Host: MSI
+# Start date: Tue Oct 27 06:42:59 +07 2026
+# Machine: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz; 6 logical CPUs; 11.7 GiB RAM; Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+# Limits: cpu_time_s=1800 memory_kb=9437184 wall_s=3720
+# Input: benchmarks/reduced/D2/BBM/model_120.sbml (bn_reduce.py variant D2)
+# Command: docker run --rm --name bench-2819-208 --network none --ulimit cpu=1800:1800 --memory 9216m --memory-swap 9216m --user 1000:1000 -v /mnt/c/Users/USER/Desktop/Specialized-Project/benchmarks/reduced/D2/BBM:/benchmark:ro bsaf /app/solve-bmsa.sh 7168m 1g h3 model_120.sbml
+------------------------------------------------------------
+# ENCODE START
++ cmd_pid=11
++ wait 11
++ java -Xms7168m -Xmx7168m -Xss1g -jar /app/bsaf.jar --sbml /benchmark/model_120.sbml --cnf /tmp/tmp.RcFFZIAZ5B.cnf -h3
+
+Config(sbmlFileName = /benchmark/model_120.sbml, bnetFileName = , cnfFileName = /tmp/tmp.RcFFZIAZ5B.cnf, tseitin = false, tseitinProj = false, pi = false, hybrid1 = false, hybrid2 = false, hybrid3 = true)
+
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+2026-10-26 23:43:00,920 main ERROR Could not determine local host name java.net.UnknownHostException: 71d29602a8ec: 71d29602a8ec: Temporary failure in name resolution
+	at java.base/java.net.InetAddress.getLocalHost(InetAddress.java:1670)
+	at org.apache.logging.log4j.core.util.NetUtils.getLocalHostname(NetUtils.java:54)
+	at org.apache.logging.log4j.core.LoggerContext.lambda$setConfiguration$0(LoggerContext.java:620)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:620)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:699)
+	at org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:716)
+	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:270)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:155)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:309)
+	at org.apache.log4j.Logger$PrivateManager.getContext(Logger.java:59)
+	at org.apache.log4j.Logger.getLogger(Logger.java:41)
+	at org.sbml.jsbml.JSBML.loadClasses(JSBML.java:294)
+	at org.sbml.jsbml.xml.stax.SBMLReader.<clinit>(SBMLReader.java:110)
+	at org.sbml.jsbml.SBMLReader.readSBMLFromFile(SBMLReader.java:235)
+	at jp.kobe_u.bsaf.sbml.SbmlQualModel$.fromFile(SbmlQualModel.scala:15)
+	at jp.kobe_u.bsaf.Main$.main(Main.scala:25)
+	at jp.kobe_u.bsaf.Main.main(Main.scala)
+Caused by: java.net.UnknownHostException: 71d29602a8ec: Temporary failure in name resolution
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getLocalHost(InetAddress.java:1665)
+	... 18 more
+
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+ WARN (AbstractReaderWriter.java:111) - processAttribute: The attribute 'essential' on the element input is not part of the SBML specifications (Input) or has an invalid value.
+
+Some(Vector(Set(v_ACS_simple_molecule, v_ACMSD)))
+Some(Vector(Set(!v_ACMSD), Set(!v_ACS_simple_molecule)))
+(Set(v_ACS_simple_molecule, v_ACMSD),Set(-5, -4))
+(Set(!v_ACMSD),Set(4))
+(Set(!v_ACS_simple_molecule),Set(5))
+
+Some(Vector(Set(v_3HKYN_simple_molecule, v_H2O_simple_molecule_cell, v_KYNU)))
+Some(Vector(Set(!v_KYNU), Set(!v_H2O_simple_molecule_cell), Set(!v_3HKYN_simple_molecule)))
+(Set(v_3HKYN_simple_molecule, v_H2O_simple_molecule_cell, v_KYNU),Set(-3, -21, -37))
+(Set(!v_KYNU),Set(37))
+(Set(!v_H2O_simple_molecule_cell),Set(21))
+(Set(!v_3HKYN_simple_molecule),Set(3))
+
+Some(Vector(Set(v_O2_simple_molecule, v_H__ion_cell, v_KMO, v_L_Kynurenine_simple_molecule, v_NADPH_simple_molecule_cell)))
+Some(Vector(Set(!v_L_Kynurenine_simple_molecule), Set(!v_H__ion_cell), Set(!v_O2_simple_molecule), Set(!v_NADPH_simple_molecule_cell), Set(!v_KMO)))
+(Set(v_O2_simple_molecule, v_H__ion_cell, v_KMO, v_L_Kynurenine_simple_molecule, v_NADPH_simple_molecule_cell),Set(-49, -40, -26, -75, -36))
+(Set(!v_L_Kynurenine_simple_molecule),Set(40))
+(Set(!v_H__ion_cell),Set(26))
+(Set(!v_O2_simple_molecule),Set(75))
+(Set(!v_NADPH_simple_molecule_cell),Set(49))
+(Set(!v_KMO),Set(36))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_3HAA_simple_molecule, v_O2_simple_molecule, v_HAAO)))
+Some(Vector(Set(!v_HAAO), Set(!v_O2_simple_molecule), Set(!v_3HAA_simple_molecule)))
+(Set(v_3HAA_simple_molecule, v_O2_simple_molecule, v_HAAO),Set(-2, -75, -24))
+(Set(!v_HAAO),Set(24))
+(Set(!v_O2_simple_molecule),Set(75))
+(Set(!v_3HAA_simple_molecule),Set(2))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_PXLP_KYAT1_complex, v_PYR_simple_molecule, !v_I3LACT, v_L_Kynurenine_simple_molecule, !v_I3PROPA, !v_L_Phe_simple_molecule)))
+Some(Vector(Set(v_I3PROPA), Set(!v_L_Kynurenine_simple_molecule), Set(!v_PXLP_KYAT1_complex), Set(!v_PYR_simple_molecule), Set(v_L_Phe_simple_molecule), Set(v_I3LACT)))
+(Set(v_PXLP_KYAT1_complex, v_PYR_simple_molecule, !v_I3LACT, v_L_Kynurenine_simple_molecule, !v_I3PROPA, !v_L_Phe_simple_molecule),Set(-40, 41, -83, -84, 31, 30))
+(Set(v_I3PROPA),Set(-31))
+(Set(!v_L_Kynurenine_simple_molecule),Set(40))
+(Set(!v_PXLP_KYAT1_complex),Set(83))
+(Set(!v_PYR_simple_molecule),Set(84))
+(Set(v_L_Phe_simple_molecule),Set(-41))
+(Set(v_I3LACT),Set(-30))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Heme_simple_molecule, v_O2_simple_molecule, v_NADPH_simple_molecule_cell, v_sa352_HMOX1_cell)))
+Some(Vector(Set(!v_sa352_HMOX1_cell), Set(!v_NADPH_simple_molecule_cell), Set(!v_O2_simple_molecule), Set(!v_Heme_simple_molecule)))
+(Set(v_Heme_simple_molecule, v_O2_simple_molecule, v_NADPH_simple_molecule_cell, v_sa352_HMOX1_cell),Set(-29, -75, -49, -95))
+(Set(!v_sa352_HMOX1_cell),Set(95))
+(Set(!v_NADPH_simple_molecule_cell),Set(49))
+(Set(!v_O2_simple_molecule),Set(75))
+(Set(!v_Heme_simple_molecule),Set(29))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_ACS_simple_molecule), Set(v_AP_DOBu_simple_molecule), Set(v_O2_simple_molecule, v_NADPH_simple_molecule_cell, v_sa352_HMOX1_cell, v_Heme_simple_molecule), Set(v_O2_simple_molecule, v_H__ion_cell, v_KMO, v_L_Kynurenine_simple_molecule, v_NADPH_simple_molecule_cell)))
+Some(Vector(Set(!v_sa352_HMOX1_cell, !v_ACS_simple_molecule, !v_AP_DOBu_simple_molecule, !v_L_Kynurenine_simple_molecule), Set(!v_sa352_HMOX1_cell, !v_ACS_simple_molecule, !v_H__ion_cell, !v_AP_DOBu_simple_molecule), Set(!v_sa352_HMOX1_cell, !v_ACS_simple_molecule, !v_KMO, !v_AP_DOBu_simple_molecule), Set(!v_ACS_simple_molecule, !v_AP_DOBu_simple_molecule, !v_Heme_simple_molecule, !v_L_Kynurenine_simple_molecule), Set(!v_ACS_simple_molecule, !v_H__ion_cell, !v_AP_DOBu_simple_molecule, !v_Heme_simple_molecule), Set(!v_ACS_simple_molecule, !v_KMO, !v_AP_DOBu_simple_molecule, !v_Heme_simple_molecule), Set(!v_O2_simple_molecule, !v_ACS_simple_molecule, !v_AP_DOBu_simple_molecule), Set(!v_NADPH_simple_molecule_cell, !v_ACS_simple_molecule, !v_AP_DOBu_simple_molecule)))
+(Set(v_ACS_simple_molecule),Set(-5))
+(Set(v_AP_DOBu_simple_molecule),Set(-10))
+(Set(v_O2_simple_molecule, v_NADPH_simple_molecule_cell, v_sa352_HMOX1_cell, v_Heme_simple_molecule),Set(-75, -49, -95, -29))
+(Set(v_O2_simple_molecule, v_H__ion_cell, v_KMO, v_L_Kynurenine_simple_molecule, v_NADPH_simple_molecule_cell),Set(-49, -40, -26, -75, -36))
+(Set(!v_sa352_HMOX1_cell, !v_ACS_simple_molecule, !v_AP_DOBu_simple_molecule, !v_L_Kynurenine_simple_molecule),Set(95, 5, 10, 40))
+(Set(!v_sa352_HMOX1_cell, !v_ACS_simple_molecule, !v_H__ion_cell, !v_AP_DOBu_simple_molecule),Set(95, 5, 26, 10))
+(Set(!v_sa352_HMOX1_cell, !v_ACS_simple_molecule, !v_KMO, !v_AP_DOBu_simple_molecule),Set(95, 5, 36, 10))
+(Set(!v_ACS_simple_molecule, !v_AP_DOBu_simple_molecule, !v_Heme_simple_molecule, !v_L_Kynurenine_simple_molecule),Set(5, 10, 29, 40))
+(Set(!v_ACS_simple_molecule, !v_H__ion_cell, !v_AP_DOBu_simple_molecule, !v_Heme_simple_molecule),Set(5, 26, 10, 29))
+(Set(!v_ACS_simple_molecule, !v_KMO, !v_AP_DOBu_simple_molecule, !v_Heme_simple_molecule),Set(5, 36, 10, 29))
+(Set(!v_O2_simple_molecule, !v_ACS_simple_molecule, !v_AP_DOBu_simple_molecule),Set(75, 5, 10))
+(Set(!v_NADPH_simple_molecule_cell, !v_ACS_simple_molecule, !v_AP_DOBu_simple_molecule),Set(49, 5, 10))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_3HAA_simple_molecule), Set(v_NO_simple_molecule), Set(v_IFN_G)))
+Some(Vector(Set(!v_IFN_G, !v_NO_simple_molecule, !v_3HAA_simple_molecule)))
+(Set(v_3HAA_simple_molecule),Set(-2))
+(Set(v_NO_simple_molecule),Set(-69))
+(Set(v_IFN_G),Set(-35))
+(Set(!v_IFN_G, !v_NO_simple_molecule, !v_3HAA_simple_molecule),Set(35, 69, 2))
+
+Some(Vector(Set(v_NAR_simple_molecule, v_ATP_simple_molecule_cell, v_NMRK1), Set(v_NAR_simple_molecule, v_NMRK2, v_ATP_simple_molecule_cell), Set(v_NR_simple_molecule, v_ATP_simple_molecule_cell, v_NMRK1), Set(v_NR_simple_molecule, v_NMRK2, v_ATP_simple_molecule_cell), Set(v_O2_simple_molecule, !v_CO_simple_molecule, v_NADPH_simple_molecule_cell, v_L_Arginine_simple_molecule), Set(v_H2O_simple_molecule_cell, v_NAD__simple_molecule_cell, v_2AMA_simple_molecule)))
+Some(Vector(Set(!v_NAR_simple_molecule, v_CO_simple_molecule, !v_H2O_simple_molecule_cell, !v_NR_simple_molecule), Set(!v_NAR_simple_molecule, !v_O2_simple_molecule, !v_H2O_simple_molecule_cell, !v_NR_simple_molecule), Set(!v_NAR_simple_molecule, !v_H2O_simple_molecule_cell, !v_NADPH_simple_molecule_cell, !v_NR_simple_molecule), Set(!v_NAR_simple_molecule, !v_H2O_simple_molecule_cell, !v_NR_simple_molecule, !v_L_Arginine_simple_molecule), Set(!v_O2_simple_molecule, !v_H2O_simple_molecule_cell, !v_NMRK2, !v_NMRK1), Set(v_CO_simple_molecule, !v_H2O_simple_molecule_cell, !v_NMRK2, !v_NMRK1), Set(v_CO_simple_molecule, !v_H2O_simple_molecule_cell, !v_ATP_simple_molecule_cell), Set(!v_O2_simple_molecule, !v_H2O_simple_molecule_cell, !v_ATP_simple_molecule_cell), Set(!v_H2O_simple_molecule_cell, !v_NADPH_simple_molecule_cell, !v_NMRK2, !v_NMRK1), Set(!v_H2O_simple_molecule_cell, !v_NADPH_simple_molecule_cell, !v_ATP_simple_molecule_cell), Set(!v_H2O_simple_molecule_cell, !v_NMRK2, !v_L_Arginine_simple_molecule, !v_NMRK1), Set(!v_H2O_simple_molecule_cell, !v_L_Arginine_simple_molecule, !v_ATP_simple_molecule_cell), Set(v_CO_simple_molecule, !v_2AMA_simple_molecule, !v_NMRK2, !v_NMRK1), Set(!v_NAR_simple_molecule, v_CO_simple_molecule, !v_NAD__simple_molecule_cell, !v_NR_simple_molecule), Set(!v_NAR_simple_molecule, !v_O2_simple_molecule, !v_NAD__simple_molecule_cell, !v_NR_simple_molecule), Set(!v_NAR_simple_molecule, !v_NADPH_simple_molecule_cell, !v_NAD__simple_molecule_cell, !v_NR_simple_molecule), Set(!v_NAR_simple_molecule, !v_NAD__simple_molecule_cell, !v_NR_simple_molecule, !v_L_Arginine_simple_molecule), Set(v_CO_simple_molecule, !v_NAD__simple_molecule_cell, !v_NMRK2, !v_NMRK1), Set(v_CO_simple_molecule, !v_NAD__simple_molecule_cell, !v_ATP_simple_molecule_cell), Set(!v_O2_simple_molecule, !v_NAD__simple_molecule_cell, !v_NMRK2, !v_NMRK1), Set(!v_O2_simple_molecule, !v_NAD__simple_molecule_cell, !v_ATP_simple_molecule_cell), Set(!v_NADPH_simple_molecule_cell, !v_NAD__simple_molecule_cell, !v_NMRK2, !v_NMRK1), Set(!v_NADPH_simple_molecule_cell, !v_NAD__simple_molecule_cell, !v_ATP_simple_molecule_cell), Set(!v_NAD__simple_molecule_cell, !v_NMRK2, !v_L_Arginine_simple_molecule, !v_NMRK1), Set(!v_NAD__simple_molecule_cell, !v_L_Arginine_simple_molecule, !v_ATP_simple_molecule_cell), Set(v_CO_simple_molecule, !v_2AMA_simple_molecule, !v_ATP_simple_molecule_cell), Set(!v_NAR_simple_molecule, v_CO_simple_molecule, !v_NR_simple_molecule, !v_2AMA_simple_molecule), Set(!v_NAR_simple_molecule, !v_O2_simple_molecule, !v_NR_simple_molecule, !v_2AMA_simple_molecule), Set(!v_NAR_simple_molecule, !v_NADPH_simple_molecule_cell, !v_NR_simple_molecule, !v_2AMA_simple_molecule), Set(!v_NAR_simple_molecule, !v_NR_simple_molecule, !v_2AMA_simple_molecule, !v_L_Arginine_simple_molecule), Set(!v_O2_simple_molecule, !v_2AMA_simple_molecule, !v_NMRK2, !v_NMRK1), Set(!v_O2_simple_molecule, !v_2AMA_simple_molecule, !v_ATP_simple_molecule_cell), Set(!v_NADPH_simple_molecule_cell, !v_2AMA_simple_molecule, !v_NMRK2, !v_NMRK1), Set(!v_NADPH_simple_molecule_cell, !v_2AMA_simple_molecule, !v_ATP_simple_molecule_cell), Set(!v_2AMA_simple_molecule, !v_NMRK2, !v_L_Arginine_simple_molecule, !v_NMRK1), Set(!v_2AMA_simple_molecule, !v_L_Arginine_simple_molecule, !v_ATP_simple_molecule_cell)))
+(Set(v_NAR_simple_molecule, v_ATP_simple_molecule_cell, v_NMRK1),Set(-60, -11, -66))
+(Set(v_NAR_simple_molecule, v_NMRK2, v_ATP_simple_molecule_cell),Set(-60, -67, -11))
+(Set(v_NR_simple_molecule, v_ATP_simple_molecule_cell, v_NMRK1),Set(-70, -11, -66))
+(Set(v_NR_simple_molecule, v_NMRK2, v_ATP_simple_molecule_cell),Set(-70, -67, -11))
+(Set(v_O2_simple_molecule, !v_CO_simple_molecule, v_NADPH_simple_molecule_cell, v_L_Arginine_simple_molecule),Set(-75, 19, -49, -38))
+(Set(v_H2O_simple_molecule_cell, v_NAD__simple_molecule_cell, v_2AMA_simple_molecule),Set(-21, -51, -1))
+(Set(!v_NAR_simple_molecule, v_CO_simple_molecule, !v_H2O_simple_molecule_cell, !v_NR_simple_molecule),Set(60, -19, 21, 70))
+(Set(!v_NAR_simple_molecule, !v_O2_simple_molecule, !v_H2O_simple_molecule_cell, !v_NR_simple_molecule),Set(60, 75, 21, 70))
+(Set(!v_NAR_simple_molecule, !v_H2O_simple_molecule_cell, !v_NADPH_simple_molecule_cell, !v_NR_simple_molecule),Set(60, 21, 49, 70))
+(Set(!v_NAR_simple_molecule, !v_H2O_simple_molecule_cell, !v_NR_simple_molecule, !v_L_Arginine_simple_molecule),Set(60, 21, 70, 38))
+(Set(!v_O2_simple_molecule, !v_H2O_simple_molecule_cell, !v_NMRK2, !v_NMRK1),Set(75, 21, 67, 66))
+(Set(v_CO_simple_molecule, !v_H2O_simple_molecule_cell, !v_NMRK2, !v_NMRK1),Set(-19, 21, 67, 66))
+(Set(v_CO_simple_molecule, !v_H2O_simple_molecule_cell, !v_ATP_simple_molecule_cell),Set(-19, 21, 11))
+(Set(!v_O2_simple_molecule, !v_H2O_simple_molecule_cell, !v_ATP_simple_molecule_cell),Set(75, 21, 11))
+(Set(!v_H2O_simple_molecule_cell, !v_NADPH_simple_molecule_cell, !v_NMRK2, !v_NMRK1),Set(21, 49, 67, 66))
+(Set(!v_H2O_simple_molecule_cell, !v_NADPH_simple_molecule_cell, !v_ATP_simple_molecule_cell),Set(21, 49, 11))
+(Set(!v_H2O_simple_molecule_cell, !v_NMRK2, !v_L_Arginine_simple_molecule, !v_NMRK1),Set(21, 67, 38, 66))
+(Set(!v_H2O_simple_molecule_cell, !v_L_Arginine_simple_molecule, !v_ATP_simple_molecule_cell),Set(21, 38, 11))
+(Set(v_CO_simple_molecule, !v_2AMA_simple_molecule, !v_NMRK2, !v_NMRK1),Set(-19, 1, 67, 66))
+(Set(!v_NAR_simple_molecule, v_CO_simple_molecule, !v_NAD__simple_molecule_cell, !v_NR_simple_molecule),Set(60, -19, 51, 70))
+(Set(!v_NAR_simple_molecule, !v_O2_simple_molecule, !v_NAD__simple_molecule_cell, !v_NR_simple_molecule),Set(60, 75, 51, 70))
+(Set(!v_NAR_simple_molecule, !v_NADPH_simple_molecule_cell, !v_NAD__simple_molecule_cell, !v_NR_simple_molecule),Set(60, 49, 51, 70))
+(Set(!v_NAR_simple_molecule, !v_NAD__simple_molecule_cell, !v_NR_simple_molecule, !v_L_Arginine_simple_molecule),Set(60, 51, 70, 38))
+(Set(v_CO_simple_molecule, !v_NAD__simple_molecule_cell, !v_NMRK2, !v_NMRK1),Set(-19, 51, 67, 66))
+(Set(v_CO_simple_molecule, !v_NAD__simple_molecule_cell, !v_ATP_simple_molecule_cell),Set(-19, 51, 11))
+(Set(!v_O2_simple_molecule, !v_NAD__simple_molecule_cell, !v_NMRK2, !v_NMRK1),Set(75, 51, 67, 66))
+(Set(!v_O2_simple_molecule, !v_NAD__simple_molecule_cell, !v_ATP_simple_molecule_cell),Set(75, 51, 11))
+(Set(!v_NADPH_simple_molecule_cell, !v_NAD__simple_molecule_cell, !v_NMRK2, !v_NMRK1),Set(49, 51, 67, 66))
+(Set(!v_NADPH_simple_molecule_cell, !v_NAD__simple_molecule_cell, !v_ATP_simple_molecule_cell),Set(49, 51, 11))
+(Set(!v_NAD__simple_molecule_cell, !v_NMRK2, !v_L_Arginine_simple_molecule, !v_NMRK1),Set(51, 67, 38, 66))
+(Set(!v_NAD__simple_molecule_cell, !v_L_Arginine_simple_molecule, !v_ATP_simple_molecule_cell),Set(51, 38, 11))
+(Set(v_CO_simple_molecule, !v_2AMA_simple_molecule, !v_ATP_simple_molecule_cell),Set(-19, 1, 11))
+(Set(!v_NAR_simple_molecule, v_CO_simple_molecule, !v_NR_simple_molecule, !v_2AMA_simple_molecule),Set(60, -19, 70, 1))
+(Set(!v_NAR_simple_molecule, !v_O2_simple_molecule, !v_NR_simple_molecule, !v_2AMA_simple_molecule),Set(60, 75, 70, 1))
+(Set(!v_NAR_simple_molecule, !v_NADPH_simple_molecule_cell, !v_NR_simple_molecule, !v_2AMA_simple_molecule),Set(60, 49, 70, 1))
+(Set(!v_NAR_simple_molecule, !v_NR_simple_molecule, !v_2AMA_simple_molecule, !v_L_Arginine_simple_molecule),Set(60, 70, 1, 38))
+(Set(!v_O2_simple_molecule, !v_2AMA_simple_molecule, !v_NMRK2, !v_NMRK1),Set(75, 1, 67, 66))
+(Set(!v_O2_simple_molecule, !v_2AMA_simple_molecule, !v_ATP_simple_molecule_cell),Set(75, 1, 11))
+(Set(!v_NADPH_simple_molecule_cell, !v_2AMA_simple_molecule, !v_NMRK2, !v_NMRK1),Set(49, 1, 67, 66))
+(Set(!v_NADPH_simple_molecule_cell, !v_2AMA_simple_molecule, !v_ATP_simple_molecule_cell),Set(49, 1, 11))
+(Set(!v_2AMA_simple_molecule, !v_NMRK2, !v_L_Arginine_simple_molecule, !v_NMRK1),Set(1, 67, 38, 66))
+(Set(!v_2AMA_simple_molecule, !v_L_Arginine_simple_molecule, !v_ATP_simple_molecule_cell),Set(1, 38, 11))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_NAD__simple_molecule_human_host, v_H2O_simple_molecule_human_host, v_BST1), Set(v_NAD__simple_molecule_human_host, v_H2O_simple_molecule_human_host, v_CD38)))
+Some(Vector(Set(!v_BST1, !v_CD38), Set(!v_H2O_simple_molecule_human_host), Set(!v_NAD__simple_molecule_human_host)))
+(Set(v_NAD__simple_molecule_human_host, v_H2O_simple_molecule_human_host, v_BST1),Set(-52, -22, -15))
+(Set(v_NAD__simple_molecule_human_host, v_H2O_simple_molecule_human_host, v_CD38),Set(-52, -22, -18))
+(Set(!v_BST1, !v_CD38),Set(15, 18))
+(Set(!v_H2O_simple_molecule_human_host),Set(22))
+(Set(!v_NAD__simple_molecule_human_host),Set(52))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_Heme_simple_molecule, v_IDO1_rna)))
+Some(Vector(Set(!v_IDO1_rna), Set(!v_Heme_simple_molecule)))
+(Set(v_Heme_simple_molecule, v_IDO1_rna),Set(-29, -33))
+(Set(!v_IDO1_rna),Set(33))
+(Set(!v_Heme_simple_molecule),Set(29))
+
+Some(Vector(Set(v_IFN_G, !v_NO_simple_molecule)))
+Some(Vector(Set(v_NO_simple_molecule), Set(!v_IFN_G)))
+(Set(v_IFN_G, !v_NO_simple_molecule),Set(-35, 69))
+(Set(v_NO_simple_molecule),Set(-69))
+(Set(!v_IFN_G),Set(35))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_NFK_simple_molecule, v_H2O_simple_molecule_cell, v_AFMID)))
+Some(Vector(Set(!v_AFMID), Set(!v_H2O_simple_molecule_cell), Set(!v_NFK_simple_molecule)))
+(Set(v_NFK_simple_molecule, v_H2O_simple_molecule_cell, v_AFMID),Set(-61, -21, -6))
+(Set(!v_AFMID),Set(6))
+(Set(!v_H2O_simple_molecule_cell),Set(21))
+(Set(!v_NFK_simple_molecule),Set(61))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_L_Tryptophan_simple_molecule_human_host, v_SLC36A4)))
+Some(Vector(Set(!v_SLC36A4), Set(!v_L_Tryptophan_simple_molecule_human_host)))
+(Set(v_L_Tryptophan_simple_molecule_human_host, v_SLC36A4),Set(-43, -89))
+(Set(!v_SLC36A4),Set(89))
+(Set(!v_L_Tryptophan_simple_molecule_human_host),Set(43))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_NAMN_simple_molecule_cell, v_NMNAT2_Mg2__complex)))
+Some(Vector(Set(!v_NMNAT2_Mg2__complex), Set(!v_NAMN_simple_molecule_cell)))
+(Set(v_NAMN_simple_molecule_cell, v_NMNAT2_Mg2__complex),Set(-54, -63))
+(Set(!v_NMNAT2_Mg2__complex),Set(63))
+(Set(!v_NAMN_simple_molecule_cell),Set(54))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_ATP_simple_molecule_cell, v_H2O_simple_molecule_cell, v_NADSYN1_hexamer, v_L_Gln_simple_molecule, v_NAAD_simple_molecule_cell), Set(v_NMNAT2_Mg2__complex, v_NMN_simple_molecule_cell, v_ATP_simple_molecule_cell)))
+Some(Vector(Set(!v_NAAD_simple_molecule_cell, !v_NMNAT2_Mg2__complex), Set(!v_H2O_simple_molecule_cell, !v_NMNAT2_Mg2__complex), Set(!v_NMNAT2_Mg2__complex, !v_NADSYN1_hexamer), Set(!v_L_Gln_simple_molecule, !v_NMNAT2_Mg2__complex), Set(!v_ATP_simple_molecule_cell), Set(!v_NAAD_simple_molecule_cell, !v_NMN_simple_molecule_cell), Set(!v_H2O_simple_molecule_cell, !v_NMN_simple_molecule_cell), Set(!v_NMN_simple_molecule_cell, !v_NADSYN1_hexamer), Set(!v_L_Gln_simple_molecule, !v_NMN_simple_molecule_cell)))
+(Set(v_ATP_simple_molecule_cell, v_H2O_simple_molecule_cell, v_NADSYN1_hexamer, v_L_Gln_simple_molecule, v_NAAD_simple_molecule_cell),Set(-39, -50, -11, -21, -45))
+(Set(v_NMNAT2_Mg2__complex, v_NMN_simple_molecule_cell, v_ATP_simple_molecule_cell),Set(-63, -65, -11))
+(Set(!v_NAAD_simple_molecule_cell, !v_NMNAT2_Mg2__complex),Set(45, 63))
+(Set(!v_H2O_simple_molecule_cell, !v_NMNAT2_Mg2__complex),Set(21, 63))
+(Set(!v_NMNAT2_Mg2__complex, !v_NADSYN1_hexamer),Set(63, 50))
+(Set(!v_L_Gln_simple_molecule, !v_NMNAT2_Mg2__complex),Set(39, 63))
+(Set(!v_ATP_simple_molecule_cell),Set(11))
+(Set(!v_NAAD_simple_molecule_cell, !v_NMN_simple_molecule_cell),Set(45, 65))
+(Set(!v_H2O_simple_molecule_cell, !v_NMN_simple_molecule_cell),Set(21, 65))
+(Set(!v_NMN_simple_molecule_cell, !v_NADSYN1_hexamer),Set(65, 50))
+(Set(!v_L_Gln_simple_molecule, !v_NMN_simple_molecule_cell),Set(39, 65))
+
+Some(Vector(Set(v_dh_beta_NAD_simple_molecule, v_O2_ion, v_H__ion_human_host, v_RNLS_FAD_complex)))
+Some(Vector(Set(!v_RNLS_FAD_complex), Set(!v_H__ion_human_host), Set(!v_O2_ion), Set(!v_dh_beta_NAD_simple_molecule)))
+(Set(v_dh_beta_NAD_simple_molecule, v_O2_ion, v_H__ion_human_host, v_RNLS_FAD_complex),Set(-92, -74, -28, -86))
+(Set(!v_RNLS_FAD_complex),Set(86))
+(Set(!v_H__ion_human_host),Set(28))
+(Set(!v_O2_ion),Set(74))
+(Set(!v_dh_beta_NAD_simple_molecule),Set(92))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_NAR_simple_molecule, v_ATP_simple_molecule_cell, v_NMRK1), Set(v_NAR_simple_molecule, v_NMRK2, v_ATP_simple_molecule_cell), Set(v_ACS_simple_molecule, v_H__ion_cell, v_PRPP_simple_molecule, v_QPRT), Set(v_NAMPT, v_PRPP_simple_molecule, v_NAM_simple_molecule_cell), Set(v_Mg2__ion, v_H__ion_cell, v_PRPP_simple_molecule, v_SLC22A13), Set(v_NAPRT1, v_H__ion_cell, v_PRPP_simple_molecule, v_SLC22A13)))
+Some(Vector(Set(!v_NMRK2, !v_NMRK1, !v_NAMPT, !v_QPRT, !v_SLC22A13), Set(!v_NMRK2, !v_NMRK1, !v_NAMPT, !v_ACS_simple_molecule, !v_SLC22A13), Set(!v_NAR_simple_molecule, !v_NAMPT, !v_QPRT, !v_SLC22A13), Set(!v_NAMPT, !v_QPRT, !v_SLC22A13, !v_ATP_simple_molecule_cell), Set(!v_NAMPT, !v_ACS_simple_molecule, !v_SLC22A13, !v_ATP_simple_molecule_cell), Set(!v_NAR_simple_molecule, !v_NAMPT, !v_ACS_simple_molecule, !v_SLC22A13), Set(!v_NMRK2, !v_NMRK1, !v_Mg2__ion, !v_NAMPT, !v_QPRT, !v_NAPRT1), Set(!v_NMRK2, !v_NMRK1, !v_Mg2__ion, !v_NAMPT, !v_ACS_simple_molecule, !v_NAPRT1), Set(!v_Mg2__ion, !v_NAMPT, !v_QPRT, !v_ATP_simple_molecule_cell, !v_NAPRT1), Set(!v_Mg2__ion, !v_NAMPT, !v_ACS_simple_molecule, !v_ATP_simple_molecule_cell, !v_NAPRT1), Set(!v_Mg2__ion, !v_NAR_simple_molecule, !v_NAMPT, !v_QPRT, !v_NAPRT1), Set(!v_Mg2__ion, !v_NAR_simple_molecule, !v_NAMPT, !v_ACS_simple_molecule, !v_NAPRT1), Set(!v_NAMPT, !v_H__ion_cell, !v_NMRK2, !v_NMRK1), Set(!v_NAMPT, !v_H__ion_cell, !v_ATP_simple_molecule_cell), Set(!v_NAR_simple_molecule, !v_NAMPT, !v_H__ion_cell), Set(!v_H__ion_cell, !v_NAM_simple_molecule_cell, !v_ATP_simple_molecule_cell), Set(!v_NMRK2, !v_NMRK1, !v_NAM_simple_molecule_cell, !v_QPRT, !v_SLC22A13), Set(!v_NMRK2, !v_NMRK1, !v_NAM_simple_molecule_cell, !v_ACS_simple_molecule, !v_SLC22A13), Set(!v_QPRT, !v_SLC22A13, !v_NAM_simple_molecule_cell, !v_ATP_simple_molecule_cell), Set(!v_ACS_simple_molecule, !v_SLC22A13, !v_NAM_simple_molecule_cell, !v_ATP_simple_molecule_cell), Set(!v_NAR_simple_molecule, !v_QPRT, !v_SLC22A13, !v_NAM_simple_molecule_cell), Set(!v_NAR_simple_molecule, !v_ACS_simple_molecule, !v_SLC22A13, !v_NAM_simple_molecule_cell), Set(!v_NMRK2, !v_NMRK1, !v_NAM_simple_molecule_cell, !v_Mg2__ion, !v_QPRT, !v_NAPRT1), Set(!v_NMRK2, !v_NMRK1, !v_NAM_simple_molecule_cell, !v_Mg2__ion, !v_ACS_simple_molecule, !v_NAPRT1), Set(!v_NAM_simple_molecule_cell, !v_Mg2__ion, !v_QPRT, !v_ATP_simple_molecule_cell, !v_NAPRT1), Set(!v_NAM_simple_molecule_cell, !v_Mg2__ion, !v_ACS_simple_molecule, !v_ATP_simple_molecule_cell, !v_NAPRT1), Set(!v_NAM_simple_molecule_cell, !v_Mg2__ion, !v_NAR_simple_molecule, !v_QPRT, !v_NAPRT1), Set(!v_NAM_simple_molecule_cell, !v_Mg2__ion, !v_NAR_simple_molecule, !v_ACS_simple_molecule, !v_NAPRT1), Set(!v_H__ion_cell, !v_NMRK2, !v_NAM_simple_molecule_cell, !v_NMRK1), Set(!v_NAR_simple_molecule, !v_H__ion_cell, !v_NAM_simple_molecule_cell), Set(!v_NAR_simple_molecule, !v_PRPP_simple_molecule), Set(!v_PRPP_simple_molecule, !v_NMRK2, !v_NMRK1), Set(!v_PRPP_simple_molecule, !v_ATP_simple_molecule_cell)))
+(Set(v_NAR_simple_molecule, v_ATP_simple_molecule_cell, v_NMRK1),Set(-60, -11, -66))
+(Set(v_NAR_simple_molecule, v_NMRK2, v_ATP_simple_molecule_cell),Set(-60, -67, -11))
+(Set(v_ACS_simple_molecule, v_H__ion_cell, v_PRPP_simple_molecule, v_QPRT),Set(-5, -26, -79, -85))
+(Set(v_NAMPT, v_PRPP_simple_molecule, v_NAM_simple_molecule_cell),Set(-57, -79, -58))
+(Set(v_Mg2__ion, v_H__ion_cell, v_PRPP_simple_molecule, v_SLC22A13),Set(-44, -26, -79, -88))
+(Set(v_NAPRT1, v_H__ion_cell, v_PRPP_simple_molecule, v_SLC22A13),Set(-59, -26, -79, -88))
+(Set(!v_NMRK2, !v_NMRK1, !v_NAMPT, !v_QPRT, !v_SLC22A13),Set(88, 57, 85, 66, 67))
+(Set(!v_NMRK2, !v_NMRK1, !v_NAMPT, !v_ACS_simple_molecule, !v_SLC22A13),Set(88, 5, 57, 66, 67))
+(Set(!v_NAR_simple_molecule, !v_NAMPT, !v_QPRT, !v_SLC22A13),Set(60, 57, 85, 88))
+(Set(!v_NAMPT, !v_QPRT, !v_SLC22A13, !v_ATP_simple_molecule_cell),Set(57, 85, 88, 11))
+(Set(!v_NAMPT, !v_ACS_simple_molecule, !v_SLC22A13, !v_ATP_simple_molecule_cell),Set(57, 5, 88, 11))
+(Set(!v_NAR_simple_molecule, !v_NAMPT, !v_ACS_simple_molecule, !v_SLC22A13),Set(60, 57, 5, 88))
+(Set(!v_NMRK2, !v_NMRK1, !v_Mg2__ion, !v_NAMPT, !v_QPRT, !v_NAPRT1),Set(57, 85, 44, 59, 66, 67))
+(Set(!v_NMRK2, !v_NMRK1, !v_Mg2__ion, !v_NAMPT, !v_ACS_simple_molecule, !v_NAPRT1),Set(5, 57, 44, 59, 66, 67))
+(Set(!v_Mg2__ion, !v_NAMPT, !v_QPRT, !v_ATP_simple_molecule_cell, !v_NAPRT1),Set(57, 85, 44, 59, 11))
+(Set(!v_Mg2__ion, !v_NAMPT, !v_ACS_simple_molecule, !v_ATP_simple_molecule_cell, !v_NAPRT1),Set(5, 57, 44, 59, 11))
+(Set(!v_Mg2__ion, !v_NAR_simple_molecule, !v_NAMPT, !v_QPRT, !v_NAPRT1),Set(57, 60, 85, 44, 59))
+(Set(!v_Mg2__ion, !v_NAR_simple_molecule, !v_NAMPT, !v_ACS_simple_molecule, !v_NAPRT1),Set(5, 57, 60, 44, 59))
+(Set(!v_NAMPT, !v_H__ion_cell, !v_NMRK2, !v_NMRK1),Set(57, 26, 67, 66))
+(Set(!v_NAMPT, !v_H__ion_cell, !v_ATP_simple_molecule_cell),Set(57, 26, 11))
+(Set(!v_NAR_simple_molecule, !v_NAMPT, !v_H__ion_cell),Set(60, 57, 26))
+(Set(!v_H__ion_cell, !v_NAM_simple_molecule_cell, !v_ATP_simple_molecule_cell),Set(26, 58, 11))
+(Set(!v_NMRK2, !v_NMRK1, !v_NAM_simple_molecule_cell, !v_QPRT, !v_SLC22A13),Set(88, 85, 66, 67, 58))
+(Set(!v_NMRK2, !v_NMRK1, !v_NAM_simple_molecule_cell, !v_ACS_simple_molecule, !v_SLC22A13),Set(88, 5, 66, 67, 58))
+(Set(!v_QPRT, !v_SLC22A13, !v_NAM_simple_molecule_cell, !v_ATP_simple_molecule_cell),Set(85, 88, 58, 11))
+(Set(!v_ACS_simple_molecule, !v_SLC22A13, !v_NAM_simple_molecule_cell, !v_ATP_simple_molecule_cell),Set(5, 88, 58, 11))
+(Set(!v_NAR_simple_molecule, !v_QPRT, !v_SLC22A13, !v_NAM_simple_molecule_cell),Set(60, 85, 88, 58))
+(Set(!v_NAR_simple_molecule, !v_ACS_simple_molecule, !v_SLC22A13, !v_NAM_simple_molecule_cell),Set(60, 5, 88, 58))
+(Set(!v_NMRK2, !v_NMRK1, !v_NAM_simple_molecule_cell, !v_Mg2__ion, !v_QPRT, !v_NAPRT1),Set(85, 44, 59, 66, 67, 58))
+(Set(!v_NMRK2, !v_NMRK1, !v_NAM_simple_molecule_cell, !v_Mg2__ion, !v_ACS_simple_molecule, !v_NAPRT1),Set(5, 44, 59, 66, 67, 58))
+(Set(!v_NAM_simple_molecule_cell, !v_Mg2__ion, !v_QPRT, !v_ATP_simple_molecule_cell, !v_NAPRT1),Set(85, 44, 59, 11, 58))
+(Set(!v_NAM_simple_molecule_cell, !v_Mg2__ion, !v_ACS_simple_molecule, !v_ATP_simple_molecule_cell, !v_NAPRT1),Set(5, 44, 59, 11, 58))
+(Set(!v_NAM_simple_molecule_cell, !v_Mg2__ion, !v_NAR_simple_molecule, !v_QPRT, !v_NAPRT1),Set(60, 85, 44, 59, 58))
+(Set(!v_NAM_simple_molecule_cell, !v_Mg2__ion, !v_NAR_simple_molecule, !v_ACS_simple_molecule, !v_NAPRT1),Set(5, 60, 44, 59, 58))
+(Set(!v_H__ion_cell, !v_NMRK2, !v_NAM_simple_molecule_cell, !v_NMRK1),Set(26, 67, 58, 66))
+(Set(!v_NAR_simple_molecule, !v_H__ion_cell, !v_NAM_simple_molecule_cell),Set(60, 26, 58))
+(Set(!v_NAR_simple_molecule, !v_PRPP_simple_molecule),Set(60, 79))
+(Set(!v_PRPP_simple_molecule, !v_NMRK2, !v_NMRK1),Set(79, 67, 66))
+(Set(!v_PRPP_simple_molecule, !v_ATP_simple_molecule_cell),Set(79, 11))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v__ADP_D_ribosyl__n__acceptor_simple_molecule, v_NAD__simple_molecule_cell, v_PARPs)))
+Some(Vector(Set(!v_PARPs), Set(!v_NAD__simple_molecule_cell), Set(!v__ADP_D_ribosyl__n__acceptor_simple_molecule)))
+(Set(v__ADP_D_ribosyl__n__acceptor_simple_molecule, v_NAD__simple_molecule_cell, v_PARPs),Set(-91, -51, -77))
+(Set(!v_PARPs),Set(77))
+(Set(!v_NAD__simple_molecule_cell),Set(51))
+(Set(!v__ADP_D_ribosyl__n__acceptor_simple_molecule),Set(91))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_IDO2, v_O2_simple_molecule, v_L_Tryptophan_simple_molecule_cell), Set(v_O2_simple_molecule, v_L_Tryptophan_simple_molecule_cell, v_IDO1_complex, !v_Epacadostat_drug)))
+Some(Vector(Set(!v_IDO2, v_Epacadostat_drug), Set(!v_IDO2, !v_IDO1_complex), Set(!v_L_Tryptophan_simple_molecule_cell), Set(!v_O2_simple_molecule)))
+(Set(v_IDO2, v_O2_simple_molecule, v_L_Tryptophan_simple_molecule_cell),Set(-34, -75, -42))
+(Set(v_O2_simple_molecule, v_L_Tryptophan_simple_molecule_cell, v_IDO1_complex, !v_Epacadostat_drug),Set(-75, -42, -32, 20))
+(Set(!v_IDO2, v_Epacadostat_drug),Set(34, -20))
+(Set(!v_IDO2, !v_IDO1_complex),Set(34, 32))
+(Set(!v_L_Tryptophan_simple_molecule_cell),Set(42))
+(Set(!v_O2_simple_molecule),Set(75))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_NR_simple_molecule, v_ATP_simple_molecule_cell, v_NMRK1), Set(v_NR_simple_molecule, v_ATP_simple_molecule_cell, v_NMRK2)))
+Some(Vector(Set(!v_NMRK1, !v_NMRK2), Set(!v_ATP_simple_molecule_cell), Set(!v_NR_simple_molecule)))
+(Set(v_NR_simple_molecule, v_ATP_simple_molecule_cell, v_NMRK1),Set(-70, -11, -66))
+(Set(v_NR_simple_molecule, v_ATP_simple_molecule_cell, v_NMRK2),Set(-70, -11, -67))
+(Set(!v_NMRK1, !v_NMRK2),Set(66, 67))
+(Set(!v_ATP_simple_molecule_cell),Set(11))
+(Set(!v_NR_simple_molecule),Set(70))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_L_Arginine_simple_molecule, v_NADPH_simple_molecule_cell, v_O2_simple_molecule, !v_CO_simple_molecule)))
+Some(Vector(Set(v_CO_simple_molecule), Set(!v_O2_simple_molecule), Set(!v_NADPH_simple_molecule_cell), Set(!v_L_Arginine_simple_molecule)))
+(Set(v_L_Arginine_simple_molecule, v_NADPH_simple_molecule_cell, v_O2_simple_molecule, !v_CO_simple_molecule),Set(-38, -49, -75, 19))
+(Set(v_CO_simple_molecule),Set(-19))
+(Set(!v_O2_simple_molecule),Set(75))
+(Set(!v_NADPH_simple_molecule_cell),Set(49))
+(Set(!v_L_Arginine_simple_molecule),Set(38))
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector())
+Some(Vector())
+
+Some(Vector(Set(v_HMOX1_rna, v_Orf3a)))
+Some(Vector(Set(!v_Orf3a), Set(!v_HMOX1_rna)))
+(Set(v_HMOX1_rna, v_Orf3a),Set(-25, -76))
+(Set(!v_Orf3a),Set(76))
+(Set(!v_HMOX1_rna),Set(25))
+Map(v_CD38 -> 18, v_dh_beta_NAD_simple_molecule -> 92, v_NAAD_simple_molecule_cell -> 45, v_IFN_G -> 35, v_H__ion_endoplasmic_reticulum -> 27, v_NAMN_simple_molecule_cell -> 54, v_NADH_simple_molecule_peroxisome -> 46, v_NMNAT1_Zn2__complex -> 62, v_NAD__simple_molecule_human_host -> 52, v_IDO2 -> 34, v_NAD__simple_molecule_mitochondrial_matrix -> 53, v_APOA1BP -> 9, v_NAR_simple_molecule -> 60, v_KYNU -> 37, v_HMOX1_rna -> 25, v_O2_ion -> 74, v_SLC5A8 -> 90, v_NAMN_simple_molecule_nucleus -> 56, v_NUDT12 -> 72, v_NAMPT -> 57, v_PTCS2_celecoxib_complex -> 80, v_O2_simple_molecule -> 75, v_PARPs -> 77, v_CO_simple_molecule -> 19, v_3HAA_simple_molecule -> 2, v_H2O_simple_molecule_peroxisome -> 23, v_L_Tryptophan_simple_molecule_cell -> 42, v_AFMID -> 6, v_NO_simple_molecule -> 69, v_H2O_simple_molecule_cell -> 21, v_L_Gln_simple_molecule -> 39, v_e__ion -> 93, v_I3PROPA -> 31, v_NADPH_simple_molecule_cell -> 49, v_IDO1_complex -> 32, v_NAD__simple_molecule_cell -> 51, v_sa352_HMOX1_cell -> 95, v_NAPRT1 -> 59, v_ACS_simple_molecule -> 5, v_NNMT -> 68, v_KMO -> 36, v_H__ion_human_host -> 28, v_Mg2__ion -> 44, v_NADK2 -> 47, v_H__ion_cell -> 26, v_PRPP_simple_molecule -> 79, v_AHR -> 7, v_ACMSD -> 4, v_BST1 -> 15, v_QPRT -> 85, v_H2O_simple_molecule_human_host -> 22, v_NR_simple_molecule -> 70, v_SLC22A13 -> 88, v_AP_DOBu_simple_molecule -> 10, v_2AMA_simple_molecule -> 1, v_NMRK2 -> 67, v_NMNAT3_Mg2__complex -> 64, v_CCBL2 -> 17, v_CARKD -> 16, v_AMP_simple_molecule_peroxisome -> 8, v_PXLP_KYAT1_complex -> 83, v_NMNAT2_Mg2__complex -> 63, v_L_Tryptophan_simple_molecule_human_host -> 43, v_SLC36A4 -> 89, v_I3LACT -> 30, v_L_Phe_simple_molecule -> 41, v_RNLS_FAD_complex -> 86, v_AdoMet_simple_molecule -> 14, v_3HKYN_simple_molecule -> 3, v_NAM_simple_molecule_cell -> 58, v_NMN_simple_molecule_cell -> 65, v_Na__ion_human_host -> 73, v_monocarboxylates_transported_by_SLC5A8_simple_molecule_human_host -> 94, v_L_Arginine_simple_molecule -> 38, v_PGG2_simple_molecule -> 78, v_Epacadostat_drug -> 20, v_Heme_simple_molecule -> 29, v_NFK_simple_molecule -> 61, v_PTGIS -> 81, v_ATP_simple_molecule_mitochondrial_matrix -> 12, v_NT5E_Zn2__complex -> 71, v_L_Kynurenine_simple_molecule -> 40, v_PYR_simple_molecule -> 84, v_Orf3a -> 76, v_HAAO -> 24, v_NADK_Zn2__tetramer_complex -> 48, v_IDO1_rna -> 33, v_NAMN_simple_molecule_mitochondrial_matrix -> 55, v_NADSYN1_hexamer -> 50, v_ATP_simple_molecule_cell -> 11, v_PTGS2 -> 82, v_R_NADPHX_simple_molecule -> 87, v_NMRK1 -> 66, v_ATP_simple_molecule_nucleus -> 13, v__ADP_D_ribosyl__n__acceptor_simple_molecule -> 91)
+p cnf 95 186
+-5 -4 1 0
+4 -1 0
+5 -1 0
+-3 -21 -37 2 0
+37 -2 0
+21 -2 0
+3 -2 0
+-49 -40 -26 -75 -36 3 0
+40 -3 0
+26 -3 0
+75 -3 0
+49 -3 0
+36 -3 0
+-2 -75 -24 5 0
+24 -5 0
+75 -5 0
+2 -5 0
+10 -40 41 -83 -84 31 30 0
+-31 -10 0
+40 -10 0
+83 -10 0
+84 -10 0
+-41 -10 0
+-30 -10 0
+-49 -95 -75 -29 19 0
+95 -19 0
+49 -19 0
+75 -19 0
+29 -19 0
+-5 21 0
+-10 21 0
+-49 -95 21 -75 -29 0
+-49 -40 -26 21 -75 -36 0
+5 10 95 -21 40 0
+5 10 95 -21 26 0
+5 10 95 -21 36 0
+5 10 29 -21 40 0
+5 10 29 -21 26 0
+5 10 29 -21 36 0
+75 5 10 -21 0
+49 5 10 -21 0
+-2 25 0
+-69 25 0
+-35 25 0
+35 69 2 -25 0
+-60 -11 -66 26 0
+-60 -67 -11 26 0
+-70 -11 -66 26 0
+-70 -67 -11 26 0
+-49 -75 -38 26 19 0
+-21 -51 -1 26 0
+60 70 -26 21 -19 0
+60 70 -26 21 75 0
+60 70 -26 21 49 0
+60 38 70 -26 21 0
+-26 21 66 67 75 0
+-26 21 -19 66 67 0
+-19 21 11 -26 0
+75 21 11 -26 0
+-26 21 49 66 67 0
+21 49 11 -26 0
+38 -26 21 66 67 0
+21 38 11 -26 0
+1 -26 -19 66 67 0
+60 70 -26 -19 51 0
+60 70 -26 75 51 0
+60 70 -26 49 51 0
+60 38 70 -26 51 0
+-26 -19 66 67 51 0
+-19 51 11 -26 0
+-26 66 67 75 51 0
+75 51 11 -26 0
+-26 49 66 67 51 0
+49 51 11 -26 0
+38 -26 66 67 51 0
+51 38 11 -26 0
+-19 1 11 -26 0
+1 60 70 -26 -19 0
+1 60 70 -26 75 0
+1 60 70 -26 49 0
+1 60 38 70 -26 0
+1 -26 66 67 75 0
+75 1 11 -26 0
+1 -26 49 66 67 0
+49 1 11 -26 0
+1 38 -26 66 67 0
+1 38 11 -26 0
+-52 -22 -15 28 0
+-52 -22 -18 28 0
+15 18 -28 0
+22 -28 0
+52 -28 0
+-29 -33 32 0
+33 -32 0
+29 -32 0
+-35 69 33 0
+-69 -33 0
+35 -33 0
+-61 -21 -6 40 0
+6 -40 0
+21 -40 0
+61 -40 0
+-43 -89 42 0
+89 -42 0
+43 -42 0
+-54 -63 45 0
+63 -45 0
+54 -45 0
+-39 -50 -11 -21 51 -45 0
+-63 -65 -11 51 0
+45 63 -51 0
+21 63 -51 0
+63 50 -51 0
+39 63 -51 0
+11 -51 0
+45 65 -51 0
+21 65 -51 0
+65 50 -51 0
+39 65 -51 0
+-86 52 -74 -92 -28 0
+86 -52 0
+28 -52 0
+74 -52 0
+92 -52 0
+-60 -11 -66 54 0
+-60 -67 -11 54 0
+-26 -79 -5 54 -85 0
+-57 -79 -58 54 0
+-44 -26 -79 54 -88 0
+-59 -26 -79 54 -88 0
+88 -54 57 85 66 67 0
+88 5 -54 57 66 67 0
+88 -54 57 60 85 0
+88 -54 57 85 11 0
+88 5 -54 57 11 0
+88 5 -54 57 60 0
+-54 57 85 44 59 66 67 0
+5 -54 57 44 59 66 67 0
+-54 57 85 44 59 11 0
+5 -54 57 44 59 11 0
+-54 57 60 85 44 59 0
+5 -54 57 60 44 59 0
+-54 57 66 67 26 0
+57 26 11 -54 0
+60 57 26 -54 0
+26 58 11 -54 0
+88 -54 85 66 67 58 0
+88 5 -54 66 67 58 0
+88 -54 85 11 58 0
+88 5 -54 11 58 0
+88 -54 60 85 58 0
+88 5 -54 60 58 0
+-54 85 44 59 66 67 58 0
+5 -54 44 59 66 67 58 0
+-54 85 44 59 11 58 0
+5 -54 44 59 11 58 0
+-54 60 85 44 59 58 0
+5 -54 60 44 59 58 0
+-54 66 67 26 58 0
+60 26 58 -54 0
+60 79 -54 0
+79 67 66 -54 0
+79 11 -54 0
+-91 -51 -77 58 0
+77 -58 0
+51 -58 0
+91 -58 0
+-34 -75 -42 61 0
+-32 20 61 -75 -42 0
+34 -20 -61 0
+34 32 -61 0
+42 -61 0
+75 -61 0
+-70 -11 -66 65 0
+-70 -11 -67 65 0
+66 67 -65 0
+11 -65 0
+70 -65 0
+69 -49 -75 -38 19 0
+-19 -69 0
+75 -69 0
+49 -69 0
+38 -69 0
+-25 -76 95 0
+76 -95 0
+25 -95 0
++ exit_status=0
++ set +x
+# ENCODE END
+
+# Using CaDiCaL to detect UNSAT
+c --- [ banner ] -------------------------------------------------------------
+c 
+c CaDiCaL SAT Solver
+c Copyright (c) 2016-2026
+c A. Biere, M. Fleury, N. Froleyks, K. Fazekas, F. Pollitt, T. Faller
+c JKU Linz, University of Freiburg, TU Wien
+c 
+c Version 3.0.1 c60730422e758ef1cebe7aeddf2dda31c996bf04
+c g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0 -Wall -Wextra -O3 -DNDEBUG
+c Tue Oct 13 05:36:54 UTC 2026 Linux buildkitsandbox 6.6.87.2-microsoft-standard-WSL2 x86_64
+c 
+c --- [ limit ] --------------------------------------------------------------
+c 
+c setting conflict limit to 10000 conflicts (due to '10000')
+c 
+c --- [ parsing input ] ------------------------------------------------------
+c 
+c reading DIMACS file from '/tmp/tmp.RcFFZIAZ5B.cnf'
+c opening file to read '/tmp/tmp.RcFFZIAZ5B.cnf'
+c found 'p cnf 95 186' header
+c parsed 186 clauses in 0.00 seconds process time
+c 
+c --- [ options ] ------------------------------------------------------------
+c 
+c all options are set to their default value
+c 
+c --- [ solving ] ------------------------------------------------------------
+c 
+c time measured in process time since initialization
+c 
+c  seconds  reduction conflicts       size tier2     variables
+c         MB    restarts   redundant    glue  trail      remaining
+c          level     rate       size/glu tier1 irredundant
+c 
+c *  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  186  65 68%
+c l  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  186  65 68%
+c 1  0.00  4  0 0   0  0    0    0 0.0 0 0 2 6  0%  186  65 68%
+c 
+c --- [ result ] -------------------------------------------------------------
+c 
+s SATISFIABLE
+v -1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21
+v -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 -36 -37 -38 -39 -40
+v -41 -42 -43 -44 -45 -46 -47 -48 -49 -50 -51 -52 -53 -54 -55 -56 -57 -58 -59
+v -60 -61 -62 -63 -64 -65 -66 -67 -68 -69 -70 -71 -72 -73 -74 -75 -76 -77 -78
+v -79 -80 -81 -82 -83 -84 -85 -86 -87 -88 -89 -90 -91 -92 -93 -94 -95 0
+c 
+c --- [ run-time profiling ] -------------------------------------------------
+c 
+c process time taken by individual solving procedures
+c (percentage relative to process time for solving)
+c 
+c         0.00  105.00% parse
+c         0.00   39.29% search
+c         0.00   37.86% lucky
+c         0.00    0.00% simplify
+c   =================================
+c         0.00   34.06% solve
+c 
+c last line shows process time for solving
+c (percentage relative to total process time)
+c 
+c --- [ statistics ] ---------------------------------------------------------
+c 
+c lucky:                         1       100.00 %  of tried
+c minimized:                     0         0.00 %  learned literals
+c shrunken:                      0         0.00 %  learned literals
+c minishrunken:                  0         0.00 %  learned literals
+c propagations:                  0         0.00 M  per second
+c ticks:                         0         0.00    propagation
+c 
+c seconds are measured in process time for solving
+c 
+c --- [ glue usage ] ---------------------------------------------------------
+c 
+c focused glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c focused glue 3 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 4 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 5 used 0 clauses 0.000% accumulated 0.000%
+c focused glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c stable glue 2 used 0 clauses 0.000% accumulated 0.000% tier1
+c stable glue 3 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 4 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 5 used 0 clauses 0.000% accumulated 0.000%
+c stable glue 6 used 0 clauses 0.000% accumulated 0.000% tier2
+c 
+c 
+c --- [ resources ] ----------------------------------------------------------
+c 
+c total process time since initialization:         0.00    seconds
+c total real time since initialization:            0.00    seconds
+c maximum resident set size of process:            4.12    MB
+c 
+c --- [ shutting down ] ------------------------------------------------------
+c 
+c exit 10
+
+# SAT SOLVE START
++ cmd_pid=85
++ wait 85
++ bdd_minisat_all_release /tmp/tmp.RcFFZIAZ5B.cnf
+==============================[MINISAT_ALL]==========================================
+| Time | Conflicts | Propagations | TOTAL       |            |   LEARNT  | OBDD     |
+|      |           |              | Solutions   | Clauses    |   Clauses | Nodes    |
+=====================================================================================
+==============================================================================
+input             : /tmp/tmp.RcFFZIAZ5B.cnf
+variables         :           95
+cutwidth          :          127
+restarts          :            1
+conflicts         :          178           (      104 / sec      )
+decisions         :      1265091           (   739232 / sec      )
+propagations      :      1669166           (   975346 / sec      )
+inspects          :      4411341           (  2577685 / sec      )
+conflict literals :          594           (     0.83 % deleted  )
+cpu time (solve)  :         1.71 sec	
+refreshes         :            0
+|obdd|            :      1428732
+cache hits        :       632397
+cache lookup      :      1265042
+cache type        : cutset
+cache frequency   : lazy
+minisat_all type  : non-blocking
+backtrack method  : bj
+1UIP              : dlevel
+gmp               : disabled
+SAT (full)        : 9223372036854775807+
++ set +x
+# SAT SOLVE END
+
+	Command being timed: "/app/solve-bmsa.sh 7168m 1g h3 model_120.sbml"
+	User time (seconds): 4.52
+	System time (seconds): 0.46
+	Percent of CPU this job got: 164%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.03
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 323528
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 152854
+	Voluntary context switches: 4660
+	Involuntary context switches: 294
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 80
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+# Runner: docker exit code 0, wall time 3.4s
